@@ -1,0 +1,16 @@
+.demo-container {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.demo-map {
+  height: 85vh;
+  width: 90vw;
+}
+
+#choropleth {
+  position: sticky;
+}
