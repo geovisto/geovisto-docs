@@ -5,7 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import BrowserOnly from '@docusaurus/BrowserOnly';
-
+import GeovistoShowcase from "@site/src/components/bootstrap/showCaseCards";
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -34,7 +34,7 @@ export default function Home(): JSX.Element {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
-        <Render_geovisto />
+          <GeovistoShowcase/>
       </main>
     </Layout>
   );
