@@ -7,7 +7,7 @@ import {
     Container,
 } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './style.css'
+import './showCaseCards.css'
 // @ts-ignore
 import ChoroplethImageUrl from '@site/static/img/geovistoIcons/choropleth.png';
 import MarkerImageUrl from '@site/static/img/geovistoIcons/marker.png';
@@ -24,7 +24,7 @@ export default function GeovistoShowcase(): JSX.Element {
                             <Card.Body>
                                 <Card.Title className="titles">Choropleth</Card.Title>
                                 <Card.Img variant="bottom" className="images" src={ChoroplethImageUrl} />
-                                <Button variant="primary">Show more!</Button>
+                                <Button variant="default">Show more!</Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -33,7 +33,7 @@ export default function GeovistoShowcase(): JSX.Element {
                             <Card.Body>
                                 <Card.Title className="titles">Marker</Card.Title>
                                 <Card.Img variant="bottom" className="images" src={MarkerImageUrl} width={180}/>
-                                <Button variant="primary">Show more!</Button>
+                                <Button variant="default">Show more!</Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -42,7 +42,7 @@ export default function GeovistoShowcase(): JSX.Element {
                             <Card.Body>
                                 <Card.Title className="titles">Connection</Card.Title>
                                 <Card.Img variant="bottom" className="images" src={ConnectionImageUrl} />
-                                <Button variant="primary">Show more!</Button>
+                                <Button variant="default">Show more!</Button>
                             </Card.Body>
                         </Card>
                     </Col>

@@ -8,4 +8,5 @@
 }
 .cards {
     text-align: center;
+    background-color: var(--ifm-color-primary-lightest);
 }

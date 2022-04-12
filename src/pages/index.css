@@ -47,6 +47,16 @@
 }
 
 .btn-default {
-  background-color: white!important;
+  background-color: #a7ff0f!important;
   border-color: var(--ifm-color-primary-lightest)!important;
+  padding: 0.65rem 1.2rem!important;
+  font-weight: 600!important;
+}
+
+.highlight {
+  color: #a7ff0f;
+}
+
+.font-big {
+  font-size: 3rem;
 }

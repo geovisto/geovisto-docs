@@ -57,9 +57,20 @@ const config = {
             label: 'Tutorial',
           },
           {
+            to: 'pages/playground',
+            label: 'Playground',
+            position: 'left',
+            target: '_blank',
+          },
+          {
             href: 'https://github.com/geovisto',
-            label: 'GitHub',
             position: 'right',
+            className: 'github',
+          },
+          {
+            href: 'https://github.com/geovisto',
+            position: 'right',
+            className: 'npm',
           },
         ],
       },

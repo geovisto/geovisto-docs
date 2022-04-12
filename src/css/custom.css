@@ -6,14 +6,17 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #150080;
-  --ifm-color-primary-dark: #130073;
-  --ifm-color-primary-darker: #12006d;
-  --ifm-color-primary-darkest: #0f005a;
-  --ifm-color-primary-light: #17008d;
-  --ifm-color-primary-lighter: #180093;
-  --ifm-color-primary-lightest: #1b00a6;
+  --ifm-color-primary: #274f91;
+  --ifm-color-primary-dark: #234783;
+  --ifm-color-primary-darker: #21437b;
+  --ifm-color-primary-darkest: #1b3766;
+  --ifm-color-primary-light: #2b57a0;
+  --ifm-color-primary-lighter: #2d5ba7;
+  --ifm-color-primary-lightest: #3367bd;
   --text-color: #eaeaea;
+  --ifm-navbar-background-color: rgba(51, 103, 189, 0.84);
+  --ifm-navbar-link-color: white;
+  --ifm-navbar-link-hover-color: #a7ff0f;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -44,4 +47,46 @@
 
 a.navbar__brand {
   text-decoration: none;
+}
+
+.github:after {
+  transition: opacity 0.2s;
+  content: "";
+  width: 26px;
+  height: 26px;
+  display: flex;
+  background-image: url("../../static/img/github_light.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.github:hover:after {
+  opacity: 0.5;
+}
+
+.github:after, .navbar-community-link:after {
+  border-style: none !important;
+  margin-left: -5px !important;
+}
+
+.npm:after {
+  transition: opacity 0.2s;
+  content: "";
+  width: 36px;
+  height: 36px;
+  display: flex;
+  background-image: url("../../static/img/npm.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 12px;
+}
+
+.npm:hover:after {
+  opacity: 0.5;
+}
+
+.npm:after, .navbar-community-link:after {
+  border-style: none !important;
+  margin-left: -5px !important;
 }
