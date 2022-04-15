@@ -1,0 +1,16 @@
+.marker-container {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.marker-map {
+    height: 56vh;
+    width: 56vw;
+}
+
+#marker {
+    position: sticky;
+}

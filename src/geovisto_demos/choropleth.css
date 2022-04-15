@@ -1,4 +1,4 @@
-.demo-container {
+.choropleth-container {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
@@ -6,9 +6,9 @@
   align-items: center;
 }
 
-.demo-map {
-  height: 50vh;
-  width: 60vw;
+.choropleth-map {
+  height: 56vh;
+  width: 56vw;
 }
 
 #choropleth {

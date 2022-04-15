@@ -68,7 +68,7 @@ const config = {
             className: 'github',
           },
           {
-            href: 'https://github.com/geovisto',
+            href: 'https://www.npmjs.com/package/geovisto',
             position: 'right',
             className: 'npm',
           },

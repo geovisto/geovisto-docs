@@ -41,7 +41,7 @@ export default function Home(): JSX.Element {
               <Link to="/docs/intro" className="pe-lg-3">
                   <Button variant="default">Get started</Button>
               </Link>
-              <Link to="/docs/intro" className="ps-lg-3">
+              <Link to="/playground#playground-hook" className="ps-lg-3">
                   <Button variant="default">Playground</Button>
               </Link>
           </div>

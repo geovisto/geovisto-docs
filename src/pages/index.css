@@ -60,3 +60,13 @@
 .font-big {
   font-size: 3rem;
 }
+
+.link {
+  color: #a7ff0f;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #80c20c;
+  text-decoration: none;
+}

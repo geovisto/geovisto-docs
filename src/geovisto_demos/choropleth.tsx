@@ -55,15 +55,13 @@ export default class Choropleth extends Component<Record<string, never>, { data:
         // initialize geo objects
         this.polygons = require("/static/geo/country_polygons.json");
         this.centroids = require("/static/geo/country_centroids.json");
-        this.polygons2 = require("/static/geo/czech_districts_polygons.json");
-        this.centroids2 = require("/static/geo/czech_districts_centroids.json");
 
         // data and config can be changed
         this.state = {
             // implicit data
-            data: require('/static/data/timeData.json'),
+            data: require('/static/data/gdp_oecd.json'),
             // implicit config
-            config: require('/static/config/config.json')
+            config: require('/static/config/gdp_config.json')
         };
 
         // reference to the rendered map
@@ -73,8 +71,8 @@ export default class Choropleth extends Component<Record<string, never>, { data:
     public render(): JSX.Element {
         console.log("rendering...");
         return (
-            <div className="demo-container">
-            <div className="demo-map">
+            <div className="choropleth-container">
+            <div className="choropleth-map">
         <ReactGeovistoMap
             ref={this.map}
         id="choropleth"

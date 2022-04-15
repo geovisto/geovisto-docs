@@ -67,6 +67,13 @@
               "name": "Timeline",
               "icon": "<i class=\"fa fa-clock-o\" />",
               "checkButton": true
+            },
+            {
+                "tool": "geovisto-tool-layer-drawing",
+                "enabled": true,
+                "name": "GeoJSON creator",
+                "icon": "<i class=\"fa fa-pencil\"></i>",
+                "checkButton": true
             }
             ]
         },
@@ -154,6 +161,12 @@
             "chartAggregationFn": ""
           },
           "stories": []
+        },
+        {
+            "type": "geovisto-tool-layer-drawing",
+            "id": "geovisto-tool-layer-drawing",
+            "enabled": false,
+            "layerName": "GeoJSON creator"
         }
     ]
 }
