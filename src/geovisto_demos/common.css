@@ -1,0 +1,15 @@
+.legend {
+    padding: 5px 6px !important;
+    font: 11px Arial,Helvetica,sans-serif !important;
+    line-height: 21px!important;
+}
+
+.docs-showcase-map {
+    height: 60vh;
+    width: 50vw;
+}
+
+.leaflet-sidebar-header.enabled, .leaflet-sidebar-tabs>li.active, .leaflet-sidebar-tabs>ul>li.active {
+    /* Docusaurus gives <h1> element in tab header margin. This overrides it */
+    margin-bottom: 0!important;
+}

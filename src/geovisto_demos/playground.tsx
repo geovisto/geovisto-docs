@@ -5,7 +5,7 @@ import React, { Component } from "react";
 import ReactGeovistoMap from "../react/ReactGeovistoMap";
 import {
 
-} from "geovisto";
+} from "geovisto-map";
 
 import loadable from '@loadable/component'
 
@@ -13,23 +13,20 @@ import {
     Geovisto,
     IMap,
     IMapProps
-} from 'geovisto';
-import 'geovisto/dist/index.css';
+} from 'geovisto-map';
 
-import { GeovistoSelectionTool } from 'geovisto-selection';
-import { GeovistoThemesTool } from 'geovisto-themes';
-import { GeovistoFiltersTool } from 'geovisto-filters';
-import { GeovistoSidebarTool } from 'geovisto-sidebar';
-import 'geovisto-sidebar/dist/index.css';
-import { GeovistoTilesLayerTool } from 'geovisto-layer-tiles';
-import { GeovistoChoroplethLayerTool } from 'geovisto-layer-choropleth';
-import 'geovisto-layer-choropleth/dist/index.css';
-import { GeovistoMarkerLayerTool } from 'geovisto-layer-marker';
-import 'geovisto-layer-marker/dist/index.css';
-import { GeovistoConnectionLayerTool } from 'geovisto-layer-connection';
-import 'geovisto-layer-connection/dist/index.css';
+import { GeovistoSelectionTool } from 'geovisto-map';
+import { GeovistoThemesTool } from 'geovisto-map';
+import { GeovistoFiltersTool } from 'geovisto-map';
+import { GeovistoSidebarTool } from 'geovisto-map';
+import { GeovistoLegendTool } from 'geovisto-map';
+import { GeovistoTilesLayerTool } from 'geovisto-map';
+import { GeovistoChoroplethLayerTool } from 'geovisto-map';
+import { GeovistoMarkerLayerTool } from 'geovisto-map';
+import { GeovistoConnectionLayerTool } from 'geovisto-map';
 
 import "./playground.css";
+import "geovisto-map/dist/index.css";
 
 /* example of screen component with grid layout and card wrapper usage */
 

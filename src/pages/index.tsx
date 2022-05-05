@@ -7,6 +7,7 @@ import './index.css';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import GeovistoShowcase from "@site/src/components/bootstrap/showCaseCards";
 import {Button} from "react-bootstrap";
+import GeovistoLogo from '@site/static/img/geovisto-logo1.png';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -15,6 +16,7 @@ function HomepageHeader() {
       <div className="container">
         <h1 className="highlight font-big">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <img src={GeovistoLogo}  alt={"logo"} id="front_image" className="pt-lg-5"/>
       </div>
     </header>
   );

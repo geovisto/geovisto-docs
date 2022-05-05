@@ -1,3 +1,4 @@
+@import "common.css";
 .choropleth-container {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   display: flex;
@@ -6,11 +7,7 @@
   align-items: center;
 }
 
-.choropleth-map {
-  height: 56vh;
-  width: 56vw;
-}
-
 #choropleth {
   position: sticky;
 }
+

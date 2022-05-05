@@ -4,7 +4,7 @@ import {
 } from "react";
 
 // Geovisto
-import { IMapConfigManager, IMapProps } from "geovisto";
+import { IMapConfigManager, IMapProps } from "geovisto-map";
 
 import ReactGeovistoMap from "./ReactGeovistoMap";
 

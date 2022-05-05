@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 
 // Geovisto
-import { Geovisto, IMap } from "geovisto";
+import { Geovisto, IMap } from "geovisto-map";
 import IReactGeovistoMapProps from "./IReactGeovistoMapProps";
 
 // styles

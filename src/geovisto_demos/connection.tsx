@@ -5,7 +5,7 @@ import React, { Component } from "react";
 import ReactGeovistoMap from "../react/ReactGeovistoMap";
 import {
 
-} from "geovisto";
+} from "geovisto-map";
 
 import loadable from '@loadable/component'
 
@@ -13,33 +13,22 @@ import {
     Geovisto,
     IMap,
     IMapProps
-} from 'geovisto';
-import 'geovisto/dist/index.css';
+} from 'geovisto-map';
 
-import { GeovistoSelectionTool } from 'geovisto-selection';
-import { GeovistoThemesTool } from 'geovisto-themes';
-import { GeovistoFiltersTool } from 'geovisto-filters';
-import { GeovistoSidebarTool } from 'geovisto-sidebar';
-import 'geovisto-sidebar/dist/index.css';
-import { GeovistoTilesLayerTool } from 'geovisto-layer-tiles';
-import { GeovistoChoroplethLayerTool } from 'geovisto-layer-choropleth';
-import 'geovisto-layer-choropleth/dist/index.css';
-import { GeovistoMarkerLayerTool } from 'geovisto-layer-marker';
-import 'geovisto-layer-marker/dist/index.css';
-import { GeovistoConnectionLayerTool } from 'geovisto-layer-connection';
-import 'geovisto-layer-connection/dist/index.css';
+import { GeovistoSelectionTool } from 'geovisto-map';
+import { GeovistoThemesTool } from 'geovisto-map';
+import { GeovistoFiltersTool } from 'geovisto-map';
+import { GeovistoSidebarTool } from 'geovisto-map';
+import { GeovistoLegendTool } from 'geovisto-map';
+import { GeovistoTilesLayerTool } from 'geovisto-map';
+import { GeovistoChoroplethLayerTool } from 'geovisto-map';
+import { GeovistoMarkerLayerTool } from 'geovisto-map';
+import { GeovistoConnectionLayerTool } from 'geovisto-map';
+import { GeovistoInfoTool } from "geovisto-map";
 
 import "./connection.css";
-
-/* example of screen component with grid layout and card wrapper usage */
-
-const C_ID_select_data = "leaflet-combined-map-select-data";
-const C_ID_check_data = "leaflet-combined-map-check-data";
-const C_ID_input_data = "leaflet-combined-map-input-data";
-const C_ID_check_config = "leaflet-combined-map-check-config";
-const C_ID_input_config = "leaflet-combined-map-input-config";
-const C_ID_input_import = "leaflet-combined-map-input-import";
-const C_ID_input_export = "leaflet-combined-map-input-export";
+import "geovisto-map/dist/index.css";
+import InfoFileRaw from '!!raw-loader!../../static/info/connection.txt';
 
 export default class Connection extends Component<Record<string, never>, { data: unknown, config: Record<string, unknown> }> {
 
@@ -47,6 +36,7 @@ export default class Connection extends Component<Record<string, never>, { data:
     private centroids: unknown;
     private polygons2: unknown;
     private centroids2: unknown;
+    private infodata: unknown;
     private map: React.RefObject<ReactGeovistoMap>;
 
     public constructor(props: Record<string, never>) {
@@ -64,6 +54,13 @@ export default class Connection extends Component<Record<string, never>, { data:
             config: require('/static/config/trade_config.json')
         };
 
+        // initialize info objects
+        const myObj = {
+            default: undefined
+        };
+        myObj.default = InfoFileRaw;
+        this.infodata = myObj;
+
         // reference to the rendered map
         this.map = React.createRef();
     }
@@ -72,7 +69,7 @@ export default class Connection extends Component<Record<string, never>, { data:
         console.log("rendering...");
         return (
             <div className="choropleth-container">
-                <div className="choropleth-map">
+                <div className="docs-showcase-map">
                     <ReactGeovistoMap
                         ref={this.map}
                         id="choropleth"
@@ -115,6 +112,12 @@ export default class Connection extends Component<Record<string, never>, { data:
                             GeovistoSelectionTool.createTool({
                                 id: "geovisto-tool-selection"
                             }),
+                            GeovistoInfoTool.createTool({
+                                id: "geovisto-tool-info",
+                                manager: GeovistoInfoTool.createInfoManager([
+                                    GeovistoInfoTool.getInfoDataFactory().markdown("General", this.infodata),
+                                ])
+                            }),
                             GeovistoTilesLayerTool.createTool({
                                 id: "geovisto-tool-layer-map"
                             }),
@@ -126,6 +129,9 @@ export default class Connection extends Component<Record<string, never>, { data:
                             }),
                             GeovistoConnectionLayerTool.createTool({
                                 id: "geovisto-tool-layer-connection"
+                            }),
+                            GeovistoLegendTool.createTool({
+                                id: "geovisto-tool-legend"
                             }),
                         ])}
                     />
