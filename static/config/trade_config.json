@@ -35,10 +35,17 @@
         },
         {
           "tool": "geovisto-tool-layer-map",
-          "enabled": true,
+          "enabled": false,
           "name": "Map layer settings",
           "icon": "<i class=\"fa fa-globe\"></i>",
           "checkButton": true
+        },
+        {
+          "tool": "geovisto-tool-info",
+          "enabled": true,
+          "name": "Info",
+          "icon": "<i class=\"fa fa-info\"></i>",
+          "checkButton": false
         },
         {
           "tool": "geovisto-tool-layer-choropleth",
@@ -118,7 +125,11 @@
         "scaling": "median",
         "range": 7,
         "customColor": true,
-        "color": "#041FEC"
+        "color": "#041FEC",
+        "unitsEnabled": true,
+        "units": "$",
+        "unitsDesc": "US Dollars (Millions)",
+        "round": 1
       }
     },
     {
@@ -144,6 +155,14 @@
         "to": "Partner",
         "animateDirection": true
       }
+    },
+    {
+      "type": "geovisto-tool-legend",
+      "id": "geovisto-tool-legend",
+      "enabled": true,
+      "tools": [
+        "geovisto-tool-layer-choropleth"
+      ]
     },
     {
       "type": "geovisto-tool-timeline",
