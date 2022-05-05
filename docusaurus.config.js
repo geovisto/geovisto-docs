@@ -8,11 +8,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Geovisto',
   tagline: 'Open-source mapping library for generic geospatial data visualization.',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/geovisto-docu/build/index.html/',
+  url: 'https://geovisto.github.io',
+  baseUrl: '/geovisto-docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/geovisto-logo1.png',
   organizationName: 'geovisto', // Usually your GitHub org/user name.
   projectName: 'geovisto-docs', // Usually your repo name.
   plugins: ['docusaurus-plugin-sass'],
@@ -49,6 +49,15 @@ const config = {
       },
       navbar: {
         title: 'Geovisto',
+        logo: {
+          alt: 'Site Logo',
+          src: 'img/geovisto-logo1.png',
+          srcDark: 'img/geovisto-logo1.png',
+          href: '/',
+          target: '_self',
+          width: 35,
+          height: 35,
+        },
         items: [
           {
             type: 'doc',
@@ -57,10 +66,9 @@ const config = {
             label: 'Tutorial',
           },
           {
-            to: 'pages/playground',
+            to: 'playground#playground-hook',
             label: 'Playground',
             position: 'left',
-            target: '_blank',
           },
           {
             href: 'https://github.com/geovisto',
@@ -83,23 +91,6 @@ const config = {
               {
                 label: 'Tutorial',
                 to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
               },
             ],
           },
