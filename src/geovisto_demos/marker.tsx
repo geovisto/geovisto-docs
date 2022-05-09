@@ -1,30 +1,20 @@
 // React
-import React, { Component } from "react";
+import React, {Component} from "react";
 
 // React-Geovisto
 import ReactGeovistoMap from "../react/ReactGeovistoMap";
-import {
-
-} from "geovisto-map";
-
-import loadable from '@loadable/component'
 
 import {
     Geovisto,
-    IMap,
-    IMapProps
 } from 'geovisto-map';
 
-import { GeovistoSelectionTool } from 'geovisto-map';
-import { GeovistoThemesTool } from 'geovisto-map';
-import { GeovistoFiltersTool } from 'geovisto-map';
-import { GeovistoSidebarTool } from 'geovisto-map';
-import { GeovistoLegendTool } from 'geovisto-map';
-import { GeovistoTilesLayerTool } from 'geovisto-map';
-import { GeovistoChoroplethLayerTool } from 'geovisto-map';
-import { GeovistoMarkerLayerTool } from 'geovisto-map';
-import { GeovistoConnectionLayerTool } from 'geovisto-map';
-import { GeovistoInfoTool } from "geovisto-map";
+import {GeovistoSelectionTool} from 'geovisto-map';
+import {GeovistoThemesTool} from 'geovisto-map';
+import {GeovistoSidebarTool} from 'geovisto-map';
+import {GeovistoLegendTool} from 'geovisto-map';
+import {GeovistoTilesLayerTool} from 'geovisto-map';
+import {GeovistoMarkerLayerTool} from 'geovisto-map';
+import {GeovistoInfoTool} from "geovisto-map";
 import InfoFileRaw from '!!raw-loader!../../static/info/marker.txt';
 
 import "./marker.css";
@@ -68,17 +58,14 @@ export default class Marker extends Component<Record<string, never>, { data: unk
     public render(): JSX.Element {
         console.log("rendering...");
         return (
-            <div className="connection-container">
+            <div className="connection-container general-container">
                 <div className="docs-showcase-map">
                     <ReactGeovistoMap
                         ref={this.map}
                         id="choropleth"
                         data={Geovisto.getMapDataManagerFactory().json(this.state.data)}
                         geoData={Geovisto.getGeoDataManager([
-                            Geovisto.getGeoDataFactory().geojson("world polygons", this.polygons),
                             Geovisto.getGeoDataFactory().geojson("world centroids", this.centroids),
-                            Geovisto.getGeoDataFactory().geojson("czech polygons", this.polygons2),
-                            Geovisto.getGeoDataFactory().geojson("czech centroids", this.centroids2)
                         ])}
                         config={Geovisto.getMapConfigManagerFactory().default(this.state.config)}
                         globals={undefined}
@@ -86,15 +73,6 @@ export default class Marker extends Component<Record<string, never>, { data: unk
                         tools={Geovisto.createMapToolsManager([
                             GeovistoSidebarTool.createTool({
                                 id: "geovisto-tool-sidebar",
-                            }),
-                            GeovistoFiltersTool.createTool({
-                                id: "geovisto-tool-filters",
-                                manager: GeovistoFiltersTool.createFiltersManager([
-                                    // filter operations
-                                    GeovistoFiltersTool.createFilterOperationEq(),
-                                    GeovistoFiltersTool.createFilterOperationNeq(),
-                                    GeovistoFiltersTool.createFilterOperationReg()
-                                ])
                             }),
                             GeovistoThemesTool.createTool({
                                 id: "geovisto-tool-themes",
@@ -124,14 +102,8 @@ export default class Marker extends Component<Record<string, never>, { data: unk
                             GeovistoTilesLayerTool.createTool({
                                 id: "geovisto-tool-layer-map"
                             }),
-                            GeovistoChoroplethLayerTool.createTool({
-                                id: "geovisto-tool-layer-choropleth"
-                            }),
                             GeovistoMarkerLayerTool.createTool({
                                 id: "geovisto-tool-layer-marker"
-                            }),
-                            GeovistoConnectionLayerTool.createTool({
-                                id: "geovisto-tool-layer-connection"
                             }),
                         ])}
                     />

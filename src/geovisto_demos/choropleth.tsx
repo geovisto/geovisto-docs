@@ -1,30 +1,21 @@
 // React
-import React, { Component } from "react";
+import React, {Component} from "react";
 
 // React-Geovisto
 import ReactGeovistoMap from "../react/ReactGeovistoMap";
-import {
-
-} from "geovisto-map";
-
-import loadable from '@loadable/component'
 
 import {
     Geovisto,
-    IMap,
-    IMapProps
 } from 'geovisto-map';
 
-import { GeovistoSelectionTool } from 'geovisto-map';
-import { GeovistoThemesTool } from 'geovisto-map';
-import { GeovistoFiltersTool } from 'geovisto-map';
-import { GeovistoSidebarTool } from 'geovisto-map';
-import { GeovistoLegendTool } from 'geovisto-map';
-import { GeovistoTilesLayerTool } from 'geovisto-map';
-import { GeovistoChoroplethLayerTool } from 'geovisto-map';
-import { GeovistoMarkerLayerTool } from 'geovisto-map';
-import { GeovistoConnectionLayerTool } from 'geovisto-map';
-import { GeovistoInfoTool } from "geovisto-map";
+import {GeovistoSelectionTool} from 'geovisto-map';
+import {GeovistoThemesTool} from 'geovisto-map';
+import {GeovistoFiltersTool} from 'geovisto-map';
+import {GeovistoSidebarTool} from 'geovisto-map';
+import {GeovistoLegendTool} from 'geovisto-map';
+import {GeovistoTilesLayerTool} from 'geovisto-map';
+import {GeovistoChoroplethLayerTool} from 'geovisto-map';
+import {GeovistoInfoTool} from "geovisto-map";
 
 import "./choropleth.css";
 import "geovisto-map/dist/index.css";
@@ -34,8 +25,6 @@ export default class Choropleth extends Component<Record<string, never>, { data:
 
     private polygons: unknown;
     private centroids: unknown;
-    private polygons2: unknown;
-    private centroids2: unknown;
     private map: React.RefObject<ReactGeovistoMap>;
     private infodata: unknown;
 
@@ -68,76 +57,67 @@ export default class Choropleth extends Component<Record<string, never>, { data:
     public render(): JSX.Element {
         console.log("rendering...");
         return (
-            <div className="choropleth-container">
-            <div className="docs-showcase-map">
-        <ReactGeovistoMap
-            ref={this.map}
-        id="choropleth"
-        data={Geovisto.getMapDataManagerFactory().json(this.state.data)}
-        geoData={Geovisto.getGeoDataManager([
-                Geovisto.getGeoDataFactory().geojson("world polygons", this.polygons),
-                Geovisto.getGeoDataFactory().geojson("world centroids", this.centroids),
-                Geovisto.getGeoDataFactory().geojson("czech polygons", this.polygons2),
-                Geovisto.getGeoDataFactory().geojson("czech centroids", this.centroids2)
-            ])}
-        config={Geovisto.getMapConfigManagerFactory().default(this.state.config)}
-        globals={undefined}
-        templates={undefined}
-        tools={Geovisto.createMapToolsManager([
-                GeovistoSidebarTool.createTool({
-                    id: "geovisto-tool-sidebar",
-                }),
-                GeovistoFiltersTool.createTool({
-                    id: "geovisto-tool-filters",
-                    manager: GeovistoFiltersTool.createFiltersManager([
-                        // filter operations
-                        GeovistoFiltersTool.createFilterOperationEq(),
-                        GeovistoFiltersTool.createFilterOperationNeq(),
-                        GeovistoFiltersTool.createFilterOperationReg()
-                    ])
-                }),
-                GeovistoThemesTool.createTool({
-                    id: "geovisto-tool-themes",
-                    manager: GeovistoThemesTool.createThemesManager([
-                        // style themes
-                        GeovistoThemesTool.createThemeLight1(),
-                        GeovistoThemesTool.createThemeLight2(),
-                        GeovistoThemesTool.createThemeLight3(),
-                        GeovistoThemesTool.createThemeDark1(),
-                        GeovistoThemesTool.createThemeDark2(),
-                        GeovistoThemesTool.createThemeDark3(),
-                        GeovistoThemesTool.createThemeBasic()
-                    ])
-                }),
-                GeovistoSelectionTool.createTool({
-                    id: "geovisto-tool-selection"
-                }),
-                GeovistoInfoTool.createTool({
-                    id: "geovisto-tool-info",
-                    manager: GeovistoInfoTool.createInfoManager([
-                        GeovistoInfoTool.getInfoDataFactory().markdown("General", this.infodata),
-                    ])
-                }),
-                GeovistoTilesLayerTool.createTool({
-                    id: "geovisto-tool-layer-map"
-                }),
-                GeovistoChoroplethLayerTool.createTool({
-                    id: "geovisto-tool-layer-choropleth"
-                }),
-                GeovistoLegendTool.createTool({
-                    id: "geovisto-tool-legend"
-                }),
-                GeovistoMarkerLayerTool.createTool({
-                    id: "geovisto-tool-layer-marker"
-                }),
-                GeovistoConnectionLayerTool.createTool({
-                    id: "geovisto-tool-layer-connection"
-                }),
-            ])}
-        />
-        </div>
-        </div>
-    );
+            <div className="choropleth-container general-container">
+                <div className="docs-showcase-map">
+                    <ReactGeovistoMap
+                        ref={this.map}
+                        id="choropleth"
+                        data={Geovisto.getMapDataManagerFactory().json(this.state.data)}
+                        geoData={Geovisto.getGeoDataManager([
+                            Geovisto.getGeoDataFactory().geojson("world polygons", this.polygons),
+                        ])}
+                        config={Geovisto.getMapConfigManagerFactory().default(this.state.config)}
+                        globals={undefined}
+                        templates={undefined}
+                        tools={Geovisto.createMapToolsManager([
+                            GeovistoSidebarTool.createTool({
+                                id: "geovisto-tool-sidebar",
+                            }),
+                            GeovistoFiltersTool.createTool({
+                                id: "geovisto-tool-filters",
+                                manager: GeovistoFiltersTool.createFiltersManager([
+                                    // filter operations
+                                    GeovistoFiltersTool.createFilterOperationEq(),
+                                    GeovistoFiltersTool.createFilterOperationNeq(),
+                                    GeovistoFiltersTool.createFilterOperationReg()
+                                ])
+                            }),
+                            GeovistoThemesTool.createTool({
+                                id: "geovisto-tool-themes",
+                                manager: GeovistoThemesTool.createThemesManager([
+                                    // style themes
+                                    GeovistoThemesTool.createThemeLight1(),
+                                    GeovistoThemesTool.createThemeLight2(),
+                                    GeovistoThemesTool.createThemeLight3(),
+                                    GeovistoThemesTool.createThemeDark1(),
+                                    GeovistoThemesTool.createThemeDark2(),
+                                    GeovistoThemesTool.createThemeDark3(),
+                                    GeovistoThemesTool.createThemeBasic()
+                                ])
+                            }),
+                            GeovistoSelectionTool.createTool({
+                                id: "geovisto-tool-selection"
+                            }),
+                            GeovistoInfoTool.createTool({
+                                id: "geovisto-tool-info",
+                                manager: GeovistoInfoTool.createInfoManager([
+                                    GeovistoInfoTool.getInfoDataFactory().markdown("General", this.infodata),
+                                ])
+                            }),
+                            GeovistoTilesLayerTool.createTool({
+                                id: "geovisto-tool-layer-map"
+                            }),
+                            GeovistoChoroplethLayerTool.createTool({
+                                id: "geovisto-tool-layer-choropleth"
+                            }),
+                            GeovistoLegendTool.createTool({
+                                id: "geovisto-tool-legend"
+                            }),
+                        ])}
+                    />
+                </div>
+            </div>
+        );
     }
 }
 

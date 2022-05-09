@@ -6,7 +6,11 @@
 
 .docs-showcase-map {
     height: 60vh;
-    width: 50vw;
+    width: 100%;
+}
+
+.general-container {
+    display: block;
 }
 
 .leaflet-sidebar-header.enabled, .leaflet-sidebar-tabs>li.active, .leaflet-sidebar-tabs>ul>li.active {
