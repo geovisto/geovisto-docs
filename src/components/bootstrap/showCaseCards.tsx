@@ -11,6 +11,7 @@ import './showCaseCards.css'
 import ChoroplethImageUrl from '@site/static/img/geovistoIcons/choropleth.png';
 import MarkerImageUrl from '@site/static/img/geovistoIcons/marker.png';
 import ConnectionImageUrl from '@site/static/img/geovistoIcons/connection.png';
+import Link from "@docusaurus/Link";
 export default function GeovistoShowcase(): JSX.Element {
     return (
     <Container>
@@ -23,7 +24,9 @@ export default function GeovistoShowcase(): JSX.Element {
                             <Card.Body>
                                 <Card.Title className="titles">Choropleth</Card.Title>
                                 <Card.Img variant="bottom" className="images" src={ChoroplethImageUrl} />
-                                <Button variant="default">Show more!</Button>
+                                <Link to="/docs/tools/choropleth">
+                                    <Button variant="default">Show more!</Button>
+                                </Link>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -32,7 +35,9 @@ export default function GeovistoShowcase(): JSX.Element {
                             <Card.Body>
                                 <Card.Title className="titles">Marker</Card.Title>
                                 <Card.Img variant="bottom" className="images" src={MarkerImageUrl} width={180}/>
-                                <Button variant="default">Show more!</Button>
+                                <Link to="/docs/tools/marker">
+                                    <Button variant="default">Show more!</Button>
+                                </Link>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -41,7 +46,9 @@ export default function GeovistoShowcase(): JSX.Element {
                             <Card.Body>
                                 <Card.Title className="titles">Connection</Card.Title>
                                 <Card.Img variant="bottom" className="images" src={ConnectionImageUrl} />
-                                <Button variant="default">Show more!</Button>
+                                <Link to="/docs/tools/connection">
+                                    <Button variant="default">Show more!</Button>
+                                </Link>
                             </Card.Body>
                         </Card>
                     </Col>

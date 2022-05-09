@@ -24,8 +24,6 @@ export default class Marker extends Component<Record<string, never>, { data: unk
 
     private polygons: unknown;
     private centroids: unknown;
-    private polygons2: unknown;
-    private centroids2: unknown;
     private infodata: unknown;
     private map: React.RefObject<ReactGeovistoMap>;
 
@@ -39,7 +37,7 @@ export default class Marker extends Component<Record<string, never>, { data: unk
         // data and config can be changed
         this.state = {
             // implicit data
-            data: require('/static/data/energy_un.json'),
+            data: require('/static/data/gdp_oecd.json'),
             // implicit config
             config: require('/static/config/energy_config.json')
         };
