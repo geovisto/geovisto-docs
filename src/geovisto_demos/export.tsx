@@ -1,5 +1,11 @@
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import React from "react";
+/**
+ * This file contains exports of React wrappers with Geovisto maps
+ * They need to be exported this way, otherwise the production build will fail
+ *
+ * @author Tomas Koscielniak
+ */
 
 export function Render_Choropleth(): JSX.Element {
     return (

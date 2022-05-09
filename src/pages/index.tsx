@@ -11,6 +11,11 @@ import {
     Button,
 } from "react-bootstrap";
 
+/**
+ * This file contains implementation of landing page
+ *
+ * @author Tomas Koscielniak
+ */
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (

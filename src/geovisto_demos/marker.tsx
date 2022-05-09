@@ -15,11 +15,18 @@ import {GeovistoLegendTool} from 'geovisto-map';
 import {GeovistoTilesLayerTool} from 'geovisto-map';
 import {GeovistoMarkerLayerTool} from 'geovisto-map';
 import {GeovistoInfoTool} from "geovisto-map";
+// load markdown info files with raw loader from .txt to prevent MDX parsing
 import InfoFileRaw from '!!raw-loader!../../static/info/marker.txt';
 
 import "./marker.css";
 import "geovisto-map/dist/index.css";
 
+/**
+ * This file contains implementation of React wrapper around marker map demo
+ *
+ * @author Tomas Koscielniak
+ * @author Jiri Hynek
+ */
 export default class Marker extends Component<Record<string, never>, { data: unknown, config: Record<string, unknown> }> {
 
     private polygons: unknown;

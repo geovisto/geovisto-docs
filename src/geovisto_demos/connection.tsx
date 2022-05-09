@@ -21,8 +21,15 @@ import {GeovistoInfoTool} from "geovisto-map";
 
 import "./connection.css";
 import "geovisto-map/dist/index.css";
+// load markdown info files with raw loader from .txt to prevent MDX parsing
 import InfoFileRaw from '!!raw-loader!../../static/info/connection.txt';
 
+/**
+ * This file contains implementation of React wrapper around connection map demo
+ *
+ * @author Tomas Koscielniak
+ * @author Jiri Hynek
+ */
 export default class Connection extends Component<Record<string, never>, { data: unknown, config: Record<string, unknown> }> {
 
     private polygons: unknown;

@@ -19,8 +19,15 @@ import {GeovistoInfoTool} from "geovisto-map";
 
 import "./choropleth.css";
 import "geovisto-map/dist/index.css";
+// load markdown info files with raw loader from .txt to prevent MDX parsing
 import InfoFileRaw from '!!raw-loader!../../static/info/choropleth.txt';
 
+/**
+ * This file contains implementation of React wrapper around choropleth map demo
+ *
+ * @author Tomas Koscielniak
+ * @author Jiri Hynek
+ */
 export default class Choropleth extends Component<Record<string, never>, { data: unknown, config: Record<string, unknown> }> {
 
     private polygons: unknown;

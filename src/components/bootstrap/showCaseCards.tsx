@@ -12,6 +12,12 @@ import ChoroplethImageUrl from '@site/static/img/geovistoIcons/choropleth.png';
 import MarkerImageUrl from '@site/static/img/geovistoIcons/marker.png';
 import ConnectionImageUrl from '@site/static/img/geovistoIcons/connection.png';
 import Link from "@docusaurus/Link";
+
+/**
+ * This file contains implementation of tile showcase of Geovisto tools for landing page
+ *
+ * @author Tomas Koscielniak
+ */
 export default function GeovistoShowcase(): JSX.Element {
     return (
     <Container>
