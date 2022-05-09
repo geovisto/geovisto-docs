@@ -95,15 +95,24 @@ const config = {
             ],
           },
           {
+            title: 'Pages',
+            items: [
+              {
+                label: 'Playground',
+                to: '/playground#playground-hook',
+              },
+            ],
+          },
+          {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'GitHub',
+                href: 'https://github.com/geovisto',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'NPM',
+                href: 'https://www.npmjs.com/package/geovisto',
               },
             ],
           },

@@ -90,3 +90,7 @@ a.navbar__brand {
   border-style: none !important;
   margin-left: -5px !important;
 }
+
+[type="button"] {
+  background: none !important;
+}

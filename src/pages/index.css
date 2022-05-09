@@ -51,7 +51,13 @@
   border-color: var(--ifm-color-primary-lightest)!important;
   padding: 0.65rem 1.2rem!important;
   font-weight: 600!important;
+  color: #212529 !important;
 }
+
+.btn-default:hover {
+  color: var(--ifm-color-primary-lightest) !important;
+}
+
 
 .highlight {
   color: #a7ff0f;
@@ -74,3 +80,4 @@
 #front_image {
   width: 26rem;
 }
+

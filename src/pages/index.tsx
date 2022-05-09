@@ -56,6 +56,8 @@ export default function Home(): JSX.Element {
           <div className="container-fluid w-100 p-3 pb-lg-5 pt-lg-5 text-center dark">
             <GeovistoShowcase/>
           </div>
+          <div className="container-fluid w-100 p-3 pb-lg-5 pt-lg-5 text-center dark">
+          </div>
       </main>
     </Layout>
   );

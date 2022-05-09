@@ -16,7 +16,7 @@ export default function GeovistoShowcase(): JSX.Element {
     return (
     <Container>
         <Row>
-            <Col></Col>
+            <Col/>
             <Col xs={8}>
                 <Row className="g-4">
                     <Col>
@@ -48,7 +48,7 @@ export default function GeovistoShowcase(): JSX.Element {
                     </Col>
                 </Row>
             </Col>
-            <Col></Col>
+            <Col/>
         </Row>
     </Container>
 );
