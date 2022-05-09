@@ -22,6 +22,7 @@ import {GeovistoInfoTool} from "geovisto-map";
 import "./connection.css";
 import "geovisto-map/dist/index.css";
 // load markdown info files with raw loader from .txt to prevent MDX parsing
+// @ts-ignore
 import InfoFileRaw from '!!raw-loader!../../static/info/connection.txt';
 
 /**
@@ -72,7 +73,7 @@ export default class Connection extends Component<Record<string, never>, { data:
                 <div className="docs-showcase-map">
                     <ReactGeovistoMap
                         ref={this.map}
-                        id="choropleth"
+                        id="connection"
                         data={Geovisto.getMapDataManagerFactory().json(this.state.data)}
                         geoData={Geovisto.getGeoDataManager([
                             Geovisto.getGeoDataFactory().geojson("world polygons", this.polygons),

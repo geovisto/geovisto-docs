@@ -1,21 +1,23 @@
 // React
-import React, {Component} from "react";
+import React, { Component } from "react";
 
 // React-Geovisto
 import ReactGeovistoMap from "../react/ReactGeovistoMap";
+
 
 import {
     Geovisto,
 } from 'geovisto-map';
 
-import {GeovistoSelectionTool} from 'geovisto-map';
-import {GeovistoThemesTool} from 'geovisto-map';
-import {GeovistoSidebarTool} from 'geovisto-map';
-import {GeovistoLegendTool} from 'geovisto-map';
-import {GeovistoTilesLayerTool} from 'geovisto-map';
-import {GeovistoMarkerLayerTool} from 'geovisto-map';
-import {GeovistoInfoTool} from "geovisto-map";
+import { GeovistoSelectionTool } from 'geovisto-map';
+import { GeovistoThemesTool } from 'geovisto-map';
+import { GeovistoSidebarTool } from 'geovisto-map';
+import { GeovistoLegendTool } from 'geovisto-map';
+import { GeovistoTilesLayerTool } from 'geovisto-map';
+import { GeovistoMarkerLayerTool } from 'geovisto-map';
+import { GeovistoInfoTool } from "geovisto-map";
 // load markdown info files with raw loader from .txt to prevent MDX parsing
+// @ts-ignore
 import InfoFileRaw from '!!raw-loader!../../static/info/marker.txt';
 
 import "./marker.css";
@@ -44,7 +46,7 @@ export default class Marker extends Component<Record<string, never>, { data: unk
         // data and config can be changed
         this.state = {
             // implicit data
-            data: require('/static/data/gdp_oecd.json'),
+            data: require('/static/data/energy_un.json'),
             // implicit config
             config: require('/static/config/energy_config.json')
         };
@@ -67,7 +69,7 @@ export default class Marker extends Component<Record<string, never>, { data: unk
                 <div className="docs-showcase-map">
                     <ReactGeovistoMap
                         ref={this.map}
-                        id="choropleth"
+                        id="marker"
                         data={Geovisto.getMapDataManagerFactory().json(this.state.data)}
                         geoData={Geovisto.getGeoDataManager([
                             Geovisto.getGeoDataFactory().geojson("world centroids", this.centroids),
@@ -78,6 +80,9 @@ export default class Marker extends Component<Record<string, never>, { data: unk
                         tools={Geovisto.createMapToolsManager([
                             GeovistoSidebarTool.createTool({
                                 id: "geovisto-tool-sidebar",
+                            }),
+                            GeovistoMarkerLayerTool.createTool({
+                                id: "geovisto-tool-layer-marker"
                             }),
                             GeovistoThemesTool.createTool({
                                 id: "geovisto-tool-themes",
@@ -107,9 +112,6 @@ export default class Marker extends Component<Record<string, never>, { data: unk
                             GeovistoTilesLayerTool.createTool({
                                 id: "geovisto-tool-layer-map"
                             }),
-                            GeovistoMarkerLayerTool.createTool({
-                                id: "geovisto-tool-layer-marker"
-                            }),
                         ])}
                     />
                 </div>
@@ -117,4 +119,3 @@ export default class Marker extends Component<Record<string, never>, { data: unk
         );
     }
 }
-

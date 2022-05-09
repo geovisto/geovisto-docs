@@ -20,6 +20,7 @@ import {GeovistoInfoTool} from "geovisto-map";
 import "./choropleth.css";
 import "geovisto-map/dist/index.css";
 // load markdown info files with raw loader from .txt to prevent MDX parsing
+// @ts-ignore
 import InfoFileRaw from '!!raw-loader!../../static/info/choropleth.txt';
 
 /**

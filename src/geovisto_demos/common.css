@@ -17,3 +17,7 @@
     /* Docusaurus gives <h1> element in tab header margin. This overrides it */
     margin-bottom: 0!important;
 }
+
+.leaflet-tooltip-pane {
+    z-index: 500;
+}
