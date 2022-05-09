@@ -2,7 +2,6 @@ import React from "react";
 import {
     Button,
     Card,
-    CardGroup,
     Row, Col,
     Container,
 } from "react-bootstrap";
@@ -17,7 +16,7 @@ export default function GeovistoShowcase(): JSX.Element {
     <Container>
         <Row>
             <Col/>
-            <Col xs={8}>
+            <Col xs={8} className="mx-auto">
                 <Row className="g-4">
                     <Col>
                         <Card className="cards">
