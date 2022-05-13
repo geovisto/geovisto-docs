@@ -9,12 +9,12 @@ const config = {
   title: 'Geovisto',
   tagline: 'Open-source mapping library for generic geospatial data visualization.',
   url: 'https://geovisto.github.io',
-  baseUrl: '/geovisto-docs/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/geovisto-logo1.png',
   organizationName: 'geovisto', // Usually your GitHub org/user name.
-  projectName: 'geovisto-docs', // Usually your repo name.
+  projectName: 'geovisto.github.io', // Usually your repo name.
   plugins: ['docusaurus-plugin-sass'],
   presets: [
     [
