@@ -1,0 +1,12 @@
+.titles {
+    font-weight: bold;
+    font-size: 1.75rem;
+    color: white;
+}
+.images {
+    padding: 15%;
+}
+.cards {
+    text-align: center;
+    background-color: var(--ifm-color-primary-lightest);
+}

@@ -1,0 +1,45 @@
+---
+sidebar_position: 4
+---
+
+import {Render_Connection} from "../../src/geovisto_demos/export";
+export const Connection = () => (
+    <Render_Connection />
+);
+
+# Connection
+Connection layer provides connections between nodes (e.g. relations between countries).
+It serves as an additional function to other layers, especially to choropleth layer.
+If you click on polygon in choropleth map, while using connection layer, all of the connections and connected countries
+will be highlighted.
+Example below contains data about ***Trade in services*** for countries that are members of OECD[^1].
+
+## Example
+<Connection />
+
+### Configuration
+Configuration used in example above:
+```json
+{
+      "type": "geovisto-tool-layer-connection",
+      "id": "geovisto-tool-layer-connection",
+      "enabled": true,
+      "layerName": "Connection layer",
+      "data": {
+        "geoData": "world centroids",
+        "from": "Country",
+        "to": "Partner",
+        "animateDirection": true
+      }
+}
+```
+
+## Dimensions
+Dimensions used in Connection Layer:
+* `geoData` - polygons/centroids
+* `from` - source country
+* `to` - destination country
+* `animateDirection` - animate connections
+
+***
+[^1] [OECD](https://www.oecd.org/)

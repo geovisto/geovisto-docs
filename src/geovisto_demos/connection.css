@@ -1,0 +1,17 @@
+@import "common.css";
+.connection-container {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.connection-map {
+    height: 56vh;
+    width: 56vw;
+}
+
+#connection {
+    position: sticky;
+}
