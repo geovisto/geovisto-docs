@@ -1,5 +1,14 @@
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import React from "react";
+import {
+    Bubble,
+    Choropleth,
+    Connection,
+    Dot,
+    Heat,
+    Marker,
+    Spike,
+} from "./modules";
 /**
  * This file contains exports of React wrappers with Geovisto maps
  * They need to be exported this way, otherwise the production build will fail
@@ -7,35 +16,58 @@ import React from "react";
  * @author Tomas Koscielniak
  */
 
-export function Render_Choropleth(): JSX.Element {
-    return (
-        <BrowserOnly fallback={<div>Loading...</div>}>
-    {() => {
-        const Choropleth = require('./choropleth').default;
-        return <Choropleth />;
-    }}
+export const RenderHeat = (): JSX.Element => (
+    <BrowserOnly fallback={<div>Loading...</div>}>
+        {() => {
+            return <Heat />;
+        }}
     </BrowserOnly>
 );
-}
 
-export function Render_Marker(): JSX.Element {
-    return (
-        <BrowserOnly fallback={<div>Loading...</div>}>
-            {() => {
-                const Marker = require('./marker').default;
-                return <Marker />;
-            }}
-        </BrowserOnly>
-    );
-}
+export const RenderChoropleth = (): JSX.Element => (
+    <BrowserOnly fallback={<div>Loading...</div>}>
+        {() => {
+            return <Choropleth />;
+        }}
+    </BrowserOnly>
+);
 
-export function Render_Connection(): JSX.Element {
-    return (
-        <BrowserOnly fallback={<div>Loading...</div>}>
-            {() => {
-                const Connection = require('./connection').default;
-                return <Connection />;
-            }}
-        </BrowserOnly>
-    );
-}
+export const RenderDot = (): JSX.Element => (
+    <BrowserOnly fallback={<div>Loading...</div>}>
+        {() => {
+            return <Dot />;
+        }}
+    </BrowserOnly>
+);
+
+export const RenderBubble = (): JSX.Element => (
+    <BrowserOnly fallback={<div>Loading...</div>}>
+        {() => {
+            return <Bubble />;
+        }}
+    </BrowserOnly>
+);
+
+export const RenderSpike = (): JSX.Element => (
+    <BrowserOnly fallback={<div>Loading...</div>}>
+        {() => {
+            return <Spike />;
+        }}
+    </BrowserOnly>
+);
+
+export const RenderMarker = (): JSX.Element => (
+    <BrowserOnly fallback={<div>Loading...</div>}>
+        {() => {
+            return <Marker />;
+        }}
+    </BrowserOnly>
+);
+
+export const RenderConnection = (): JSX.Element => (
+    <BrowserOnly fallback={<div>Loading...</div>}>
+        {() => {
+            return <Connection />;
+        }}
+    </BrowserOnly>
+);

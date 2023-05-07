@@ -1,20 +1,13 @@
-// React
-import {
-    RefObject
-} from "react";
-
 // Geovisto
-import { IMapConfigManager, IMapProps } from "geovisto-map";
-
-import ReactGeovistoMap from "./ReactGeovistoMap";
+import { IMap, IMapConfigManager, IMapProps } from "geovisto";
 
 /**
  * This type provides the specification of the map props model.
- * 
+ *
  * @author Jiri Hynek
  */
 type IReactGeovistoMapProps = IMapProps & {
-    ref: RefObject<ReactGeovistoMap>,
-    config?: IMapConfigManager
-}
+    config?: IMapConfigManager;
+    ref?: React.MutableRefObject<IMap>;
+};
 export default IReactGeovistoMapProps;

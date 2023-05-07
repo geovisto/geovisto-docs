@@ -5,28 +5,26 @@ import React, { Component } from "react";
 import ReactGeovistoMap from "../react/ReactGeovistoMap";
 import {
 
-} from "geovisto-map";
-
-import loadable from '@loadable/component'
+} from "geovisto";
 
 import {
     Geovisto,
     IMap,
     IMapProps
-} from 'geovisto-map';
-
-import { GeovistoSelectionTool } from 'geovisto-map';
-import { GeovistoThemesTool } from 'geovisto-map';
-import { GeovistoFiltersTool } from 'geovisto-map';
-import { GeovistoSidebarTool } from 'geovisto-map';
-import { GeovistoLegendTool } from 'geovisto-map';
-import { GeovistoTilesLayerTool } from 'geovisto-map';
-import { GeovistoChoroplethLayerTool } from 'geovisto-map';
-import { GeovistoMarkerLayerTool } from 'geovisto-map';
-import { GeovistoConnectionLayerTool } from 'geovisto-map';
+} from 'geovisto';
 
 import "./playground.css";
-import "geovisto-map/dist/index.css";
+import "geovisto/dist/index.css";
+import { PlaygroundBar } from "./components";
+import { GeovistoSidebarTool } from "geovisto-sidebar";
+import { GeovistoFiltersTool } from "geovisto-filters";
+import { GeovistoThemesTool } from "geovisto-themes";
+import { GeovistoSelectionTool } from "geovisto-selection";
+import { GeovistoTilesLayerTool } from "geovisto-layer-tiles";
+import { GeovistoChoroplethLayerTool } from "geovisto-layer-choropleth";
+import { GeovistoMarkerLayerTool } from "geovisto-layer-marker";
+import { GeovistoConnectionLayerTool } from "geovisto-layer-connection";
+import IReactGeovistoMapProps from "../react/IReactGeovistoMapProps";
 
 /* example of screen component with grid layout and card wrapper usage */
 
@@ -46,7 +44,7 @@ export default class Playground extends Component<Record<string, never>, { data:
     private centroids2: unknown;
     private infodata: unknown;
     private infodata2: unknown;
-    private map: React.RefObject<ReactGeovistoMap>;
+    private map: React.RefObject<IMap>;
 
     public constructor(props: Record<string, never>) {
         super(props);
@@ -173,7 +171,7 @@ export default class Playground extends Component<Record<string, never>, { data:
             console.log(e);
 
             // expert map configuration
-            const config = JSON.stringify(this.map.current.getMap().export(), null, 2);
+            const config = JSON.stringify(this.state.config, null, 2);
 
             // download file
             const element = document.createElement('a');
@@ -193,34 +191,9 @@ export default class Playground extends Component<Record<string, never>, { data:
         console.log("rendering...");
         return (
             <div className="demo-container">
-                <div className="demo-toolbar">
-                    <div className="data-container">
-                        <span>Data file: </span>
-                        <select id={C_ID_select_data}>
-                            <option value="timeData.json">timeData.json</option>
-                            <option value="demo1.json">demo1.json</option>
-                            <option value="demo2.json">demo2.json</option>
-                            <option value="covidCzechDistricts.json">covid czech districts</option>
-                            <option value="covidCzechDistrictsCumulative.json">covid czech districts (cumulative)</option>
-                            <option value="ovidCzechDistrictsCategoric.json">covid czech districts (categoric)</option>
-                            <option disabled></option>
-                        </select>
-
-                        <span> | <input id={C_ID_check_data} type="checkbox"/> Custom file: </span>
-                        <input id={C_ID_input_data} type="file" accept=".json" size={3}/>
-                    </div>
-                    <div className="config-container">
-                        <input id={C_ID_check_config} type="checkbox"/>
-                        <span> Configuration file: </span>
-                        <input id={C_ID_input_config} type="file" accept=".json" size={3}/>
-
-                        <input id={C_ID_input_import} type="submit" value="Import"/>
-                        <input id={C_ID_input_export} type="submit" value="Export"/>
-                    </div>
-                </div>
+                <PlaygroundBar />
                 <div className="demo-map">
                     <ReactGeovistoMap
-                        ref={this.map}
                         id="my-geovisto-map"
                         data={Geovisto.getMapDataManagerFactory().json(this.state.data)}
                         geoData={Geovisto.getGeoDataManager([

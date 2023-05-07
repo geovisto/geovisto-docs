@@ -5,6 +5,7 @@
 }
 .images {
     padding: 15%;
+    aspect-ratio: 1/1;
 }
 .cards {
     text-align: center;

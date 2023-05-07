@@ -1,5 +1,5 @@
-@import "common.css";
-.marker-container {
+@import "../../common.css";
+.connection-container {
     font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
@@ -7,11 +7,11 @@
     align-items: center;
 }
 
-.marker-map {
+.connection-map {
     height: 56vh;
     width: 56vw;
 }
 
-#marker {
+#connection {
     position: sticky;
 }
