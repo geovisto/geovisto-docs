@@ -26,16 +26,22 @@ export const Home = (): JSX.Element => (
                 page.
             </div>
             <div className="container-fluid w-100 p-3 pb-lg-5 text-center lead light">
-                <RenderGeovisto />
+                <Render_geovisto />
             </div>
         </main>
     </Layout>
 );
 
-export const RenderGeovisto = (): JSX.Element => (
-    <BrowserOnly fallback={<div>Loading...</div>}>
-        {() => <Playground />}
-    </BrowserOnly>
-);
+
+export function Render_geovisto(): JSX.Element {
+    return (
+        <BrowserOnly fallback={<div>Loading...</div>}>
+            {() => {
+                const Playground = require('../geovisto_demos/playground').default;
+                return <Playground />;
+            }}
+        </BrowserOnly>
+    );
+}
 
 export default Home;
