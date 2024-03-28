@@ -1,0 +1,18 @@
+name: Test jsdoc
+on:
+ push:
+   branches:
+     - bp-new-pages
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Build
+      uses: codevise/documentation-js-action@v1
+      with:
+        input: ./src
+        output: ./jsdoc
