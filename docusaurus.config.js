@@ -27,18 +27,21 @@ const config = {
           editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
+          blogTitle: 'Docusaurus blog!',
+          blogDescription: 'A Docusaurus powered blog!',
+          postsPerPage: 'ALL',
+          blogSidebarCount: 0,
+          showReadingTime: false,
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: [require.resolve('./src/css/custom.css'), require.resolve('./src/css/blog.css')],
         },
       }),
     ],
   ],
-
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -69,6 +72,16 @@ const config = {
             to: 'playground#playground-hook',
             label: 'Playground',
             position: 'left',
+          },
+          {
+            to: 'documentation#documentation-hook',
+            position: 'left',
+            label: 'Documentation',
+          },
+          {
+            to: 'blog',
+            position: 'left',
+            label: 'Community',
           },
           {
             href: 'https://github.com/geovisto',
