@@ -1,0 +1,13 @@
+.row {
+    justify-content: center;
+}
+
+.col {
+    width: 100%;
+}
+
+article[itemprop="blogPost"]{
+    background-color: #FCE07E;
+    border-radius: 20px;
+    padding: 20px;
+}

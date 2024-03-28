@@ -10,11 +10,11 @@
     --ifm-color-primary-dark: #234783;
     --ifm-color-primary-darker: #21437b;
     --ifm-color-primary-darkest: #1b3766;
-    --ifm-color-primary-light: #2b57a0;
-    --ifm-color-primary-lighter: #2d5ba7;
-    --ifm-color-primary-lightest: #3367bd;
+    --ifm-color-primary-light: #43aa38;
+    --ifm-color-primary-lighter: #378B2E;
+    --ifm-color-primary-lightest: #378B2E;
     --text-color: #eaeaea;
-    --ifm-navbar-background-color: rgba(51, 103, 189, 0.84);
+    --ifm-navbar-background-color: #378B2E;
     --ifm-navbar-link-color: white;
     --ifm-navbar-link-hover-color: #a7ff0f;
 }
@@ -96,3 +96,7 @@ a.navbar__brand {
 /* [type="button"] {
   background: none !important;
 } */
+
+.footer {
+    background-color: #378B2E;
+}
