@@ -42,12 +42,17 @@
 }
 
 .dark {
-  background-color: var(--ifm-color-primary-dark);
+  background-color: var(--ifm-color-primary-light);
   color: var(--text-color);
 }
 
+.yellow {
+  background-color: #FCE07E;
+  color: black;
+}
+
 .btn-default {
-  background-color: #a7ff0f!important;
+  background-color: #378B2E!important;
   border-color: var(--ifm-color-primary-lightest)!important;
   padding: 0.65rem 1.2rem!important;
   font-weight: 600!important;

@@ -40,8 +40,11 @@ export const Home = (): JSX.Element => (
     >
         <HomepageHeader />
         <main>
-            <div className="container-fluid light">
-                <div className="container-sm w-100 p-3 pt-lg-5 text-center lead light">
+            <div className="container-fluid w-100 p-3 pt-lg-5 text-center display-6">
+                About Geovisto
+            </div>
+            <div className="container-fluid">
+                <div className="container-sm w-100 p-3 pt-lg-5 text-center lead">
                     Geovisto is a modular library written in TypeScript that
                     provides multiple layers for geospatial data visualization.
                     It’s user interface enables user defined data mapping to
@@ -51,31 +54,60 @@ export const Home = (): JSX.Element => (
                     of user-defined map configurations.
                 </div>
             </div>
-            <div className="container-fluid w-100 p-3 pt-lg-5 text-center display-6 light">
-                Tutorial
+
+
+            <div className="container-fluid w-100 p-3 pt-lg-5 text-center display-6 yellow">
+                Learn Geovisto
             </div>
-            <div className="container-fluid w-100 p-3 pb-lg-5 text-center lead light">
+            <div className="container-fluid w-100 p-3 pb-lg-5 text-center lead yellow">
                 Don't know how to start using the map? Try tutorial!
             </div>
-            <div className="container-fluid w-100 p-3 pb-lg-5 text-center lead light">
+
+            <div className="container-fluid w-100 p-3 pb-lg-5 text-center lead yellow">
                 <Link to="/docs/intro" className="pe-lg-3">
                     <Button variant="default">Get started</Button>
                 </Link>
+            </div>
+
+
+            <div className="container-fluid w-100 p-3 pt-lg-5 text-center display-6">
+                Try Yourself
+            </div>
+            <div className="container-fluid w-100 p-3 pb-lg-5 text-center lead">
+                You can try our online editor with our exemplary files or create your own.
+            </div>
+            <div className="container-fluid w-100 p-3 pb-lg-5 text-center lead">
+
                 <Link to="/playground#playground-hook" className="ps-lg-3">
-                    <Button variant="default">Playground</Button>
+                    <Button variant="default">Try Playground</Button>
                 </Link>
             </div>
+
+
             <div className="container-fluid w-100 p-3 pt-lg-5 text-center display-6 dark">
-                Geovisto layers
+                Geovisto Layers
             </div>
             <div className="container-fluid w-100 p-3 pb-lg-5 text-center dark lead">
-                Geovisto offers several methods to visualize geodata, which are
-                listed below and you can try all of them out!
+                Geovisto offers several methods to visualize geodata, which are listed below and you can try all of them out!
             </div>
             <div className="container-fluid w-100 p-3 pb-lg-5 pt-lg-5 text-center dark">
                 <GeovistoShowcase />
             </div>
             <div className="container-fluid w-100 p-3 pb-lg-5 pt-lg-5 text-center dark"></div>
+
+
+            <div className="container-fluid w-100 p-3 pt-lg-5 text-center display-6">
+                Our Community
+            </div>
+            <div className="container-fluid w-100 p-3 pb-lg-5 text-center lead">
+                You can try our online editor with our exemplary files or create your own.
+            </div>
+            <div className="container-fluid w-100 p-3 pb-lg-5 text-center lead">
+
+                <Link to="/playground#playground-hook" className="ps-lg-3">
+                    <Button variant="default">Try Playground</Button>
+                </Link>
+            </div>
         </main>
     </Layout>
 );
