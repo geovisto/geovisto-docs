@@ -7,15 +7,16 @@
 }
 
 .demo-map {
-    height: 65vh;
-    width: 70vw;
+    height: 50vh;
+    width: 100%;
+    padding-top: 1%;
 }
 
 .demo-toolbar {
-    width: 70vw;
+    width: 100%;
     font-size: 1rem;
     background-color: var(--ifm-color-primary-lightest);
-    padding: 1rem;
+    padding: 0.5rem;
     color: var(--text-color);
 }
 
@@ -36,7 +37,6 @@ input[type=file]::file-selector-button, input[type=submit] {
     background-color: #a7ff0f;
     border-color: var(--ifm-color-primary-lightest);
     padding: 0.2rem 0.55rem;
-    font-weight: 600;
     display: inline-block;
     line-height: 1.5;
     color: #212529;
@@ -52,11 +52,46 @@ input[type=file]::file-selector-button, input[type=submit] {
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-input[type=submit] {
-    margin-left: 1%;
-    margin-right: 1%;
-}
 
 .leaflet-tooltip-pane {
     z-index: 500;
+}
+
+
+.editors{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50vh;
+}
+
+.editor {
+    display: flex;
+    flex-direction: column;
+    width: 33.3vw;
+}
+
+.editor textarea{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(63, 63, 63);
+    resize: none;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+
+}
+
+.choose-file {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.file{
+    flex-shrink: 2;
+}
+
+select {
+    width: 100%;
 }
