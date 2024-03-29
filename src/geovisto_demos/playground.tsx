@@ -24,6 +24,13 @@ import { GeovistoTilesLayerTool } from "geovisto-layer-tiles";
 import { GeovistoChoroplethLayerTool } from "geovisto-layer-choropleth";
 import { GeovistoMarkerLayerTool } from "geovisto-layer-marker";
 import { GeovistoConnectionLayerTool } from "geovisto-layer-connection";
+import { GeovistoBubbleLayerTool } from "geovisto-layer-bubble";
+import { GeovistoDotLayerTool } from "geovisto-layer-dot";
+import { GeovistoHeatLayerTool } from "geovisto-layer-heat";
+import { GeovistoSpikeLayerTool } from "geovisto-layer-spike";
+import { GeovistoTimelineTool } from "geovisto-timeline";
+import { GeovistoInfoTool } from "geovisto-info";
+
 import IReactGeovistoMapProps from "../react/IReactGeovistoMapProps";
 
 /* example of screen component with grid layout and card wrapper usage */
@@ -440,6 +447,27 @@ export default class Playground extends Component<Record<string, never>, { data:
                                     }),
                                     GeovistoConnectionLayerTool.createTool({
                                         id: "geovisto-tool-layer-connection"
+                                    }),
+                                    GeovistoBubbleLayerTool.createTool({
+                                        id: "geovisto-tool-layer-bubble"
+                                    }),
+                                    GeovistoDotLayerTool.createTool({
+                                        id: "geovisto-tool-layer-dot"
+                                    }),
+
+                                    GeovistoHeatLayerTool.createTool({
+                                        id: "geovisto-tool-layer-heat"
+                                    }),
+
+                                    GeovistoSpikeLayerTool.createTool({
+                                        id: "geovisto-tool-layer-spike"
+                                    }),
+
+                                    GeovistoTimelineTool.createTool({
+                                        id: "geovisto-tool-timeline"
+                                    }),
+                                    GeovistoInfoTool.createTool({
+                                        id: "geovisto-tool-info"
                                     }),
                                 ])} />
                         </div>
