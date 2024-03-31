@@ -48,6 +48,7 @@ const C_ID_input_geojson_export = "leaflet-combined-map-input-export-geojson";
 export default class Playground extends Component<Record<string, never>, { data: unknown, config: Record<string, unknown>, geojson: Array<any>}> {
 
     private map: React.RefObject<IMap>;
+    private infodata: unknown
 
     public constructor(props: Record<string, never>) {
         super(props);
@@ -59,12 +60,15 @@ export default class Playground extends Component<Record<string, never>, { data:
             // implicit config
             config: require('/static/config/config.json'),
             // implicit geojson
-            geojson: []
-
+            geojson: [],
+            // implicit info
         };
 
         // reference to the rendered map
         this.map = React.createRef();
+        this.infodata = require("/static/info/test.md");
+        
+        //console.log((this.infodata as string));
 
     }
 
@@ -454,20 +458,23 @@ export default class Playground extends Component<Record<string, never>, { data:
                                     GeovistoDotLayerTool.createTool({
                                         id: "geovisto-tool-layer-dot"
                                     }),
-
                                     GeovistoHeatLayerTool.createTool({
                                         id: "geovisto-tool-layer-heat"
                                     }),
-
                                     GeovistoSpikeLayerTool.createTool({
                                         id: "geovisto-tool-layer-spike"
                                     }),
-
                                     GeovistoTimelineTool.createTool({
                                         id: "geovisto-tool-timeline"
                                     }),
                                     GeovistoInfoTool.createTool({
                                         id: "geovisto-tool-info"
+                                        //manager: GeovistoInfoTool.createInfoManager([
+                                        //    GeovistoInfoTool.getInfoDataFactory().markdown(
+                                        //    "General",
+                                        //    (this.infodata as any).default
+                                        //    )
+                                        //])
                                     }),
                                 ])} />
                         </div>

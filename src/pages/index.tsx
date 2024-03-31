@@ -5,10 +5,10 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Link from "@docusaurus/Link";
 import "./index.css";
 // @ts-ignore
-import GeovistoShowcase from "@site/src/components/bootstrap/showCaseCards";
-// @ts-ignore
 import GeovistoLogo from "@site/static/img/geovisto-logo1.png";
 import { Button } from "react-bootstrap";
+import { Layers } from "../components/bootstrap/layers/layers";
+import { Community } from "../components/bootstrap/community/community";
 
 /**
  * This file contains implementation of landing page
@@ -84,30 +84,14 @@ export const Home = (): JSX.Element => (
             </div>
 
 
-            <div className="container-fluid w-100 p-3 pt-lg-5 text-center display-6 dark">
-                Geovisto Layers
-            </div>
-            <div className="container-fluid w-100 p-3 pb-lg-5 text-center dark lead">
-                Geovisto offers several methods to visualize geodata, which are listed below and you can try all of them out!
-            </div>
-            <div className="container-fluid w-100 p-3 pb-lg-5 pt-lg-5 text-center dark">
-                <GeovistoShowcase />
-            </div>
-            <div className="container-fluid w-100 p-3 pb-lg-5 pt-lg-5 text-center dark"></div>
+            {/*Geovisto Layers*/}
+            <Layers />
 
 
-            <div className="container-fluid w-100 p-3 pt-lg-5 text-center display-6">
-                Our Community
-            </div>
-            <div className="container-fluid w-100 p-3 pb-lg-5 text-center lead">
-                You can try our online editor with our exemplary files or create your own.
-            </div>
-            <div className="container-fluid w-100 p-3 pb-lg-5 text-center lead">
+            {/*Community*/}
+            <Community />
 
-                <Link to="/playground#playground-hook" className="ps-lg-3">
-                    <Button variant="default">Try Playground</Button>
-                </Link>
-            </div>
+
         </main>
     </Layout>
 );
