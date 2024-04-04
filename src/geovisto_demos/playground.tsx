@@ -68,12 +68,6 @@ export default class Playground extends Component<Record<string, never>, { data:
         this.map = React.createRef();
         this.infodata = require("/static/info/test.md");
         
-        //console.log((this.infodata as string));
-
-    }
-
-    private handleEvent() {
-        console.log("handle change")
     }
     
     public  downloadGeojson = async (name) => {
