@@ -12,7 +12,8 @@ jobs:
     - uses: actions/checkout@v1
 
     - name: Build
-      uses: codevise/documentation-js-action@v1
+      uses: andstor/jsdoc-action@v1
       with:
-        input: ./src
-        output: ./jsdoc
+        source_dir: ./src
+        recurse: true
+        output_dir: ./out
