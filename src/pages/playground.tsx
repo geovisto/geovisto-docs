@@ -25,6 +25,7 @@ export const Home = (): JSX.Element => (
 );
 
 
+
 export function Render_geovisto(): JSX.Element {
     return (
         <BrowserOnly fallback={<div>Loading...</div>}>
