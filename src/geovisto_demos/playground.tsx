@@ -66,8 +66,7 @@ export default class Playground extends Component<Record<string, never>, { data:
 
         // reference to the rendered map
         this.map = React.createRef();
-        this.infodata = require("/static/info/test.md");
-        
+        this.infodata = require("!!raw-loader!/static/info/test.md");
     }
     
     public  downloadGeojson = async (name) => {
@@ -462,13 +461,13 @@ export default class Playground extends Component<Record<string, never>, { data:
                                         id: "geovisto-tool-timeline"
                                     }),
                                     GeovistoInfoTool.createTool({
-                                        id: "geovisto-tool-info"
-                                        //manager: GeovistoInfoTool.createInfoManager([
-                                        //    GeovistoInfoTool.getInfoDataFactory().markdown(
-                                        //    "General",
-                                        //    (this.infodata as any).default
-                                        //    )
-                                        //])
+                                        id: "geovisto-tool-info",
+                                        manager: GeovistoInfoTool.createInfoManager([
+                                            GeovistoInfoTool.getInfoDataFactory().markdown(
+                                            "General",
+                                            (this.infodata as any).default
+                                            )
+                                        ])
                                     }),
                                 ])} />
                         </div>
