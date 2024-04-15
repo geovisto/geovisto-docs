@@ -1,8 +1,8 @@
-# Community 2
+# Community 4
 
 ---
   - name: Joel Marcey
-  - title: Co-creator of Docusaurus 2
+  - title: Co-creator of Docusaurus 4
   - url: https://github.com/JoelMarcey
 ---
 
