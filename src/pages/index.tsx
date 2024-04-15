@@ -9,6 +9,8 @@ import GeovistoLogo from "@site/static/img/geovisto-logo1.png";
 import { Button } from "react-bootstrap";
 import { Layers } from "../components/bootstrap/layers/layers";
 import { Community } from "../components/bootstrap/community/community";
+import { Features } from "../components/bootstrap/features/features";
+
 
 /**
  * This file contains implementation of landing page
@@ -55,6 +57,8 @@ export const Home = (): JSX.Element => (
                 </div>
             </div>
 
+            <Features/>
+
 
             <div className="container-fluid w-100 p-3 pt-lg-5 text-center display-6 yellow">
                 Learn Geovisto
@@ -69,14 +73,13 @@ export const Home = (): JSX.Element => (
                 </Link>
             </div>
 
-
-            <div className="container-fluid w-100 p-3 pt-lg-5 text-center display-6">
+            <div className="container-fluid w-100 p-3 pt-lg-5 text-center display-6 yellow">
                 Try Yourself
             </div>
-            <div className="container-fluid w-100 p-3 pb-lg-5 text-center lead">
+            <div className="container-fluid w-100 p-3 pb-lg-5 text-center lead yellow">
                 You can try our online editor with our exemplary files or create your own.
             </div>
-            <div className="container-fluid w-100 p-3 pb-lg-5 text-center lead">
+            <div className="container-fluid w-100 p-3 pb-lg-5 text-center lead yellow">
 
                 <Link to="/playground#playground-hook" className="ps-lg-3">
                     <Button variant="default">Try Playground</Button>

@@ -52,7 +52,7 @@ export const Layers = () => {
         [].forEach.call(elems, function(el) {
             el.classList.remove("active");
         });
-        e.target.className = "active";
+        e.target.classList.add("active");
         switch (e.target.id) {
             case "Choropleth":
                 setCardState({
@@ -108,7 +108,7 @@ export const Layers = () => {
 
 
     return (
-        <div className="container-fluid dark">
+        <div className="layers container-fluid dark">
             <div className="w-100 p-3 pt-lg-5 text-center display-6 ">
                 Geovisto Layers
             </div>

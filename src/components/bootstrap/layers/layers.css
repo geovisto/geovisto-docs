@@ -70,5 +70,7 @@
     color: rgb(90, 90, 90);
 }
 
-
+.tabs__nav a {
+    cursor: pointer;
+}
 
