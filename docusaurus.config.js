@@ -15,7 +15,17 @@ const config = {
   favicon: 'img/geovisto-logo1.png',
   organizationName: 'geovisto', // Usually your GitHub org/user name.
   projectName: 'geovisto.github.io', // Usually your repo name.
-  plugins: ['docusaurus-plugin-sass'],
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'docs-geovisto',
+        path: 'docs-geovisto',
+        routeBasePath: 'docs-geovisto',
+        sidebarPath: require.resolve('./sidebars.js'),
+      }, 
+    ],
+  ],
   presets: [
     [
       'classic',
@@ -39,6 +49,7 @@ const config = {
         theme: {
           customCss: [require.resolve('./src/css/custom.css'), require.resolve('./src/css/blog.css')],
         },
+
       }),
     ],
   ],
@@ -74,9 +85,10 @@ const config = {
             position: 'left',
           },
           {
-            to: 'documentation#documentation-hook',
+            to: '/docs-geovisto',
             position: 'left',
             label: 'Documentation',
+            activeBaseRegex: `/docs-geovisto/`,
           },
           {
             to: 'blog',
