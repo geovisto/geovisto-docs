@@ -9,20 +9,22 @@ const C_ID_input_config = "leaflet-combined-map-input-config";
 const C_ID_input_config_export = "leaflet-combined-map-input-export-config";
 
 const PlaygroundBarConfig = (props) => {
+    const [isLoading, setIsLoading] = useState(false);
+
     const [state, setState] = useState({
         optionsLoaded: false,
         options: [],
-        isLoading: false,
-        value: undefined
+        value: undefined,
     });
 
     const handleLoadOptions = async () => {
         let options = [];
+        setIsLoading(true);
         const response = (await files()).config
         response.map((option) => {
             const newOption = {
                 value: option,
-                label: option
+                label: option.split('.')[0]
             };
             options.push(newOption);
         });
@@ -30,21 +32,25 @@ const PlaygroundBarConfig = (props) => {
         setState({
             optionsLoaded: true,
             options: options,
-            isLoading: false,
             value: undefined
         });
+        setIsLoading(false);
+
     };
 
     const maybeLoadOptions = () => {
         if (!state.optionsLoaded) {
-            state.isLoading = true;
             handleLoadOptions();
         }
     };
 
-    const handleChange = e => {
-        state.value = e.value;
-        props.callback(e.value);
+    const handleChange = async (e) => {
+        state.value = e;
+        setIsLoading(true);
+        const response = await fetch('https://avi278.github.io/resources/config/' + e.value);
+        const config = await response.json();
+        props.callback(config);
+        setIsLoading(false);
     }
 
     
@@ -56,7 +62,7 @@ const PlaygroundBarConfig = (props) => {
                 <Select
                     id={C_ID_select_config}
                     value={state.value}
-                    isLoading={state.isLoading}
+                    isLoading={isLoading}
                     options={state.options}
                     onFocus={maybeLoadOptions}
                     onChange={handleChange}
@@ -73,7 +79,7 @@ const PlaygroundBarConfig = (props) => {
                     />
                 </div>
 
-                <input id={C_ID_input_config_export} type="submit" value="Export" />
+                <input id={C_ID_input_config_export} type="submit" value="Export" className="btn btn-default"/>
             </div>
         </div>
     );

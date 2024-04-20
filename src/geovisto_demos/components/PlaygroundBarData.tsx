@@ -9,6 +9,8 @@ const C_ID_input_data = "leaflet-combined-map-input-data";
 const C_ID_input_data_export = "leaflet-combined-map-input-export-data";
 
 const PlaygroundBarData = (props) => {
+    const [isLoading, setIsLoading] = useState(false);
+
     const [state, setState] = useState({
         optionsLoaded: false,
         options: [],
@@ -18,11 +20,12 @@ const PlaygroundBarData = (props) => {
 
     const handleLoadOptions = async () => {
         let options = [];
+        setIsLoading(true);
         const response = (await files()).data
         response.map((option) => {
             const newOption = {
                 value: option,
-                label: option
+                label: option.split('.')[0]
             };
             options.push(newOption);
         });
@@ -33,18 +36,22 @@ const PlaygroundBarData = (props) => {
             isLoading: false,
             value: undefined
         });
+        setIsLoading(false);
     };
 
     const maybeLoadOptions = () => {
         if (!state.optionsLoaded) {
-            state.isLoading = true;
             handleLoadOptions();
         }
     };
 
-    const handleChange = e => {
-        state.value = e.value;
-        props.callback(e.value);
+    const handleChange = async (e) => {
+        setIsLoading(true);
+        state.value = e;
+        const response = await fetch('https://avi278.github.io/resources/data/' + e.value);
+        const data = await response.json();
+        props.callback(data);
+        setIsLoading(false);
     }
 
     return (
@@ -54,7 +61,7 @@ const PlaygroundBarData = (props) => {
                 <Select
                     id={C_ID_select_data}
                     value={state.value}
-                    isLoading={state.isLoading}
+                    isLoading={isLoading}
                     options={state.options}
                     onFocus={maybeLoadOptions}
                     onChange={handleChange}
@@ -71,7 +78,7 @@ const PlaygroundBarData = (props) => {
                         size={3}
                     />
                 </div>
-                <input id={C_ID_input_data_export} type="submit" value="Export" />
+                <input id={C_ID_input_data_export} type="submit" value="Export" className="btn btn-default"/>
             </div>
         </div>
     );

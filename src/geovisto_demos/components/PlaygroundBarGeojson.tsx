@@ -1,6 +1,7 @@
 import React, { useState} from "react";
 import {files} from "../api";
 import Select from "react-select";
+
 /* example of screen component with grid layout and card wrapper usage */
 
 const C_ID_select_geojson = "leaflet-combined-map-select-geojson";
@@ -8,6 +9,7 @@ const C_ID_input_geojson = "leaflet-combined-map-input-geojson";
 const C_ID_input_geojson_export = "leaflet-combined-map-input-export-geojson";
 
 const PlaygroundBarGeojson = (props) => {
+    const [isLoading, setIsLoading] = useState(false);
 
     const [state, setState] = useState({
         optionsLoaded: false,
@@ -18,11 +20,12 @@ const PlaygroundBarGeojson = (props) => {
 
     const handleLoadOptions = async () => {
         let options = [];
+        setIsLoading(true);
         const response = (await files()).geo
         response.map((option) => {
             const newOption = {
                 value: option,
-                label: option
+                label: option.split('.')[0]
             };
             options.push(newOption);
         });
@@ -33,18 +36,22 @@ const PlaygroundBarGeojson = (props) => {
             isLoading: false,
             value: undefined
         });
+        setIsLoading(false);
     };
 
     const maybeLoadOptions = () => {
         if (!state.optionsLoaded) {
-            state.isLoading = true;
             handleLoadOptions();
         }
     };
 
-    const handleChange = e => {
-        state.value = e.value;
-        props.callback(e.value);
+    const handleChange = async (e) => {
+        setIsLoading(true);
+        state.value = e;
+        const response = await fetch('https://avi278.github.io/resources/geojson/' + e.value);
+        const geojson = await response.json();
+        props.callback(e.value, geojson);
+        setIsLoading(false);
     }
 
     
@@ -56,7 +63,7 @@ const PlaygroundBarGeojson = (props) => {
                 <Select
                     id={C_ID_select_geojson}
                     value={state.value}
-                    isLoading={state.isLoading}
+                    isLoading={isLoading}
                     options={state.options}
                     onFocus={maybeLoadOptions}
                     onChange={handleChange}
@@ -73,7 +80,7 @@ const PlaygroundBarGeojson = (props) => {
                     />
                 </div>
 
-                <input id={C_ID_input_geojson_export} type="submit" value="Export" />
+                <input id={C_ID_input_geojson_export} type="submit" value="Export" className="btn btn-default export"/>
             </div>
         </div>
     );
