@@ -48,11 +48,11 @@ export const Layers = () => {
 
 
     const handleChange = (e) => {
-        var elems = document.querySelectorAll(".active");
+        var elems = document.querySelectorAll(".tab__active");
         [].forEach.call(elems, function(el) {
-            el.classList.remove("active");
+            el.classList.remove("tab__active");
         });
-        e.target.classList.add("active");
+        e.target.classList.add("tab__active");
         switch (e.target.id) {
             case "Choropleth":
                 setCardState({
@@ -108,7 +108,7 @@ export const Layers = () => {
 
 
     return (
-        <div className="layers container-fluid dark">
+        <div className="layers container-fluid grey-blue">
             <div className="w-100 p-3 pt-lg-5 text-center display-6 ">
                 Geovisto Layers
             </div>
@@ -120,7 +120,7 @@ export const Layers = () => {
                     <nav className="tabs__nav">
                         <ul onClick={handleChange}>
                             <li>
-                                <a id="Choropleth" className="active tabs__link">
+                                <a id="Choropleth" className="tabs__link tab__active">
                                     Choropleth Layer
                                 </a>
                             </li>

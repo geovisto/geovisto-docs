@@ -41,33 +41,25 @@
 
 
 
-.tabs__link {
-    color: aqua;
-}
 
 .tabs{
     padding-left: 30px;
     padding-right: 30px;
 }
 
-.tabs__nav a{
+.tabs__nav > ul > li > a{
     font-size: 20px;
-    color: rgb(235, 231, 231);
+    color: var(--text-color-light);
 }
 
-.tabs__nav li{
-    font-size: 20px;
-    color: rgb(190, 190, 190);
+.tabs__nav > ul > li > a:hover{
+    font-size: 25px;
+    color: var(--text-color-lighter);
 }
 
-.tabs__nav a:hover{
-    font-size: 20px;
-    color: rgb(190, 190, 190);
-}
-
-.tabs__nav li .active{
-    font-size: 30px;
-    color: rgb(90, 90, 90);
+.tab__active{
+    font-size: 35px!important;
+    color: var(--text-color-dark)!important;
 }
 
 .tabs__nav a {
