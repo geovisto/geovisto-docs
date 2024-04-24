@@ -1,83 +1,34 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / DotLayerToolState
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / DotLayerToolState
 
 # Class: DotLayerToolState
 
 This class provide functions for using the state of the layer tool.
 
-**`Author`**
+## Author
 
 Vladimir Korencik
 
-## Hierarchy
+## Extends
 
 - [`LayerToolState`](LayerToolState.md)
-
-  ↳ **`DotLayerToolState`**
 
 ## Implements
 
 - [`IDotLayerToolState`](../interfaces/IDotLayerToolState.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](DotLayerToolState.md#constructor)
-
-### Properties
-
-- [categoryColorRules](DotLayerToolState.md#categorycolorrules)
-- [latlngs](DotLayerToolState.md#latlngs)
-- [layer](DotLayerToolState.md#layer)
-- [manager](DotLayerToolState.md#manager)
-- [markers](DotLayerToolState.md#markers)
-
-### Methods
-
-- [deserialize](DotLayerToolState.md#deserialize)
-- [deserializeDimensions](DotLayerToolState.md#deserializedimensions)
-- [getCategoryColorRules](DotLayerToolState.md#getcategorycolorrules)
-- [getDimensions](DotLayerToolState.md#getdimensions)
-- [getFiltersManager](DotLayerToolState.md#getfiltersmanager)
-- [getIcon](DotLayerToolState.md#geticon)
-- [getId](DotLayerToolState.md#getid)
-- [getLabel](DotLayerToolState.md#getlabel)
-- [getLayer](DotLayerToolState.md#getlayer)
-- [getLayerItems](DotLayerToolState.md#getlayeritems)
-- [getLayerName](DotLayerToolState.md#getlayername)
-- [getMap](DotLayerToolState.md#getmap)
-- [getMapObject](DotLayerToolState.md#getmapobject)
-- [getMarkers](DotLayerToolState.md#getmarkers)
-- [getType](DotLayerToolState.md#gettype)
-- [getWorkData](DotLayerToolState.md#getworkdata)
-- [initialize](DotLayerToolState.md#initialize)
-- [isEnabled](DotLayerToolState.md#isenabled)
-- [serialize](DotLayerToolState.md#serialize)
-- [setCategoryColorRules](DotLayerToolState.md#setcategorycolorrules)
-- [setDimensions](DotLayerToolState.md#setdimensions)
-- [setEnabled](DotLayerToolState.md#setenabled)
-- [setFiltersManager](DotLayerToolState.md#setfiltersmanager)
-- [setIcon](DotLayerToolState.md#seticon)
-- [setId](DotLayerToolState.md#setid)
-- [setLabel](DotLayerToolState.md#setlabel)
-- [setLayer](DotLayerToolState.md#setlayer)
-- [setLayerItems](DotLayerToolState.md#setlayeritems)
-- [setLayerName](DotLayerToolState.md#setlayername)
-- [setMap](DotLayerToolState.md#setmap)
-- [setMarkers](DotLayerToolState.md#setmarkers)
-- [setWorkData](DotLayerToolState.md#setworkdata)
-
 ## Constructors
 
-### constructor
+### new DotLayerToolState()
 
-• **new DotLayerToolState**(`tool`): [`DotLayerToolState`](DotLayerToolState.md)
+> **new DotLayerToolState**(`tool`): [`DotLayerToolState`](DotLayerToolState.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `tool` | [`IDotLayerTool`](../interfaces/IDotLayerTool.md)\<[`IDotLayerToolProps`](../modules.md#idotlayertoolprops), [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md), [`IDotLayerToolState`](../interfaces/IDotLayerToolState.md)\<[`IDotLayerToolProps`](../modules.md#idotlayertoolprops), [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md), [`IDotLayerToolConfig`](../modules.md#idotlayertoolconfig), \{ `category?`: `string` ; `categoryColor?`: `string` ; `categoryColorOp?`: `string` ; `categoryColorValue?`: `string` ; `color?`: `string` ; `latitude?`: `string` ; `longitude?`: `string`  }, \{ `category`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `categoryColor`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `categoryColorOp`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> ; `categoryColorValue`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `color`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `latitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `longitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>, [`IDotLayerToolConfig`](../modules.md#idotlayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IDotLayerToolConfig`](../modules.md#idotlayertoolconfig)\>\> |
+• **tool**: [`IDotLayerTool`](../interfaces/IDotLayerTool.md)\<[`IDotLayerToolProps`](../type-aliases/IDotLayerToolProps.md), [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md), [`IDotLayerToolState`](../interfaces/IDotLayerToolState.md)\<[`IDotLayerToolProps`](../type-aliases/IDotLayerToolProps.md), [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md), [`IDotLayerToolConfig`](../type-aliases/IDotLayerToolConfig.md), `object`, `object`\>, [`IDotLayerToolConfig`](../type-aliases/IDotLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IDotLayerToolConfig`](../type-aliases/IDotLayerToolConfig.md)\>\>
 
 #### Returns
 
@@ -85,75 +36,73 @@ Vladimir Korencik
 
 #### Overrides
 
-[LayerToolState](LayerToolState.md).[constructor](LayerToolState.md#constructor)
+[`LayerToolState`](LayerToolState.md).[`constructor`](LayerToolState.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts:38](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L38)
+[tools/layers/dot/model/internal/tool/DotLayerToolState.ts:38](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L38)
 
 ## Properties
 
 ### categoryColorRules
 
-• `Private` **categoryColorRules**: `ICategoryColorRules`[]
+> `private` **categoryColorRules**: `ICategoryColorRules`[]
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts:33](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L33)
+[tools/layers/dot/model/internal/tool/DotLayerToolState.ts:33](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L33)
 
-___
+***
 
 ### latlngs
 
-• `Private` **latlngs**: `IWorkData`[]
+> `private` **latlngs**: `any`[]
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts:34](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L34)
+[tools/layers/dot/model/internal/tool/DotLayerToolState.ts:34](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L34)
 
-___
+***
 
-### layer
+### layer?
 
-• `Private` `Optional` **layer**: `LayerGroup`\<`any`\>
+> `private` `optional` **layer**: `any`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts:31](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L31)
+[tools/layers/dot/model/internal/tool/DotLayerToolState.ts:31](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L31)
 
-___
+***
 
 ### manager
 
-• `Private` **manager**: [`IMapFilterManager`](../interfaces/IMapFilterManager.md)
+> `private` **manager**: [`IMapFilterManager`](../interfaces/IMapFilterManager.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts:35](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L35)
+[tools/layers/dot/model/internal/tool/DotLayerToolState.ts:35](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L35)
 
-___
+***
 
 ### markers
 
-• `Private` **markers**: `CircleMarker`\<`any`\>[]
+> `private` **markers**: `CircleMarker`[]
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L32)
+[tools/layers/dot/model/internal/tool/DotLayerToolState.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L32)
 
 ## Methods
 
-### deserialize
+### deserialize()
 
-▸ **deserialize**(`config`): `void`
+> **deserialize**(`config`): `void`
 
 The metod takes config and deserializes the values.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `config` | [`IDotLayerToolConfig`](../modules.md#idotlayertoolconfig) |
+• **config**: [`IDotLayerToolConfig`](../type-aliases/IDotLayerToolConfig.md)
 
 #### Returns
 
@@ -161,36 +110,41 @@ The metod takes config and deserializes the values.
 
 #### Implementation of
 
-[IDotLayerToolState](../interfaces/IDotLayerToolState.md).[deserialize](../interfaces/IDotLayerToolState.md#deserialize)
+[`IDotLayerToolState`](../interfaces/IDotLayerToolState.md).[`deserialize`](../interfaces/IDotLayerToolState.md#deserialize)
 
 #### Overrides
 
-[LayerToolState](LayerToolState.md).[deserialize](LayerToolState.md#deserialize)
+[`LayerToolState`](LayerToolState.md).[`deserialize`](LayerToolState.md#deserialize)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts:91](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L91)
+[tools/layers/dot/model/internal/tool/DotLayerToolState.ts:91](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L91)
 
-___
+***
 
-### deserializeDimensions
+### deserializeDimensions()
 
-▸ **deserializeDimensions**(`dimensionsConfig`): `void`
+> **deserializeDimensions**(`dimensionsConfig`): `void`
 
 It sets the marker layer dimensions property of tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimensionsConfig` | `Object` |
-| `dimensionsConfig.category?` | `string` |
-| `dimensionsConfig.categoryColor?` | `string` |
-| `dimensionsConfig.categoryColorOp?` | `string` |
-| `dimensionsConfig.categoryColorValue?` | `string` |
-| `dimensionsConfig.color?` | `string` |
-| `dimensionsConfig.latitude?` | `string` |
-| `dimensionsConfig.longitude?` | `string` |
+• **dimensionsConfig**
+
+• **dimensionsConfig.category?**: `string`
+
+• **dimensionsConfig.categoryColor?**: `string`
+
+• **dimensionsConfig.categoryColorOp?**: `string`
+
+• **dimensionsConfig.categoryColorValue?**: `string`
+
+• **dimensionsConfig.color?**: `string`
+
+• **dimensionsConfig.latitude?**: `string`
+
+• **dimensionsConfig.longitude?**: `string`
 
 #### Returns
 
@@ -198,21 +152,21 @@ It sets the marker layer dimensions property of tool state.
 
 #### Implementation of
 
-[IDotLayerToolState](../interfaces/IDotLayerToolState.md).[deserializeDimensions](../interfaces/IDotLayerToolState.md#deserializedimensions)
+[`IDotLayerToolState`](../interfaces/IDotLayerToolState.md).[`deserializeDimensions`](../interfaces/IDotLayerToolState.md#deserializedimensions)
 
 #### Overrides
 
-[LayerToolState](LayerToolState.md).[deserializeDimensions](LayerToolState.md#deserializedimensions)
+[`LayerToolState`](LayerToolState.md).[`deserializeDimensions`](LayerToolState.md#deserializedimensions)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts:118](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L118)
+[tools/layers/dot/model/internal/tool/DotLayerToolState.ts:118](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L118)
 
-___
+***
 
-### getCategoryColorRules
+### getCategoryColorRules()
 
-▸ **getCategoryColorRules**(): `ICategoryColorRules`[]
+> **getCategoryColorRules**(): `ICategoryColorRules`[]
 
 #### Returns
 
@@ -220,51 +174,69 @@ ___
 
 #### Implementation of
 
-[IDotLayerToolState](../interfaces/IDotLayerToolState.md).[getCategoryColorRules](../interfaces/IDotLayerToolState.md#getcategorycolorrules)
+[`IDotLayerToolState`](../interfaces/IDotLayerToolState.md).[`getCategoryColorRules`](../interfaces/IDotLayerToolState.md#getcategorycolorrules)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts:226](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L226)
+[tools/layers/dot/model/internal/tool/DotLayerToolState.ts:226](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L226)
 
-___
+***
 
-### getDimensions
+### getDimensions()
 
-▸ **getDimensions**(): `Object`
+> **getDimensions**(): `object`
 
 It returns the layer dimensions property of the tool state.
 
 #### Returns
 
-`Object`
+`object`
 
-| Name | Type |
-| :------ | :------ |
-| `category` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `categoryColor` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `categoryColorOp` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> |
-| `categoryColorValue` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `color` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `latitude` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `longitude` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
+##### category
+
+> **category**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+##### categoryColor
+
+> **categoryColor**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+##### categoryColorOp
+
+> **categoryColorOp**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\>
+
+##### categoryColorValue
+
+> **categoryColorValue**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+##### color
+
+> **color**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+##### latitude
+
+> **latitude**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+##### longitude
+
+> **longitude**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Implementation of
 
-[IDotLayerToolState](../interfaces/IDotLayerToolState.md).[getDimensions](../interfaces/IDotLayerToolState.md#getdimensions)
+[`IDotLayerToolState`](../interfaces/IDotLayerToolState.md).[`getDimensions`](../interfaces/IDotLayerToolState.md#getdimensions)
 
 #### Overrides
 
-[LayerToolState](LayerToolState.md).[getDimensions](LayerToolState.md#getdimensions)
+[`LayerToolState`](LayerToolState.md).[`getDimensions`](LayerToolState.md#getdimensions)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts:198](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L198)
+[tools/layers/dot/model/internal/tool/DotLayerToolState.ts:198](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L198)
 
-___
+***
 
-### getFiltersManager
+### getFiltersManager()
 
-▸ **getFiltersManager**(): [`IMapFilterManager`](../interfaces/IMapFilterManager.md)
+> **getFiltersManager**(): [`IMapFilterManager`](../interfaces/IMapFilterManager.md)
 
 #### Returns
 
@@ -272,17 +244,17 @@ ___
 
 #### Implementation of
 
-[IDotLayerToolState](../interfaces/IDotLayerToolState.md).[getFiltersManager](../interfaces/IDotLayerToolState.md#getfiltersmanager)
+[`IDotLayerToolState`](../interfaces/IDotLayerToolState.md).[`getFiltersManager`](../interfaces/IDotLayerToolState.md#getfiltersmanager)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts:190](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L190)
+[tools/layers/dot/model/internal/tool/DotLayerToolState.ts:190](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L190)
 
-___
+***
 
-### getIcon
+### getIcon()
 
-▸ **getIcon**(): `string`
+> **getIcon**(): `string`
 
 It returns the icon property of the tool state.
 
@@ -292,21 +264,21 @@ It returns the icon property of the tool state.
 
 #### Implementation of
 
-[IDotLayerToolState](../interfaces/IDotLayerToolState.md).[getIcon](../interfaces/IDotLayerToolState.md#geticon)
+[`IDotLayerToolState`](../interfaces/IDotLayerToolState.md).[`getIcon`](../interfaces/IDotLayerToolState.md#geticon)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getIcon](LayerToolState.md#geticon)
+[`LayerToolState`](LayerToolState.md).[`getIcon`](LayerToolState.md#geticon)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:120](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L120)
+[model/internal/tool/MapToolState.ts:120](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L120)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 It returns the id property of the tool state.
 
@@ -316,21 +288,21 @@ It returns the id property of the tool state.
 
 #### Implementation of
 
-[IDotLayerToolState](../interfaces/IDotLayerToolState.md).[getId](../interfaces/IDotLayerToolState.md#getid)
+[`IDotLayerToolState`](../interfaces/IDotLayerToolState.md).[`getId`](../interfaces/IDotLayerToolState.md#getid)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getId](LayerToolState.md#getid)
+[`LayerToolState`](LayerToolState.md).[`getId`](LayerToolState.md#getid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:87](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L87)
+[model/internal/object/MapObjectState.ts:87](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L87)
 
-___
+***
 
-### getLabel
+### getLabel()
 
-▸ **getLabel**(): `string`
+> **getLabel**(): `string`
 
 It returns the label property of the tool state.
 
@@ -340,39 +312,39 @@ It returns the label property of the tool state.
 
 #### Implementation of
 
-[IDotLayerToolState](../interfaces/IDotLayerToolState.md).[getLabel](../interfaces/IDotLayerToolState.md#getlabel)
+[`IDotLayerToolState`](../interfaces/IDotLayerToolState.md).[`getLabel`](../interfaces/IDotLayerToolState.md#getlabel)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getLabel](LayerToolState.md#getlabel)
+[`LayerToolState`](LayerToolState.md).[`getLabel`](LayerToolState.md#getlabel)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:104](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L104)
+[model/internal/tool/MapToolState.ts:104](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L104)
 
-___
+***
 
-### getLayer
+### getLayer()
 
-▸ **getLayer**(): `undefined` \| `LayerGroup`\<`any`\>
+> **getLayer**(): `any`
 
 #### Returns
 
-`undefined` \| `LayerGroup`\<`any`\>
+`any`
 
 #### Implementation of
 
-[IDotLayerToolState](../interfaces/IDotLayerToolState.md).[getLayer](../interfaces/IDotLayerToolState.md#getlayer)
+[`IDotLayerToolState`](../interfaces/IDotLayerToolState.md).[`getLayer`](../interfaces/IDotLayerToolState.md#getlayer)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts:206](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L206)
+[tools/layers/dot/model/internal/tool/DotLayerToolState.ts:206](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L206)
 
-___
+***
 
-### getLayerItems
+### getLayerItems()
 
-▸ **getLayerItems**(): `undefined` \| `Layer`[]
+> **getLayerItems**(): `undefined` \| `Layer`[]
 
 It returns the layer items property of the tool state.
 
@@ -382,21 +354,21 @@ It returns the layer items property of the tool state.
 
 #### Implementation of
 
-[IDotLayerToolState](../interfaces/IDotLayerToolState.md).[getLayerItems](../interfaces/IDotLayerToolState.md#getlayeritems)
+[`IDotLayerToolState`](../interfaces/IDotLayerToolState.md).[`getLayerItems`](../interfaces/IDotLayerToolState.md#getlayeritems)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getLayerItems](LayerToolState.md#getlayeritems)
+[`LayerToolState`](LayerToolState.md).[`getLayerItems`](LayerToolState.md#getlayeritems)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/LayerToolState.ts:104](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/LayerToolState.ts#L104)
+[model/internal/layer/LayerToolState.ts:104](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/LayerToolState.ts#L104)
 
-___
+***
 
-### getLayerName
+### getLayerName()
 
-▸ **getLayerName**(): `string`
+> **getLayerName**(): `string`
 
 It returns the layer name property of the tool state.
 
@@ -406,83 +378,83 @@ It returns the layer name property of the tool state.
 
 #### Implementation of
 
-[IDotLayerToolState](../interfaces/IDotLayerToolState.md).[getLayerName](../interfaces/IDotLayerToolState.md#getlayername)
+[`IDotLayerToolState`](../interfaces/IDotLayerToolState.md).[`getLayerName`](../interfaces/IDotLayerToolState.md#getlayername)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getLayerName](LayerToolState.md#getlayername)
+[`LayerToolState`](LayerToolState.md).[`getLayerName`](LayerToolState.md#getlayername)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/LayerToolState.ts:88](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/LayerToolState.ts#L88)
+[model/internal/layer/LayerToolState.ts:88](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/LayerToolState.ts#L88)
 
-___
+***
 
-### getMap
+### getMap()
 
-▸ **getMap**(): [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+> **getMap**(): [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 It returns the map property of the tool state.
 
 #### Returns
 
-[`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+[`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Implementation of
 
-[IDotLayerToolState](../interfaces/IDotLayerToolState.md).[getMap](../interfaces/IDotLayerToolState.md#getmap)
+[`IDotLayerToolState`](../interfaces/IDotLayerToolState.md).[`getMap`](../interfaces/IDotLayerToolState.md#getmap)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getMap](LayerToolState.md#getmap)
+[`LayerToolState`](LayerToolState.md).[`getMap`](LayerToolState.md#getmap)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:136](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L136)
+[model/internal/tool/MapToolState.ts:136](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L136)
 
-___
+***
 
-### getMapObject
+### getMapObject()
 
-▸ **getMapObject**(): [`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>
+> `protected` **getMapObject**(): [`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>
 
 It makes the map object visible to extended classes.
 
 #### Returns
 
-[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>
+[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getMapObject](LayerToolState.md#getmapobject)
+[`LayerToolState`](LayerToolState.md).[`getMapObject`](LayerToolState.md#getmapobject)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:39](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L39)
+[model/internal/object/MapObjectState.ts:39](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L39)
 
-___
+***
 
-### getMarkers
+### getMarkers()
 
-▸ **getMarkers**(): `CircleMarker`\<`any`\>[]
+> **getMarkers**(): `CircleMarker`[]
 
 #### Returns
 
-`CircleMarker`\<`any`\>[]
+`CircleMarker`[]
 
 #### Implementation of
 
-[IDotLayerToolState](../interfaces/IDotLayerToolState.md).[getMarkers](../interfaces/IDotLayerToolState.md#getmarkers)
+[`IDotLayerToolState`](../interfaces/IDotLayerToolState.md).[`getMarkers`](../interfaces/IDotLayerToolState.md#getmarkers)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts:214](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L214)
+[tools/layers/dot/model/internal/tool/DotLayerToolState.ts:214](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L214)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 It returns the type property of the tool state.
 
@@ -492,49 +464,49 @@ It returns the type property of the tool state.
 
 #### Implementation of
 
-[IDotLayerToolState](../interfaces/IDotLayerToolState.md).[getType](../interfaces/IDotLayerToolState.md#gettype)
+[`IDotLayerToolState`](../interfaces/IDotLayerToolState.md).[`getType`](../interfaces/IDotLayerToolState.md#gettype)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getType](LayerToolState.md#gettype)
+[`LayerToolState`](LayerToolState.md).[`getType`](LayerToolState.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:80](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L80)
+[model/internal/object/MapObjectState.ts:80](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L80)
 
-___
+***
 
-### getWorkData
+### getWorkData()
 
-▸ **getWorkData**(): `IWorkData`[]
+> **getWorkData**(): `any`[]
 
 #### Returns
 
-`IWorkData`[]
+`any`[]
 
 #### Implementation of
 
-[IDotLayerToolState](../interfaces/IDotLayerToolState.md).[getWorkData](../interfaces/IDotLayerToolState.md#getworkdata)
+[`IDotLayerToolState`](../interfaces/IDotLayerToolState.md).[`getWorkData`](../interfaces/IDotLayerToolState.md#getworkdata)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts:234](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L234)
+[tools/layers/dot/model/internal/tool/DotLayerToolState.ts:234](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L234)
 
-___
+***
 
-### initialize
+### initialize()
 
-▸ **initialize**(`defaults`, `props`, `initProps`): `void`
+> **initialize**(`defaults`, `props`, `initProps`): `void`
 
 It resets the state with respect to the initial props.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `defaults` | [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md) |
-| `props` | [`IDotLayerToolProps`](../modules.md#idotlayertoolprops) |
-| `initProps` | [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IDotLayerToolConfig`](../modules.md#idotlayertoolconfig)\> |
+• **defaults**: [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md)
+
+• **props**: [`IDotLayerToolProps`](../type-aliases/IDotLayerToolProps.md)
+
+• **initProps**: [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IDotLayerToolConfig`](../type-aliases/IDotLayerToolConfig.md)\>
 
 #### Returns
 
@@ -542,21 +514,21 @@ It resets the state with respect to the initial props.
 
 #### Implementation of
 
-[IDotLayerToolState](../interfaces/IDotLayerToolState.md).[initialize](../interfaces/IDotLayerToolState.md#initialize)
+[`IDotLayerToolState`](../interfaces/IDotLayerToolState.md).[`initialize`](../interfaces/IDotLayerToolState.md#initialize)
 
 #### Overrides
 
-[LayerToolState](LayerToolState.md).[initialize](LayerToolState.md#initialize)
+[`LayerToolState`](LayerToolState.md).[`initialize`](LayerToolState.md#initialize)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts:46](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L46)
+[tools/layers/dot/model/internal/tool/DotLayerToolState.ts:46](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L46)
 
-___
+***
 
-### isEnabled
+### isEnabled()
 
-▸ **isEnabled**(): `boolean`
+> **isEnabled**(): `boolean`
 
 It returns the enabled property of the tool state.
 
@@ -566,57 +538,53 @@ It returns the enabled property of the tool state.
 
 #### Implementation of
 
-[IDotLayerToolState](../interfaces/IDotLayerToolState.md).[isEnabled](../interfaces/IDotLayerToolState.md#isenabled)
+[`IDotLayerToolState`](../interfaces/IDotLayerToolState.md).[`isEnabled`](../interfaces/IDotLayerToolState.md#isenabled)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[isEnabled](LayerToolState.md#isenabled)
+[`LayerToolState`](LayerToolState.md).[`isEnabled`](LayerToolState.md#isenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:88](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L88)
+[model/internal/tool/MapToolState.ts:88](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L88)
 
-___
+***
 
-### serialize
+### serialize()
 
-▸ **serialize**(`defaults`): [`IDotLayerToolConfig`](../modules.md#idotlayertoolconfig)
+> **serialize**(`defaults`): [`IDotLayerToolConfig`](../type-aliases/IDotLayerToolConfig.md)
 
 The method serializes the map object state. Optionally, a serialized value can be let undefined if it equals the default value.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `defaults` | `undefined` \| [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md) |
+• **defaults**: `undefined` \| [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md)
 
 #### Returns
 
-[`IDotLayerToolConfig`](../modules.md#idotlayertoolconfig)
+[`IDotLayerToolConfig`](../type-aliases/IDotLayerToolConfig.md)
 
 #### Implementation of
 
-[IDotLayerToolState](../interfaces/IDotLayerToolState.md).[serialize](../interfaces/IDotLayerToolState.md#serialize)
+[`IDotLayerToolState`](../interfaces/IDotLayerToolState.md).[`serialize`](../interfaces/IDotLayerToolState.md#serialize)
 
 #### Overrides
 
-[LayerToolState](LayerToolState.md).[serialize](LayerToolState.md#serialize)
+[`LayerToolState`](LayerToolState.md).[`serialize`](LayerToolState.md#serialize)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts:159](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L159)
+[tools/layers/dot/model/internal/tool/DotLayerToolState.ts:159](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L159)
 
-___
+***
 
-### setCategoryColorRules
+### setCategoryColorRules()
 
-▸ **setCategoryColorRules**(`rules`): `void`
+> **setCategoryColorRules**(`rules`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `rules` | `ICategoryColorRules`[] |
+• **rules**: `ICategoryColorRules`[]
 
 #### Returns
 
@@ -624,32 +592,37 @@ ___
 
 #### Implementation of
 
-[IDotLayerToolState](../interfaces/IDotLayerToolState.md).[setCategoryColorRules](../interfaces/IDotLayerToolState.md#setcategorycolorrules)
+[`IDotLayerToolState`](../interfaces/IDotLayerToolState.md).[`setCategoryColorRules`](../interfaces/IDotLayerToolState.md#setcategorycolorrules)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts:222](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L222)
+[tools/layers/dot/model/internal/tool/DotLayerToolState.ts:222](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L222)
 
-___
+***
 
-### setDimensions
+### setDimensions()
 
-▸ **setDimensions**(`dimensions`): `void`
+> **setDimensions**(`dimensions`): `void`
 
 It sets the layer dimensions property of tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimensions` | `Object` |
-| `dimensions.category` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `dimensions.categoryColor` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `dimensions.categoryColorOp` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> |
-| `dimensions.categoryColorValue` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `dimensions.color` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `dimensions.latitude` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `dimensions.longitude` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
+• **dimensions**
+
+• **dimensions.category**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+• **dimensions.categoryColor**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+• **dimensions.categoryColorOp**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\>
+
+• **dimensions.categoryColorValue**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+• **dimensions.color**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+• **dimensions.latitude**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+• **dimensions.longitude**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Returns
 
@@ -657,29 +630,27 @@ It sets the layer dimensions property of tool state.
 
 #### Implementation of
 
-[IDotLayerToolState](../interfaces/IDotLayerToolState.md).[setDimensions](../interfaces/IDotLayerToolState.md#setdimensions)
+[`IDotLayerToolState`](../interfaces/IDotLayerToolState.md).[`setDimensions`](../interfaces/IDotLayerToolState.md#setdimensions)
 
 #### Overrides
 
-[LayerToolState](LayerToolState.md).[setDimensions](LayerToolState.md#setdimensions)
+[`LayerToolState`](LayerToolState.md).[`setDimensions`](LayerToolState.md#setdimensions)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts:202](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L202)
+[tools/layers/dot/model/internal/tool/DotLayerToolState.ts:202](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L202)
 
-___
+***
 
-### setEnabled
+### setEnabled()
 
-▸ **setEnabled**(`enabled`): `void`
+> **setEnabled**(`enabled`): `void`
 
 It sets the enabled property of tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `enabled` | `boolean` |
+• **enabled**: `boolean`
 
 #### Returns
 
@@ -687,27 +658,25 @@ It sets the enabled property of tool state.
 
 #### Implementation of
 
-[IDotLayerToolState](../interfaces/IDotLayerToolState.md).[setEnabled](../interfaces/IDotLayerToolState.md#setenabled)
+[`IDotLayerToolState`](../interfaces/IDotLayerToolState.md).[`setEnabled`](../interfaces/IDotLayerToolState.md#setenabled)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[setEnabled](LayerToolState.md#setenabled)
+[`LayerToolState`](LayerToolState.md).[`setEnabled`](LayerToolState.md#setenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:97](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L97)
+[model/internal/tool/MapToolState.ts:97](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L97)
 
-___
+***
 
-### setFiltersManager
+### setFiltersManager()
 
-▸ **setFiltersManager**(`manager`): `void`
+> **setFiltersManager**(`manager`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `manager` | [`IMapFilterManager`](../interfaces/IMapFilterManager.md) |
+• **manager**: [`IMapFilterManager`](../interfaces/IMapFilterManager.md)
 
 #### Returns
 
@@ -715,25 +684,23 @@ ___
 
 #### Implementation of
 
-[IDotLayerToolState](../interfaces/IDotLayerToolState.md).[setFiltersManager](../interfaces/IDotLayerToolState.md#setfiltersmanager)
+[`IDotLayerToolState`](../interfaces/IDotLayerToolState.md).[`setFiltersManager`](../interfaces/IDotLayerToolState.md#setfiltersmanager)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts:194](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L194)
+[tools/layers/dot/model/internal/tool/DotLayerToolState.ts:194](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L194)
 
-___
+***
 
-### setIcon
+### setIcon()
 
-▸ **setIcon**(`icon`): `void`
+> **setIcon**(`icon`): `void`
 
 It sets the icon property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `icon` | `string` |
+• **icon**: `string`
 
 #### Returns
 
@@ -741,29 +708,27 @@ It sets the icon property of the tool state.
 
 #### Implementation of
 
-[IDotLayerToolState](../interfaces/IDotLayerToolState.md).[setIcon](../interfaces/IDotLayerToolState.md#seticon)
+[`IDotLayerToolState`](../interfaces/IDotLayerToolState.md).[`setIcon`](../interfaces/IDotLayerToolState.md#seticon)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[setIcon](LayerToolState.md#seticon)
+[`LayerToolState`](LayerToolState.md).[`setIcon`](LayerToolState.md#seticon)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:129](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L129)
+[model/internal/tool/MapToolState.ts:129](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L129)
 
-___
+***
 
-### setId
+### setId()
 
-▸ **setId**(`id`): `void`
+> **setId**(`id`): `void`
 
 It sets the id property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `id` | `string` |
+• **id**: `string`
 
 #### Returns
 
@@ -771,29 +736,27 @@ It sets the id property of the tool state.
 
 #### Implementation of
 
-[IDotLayerToolState](../interfaces/IDotLayerToolState.md).[setId](../interfaces/IDotLayerToolState.md#setid)
+[`IDotLayerToolState`](../interfaces/IDotLayerToolState.md).[`setId`](../interfaces/IDotLayerToolState.md#setid)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[setId](LayerToolState.md#setid)
+[`LayerToolState`](LayerToolState.md).[`setId`](LayerToolState.md#setid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:96](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L96)
+[model/internal/object/MapObjectState.ts:96](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L96)
 
-___
+***
 
-### setLabel
+### setLabel()
 
-▸ **setLabel**(`label`): `void`
+> **setLabel**(`label`): `void`
 
 It sets the label property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `label` | `string` |
+• **label**: `string`
 
 #### Returns
 
@@ -801,27 +764,25 @@ It sets the label property of the tool state.
 
 #### Implementation of
 
-[IDotLayerToolState](../interfaces/IDotLayerToolState.md).[setLabel](../interfaces/IDotLayerToolState.md#setlabel)
+[`IDotLayerToolState`](../interfaces/IDotLayerToolState.md).[`setLabel`](../interfaces/IDotLayerToolState.md#setlabel)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[setLabel](LayerToolState.md#setlabel)
+[`LayerToolState`](LayerToolState.md).[`setLabel`](LayerToolState.md#setlabel)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:113](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L113)
+[model/internal/tool/MapToolState.ts:113](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L113)
 
-___
+***
 
-### setLayer
+### setLayer()
 
-▸ **setLayer**(`layer`): `void`
+> **setLayer**(`layer`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `layer` | `LayerGroup`\<`any`\> |
+• **layer**: `LayerGroup`
 
 #### Returns
 
@@ -829,25 +790,23 @@ ___
 
 #### Implementation of
 
-[IDotLayerToolState](../interfaces/IDotLayerToolState.md).[setLayer](../interfaces/IDotLayerToolState.md#setlayer)
+[`IDotLayerToolState`](../interfaces/IDotLayerToolState.md).[`setLayer`](../interfaces/IDotLayerToolState.md#setlayer)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts:210](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L210)
+[tools/layers/dot/model/internal/tool/DotLayerToolState.ts:210](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L210)
 
-___
+***
 
-### setLayerItems
+### setLayerItems()
 
-▸ **setLayerItems**(`layerItems`): `void`
+> **setLayerItems**(`layerItems`): `void`
 
 It sets the layer items property of tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `layerItems` | `Layer`[] |
+• **layerItems**: `Layer`[]
 
 #### Returns
 
@@ -855,29 +814,27 @@ It sets the layer items property of tool state.
 
 #### Implementation of
 
-[IDotLayerToolState](../interfaces/IDotLayerToolState.md).[setLayerItems](../interfaces/IDotLayerToolState.md#setlayeritems)
+[`IDotLayerToolState`](../interfaces/IDotLayerToolState.md).[`setLayerItems`](../interfaces/IDotLayerToolState.md#setlayeritems)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[setLayerItems](LayerToolState.md#setlayeritems)
+[`LayerToolState`](LayerToolState.md).[`setLayerItems`](LayerToolState.md#setlayeritems)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/LayerToolState.ts:113](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/LayerToolState.ts#L113)
+[model/internal/layer/LayerToolState.ts:113](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/LayerToolState.ts#L113)
 
-___
+***
 
-### setLayerName
+### setLayerName()
 
-▸ **setLayerName**(`layerName`): `void`
+> **setLayerName**(`layerName`): `void`
 
 It sets the layer name property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `layerName` | `string` |
+• **layerName**: `string`
 
 #### Returns
 
@@ -885,29 +842,27 @@ It sets the layer name property of the tool state.
 
 #### Implementation of
 
-[IDotLayerToolState](../interfaces/IDotLayerToolState.md).[setLayerName](../interfaces/IDotLayerToolState.md#setlayername)
+[`IDotLayerToolState`](../interfaces/IDotLayerToolState.md).[`setLayerName`](../interfaces/IDotLayerToolState.md#setlayername)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[setLayerName](LayerToolState.md#setlayername)
+[`LayerToolState`](LayerToolState.md).[`setLayerName`](LayerToolState.md#setlayername)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/LayerToolState.ts:97](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/LayerToolState.ts#L97)
+[model/internal/layer/LayerToolState.ts:97](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/LayerToolState.ts#L97)
 
-___
+***
 
-### setMap
+### setMap()
 
-▸ **setMap**(`map`): `void`
+> `protected` **setMap**(`map`): `void`
 
 It sets the map property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `map` | [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\> |
+• **map**: [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Returns
 
@@ -915,23 +870,21 @@ It sets the map property of the tool state.
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[setMap](LayerToolState.md#setmap)
+[`LayerToolState`](LayerToolState.md).[`setMap`](LayerToolState.md#setmap)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:145](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L145)
+[model/internal/tool/MapToolState.ts:145](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L145)
 
-___
+***
 
-### setMarkers
+### setMarkers()
 
-▸ **setMarkers**(`markers`): `void`
+> **setMarkers**(`markers`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `markers` | `CircleMarker`\<`any`\>[] |
+• **markers**: `CircleMarker`[]
 
 #### Returns
 
@@ -939,23 +892,21 @@ ___
 
 #### Implementation of
 
-[IDotLayerToolState](../interfaces/IDotLayerToolState.md).[setMarkers](../interfaces/IDotLayerToolState.md#setmarkers)
+[`IDotLayerToolState`](../interfaces/IDotLayerToolState.md).[`setMarkers`](../interfaces/IDotLayerToolState.md#setmarkers)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts:218](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L218)
+[tools/layers/dot/model/internal/tool/DotLayerToolState.ts:218](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L218)
 
-___
+***
 
-### setWorkData
+### setWorkData()
 
-▸ **setWorkData**(`latlngs`): `void`
+> **setWorkData**(`latlngs`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `latlngs` | `IWorkData`[] |
+• **latlngs**: `any`[]
 
 #### Returns
 
@@ -963,8 +914,8 @@ ___
 
 #### Implementation of
 
-[IDotLayerToolState](../interfaces/IDotLayerToolState.md).[setWorkData](../interfaces/IDotLayerToolState.md#setworkdata)
+[`IDotLayerToolState`](../interfaces/IDotLayerToolState.md).[`setWorkData`](../interfaces/IDotLayerToolState.md#setworkdata)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts:230](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L230)
+[tools/layers/dot/model/internal/tool/DotLayerToolState.ts:230](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolState.ts#L230)

@@ -1,45 +1,30 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / JsonMapDataDomain
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / JsonMapDataDomain
 
 # Class: JsonMapDataDomain
 
 The class wraps meta data path used to find data.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`AbstractMapDataDomain`](AbstractMapDataDomain.md)
 
-  ↳ **`JsonMapDataDomain`**
-
-## Table of contents
-
-### Constructors
-
-- [constructor](JsonMapDataDomain.md#constructor)
-
-### Properties
-
-- [name](JsonMapDataDomain.md#name)
-
-### Methods
-
-- [getName](JsonMapDataDomain.md#getname)
-- [getOriginal](JsonMapDataDomain.md#getoriginal)
-
 ## Constructors
 
-### constructor
+### new JsonMapDataDomain()
 
-• **new JsonMapDataDomain**(`domainDescription`): [`JsonMapDataDomain`](JsonMapDataDomain.md)
+> **new JsonMapDataDomain**(`domainDescription`): [`JsonMapDataDomain`](JsonMapDataDomain.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `domainDescription` | `string`[] |
+• **domainDescription**: `string`[]
 
 #### Returns
 
@@ -47,27 +32,27 @@ Jiri Hynek
 
 #### Overrides
 
-[AbstractMapDataDomain](AbstractMapDataDomain.md).[constructor](AbstractMapDataDomain.md#constructor)
+[`AbstractMapDataDomain`](AbstractMapDataDomain.md).[`constructor`](AbstractMapDataDomain.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/model/internal/data/json/JsonMapDataDomain.ts:12](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/data/json/JsonMapDataDomain.ts#L12)
+[model/internal/data/json/JsonMapDataDomain.ts:12](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/data/json/JsonMapDataDomain.ts#L12)
 
 ## Properties
 
 ### name
 
-• `Private` **name**: `string`
+> `private` **name**: `string`
 
-#### Defined in
+#### Source
 
-[src/model/internal/data/json/JsonMapDataDomain.ts:10](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/data/json/JsonMapDataDomain.ts#L10)
+[model/internal/data/json/JsonMapDataDomain.ts:10](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/data/json/JsonMapDataDomain.ts#L10)
 
 ## Methods
 
-### getName
+### getName()
 
-▸ **getName**(): `string`
+> **getName**(): `string`
 
 The function returns the string representation of the map data domain
 which is *unique* among the names of other data domains.
@@ -80,17 +65,17 @@ It uses dots to delimiter the array items.
 
 #### Overrides
 
-[AbstractMapDataDomain](AbstractMapDataDomain.md).[getName](AbstractMapDataDomain.md#getname)
+[`AbstractMapDataDomain`](AbstractMapDataDomain.md).[`getName`](AbstractMapDataDomain.md#getname)
 
-#### Defined in
+#### Source
 
-[src/model/internal/data/json/JsonMapDataDomain.ts:31](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/data/json/JsonMapDataDomain.ts#L31)
+[model/internal/data/json/JsonMapDataDomain.ts:31](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/data/json/JsonMapDataDomain.ts#L31)
 
-___
+***
 
-### getOriginal
+### getOriginal()
 
-▸ **getOriginal**(): `string`[]
+> **getOriginal**(): `string`[]
 
 The function returns the string representation of the map data domain
 which is *unique* among the labels of other data domains.
@@ -101,8 +86,8 @@ which is *unique* among the labels of other data domains.
 
 #### Overrides
 
-[AbstractMapDataDomain](AbstractMapDataDomain.md).[getOriginal](AbstractMapDataDomain.md#getoriginal)
+[`AbstractMapDataDomain`](AbstractMapDataDomain.md).[`getOriginal`](AbstractMapDataDomain.md#getoriginal)
 
-#### Defined in
+#### Source
 
-[src/model/internal/data/json/JsonMapDataDomain.ts:21](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/data/json/JsonMapDataDomain.ts#L21)
+[model/internal/data/json/JsonMapDataDomain.ts:21](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/data/json/JsonMapDataDomain.ts#L21)

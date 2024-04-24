@@ -1,77 +1,40 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / InfoToolState
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / InfoToolState
 
 # Class: InfoToolState
 
 This class provide functions for using filters.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-**`Author`**
+## Author
 
 Tomas Koscielniak
 
-## Hierarchy
+## Extends
 
 - [`MapToolState`](MapToolState.md)
-
-  ↳ **`InfoToolState`**
 
 ## Implements
 
 - [`IInfoToolState`](../interfaces/IInfoToolState.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](InfoToolState.md#constructor)
-
-### Properties
-
-- [data](InfoToolState.md#data)
-- [defaultFile](InfoToolState.md#defaultfile)
-- [manager](InfoToolState.md#manager)
-- [md\_data](InfoToolState.md#md_data)
-
-### Methods
-
-- [deserialize](InfoToolState.md#deserialize)
-- [getContent](InfoToolState.md#getcontent)
-- [getDefaultFile](InfoToolState.md#getdefaultfile)
-- [getIcon](InfoToolState.md#geticon)
-- [getId](InfoToolState.md#getid)
-- [getInfoDataManager](InfoToolState.md#getinfodatamanager)
-- [getLabel](InfoToolState.md#getlabel)
-- [getMap](InfoToolState.md#getmap)
-- [getMapObject](InfoToolState.md#getmapobject)
-- [getMarkdown](InfoToolState.md#getmarkdown)
-- [getType](InfoToolState.md#gettype)
-- [initialize](InfoToolState.md#initialize)
-- [isEnabled](InfoToolState.md#isenabled)
-- [serialize](InfoToolState.md#serialize)
-- [setEnabled](InfoToolState.md#setenabled)
-- [setIcon](InfoToolState.md#seticon)
-- [setId](InfoToolState.md#setid)
-- [setInfoDataManager](InfoToolState.md#setinfodatamanager)
-- [setLabel](InfoToolState.md#setlabel)
-- [setMap](InfoToolState.md#setmap)
-- [setMarkdown](InfoToolState.md#setmarkdown)
-
 ## Constructors
 
-### constructor
+### new InfoToolState()
 
-• **new InfoToolState**(`tool`): [`InfoToolState`](InfoToolState.md)
+> **new InfoToolState**(`tool`): [`InfoToolState`](InfoToolState.md)
 
 It creates a tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `tool` | [`IInfoTool`](../interfaces/IInfoTool.md)\<[`IInfoToolProps`](../modules.md#iinfotoolprops), [`IInfoToolDefaults`](../interfaces/IInfoToolDefaults.md), [`IInfoToolState`](../interfaces/IInfoToolState.md)\<[`IInfoToolProps`](../modules.md#iinfotoolprops), [`IInfoToolDefaults`](../interfaces/IInfoToolDefaults.md), [`IInfoToolConfig`](../modules.md#iinfotoolconfig)\>, [`IInfoToolConfig`](../modules.md#iinfotoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IInfoToolConfig`](../modules.md#iinfotoolconfig)\>\> |
+• **tool**: [`IInfoTool`](../interfaces/IInfoTool.md)\<[`IInfoToolProps`](../type-aliases/IInfoToolProps.md), [`IInfoToolDefaults`](../interfaces/IInfoToolDefaults.md), [`IInfoToolState`](../interfaces/IInfoToolState.md)\<[`IInfoToolProps`](../type-aliases/IInfoToolProps.md), [`IInfoToolDefaults`](../interfaces/IInfoToolDefaults.md), [`IInfoToolConfig`](../type-aliases/IInfoToolConfig.md)\>, [`IInfoToolConfig`](../type-aliases/IInfoToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IInfoToolConfig`](../type-aliases/IInfoToolConfig.md)\>\>
 
 #### Returns
 
@@ -79,65 +42,63 @@ It creates a tool state.
 
 #### Overrides
 
-[MapToolState](MapToolState.md).[constructor](MapToolState.md#constructor)
+[`MapToolState`](MapToolState.md).[`constructor`](MapToolState.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/tools/info/model/internal/tool/InfoToolState.ts:33](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/info/model/internal/tool/InfoToolState.ts#L33)
+[tools/info/model/internal/tool/InfoToolState.ts:33](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/info/model/internal/tool/InfoToolState.ts#L33)
 
 ## Properties
 
 ### data
 
-• `Private` **data**: ``null`` \| `string`
+> `private` **data**: `null` \| `string`
 
-#### Defined in
+#### Source
 
-[src/tools/info/model/internal/tool/InfoToolState.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/info/model/internal/tool/InfoToolState.ts#L23)
+[tools/info/model/internal/tool/InfoToolState.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/info/model/internal/tool/InfoToolState.ts#L23)
 
-___
+***
 
 ### defaultFile
 
-• `Private` **defaultFile**: `string`
+> `private` **defaultFile**: `string`
 
-#### Defined in
+#### Source
 
-[src/tools/info/model/internal/tool/InfoToolState.ts:26](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/info/model/internal/tool/InfoToolState.ts#L26)
+[tools/info/model/internal/tool/InfoToolState.ts:26](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/info/model/internal/tool/InfoToolState.ts#L26)
 
-___
+***
 
-### manager
+### manager?
 
-• `Private` `Optional` **manager**: [`IInfoDataManager`](../modules.md#iinfodatamanager)
+> `private` `optional` **manager**: [`IInfoDataManager`](../type-aliases/IInfoDataManager.md)
 
-#### Defined in
+#### Source
 
-[src/tools/info/model/internal/tool/InfoToolState.ts:24](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/info/model/internal/tool/InfoToolState.ts#L24)
+[tools/info/model/internal/tool/InfoToolState.ts:24](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/info/model/internal/tool/InfoToolState.ts#L24)
 
-___
+***
 
-### md\_data
+### md\_data?
 
-• `Private` `Optional` **md\_data**: [`IInfoData`](../interfaces/IInfoData.md)
+> `private` `optional` **md\_data**: [`IInfoData`](../interfaces/IInfoData.md)
 
-#### Defined in
+#### Source
 
-[src/tools/info/model/internal/tool/InfoToolState.ts:25](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/info/model/internal/tool/InfoToolState.ts#L25)
+[tools/info/model/internal/tool/InfoToolState.ts:25](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/info/model/internal/tool/InfoToolState.ts#L25)
 
 ## Methods
 
-### deserialize
+### deserialize()
 
-▸ **deserialize**(`config`): `void`
+> **deserialize**(`config`): `void`
 
 The method takes config and deserializes the values.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `config` | [`IInfoToolConfig`](../modules.md#iinfotoolconfig) |
+• **config**: [`IInfoToolConfig`](../type-aliases/IInfoToolConfig.md)
 
 #### Returns
 
@@ -145,39 +106,39 @@ The method takes config and deserializes the values.
 
 #### Implementation of
 
-[IInfoToolState](../interfaces/IInfoToolState.md).[deserialize](../interfaces/IInfoToolState.md#deserialize)
+[`IInfoToolState`](../interfaces/IInfoToolState.md).[`deserialize`](../interfaces/IInfoToolState.md#deserialize)
 
 #### Overrides
 
-[MapToolState](MapToolState.md).[deserialize](MapToolState.md#deserialize)
+[`MapToolState`](MapToolState.md).[`deserialize`](MapToolState.md#deserialize)
 
-#### Defined in
+#### Source
 
-[src/tools/info/model/internal/tool/InfoToolState.ts:62](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/info/model/internal/tool/InfoToolState.ts#L62)
+[tools/info/model/internal/tool/InfoToolState.ts:62](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/info/model/internal/tool/InfoToolState.ts#L62)
 
-___
+***
 
-### getContent
+### getContent()
 
-▸ **getContent**(): ``null`` \| `string`
+> **getContent**(): `null` \| `string`
 
 #### Returns
 
-``null`` \| `string`
+`null` \| `string`
 
 #### Implementation of
 
-[IInfoToolState](../interfaces/IInfoToolState.md).[getContent](../interfaces/IInfoToolState.md#getcontent)
+[`IInfoToolState`](../interfaces/IInfoToolState.md).[`getContent`](../interfaces/IInfoToolState.md#getcontent)
 
-#### Defined in
+#### Source
 
-[src/tools/info/model/internal/tool/InfoToolState.ts:78](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/info/model/internal/tool/InfoToolState.ts#L78)
+[tools/info/model/internal/tool/InfoToolState.ts:78](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/info/model/internal/tool/InfoToolState.ts#L78)
 
-___
+***
 
-### getDefaultFile
+### getDefaultFile()
 
-▸ **getDefaultFile**(): `string`
+> **getDefaultFile**(): `string`
 
 It returns the default file property of the tool state.
 
@@ -187,17 +148,17 @@ It returns the default file property of the tool state.
 
 #### Implementation of
 
-[IInfoToolState](../interfaces/IInfoToolState.md).[getDefaultFile](../interfaces/IInfoToolState.md#getdefaultfile)
+[`IInfoToolState`](../interfaces/IInfoToolState.md).[`getDefaultFile`](../interfaces/IInfoToolState.md#getdefaultfile)
 
-#### Defined in
+#### Source
 
-[src/tools/info/model/internal/tool/InfoToolState.ts:92](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/info/model/internal/tool/InfoToolState.ts#L92)
+[tools/info/model/internal/tool/InfoToolState.ts:92](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/info/model/internal/tool/InfoToolState.ts#L92)
 
-___
+***
 
-### getIcon
+### getIcon()
 
-▸ **getIcon**(): `string`
+> **getIcon**(): `string`
 
 It returns the icon property of the tool state.
 
@@ -207,21 +168,21 @@ It returns the icon property of the tool state.
 
 #### Implementation of
 
-[IInfoToolState](../interfaces/IInfoToolState.md).[getIcon](../interfaces/IInfoToolState.md#geticon)
+[`IInfoToolState`](../interfaces/IInfoToolState.md).[`getIcon`](../interfaces/IInfoToolState.md#geticon)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[getIcon](MapToolState.md#geticon)
+[`MapToolState`](MapToolState.md).[`getIcon`](MapToolState.md#geticon)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:120](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L120)
+[model/internal/tool/MapToolState.ts:120](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L120)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 It returns the id property of the tool state.
 
@@ -231,41 +192,41 @@ It returns the id property of the tool state.
 
 #### Implementation of
 
-[IInfoToolState](../interfaces/IInfoToolState.md).[getId](../interfaces/IInfoToolState.md#getid)
+[`IInfoToolState`](../interfaces/IInfoToolState.md).[`getId`](../interfaces/IInfoToolState.md#getid)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[getId](MapToolState.md#getid)
+[`MapToolState`](MapToolState.md).[`getId`](MapToolState.md#getid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:87](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L87)
+[model/internal/object/MapObjectState.ts:87](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L87)
 
-___
+***
 
-### getInfoDataManager
+### getInfoDataManager()
 
-▸ **getInfoDataManager**(): `undefined` \| [`IInfoDataManager`](../modules.md#iinfodatamanager)
+> **getInfoDataManager**(): `undefined` \| [`IInfoDataManager`](../type-aliases/IInfoDataManager.md)
 
 It returns markdown manager.
 
 #### Returns
 
-`undefined` \| [`IInfoDataManager`](../modules.md#iinfodatamanager)
+`undefined` \| [`IInfoDataManager`](../type-aliases/IInfoDataManager.md)
 
 #### Implementation of
 
-[IInfoToolState](../interfaces/IInfoToolState.md).[getInfoDataManager](../interfaces/IInfoToolState.md#getinfodatamanager)
+[`IInfoToolState`](../interfaces/IInfoToolState.md).[`getInfoDataManager`](../interfaces/IInfoToolState.md#getinfodatamanager)
 
-#### Defined in
+#### Source
 
-[src/tools/info/model/internal/tool/InfoToolState.ts:117](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/info/model/internal/tool/InfoToolState.ts#L117)
+[tools/info/model/internal/tool/InfoToolState.ts:117](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/info/model/internal/tool/InfoToolState.ts#L117)
 
-___
+***
 
-### getLabel
+### getLabel()
 
-▸ **getLabel**(): `string`
+> **getLabel**(): `string`
 
 It returns the label property of the tool state.
 
@@ -275,65 +236,65 @@ It returns the label property of the tool state.
 
 #### Implementation of
 
-[IInfoToolState](../interfaces/IInfoToolState.md).[getLabel](../interfaces/IInfoToolState.md#getlabel)
+[`IInfoToolState`](../interfaces/IInfoToolState.md).[`getLabel`](../interfaces/IInfoToolState.md#getlabel)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[getLabel](MapToolState.md#getlabel)
+[`MapToolState`](MapToolState.md).[`getLabel`](MapToolState.md#getlabel)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:104](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L104)
+[model/internal/tool/MapToolState.ts:104](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L104)
 
-___
+***
 
-### getMap
+### getMap()
 
-▸ **getMap**(): [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+> **getMap**(): [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 It returns the map property of the tool state.
 
 #### Returns
 
-[`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+[`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Implementation of
 
-[IInfoToolState](../interfaces/IInfoToolState.md).[getMap](../interfaces/IInfoToolState.md#getmap)
+[`IInfoToolState`](../interfaces/IInfoToolState.md).[`getMap`](../interfaces/IInfoToolState.md#getmap)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[getMap](MapToolState.md#getmap)
+[`MapToolState`](MapToolState.md).[`getMap`](MapToolState.md#getmap)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:136](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L136)
+[model/internal/tool/MapToolState.ts:136](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L136)
 
-___
+***
 
-### getMapObject
+### getMapObject()
 
-▸ **getMapObject**(): [`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>
+> `protected` **getMapObject**(): [`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>
 
 It makes the map object visible to extended classes.
 
 #### Returns
 
-[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>
+[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[getMapObject](MapToolState.md#getmapobject)
+[`MapToolState`](MapToolState.md).[`getMapObject`](MapToolState.md#getmapobject)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:39](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L39)
+[model/internal/object/MapObjectState.ts:39](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L39)
 
-___
+***
 
-### getMarkdown
+### getMarkdown()
 
-▸ **getMarkdown**(): `undefined` \| [`IInfoData`](../interfaces/IInfoData.md)
+> **getMarkdown**(): `undefined` \| [`IInfoData`](../interfaces/IInfoData.md)
 
 It returns the markdown property of the tool state.
 
@@ -343,17 +304,17 @@ It returns the markdown property of the tool state.
 
 #### Implementation of
 
-[IInfoToolState](../interfaces/IInfoToolState.md).[getMarkdown](../interfaces/IInfoToolState.md#getmarkdown)
+[`IInfoToolState`](../interfaces/IInfoToolState.md).[`getMarkdown`](../interfaces/IInfoToolState.md#getmarkdown)
 
-#### Defined in
+#### Source
 
-[src/tools/info/model/internal/tool/InfoToolState.ts:85](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/info/model/internal/tool/InfoToolState.ts#L85)
+[tools/info/model/internal/tool/InfoToolState.ts:85](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/info/model/internal/tool/InfoToolState.ts#L85)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 It returns the type property of the tool state.
 
@@ -363,31 +324,31 @@ It returns the type property of the tool state.
 
 #### Implementation of
 
-[IInfoToolState](../interfaces/IInfoToolState.md).[getType](../interfaces/IInfoToolState.md#gettype)
+[`IInfoToolState`](../interfaces/IInfoToolState.md).[`getType`](../interfaces/IInfoToolState.md#gettype)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[getType](MapToolState.md#gettype)
+[`MapToolState`](MapToolState.md).[`getType`](MapToolState.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:80](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L80)
+[model/internal/object/MapObjectState.ts:80](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L80)
 
-___
+***
 
-### initialize
+### initialize()
 
-▸ **initialize**(`defaults`, `props`, `initProps`): `void`
+> **initialize**(`defaults`, `props`, `initProps`): `void`
 
 It resets the state with respect to the initial props.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `defaults` | [`IInfoToolDefaults`](../interfaces/IInfoToolDefaults.md) |
-| `props` | [`IInfoToolProps`](../modules.md#iinfotoolprops) |
-| `initProps` | [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IInfoToolConfig`](../modules.md#iinfotoolconfig)\> |
+• **defaults**: [`IInfoToolDefaults`](../interfaces/IInfoToolDefaults.md)
+
+• **props**: [`IInfoToolProps`](../type-aliases/IInfoToolProps.md)
+
+• **initProps**: [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IInfoToolConfig`](../type-aliases/IInfoToolConfig.md)\>
 
 #### Returns
 
@@ -395,21 +356,21 @@ It resets the state with respect to the initial props.
 
 #### Implementation of
 
-[IInfoToolState](../interfaces/IInfoToolState.md).[initialize](../interfaces/IInfoToolState.md#initialize)
+[`IInfoToolState`](../interfaces/IInfoToolState.md).[`initialize`](../interfaces/IInfoToolState.md#initialize)
 
 #### Overrides
 
-[MapToolState](MapToolState.md).[initialize](MapToolState.md#initialize)
+[`MapToolState`](MapToolState.md).[`initialize`](MapToolState.md#initialize)
 
-#### Defined in
+#### Source
 
-[src/tools/info/model/internal/tool/InfoToolState.ts:46](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/info/model/internal/tool/InfoToolState.ts#L46)
+[tools/info/model/internal/tool/InfoToolState.ts:46](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/info/model/internal/tool/InfoToolState.ts#L46)
 
-___
+***
 
-### isEnabled
+### isEnabled()
 
-▸ **isEnabled**(): `boolean`
+> **isEnabled**(): `boolean`
 
 It returns the enabled property of the tool state.
 
@@ -419,59 +380,55 @@ It returns the enabled property of the tool state.
 
 #### Implementation of
 
-[IInfoToolState](../interfaces/IInfoToolState.md).[isEnabled](../interfaces/IInfoToolState.md#isenabled)
+[`IInfoToolState`](../interfaces/IInfoToolState.md).[`isEnabled`](../interfaces/IInfoToolState.md#isenabled)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[isEnabled](MapToolState.md#isenabled)
+[`MapToolState`](MapToolState.md).[`isEnabled`](MapToolState.md#isenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:88](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L88)
+[model/internal/tool/MapToolState.ts:88](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L88)
 
-___
+***
 
-### serialize
+### serialize()
 
-▸ **serialize**(`defaults`): [`IInfoToolConfig`](../modules.md#iinfotoolconfig)
+> **serialize**(`defaults`): [`IInfoToolConfig`](../type-aliases/IInfoToolConfig.md)
 
 The method serializes the tool state. Optionally, defaults can be set if property is undefined.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `defaults` | `undefined` \| [`IInfoToolDefaults`](../interfaces/IInfoToolDefaults.md) |
+• **defaults**: `undefined` \| [`IInfoToolDefaults`](../interfaces/IInfoToolDefaults.md)
 
 #### Returns
 
-[`IInfoToolConfig`](../modules.md#iinfotoolconfig)
+[`IInfoToolConfig`](../type-aliases/IInfoToolConfig.md)
 
 #### Implementation of
 
-[IInfoToolState](../interfaces/IInfoToolState.md).[serialize](../interfaces/IInfoToolState.md#serialize)
+[`IInfoToolState`](../interfaces/IInfoToolState.md).[`serialize`](../interfaces/IInfoToolState.md#serialize)
 
 #### Overrides
 
-[MapToolState](MapToolState.md).[serialize](MapToolState.md#serialize)
+[`MapToolState`](MapToolState.md).[`serialize`](MapToolState.md#serialize)
 
-#### Defined in
+#### Source
 
-[src/tools/info/model/internal/tool/InfoToolState.ts:72](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/info/model/internal/tool/InfoToolState.ts#L72)
+[tools/info/model/internal/tool/InfoToolState.ts:72](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/info/model/internal/tool/InfoToolState.ts#L72)
 
-___
+***
 
-### setEnabled
+### setEnabled()
 
-▸ **setEnabled**(`enabled`): `void`
+> **setEnabled**(`enabled`): `void`
 
 It sets the enabled property of tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `enabled` | `boolean` |
+• **enabled**: `boolean`
 
 #### Returns
 
@@ -479,29 +436,27 @@ It sets the enabled property of tool state.
 
 #### Implementation of
 
-[IInfoToolState](../interfaces/IInfoToolState.md).[setEnabled](../interfaces/IInfoToolState.md#setenabled)
+[`IInfoToolState`](../interfaces/IInfoToolState.md).[`setEnabled`](../interfaces/IInfoToolState.md#setenabled)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[setEnabled](MapToolState.md#setenabled)
+[`MapToolState`](MapToolState.md).[`setEnabled`](MapToolState.md#setenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:97](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L97)
+[model/internal/tool/MapToolState.ts:97](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L97)
 
-___
+***
 
-### setIcon
+### setIcon()
 
-▸ **setIcon**(`icon`): `void`
+> **setIcon**(`icon`): `void`
 
 It sets the icon property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `icon` | `string` |
+• **icon**: `string`
 
 #### Returns
 
@@ -509,29 +464,27 @@ It sets the icon property of the tool state.
 
 #### Implementation of
 
-[IInfoToolState](../interfaces/IInfoToolState.md).[setIcon](../interfaces/IInfoToolState.md#seticon)
+[`IInfoToolState`](../interfaces/IInfoToolState.md).[`setIcon`](../interfaces/IInfoToolState.md#seticon)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[setIcon](MapToolState.md#seticon)
+[`MapToolState`](MapToolState.md).[`setIcon`](MapToolState.md#seticon)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:129](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L129)
+[model/internal/tool/MapToolState.ts:129](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L129)
 
-___
+***
 
-### setId
+### setId()
 
-▸ **setId**(`id`): `void`
+> **setId**(`id`): `void`
 
 It sets the id property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `id` | `string` |
+• **id**: `string`
 
 #### Returns
 
@@ -539,29 +492,27 @@ It sets the id property of the tool state.
 
 #### Implementation of
 
-[IInfoToolState](../interfaces/IInfoToolState.md).[setId](../interfaces/IInfoToolState.md#setid)
+[`IInfoToolState`](../interfaces/IInfoToolState.md).[`setId`](../interfaces/IInfoToolState.md#setid)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[setId](MapToolState.md#setid)
+[`MapToolState`](MapToolState.md).[`setId`](MapToolState.md#setid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:96](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L96)
+[model/internal/object/MapObjectState.ts:96](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L96)
 
-___
+***
 
-### setInfoDataManager
+### setInfoDataManager()
 
-▸ **setInfoDataManager**(`manager`): `void`
+> **setInfoDataManager**(`manager`): `void`
 
 It sets markdown manager.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `manager` | [`IInfoDataManager`](../modules.md#iinfodatamanager) |
+• **manager**: [`IInfoDataManager`](../type-aliases/IInfoDataManager.md)
 
 #### Returns
 
@@ -569,25 +520,23 @@ It sets markdown manager.
 
 #### Implementation of
 
-[IInfoToolState](../interfaces/IInfoToolState.md).[setInfoDataManager](../interfaces/IInfoToolState.md#setinfodatamanager)
+[`IInfoToolState`](../interfaces/IInfoToolState.md).[`setInfoDataManager`](../interfaces/IInfoToolState.md#setinfodatamanager)
 
-#### Defined in
+#### Source
 
-[src/tools/info/model/internal/tool/InfoToolState.ts:110](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/info/model/internal/tool/InfoToolState.ts#L110)
+[tools/info/model/internal/tool/InfoToolState.ts:110](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/info/model/internal/tool/InfoToolState.ts#L110)
 
-___
+***
 
-### setLabel
+### setLabel()
 
-▸ **setLabel**(`label`): `void`
+> **setLabel**(`label`): `void`
 
 It sets the label property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `label` | `string` |
+• **label**: `string`
 
 #### Returns
 
@@ -595,29 +544,27 @@ It sets the label property of the tool state.
 
 #### Implementation of
 
-[IInfoToolState](../interfaces/IInfoToolState.md).[setLabel](../interfaces/IInfoToolState.md#setlabel)
+[`IInfoToolState`](../interfaces/IInfoToolState.md).[`setLabel`](../interfaces/IInfoToolState.md#setlabel)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[setLabel](MapToolState.md#setlabel)
+[`MapToolState`](MapToolState.md).[`setLabel`](MapToolState.md#setlabel)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:113](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L113)
+[model/internal/tool/MapToolState.ts:113](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L113)
 
-___
+***
 
-### setMap
+### setMap()
 
-▸ **setMap**(`map`): `void`
+> `protected` **setMap**(`map`): `void`
 
 It sets the map property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `map` | [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\> |
+• **map**: [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Returns
 
@@ -625,25 +572,23 @@ It sets the map property of the tool state.
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[setMap](MapToolState.md#setmap)
+[`MapToolState`](MapToolState.md).[`setMap`](MapToolState.md#setmap)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:145](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L145)
+[model/internal/tool/MapToolState.ts:145](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L145)
 
-___
+***
 
-### setMarkdown
+### setMarkdown()
 
-▸ **setMarkdown**(`md`): `void`
+> **setMarkdown**(`md`): `void`
 
 It sets the markdown property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `md` | [`IInfoData`](../interfaces/IInfoData.md) |
+• **md**: [`IInfoData`](../interfaces/IInfoData.md)
 
 #### Returns
 
@@ -651,8 +596,8 @@ It sets the markdown property of the tool state.
 
 #### Implementation of
 
-[IInfoToolState](../interfaces/IInfoToolState.md).[setMarkdown](../interfaces/IInfoToolState.md#setmarkdown)
+[`IInfoToolState`](../interfaces/IInfoToolState.md).[`setMarkdown`](../interfaces/IInfoToolState.md#setmarkdown)
 
-#### Defined in
+#### Source
 
-[src/tools/info/model/internal/tool/InfoToolState.ts:101](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/info/model/internal/tool/InfoToolState.ts#L101)
+[tools/info/model/internal/tool/InfoToolState.ts:101](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/info/model/internal/tool/InfoToolState.ts#L101)

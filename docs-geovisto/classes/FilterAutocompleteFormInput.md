@@ -1,55 +1,34 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / FilterAutocompleteFormInput
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / FilterAutocompleteFormInput
 
 # Class: FilterAutocompleteFormInput
 
 This class represents a form input composed of three autocomplete inputs used for filters.
 
-**`Author`**
+## Author
 
 Jakub Kachlik
 
-**`Author`**
+## Author
 
 Jiri Hynek (refactoring, code review)
 
-## Hierarchy
+## Extends
 
 - [`AbstractMapFormInput`](AbstractMapFormInput.md)
 
-  ↳ **`FilterAutocompleteFormInput`**
-
-## Table of contents
-
-### Constructors
-
-- [constructor](FilterAutocompleteFormInput.md#constructor)
-
-### Properties
-
-- [input](FilterAutocompleteFormInput.md#input)
-- [inputDiv](FilterAutocompleteFormInput.md#inputdiv)
-
-### Methods
-
-- [create](FilterAutocompleteFormInput.md#create)
-- [getInputElement](FilterAutocompleteFormInput.md#getinputelement)
-- [getProps](FilterAutocompleteFormInput.md#getprops)
-- [getValue](FilterAutocompleteFormInput.md#getvalue)
-- [setDisabled](FilterAutocompleteFormInput.md#setdisabled)
-- [setValue](FilterAutocompleteFormInput.md#setvalue)
-- [ID](FilterAutocompleteFormInput.md#id)
-
 ## Constructors
 
-### constructor
+### new FilterAutocompleteFormInput()
 
-• **new FilterAutocompleteFormInput**(`props`): [`FilterAutocompleteFormInput`](FilterAutocompleteFormInput.md)
+> **new FilterAutocompleteFormInput**(`props`): [`FilterAutocompleteFormInput`](FilterAutocompleteFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `props` | [`IFilterFormInputProps`](../interfaces/IFilterFormInputProps.md) |
+• **props**: [`IFilterFormInputProps`](../interfaces/IFilterFormInputProps.md)
 
 #### Returns
 
@@ -57,41 +36,41 @@ Jiri Hynek (refactoring, code review)
 
 #### Overrides
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[constructor](AbstractMapFormInput.md#constructor)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`constructor`](AbstractMapFormInput.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts#L32)
+[model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts#L32)
 
 ## Properties
 
 ### input
 
-• `Private` **input**: ``null`` \| \{ `data`: [`LabeledAutocompleteFormInput`](LabeledAutocompleteFormInput.md) ; `op`: [`LabeledAutocompleteFormInput`](LabeledAutocompleteFormInput.md) ; `val`: [`LabeledAutocompleteFormInput`](LabeledAutocompleteFormInput.md)  }
+> `private` **input**: `null` \| `object`
 
 Input element is composed of 3 HTML select elements
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts:26](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts#L26)
+[model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts:26](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts#L26)
 
-___
+***
 
 ### inputDiv
 
-• `Private` **inputDiv**: ``null`` \| `HTMLDivElement`
+> `private` **inputDiv**: `null` \| `HTMLDivElement`
 
 The input element is created when required.
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts:21](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts#L21)
+[model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts:21](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts#L21)
 
 ## Methods
 
-### create
+### create()
 
-▸ **create**(): `HTMLElement`
+> **create**(): `HTMLElement`
 
 It returns filter div element composed of 3 autocomplete form inputs.
 
@@ -101,33 +80,33 @@ It returns filter div element composed of 3 autocomplete form inputs.
 
 #### Overrides
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[create](AbstractMapFormInput.md#create)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`create`](AbstractMapFormInput.md#create)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts:50](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts#L50)
+[model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts:50](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts#L50)
 
-___
+***
 
-### getInputElement
+### getInputElement()
 
-▸ **getInputElement**(): ``null`` \| \{ `data`: [`LabeledAutocompleteFormInput`](LabeledAutocompleteFormInput.md) ; `op`: [`LabeledAutocompleteFormInput`](LabeledAutocompleteFormInput.md) ; `val`: [`LabeledAutocompleteFormInput`](LabeledAutocompleteFormInput.md)  }
+> **getInputElement**(): `null` \| `object`
 
 It returns input
 
 #### Returns
 
-``null`` \| \{ `data`: [`LabeledAutocompleteFormInput`](LabeledAutocompleteFormInput.md) ; `op`: [`LabeledAutocompleteFormInput`](LabeledAutocompleteFormInput.md) ; `val`: [`LabeledAutocompleteFormInput`](LabeledAutocompleteFormInput.md)  }
+`null` \| `object`
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts:115](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts#L115)
+[model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts:115](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts#L115)
 
-___
+***
 
-### getProps
+### getProps()
 
-▸ **getProps**(): [`IMapFormInputProps`](../interfaces/IMapFormInputProps.md)
+> `protected` **getProps**(): [`IMapFormInputProps`](../interfaces/IMapFormInputProps.md)
 
 It provides the props to the exteded classes.
 
@@ -137,17 +116,17 @@ It provides the props to the exteded classes.
 
 #### Inherited from
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[getProps](AbstractMapFormInput.md#getprops)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`getProps`](AbstractMapFormInput.md#getprops)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/abstract/AbstractMapFormInput.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/abstract/AbstractMapFormInput.ts#L23)
+[model/internal/inputs/abstract/AbstractMapFormInput.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/abstract/AbstractMapFormInput.ts#L23)
 
-___
+***
 
-### getValue
+### getValue()
 
-▸ **getValue**(): [`IFilterFormInputValue`](../interfaces/IFilterFormInputValue.md)
+> **getValue**(): [`IFilterFormInputValue`](../interfaces/IFilterFormInputValue.md)
 
 It returns values of the inputs.
 
@@ -157,25 +136,23 @@ It returns values of the inputs.
 
 #### Overrides
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[getValue](AbstractMapFormInput.md#getvalue)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`getValue`](AbstractMapFormInput.md#getvalue)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts:76](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts#L76)
+[model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts:76](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts#L76)
 
-___
+***
 
-### setDisabled
+### setDisabled()
 
-▸ **setDisabled**(`disabled`): `void`
+> **setDisabled**(`disabled`): `void`
 
 It sets the input disabled.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `disabled` | `boolean` |
+• **disabled**: `boolean`
 
 #### Returns
 
@@ -183,25 +160,23 @@ It sets the input disabled.
 
 #### Overrides
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[setDisabled](AbstractMapFormInput.md#setdisabled)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`setDisabled`](AbstractMapFormInput.md#setdisabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts:104](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts#L104)
+[model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts:104](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts#L104)
 
-___
+***
 
-### setValue
+### setValue()
 
-▸ **setValue**(`value`): `void`
+> **setValue**(`value`): `void`
 
 It sets values of the inputs.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | [`IFilterFormInputValue`](../interfaces/IFilterFormInputValue.md) |
+• **value**: [`IFilterFormInputValue`](../interfaces/IFilterFormInputValue.md)
 
 #### Returns
 
@@ -209,17 +184,17 @@ It sets values of the inputs.
 
 #### Overrides
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[setValue](AbstractMapFormInput.md#setvalue)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`setValue`](AbstractMapFormInput.md#setvalue)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts:93](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts#L93)
+[model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts:93](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts#L93)
 
-___
+***
 
-### ID
+### ID()
 
-▸ **ID**(): `string`
+> `static` **ID**(): `string`
 
 Static function returns identifier of the input type
 
@@ -227,6 +202,6 @@ Static function returns identifier of the input type
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts:43](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts#L43)
+[model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts:43](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/filter/autocomplete/FilterAutocompleteFormInput.ts#L43)

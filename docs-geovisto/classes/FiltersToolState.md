@@ -1,69 +1,36 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / FiltersToolState
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / FiltersToolState
 
 # Class: FiltersToolState
 
 This class provide functions for using filters.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`MapToolState`](MapToolState.md)
-
-  ↳ **`FiltersToolState`**
 
 ## Implements
 
 - [`IFiltersToolState`](../interfaces/IFiltersToolState.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](FiltersToolState.md#constructor)
-
-### Properties
-
-- [manager](FiltersToolState.md#manager)
-- [rules](FiltersToolState.md#rules)
-
-### Methods
-
-- [deserialize](FiltersToolState.md#deserialize)
-- [getFilterRules](FiltersToolState.md#getfilterrules)
-- [getFiltersManager](FiltersToolState.md#getfiltersmanager)
-- [getIcon](FiltersToolState.md#geticon)
-- [getId](FiltersToolState.md#getid)
-- [getLabel](FiltersToolState.md#getlabel)
-- [getMap](FiltersToolState.md#getmap)
-- [getMapObject](FiltersToolState.md#getmapobject)
-- [getType](FiltersToolState.md#gettype)
-- [initialize](FiltersToolState.md#initialize)
-- [isEnabled](FiltersToolState.md#isenabled)
-- [serialize](FiltersToolState.md#serialize)
-- [setEnabled](FiltersToolState.md#setenabled)
-- [setFilterRules](FiltersToolState.md#setfilterrules)
-- [setFiltersManager](FiltersToolState.md#setfiltersmanager)
-- [setIcon](FiltersToolState.md#seticon)
-- [setId](FiltersToolState.md#setid)
-- [setLabel](FiltersToolState.md#setlabel)
-- [setMap](FiltersToolState.md#setmap)
-
 ## Constructors
 
-### constructor
+### new FiltersToolState()
 
-• **new FiltersToolState**(`tool`): [`FiltersToolState`](FiltersToolState.md)
+> **new FiltersToolState**(`tool`): [`FiltersToolState`](FiltersToolState.md)
 
 It creates a tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `tool` | [`IFiltersTool`](../interfaces/IFiltersTool.md)\<[`IFiltersToolProps`](../modules.md#ifilterstoolprops), [`IFiltersToolDefaults`](../interfaces/IFiltersToolDefaults.md), [`IFiltersToolState`](../interfaces/IFiltersToolState.md)\<[`IFiltersToolProps`](../modules.md#ifilterstoolprops), [`IFiltersToolDefaults`](../interfaces/IFiltersToolDefaults.md), [`IFiltersToolConfig`](../modules.md#ifilterstoolconfig)\>, [`IFiltersToolConfig`](../modules.md#ifilterstoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IFiltersToolConfig`](../modules.md#ifilterstoolconfig)\>\> |
+• **tool**: [`IFiltersTool`](../interfaces/IFiltersTool.md)\<[`IFiltersToolProps`](../type-aliases/IFiltersToolProps.md), [`IFiltersToolDefaults`](../interfaces/IFiltersToolDefaults.md), [`IFiltersToolState`](../interfaces/IFiltersToolState.md)\<[`IFiltersToolProps`](../type-aliases/IFiltersToolProps.md), [`IFiltersToolDefaults`](../interfaces/IFiltersToolDefaults.md), [`IFiltersToolConfig`](../type-aliases/IFiltersToolConfig.md)\>, [`IFiltersToolConfig`](../type-aliases/IFiltersToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IFiltersToolConfig`](../type-aliases/IFiltersToolConfig.md)\>\>
 
 #### Returns
 
@@ -71,45 +38,43 @@ It creates a tool state.
 
 #### Overrides
 
-[MapToolState](MapToolState.md).[constructor](MapToolState.md#constructor)
+[`MapToolState`](MapToolState.md).[`constructor`](MapToolState.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/tools/filters/model/internal/tool/FiltersToolState.ts:31](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/filters/model/internal/tool/FiltersToolState.ts#L31)
+[tools/filters/model/internal/tool/FiltersToolState.ts:31](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/filters/model/internal/tool/FiltersToolState.ts#L31)
 
 ## Properties
 
 ### manager
 
-• `Private` **manager**: [`IMapFilterManager`](../interfaces/IMapFilterManager.md)
+> `private` **manager**: [`IMapFilterManager`](../interfaces/IMapFilterManager.md)
 
-#### Defined in
+#### Source
 
-[src/tools/filters/model/internal/tool/FiltersToolState.ts:24](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/filters/model/internal/tool/FiltersToolState.ts#L24)
+[tools/filters/model/internal/tool/FiltersToolState.ts:24](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/filters/model/internal/tool/FiltersToolState.ts#L24)
 
-___
+***
 
 ### rules
 
-• `Private` **rules**: [`IMapFilterRule`](../interfaces/IMapFilterRule.md)[]
+> `private` **rules**: [`IMapFilterRule`](../interfaces/IMapFilterRule.md)[]
 
-#### Defined in
+#### Source
 
-[src/tools/filters/model/internal/tool/FiltersToolState.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/filters/model/internal/tool/FiltersToolState.ts#L23)
+[tools/filters/model/internal/tool/FiltersToolState.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/filters/model/internal/tool/FiltersToolState.ts#L23)
 
 ## Methods
 
-### deserialize
+### deserialize()
 
-▸ **deserialize**(`config`): `void`
+> **deserialize**(`config`): `void`
 
 The metod takes config and deserializes the values.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `config` | [`IFiltersToolConfig`](../modules.md#ifilterstoolconfig) |
+• **config**: [`IFiltersToolConfig`](../type-aliases/IFiltersToolConfig.md)
 
 #### Returns
 
@@ -117,21 +82,21 @@ The metod takes config and deserializes the values.
 
 #### Implementation of
 
-[IFiltersToolState](../interfaces/IFiltersToolState.md).[deserialize](../interfaces/IFiltersToolState.md#deserialize)
+[`IFiltersToolState`](../interfaces/IFiltersToolState.md).[`deserialize`](../interfaces/IFiltersToolState.md#deserialize)
 
 #### Overrides
 
-[MapToolState](MapToolState.md).[deserialize](MapToolState.md#deserialize)
+[`MapToolState`](MapToolState.md).[`deserialize`](MapToolState.md#deserialize)
 
-#### Defined in
+#### Source
 
-[src/tools/filters/model/internal/tool/FiltersToolState.ts:54](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/filters/model/internal/tool/FiltersToolState.ts#L54)
+[tools/filters/model/internal/tool/FiltersToolState.ts:54](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/filters/model/internal/tool/FiltersToolState.ts#L54)
 
-___
+***
 
-### getFilterRules
+### getFilterRules()
 
-▸ **getFilterRules**(): [`IMapFilterRule`](../interfaces/IMapFilterRule.md)[]
+> **getFilterRules**(): [`IMapFilterRule`](../interfaces/IMapFilterRule.md)[]
 
 It returns the filterRules property of the tool state.
 
@@ -141,17 +106,17 @@ It returns the filterRules property of the tool state.
 
 #### Implementation of
 
-[IFiltersToolState](../interfaces/IFiltersToolState.md).[getFilterRules](../interfaces/IFiltersToolState.md#getfilterrules)
+[`IFiltersToolState`](../interfaces/IFiltersToolState.md).[`getFilterRules`](../interfaces/IFiltersToolState.md#getfilterrules)
 
-#### Defined in
+#### Source
 
-[src/tools/filters/model/internal/tool/FiltersToolState.ts:127](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/filters/model/internal/tool/FiltersToolState.ts#L127)
+[tools/filters/model/internal/tool/FiltersToolState.ts:127](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/filters/model/internal/tool/FiltersToolState.ts#L127)
 
-___
+***
 
-### getFiltersManager
+### getFiltersManager()
 
-▸ **getFiltersManager**(): [`IMapFilterManager`](../interfaces/IMapFilterManager.md)
+> **getFiltersManager**(): [`IMapFilterManager`](../interfaces/IMapFilterManager.md)
 
 It returns filter manager
 
@@ -161,17 +126,17 @@ It returns filter manager
 
 #### Implementation of
 
-[IFiltersToolState](../interfaces/IFiltersToolState.md).[getFiltersManager](../interfaces/IFiltersToolState.md#getfiltersmanager)
+[`IFiltersToolState`](../interfaces/IFiltersToolState.md).[`getFiltersManager`](../interfaces/IFiltersToolState.md#getfiltersmanager)
 
-#### Defined in
+#### Source
 
-[src/tools/filters/model/internal/tool/FiltersToolState.ts:111](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/filters/model/internal/tool/FiltersToolState.ts#L111)
+[tools/filters/model/internal/tool/FiltersToolState.ts:111](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/filters/model/internal/tool/FiltersToolState.ts#L111)
 
-___
+***
 
-### getIcon
+### getIcon()
 
-▸ **getIcon**(): `string`
+> **getIcon**(): `string`
 
 It returns the icon property of the tool state.
 
@@ -181,21 +146,21 @@ It returns the icon property of the tool state.
 
 #### Implementation of
 
-[IFiltersToolState](../interfaces/IFiltersToolState.md).[getIcon](../interfaces/IFiltersToolState.md#geticon)
+[`IFiltersToolState`](../interfaces/IFiltersToolState.md).[`getIcon`](../interfaces/IFiltersToolState.md#geticon)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[getIcon](MapToolState.md#geticon)
+[`MapToolState`](MapToolState.md).[`getIcon`](MapToolState.md#geticon)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:120](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L120)
+[model/internal/tool/MapToolState.ts:120](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L120)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 It returns the id property of the tool state.
 
@@ -205,21 +170,21 @@ It returns the id property of the tool state.
 
 #### Implementation of
 
-[IFiltersToolState](../interfaces/IFiltersToolState.md).[getId](../interfaces/IFiltersToolState.md#getid)
+[`IFiltersToolState`](../interfaces/IFiltersToolState.md).[`getId`](../interfaces/IFiltersToolState.md#getid)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[getId](MapToolState.md#getid)
+[`MapToolState`](MapToolState.md).[`getId`](MapToolState.md#getid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:87](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L87)
+[model/internal/object/MapObjectState.ts:87](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L87)
 
-___
+***
 
-### getLabel
+### getLabel()
 
-▸ **getLabel**(): `string`
+> **getLabel**(): `string`
 
 It returns the label property of the tool state.
 
@@ -229,65 +194,65 @@ It returns the label property of the tool state.
 
 #### Implementation of
 
-[IFiltersToolState](../interfaces/IFiltersToolState.md).[getLabel](../interfaces/IFiltersToolState.md#getlabel)
+[`IFiltersToolState`](../interfaces/IFiltersToolState.md).[`getLabel`](../interfaces/IFiltersToolState.md#getlabel)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[getLabel](MapToolState.md#getlabel)
+[`MapToolState`](MapToolState.md).[`getLabel`](MapToolState.md#getlabel)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:104](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L104)
+[model/internal/tool/MapToolState.ts:104](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L104)
 
-___
+***
 
-### getMap
+### getMap()
 
-▸ **getMap**(): [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+> **getMap**(): [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 It returns the map property of the tool state.
 
 #### Returns
 
-[`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+[`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Implementation of
 
-[IFiltersToolState](../interfaces/IFiltersToolState.md).[getMap](../interfaces/IFiltersToolState.md#getmap)
+[`IFiltersToolState`](../interfaces/IFiltersToolState.md).[`getMap`](../interfaces/IFiltersToolState.md#getmap)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[getMap](MapToolState.md#getmap)
+[`MapToolState`](MapToolState.md).[`getMap`](MapToolState.md#getmap)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:136](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L136)
+[model/internal/tool/MapToolState.ts:136](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L136)
 
-___
+***
 
-### getMapObject
+### getMapObject()
 
-▸ **getMapObject**(): [`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>
+> `protected` **getMapObject**(): [`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>
 
 It makes the map object visible to extended classes.
 
 #### Returns
 
-[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>
+[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[getMapObject](MapToolState.md#getmapobject)
+[`MapToolState`](MapToolState.md).[`getMapObject`](MapToolState.md#getmapobject)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:39](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L39)
+[model/internal/object/MapObjectState.ts:39](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L39)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 It returns the type property of the tool state.
 
@@ -297,31 +262,31 @@ It returns the type property of the tool state.
 
 #### Implementation of
 
-[IFiltersToolState](../interfaces/IFiltersToolState.md).[getType](../interfaces/IFiltersToolState.md#gettype)
+[`IFiltersToolState`](../interfaces/IFiltersToolState.md).[`getType`](../interfaces/IFiltersToolState.md#gettype)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[getType](MapToolState.md#gettype)
+[`MapToolState`](MapToolState.md).[`getType`](MapToolState.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:80](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L80)
+[model/internal/object/MapObjectState.ts:80](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L80)
 
-___
+***
 
-### initialize
+### initialize()
 
-▸ **initialize**(`defaults`, `props`, `initProps`): `void`
+> **initialize**(`defaults`, `props`, `initProps`): `void`
 
 It resets state with respect to initial props.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `defaults` | [`IFiltersToolDefaults`](../interfaces/IFiltersToolDefaults.md) |
-| `props` | [`IFiltersToolProps`](../modules.md#ifilterstoolprops) |
-| `initProps` | [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IFiltersToolConfig`](../modules.md#ifilterstoolconfig)\> |
+• **defaults**: [`IFiltersToolDefaults`](../interfaces/IFiltersToolDefaults.md)
+
+• **props**: [`IFiltersToolProps`](../type-aliases/IFiltersToolProps.md)
+
+• **initProps**: [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IFiltersToolConfig`](../type-aliases/IFiltersToolConfig.md)\>
 
 #### Returns
 
@@ -329,21 +294,21 @@ It resets state with respect to initial props.
 
 #### Implementation of
 
-[IFiltersToolState](../interfaces/IFiltersToolState.md).[initialize](../interfaces/IFiltersToolState.md#initialize)
+[`IFiltersToolState`](../interfaces/IFiltersToolState.md).[`initialize`](../interfaces/IFiltersToolState.md#initialize)
 
 #### Overrides
 
-[MapToolState](MapToolState.md).[initialize](MapToolState.md#initialize)
+[`MapToolState`](MapToolState.md).[`initialize`](MapToolState.md#initialize)
 
-#### Defined in
+#### Source
 
-[src/tools/filters/model/internal/tool/FiltersToolState.ts:38](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/filters/model/internal/tool/FiltersToolState.ts#L38)
+[tools/filters/model/internal/tool/FiltersToolState.ts:38](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/filters/model/internal/tool/FiltersToolState.ts#L38)
 
-___
+***
 
-### isEnabled
+### isEnabled()
 
-▸ **isEnabled**(): `boolean`
+> **isEnabled**(): `boolean`
 
 It returns the enabled property of the tool state.
 
@@ -353,59 +318,55 @@ It returns the enabled property of the tool state.
 
 #### Implementation of
 
-[IFiltersToolState](../interfaces/IFiltersToolState.md).[isEnabled](../interfaces/IFiltersToolState.md#isenabled)
+[`IFiltersToolState`](../interfaces/IFiltersToolState.md).[`isEnabled`](../interfaces/IFiltersToolState.md#isenabled)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[isEnabled](MapToolState.md#isenabled)
+[`MapToolState`](MapToolState.md).[`isEnabled`](MapToolState.md#isenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:88](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L88)
+[model/internal/tool/MapToolState.ts:88](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L88)
 
-___
+***
 
-### serialize
+### serialize()
 
-▸ **serialize**(`defaults`): [`IFiltersToolConfig`](../modules.md#ifilterstoolconfig)
+> **serialize**(`defaults`): [`IFiltersToolConfig`](../type-aliases/IFiltersToolConfig.md)
 
 The method serializes the tool state. Optionally, defaults can be set if property is undefined.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `defaults` | `undefined` \| [`IFiltersToolDefaults`](../interfaces/IFiltersToolDefaults.md) |
+• **defaults**: `undefined` \| [`IFiltersToolDefaults`](../interfaces/IFiltersToolDefaults.md)
 
 #### Returns
 
-[`IFiltersToolConfig`](../modules.md#ifilterstoolconfig)
+[`IFiltersToolConfig`](../type-aliases/IFiltersToolConfig.md)
 
 #### Implementation of
 
-[IFiltersToolState](../interfaces/IFiltersToolState.md).[serialize](../interfaces/IFiltersToolState.md#serialize)
+[`IFiltersToolState`](../interfaces/IFiltersToolState.md).[`serialize`](../interfaces/IFiltersToolState.md#serialize)
 
 #### Overrides
 
-[MapToolState](MapToolState.md).[serialize](MapToolState.md#serialize)
+[`MapToolState`](MapToolState.md).[`serialize`](MapToolState.md#serialize)
 
-#### Defined in
+#### Source
 
-[src/tools/filters/model/internal/tool/FiltersToolState.ts:88](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/filters/model/internal/tool/FiltersToolState.ts#L88)
+[tools/filters/model/internal/tool/FiltersToolState.ts:88](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/filters/model/internal/tool/FiltersToolState.ts#L88)
 
-___
+***
 
-### setEnabled
+### setEnabled()
 
-▸ **setEnabled**(`enabled`): `void`
+> **setEnabled**(`enabled`): `void`
 
 It sets the enabled property of tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `enabled` | `boolean` |
+• **enabled**: `boolean`
 
 #### Returns
 
@@ -413,29 +374,27 @@ It sets the enabled property of tool state.
 
 #### Implementation of
 
-[IFiltersToolState](../interfaces/IFiltersToolState.md).[setEnabled](../interfaces/IFiltersToolState.md#setenabled)
+[`IFiltersToolState`](../interfaces/IFiltersToolState.md).[`setEnabled`](../interfaces/IFiltersToolState.md#setenabled)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[setEnabled](MapToolState.md#setenabled)
+[`MapToolState`](MapToolState.md).[`setEnabled`](MapToolState.md#setenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:97](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L97)
+[model/internal/tool/MapToolState.ts:97](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L97)
 
-___
+***
 
-### setFilterRules
+### setFilterRules()
 
-▸ **setFilterRules**(`filterRules`): `void`
+> **setFilterRules**(`filterRules`): `void`
 
 It sets the filterRules property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `filterRules` | [`IMapFilterRule`](../interfaces/IMapFilterRule.md)[] |
+• **filterRules**: [`IMapFilterRule`](../interfaces/IMapFilterRule.md)[]
 
 #### Returns
 
@@ -443,25 +402,23 @@ It sets the filterRules property of the tool state.
 
 #### Implementation of
 
-[IFiltersToolState](../interfaces/IFiltersToolState.md).[setFilterRules](../interfaces/IFiltersToolState.md#setfilterrules)
+[`IFiltersToolState`](../interfaces/IFiltersToolState.md).[`setFilterRules`](../interfaces/IFiltersToolState.md#setfilterrules)
 
-#### Defined in
+#### Source
 
-[src/tools/filters/model/internal/tool/FiltersToolState.ts:136](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/filters/model/internal/tool/FiltersToolState.ts#L136)
+[tools/filters/model/internal/tool/FiltersToolState.ts:136](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/filters/model/internal/tool/FiltersToolState.ts#L136)
 
-___
+***
 
-### setFiltersManager
+### setFiltersManager()
 
-▸ **setFiltersManager**(`manager`): `void`
+> **setFiltersManager**(`manager`): `void`
 
 It updates filter manager.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `manager` | [`IMapFilterManager`](../interfaces/IMapFilterManager.md) |
+• **manager**: [`IMapFilterManager`](../interfaces/IMapFilterManager.md)
 
 #### Returns
 
@@ -469,25 +426,23 @@ It updates filter manager.
 
 #### Implementation of
 
-[IFiltersToolState](../interfaces/IFiltersToolState.md).[setFiltersManager](../interfaces/IFiltersToolState.md#setfiltersmanager)
+[`IFiltersToolState`](../interfaces/IFiltersToolState.md).[`setFiltersManager`](../interfaces/IFiltersToolState.md#setfiltersmanager)
 
-#### Defined in
+#### Source
 
-[src/tools/filters/model/internal/tool/FiltersToolState.ts:120](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/filters/model/internal/tool/FiltersToolState.ts#L120)
+[tools/filters/model/internal/tool/FiltersToolState.ts:120](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/filters/model/internal/tool/FiltersToolState.ts#L120)
 
-___
+***
 
-### setIcon
+### setIcon()
 
-▸ **setIcon**(`icon`): `void`
+> **setIcon**(`icon`): `void`
 
 It sets the icon property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `icon` | `string` |
+• **icon**: `string`
 
 #### Returns
 
@@ -495,29 +450,27 @@ It sets the icon property of the tool state.
 
 #### Implementation of
 
-[IFiltersToolState](../interfaces/IFiltersToolState.md).[setIcon](../interfaces/IFiltersToolState.md#seticon)
+[`IFiltersToolState`](../interfaces/IFiltersToolState.md).[`setIcon`](../interfaces/IFiltersToolState.md#seticon)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[setIcon](MapToolState.md#seticon)
+[`MapToolState`](MapToolState.md).[`setIcon`](MapToolState.md#seticon)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:129](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L129)
+[model/internal/tool/MapToolState.ts:129](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L129)
 
-___
+***
 
-### setId
+### setId()
 
-▸ **setId**(`id`): `void`
+> **setId**(`id`): `void`
 
 It sets the id property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `id` | `string` |
+• **id**: `string`
 
 #### Returns
 
@@ -525,29 +478,27 @@ It sets the id property of the tool state.
 
 #### Implementation of
 
-[IFiltersToolState](../interfaces/IFiltersToolState.md).[setId](../interfaces/IFiltersToolState.md#setid)
+[`IFiltersToolState`](../interfaces/IFiltersToolState.md).[`setId`](../interfaces/IFiltersToolState.md#setid)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[setId](MapToolState.md#setid)
+[`MapToolState`](MapToolState.md).[`setId`](MapToolState.md#setid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:96](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L96)
+[model/internal/object/MapObjectState.ts:96](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L96)
 
-___
+***
 
-### setLabel
+### setLabel()
 
-▸ **setLabel**(`label`): `void`
+> **setLabel**(`label`): `void`
 
 It sets the label property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `label` | `string` |
+• **label**: `string`
 
 #### Returns
 
@@ -555,29 +506,27 @@ It sets the label property of the tool state.
 
 #### Implementation of
 
-[IFiltersToolState](../interfaces/IFiltersToolState.md).[setLabel](../interfaces/IFiltersToolState.md#setlabel)
+[`IFiltersToolState`](../interfaces/IFiltersToolState.md).[`setLabel`](../interfaces/IFiltersToolState.md#setlabel)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[setLabel](MapToolState.md#setlabel)
+[`MapToolState`](MapToolState.md).[`setLabel`](MapToolState.md#setlabel)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:113](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L113)
+[model/internal/tool/MapToolState.ts:113](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L113)
 
-___
+***
 
-### setMap
+### setMap()
 
-▸ **setMap**(`map`): `void`
+> `protected` **setMap**(`map`): `void`
 
 It sets the map property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `map` | [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\> |
+• **map**: [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Returns
 
@@ -585,8 +534,8 @@ It sets the map property of the tool state.
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[setMap](MapToolState.md#setmap)
+[`MapToolState`](MapToolState.md).[`setMap`](MapToolState.md#setmap)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:145](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L145)
+[model/internal/tool/MapToolState.ts:145](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L145)

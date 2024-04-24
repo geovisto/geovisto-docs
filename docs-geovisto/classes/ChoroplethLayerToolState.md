@@ -1,82 +1,36 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / ChoroplethLayerToolState
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / ChoroplethLayerToolState
 
 # Class: ChoroplethLayerToolState
 
 This class provide functions for using the state of the layer tool.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`LayerToolState`](LayerToolState.md)
-
-  ↳ **`ChoroplethLayerToolState`**
 
 ## Implements
 
 - [`IChoroplethLayerToolState`](../interfaces/IChoroplethLayerToolState.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](ChoroplethLayerToolState.md#constructor)
-
-### Properties
-
-- [bucketData](ChoroplethLayerToolState.md#bucketdata)
-- [geoJSONlayer](ChoroplethLayerToolState.md#geojsonlayer)
-- [hoveredItem](ChoroplethLayerToolState.md#hovereditem)
-- [zindex](ChoroplethLayerToolState.md#zindex)
-
-### Methods
-
-- [deserialize](ChoroplethLayerToolState.md#deserialize)
-- [deserializeDimensions](ChoroplethLayerToolState.md#deserializedimensions)
-- [getBucketData](ChoroplethLayerToolState.md#getbucketdata)
-- [getDimensions](ChoroplethLayerToolState.md#getdimensions)
-- [getGeoJSONLayer](ChoroplethLayerToolState.md#getgeojsonlayer)
-- [getHoveredItem](ChoroplethLayerToolState.md#gethovereditem)
-- [getIcon](ChoroplethLayerToolState.md#geticon)
-- [getId](ChoroplethLayerToolState.md#getid)
-- [getLabel](ChoroplethLayerToolState.md#getlabel)
-- [getLayerItems](ChoroplethLayerToolState.md#getlayeritems)
-- [getLayerName](ChoroplethLayerToolState.md#getlayername)
-- [getMap](ChoroplethLayerToolState.md#getmap)
-- [getMapObject](ChoroplethLayerToolState.md#getmapobject)
-- [getType](ChoroplethLayerToolState.md#gettype)
-- [getZIndex](ChoroplethLayerToolState.md#getzindex)
-- [initialize](ChoroplethLayerToolState.md#initialize)
-- [isEnabled](ChoroplethLayerToolState.md#isenabled)
-- [serialize](ChoroplethLayerToolState.md#serialize)
-- [setBucketData](ChoroplethLayerToolState.md#setbucketdata)
-- [setDimensions](ChoroplethLayerToolState.md#setdimensions)
-- [setEnabled](ChoroplethLayerToolState.md#setenabled)
-- [setGeoJSONLayer](ChoroplethLayerToolState.md#setgeojsonlayer)
-- [setHoveredItem](ChoroplethLayerToolState.md#sethovereditem)
-- [setIcon](ChoroplethLayerToolState.md#seticon)
-- [setId](ChoroplethLayerToolState.md#setid)
-- [setLabel](ChoroplethLayerToolState.md#setlabel)
-- [setLayerItems](ChoroplethLayerToolState.md#setlayeritems)
-- [setLayerName](ChoroplethLayerToolState.md#setlayername)
-- [setMap](ChoroplethLayerToolState.md#setmap)
-- [setZIndex](ChoroplethLayerToolState.md#setzindex)
-
 ## Constructors
 
-### constructor
+### new ChoroplethLayerToolState()
 
-• **new ChoroplethLayerToolState**(`tool`): [`ChoroplethLayerToolState`](ChoroplethLayerToolState.md)
+> **new ChoroplethLayerToolState**(`tool`): [`ChoroplethLayerToolState`](ChoroplethLayerToolState.md)
 
 It creates a tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `tool` | [`IChoroplethLayerTool`](../interfaces/IChoroplethLayerTool.md)\<[`IChoroplethLayerToolProps`](../modules.md#ichoroplethlayertoolprops), [`IChoroplethLayerToolDefaults`](../interfaces/IChoroplethLayerToolDefaults.md), [`IChoroplethLayerToolState`](../interfaces/IChoroplethLayerToolState.md)\<[`IChoroplethLayerToolProps`](../modules.md#ichoroplethlayertoolprops), [`IChoroplethLayerToolDefaults`](../interfaces/IChoroplethLayerToolDefaults.md), [`IChoroplethLayerToolConfig`](../modules.md#ichoroplethlayertoolconfig), \{ `aggregation?`: `string` ; `color?`: `string` ; `customColor?`: `boolean` ; `customMinMax?`: `boolean` ; `geoData?`: `string` ; `geoId?`: `string` ; `maxValue?`: `number` ; `minValue?`: `number` ; `range?`: `number` ; `round?`: `number` ; `scaling?`: `string` ; `units?`: `string` ; `unitsDesc?`: `string` ; `unitsEnabled?`: `boolean` ; `value?`: `string`  }, \{ `aggregation`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> ; `color`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `customColor`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\> ; `customMinMax`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\> ; `geoData`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IGeoData`](../interfaces/IGeoData.md)\> ; `geoId`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `maxValue`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `minValue`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `range`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md)\> ; `round`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `scaling`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IScale`](../interfaces/IScale.md)\> ; `units`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `unitsDesc`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `unitsEnabled`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\> ; `value`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>, [`IChoroplethLayerToolConfig`](../modules.md#ichoroplethlayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IChoroplethLayerToolConfig`](../modules.md#ichoroplethlayertoolconfig)\>\> |
+• **tool**: [`IChoroplethLayerTool`](../interfaces/IChoroplethLayerTool.md)\<[`IChoroplethLayerToolProps`](../type-aliases/IChoroplethLayerToolProps.md), [`IChoroplethLayerToolDefaults`](../interfaces/IChoroplethLayerToolDefaults.md), [`IChoroplethLayerToolState`](../interfaces/IChoroplethLayerToolState.md)\<[`IChoroplethLayerToolProps`](../type-aliases/IChoroplethLayerToolProps.md), [`IChoroplethLayerToolDefaults`](../interfaces/IChoroplethLayerToolDefaults.md), [`IChoroplethLayerToolConfig`](../type-aliases/IChoroplethLayerToolConfig.md), `object`, `object`\>, [`IChoroplethLayerToolConfig`](../type-aliases/IChoroplethLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IChoroplethLayerToolConfig`](../type-aliases/IChoroplethLayerToolConfig.md)\>\>
 
 #### Returns
 
@@ -84,65 +38,63 @@ It creates a tool state.
 
 #### Overrides
 
-[LayerToolState](LayerToolState.md).[constructor](LayerToolState.md#constructor)
+[`LayerToolState`](LayerToolState.md).[`constructor`](LayerToolState.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:30](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L30)
+[tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:30](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L30)
 
 ## Properties
 
 ### bucketData
 
-• `Private` **bucketData**: `Map`\<`string`, [`IMapAggregationBucket`](../interfaces/IMapAggregationBucket.md)\>
+> `private` **bucketData**: `Map`\<`string`, [`IMapAggregationBucket`](../interfaces/IMapAggregationBucket.md)\>
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L23)
+[tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L23)
 
-___
+***
 
-### geoJSONlayer
+### geoJSONlayer?
 
-• `Private` `Optional` **geoJSONlayer**: `GeoJSON`\<`any`, `Geometry`\>
+> `private` `optional` **geoJSONlayer**: `any`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:24](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L24)
+[tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:24](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L24)
 
-___
+***
 
-### hoveredItem
+### hoveredItem?
 
-• `Private` `Optional` **hoveredItem**: `string`
+> `private` `optional` **hoveredItem**: `string`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:25](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L25)
+[tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:25](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L25)
 
-___
+***
 
 ### zindex
 
-• `Private` **zindex**: `number`
+> `private` **zindex**: `number`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:22](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L22)
+[tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:22](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L22)
 
 ## Methods
 
-### deserialize
+### deserialize()
 
-▸ **deserialize**(`config`): `void`
+> **deserialize**(`config`): `void`
 
 The metod takes config and deserializes the values.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `config` | [`IChoroplethLayerToolConfig`](../modules.md#ichoroplethlayertoolconfig) |
+• **config**: [`IChoroplethLayerToolConfig`](../type-aliases/IChoroplethLayerToolConfig.md)
 
 #### Returns
 
@@ -150,44 +102,57 @@ The metod takes config and deserializes the values.
 
 #### Implementation of
 
-[IChoroplethLayerToolState](../interfaces/IChoroplethLayerToolState.md).[deserialize](../interfaces/IChoroplethLayerToolState.md#deserialize)
+[`IChoroplethLayerToolState`](../interfaces/IChoroplethLayerToolState.md).[`deserialize`](../interfaces/IChoroplethLayerToolState.md#deserialize)
 
 #### Overrides
 
-[LayerToolState](LayerToolState.md).[deserialize](LayerToolState.md#deserialize)
+[`LayerToolState`](LayerToolState.md).[`deserialize`](LayerToolState.md#deserialize)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:77](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L77)
+[tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:77](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L77)
 
-___
+***
 
-### deserializeDimensions
+### deserializeDimensions()
 
-▸ **deserializeDimensions**(`dimensionsConfig`): `void`
+> **deserializeDimensions**(`dimensionsConfig`): `void`
 
 It sets the map layer dimensions property of tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimensionsConfig` | `Object` |
-| `dimensionsConfig.aggregation?` | `string` |
-| `dimensionsConfig.color?` | `string` |
-| `dimensionsConfig.customColor?` | `boolean` |
-| `dimensionsConfig.customMinMax?` | `boolean` |
-| `dimensionsConfig.geoData?` | `string` |
-| `dimensionsConfig.geoId?` | `string` |
-| `dimensionsConfig.maxValue?` | `number` |
-| `dimensionsConfig.minValue?` | `number` |
-| `dimensionsConfig.range?` | `number` |
-| `dimensionsConfig.round?` | `number` |
-| `dimensionsConfig.scaling?` | `string` |
-| `dimensionsConfig.units?` | `string` |
-| `dimensionsConfig.unitsDesc?` | `string` |
-| `dimensionsConfig.unitsEnabled?` | `boolean` |
-| `dimensionsConfig.value?` | `string` |
+• **dimensionsConfig**
+
+• **dimensionsConfig.aggregation?**: `string`
+
+• **dimensionsConfig.color?**: `string`
+
+• **dimensionsConfig.customColor?**: `boolean`
+
+• **dimensionsConfig.customMinMax?**: `boolean`
+
+• **dimensionsConfig.geoData?**: `string`
+
+• **dimensionsConfig.geoId?**: `string`
+
+• **dimensionsConfig.maxValue?**: `number`
+
+• **dimensionsConfig.minValue?**: `number`
+
+• **dimensionsConfig.range?**: `number`
+
+• **dimensionsConfig.round?**: `number`
+
+• **dimensionsConfig.scaling?**: `string`
+
+• **dimensionsConfig.units?**: `string`
+
+• **dimensionsConfig.unitsDesc?**: `string`
+
+• **dimensionsConfig.unitsEnabled?**: `boolean`
+
+• **dimensionsConfig.value?**: `string`
 
 #### Returns
 
@@ -195,21 +160,21 @@ It sets the map layer dimensions property of tool state.
 
 #### Implementation of
 
-[IChoroplethLayerToolState](../interfaces/IChoroplethLayerToolState.md).[deserializeDimensions](../interfaces/IChoroplethLayerToolState.md#deserializedimensions)
+[`IChoroplethLayerToolState`](../interfaces/IChoroplethLayerToolState.md).[`deserializeDimensions`](../interfaces/IChoroplethLayerToolState.md#deserializedimensions)
 
 #### Overrides
 
-[LayerToolState](LayerToolState.md).[deserializeDimensions](LayerToolState.md#deserializedimensions)
+[`LayerToolState`](LayerToolState.md).[`deserializeDimensions`](LayerToolState.md#deserializedimensions)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:86](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L86)
+[tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:86](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L86)
 
-___
+***
 
-### getBucketData
+### getBucketData()
 
-▸ **getBucketData**(): `Map`\<`string`, [`IMapAggregationBucket`](../interfaces/IMapAggregationBucket.md)\>
+> **getBucketData**(): `Map`\<`string`, [`IMapAggregationBucket`](../interfaces/IMapAggregationBucket.md)\>
 
 It returns the bucket data.
 
@@ -219,79 +184,121 @@ It returns the bucket data.
 
 #### Implementation of
 
-[IChoroplethLayerToolState](../interfaces/IChoroplethLayerToolState.md).[getBucketData](../interfaces/IChoroplethLayerToolState.md#getbucketdata)
+[`IChoroplethLayerToolState`](../interfaces/IChoroplethLayerToolState.md).[`getBucketData`](../interfaces/IChoroplethLayerToolState.md#getbucketdata)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:206](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L206)
+[tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:206](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L206)
 
-___
+***
 
-### getDimensions
+### getDimensions()
 
-▸ **getDimensions**(): `Object`
+> **getDimensions**(): `object`
 
 It returns the map layer dimensions property of the tool state.
 
 #### Returns
 
-`Object`
+`object`
 
-| Name | Type |
-| :------ | :------ |
-| `aggregation` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> |
-| `color` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `customColor` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\> |
-| `customMinMax` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\> |
-| `geoData` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IGeoData`](../interfaces/IGeoData.md)\> |
-| `geoId` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `maxValue` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> |
-| `minValue` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> |
-| `range` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md)\> |
-| `round` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> |
-| `scaling` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IScale`](../interfaces/IScale.md)\> |
-| `units` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `unitsDesc` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `unitsEnabled` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\> |
-| `value` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
+##### aggregation
+
+> **aggregation**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\>
+
+##### color
+
+> **color**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+##### customColor
+
+> **customColor**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\>
+
+##### customMinMax
+
+> **customMinMax**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\>
+
+##### geoData
+
+> **geoData**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IGeoData`](../interfaces/IGeoData.md)\>
+
+##### geoId
+
+> **geoId**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+##### maxValue
+
+> **maxValue**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
+
+##### minValue
+
+> **minValue**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
+
+##### range
+
+> **range**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md)\>
+
+##### round
+
+> **round**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
+
+##### scaling
+
+> **scaling**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IScale`](../interfaces/IScale.md)\>
+
+##### units
+
+> **units**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+##### unitsDesc
+
+> **unitsDesc**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+##### unitsEnabled
+
+> **unitsEnabled**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\>
+
+##### value
+
+> **value**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Implementation of
 
-[IChoroplethLayerToolState](../interfaces/IChoroplethLayerToolState.md).[getDimensions](../interfaces/IChoroplethLayerToolState.md#getdimensions)
+[`IChoroplethLayerToolState`](../interfaces/IChoroplethLayerToolState.md).[`getDimensions`](../interfaces/IChoroplethLayerToolState.md#getdimensions)
 
 #### Overrides
 
-[LayerToolState](LayerToolState.md).[getDimensions](LayerToolState.md#getdimensions)
+[`LayerToolState`](LayerToolState.md).[`getDimensions`](LayerToolState.md#getdimensions)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:140](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L140)
+[tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:140](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L140)
 
-___
+***
 
-### getGeoJSONLayer
+### getGeoJSONLayer()
 
-▸ **getGeoJSONLayer**(): `undefined` \| `GeoJSON`\<`any`, `Geometry`\>
+> **getGeoJSONLayer**(): `any`
 
 It returns a Leaflet geoJSON layer.
 
 #### Returns
 
-`undefined` \| `GeoJSON`\<`any`, `Geometry`\>
+`any`
 
 #### Implementation of
 
-[IChoroplethLayerToolState](../interfaces/IChoroplethLayerToolState.md).[getGeoJSONLayer](../interfaces/IChoroplethLayerToolState.md#getgeojsonlayer)
+[`IChoroplethLayerToolState`](../interfaces/IChoroplethLayerToolState.md).[`getGeoJSONLayer`](../interfaces/IChoroplethLayerToolState.md#getgeojsonlayer)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:156](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L156)
+[tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:156](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L156)
 
-___
+***
 
-### getHoveredItem
+### getHoveredItem()
 
-▸ **getHoveredItem**(): `undefined` \| `string`
+> **getHoveredItem**(): `undefined` \| `string`
 
 It returns the hovered item.
 
@@ -301,17 +308,17 @@ It returns the hovered item.
 
 #### Implementation of
 
-[IChoroplethLayerToolState](../interfaces/IChoroplethLayerToolState.md).[getHoveredItem](../interfaces/IChoroplethLayerToolState.md#gethovereditem)
+[`IChoroplethLayerToolState`](../interfaces/IChoroplethLayerToolState.md).[`getHoveredItem`](../interfaces/IChoroplethLayerToolState.md#gethovereditem)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:172](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L172)
+[tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:172](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L172)
 
-___
+***
 
-### getIcon
+### getIcon()
 
-▸ **getIcon**(): `string`
+> **getIcon**(): `string`
 
 It returns the icon property of the tool state.
 
@@ -321,21 +328,21 @@ It returns the icon property of the tool state.
 
 #### Implementation of
 
-[IChoroplethLayerToolState](../interfaces/IChoroplethLayerToolState.md).[getIcon](../interfaces/IChoroplethLayerToolState.md#geticon)
+[`IChoroplethLayerToolState`](../interfaces/IChoroplethLayerToolState.md).[`getIcon`](../interfaces/IChoroplethLayerToolState.md#geticon)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getIcon](LayerToolState.md#geticon)
+[`LayerToolState`](LayerToolState.md).[`getIcon`](LayerToolState.md#geticon)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:120](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L120)
+[model/internal/tool/MapToolState.ts:120](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L120)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 It returns the id property of the tool state.
 
@@ -345,21 +352,21 @@ It returns the id property of the tool state.
 
 #### Implementation of
 
-[IChoroplethLayerToolState](../interfaces/IChoroplethLayerToolState.md).[getId](../interfaces/IChoroplethLayerToolState.md#getid)
+[`IChoroplethLayerToolState`](../interfaces/IChoroplethLayerToolState.md).[`getId`](../interfaces/IChoroplethLayerToolState.md#getid)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getId](LayerToolState.md#getid)
+[`LayerToolState`](LayerToolState.md).[`getId`](LayerToolState.md#getid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:87](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L87)
+[model/internal/object/MapObjectState.ts:87](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L87)
 
-___
+***
 
-### getLabel
+### getLabel()
 
-▸ **getLabel**(): `string`
+> **getLabel**(): `string`
 
 It returns the label property of the tool state.
 
@@ -369,21 +376,21 @@ It returns the label property of the tool state.
 
 #### Implementation of
 
-[IChoroplethLayerToolState](../interfaces/IChoroplethLayerToolState.md).[getLabel](../interfaces/IChoroplethLayerToolState.md#getlabel)
+[`IChoroplethLayerToolState`](../interfaces/IChoroplethLayerToolState.md).[`getLabel`](../interfaces/IChoroplethLayerToolState.md#getlabel)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getLabel](LayerToolState.md#getlabel)
+[`LayerToolState`](LayerToolState.md).[`getLabel`](LayerToolState.md#getlabel)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:104](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L104)
+[model/internal/tool/MapToolState.ts:104](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L104)
 
-___
+***
 
-### getLayerItems
+### getLayerItems()
 
-▸ **getLayerItems**(): `undefined` \| `Layer`[]
+> **getLayerItems**(): `undefined` \| `Layer`[]
 
 It returns the layer items property of the tool state.
 
@@ -393,21 +400,21 @@ It returns the layer items property of the tool state.
 
 #### Implementation of
 
-[IChoroplethLayerToolState](../interfaces/IChoroplethLayerToolState.md).[getLayerItems](../interfaces/IChoroplethLayerToolState.md#getlayeritems)
+[`IChoroplethLayerToolState`](../interfaces/IChoroplethLayerToolState.md).[`getLayerItems`](../interfaces/IChoroplethLayerToolState.md#getlayeritems)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getLayerItems](LayerToolState.md#getlayeritems)
+[`LayerToolState`](LayerToolState.md).[`getLayerItems`](LayerToolState.md#getlayeritems)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/LayerToolState.ts:104](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/LayerToolState.ts#L104)
+[model/internal/layer/LayerToolState.ts:104](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/LayerToolState.ts#L104)
 
-___
+***
 
-### getLayerName
+### getLayerName()
 
-▸ **getLayerName**(): `string`
+> **getLayerName**(): `string`
 
 It returns the layer name property of the tool state.
 
@@ -417,65 +424,65 @@ It returns the layer name property of the tool state.
 
 #### Implementation of
 
-[IChoroplethLayerToolState](../interfaces/IChoroplethLayerToolState.md).[getLayerName](../interfaces/IChoroplethLayerToolState.md#getlayername)
+[`IChoroplethLayerToolState`](../interfaces/IChoroplethLayerToolState.md).[`getLayerName`](../interfaces/IChoroplethLayerToolState.md#getlayername)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getLayerName](LayerToolState.md#getlayername)
+[`LayerToolState`](LayerToolState.md).[`getLayerName`](LayerToolState.md#getlayername)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/LayerToolState.ts:88](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/LayerToolState.ts#L88)
+[model/internal/layer/LayerToolState.ts:88](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/LayerToolState.ts#L88)
 
-___
+***
 
-### getMap
+### getMap()
 
-▸ **getMap**(): [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+> **getMap**(): [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 It returns the map property of the tool state.
 
 #### Returns
 
-[`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+[`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Implementation of
 
-[IChoroplethLayerToolState](../interfaces/IChoroplethLayerToolState.md).[getMap](../interfaces/IChoroplethLayerToolState.md#getmap)
+[`IChoroplethLayerToolState`](../interfaces/IChoroplethLayerToolState.md).[`getMap`](../interfaces/IChoroplethLayerToolState.md#getmap)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getMap](LayerToolState.md#getmap)
+[`LayerToolState`](LayerToolState.md).[`getMap`](LayerToolState.md#getmap)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:136](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L136)
+[model/internal/tool/MapToolState.ts:136](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L136)
 
-___
+***
 
-### getMapObject
+### getMapObject()
 
-▸ **getMapObject**(): [`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>
+> `protected` **getMapObject**(): [`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>
 
 It makes the map object visible to extended classes.
 
 #### Returns
 
-[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>
+[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getMapObject](LayerToolState.md#getmapobject)
+[`LayerToolState`](LayerToolState.md).[`getMapObject`](LayerToolState.md#getmapobject)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:39](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L39)
+[model/internal/object/MapObjectState.ts:39](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L39)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 It returns the type property of the tool state.
 
@@ -485,21 +492,21 @@ It returns the type property of the tool state.
 
 #### Implementation of
 
-[IChoroplethLayerToolState](../interfaces/IChoroplethLayerToolState.md).[getType](../interfaces/IChoroplethLayerToolState.md#gettype)
+[`IChoroplethLayerToolState`](../interfaces/IChoroplethLayerToolState.md).[`getType`](../interfaces/IChoroplethLayerToolState.md#gettype)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getType](LayerToolState.md#gettype)
+[`LayerToolState`](LayerToolState.md).[`getType`](LayerToolState.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:80](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L80)
+[model/internal/object/MapObjectState.ts:80](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L80)
 
-___
+***
 
-### getZIndex
+### getZIndex()
 
-▸ **getZIndex**(): `number`
+> **getZIndex**(): `number`
 
 It returns the z index.
 
@@ -509,27 +516,27 @@ It returns the z index.
 
 #### Implementation of
 
-[IChoroplethLayerToolState](../interfaces/IChoroplethLayerToolState.md).[getZIndex](../interfaces/IChoroplethLayerToolState.md#getzindex)
+[`IChoroplethLayerToolState`](../interfaces/IChoroplethLayerToolState.md).[`getZIndex`](../interfaces/IChoroplethLayerToolState.md#getzindex)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:188](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L188)
+[tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:188](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L188)
 
-___
+***
 
-### initialize
+### initialize()
 
-▸ **initialize**(`defaults`, `props`, `initProps`): `void`
+> **initialize**(`defaults`, `props`, `initProps`): `void`
 
 It resets state with respect to initial props.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `defaults` | [`IChoroplethLayerToolDefaults`](../interfaces/IChoroplethLayerToolDefaults.md) |
-| `props` | [`IChoroplethLayerToolProps`](../modules.md#ichoroplethlayertoolprops) |
-| `initProps` | [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IChoroplethLayerToolConfig`](../modules.md#ichoroplethlayertoolconfig)\> |
+• **defaults**: [`IChoroplethLayerToolDefaults`](../interfaces/IChoroplethLayerToolDefaults.md)
+
+• **props**: [`IChoroplethLayerToolProps`](../type-aliases/IChoroplethLayerToolProps.md)
+
+• **initProps**: [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IChoroplethLayerToolConfig`](../type-aliases/IChoroplethLayerToolConfig.md)\>
 
 #### Returns
 
@@ -537,21 +544,21 @@ It resets state with respect to initial props.
 
 #### Implementation of
 
-[IChoroplethLayerToolState](../interfaces/IChoroplethLayerToolState.md).[initialize](../interfaces/IChoroplethLayerToolState.md#initialize)
+[`IChoroplethLayerToolState`](../interfaces/IChoroplethLayerToolState.md).[`initialize`](../interfaces/IChoroplethLayerToolState.md#initialize)
 
 #### Overrides
 
-[LayerToolState](LayerToolState.md).[initialize](LayerToolState.md#initialize)
+[`LayerToolState`](LayerToolState.md).[`initialize`](LayerToolState.md#initialize)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:41](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L41)
+[tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:41](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L41)
 
-___
+***
 
-### isEnabled
+### isEnabled()
 
-▸ **isEnabled**(): `boolean`
+> **isEnabled**(): `boolean`
 
 It returns the enabled property of the tool state.
 
@@ -561,59 +568,55 @@ It returns the enabled property of the tool state.
 
 #### Implementation of
 
-[IChoroplethLayerToolState](../interfaces/IChoroplethLayerToolState.md).[isEnabled](../interfaces/IChoroplethLayerToolState.md#isenabled)
+[`IChoroplethLayerToolState`](../interfaces/IChoroplethLayerToolState.md).[`isEnabled`](../interfaces/IChoroplethLayerToolState.md#isenabled)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[isEnabled](LayerToolState.md#isenabled)
+[`LayerToolState`](LayerToolState.md).[`isEnabled`](LayerToolState.md#isenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:88](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L88)
+[model/internal/tool/MapToolState.ts:88](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L88)
 
-___
+***
 
-### serialize
+### serialize()
 
-▸ **serialize**(`defaults`): [`IChoroplethLayerToolConfig`](../modules.md#ichoroplethlayertoolconfig)
+> **serialize**(`defaults`): [`IChoroplethLayerToolConfig`](../type-aliases/IChoroplethLayerToolConfig.md)
 
 The method serializes the tool state. Optionally, defaults can be set if property is undefined.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `defaults` | `undefined` \| [`IChoroplethLayerToolDefaults`](../interfaces/IChoroplethLayerToolDefaults.md) |
+• **defaults**: `undefined` \| [`IChoroplethLayerToolDefaults`](../interfaces/IChoroplethLayerToolDefaults.md)
 
 #### Returns
 
-[`IChoroplethLayerToolConfig`](../modules.md#ichoroplethlayertoolconfig)
+[`IChoroplethLayerToolConfig`](../type-aliases/IChoroplethLayerToolConfig.md)
 
 #### Implementation of
 
-[IChoroplethLayerToolState](../interfaces/IChoroplethLayerToolState.md).[serialize](../interfaces/IChoroplethLayerToolState.md#serialize)
+[`IChoroplethLayerToolState`](../interfaces/IChoroplethLayerToolState.md).[`serialize`](../interfaces/IChoroplethLayerToolState.md#serialize)
 
 #### Overrides
 
-[LayerToolState](LayerToolState.md).[serialize](LayerToolState.md#serialize)
+[`LayerToolState`](LayerToolState.md).[`serialize`](LayerToolState.md#serialize)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:111](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L111)
+[tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:111](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L111)
 
-___
+***
 
-### setBucketData
+### setBucketData()
 
-▸ **setBucketData**(`bucketData`): `void`
+> **setBucketData**(`bucketData`): `void`
 
 It sets the bucket data.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `bucketData` | `Map`\<`string`, [`IMapAggregationBucket`](../interfaces/IMapAggregationBucket.md)\> |
+• **bucketData**: `Map`\<`string`, [`IMapAggregationBucket`](../interfaces/IMapAggregationBucket.md)\>
 
 #### Returns
 
@@ -621,40 +624,53 @@ It sets the bucket data.
 
 #### Implementation of
 
-[IChoroplethLayerToolState](../interfaces/IChoroplethLayerToolState.md).[setBucketData](../interfaces/IChoroplethLayerToolState.md#setbucketdata)
+[`IChoroplethLayerToolState`](../interfaces/IChoroplethLayerToolState.md).[`setBucketData`](../interfaces/IChoroplethLayerToolState.md#setbucketdata)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:215](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L215)
+[tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:215](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L215)
 
-___
+***
 
-### setDimensions
+### setDimensions()
 
-▸ **setDimensions**(`dimensions`): `void`
+> **setDimensions**(`dimensions`): `void`
 
 It sets the map layer dimensions property of tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimensions` | `Object` |
-| `dimensions.aggregation` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> |
-| `dimensions.color` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `dimensions.customColor` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\> |
-| `dimensions.customMinMax` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\> |
-| `dimensions.geoData` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IGeoData`](../interfaces/IGeoData.md)\> |
-| `dimensions.geoId` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `dimensions.maxValue` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> |
-| `dimensions.minValue` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> |
-| `dimensions.range` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md)\> |
-| `dimensions.round` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> |
-| `dimensions.scaling` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IScale`](../interfaces/IScale.md)\> |
-| `dimensions.units` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `dimensions.unitsDesc` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `dimensions.unitsEnabled` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\> |
-| `dimensions.value` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
+• **dimensions**
+
+• **dimensions.aggregation**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\>
+
+• **dimensions.color**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+• **dimensions.customColor**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\>
+
+• **dimensions.customMinMax**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\>
+
+• **dimensions.geoData**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IGeoData`](../interfaces/IGeoData.md)\>
+
+• **dimensions.geoId**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+• **dimensions.maxValue**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
+
+• **dimensions.minValue**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
+
+• **dimensions.range**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md)\>
+
+• **dimensions.round**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
+
+• **dimensions.scaling**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IScale`](../interfaces/IScale.md)\>
+
+• **dimensions.units**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+• **dimensions.unitsDesc**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+• **dimensions.unitsEnabled**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\>
+
+• **dimensions.value**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Returns
 
@@ -662,29 +678,27 @@ It sets the map layer dimensions property of tool state.
 
 #### Implementation of
 
-[IChoroplethLayerToolState](../interfaces/IChoroplethLayerToolState.md).[setDimensions](../interfaces/IChoroplethLayerToolState.md#setdimensions)
+[`IChoroplethLayerToolState`](../interfaces/IChoroplethLayerToolState.md).[`setDimensions`](../interfaces/IChoroplethLayerToolState.md#setdimensions)
 
 #### Overrides
 
-[LayerToolState](LayerToolState.md).[setDimensions](LayerToolState.md#setdimensions)
+[`LayerToolState`](LayerToolState.md).[`setDimensions`](LayerToolState.md#setdimensions)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:149](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L149)
+[tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:149](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L149)
 
-___
+***
 
-### setEnabled
+### setEnabled()
 
-▸ **setEnabled**(`enabled`): `void`
+> **setEnabled**(`enabled`): `void`
 
 It sets the enabled property of tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `enabled` | `boolean` |
+• **enabled**: `boolean`
 
 #### Returns
 
@@ -692,29 +706,27 @@ It sets the enabled property of tool state.
 
 #### Implementation of
 
-[IChoroplethLayerToolState](../interfaces/IChoroplethLayerToolState.md).[setEnabled](../interfaces/IChoroplethLayerToolState.md#setenabled)
+[`IChoroplethLayerToolState`](../interfaces/IChoroplethLayerToolState.md).[`setEnabled`](../interfaces/IChoroplethLayerToolState.md#setenabled)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[setEnabled](LayerToolState.md#setenabled)
+[`LayerToolState`](LayerToolState.md).[`setEnabled`](LayerToolState.md#setenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:97](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L97)
+[model/internal/tool/MapToolState.ts:97](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L97)
 
-___
+***
 
-### setGeoJSONLayer
+### setGeoJSONLayer()
 
-▸ **setGeoJSONLayer**(`geoJSONlayer`): `void`
+> **setGeoJSONLayer**(`geoJSONlayer`): `void`
 
 It sets a Leaflet geoJSON layer.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `geoJSONlayer` | `GeoJSON`\<`any`, `Geometry`\> |
+• **geoJSONlayer**: `GeoJSON`
 
 #### Returns
 
@@ -722,25 +734,23 @@ It sets a Leaflet geoJSON layer.
 
 #### Implementation of
 
-[IChoroplethLayerToolState](../interfaces/IChoroplethLayerToolState.md).[setGeoJSONLayer](../interfaces/IChoroplethLayerToolState.md#setgeojsonlayer)
+[`IChoroplethLayerToolState`](../interfaces/IChoroplethLayerToolState.md).[`setGeoJSONLayer`](../interfaces/IChoroplethLayerToolState.md#setgeojsonlayer)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:165](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L165)
+[tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:165](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L165)
 
-___
+***
 
-### setHoveredItem
+### setHoveredItem()
 
-▸ **setHoveredItem**(`hoveredItem`): `void`
+> **setHoveredItem**(`hoveredItem`): `void`
 
 It sets the hovered item.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `hoveredItem` | `undefined` \| `string` |
+• **hoveredItem**: `undefined` \| `string`
 
 #### Returns
 
@@ -748,25 +758,23 @@ It sets the hovered item.
 
 #### Implementation of
 
-[IChoroplethLayerToolState](../interfaces/IChoroplethLayerToolState.md).[setHoveredItem](../interfaces/IChoroplethLayerToolState.md#sethovereditem)
+[`IChoroplethLayerToolState`](../interfaces/IChoroplethLayerToolState.md).[`setHoveredItem`](../interfaces/IChoroplethLayerToolState.md#sethovereditem)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:181](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L181)
+[tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:181](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L181)
 
-___
+***
 
-### setIcon
+### setIcon()
 
-▸ **setIcon**(`icon`): `void`
+> **setIcon**(`icon`): `void`
 
 It sets the icon property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `icon` | `string` |
+• **icon**: `string`
 
 #### Returns
 
@@ -774,29 +782,27 @@ It sets the icon property of the tool state.
 
 #### Implementation of
 
-[IChoroplethLayerToolState](../interfaces/IChoroplethLayerToolState.md).[setIcon](../interfaces/IChoroplethLayerToolState.md#seticon)
+[`IChoroplethLayerToolState`](../interfaces/IChoroplethLayerToolState.md).[`setIcon`](../interfaces/IChoroplethLayerToolState.md#seticon)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[setIcon](LayerToolState.md#seticon)
+[`LayerToolState`](LayerToolState.md).[`setIcon`](LayerToolState.md#seticon)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:129](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L129)
+[model/internal/tool/MapToolState.ts:129](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L129)
 
-___
+***
 
-### setId
+### setId()
 
-▸ **setId**(`id`): `void`
+> **setId**(`id`): `void`
 
 It sets the id property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `id` | `string` |
+• **id**: `string`
 
 #### Returns
 
@@ -804,29 +810,27 @@ It sets the id property of the tool state.
 
 #### Implementation of
 
-[IChoroplethLayerToolState](../interfaces/IChoroplethLayerToolState.md).[setId](../interfaces/IChoroplethLayerToolState.md#setid)
+[`IChoroplethLayerToolState`](../interfaces/IChoroplethLayerToolState.md).[`setId`](../interfaces/IChoroplethLayerToolState.md#setid)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[setId](LayerToolState.md#setid)
+[`LayerToolState`](LayerToolState.md).[`setId`](LayerToolState.md#setid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:96](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L96)
+[model/internal/object/MapObjectState.ts:96](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L96)
 
-___
+***
 
-### setLabel
+### setLabel()
 
-▸ **setLabel**(`label`): `void`
+> **setLabel**(`label`): `void`
 
 It sets the label property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `label` | `string` |
+• **label**: `string`
 
 #### Returns
 
@@ -834,29 +838,27 @@ It sets the label property of the tool state.
 
 #### Implementation of
 
-[IChoroplethLayerToolState](../interfaces/IChoroplethLayerToolState.md).[setLabel](../interfaces/IChoroplethLayerToolState.md#setlabel)
+[`IChoroplethLayerToolState`](../interfaces/IChoroplethLayerToolState.md).[`setLabel`](../interfaces/IChoroplethLayerToolState.md#setlabel)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[setLabel](LayerToolState.md#setlabel)
+[`LayerToolState`](LayerToolState.md).[`setLabel`](LayerToolState.md#setlabel)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:113](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L113)
+[model/internal/tool/MapToolState.ts:113](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L113)
 
-___
+***
 
-### setLayerItems
+### setLayerItems()
 
-▸ **setLayerItems**(`layerItems`): `void`
+> **setLayerItems**(`layerItems`): `void`
 
 It sets the layer items property of tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `layerItems` | `Layer`[] |
+• **layerItems**: `Layer`[]
 
 #### Returns
 
@@ -864,29 +866,27 @@ It sets the layer items property of tool state.
 
 #### Implementation of
 
-[IChoroplethLayerToolState](../interfaces/IChoroplethLayerToolState.md).[setLayerItems](../interfaces/IChoroplethLayerToolState.md#setlayeritems)
+[`IChoroplethLayerToolState`](../interfaces/IChoroplethLayerToolState.md).[`setLayerItems`](../interfaces/IChoroplethLayerToolState.md#setlayeritems)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[setLayerItems](LayerToolState.md#setlayeritems)
+[`LayerToolState`](LayerToolState.md).[`setLayerItems`](LayerToolState.md#setlayeritems)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/LayerToolState.ts:113](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/LayerToolState.ts#L113)
+[model/internal/layer/LayerToolState.ts:113](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/LayerToolState.ts#L113)
 
-___
+***
 
-### setLayerName
+### setLayerName()
 
-▸ **setLayerName**(`layerName`): `void`
+> **setLayerName**(`layerName`): `void`
 
 It sets the layer name property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `layerName` | `string` |
+• **layerName**: `string`
 
 #### Returns
 
@@ -894,29 +894,27 @@ It sets the layer name property of the tool state.
 
 #### Implementation of
 
-[IChoroplethLayerToolState](../interfaces/IChoroplethLayerToolState.md).[setLayerName](../interfaces/IChoroplethLayerToolState.md#setlayername)
+[`IChoroplethLayerToolState`](../interfaces/IChoroplethLayerToolState.md).[`setLayerName`](../interfaces/IChoroplethLayerToolState.md#setlayername)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[setLayerName](LayerToolState.md#setlayername)
+[`LayerToolState`](LayerToolState.md).[`setLayerName`](LayerToolState.md#setlayername)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/LayerToolState.ts:97](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/LayerToolState.ts#L97)
+[model/internal/layer/LayerToolState.ts:97](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/LayerToolState.ts#L97)
 
-___
+***
 
-### setMap
+### setMap()
 
-▸ **setMap**(`map`): `void`
+> `protected` **setMap**(`map`): `void`
 
 It sets the map property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `map` | [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\> |
+• **map**: [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Returns
 
@@ -924,25 +922,23 @@ It sets the map property of the tool state.
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[setMap](LayerToolState.md#setmap)
+[`LayerToolState`](LayerToolState.md).[`setMap`](LayerToolState.md#setmap)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:145](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L145)
+[model/internal/tool/MapToolState.ts:145](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L145)
 
-___
+***
 
-### setZIndex
+### setZIndex()
 
-▸ **setZIndex**(`zindex`): `void`
+> **setZIndex**(`zindex`): `void`
 
 It sets the z index.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `zindex` | `number` |
+• **zindex**: `number`
 
 #### Returns
 
@@ -950,8 +946,8 @@ It sets the z index.
 
 #### Implementation of
 
-[IChoroplethLayerToolState](../interfaces/IChoroplethLayerToolState.md).[setZIndex](../interfaces/IChoroplethLayerToolState.md#setzindex)
+[`IChoroplethLayerToolState`](../interfaces/IChoroplethLayerToolState.md).[`setZIndex`](../interfaces/IChoroplethLayerToolState.md#setzindex)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:197](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L197)
+[tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts:197](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/internal/tool/ChoroplethLayerToolState.ts#L197)

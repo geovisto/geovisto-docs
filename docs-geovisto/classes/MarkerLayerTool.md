@@ -1,18 +1,20 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / MarkerLayerTool
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / MarkerLayerTool
 
 # Class: MarkerLayerTool
 
 This class represents Marker layer tool. It works with geojson polygons representing countries.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`AbstractLayerTool`](AbstractLayerTool.md)
-
-  ↳ **`MarkerLayerTool`**
 
 ## Implements
 
@@ -20,72 +22,17 @@ Jiri Hynek
 - [`IMapFormControl`](../interfaces/IMapFormControl.md)
 - [`IMapLegendControl`](../interfaces/IMapLegendControl.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](MarkerLayerTool.md#constructor)
-
-### Properties
-
-- [mapForm](MarkerLayerTool.md#mapform)
-- [mapLegend](MarkerLayerTool.md#maplegend)
-- [selectionToolAPI](MarkerLayerTool.md#selectiontoolapi)
-- [themesToolAPI](MarkerLayerTool.md#themestoolapi)
-
-### Methods
-
-- [copy](MarkerLayerTool.md#copy)
-- [create](MarkerLayerTool.md#create)
-- [createDefaults](MarkerLayerTool.md#createdefaults)
-- [createLayerItems](MarkerLayerTool.md#createlayeritems)
-- [createMapForm](MarkerLayerTool.md#createmapform)
-- [createMapLegend](MarkerLayerTool.md#createmaplegend)
-- [createMarker](MarkerLayerTool.md#createmarker)
-- [createMarkers](MarkerLayerTool.md#createmarkers)
-- [createState](MarkerLayerTool.md#createstate)
-- [deleteLayerItems](MarkerLayerTool.md#deletelayeritems)
-- [getAPIGetter](MarkerLayerTool.md#getapigetter)
-- [getDefaults](MarkerLayerTool.md#getdefaults)
-- [getId](MarkerLayerTool.md#getid)
-- [getLayerItems](MarkerLayerTool.md#getlayeritems)
-- [getMap](MarkerLayerTool.md#getmap)
-- [getMapForm](MarkerLayerTool.md#getmapform)
-- [getMapLegend](MarkerLayerTool.md#getmaplegend)
-- [getProps](MarkerLayerTool.md#getprops)
-- [getSelectionTool](MarkerLayerTool.md#getselectiontool)
-- [getState](MarkerLayerTool.md#getstate)
-- [getThemesTool](MarkerLayerTool.md#getthemestool)
-- [getType](MarkerLayerTool.md#gettype)
-- [handleEvent](MarkerLayerTool.md#handleevent)
-- [hideLayerItems](MarkerLayerTool.md#hidelayeritems)
-- [initialize](MarkerLayerTool.md#initialize)
-- [isEnabled](MarkerLayerTool.md#isenabled)
-- [isSingleton](MarkerLayerTool.md#issingleton)
-- [render](MarkerLayerTool.md#render)
-- [setEnabled](MarkerLayerTool.md#setenabled)
-- [setProps](MarkerLayerTool.md#setprops)
-- [showLayerItems](MarkerLayerTool.md#showlayeritems)
-- [switchEnabled](MarkerLayerTool.md#switchenabled)
-- [updateCategoryValues](MarkerLayerTool.md#updatecategoryvalues)
-- [updateData](MarkerLayerTool.md#updatedata)
-- [updateDimension](MarkerLayerTool.md#updatedimension)
-- [updateMarkers](MarkerLayerTool.md#updatemarkers)
-- [updateTheme](MarkerLayerTool.md#updatetheme)
-
 ## Constructors
 
-### constructor
+### new MarkerLayerTool()
 
-• **new MarkerLayerTool**(`props?`): [`MarkerLayerTool`](MarkerLayerTool.md)
+> **new MarkerLayerTool**(`props`?): [`MarkerLayerTool`](MarkerLayerTool.md)
 
 It creates a new tool with respect to the props.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `props?` | [`IMarkerLayerToolProps`](../modules.md#imarkerlayertoolprops) |
+• **props?**: [`IMarkerLayerToolProps`](../type-aliases/IMarkerLayerToolProps.md)
 
 #### Returns
 
@@ -93,81 +40,81 @@ It creates a new tool with respect to the props.
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[constructor](AbstractLayerTool.md#constructor)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`constructor`](AbstractLayerTool.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:96](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L96)
+[tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:96](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L96)
 
 ## Properties
 
 ### mapForm
 
-• `Private` **mapForm**: [`IMapForm`](../interfaces/IMapForm.md)
+> `private` **mapForm**: [`IMapForm`](../interfaces/IMapForm.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:88](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L88)
+[tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:88](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L88)
 
-___
+***
 
 ### mapLegend
 
-• `Private` **mapLegend**: [`IMapLegend`](../interfaces/IMapLegend.md)
+> `private` **mapLegend**: [`IMapLegend`](../interfaces/IMapLegend.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:89](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L89)
+[tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:89](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L89)
 
-___
+***
 
 ### selectionToolAPI
 
-• `Private` **selectionToolAPI**: `undefined` \| [`ISelectionToolAPI`](../modules.md#iselectiontoolapi)
+> `private` **selectionToolAPI**: `undefined` \| [`ISelectionToolAPI`](../type-aliases/ISelectionToolAPI.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:86](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L86)
+[tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:86](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L86)
 
-___
+***
 
 ### themesToolAPI
 
-• `Private` **themesToolAPI**: `undefined` \| [`IThemesToolAPI`](../modules.md#ithemestoolapi)
+> `private` **themesToolAPI**: `undefined` \| [`IThemesToolAPI`](../type-aliases/IThemesToolAPI.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:87](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L87)
+[tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:87](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L87)
 
 ## Methods
 
-### copy
+### copy()
 
-▸ **copy**(): [`IMarkerLayerTool`](../interfaces/IMarkerLayerTool.md)\<[`IMarkerLayerToolProps`](../modules.md#imarkerlayertoolprops), [`IMarkerLayerToolDefaults`](../interfaces/IMarkerLayerToolDefaults.md), [`IMarkerLayerToolState`](../interfaces/IMarkerLayerToolState.md)\<[`IMarkerLayerToolProps`](../modules.md#imarkerlayertoolprops), [`IMarkerLayerToolDefaults`](../interfaces/IMarkerLayerToolDefaults.md), [`IMarkerLayerToolConfig`](../modules.md#imarkerlayertoolconfig), \{ `aggregation?`: `string` ; `category?`: `string` ; `geoData?`: `string` ; `geoId?`: `string` ; `round?`: `number` ; `units?`: `string` ; `unitsDesc?`: `string` ; `unitsEnabled?`: `boolean` ; `value?`: `string`  }, \{ `aggregation`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> ; `category`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `geoData`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IGeoData`](../interfaces/IGeoData.md)\> ; `geoId`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `round`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `units`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `unitsDesc`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `unitsEnabled`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\> ; `value`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>, [`IMarkerLayerToolConfig`](../modules.md#imarkerlayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMarkerLayerToolConfig`](../modules.md#imarkerlayertoolconfig)\>\>
+> **copy**(): [`IMarkerLayerTool`](../interfaces/IMarkerLayerTool.md)\<[`IMarkerLayerToolProps`](../type-aliases/IMarkerLayerToolProps.md), [`IMarkerLayerToolDefaults`](../interfaces/IMarkerLayerToolDefaults.md), [`IMarkerLayerToolState`](../interfaces/IMarkerLayerToolState.md)\<[`IMarkerLayerToolProps`](../type-aliases/IMarkerLayerToolProps.md), [`IMarkerLayerToolDefaults`](../interfaces/IMarkerLayerToolDefaults.md), [`IMarkerLayerToolConfig`](../type-aliases/IMarkerLayerToolConfig.md), `object`, `object`\>, [`IMarkerLayerToolConfig`](../type-aliases/IMarkerLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMarkerLayerToolConfig`](../type-aliases/IMarkerLayerToolConfig.md)\>\>
 
 It creates a copy of the uninitialized tool.
 
 #### Returns
 
-[`IMarkerLayerTool`](../interfaces/IMarkerLayerTool.md)\<[`IMarkerLayerToolProps`](../modules.md#imarkerlayertoolprops), [`IMarkerLayerToolDefaults`](../interfaces/IMarkerLayerToolDefaults.md), [`IMarkerLayerToolState`](../interfaces/IMarkerLayerToolState.md)\<[`IMarkerLayerToolProps`](../modules.md#imarkerlayertoolprops), [`IMarkerLayerToolDefaults`](../interfaces/IMarkerLayerToolDefaults.md), [`IMarkerLayerToolConfig`](../modules.md#imarkerlayertoolconfig), \{ `aggregation?`: `string` ; `category?`: `string` ; `geoData?`: `string` ; `geoId?`: `string` ; `round?`: `number` ; `units?`: `string` ; `unitsDesc?`: `string` ; `unitsEnabled?`: `boolean` ; `value?`: `string`  }, \{ `aggregation`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> ; `category`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `geoData`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IGeoData`](../interfaces/IGeoData.md)\> ; `geoId`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `round`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `units`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `unitsDesc`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `unitsEnabled`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\> ; `value`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>, [`IMarkerLayerToolConfig`](../modules.md#imarkerlayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMarkerLayerToolConfig`](../modules.md#imarkerlayertoolconfig)\>\>
+[`IMarkerLayerTool`](../interfaces/IMarkerLayerTool.md)\<[`IMarkerLayerToolProps`](../type-aliases/IMarkerLayerToolProps.md), [`IMarkerLayerToolDefaults`](../interfaces/IMarkerLayerToolDefaults.md), [`IMarkerLayerToolState`](../interfaces/IMarkerLayerToolState.md)\<[`IMarkerLayerToolProps`](../type-aliases/IMarkerLayerToolProps.md), [`IMarkerLayerToolDefaults`](../interfaces/IMarkerLayerToolDefaults.md), [`IMarkerLayerToolConfig`](../type-aliases/IMarkerLayerToolConfig.md), `object`, `object`\>, [`IMarkerLayerToolConfig`](../type-aliases/IMarkerLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMarkerLayerToolConfig`](../type-aliases/IMarkerLayerToolConfig.md)\>\>
 
 #### Implementation of
 
-[IMarkerLayerTool](../interfaces/IMarkerLayerTool.md).[copy](../interfaces/IMarkerLayerTool.md#copy)
+[`IMarkerLayerTool`](../interfaces/IMarkerLayerTool.md).[`copy`](../interfaces/IMarkerLayerTool.md#copy)
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[copy](AbstractLayerTool.md#copy)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`copy`](AbstractLayerTool.md#copy)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:103](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L103)
+[tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:103](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L103)
 
-___
+***
 
-### create
+### create()
 
-▸ **create**(): `this`
+> **create**(): `this`
 
 It creates new layer with respect to configuration
 
@@ -177,21 +124,21 @@ It creates new layer with respect to configuration
 
 #### Implementation of
 
-[IMarkerLayerTool](../interfaces/IMarkerLayerTool.md).[create](../interfaces/IMarkerLayerTool.md#create)
+[`IMarkerLayerTool`](../interfaces/IMarkerLayerTool.md).[`create`](../interfaces/IMarkerLayerTool.md#create)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[create](AbstractLayerTool.md#create)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`create`](AbstractLayerTool.md#create)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/AbstractLayerTool.ts:89](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/AbstractLayerTool.ts#L89)
+[model/internal/layer/AbstractLayerTool.ts:89](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/AbstractLayerTool.ts#L89)
 
-___
+***
 
-### createDefaults
+### createDefaults()
 
-▸ **createDefaults**(): [`IMarkerLayerToolDefaults`](../interfaces/IMarkerLayerToolDefaults.md)
+> `protected` **createDefaults**(): [`IMarkerLayerToolDefaults`](../interfaces/IMarkerLayerToolDefaults.md)
 
 It creates new defaults of the tool.
 
@@ -201,17 +148,17 @@ It creates new defaults of the tool.
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[createDefaults](AbstractLayerTool.md#createdefaults)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`createDefaults`](AbstractLayerTool.md#createdefaults)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:124](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L124)
+[tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:124](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L124)
 
-___
+***
 
-### createLayerItems
+### createLayerItems()
 
-▸ **createLayerItems**(): `Layer`[]
+> `protected` **createLayerItems**(): `Layer`[]
 
 It creates layer items.
 
@@ -221,17 +168,17 @@ It creates layer items.
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[createLayerItems](AbstractLayerTool.md#createlayeritems)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`createLayerItems`](AbstractLayerTool.md#createlayeritems)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:214](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L214)
+[tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:214](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L214)
 
-___
+***
 
-### createMapForm
+### createMapForm()
 
-▸ **createMapForm**(): [`IMapForm`](../interfaces/IMapForm.md)
+> `protected` **createMapForm**(): [`IMapForm`](../interfaces/IMapForm.md)
 
 It creates new tab control.
 
@@ -239,15 +186,15 @@ It creates new tab control.
 
 [`IMapForm`](../interfaces/IMapForm.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:191](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L191)
+[tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:191](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L191)
 
-___
+***
 
-### createMapLegend
+### createMapLegend()
 
-▸ **createMapLegend**(): [`IMapLegend`](../interfaces/IMapLegend.md)
+> `protected` **createMapLegend**(): [`IMapLegend`](../interfaces/IMapLegend.md)
 
 It creates new legend control.
 
@@ -255,74 +202,73 @@ It creates new legend control.
 
 [`IMapLegend`](../interfaces/IMapLegend.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:198](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L198)
+[tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:198](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L198)
 
-___
+***
 
-### createMarker
+### createMarker()
 
-▸ **createMarker**(`pointFeature`, `bucketMap`): [`IMarker`](../interfaces/IMarker.md)\<[`IMarkerIcon`](../interfaces/IMarkerIcon.md)\<[`IMarkerIconOptions`](../modules.md#imarkericonoptions)\>\>
+> `protected` **createMarker**(`pointFeature`, `bucketMap`): [`IMarker`](../interfaces/IMarker.md)\<[`IMarkerIcon`](../interfaces/IMarkerIcon.md)\<`any`\>\>
 
 It creates one marker with respect to the given GeoJSON point feature and data.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `pointFeature` | `Feature`\<`Geometry`, `GeoJsonProperties`\> |
-| `bucketMap` | `Map`\<`string`, ``null`` \| [`IMapAggregationBucket`](../interfaces/IMapAggregationBucket.md)\> |
+• **pointFeature**: `Feature`
+
+• **bucketMap**: `Map`\<`string`, `null` \| [`IMapAggregationBucket`](../interfaces/IMapAggregationBucket.md)\>
 
 #### Returns
 
-[`IMarker`](../interfaces/IMarker.md)\<[`IMarkerIcon`](../interfaces/IMarkerIcon.md)\<[`IMarkerIconOptions`](../modules.md#imarkericonoptions)\>\>
+[`IMarker`](../interfaces/IMarker.md)\<[`IMarkerIcon`](../interfaces/IMarkerIcon.md)\<`any`\>\>
 
-#### Defined in
+#### Source
 
-[src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:457](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L457)
+[tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:457](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L457)
 
-___
+***
 
-### createMarkers
+### createMarkers()
 
-▸ **createMarkers**(): [`IMarker`](../interfaces/IMarker.md)\<[`IMarkerIcon`](../interfaces/IMarkerIcon.md)\<[`IMarkerIconOptions`](../modules.md#imarkericonoptions)\>\>[]
+> `protected` **createMarkers**(): [`IMarker`](../interfaces/IMarker.md)\<[`IMarkerIcon`](../interfaces/IMarkerIcon.md)\<`any`\>\>[]
 
 It creates markers using bucket data
 
 #### Returns
 
-[`IMarker`](../interfaces/IMarker.md)\<[`IMarkerIcon`](../interfaces/IMarkerIcon.md)\<[`IMarkerIconOptions`](../modules.md#imarkericonoptions)\>\>[]
+[`IMarker`](../interfaces/IMarker.md)\<[`IMarkerIcon`](../interfaces/IMarkerIcon.md)\<`any`\>\>[]
 
-#### Defined in
+#### Source
 
-[src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:401](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L401)
+[tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:401](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L401)
 
-___
+***
 
-### createState
+### createState()
 
-▸ **createState**(): [`IMarkerLayerToolState`](../interfaces/IMarkerLayerToolState.md)\<[`IMarkerLayerToolProps`](../modules.md#imarkerlayertoolprops), [`IMarkerLayerToolDefaults`](../interfaces/IMarkerLayerToolDefaults.md), [`IMarkerLayerToolConfig`](../modules.md#imarkerlayertoolconfig), \{ `aggregation?`: `string` ; `category?`: `string` ; `geoData?`: `string` ; `geoId?`: `string` ; `round?`: `number` ; `units?`: `string` ; `unitsDesc?`: `string` ; `unitsEnabled?`: `boolean` ; `value?`: `string`  }, \{ `aggregation`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> ; `category`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `geoData`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IGeoData`](../interfaces/IGeoData.md)\> ; `geoId`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `round`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `units`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `unitsDesc`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `unitsEnabled`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\> ; `value`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>
+> `protected` **createState**(): [`IMarkerLayerToolState`](../interfaces/IMarkerLayerToolState.md)\<[`IMarkerLayerToolProps`](../type-aliases/IMarkerLayerToolProps.md), [`IMarkerLayerToolDefaults`](../interfaces/IMarkerLayerToolDefaults.md), [`IMarkerLayerToolConfig`](../type-aliases/IMarkerLayerToolConfig.md), `object`, `object`\>
 
 It returns default tool state.
 
 #### Returns
 
-[`IMarkerLayerToolState`](../interfaces/IMarkerLayerToolState.md)\<[`IMarkerLayerToolProps`](../modules.md#imarkerlayertoolprops), [`IMarkerLayerToolDefaults`](../interfaces/IMarkerLayerToolDefaults.md), [`IMarkerLayerToolConfig`](../modules.md#imarkerlayertoolconfig), \{ `aggregation?`: `string` ; `category?`: `string` ; `geoData?`: `string` ; `geoId?`: `string` ; `round?`: `number` ; `units?`: `string` ; `unitsDesc?`: `string` ; `unitsEnabled?`: `boolean` ; `value?`: `string`  }, \{ `aggregation`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> ; `category`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `geoData`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IGeoData`](../interfaces/IGeoData.md)\> ; `geoId`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `round`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `units`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `unitsDesc`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `unitsEnabled`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\> ; `value`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>
+[`IMarkerLayerToolState`](../interfaces/IMarkerLayerToolState.md)\<[`IMarkerLayerToolProps`](../type-aliases/IMarkerLayerToolProps.md), [`IMarkerLayerToolDefaults`](../interfaces/IMarkerLayerToolDefaults.md), [`IMarkerLayerToolConfig`](../type-aliases/IMarkerLayerToolConfig.md), `object`, `object`\>
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[createState](AbstractLayerTool.md#createstate)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`createState`](AbstractLayerTool.md#createstate)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:138](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L138)
+[tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:138](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L138)
 
-___
+***
 
-### deleteLayerItems
+### deleteLayerItems()
 
-▸ **deleteLayerItems**(): `void`
+> `protected` **deleteLayerItems**(): `void`
 
 It deletes layer items.
 
@@ -330,39 +276,39 @@ It deletes layer items.
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:252](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L252)
+[tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:252](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L252)
 
-___
+***
 
-### getAPIGetter
+### getAPIGetter()
 
-▸ **getAPIGetter**(): `undefined` \| [`IMapToolAPIGetter`](../modules.md#imaptoolapigetter)
+> **getAPIGetter**(): `undefined` \| [`IMapToolAPIGetter`](../type-aliases/IMapToolAPIGetter.md)
 
 It returns the tool API
 
 #### Returns
 
-`undefined` \| [`IMapToolAPIGetter`](../modules.md#imaptoolapigetter)
+`undefined` \| [`IMapToolAPIGetter`](../type-aliases/IMapToolAPIGetter.md)
 
 #### Implementation of
 
-[IMarkerLayerTool](../interfaces/IMarkerLayerTool.md).[getAPIGetter](../interfaces/IMarkerLayerTool.md#getapigetter)
+[`IMarkerLayerTool`](../interfaces/IMarkerLayerTool.md).[`getAPIGetter`](../interfaces/IMarkerLayerTool.md#getapigetter)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[getAPIGetter](AbstractLayerTool.md#getapigetter)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getAPIGetter`](AbstractLayerTool.md#getapigetter)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:74](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L74)
+[model/internal/tool/MapTool.ts:74](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L74)
 
-___
+***
 
-### getDefaults
+### getDefaults()
 
-▸ **getDefaults**(): [`IMarkerLayerToolDefaults`](../interfaces/IMarkerLayerToolDefaults.md)
+> **getDefaults**(): [`IMarkerLayerToolDefaults`](../interfaces/IMarkerLayerToolDefaults.md)
 
 It returns default values of the state properties.
 
@@ -372,21 +318,21 @@ It returns default values of the state properties.
 
 #### Implementation of
 
-[IMarkerLayerTool](../interfaces/IMarkerLayerTool.md).[getDefaults](../interfaces/IMarkerLayerTool.md#getdefaults)
+[`IMarkerLayerTool`](../interfaces/IMarkerLayerTool.md).[`getDefaults`](../interfaces/IMarkerLayerTool.md#getdefaults)
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[getDefaults](AbstractLayerTool.md#getdefaults)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getDefaults`](AbstractLayerTool.md#getdefaults)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:117](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L117)
+[tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:117](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L117)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 Help function which returns the id of the object.
 
@@ -396,21 +342,21 @@ Help function which returns the id of the object.
 
 #### Implementation of
 
-[IMarkerLayerTool](../interfaces/IMarkerLayerTool.md).[getId](../interfaces/IMarkerLayerTool.md#getid)
+[`IMarkerLayerTool`](../interfaces/IMarkerLayerTool.md).[`getId`](../interfaces/IMarkerLayerTool.md#getid)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[getId](AbstractLayerTool.md#getid)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getId`](AbstractLayerTool.md#getid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObject.ts:93](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObject.ts#L93)
+[model/internal/object/MapObject.ts:93](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObject.ts#L93)
 
-___
+***
 
-### getLayerItems
+### getLayerItems()
 
-▸ **getLayerItems**(): `Layer`[]
+> **getLayerItems**(): `Layer`[]
 
 It returns layer items which should be rendered.
 
@@ -420,21 +366,21 @@ It returns layer items which should be rendered.
 
 #### Implementation of
 
-[IMarkerLayerTool](../interfaces/IMarkerLayerTool.md).[getLayerItems](../interfaces/IMarkerLayerTool.md#getlayeritems)
+[`IMarkerLayerTool`](../interfaces/IMarkerLayerTool.md).[`getLayerItems`](../interfaces/IMarkerLayerTool.md#getlayeritems)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[getLayerItems](AbstractLayerTool.md#getlayeritems)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getLayerItems`](AbstractLayerTool.md#getlayeritems)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/AbstractLayerTool.ts:163](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/AbstractLayerTool.ts#L163)
+[model/internal/layer/AbstractLayerTool.ts:163](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/AbstractLayerTool.ts#L163)
 
-___
+***
 
-### getMap
+### getMap()
 
-▸ **getMap**(): `undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+> **getMap**(): `undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 Help function returns map which uses this tool.
 
@@ -442,25 +388,25 @@ Do not override this function. Use the state class instead.
 
 #### Returns
 
-`undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+`undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Implementation of
 
-[IMarkerLayerTool](../interfaces/IMarkerLayerTool.md).[getMap](../interfaces/IMarkerLayerTool.md#getmap)
+[`IMarkerLayerTool`](../interfaces/IMarkerLayerTool.md).[`getMap`](../interfaces/IMarkerLayerTool.md#getmap)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[getMap](AbstractLayerTool.md#getmap)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getMap`](AbstractLayerTool.md#getmap)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:112](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L112)
+[model/internal/tool/MapTool.ts:112](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L112)
 
-___
+***
 
-### getMapForm
+### getMapForm()
 
-▸ **getMapForm**(): [`IMapForm`](../interfaces/IMapForm.md)
+> **getMapForm**(): [`IMapForm`](../interfaces/IMapForm.md)
 
 It returns a sidebar tab with respect to the configuration.
 
@@ -470,17 +416,17 @@ It returns a sidebar tab with respect to the configuration.
 
 #### Implementation of
 
-[IMapFormControl](../interfaces/IMapFormControl.md).[getMapForm](../interfaces/IMapFormControl.md#getmapform)
+[`IMapFormControl`](../interfaces/IMapFormControl.md).[`getMapForm`](../interfaces/IMapFormControl.md#getmapform)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:171](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L171)
+[tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:171](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L171)
 
-___
+***
 
-### getMapLegend
+### getMapLegend()
 
-▸ **getMapLegend**(): [`IMapLegend`](../interfaces/IMapLegend.md)
+> **getMapLegend**(): [`IMapLegend`](../interfaces/IMapLegend.md)
 
 It returns a legend with respect to the configuration.
 
@@ -490,97 +436,97 @@ It returns a legend with respect to the configuration.
 
 #### Implementation of
 
-[IMapLegendControl](../interfaces/IMapLegendControl.md).[getMapLegend](../interfaces/IMapLegendControl.md#getmaplegend)
+[`IMapLegendControl`](../interfaces/IMapLegendControl.md).[`getMapLegend`](../interfaces/IMapLegendControl.md#getmaplegend)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:181](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L181)
+[tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:181](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L181)
 
-___
+***
 
-### getProps
+### getProps()
 
-▸ **getProps**(): [`IMarkerLayerToolProps`](../modules.md#imarkerlayertoolprops)
+> **getProps**(): [`IMarkerLayerToolProps`](../type-aliases/IMarkerLayerToolProps.md)
 
 It returns the props given by the programmer.
 
 #### Returns
 
-[`IMarkerLayerToolProps`](../modules.md#imarkerlayertoolprops)
+[`IMarkerLayerToolProps`](../type-aliases/IMarkerLayerToolProps.md)
 
 #### Implementation of
 
-[IMarkerLayerTool](../interfaces/IMarkerLayerTool.md).[getProps](../interfaces/IMarkerLayerTool.md#getprops)
+[`IMarkerLayerTool`](../interfaces/IMarkerLayerTool.md).[`getProps`](../interfaces/IMarkerLayerTool.md#getprops)
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[getProps](AbstractLayerTool.md#getprops)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getProps`](AbstractLayerTool.md#getprops)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:110](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L110)
+[tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:110](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L110)
 
-___
+***
 
-### getSelectionTool
+### getSelectionTool()
 
-▸ **getSelectionTool**(): `undefined` \| [`ISelectionToolAPI`](../modules.md#iselectiontoolapi)
+> `private` **getSelectionTool**(): `undefined` \| [`ISelectionToolAPI`](../type-aliases/ISelectionToolAPI.md)
 
 Help function which acquires and returns the selection tool if available.
 
 #### Returns
 
-`undefined` \| [`ISelectionToolAPI`](../modules.md#iselectiontoolapi)
+`undefined` \| [`ISelectionToolAPI`](../type-aliases/ISelectionToolAPI.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:145](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L145)
+[tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:145](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L145)
 
-___
+***
 
-### getState
+### getState()
 
-▸ **getState**(): [`IMarkerLayerToolState`](../interfaces/IMarkerLayerToolState.md)\<[`IMarkerLayerToolProps`](../modules.md#imarkerlayertoolprops), [`IMarkerLayerToolDefaults`](../interfaces/IMarkerLayerToolDefaults.md), [`IMarkerLayerToolConfig`](../modules.md#imarkerlayertoolconfig), \{ `aggregation?`: `string` ; `category?`: `string` ; `geoData?`: `string` ; `geoId?`: `string` ; `round?`: `number` ; `units?`: `string` ; `unitsDesc?`: `string` ; `unitsEnabled?`: `boolean` ; `value?`: `string`  }, \{ `aggregation`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> ; `category`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `geoData`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IGeoData`](../interfaces/IGeoData.md)\> ; `geoId`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `round`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `units`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `unitsDesc`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `unitsEnabled`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\> ; `value`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>
+> **getState**(): [`IMarkerLayerToolState`](../interfaces/IMarkerLayerToolState.md)\<[`IMarkerLayerToolProps`](../type-aliases/IMarkerLayerToolProps.md), [`IMarkerLayerToolDefaults`](../interfaces/IMarkerLayerToolDefaults.md), [`IMarkerLayerToolConfig`](../type-aliases/IMarkerLayerToolConfig.md), `object`, `object`\>
 
 It returns the layer tool state.
 
 #### Returns
 
-[`IMarkerLayerToolState`](../interfaces/IMarkerLayerToolState.md)\<[`IMarkerLayerToolProps`](../modules.md#imarkerlayertoolprops), [`IMarkerLayerToolDefaults`](../interfaces/IMarkerLayerToolDefaults.md), [`IMarkerLayerToolConfig`](../modules.md#imarkerlayertoolconfig), \{ `aggregation?`: `string` ; `category?`: `string` ; `geoData?`: `string` ; `geoId?`: `string` ; `round?`: `number` ; `units?`: `string` ; `unitsDesc?`: `string` ; `unitsEnabled?`: `boolean` ; `value?`: `string`  }, \{ `aggregation`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> ; `category`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `geoData`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IGeoData`](../interfaces/IGeoData.md)\> ; `geoId`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `round`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `units`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `unitsDesc`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `unitsEnabled`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\> ; `value`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>
+[`IMarkerLayerToolState`](../interfaces/IMarkerLayerToolState.md)\<[`IMarkerLayerToolProps`](../type-aliases/IMarkerLayerToolProps.md), [`IMarkerLayerToolDefaults`](../interfaces/IMarkerLayerToolDefaults.md), [`IMarkerLayerToolConfig`](../type-aliases/IMarkerLayerToolConfig.md), `object`, `object`\>
 
 #### Implementation of
 
-[IMarkerLayerTool](../interfaces/IMarkerLayerTool.md).[getState](../interfaces/IMarkerLayerTool.md#getstate)
+[`IMarkerLayerTool`](../interfaces/IMarkerLayerTool.md).[`getState`](../interfaces/IMarkerLayerTool.md#getstate)
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[getState](AbstractLayerTool.md#getstate)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getState`](AbstractLayerTool.md#getstate)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:131](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L131)
+[tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:131](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L131)
 
-___
+***
 
-### getThemesTool
+### getThemesTool()
 
-▸ **getThemesTool**(): `undefined` \| [`IThemesToolAPI`](../modules.md#ithemestoolapi)
+> `private` **getThemesTool**(): `undefined` \| [`IThemesToolAPI`](../type-aliases/IThemesToolAPI.md)
 
 Help function which acquires and returns the themes tool if available.
 
 #### Returns
 
-`undefined` \| [`IThemesToolAPI`](../modules.md#ithemestoolapi)
+`undefined` \| [`IThemesToolAPI`](../type-aliases/IThemesToolAPI.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:158](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L158)
+[tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:158](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L158)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 Help function which returns the type of the object.
 
@@ -590,29 +536,27 @@ Help function which returns the type of the object.
 
 #### Implementation of
 
-[IMarkerLayerTool](../interfaces/IMarkerLayerTool.md).[getType](../interfaces/IMarkerLayerTool.md#gettype)
+[`IMarkerLayerTool`](../interfaces/IMarkerLayerTool.md).[`getType`](../interfaces/IMarkerLayerTool.md#gettype)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[getType](AbstractLayerTool.md#gettype)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getType`](AbstractLayerTool.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObject.ts:86](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObject.ts#L86)
+[model/internal/object/MapObject.ts:86](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObject.ts#L86)
 
-___
+***
 
-### handleEvent
+### handleEvent()
 
-▸ **handleEvent**(`event`): `void`
+> **handleEvent**(`event`): `void`
 
 This function is called when a custom event is invoked.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `event` | [`IMapEvent`](../interfaces/IMapEvent.md)\<[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>\> |
+• **event**: [`IMapEvent`](../interfaces/IMapEvent.md)\<[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>\>
 
 #### Returns
 
@@ -620,17 +564,17 @@ This function is called when a custom event is invoked.
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[handleEvent](AbstractLayerTool.md#handleevent)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`handleEvent`](AbstractLayerTool.md#handleevent)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:611](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L611)
+[tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:611](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L611)
 
-___
+***
 
-### hideLayerItems
+### hideLayerItems()
 
-▸ **hideLayerItems**(): `void`
+> `protected` **hideLayerItems**(): `void`
 
 Help function which hides layer items
 
@@ -642,25 +586,23 @@ This function is meant to be private.
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[hideLayerItems](AbstractLayerTool.md#hidelayeritems)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`hideLayerItems`](AbstractLayerTool.md#hidelayeritems)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/AbstractLayerTool.ts:147](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/AbstractLayerTool.ts#L147)
+[model/internal/layer/AbstractLayerTool.ts:147](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/AbstractLayerTool.ts#L147)
 
-___
+***
 
-### initialize
+### initialize()
 
-▸ **initialize**(`initProps`): `this`
+> **initialize**(`initProps`): `this`
 
 Overrides the super method.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `initProps` | [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMarkerLayerToolConfig`](../modules.md#imarkerlayertoolconfig)\> |
+• **initProps**: [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMarkerLayerToolConfig`](../type-aliases/IMarkerLayerToolConfig.md)\>
 
 #### Returns
 
@@ -668,21 +610,21 @@ Overrides the super method.
 
 #### Implementation of
 
-[IMarkerLayerTool](../interfaces/IMarkerLayerTool.md).[initialize](../interfaces/IMarkerLayerTool.md#initialize)
+[`IMarkerLayerTool`](../interfaces/IMarkerLayerTool.md).[`initialize`](../interfaces/IMarkerLayerTool.md#initialize)
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[initialize](AbstractLayerTool.md#initialize)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`initialize`](AbstractLayerTool.md#initialize)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:207](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L207)
+[tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:207](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L207)
 
-___
+***
 
-### isEnabled
+### isEnabled()
 
-▸ **isEnabled**(): `boolean`
+> **isEnabled**(): `boolean`
 
 Help getter which returns enabled property of state.
 
@@ -694,21 +636,21 @@ Do not override this function. Use the state class instead.
 
 #### Implementation of
 
-[IMarkerLayerTool](../interfaces/IMarkerLayerTool.md).[isEnabled](../interfaces/IMarkerLayerTool.md#isenabled)
+[`IMarkerLayerTool`](../interfaces/IMarkerLayerTool.md).[`isEnabled`](../interfaces/IMarkerLayerTool.md#isenabled)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[isEnabled](AbstractLayerTool.md#isenabled)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`isEnabled`](AbstractLayerTool.md#isenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:130](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L130)
+[model/internal/tool/MapTool.ts:130](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L130)
 
-___
+***
 
-### isSingleton
+### isSingleton()
 
-▸ **isSingleton**(): `boolean`
+> **isSingleton**(): `boolean`
 
 Help getter which returns a logtical value whether the tool type is singleton.
 
@@ -718,30 +660,29 @@ Help getter which returns a logtical value whether the tool type is singleton.
 
 #### Implementation of
 
-[IMarkerLayerTool](../interfaces/IMarkerLayerTool.md).[isSingleton](../interfaces/IMarkerLayerTool.md#issingleton)
+[`IMarkerLayerTool`](../interfaces/IMarkerLayerTool.md).[`isSingleton`](../interfaces/IMarkerLayerTool.md#issingleton)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[isSingleton](AbstractLayerTool.md#issingleton)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`isSingleton`](AbstractLayerTool.md#issingleton)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:81](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L81)
+[model/internal/tool/MapTool.ts:81](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L81)
 
-___
+***
 
-### render
+### render()
 
-▸ **render**(`type`, `animateOptions?`): `void`
+> **render**(`type`, `animateOptions`?): `void`
 
 It reloads data and redraw the layer.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `type` | `number` |
-| `animateOptions?` | [`IDataChangeAnimateOptions`](../modules.md#idatachangeanimateoptions) |
+• **type**: `number`
+
+• **animateOptions?**: [`IDataChangeAnimateOptions`](../type-aliases/IDataChangeAnimateOptions.md)
 
 #### Returns
 
@@ -749,29 +690,27 @@ It reloads data and redraw the layer.
 
 #### Implementation of
 
-[IMarkerLayerTool](../interfaces/IMarkerLayerTool.md).[render](../interfaces/IMarkerLayerTool.md#render)
+[`IMarkerLayerTool`](../interfaces/IMarkerLayerTool.md).[`render`](../interfaces/IMarkerLayerTool.md#render)
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[render](AbstractLayerTool.md#render)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`render`](AbstractLayerTool.md#render)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:557](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L557)
+[tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:557](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L557)
 
-___
+***
 
-### setEnabled
+### setEnabled()
 
-▸ **setEnabled**(`enabled`): `void`
+> **setEnabled**(`enabled`): `void`
 
 It changes layer state to enabled/disabled.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `enabled` | `boolean` |
+• **enabled**: `boolean`
 
 #### Returns
 
@@ -779,29 +718,27 @@ It changes layer state to enabled/disabled.
 
 #### Implementation of
 
-[IMarkerLayerTool](../interfaces/IMarkerLayerTool.md).[setEnabled](../interfaces/IMarkerLayerTool.md#setenabled)
+[`IMarkerLayerTool`](../interfaces/IMarkerLayerTool.md).[`setEnabled`](../interfaces/IMarkerLayerTool.md#setenabled)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[setEnabled](AbstractLayerTool.md#setenabled)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`setEnabled`](AbstractLayerTool.md#setenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/AbstractLayerTool.ts:102](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/AbstractLayerTool.ts#L102)
+[model/internal/layer/AbstractLayerTool.ts:102](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/AbstractLayerTool.ts#L102)
 
-___
+***
 
-### setProps
+### setProps()
 
-▸ **setProps**(`props`): `void`
+> `protected` **setProps**(`props`): `void`
 
 It updates the props.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `props` | [`IMapObjectProps`](../modules.md#imapobjectprops) |
+• **props**: [`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
 #### Returns
 
@@ -809,17 +746,17 @@ It updates the props.
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[setProps](AbstractLayerTool.md#setprops)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`setProps`](AbstractLayerTool.md#setprops)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObject.ts:38](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObject.ts#L38)
+[model/internal/object/MapObject.ts:38](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObject.ts#L38)
 
-___
+***
 
-### showLayerItems
+### showLayerItems()
 
-▸ **showLayerItems**(): `void`
+> `protected` **showLayerItems**(): `void`
 
 Help function which shows layer items.
 
@@ -831,17 +768,17 @@ This function is meant to be private.
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[showLayerItems](AbstractLayerTool.md#showlayeritems)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`showLayerItems`](AbstractLayerTool.md#showlayeritems)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/AbstractLayerTool.ts:126](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/AbstractLayerTool.ts#L126)
+[model/internal/layer/AbstractLayerTool.ts:126](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/AbstractLayerTool.ts#L126)
 
-___
+***
 
-### switchEnabled
+### switchEnabled()
 
-▸ **switchEnabled**(): `void`
+> **switchEnabled**(): `void`
 
 Help function which switches enabled state (enabled/disabled).
 
@@ -853,21 +790,21 @@ Do not override this function. Use setEnabled instead.
 
 #### Implementation of
 
-[IMarkerLayerTool](../interfaces/IMarkerLayerTool.md).[switchEnabled](../interfaces/IMarkerLayerTool.md#switchenabled)
+[`IMarkerLayerTool`](../interfaces/IMarkerLayerTool.md).[`switchEnabled`](../interfaces/IMarkerLayerTool.md#switchenabled)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[switchEnabled](AbstractLayerTool.md#switchenabled)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`switchEnabled`](AbstractLayerTool.md#switchenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:158](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L158)
+[model/internal/tool/MapTool.ts:158](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L158)
 
-___
+***
 
-### updateCategoryValues
+### updateCategoryValues()
 
-▸ **updateCategoryValues**(): `void`
+> `protected` **updateCategoryValues**(): `void`
 
 Help function which updates the current category values based on map current data.
 
@@ -877,41 +814,41 @@ This should be called only when animated render is not required.
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:593](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L593)
+[tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:593](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L593)
 
-___
+***
 
-### updateData
+### updateData()
 
-▸ **updateData**(): `Map`\<`string`, `Map`\<`string`, ``null`` \| [`IMapAggregationBucket`](../interfaces/IMapAggregationBucket.md)\>\>
+> `protected` **updateData**(): `Map`\<`string`, `Map`\<`string`, `null` \| [`IMapAggregationBucket`](../interfaces/IMapAggregationBucket.md)\>\>
 
 It prepares data for markers.
 
 #### Returns
 
-`Map`\<`string`, `Map`\<`string`, ``null`` \| [`IMapAggregationBucket`](../interfaces/IMapAggregationBucket.md)\>\>
+`Map`\<`string`, `Map`\<`string`, `null` \| [`IMapAggregationBucket`](../interfaces/IMapAggregationBucket.md)\>\>
 
-#### Defined in
+#### Source
 
-[src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:265](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L265)
+[tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:265](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L265)
 
-___
+***
 
-### updateDimension
+### updateDimension()
 
-▸ **updateDimension**(`dimension`, `value`, `redraw`): `void`
+> **updateDimension**(`dimension`, `value`, `redraw`): `void`
 
 It updates the dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDomain`](../interfaces/IMapDomain.md)\> |
-| `value` | `string` |
-| `redraw` | `undefined` \| `number` |
+• **dimension**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDomain`](../interfaces/IMapDomain.md)\>
+
+• **value**: `string`
+
+• **redraw**: `undefined` \| `number`
 
 #### Returns
 
@@ -919,43 +856,41 @@ It updates the dimension.
 
 #### Implementation of
 
-[IMarkerLayerTool](../interfaces/IMarkerLayerTool.md).[updateDimension](../interfaces/IMarkerLayerTool.md#updatedimension)
+[`IMarkerLayerTool`](../interfaces/IMarkerLayerTool.md).[`updateDimension`](../interfaces/IMarkerLayerTool.md#updatedimension)
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[updateDimension](AbstractLayerTool.md#updatedimension)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`updateDimension`](AbstractLayerTool.md#updatedimension)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:533](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L533)
+[tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:533](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L533)
 
-___
+***
 
-### updateMarkers
+### updateMarkers()
 
-▸ **updateMarkers**(`animateOptions`): `void`
+> `protected` **updateMarkers**(`animateOptions`): `void`
 
 Help method which updates existing markers and applies animation options
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `animateOptions` | [`IDataChangeAnimateOptions`](../modules.md#idatachangeanimateoptions) |
+• **animateOptions**: [`IDataChangeAnimateOptions`](../type-aliases/IDataChangeAnimateOptions.md)
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:489](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L489)
+[tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:489](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L489)
 
-___
+***
 
-### updateTheme
+### updateTheme()
 
-▸ **updateTheme**(`theme`): `void`
+> `protected` **updateTheme**(`theme`): `void`
 
 Help function which updates theme with respect to the Themes Tool API.
 
@@ -963,14 +898,12 @@ TODO: move to adapter
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `theme` | [`IMapTheme`](../interfaces/IMapTheme.md) |
+• **theme**: [`IMapTheme`](../interfaces/IMapTheme.md)
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:644](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L644)
+[tools/layers/marker/model/internal/tool/MarkerLayerTool.ts:644](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/marker/model/internal/tool/MarkerLayerTool.ts#L644)

@@ -1,55 +1,34 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / GeoDownloaderToolMapForm
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / GeoDownloaderToolMapForm
 
 # Class: GeoDownloaderToolMapForm
 
 Form for DownloaderTool.
 
-**`Author`**
+## Author
 
 Vojtěch Malý
 
-## Hierarchy
+## Extends
 
 - [`MapObjectForm`](MapObjectForm.md)\<[`IGeoDownloaderTool`](../interfaces/IGeoDownloaderTool.md)\>
-
-  ↳ **`GeoDownloaderToolMapForm`**
 
 ## Implements
 
 - [`IMapForm`](../interfaces/IMapForm.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](GeoDownloaderToolMapForm.md#constructor)
-
-### Properties
-
-- [control](GeoDownloaderToolMapForm.md#control)
-- [currentZoom](GeoDownloaderToolMapForm.md#currentzoom)
-- [htmlContent](GeoDownloaderToolMapForm.md#htmlcontent)
-- [searchBtn](GeoDownloaderToolMapForm.md#searchbtn)
-
-### Methods
-
-- [changeCurrentZoom](GeoDownloaderToolMapForm.md#changecurrentzoom)
-- [createFetchButton](GeoDownloaderToolMapForm.md#createfetchbutton)
-- [getContent](GeoDownloaderToolMapForm.md#getcontent)
-- [getMapObject](GeoDownloaderToolMapForm.md#getmapobject)
-- [stateChange](GeoDownloaderToolMapForm.md#statechange)
-
 ## Constructors
 
-### constructor
+### new GeoDownloaderToolMapForm()
 
-• **new GeoDownloaderToolMapForm**(`tool`): [`GeoDownloaderToolMapForm`](GeoDownloaderToolMapForm.md)
+> **new GeoDownloaderToolMapForm**(`tool`): [`GeoDownloaderToolMapForm`](GeoDownloaderToolMapForm.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `tool` | [`IGeoDownloaderTool`](../interfaces/IGeoDownloaderTool.md) |
+• **tool**: [`IGeoDownloaderTool`](../interfaces/IGeoDownloaderTool.md)
 
 #### Returns
 
@@ -57,79 +36,77 @@ Vojtěch Malý
 
 #### Overrides
 
-[MapObjectForm](MapObjectForm.md).[constructor](MapObjectForm.md#constructor)
+[`MapObjectForm`](MapObjectForm.md).[`constructor`](MapObjectForm.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts:21](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts#L21)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts:21](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts#L21)
 
 ## Properties
 
 ### control
 
-• `Private` **control**: [`GeoDownloaderToolMapControl`](GeoDownloaderToolMapControl.md)
+> `private` **control**: [`GeoDownloaderToolMapControl`](GeoDownloaderToolMapControl.md)
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts#L18)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts#L18)
 
-___
+***
 
 ### currentZoom
 
-• `Private` **currentZoom**: `HTMLDivElement`
+> `private` **currentZoom**: `HTMLDivElement`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts:17](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts#L17)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts:17](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts#L17)
 
-___
+***
 
 ### htmlContent
 
-• `Private` **htmlContent**: `HTMLDivElement`
+> `private` **htmlContent**: `HTMLDivElement`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts:16](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts#L16)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts:16](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts#L16)
 
-___
+***
 
 ### searchBtn
 
-• **searchBtn**: ``null`` \| `HTMLButtonElement` = `null`
+> **searchBtn**: `null` \| `HTMLButtonElement` = `null`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts:19](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts#L19)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts:19](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts#L19)
 
 ## Methods
 
-### changeCurrentZoom
+### changeCurrentZoom()
 
-▸ **changeCurrentZoom**(`newZoom`): `void`
+> **changeCurrentZoom**(`newZoom`): `void`
 
 Change displayed zoom number.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `newZoom` | `number` |
+• **newZoom**: `number`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts:79](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts#L79)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts:79](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts#L79)
 
-___
+***
 
-### createFetchButton
+### createFetchButton()
 
-▸ **createFetchButton**(): `HTMLButtonElement`
+> `protected` **createFetchButton**(): `HTMLButtonElement`
 
 Creates button, on click fetches selected value.
 
@@ -139,15 +116,15 @@ Creates button, on click fetches selected value.
 
 Button
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts:89](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts#L89)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts:89](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts#L89)
 
-___
+***
 
-### getContent
+### getContent()
 
-▸ **getContent**(): `HTMLDivElement`
+> **getContent**(): `HTMLDivElement`
 
 Returns html div elemnt of hierarchy tool. If not defined, creates one.
 
@@ -159,21 +136,21 @@ Main div form element.
 
 #### Implementation of
 
-[IMapForm](../interfaces/IMapForm.md).[getContent](../interfaces/IMapForm.md#getcontent)
+[`IMapForm`](../interfaces/IMapForm.md).[`getContent`](../interfaces/IMapForm.md#getcontent)
 
 #### Overrides
 
-[MapObjectForm](MapObjectForm.md).[getContent](MapObjectForm.md#getcontent)
+[`MapObjectForm`](MapObjectForm.md).[`getContent`](MapObjectForm.md#getcontent)
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts#L32)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts#L32)
 
-___
+***
 
-### getMapObject
+### getMapObject()
 
-▸ **getMapObject**(): [`IGeoDownloaderTool`](../interfaces/IGeoDownloaderTool.md)
+> `protected` **getMapObject**(): [`IGeoDownloaderTool`](../interfaces/IGeoDownloaderTool.md)
 
 #### Returns
 
@@ -181,31 +158,31 @@ ___
 
 #### Inherited from
 
-[MapObjectForm](MapObjectForm.md).[getMapObject](MapObjectForm.md#getmapobject)
+[`MapObjectForm`](MapObjectForm.md).[`getMapObject`](MapObjectForm.md#getmapobject)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapObjectForm.ts:16](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapObjectForm.ts#L16)
+[model/internal/form/MapObjectForm.ts:16](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapObjectForm.ts#L16)
 
-___
+***
 
-### stateChange
+### stateChange()
 
-▸ **stateChange**(`enable`): `void`
+> **stateChange**(`enable`): `void`
 
 Method for enabling and disabling tool.
 Method can't be used for clearing saved data.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `enable` | `boolean` | True if going from disabled to enabled status. |
+• **enable**: `boolean`
+
+True if going from disabled to enabled status.
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts:102](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts#L102)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts:102](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapForm.ts#L102)

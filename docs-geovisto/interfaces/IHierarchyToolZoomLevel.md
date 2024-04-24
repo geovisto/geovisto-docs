@@ -1,52 +1,42 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IHierarchyToolZoomLevel
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IHierarchyToolZoomLevel
 
 # Interface: IHierarchyToolZoomLevel
 
 Interface of one zoom ply.
 
-**`Author`**
+## Author
 
 Vojtěch Malý
 
-## Implemented by
-
-- [`HierarchyZoomLevel`](../classes/HierarchyZoomLevel.md)
-
-## Table of contents
-
-### Methods
-
-- [addID](IHierarchyToolZoomLevel.md#addid)
-- [getStringifiedIds](IHierarchyToolZoomLevel.md#getstringifiedids)
-- [getZoomLevel](IHierarchyToolZoomLevel.md#getzoomlevel)
-
 ## Methods
 
-### addID
+### addID()
 
-▸ **addID**(`id`): `void`
+> **addID**(`id`): `void`
 
 Adds ID of object in ply.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `id` | `string` \| `number` |
+• **id**: `string` \| `number`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/hierarchy/model/types/tool/IHierarchyToolZoomLevel.ts:16](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/hierarchy/model/types/tool/IHierarchyToolZoomLevel.ts#L16)
+[tools/hierarchy/model/types/tool/IHierarchyToolZoomLevel.ts:16](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/hierarchy/model/types/tool/IHierarchyToolZoomLevel.ts#L16)
 
-___
+***
 
-### getStringifiedIds
+### getStringifiedIds()
 
-▸ **getStringifiedIds**(): `string`[]
+> **getStringifiedIds**(): `string`[]
 
 Returns all IDs in string format.
 
@@ -54,15 +44,15 @@ Returns all IDs in string format.
 
 `string`[]
 
-#### Defined in
+#### Source
 
-[src/tools/hierarchy/model/types/tool/IHierarchyToolZoomLevel.ts:21](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/hierarchy/model/types/tool/IHierarchyToolZoomLevel.ts#L21)
+[tools/hierarchy/model/types/tool/IHierarchyToolZoomLevel.ts:21](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/hierarchy/model/types/tool/IHierarchyToolZoomLevel.ts#L21)
 
-___
+***
 
-### getZoomLevel
+### getZoomLevel()
 
-▸ **getZoomLevel**(): `number`
+> **getZoomLevel**(): `number`
 
 Retruns zoom level of this ply.
 
@@ -70,6 +60,6 @@ Retruns zoom level of this ply.
 
 `number`
 
-#### Defined in
+#### Source
 
-[src/tools/hierarchy/model/types/tool/IHierarchyToolZoomLevel.ts:10](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/hierarchy/model/types/tool/IHierarchyToolZoomLevel.ts#L10)
+[tools/hierarchy/model/types/tool/IHierarchyToolZoomLevel.ts:10](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/hierarchy/model/types/tool/IHierarchyToolZoomLevel.ts#L10)

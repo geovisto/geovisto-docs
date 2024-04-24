@@ -1,10 +1,14 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / MapAggregationFunctionFactory
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / MapAggregationFunctionFactory
 
 # Class: MapAggregationFunctionFactory
 
 This class provides a factory for aggregation functions.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
@@ -12,23 +16,11 @@ Jiri Hynek
 
 - [`IMapAggregationFunctionFactory`](../interfaces/IMapAggregationFunctionFactory.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](MapAggregationFunctionFactory.md#constructor)
-
-### Methods
-
-- [count](MapAggregationFunctionFactory.md#count)
-- [default](MapAggregationFunctionFactory.md#default)
-- [sum](MapAggregationFunctionFactory.md#sum)
-
 ## Constructors
 
-### constructor
+### new MapAggregationFunctionFactory()
 
-• **new MapAggregationFunctionFactory**(): [`MapAggregationFunctionFactory`](MapAggregationFunctionFactory.md)
+> **new MapAggregationFunctionFactory**(): [`MapAggregationFunctionFactory`](MapAggregationFunctionFactory.md)
 
 #### Returns
 
@@ -36,9 +28,9 @@ Jiri Hynek
 
 ## Methods
 
-### count
+### count()
 
-▸ **count**(): [`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)
+> **count**(): [`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)
 
 It creates the count aggregation function.
 
@@ -48,26 +40,25 @@ It creates the count aggregation function.
 
 #### Implementation of
 
-[IMapAggregationFunctionFactory](../interfaces/IMapAggregationFunctionFactory.md).[count](../interfaces/IMapAggregationFunctionFactory.md#count)
+[`IMapAggregationFunctionFactory`](../interfaces/IMapAggregationFunctionFactory.md).[`count`](../interfaces/IMapAggregationFunctionFactory.md#count)
 
-#### Defined in
+#### Source
 
-[src/model/internal/aggregation/MapAggregationFunctionFactory.ts:25](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/aggregation/MapAggregationFunctionFactory.ts#L25)
+[model/internal/aggregation/MapAggregationFunctionFactory.ts:25](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/aggregation/MapAggregationFunctionFactory.ts#L25)
 
-___
+***
 
-### default
+### default()
 
-▸ **default**(`type`, `aggregationBucket`): [`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)
+> **default**(`type`, `aggregationBucket`): [`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)
 
 It creates a generic aggregation function.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `type` | `string` |
-| `aggregationBucket` | () => [`IMapAggregationBucket`](../interfaces/IMapAggregationBucket.md) |
+• **type**: `string`
+
+• **aggregationBucket**
 
 #### Returns
 
@@ -75,17 +66,17 @@ It creates a generic aggregation function.
 
 #### Implementation of
 
-[IMapAggregationFunctionFactory](../interfaces/IMapAggregationFunctionFactory.md).[default](../interfaces/IMapAggregationFunctionFactory.md#default)
+[`IMapAggregationFunctionFactory`](../interfaces/IMapAggregationFunctionFactory.md).[`default`](../interfaces/IMapAggregationFunctionFactory.md#default)
 
-#### Defined in
+#### Source
 
-[src/model/internal/aggregation/MapAggregationFunctionFactory.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/aggregation/MapAggregationFunctionFactory.ts#L18)
+[model/internal/aggregation/MapAggregationFunctionFactory.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/aggregation/MapAggregationFunctionFactory.ts#L18)
 
-___
+***
 
-### sum
+### sum()
 
-▸ **sum**(): [`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)
+> **sum**(): [`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)
 
 It creates the sum aggregation function.
 
@@ -95,8 +86,8 @@ It creates the sum aggregation function.
 
 #### Implementation of
 
-[IMapAggregationFunctionFactory](../interfaces/IMapAggregationFunctionFactory.md).[sum](../interfaces/IMapAggregationFunctionFactory.md#sum)
+[`IMapAggregationFunctionFactory`](../interfaces/IMapAggregationFunctionFactory.md).[`sum`](../interfaces/IMapAggregationFunctionFactory.md#sum)
 
-#### Defined in
+#### Source
 
-[src/model/internal/aggregation/MapAggregationFunctionFactory.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/aggregation/MapAggregationFunctionFactory.ts#L32)
+[model/internal/aggregation/MapAggregationFunctionFactory.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/aggregation/MapAggregationFunctionFactory.ts#L32)

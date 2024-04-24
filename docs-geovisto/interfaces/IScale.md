@@ -1,39 +1,26 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IScale
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IScale
 
 # Interface: IScale
 
 This interface declares functions for using choropleth scale.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`IMapDomain`](IMapDomain.md)
 
-  ↳ **`IScale`**
-
-## Implemented by
-
-- [`CustomMinMaxScale`](../classes/CustomMinMaxScale.md)
-- [`DecimalScale`](../classes/DecimalScale.md)
-- [`MedianScale`](../classes/MedianScale.md)
-- [`RelativeMinMaxScale`](../classes/RelativeMinMaxScale.md)
-- [`RelativeScale`](../classes/RelativeScale.md)
-
-## Table of contents
-
-### Methods
-
-- [getName](IScale.md#getname)
-- [getScale](IScale.md#getscale)
-
 ## Methods
 
-### getName
+### getName()
 
-▸ **getName**(): `string`
+> **getName**(): `string`
 
 It returns the name of the map domain.
 
@@ -43,31 +30,30 @@ It returns the name of the map domain.
 
 #### Inherited from
 
-[IMapDomain](IMapDomain.md).[getName](IMapDomain.md#getname)
+[`IMapDomain`](IMapDomain.md).[`getName`](IMapDomain.md#getname)
 
-#### Defined in
+#### Source
 
-[src/model/types/domain/IMapDomain.ts:11](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/domain/IMapDomain.ts#L11)
+[model/types/domain/IMapDomain.ts:11](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/domain/IMapDomain.ts#L11)
 
-___
+***
 
-### getScale
+### getScale()
 
-▸ **getScale**(`values`, `size`): `number`[]
+> **getScale**(`values`, `size`): `number`[]
 
 It returns a scale which can be used for choropleth color levels.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `values` | `number`[] |
-| `size` | `number` |
+• **values**: `number`[]
+
+• **size**: `number`
 
 #### Returns
 
 `number`[]
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/types/scale/IScale.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/types/scale/IScale.ts#L18)
+[tools/layers/choropleth/model/types/scale/IScale.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/types/scale/IScale.ts#L18)

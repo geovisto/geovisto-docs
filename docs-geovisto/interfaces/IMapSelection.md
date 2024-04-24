@@ -1,4 +1,8 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IMapSelection
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IMapSelection
 
 # Interface: IMapSelection
 
@@ -6,74 +10,56 @@ The interface declares API for the selection of map elements.
 
 The selection can affect multiple geographical items identified by some id (e.g., ISO 3166-1 alpha-3 - CZE, SVK, ...).
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Implemented by
-
-- [`MapSelection`](../classes/MapSelection.md)
-
-## Table of contents
-
-### Methods
-
-- [addIds](IMapSelection.md#addids)
-- [equals](IMapSelection.md#equals)
-- [getIds](IMapSelection.md#getids)
-- [getSrcIds](IMapSelection.md#getsrcids)
-- [getTool](IMapSelection.md#gettool)
-
 ## Methods
 
-### addIds
+### addIds()
 
-▸ **addIds**(`ids`): `string`[]
+> **addIds**(`ids`): `string`[]
 
 It takes geographical items and returns the list of new ids
 which were added to the list of all ids.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `ids` | `string`[] |
+• **ids**: `string`[]
 
 #### Returns
 
 `string`[]
 
-#### Defined in
+#### Source
 
-[src/tools/selection/model/types/selection/IMapSelection.ts:43](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/selection/model/types/selection/IMapSelection.ts#L43)
+[tools/selection/model/types/selection/IMapSelection.ts:43](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/selection/model/types/selection/IMapSelection.ts#L43)
 
-___
+***
 
-### equals
+### equals()
 
-▸ **equals**(`selection`): `boolean`
+> **equals**(`selection`): `boolean`
 
 It compares two selections.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `selection` | ``null`` \| [`IMapSelection`](IMapSelection.md) |
+• **selection**: `null` \| [`IMapSelection`](IMapSelection.md)
 
 #### Returns
 
 `boolean`
 
-#### Defined in
+#### Source
 
-[src/tools/selection/model/types/selection/IMapSelection.ts:35](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/selection/model/types/selection/IMapSelection.ts#L35)
+[tools/selection/model/types/selection/IMapSelection.ts:35](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/selection/model/types/selection/IMapSelection.ts#L35)
 
-___
+***
 
-### getIds
+### getIds()
 
-▸ **getIds**(): `string`[]
+> **getIds**(): `string`[]
 
 It returns identifiers of geographical items which were selected or affected by this selection.
 
@@ -81,15 +67,15 @@ It returns identifiers of geographical items which were selected or affected by 
 
 `string`[]
 
-#### Defined in
+#### Source
 
-[src/tools/selection/model/types/selection/IMapSelection.ts:28](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/selection/model/types/selection/IMapSelection.ts#L28)
+[tools/selection/model/types/selection/IMapSelection.ts:28](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/selection/model/types/selection/IMapSelection.ts#L28)
 
-___
+***
 
-### getSrcIds
+### getSrcIds()
 
-▸ **getSrcIds**(): `string`[]
+> **getSrcIds**(): `string`[]
 
 It returns identifiers of geographical items which were selected.
 
@@ -97,22 +83,22 @@ It returns identifiers of geographical items which were selected.
 
 `string`[]
 
-#### Defined in
+#### Source
 
-[src/tools/selection/model/types/selection/IMapSelection.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/selection/model/types/selection/IMapSelection.ts#L23)
+[tools/selection/model/types/selection/IMapSelection.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/selection/model/types/selection/IMapSelection.ts#L23)
 
-___
+***
 
-### getTool
+### getTool()
 
-▸ **getTool**(): [`IMapTool`](IMapTool.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](IMapToolDefaults.md), [`IMapToolState`](IMapToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](IMapToolDefaults.md), [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>\>, [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>, [`IMapToolAPI`](../modules.md#imaptoolapi)\>
+> **getTool**(): [`IMapTool`](IMapTool.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](IMapToolDefaults.md), [`IMapToolState`](IMapToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](IMapToolDefaults.md), [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>\>, [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>, [`IMapToolAPI`](../type-aliases/IMapToolAPI.md)\>
 
 It returns the tool of the selected element.
 
 #### Returns
 
-[`IMapTool`](IMapTool.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](IMapToolDefaults.md), [`IMapToolState`](IMapToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](IMapToolDefaults.md), [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>\>, [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>, [`IMapToolAPI`](../modules.md#imaptoolapi)\>
+[`IMapTool`](IMapTool.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](IMapToolDefaults.md), [`IMapToolState`](IMapToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](IMapToolDefaults.md), [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>\>, [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>, [`IMapToolAPI`](../type-aliases/IMapToolAPI.md)\>
 
-#### Defined in
+#### Source
 
-[src/tools/selection/model/types/selection/IMapSelection.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/selection/model/types/selection/IMapSelection.ts#L18)
+[tools/selection/model/types/selection/IMapSelection.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/selection/model/types/selection/IMapSelection.ts#L18)

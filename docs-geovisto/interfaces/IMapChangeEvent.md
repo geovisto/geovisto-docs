@@ -1,47 +1,32 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IMapChangeEvent
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IMapChangeEvent
 
 # Interface: IMapChangeEvent\<TChangedObject, TSource\>
 
 This interface declares abstract map event change object.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `TChangedObject` | extends `unknown` = `unknown` |
-| `TSource` | extends [`IMapObject`](IMapObject.md) = [`IMapObject`](IMapObject.md) |
-
-## Hierarchy
+## Extends
 
 - [`IMapEvent`](IMapEvent.md)\<`TSource`\>
 
-  ↳ **`IMapChangeEvent`**
+## Type parameters
 
-  ↳↳ [`IMapDataChangeEvent`](IMapDataChangeEvent.md)
+• **TChangedObject** *extends* `unknown` = `unknown`
 
-  ↳↳ [`IThemesToolEvent`](IThemesToolEvent.md)
-
-## Implemented by
-
-- [`MapChangeEvent`](../classes/MapChangeEvent.md)
-
-## Table of contents
-
-### Methods
-
-- [getChangedObject](IMapChangeEvent.md#getchangedobject)
-- [getSource](IMapChangeEvent.md#getsource)
-- [getType](IMapChangeEvent.md#gettype)
+• **TSource** *extends* [`IMapObject`](IMapObject.md) = [`IMapObject`](IMapObject.md)
 
 ## Methods
 
-### getChangedObject
+### getChangedObject()
 
-▸ **getChangedObject**(): `TChangedObject`
+> **getChangedObject**(): `TChangedObject`
 
 Return the changed object.
 
@@ -49,15 +34,15 @@ Return the changed object.
 
 `TChangedObject`
 
-#### Defined in
+#### Source
 
-[src/model/types/event/IMapChangeEvent.ts:14](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/event/IMapChangeEvent.ts#L14)
+[model/types/event/IMapChangeEvent.ts:14](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/event/IMapChangeEvent.ts#L14)
 
-___
+***
 
-### getSource
+### getSource()
 
-▸ **getSource**(): `TSource`
+> **getSource**(): `TSource`
 
 Return source object of the event.
 
@@ -67,17 +52,17 @@ Return source object of the event.
 
 #### Inherited from
 
-[IMapEvent](IMapEvent.md).[getSource](IMapEvent.md#getsource)
+[`IMapEvent`](IMapEvent.md).[`getSource`](IMapEvent.md#getsource)
 
-#### Defined in
+#### Source
 
-[src/model/types/event/IMapEvent.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/event/IMapEvent.ts#L18)
+[model/types/event/IMapEvent.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/event/IMapEvent.ts#L18)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 Returns string which identifies the event.
 
@@ -87,8 +72,8 @@ Returns string which identifies the event.
 
 #### Inherited from
 
-[IMapEvent](IMapEvent.md).[getType](IMapEvent.md#gettype)
+[`IMapEvent`](IMapEvent.md).[`getType`](IMapEvent.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/types/event/IMapEvent.ts:13](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/event/IMapEvent.ts#L13)
+[model/types/event/IMapEvent.ts:13](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/event/IMapEvent.ts#L13)

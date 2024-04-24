@@ -1,52 +1,36 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IntegerRangeManager
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IntegerRangeManager
 
 # Class: IntegerRangeManager
 
 This class specifies the integer type manager.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`IntegerTypeManager`](IntegerTypeManager.md)
-
-  ↳ **`IntegerRangeManager`**
 
 ## Implements
 
 - [`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](IntegerRangeManager.md#constructor)
-
-### Properties
-
-- [max](IntegerRangeManager.md#max)
-- [min](IntegerRangeManager.md#min)
-
-### Methods
-
-- [deserialize](IntegerRangeManager.md#deserialize)
-- [getMaxValue](IntegerRangeManager.md#getmaxvalue)
-- [getMinValue](IntegerRangeManager.md#getminvalue)
-
 ## Constructors
 
-### constructor
+### new IntegerRangeManager()
 
-• **new IntegerRangeManager**(`min`, `max`): [`IntegerRangeManager`](IntegerRangeManager.md)
+> **new IntegerRangeManager**(`min`, `max`): [`IntegerRangeManager`](IntegerRangeManager.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `min` | `number` |
-| `max` | `number` |
+• **min**: `number`
+
+• **max**: `number`
 
 #### Returns
 
@@ -54,45 +38,43 @@ Jiri Hynek
 
 #### Overrides
 
-[IntegerTypeManager](IntegerTypeManager.md).[constructor](IntegerTypeManager.md#constructor)
+[`IntegerTypeManager`](IntegerTypeManager.md).[`constructor`](IntegerTypeManager.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/model/internal/type/IntegerRangeManager.ts:14](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/type/IntegerRangeManager.ts#L14)
+[model/internal/type/IntegerRangeManager.ts:14](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/type/IntegerRangeManager.ts#L14)
 
 ## Properties
 
 ### max
 
-• `Private` **max**: `number`
+> `private` **max**: `number`
 
-#### Defined in
+#### Source
 
-[src/model/internal/type/IntegerRangeManager.ts:12](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/type/IntegerRangeManager.ts#L12)
+[model/internal/type/IntegerRangeManager.ts:12](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/type/IntegerRangeManager.ts#L12)
 
-___
+***
 
 ### min
 
-• `Private` **min**: `number`
+> `private` **min**: `number`
 
-#### Defined in
+#### Source
 
-[src/model/internal/type/IntegerRangeManager.ts:11](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/type/IntegerRangeManager.ts#L11)
+[model/internal/type/IntegerRangeManager.ts:11](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/type/IntegerRangeManager.ts#L11)
 
 ## Methods
 
-### deserialize
+### deserialize()
 
-▸ **deserialize**(`value`): `number`
+> **deserialize**(`value`): `number`
 
 It converts the string representation of the number value.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | `string` |
+• **value**: `string`
 
 #### Returns
 
@@ -100,21 +82,21 @@ It converts the string representation of the number value.
 
 #### Implementation of
 
-[IIntegerRangeManager](../interfaces/IIntegerRangeManager.md).[deserialize](../interfaces/IIntegerRangeManager.md#deserialize)
+[`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md).[`deserialize`](../interfaces/IIntegerRangeManager.md#deserialize)
 
 #### Inherited from
 
-[IntegerTypeManager](IntegerTypeManager.md).[deserialize](IntegerTypeManager.md#deserialize)
+[`IntegerTypeManager`](IntegerTypeManager.md).[`deserialize`](IntegerTypeManager.md#deserialize)
 
-#### Defined in
+#### Source
 
-[src/model/internal/type/IntegerTypeManager.ts:13](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/type/IntegerTypeManager.ts#L13)
+[model/internal/type/IntegerTypeManager.ts:13](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/type/IntegerTypeManager.ts#L13)
 
-___
+***
 
-### getMaxValue
+### getMaxValue()
 
-▸ **getMaxValue**(): `number`
+> **getMaxValue**(): `number`
 
 It returns the max value.
 
@@ -124,17 +106,17 @@ It returns the max value.
 
 #### Implementation of
 
-[IIntegerRangeManager](../interfaces/IIntegerRangeManager.md).[getMaxValue](../interfaces/IIntegerRangeManager.md#getmaxvalue)
+[`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md).[`getMaxValue`](../interfaces/IIntegerRangeManager.md#getmaxvalue)
 
-#### Defined in
+#### Source
 
-[src/model/internal/type/IntegerRangeManager.ts:30](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/type/IntegerRangeManager.ts#L30)
+[model/internal/type/IntegerRangeManager.ts:30](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/type/IntegerRangeManager.ts#L30)
 
-___
+***
 
-### getMinValue
+### getMinValue()
 
-▸ **getMinValue**(): `number`
+> **getMinValue**(): `number`
 
 It returns the min value.
 
@@ -144,8 +126,8 @@ It returns the min value.
 
 #### Implementation of
 
-[IIntegerRangeManager](../interfaces/IIntegerRangeManager.md).[getMinValue](../interfaces/IIntegerRangeManager.md#getminvalue)
+[`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md).[`getMinValue`](../interfaces/IIntegerRangeManager.md#getminvalue)
 
-#### Defined in
+#### Source
 
-[src/model/internal/type/IntegerRangeManager.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/type/IntegerRangeManager.ts#L23)
+[model/internal/type/IntegerRangeManager.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/type/IntegerRangeManager.ts#L23)

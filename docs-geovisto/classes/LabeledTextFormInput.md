@@ -1,59 +1,38 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / LabeledTextFormInput
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / LabeledTextFormInput
 
 # Class: LabeledTextFormInput
 
 This class represents labeled text form input.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-**`Author`**
+## Author
 
 Krystof Rykala - input div wrapper
 
-## Hierarchy
+## Extends
 
 - [`TextFormInput`](TextFormInput.md)
-
-  ↳ **`LabeledTextFormInput`**
 
 ## Implements
 
 - [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](LabeledTextFormInput.md#constructor)
-
-### Properties
-
-- [div](LabeledTextFormInput.md#div)
-
-### Methods
-
-- [create](LabeledTextFormInput.md#create)
-- [createLabel](LabeledTextFormInput.md#createlabel)
-- [getInput](LabeledTextFormInput.md#getinput)
-- [getProps](LabeledTextFormInput.md#getprops)
-- [getValue](LabeledTextFormInput.md#getvalue)
-- [setDisabled](LabeledTextFormInput.md#setdisabled)
-- [setValue](LabeledTextFormInput.md#setvalue)
-- [ID](LabeledTextFormInput.md#id)
-
 ## Constructors
 
-### constructor
+### new LabeledTextFormInput()
 
-• **new LabeledTextFormInput**(`props`): [`LabeledTextFormInput`](LabeledTextFormInput.md)
+> **new LabeledTextFormInput**(`props`): [`LabeledTextFormInput`](LabeledTextFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `props` | [`ILabeledTextFormInputProps`](../interfaces/ILabeledTextFormInputProps.md) |
+• **props**: [`ILabeledTextFormInputProps`](../interfaces/ILabeledTextFormInputProps.md)
 
 #### Returns
 
@@ -61,29 +40,29 @@ Krystof Rykala - input div wrapper
 
 #### Overrides
 
-[TextFormInput](TextFormInput.md).[constructor](TextFormInput.md#constructor)
+[`TextFormInput`](TextFormInput.md).[`constructor`](TextFormInput.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/labeled/text/LabeledTextFormInput.ts:20](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/labeled/text/LabeledTextFormInput.ts#L20)
+[model/internal/inputs/labeled/text/LabeledTextFormInput.ts:20](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/labeled/text/LabeledTextFormInput.ts#L20)
 
 ## Properties
 
-### div
+### div?
 
-• `Private` `Optional` **div**: `HTMLDivElement`
+> `private` `optional` **div**: `HTMLDivElement`
 
 The input element is created when required.
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/labeled/text/LabeledTextFormInput.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/labeled/text/LabeledTextFormInput.ts#L18)
+[model/internal/inputs/labeled/text/LabeledTextFormInput.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/labeled/text/LabeledTextFormInput.ts#L18)
 
 ## Methods
 
-### create
+### create()
 
-▸ **create**(): `HTMLElement`
+> **create**(): `HTMLElement`
 
 It returns input element.
 
@@ -93,21 +72,21 @@ It returns input element.
 
 #### Implementation of
 
-[IMapFormInput](../interfaces/IMapFormInput.md).[create](../interfaces/IMapFormInput.md#create)
+[`IMapFormInput`](../interfaces/IMapFormInput.md).[`create`](../interfaces/IMapFormInput.md#create)
 
 #### Overrides
 
-[TextFormInput](TextFormInput.md).[create](TextFormInput.md#create)
+[`TextFormInput`](TextFormInput.md).[`create`](TextFormInput.md#create)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/labeled/text/LabeledTextFormInput.ts:36](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/labeled/text/LabeledTextFormInput.ts#L36)
+[model/internal/inputs/labeled/text/LabeledTextFormInput.ts:36](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/labeled/text/LabeledTextFormInput.ts#L36)
 
-___
+***
 
-### createLabel
+### createLabel()
 
-▸ **createLabel**(): `HTMLDivElement`
+> `protected` **createLabel**(): `HTMLDivElement`
 
 A help method which creates the label HTML element.
 
@@ -115,15 +94,15 @@ A help method which creates the label HTML element.
 
 `HTMLDivElement`
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/labeled/text/LabeledTextFormInput.ts:58](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/labeled/text/LabeledTextFormInput.ts#L58)
+[model/internal/inputs/labeled/text/LabeledTextFormInput.ts:58](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/labeled/text/LabeledTextFormInput.ts#L58)
 
-___
+***
 
-### getInput
+### getInput()
 
-▸ **getInput**(): `undefined` \| `HTMLInputElement`
+> `protected` **getInput**(): `undefined` \| `HTMLInputElement`
 
 It makes input element visible for the extended classes.
 
@@ -133,17 +112,17 @@ It makes input element visible for the extended classes.
 
 #### Inherited from
 
-[TextFormInput](TextFormInput.md).[getInput](TextFormInput.md#getinput)
+[`TextFormInput`](TextFormInput.md).[`getInput`](TextFormInput.md#getinput)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/basic/text/TextFormInput.ts:48](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/basic/text/TextFormInput.ts#L48)
+[model/internal/inputs/basic/text/TextFormInput.ts:48](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/basic/text/TextFormInput.ts#L48)
 
-___
+***
 
-### getProps
+### getProps()
 
-▸ **getProps**(): [`IMapFormInputProps`](../interfaces/IMapFormInputProps.md)
+> `protected` **getProps**(): [`IMapFormInputProps`](../interfaces/IMapFormInputProps.md)
 
 It provides the props to the exteded classes.
 
@@ -153,17 +132,17 @@ It provides the props to the exteded classes.
 
 #### Inherited from
 
-[TextFormInput](TextFormInput.md).[getProps](TextFormInput.md#getprops)
+[`TextFormInput`](TextFormInput.md).[`getProps`](TextFormInput.md#getprops)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/abstract/AbstractMapFormInput.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/abstract/AbstractMapFormInput.ts#L23)
+[model/internal/inputs/abstract/AbstractMapFormInput.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/abstract/AbstractMapFormInput.ts#L23)
 
-___
+***
 
-### getValue
+### getValue()
 
-▸ **getValue**(): `string`
+> **getValue**(): `string`
 
 It returns value of the input element.
 
@@ -173,29 +152,27 @@ It returns value of the input element.
 
 #### Implementation of
 
-[IMapFormInput](../interfaces/IMapFormInput.md).[getValue](../interfaces/IMapFormInput.md#getvalue)
+[`IMapFormInput`](../interfaces/IMapFormInput.md).[`getValue`](../interfaces/IMapFormInput.md#getvalue)
 
 #### Inherited from
 
-[TextFormInput](TextFormInput.md).[getValue](TextFormInput.md#getvalue)
+[`TextFormInput`](TextFormInput.md).[`getValue`](TextFormInput.md#getvalue)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/basic/text/TextFormInput.ts:55](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/basic/text/TextFormInput.ts#L55)
+[model/internal/inputs/basic/text/TextFormInput.ts:55](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/basic/text/TextFormInput.ts#L55)
 
-___
+***
 
-### setDisabled
+### setDisabled()
 
-▸ **setDisabled**(`disabled`): `void`
+> **setDisabled**(`disabled`): `void`
 
 It sets the input disabled.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `disabled` | `boolean` |
+• **disabled**: `boolean`
 
 #### Returns
 
@@ -203,29 +180,27 @@ It sets the input disabled.
 
 #### Implementation of
 
-[IMapFormInput](../interfaces/IMapFormInput.md).[setDisabled](../interfaces/IMapFormInput.md#setdisabled)
+[`IMapFormInput`](../interfaces/IMapFormInput.md).[`setDisabled`](../interfaces/IMapFormInput.md#setdisabled)
 
 #### Inherited from
 
-[TextFormInput](TextFormInput.md).[setDisabled](TextFormInput.md#setdisabled)
+[`TextFormInput`](TextFormInput.md).[`setDisabled`](TextFormInput.md#setdisabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/basic/text/TextFormInput.ts:73](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/basic/text/TextFormInput.ts#L73)
+[model/internal/inputs/basic/text/TextFormInput.ts:73](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/basic/text/TextFormInput.ts#L73)
 
-___
+***
 
-### setValue
+### setValue()
 
-▸ **setValue**(`value`): `void`
+> **setValue**(`value`): `void`
 
 It sets value of the input element.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | `string` |
+• **value**: `string`
 
 #### Returns
 
@@ -233,21 +208,21 @@ It sets value of the input element.
 
 #### Implementation of
 
-[IMapFormInput](../interfaces/IMapFormInput.md).[setValue](../interfaces/IMapFormInput.md#setvalue)
+[`IMapFormInput`](../interfaces/IMapFormInput.md).[`setValue`](../interfaces/IMapFormInput.md#setvalue)
 
 #### Inherited from
 
-[TextFormInput](TextFormInput.md).[setValue](TextFormInput.md#setvalue)
+[`TextFormInput`](TextFormInput.md).[`setValue`](TextFormInput.md#setvalue)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/basic/text/TextFormInput.ts:64](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/basic/text/TextFormInput.ts#L64)
+[model/internal/inputs/basic/text/TextFormInput.ts:64](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/basic/text/TextFormInput.ts#L64)
 
-___
+***
 
-### ID
+### ID()
 
-▸ **ID**(): `string`
+> `static` **ID**(): `string`
 
 Static function returns identifier of the input type.
 
@@ -257,8 +232,8 @@ Static function returns identifier of the input type.
 
 #### Overrides
 
-[TextFormInput](TextFormInput.md).[ID](TextFormInput.md#id)
+[`TextFormInput`](TextFormInput.md).[`ID`](TextFormInput.md#id)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/labeled/text/LabeledTextFormInput.ts:29](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/labeled/text/LabeledTextFormInput.ts#L29)
+[model/internal/inputs/labeled/text/LabeledTextFormInput.ts:29](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/labeled/text/LabeledTextFormInput.ts#L29)

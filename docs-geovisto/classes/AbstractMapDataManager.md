@@ -1,90 +1,68 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / AbstractMapDataManager
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
 
-# Class: AbstractMapDataManager
+***
+
+[geovisto-map](../README.md) / AbstractMapDataManager
+
+# Class: `abstract` AbstractMapDataManager
 
 The class wraps data used by the map, its metadata and functions to acquire data items.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extended by
 
-- **`AbstractMapDataManager`**
-
-  ↳ [`JsonMapDataManager`](JsonMapDataManager.md)
+- [`JsonMapDataManager`](JsonMapDataManager.md)
 
 ## Implements
 
 - [`IMapDataManager`](../interfaces/IMapDataManager.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](AbstractMapDataManager.md#constructor)
-
-### Properties
-
-- [data](AbstractMapDataManager.md#data)
-
-### Methods
-
-- [getDataRecordValues](AbstractMapDataManager.md#getdatarecordvalues)
-- [getDataRecords](AbstractMapDataManager.md#getdatarecords)
-- [getDataRecordsValues](AbstractMapDataManager.md#getdatarecordsvalues)
-- [getDomain](AbstractMapDataManager.md#getdomain)
-- [getDomainNames](AbstractMapDataManager.md#getdomainnames)
-- [getDomains](AbstractMapDataManager.md#getdomains)
-- [getOriginalData](AbstractMapDataManager.md#getoriginaldata)
-- [getValues](AbstractMapDataManager.md#getvalues)
-
 ## Constructors
 
-### constructor
+### new AbstractMapDataManager()
 
-• **new AbstractMapDataManager**(`data`): [`AbstractMapDataManager`](AbstractMapDataManager.md)
+> **new AbstractMapDataManager**(`data`): [`AbstractMapDataManager`](AbstractMapDataManager.md)
 
 It initializes the data wrapper providing a basic API.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `data` | `unknown` |
+• **data**: `unknown`
 
 #### Returns
 
 [`AbstractMapDataManager`](AbstractMapDataManager.md)
 
-#### Defined in
+#### Source
 
-[src/model/internal/data/abstract/AbstractMapDataManager.ts:20](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/data/abstract/AbstractMapDataManager.ts#L20)
+[model/internal/data/abstract/AbstractMapDataManager.ts:20](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/data/abstract/AbstractMapDataManager.ts#L20)
 
 ## Properties
 
 ### data
 
-• `Private` **data**: `unknown`
+> `private` **data**: `unknown`
 
-#### Defined in
+#### Source
 
-[src/model/internal/data/abstract/AbstractMapDataManager.ts:13](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/data/abstract/AbstractMapDataManager.ts#L13)
+[model/internal/data/abstract/AbstractMapDataManager.ts:13](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/data/abstract/AbstractMapDataManager.ts#L13)
 
 ## Methods
 
-### getDataRecordValues
+### getDataRecordValues()
 
-▸ **getDataRecordValues**(`dataDomain`, `dataRecord`): `unknown`[]
+> `abstract` **getDataRecordValues**(`dataDomain`, `dataRecord`): `unknown`[]
 
 It returns values stored of the selected data domain stored in the given data record.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dataDomain` | [`IMapDataDomain`](../interfaces/IMapDataDomain.md) |
-| `dataRecord` | [`IMapDataRecord`](../modules.md#imapdatarecord) |
+• **dataDomain**: [`IMapDataDomain`](../interfaces/IMapDataDomain.md)
+
+• **dataRecord**: [`IMapDataRecord`](../type-aliases/IMapDataRecord.md)
 
 #### Returns
 
@@ -92,46 +70,45 @@ It returns values stored of the selected data domain stored in the given data re
 
 #### Implementation of
 
-[IMapDataManager](../interfaces/IMapDataManager.md).[getDataRecordValues](../interfaces/IMapDataManager.md#getdatarecordvalues)
+[`IMapDataManager`](../interfaces/IMapDataManager.md).[`getDataRecordValues`](../interfaces/IMapDataManager.md#getdatarecordvalues)
 
-#### Defined in
+#### Source
 
-[src/model/internal/data/abstract/AbstractMapDataManager.ts:92](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/data/abstract/AbstractMapDataManager.ts#L92)
+[model/internal/data/abstract/AbstractMapDataManager.ts:92](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/data/abstract/AbstractMapDataManager.ts#L92)
 
-___
+***
 
-### getDataRecords
+### getDataRecords()
 
-▸ **getDataRecords**(): [`IMapData`](../modules.md#imapdata)
+> `abstract` **getDataRecords**(): [`IMapData`](../type-aliases/IMapData.md)
 
 It returns the preprocessed data as a list of data reconds of the *same* object type.
 
 #### Returns
 
-[`IMapData`](../modules.md#imapdata)
+[`IMapData`](../type-aliases/IMapData.md)
 
 #### Implementation of
 
-[IMapDataManager](../interfaces/IMapDataManager.md).[getDataRecords](../interfaces/IMapDataManager.md#getdatarecords)
+[`IMapDataManager`](../interfaces/IMapDataManager.md).[`getDataRecords`](../interfaces/IMapDataManager.md#getdatarecords)
 
-#### Defined in
+#### Source
 
-[src/model/internal/data/abstract/AbstractMapDataManager.ts:34](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/data/abstract/AbstractMapDataManager.ts#L34)
+[model/internal/data/abstract/AbstractMapDataManager.ts:34](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/data/abstract/AbstractMapDataManager.ts#L34)
 
-___
+***
 
-### getDataRecordsValues
+### getDataRecordsValues()
 
-▸ **getDataRecordsValues**(`dataDomain`, `data`): `unknown`[]
+> `abstract` **getDataRecordsValues**(`dataDomain`, `data`): `unknown`[]
 
 It returns list of all values of the selected data domain stored in the given data records.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dataDomain` | [`IMapDataDomain`](../interfaces/IMapDataDomain.md) |
-| `data` | [`IMapData`](../modules.md#imapdata) |
+• **dataDomain**: [`IMapDataDomain`](../interfaces/IMapDataDomain.md)
+
+• **data**: [`IMapData`](../type-aliases/IMapData.md)
 
 #### Returns
 
@@ -139,26 +116,24 @@ It returns list of all values of the selected data domain stored in the given da
 
 #### Implementation of
 
-[IMapDataManager](../interfaces/IMapDataManager.md).[getDataRecordsValues](../interfaces/IMapDataManager.md#getdatarecordsvalues)
+[`IMapDataManager`](../interfaces/IMapDataManager.md).[`getDataRecordsValues`](../interfaces/IMapDataManager.md#getdatarecordsvalues)
 
-#### Defined in
+#### Source
 
-[src/model/internal/data/abstract/AbstractMapDataManager.ts:84](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/data/abstract/AbstractMapDataManager.ts#L84)
+[model/internal/data/abstract/AbstractMapDataManager.ts:84](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/data/abstract/AbstractMapDataManager.ts#L84)
 
-___
+***
 
-### getDomain
+### getDomain()
 
-▸ **getDomain**(`name`): `undefined` \| [`IMapDataDomain`](../interfaces/IMapDataDomain.md)
+> **getDomain**(`name`): `undefined` \| [`IMapDataDomain`](../interfaces/IMapDataDomain.md)
 
 It returns the data domain which corresponds to the given string
 or creates a new one.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
+• **name**: `string`
 
 #### Returns
 
@@ -166,17 +141,17 @@ or creates a new one.
 
 #### Implementation of
 
-[IMapDataManager](../interfaces/IMapDataManager.md).[getDomain](../interfaces/IMapDataManager.md#getdomain)
+[`IMapDataManager`](../interfaces/IMapDataManager.md).[`getDomain`](../interfaces/IMapDataManager.md#getdomain)
 
-#### Defined in
+#### Source
 
-[src/model/internal/data/abstract/AbstractMapDataManager.ts:66](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/data/abstract/AbstractMapDataManager.ts#L66)
+[model/internal/data/abstract/AbstractMapDataManager.ts:66](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/data/abstract/AbstractMapDataManager.ts#L66)
 
-___
+***
 
-### getDomainNames
+### getDomainNames()
 
-▸ **getDomainNames**(): `string`[]
+> **getDomainNames**(): `string`[]
 
 Help function which returns the list of data domain string name.
 
@@ -186,17 +161,17 @@ Help function which returns the list of data domain string name.
 
 #### Implementation of
 
-[IMapDataManager](../interfaces/IMapDataManager.md).[getDomainNames](../interfaces/IMapDataManager.md#getdomainnames)
+[`IMapDataManager`](../interfaces/IMapDataManager.md).[`getDomainNames`](../interfaces/IMapDataManager.md#getdomainnames)
 
-#### Defined in
+#### Source
 
-[src/model/internal/data/abstract/AbstractMapDataManager.ts:51](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/data/abstract/AbstractMapDataManager.ts#L51)
+[model/internal/data/abstract/AbstractMapDataManager.ts:51](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/data/abstract/AbstractMapDataManager.ts#L51)
 
-___
+***
 
-### getDomains
+### getDomains()
 
-▸ **getDomains**(): [`IMapDataDomain`](../interfaces/IMapDataDomain.md)[]
+> `abstract` **getDomains**(): [`IMapDataDomain`](../interfaces/IMapDataDomain.md)[]
 
 It returns list of data domains.
 
@@ -206,17 +181,17 @@ It returns list of data domains.
 
 #### Implementation of
 
-[IMapDataManager](../interfaces/IMapDataManager.md).[getDomains](../interfaces/IMapDataManager.md#getdomains)
+[`IMapDataManager`](../interfaces/IMapDataManager.md).[`getDomains`](../interfaces/IMapDataManager.md#getdomains)
 
-#### Defined in
+#### Source
 
-[src/model/internal/data/abstract/AbstractMapDataManager.ts:39](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/data/abstract/AbstractMapDataManager.ts#L39)
+[model/internal/data/abstract/AbstractMapDataManager.ts:39](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/data/abstract/AbstractMapDataManager.ts#L39)
 
-___
+***
 
-### getOriginalData
+### getOriginalData()
 
-▸ **getOriginalData**(): `unknown`
+> **getOriginalData**(): `unknown`
 
 It returns the original input data.
 
@@ -226,25 +201,23 @@ It returns the original input data.
 
 #### Implementation of
 
-[IMapDataManager](../interfaces/IMapDataManager.md).[getOriginalData](../interfaces/IMapDataManager.md#getoriginaldata)
+[`IMapDataManager`](../interfaces/IMapDataManager.md).[`getOriginalData`](../interfaces/IMapDataManager.md#getoriginaldata)
 
-#### Defined in
+#### Source
 
-[src/model/internal/data/abstract/AbstractMapDataManager.ts:27](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/data/abstract/AbstractMapDataManager.ts#L27)
+[model/internal/data/abstract/AbstractMapDataManager.ts:27](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/data/abstract/AbstractMapDataManager.ts#L27)
 
-___
+***
 
-### getValues
+### getValues()
 
-▸ **getValues**(`dataDomain`): `unknown`[]
+> `abstract` **getValues**(`dataDomain`): `unknown`[]
 
 It returns list of all values of the selected data domain.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dataDomain` | [`IMapDataDomain`](../interfaces/IMapDataDomain.md) |
+• **dataDomain**: [`IMapDataDomain`](../interfaces/IMapDataDomain.md)
 
 #### Returns
 
@@ -252,8 +225,8 @@ It returns list of all values of the selected data domain.
 
 #### Implementation of
 
-[IMapDataManager](../interfaces/IMapDataManager.md).[getValues](../interfaces/IMapDataManager.md#getvalues)
+[`IMapDataManager`](../interfaces/IMapDataManager.md).[`getValues`](../interfaces/IMapDataManager.md#getvalues)
 
-#### Defined in
+#### Source
 
-[src/model/internal/data/abstract/AbstractMapDataManager.ts:46](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/data/abstract/AbstractMapDataManager.ts#L46)
+[model/internal/data/abstract/AbstractMapDataManager.ts:46](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/data/abstract/AbstractMapDataManager.ts#L46)

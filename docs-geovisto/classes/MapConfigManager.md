@@ -1,52 +1,37 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / MapConfigManager
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / MapConfigManager
 
 # Class: MapConfigManager
 
 The class wraps config used by the map and functions to acquire config items.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`AbstractMapConfigManager`](AbstractMapConfigManager.md)
-
-  ↳ **`MapConfigManager`**
 
 ## Implements
 
 - [`IMapConfigManager`](../interfaces/IMapConfigManager.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](MapConfigManager.md#constructor)
-
-### Methods
-
-- [export](MapConfigManager.md#export)
-- [getMapConfig](MapConfigManager.md#getmapconfig)
-- [getOriginalConfig](MapConfigManager.md#getoriginalconfig)
-- [getToolConfig](MapConfigManager.md#gettoolconfig)
-- [getToolsConfigs](MapConfigManager.md#gettoolsconfigs)
-- [import](MapConfigManager.md#import)
-
 ## Constructors
 
-### constructor
+### new MapConfigManager()
 
-• **new MapConfigManager**(`config`): [`MapConfigManager`](MapConfigManager.md)
+> **new MapConfigManager**(`config`): [`MapConfigManager`](MapConfigManager.md)
 
 It initializes the config wrapper providing a basic API.
 It expects a config represented by the implicict Geovisto map structure.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `config` | `Record`\<`string`, `unknown`\> |
+• **config**: `Record`\<`string`, `unknown`\>
 
 #### Returns
 
@@ -54,25 +39,23 @@ It expects a config represented by the implicict Geovisto map structure.
 
 #### Overrides
 
-[AbstractMapConfigManager](AbstractMapConfigManager.md).[constructor](AbstractMapConfigManager.md#constructor)
+[`AbstractMapConfigManager`](AbstractMapConfigManager.md).[`constructor`](AbstractMapConfigManager.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/model/internal/config/basic/MapConfigManager.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/config/basic/MapConfigManager.ts#L18)
+[model/internal/config/basic/MapConfigManager.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/config/basic/MapConfigManager.ts#L18)
 
 ## Methods
 
-### export
+### export()
 
-▸ **export**(`mapConfig`): `Record`\<`string`, `unknown`\>
+> **export**(`mapConfig`): `Record`\<`string`, `unknown`\>
 
 It returns map config of the implicit structure.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `mapConfig` | [`IMapConfig`](../modules.md#imapconfig) |
+• **mapConfig**: [`IMapConfig`](../type-aliases/IMapConfig.md)
 
 #### Returns
 
@@ -80,45 +63,45 @@ It returns map config of the implicit structure.
 
 #### Implementation of
 
-[IMapConfigManager](../interfaces/IMapConfigManager.md).[export](../interfaces/IMapConfigManager.md#export)
+[`IMapConfigManager`](../interfaces/IMapConfigManager.md).[`export`](../interfaces/IMapConfigManager.md#export)
 
 #### Overrides
 
-[AbstractMapConfigManager](AbstractMapConfigManager.md).[export](AbstractMapConfigManager.md#export)
+[`AbstractMapConfigManager`](AbstractMapConfigManager.md).[`export`](AbstractMapConfigManager.md#export)
 
-#### Defined in
+#### Source
 
-[src/model/internal/config/basic/MapConfigManager.ts:39](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/config/basic/MapConfigManager.ts#L39)
+[model/internal/config/basic/MapConfigManager.ts:39](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/config/basic/MapConfigManager.ts#L39)
 
-___
+***
 
-### getMapConfig
+### getMapConfig()
 
-▸ **getMapConfig**(): [`IMapConfig`](../modules.md#imapconfig)
+> **getMapConfig**(): [`IMapConfig`](../type-aliases/IMapConfig.md)
 
 It returns the map config
 
 #### Returns
 
-[`IMapConfig`](../modules.md#imapconfig)
+[`IMapConfig`](../type-aliases/IMapConfig.md)
 
 #### Implementation of
 
-[IMapConfigManager](../interfaces/IMapConfigManager.md).[getMapConfig](../interfaces/IMapConfigManager.md#getmapconfig)
+[`IMapConfigManager`](../interfaces/IMapConfigManager.md).[`getMapConfig`](../interfaces/IMapConfigManager.md#getmapconfig)
 
 #### Inherited from
 
-[AbstractMapConfigManager](AbstractMapConfigManager.md).[getMapConfig](AbstractMapConfigManager.md#getmapconfig)
+[`AbstractMapConfigManager`](AbstractMapConfigManager.md).[`getMapConfig`](AbstractMapConfigManager.md#getmapconfig)
 
-#### Defined in
+#### Source
 
-[src/model/internal/config/abstract/AbstractMapConfigManager.ts:49](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/config/abstract/AbstractMapConfigManager.ts#L49)
+[model/internal/config/abstract/AbstractMapConfigManager.ts:49](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/config/abstract/AbstractMapConfigManager.ts#L49)
 
-___
+***
 
-### getOriginalConfig
+### getOriginalConfig()
 
-▸ **getOriginalConfig**(): `Record`\<`string`, `unknown`\>
+> **getOriginalConfig**(): `Record`\<`string`, `unknown`\>
 
 It returns the original config.
 
@@ -128,93 +111,89 @@ It returns the original config.
 
 #### Implementation of
 
-[IMapConfigManager](../interfaces/IMapConfigManager.md).[getOriginalConfig](../interfaces/IMapConfigManager.md#getoriginalconfig)
+[`IMapConfigManager`](../interfaces/IMapConfigManager.md).[`getOriginalConfig`](../interfaces/IMapConfigManager.md#getoriginalconfig)
 
 #### Inherited from
 
-[AbstractMapConfigManager](AbstractMapConfigManager.md).[getOriginalConfig](AbstractMapConfigManager.md#getoriginalconfig)
+[`AbstractMapConfigManager`](AbstractMapConfigManager.md).[`getOriginalConfig`](AbstractMapConfigManager.md#getoriginalconfig)
 
-#### Defined in
+#### Source
 
-[src/model/internal/config/abstract/AbstractMapConfigManager.ts:42](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/config/abstract/AbstractMapConfigManager.ts#L42)
+[model/internal/config/abstract/AbstractMapConfigManager.ts:42](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/config/abstract/AbstractMapConfigManager.ts#L42)
 
-___
+***
 
-### getToolConfig
+### getToolConfig()
 
-▸ **getToolConfig**(`toolId`): `undefined` \| [`IMapToolConfig`](../modules.md#imaptoolconfig)
+> **getToolConfig**(`toolId`): `undefined` \| [`IMapToolConfig`](../type-aliases/IMapToolConfig.md)
 
 It returns the config record for the tool identified by the given tool identifier.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `toolId` | `string` |
+• **toolId**: `string`
 
 #### Returns
 
-`undefined` \| [`IMapToolConfig`](../modules.md#imaptoolconfig)
+`undefined` \| [`IMapToolConfig`](../type-aliases/IMapToolConfig.md)
 
 #### Implementation of
 
-[IMapConfigManager](../interfaces/IMapConfigManager.md).[getToolConfig](../interfaces/IMapConfigManager.md#gettoolconfig)
+[`IMapConfigManager`](../interfaces/IMapConfigManager.md).[`getToolConfig`](../interfaces/IMapConfigManager.md#gettoolconfig)
 
 #### Inherited from
 
-[AbstractMapConfigManager](AbstractMapConfigManager.md).[getToolConfig](AbstractMapConfigManager.md#gettoolconfig)
+[`AbstractMapConfigManager`](AbstractMapConfigManager.md).[`getToolConfig`](AbstractMapConfigManager.md#gettoolconfig)
 
-#### Defined in
+#### Source
 
-[src/model/internal/config/abstract/AbstractMapConfigManager.ts:65](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/config/abstract/AbstractMapConfigManager.ts#L65)
+[model/internal/config/abstract/AbstractMapConfigManager.ts:65](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/config/abstract/AbstractMapConfigManager.ts#L65)
 
-___
+***
 
-### getToolsConfigs
+### getToolsConfigs()
 
-▸ **getToolsConfigs**(): `undefined` \| [`IMapToolConfig`](../modules.md#imaptoolconfig)[]
+> **getToolsConfigs**(): `undefined` \| [`IMapToolConfig`](../type-aliases/IMapToolConfig.md)[]
 
 It returns the list of all config records for the tools.
 
 #### Returns
 
-`undefined` \| [`IMapToolConfig`](../modules.md#imaptoolconfig)[]
+`undefined` \| [`IMapToolConfig`](../type-aliases/IMapToolConfig.md)[]
 
 #### Implementation of
 
-[IMapConfigManager](../interfaces/IMapConfigManager.md).[getToolsConfigs](../interfaces/IMapConfigManager.md#gettoolsconfigs)
+[`IMapConfigManager`](../interfaces/IMapConfigManager.md).[`getToolsConfigs`](../interfaces/IMapConfigManager.md#gettoolsconfigs)
 
 #### Inherited from
 
-[AbstractMapConfigManager](AbstractMapConfigManager.md).[getToolsConfigs](AbstractMapConfigManager.md#gettoolsconfigs)
+[`AbstractMapConfigManager`](AbstractMapConfigManager.md).[`getToolsConfigs`](AbstractMapConfigManager.md#gettoolsconfigs)
 
-#### Defined in
+#### Source
 
-[src/model/internal/config/abstract/AbstractMapConfigManager.ts:56](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/config/abstract/AbstractMapConfigManager.ts#L56)
+[model/internal/config/abstract/AbstractMapConfigManager.ts:56](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/config/abstract/AbstractMapConfigManager.ts#L56)
 
-___
+***
 
-### import
+### import()
 
-▸ **import**(`config`): [`IMapConfig`](../modules.md#imapconfig)
+> `protected` **import**(`config`): [`IMapConfig`](../type-aliases/IMapConfig.md)
 
 It converts given config to the internal map config structure.
 It keeps the config structure.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `config` | `Record`\<`string`, `unknown`\> |
+• **config**: `Record`\<`string`, `unknown`\>
 
 #### Returns
 
-[`IMapConfig`](../modules.md#imapconfig)
+[`IMapConfig`](../type-aliases/IMapConfig.md)
 
 #### Overrides
 
-[AbstractMapConfigManager](AbstractMapConfigManager.md).[import](AbstractMapConfigManager.md#import)
+[`AbstractMapConfigManager`](AbstractMapConfigManager.md).[`import`](AbstractMapConfigManager.md#import)
 
-#### Defined in
+#### Source
 
-[src/model/internal/config/basic/MapConfigManager.ts:28](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/config/basic/MapConfigManager.ts#L28)
+[model/internal/config/basic/MapConfigManager.ts:28](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/config/basic/MapConfigManager.ts#L28)

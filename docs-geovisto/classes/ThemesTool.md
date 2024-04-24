@@ -1,74 +1,37 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / ThemesTool
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / ThemesTool
 
 # Class: ThemesTool
 
 This class provides the themes tool.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`MapTool`](MapTool.md)
-
-  ↳ **`ThemesTool`**
 
 ## Implements
 
 - [`IThemesTool`](../interfaces/IThemesTool.md)
 - [`IMapFormControl`](../interfaces/IMapFormControl.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](ThemesTool.md#constructor)
-
-### Properties
-
-- [mapForm](ThemesTool.md#mapform)
-- [api](ThemesTool.md#api)
-
-### Methods
-
-- [copy](ThemesTool.md#copy)
-- [create](ThemesTool.md#create)
-- [createDefaults](ThemesTool.md#createdefaults)
-- [createMapForm](ThemesTool.md#createmapform)
-- [createState](ThemesTool.md#createstate)
-- [getAPIGetter](ThemesTool.md#getapigetter)
-- [getDefaults](ThemesTool.md#getdefaults)
-- [getId](ThemesTool.md#getid)
-- [getMap](ThemesTool.md#getmap)
-- [getMapForm](ThemesTool.md#getmapform)
-- [getProps](ThemesTool.md#getprops)
-- [getState](ThemesTool.md#getstate)
-- [getType](ThemesTool.md#gettype)
-- [handleEvent](ThemesTool.md#handleevent)
-- [initialize](ThemesTool.md#initialize)
-- [initializeAPI](ThemesTool.md#initializeapi)
-- [isEnabled](ThemesTool.md#isenabled)
-- [isSingleton](ThemesTool.md#issingleton)
-- [setEnabled](ThemesTool.md#setenabled)
-- [setProps](ThemesTool.md#setprops)
-- [setTheme](ThemesTool.md#settheme)
-- [switchEnabled](ThemesTool.md#switchenabled)
-- [updateGlobalStyles](ThemesTool.md#updateglobalstyles)
-
 ## Constructors
 
-### constructor
+### new ThemesTool()
 
-• **new ThemesTool**(`props?`): [`ThemesTool`](ThemesTool.md)
+> **new ThemesTool**(`props`?): [`ThemesTool`](ThemesTool.md)
 
 It creates a new tool with respect to the props.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `props?` | [`IThemesToolProps`](../modules.md#ithemestoolprops) |
+• **props?**: [`IThemesToolProps`](../type-aliases/IThemesToolProps.md)
 
 #### Returns
 
@@ -76,65 +39,65 @@ It creates a new tool with respect to the props.
 
 #### Overrides
 
-[MapTool](MapTool.md).[constructor](MapTool.md#constructor)
+[`MapTool`](MapTool.md).[`constructor`](MapTool.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/tools/themes/model/internal/tool/ThemesTool.ts:49](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/themes/model/internal/tool/ThemesTool.ts#L49)
+[tools/themes/model/internal/tool/ThemesTool.ts:49](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/themes/model/internal/tool/ThemesTool.ts#L49)
 
 ## Properties
 
 ### mapForm
 
-• `Private` **mapForm**: [`IMapForm`](../interfaces/IMapForm.md)
+> `private` **mapForm**: [`IMapForm`](../interfaces/IMapForm.md)
 
 TODO: move to the tool state.
 
-#### Defined in
+#### Source
 
-[src/tools/themes/model/internal/tool/ThemesTool.ts:42](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/themes/model/internal/tool/ThemesTool.ts#L42)
+[tools/themes/model/internal/tool/ThemesTool.ts:42](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/themes/model/internal/tool/ThemesTool.ts#L42)
 
-___
+***
 
 ### api
 
-▪ `Static` `Private` **api**: [`IThemesToolAPI`](../modules.md#ithemestoolapi) = `ThemesToolAPI`
+> `static` `private` **api**: [`IThemesToolAPI`](../type-aliases/IThemesToolAPI.md) = `ThemesToolAPI`
 
 tool api
 
-#### Defined in
+#### Source
 
-[src/tools/themes/model/internal/tool/ThemesTool.ts:37](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/themes/model/internal/tool/ThemesTool.ts#L37)
+[tools/themes/model/internal/tool/ThemesTool.ts:37](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/themes/model/internal/tool/ThemesTool.ts#L37)
 
 ## Methods
 
-### copy
+### copy()
 
-▸ **copy**(): [`IThemesTool`](../interfaces/IThemesTool.md)\<[`IThemesToolProps`](../modules.md#ithemestoolprops), [`IThemesToolDefaults`](../interfaces/IThemesToolDefaults.md), [`IThemesToolState`](../interfaces/IThemesToolState.md)\<[`IThemesToolProps`](../modules.md#ithemestoolprops), [`IThemesToolDefaults`](../interfaces/IThemesToolDefaults.md), [`IThemesToolConfig`](../modules.md#ithemestoolconfig)\>, [`IThemesToolConfig`](../modules.md#ithemestoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IThemesToolConfig`](../modules.md#ithemestoolconfig)\>\>
+> **copy**(): [`IThemesTool`](../interfaces/IThemesTool.md)\<[`IThemesToolProps`](../type-aliases/IThemesToolProps.md), [`IThemesToolDefaults`](../interfaces/IThemesToolDefaults.md), [`IThemesToolState`](../interfaces/IThemesToolState.md)\<[`IThemesToolProps`](../type-aliases/IThemesToolProps.md), [`IThemesToolDefaults`](../interfaces/IThemesToolDefaults.md), [`IThemesToolConfig`](../type-aliases/IThemesToolConfig.md)\>, [`IThemesToolConfig`](../type-aliases/IThemesToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IThemesToolConfig`](../type-aliases/IThemesToolConfig.md)\>\>
 
 It creates a copy of the uninitialized tool.
 
 #### Returns
 
-[`IThemesTool`](../interfaces/IThemesTool.md)\<[`IThemesToolProps`](../modules.md#ithemestoolprops), [`IThemesToolDefaults`](../interfaces/IThemesToolDefaults.md), [`IThemesToolState`](../interfaces/IThemesToolState.md)\<[`IThemesToolProps`](../modules.md#ithemestoolprops), [`IThemesToolDefaults`](../interfaces/IThemesToolDefaults.md), [`IThemesToolConfig`](../modules.md#ithemestoolconfig)\>, [`IThemesToolConfig`](../modules.md#ithemestoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IThemesToolConfig`](../modules.md#ithemestoolconfig)\>\>
+[`IThemesTool`](../interfaces/IThemesTool.md)\<[`IThemesToolProps`](../type-aliases/IThemesToolProps.md), [`IThemesToolDefaults`](../interfaces/IThemesToolDefaults.md), [`IThemesToolState`](../interfaces/IThemesToolState.md)\<[`IThemesToolProps`](../type-aliases/IThemesToolProps.md), [`IThemesToolDefaults`](../interfaces/IThemesToolDefaults.md), [`IThemesToolConfig`](../type-aliases/IThemesToolConfig.md)\>, [`IThemesToolConfig`](../type-aliases/IThemesToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IThemesToolConfig`](../type-aliases/IThemesToolConfig.md)\>\>
 
 #### Implementation of
 
-[IThemesTool](../interfaces/IThemesTool.md).[copy](../interfaces/IThemesTool.md#copy)
+[`IThemesTool`](../interfaces/IThemesTool.md).[`copy`](../interfaces/IThemesTool.md#copy)
 
 #### Overrides
 
-[MapTool](MapTool.md).[copy](MapTool.md#copy)
+[`MapTool`](MapTool.md).[`copy`](MapTool.md#copy)
 
-#### Defined in
+#### Source
 
-[src/tools/themes/model/internal/tool/ThemesTool.ts:56](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/themes/model/internal/tool/ThemesTool.ts#L56)
+[tools/themes/model/internal/tool/ThemesTool.ts:56](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/themes/model/internal/tool/ThemesTool.ts#L56)
 
-___
+***
 
-### create
+### create()
 
-▸ **create**(): `this`
+> **create**(): `this`
 
 It creates new filter tool.
 
@@ -144,21 +107,21 @@ It creates new filter tool.
 
 #### Implementation of
 
-[IThemesTool](../interfaces/IThemesTool.md).[create](../interfaces/IThemesTool.md#create)
+[`IThemesTool`](../interfaces/IThemesTool.md).[`create`](../interfaces/IThemesTool.md#create)
 
 #### Overrides
 
-[MapTool](MapTool.md).[create](MapTool.md#create)
+[`MapTool`](MapTool.md).[`create`](MapTool.md#create)
 
-#### Defined in
+#### Source
 
-[src/tools/themes/model/internal/tool/ThemesTool.ts:126](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/themes/model/internal/tool/ThemesTool.ts#L126)
+[tools/themes/model/internal/tool/ThemesTool.ts:126](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/themes/model/internal/tool/ThemesTool.ts#L126)
 
-___
+***
 
-### createDefaults
+### createDefaults()
 
-▸ **createDefaults**(): [`IThemesToolDefaults`](../interfaces/IThemesToolDefaults.md)
+> `protected` **createDefaults**(): [`IThemesToolDefaults`](../interfaces/IThemesToolDefaults.md)
 
 It creates new defaults of the tool.
 
@@ -168,17 +131,17 @@ It creates new defaults of the tool.
 
 #### Overrides
 
-[MapTool](MapTool.md).[createDefaults](MapTool.md#createdefaults)
+[`MapTool`](MapTool.md).[`createDefaults`](MapTool.md#createdefaults)
 
-#### Defined in
+#### Source
 
-[src/tools/themes/model/internal/tool/ThemesTool.ts:77](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/themes/model/internal/tool/ThemesTool.ts#L77)
+[tools/themes/model/internal/tool/ThemesTool.ts:77](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/themes/model/internal/tool/ThemesTool.ts#L77)
 
-___
+***
 
-### createMapForm
+### createMapForm()
 
-▸ **createMapForm**(): [`IMapForm`](../interfaces/IMapForm.md)
+> `protected` **createMapForm**(): [`IMapForm`](../interfaces/IMapForm.md)
 
 It creates new tab fragment.
 
@@ -186,59 +149,59 @@ It creates new tab fragment.
 
 [`IMapForm`](../interfaces/IMapForm.md)
 
-#### Defined in
+#### Source
 
-[src/tools/themes/model/internal/tool/ThemesTool.ts:186](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/themes/model/internal/tool/ThemesTool.ts#L186)
+[tools/themes/model/internal/tool/ThemesTool.ts:186](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/themes/model/internal/tool/ThemesTool.ts#L186)
 
-___
+***
 
-### createState
+### createState()
 
-▸ **createState**(): [`IThemesToolState`](../interfaces/IThemesToolState.md)\<[`IThemesToolProps`](../modules.md#ithemestoolprops), [`IThemesToolDefaults`](../interfaces/IThemesToolDefaults.md), [`IThemesToolConfig`](../modules.md#ithemestoolconfig)\>
+> `protected` **createState**(): [`IThemesToolState`](../interfaces/IThemesToolState.md)\<[`IThemesToolProps`](../type-aliases/IThemesToolProps.md), [`IThemesToolDefaults`](../interfaces/IThemesToolDefaults.md), [`IThemesToolConfig`](../type-aliases/IThemesToolConfig.md)\>
 
 It returns the tool state.
 
 #### Returns
 
-[`IThemesToolState`](../interfaces/IThemesToolState.md)\<[`IThemesToolProps`](../modules.md#ithemestoolprops), [`IThemesToolDefaults`](../interfaces/IThemesToolDefaults.md), [`IThemesToolConfig`](../modules.md#ithemestoolconfig)\>
+[`IThemesToolState`](../interfaces/IThemesToolState.md)\<[`IThemesToolProps`](../type-aliases/IThemesToolProps.md), [`IThemesToolDefaults`](../interfaces/IThemesToolDefaults.md), [`IThemesToolConfig`](../type-aliases/IThemesToolConfig.md)\>
 
 #### Overrides
 
-[MapTool](MapTool.md).[createState](MapTool.md#createstate)
+[`MapTool`](MapTool.md).[`createState`](MapTool.md#createstate)
 
-#### Defined in
+#### Source
 
-[src/tools/themes/model/internal/tool/ThemesTool.ts:91](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/themes/model/internal/tool/ThemesTool.ts#L91)
+[tools/themes/model/internal/tool/ThemesTool.ts:91](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/themes/model/internal/tool/ThemesTool.ts#L91)
 
-___
+***
 
-### getAPIGetter
+### getAPIGetter()
 
-▸ **getAPIGetter**(): `undefined` \| [`IThemesToolAPIGetter`](../modules.md#ithemestoolapigetter)
+> **getAPIGetter**(): `undefined` \| [`IThemesToolAPIGetter`](../type-aliases/IThemesToolAPIGetter.md)
 
 It returns the tool API
 
 #### Returns
 
-`undefined` \| [`IThemesToolAPIGetter`](../modules.md#ithemestoolapigetter)
+`undefined` \| [`IThemesToolAPIGetter`](../type-aliases/IThemesToolAPIGetter.md)
 
 #### Implementation of
 
-[IThemesTool](../interfaces/IThemesTool.md).[getAPIGetter](../interfaces/IThemesTool.md#getapigetter)
+[`IThemesTool`](../interfaces/IThemesTool.md).[`getAPIGetter`](../interfaces/IThemesTool.md#getapigetter)
 
 #### Overrides
 
-[MapTool](MapTool.md).[getAPIGetter](MapTool.md#getapigetter)
+[`MapTool`](MapTool.md).[`getAPIGetter`](MapTool.md#getapigetter)
 
-#### Defined in
+#### Source
 
-[src/tools/themes/model/internal/tool/ThemesTool.ts:98](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/themes/model/internal/tool/ThemesTool.ts#L98)
+[tools/themes/model/internal/tool/ThemesTool.ts:98](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/themes/model/internal/tool/ThemesTool.ts#L98)
 
-___
+***
 
-### getDefaults
+### getDefaults()
 
-▸ **getDefaults**(): [`IThemesToolDefaults`](../interfaces/IThemesToolDefaults.md)
+> **getDefaults**(): [`IThemesToolDefaults`](../interfaces/IThemesToolDefaults.md)
 
 It returns default values of the themes tool.
 
@@ -248,21 +211,21 @@ It returns default values of the themes tool.
 
 #### Implementation of
 
-[IThemesTool](../interfaces/IThemesTool.md).[getDefaults](../interfaces/IThemesTool.md#getdefaults)
+[`IThemesTool`](../interfaces/IThemesTool.md).[`getDefaults`](../interfaces/IThemesTool.md#getdefaults)
 
 #### Overrides
 
-[MapTool](MapTool.md).[getDefaults](MapTool.md#getdefaults)
+[`MapTool`](MapTool.md).[`getDefaults`](MapTool.md#getdefaults)
 
-#### Defined in
+#### Source
 
-[src/tools/themes/model/internal/tool/ThemesTool.ts:70](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/themes/model/internal/tool/ThemesTool.ts#L70)
+[tools/themes/model/internal/tool/ThemesTool.ts:70](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/themes/model/internal/tool/ThemesTool.ts#L70)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 Help function which returns the id of the object.
 
@@ -272,21 +235,21 @@ Help function which returns the id of the object.
 
 #### Implementation of
 
-[IThemesTool](../interfaces/IThemesTool.md).[getId](../interfaces/IThemesTool.md#getid)
+[`IThemesTool`](../interfaces/IThemesTool.md).[`getId`](../interfaces/IThemesTool.md#getid)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[getId](MapTool.md#getid)
+[`MapTool`](MapTool.md).[`getId`](MapTool.md#getid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObject.ts:93](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObject.ts#L93)
+[model/internal/object/MapObject.ts:93](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObject.ts#L93)
 
-___
+***
 
-### getMap
+### getMap()
 
-▸ **getMap**(): `undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+> **getMap**(): `undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 Help function returns map which uses this tool.
 
@@ -294,25 +257,25 @@ Do not override this function. Use the state class instead.
 
 #### Returns
 
-`undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+`undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Implementation of
 
-[IThemesTool](../interfaces/IThemesTool.md).[getMap](../interfaces/IThemesTool.md#getmap)
+[`IThemesTool`](../interfaces/IThemesTool.md).[`getMap`](../interfaces/IThemesTool.md#getmap)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[getMap](MapTool.md#getmap)
+[`MapTool`](MapTool.md).[`getMap`](MapTool.md#getmap)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:112](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L112)
+[model/internal/tool/MapTool.ts:112](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L112)
 
-___
+***
 
-### getMapForm
+### getMapForm()
 
-▸ **getMapForm**(): [`IMapForm`](../interfaces/IMapForm.md)
+> **getMapForm**(): [`IMapForm`](../interfaces/IMapForm.md)
 
 It returns tab control with respect to the configuration
 
@@ -322,65 +285,65 @@ It returns tab control with respect to the configuration
 
 #### Implementation of
 
-[IMapFormControl](../interfaces/IMapFormControl.md).[getMapForm](../interfaces/IMapFormControl.md#getmapform)
+[`IMapFormControl`](../interfaces/IMapFormControl.md).[`getMapForm`](../interfaces/IMapFormControl.md#getmapform)
 
-#### Defined in
+#### Source
 
-[src/tools/themes/model/internal/tool/ThemesTool.ts:176](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/themes/model/internal/tool/ThemesTool.ts#L176)
+[tools/themes/model/internal/tool/ThemesTool.ts:176](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/themes/model/internal/tool/ThemesTool.ts#L176)
 
-___
+***
 
-### getProps
+### getProps()
 
-▸ **getProps**(): [`IThemesToolProps`](../modules.md#ithemestoolprops)
+> **getProps**(): [`IThemesToolProps`](../type-aliases/IThemesToolProps.md)
 
 It returns the props given by the programmer.
 
 #### Returns
 
-[`IThemesToolProps`](../modules.md#ithemestoolprops)
+[`IThemesToolProps`](../type-aliases/IThemesToolProps.md)
 
 #### Implementation of
 
-[IThemesTool](../interfaces/IThemesTool.md).[getProps](../interfaces/IThemesTool.md#getprops)
+[`IThemesTool`](../interfaces/IThemesTool.md).[`getProps`](../interfaces/IThemesTool.md#getprops)
 
 #### Overrides
 
-[MapTool](MapTool.md).[getProps](MapTool.md#getprops)
+[`MapTool`](MapTool.md).[`getProps`](MapTool.md#getprops)
 
-#### Defined in
+#### Source
 
-[src/tools/themes/model/internal/tool/ThemesTool.ts:63](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/themes/model/internal/tool/ThemesTool.ts#L63)
+[tools/themes/model/internal/tool/ThemesTool.ts:63](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/themes/model/internal/tool/ThemesTool.ts#L63)
 
-___
+***
 
-### getState
+### getState()
 
-▸ **getState**(): [`IThemesToolState`](../interfaces/IThemesToolState.md)\<[`IThemesToolProps`](../modules.md#ithemestoolprops), [`IThemesToolDefaults`](../interfaces/IThemesToolDefaults.md), [`IThemesToolConfig`](../modules.md#ithemestoolconfig)\>
+> **getState**(): [`IThemesToolState`](../interfaces/IThemesToolState.md)\<[`IThemesToolProps`](../type-aliases/IThemesToolProps.md), [`IThemesToolDefaults`](../interfaces/IThemesToolDefaults.md), [`IThemesToolConfig`](../type-aliases/IThemesToolConfig.md)\>
 
 It returns the themes tool state.
 
 #### Returns
 
-[`IThemesToolState`](../interfaces/IThemesToolState.md)\<[`IThemesToolProps`](../modules.md#ithemestoolprops), [`IThemesToolDefaults`](../interfaces/IThemesToolDefaults.md), [`IThemesToolConfig`](../modules.md#ithemestoolconfig)\>
+[`IThemesToolState`](../interfaces/IThemesToolState.md)\<[`IThemesToolProps`](../type-aliases/IThemesToolProps.md), [`IThemesToolDefaults`](../interfaces/IThemesToolDefaults.md), [`IThemesToolConfig`](../type-aliases/IThemesToolConfig.md)\>
 
 #### Implementation of
 
-[IThemesTool](../interfaces/IThemesTool.md).[getState](../interfaces/IThemesTool.md#getstate)
+[`IThemesTool`](../interfaces/IThemesTool.md).[`getState`](../interfaces/IThemesTool.md#getstate)
 
 #### Overrides
 
-[MapTool](MapTool.md).[getState](MapTool.md#getstate)
+[`MapTool`](MapTool.md).[`getState`](MapTool.md#getstate)
 
-#### Defined in
+#### Source
 
-[src/tools/themes/model/internal/tool/ThemesTool.ts:84](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/themes/model/internal/tool/ThemesTool.ts#L84)
+[tools/themes/model/internal/tool/ThemesTool.ts:84](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/themes/model/internal/tool/ThemesTool.ts#L84)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 Help function which returns the type of the object.
 
@@ -390,21 +353,21 @@ Help function which returns the type of the object.
 
 #### Implementation of
 
-[IThemesTool](../interfaces/IThemesTool.md).[getType](../interfaces/IThemesTool.md#gettype)
+[`IThemesTool`](../interfaces/IThemesTool.md).[`getType`](../interfaces/IThemesTool.md#gettype)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[getType](MapTool.md#gettype)
+[`MapTool`](MapTool.md).[`getType`](MapTool.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObject.ts:86](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObject.ts#L86)
+[model/internal/object/MapObject.ts:86](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObject.ts#L86)
 
-___
+***
 
-### handleEvent
+### handleEvent()
 
-▸ **handleEvent**(`event`): `void`
+> **handleEvent**(`event`): `void`
 
 This function is called when a custom event is invoked.
 
@@ -412,9 +375,7 @@ Override this function, if needed.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `event` | [`IMapEvent`](../interfaces/IMapEvent.md)\<[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>\> |
+• **event**: [`IMapEvent`](../interfaces/IMapEvent.md)\<[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>\>
 
 #### Returns
 
@@ -422,25 +383,23 @@ Override this function, if needed.
 
 #### Inherited from
 
-[MapTool](MapTool.md).[handleEvent](MapTool.md#handleevent)
+[`MapTool`](MapTool.md).[`handleEvent`](MapTool.md#handleevent)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:171](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L171)
+[model/internal/tool/MapTool.ts:171](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L171)
 
-___
+***
 
-### initialize
+### initialize()
 
-▸ **initialize**(`initProps`): `this`
+> **initialize**(`initProps`): `this`
 
 Overrides the super method.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `initProps` | [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IThemesToolConfig`](../modules.md#ithemestoolconfig)\> |
+• **initProps**: [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IThemesToolConfig`](../type-aliases/IThemesToolConfig.md)\>
 
 #### Returns
 
@@ -448,21 +407,21 @@ Overrides the super method.
 
 #### Implementation of
 
-[IThemesTool](../interfaces/IThemesTool.md).[initialize](../interfaces/IThemesTool.md#initialize)
+[`IThemesTool`](../interfaces/IThemesTool.md).[`initialize`](../interfaces/IThemesTool.md#initialize)
 
 #### Overrides
 
-[MapTool](MapTool.md).[initialize](MapTool.md#initialize)
+[`MapTool`](MapTool.md).[`initialize`](MapTool.md#initialize)
 
-#### Defined in
+#### Source
 
-[src/tools/themes/model/internal/tool/ThemesTool.ts:109](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/themes/model/internal/tool/ThemesTool.ts#L109)
+[tools/themes/model/internal/tool/ThemesTool.ts:109](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/themes/model/internal/tool/ThemesTool.ts#L109)
 
-___
+***
 
-### initializeAPI
+### initializeAPI()
 
-▸ **initializeAPI**(): `void`
+> `protected` **initializeAPI**(): `void`
 
 Help method which initializes the API.
 
@@ -470,15 +429,15 @@ Help method which initializes the API.
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/themes/model/internal/tool/ThemesTool.ts:117](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/themes/model/internal/tool/ThemesTool.ts#L117)
+[tools/themes/model/internal/tool/ThemesTool.ts:117](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/themes/model/internal/tool/ThemesTool.ts#L117)
 
-___
+***
 
-### isEnabled
+### isEnabled()
 
-▸ **isEnabled**(): `boolean`
+> **isEnabled**(): `boolean`
 
 Help getter which returns enabled property of state.
 
@@ -490,21 +449,21 @@ Do not override this function. Use the state class instead.
 
 #### Implementation of
 
-[IThemesTool](../interfaces/IThemesTool.md).[isEnabled](../interfaces/IThemesTool.md#isenabled)
+[`IThemesTool`](../interfaces/IThemesTool.md).[`isEnabled`](../interfaces/IThemesTool.md#isenabled)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[isEnabled](MapTool.md#isenabled)
+[`MapTool`](MapTool.md).[`isEnabled`](MapTool.md#isenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:130](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L130)
+[model/internal/tool/MapTool.ts:130](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L130)
 
-___
+***
 
-### isSingleton
+### isSingleton()
 
-▸ **isSingleton**(): `boolean`
+> **isSingleton**(): `boolean`
 
 Help getter which returns a logtical value whether the tool type is singleton.
 
@@ -514,21 +473,21 @@ Help getter which returns a logtical value whether the tool type is singleton.
 
 #### Implementation of
 
-[IThemesTool](../interfaces/IThemesTool.md).[isSingleton](../interfaces/IThemesTool.md#issingleton)
+[`IThemesTool`](../interfaces/IThemesTool.md).[`isSingleton`](../interfaces/IThemesTool.md#issingleton)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[isSingleton](MapTool.md#issingleton)
+[`MapTool`](MapTool.md).[`isSingleton`](MapTool.md#issingleton)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:81](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L81)
+[model/internal/tool/MapTool.ts:81](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L81)
 
-___
+***
 
-### setEnabled
+### setEnabled()
 
-▸ **setEnabled**(`enabled`): `void`
+> **setEnabled**(`enabled`): `void`
 
 Some tools might be dynamicaly enabled/disabled.
 This function is called externally when the tool is enabled/disabled.
@@ -537,9 +496,7 @@ Override this function, if needed.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `enabled` | `boolean` |
+• **enabled**: `boolean`
 
 #### Returns
 
@@ -547,29 +504,27 @@ Override this function, if needed.
 
 #### Implementation of
 
-[IThemesTool](../interfaces/IThemesTool.md).[setEnabled](../interfaces/IThemesTool.md#setenabled)
+[`IThemesTool`](../interfaces/IThemesTool.md).[`setEnabled`](../interfaces/IThemesTool.md#setenabled)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[setEnabled](MapTool.md#setenabled)
+[`MapTool`](MapTool.md).[`setEnabled`](MapTool.md#setenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:142](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L142)
+[model/internal/tool/MapTool.ts:142](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L142)
 
-___
+***
 
-### setProps
+### setProps()
 
-▸ **setProps**(`props`): `void`
+> `protected` **setProps**(`props`): `void`
 
 It updates the props.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `props` | [`IMapObjectProps`](../modules.md#imapobjectprops) |
+• **props**: [`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
 #### Returns
 
@@ -577,25 +532,23 @@ It updates the props.
 
 #### Inherited from
 
-[MapTool](MapTool.md).[setProps](MapTool.md#setprops)
+[`MapTool`](MapTool.md).[`setProps`](MapTool.md#setprops)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObject.ts:38](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObject.ts#L38)
+[model/internal/object/MapObject.ts:38](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObject.ts#L38)
 
-___
+***
 
-### setTheme
+### setTheme()
 
-▸ **setTheme**(`theme`): `void`
+> **setTheme**(`theme`): `void`
 
 It updates the theme and notifies listeners.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `theme` | [`IMapTheme`](../interfaces/IMapTheme.md) |
+• **theme**: [`IMapTheme`](../interfaces/IMapTheme.md)
 
 #### Returns
 
@@ -603,17 +556,17 @@ It updates the theme and notifies listeners.
 
 #### Implementation of
 
-[IThemesTool](../interfaces/IThemesTool.md).[setTheme](../interfaces/IThemesTool.md#settheme)
+[`IThemesTool`](../interfaces/IThemesTool.md).[`setTheme`](../interfaces/IThemesTool.md#settheme)
 
-#### Defined in
+#### Source
 
-[src/tools/themes/model/internal/tool/ThemesTool.ts:141](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/themes/model/internal/tool/ThemesTool.ts#L141)
+[tools/themes/model/internal/tool/ThemesTool.ts:141](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/themes/model/internal/tool/ThemesTool.ts#L141)
 
-___
+***
 
-### switchEnabled
+### switchEnabled()
 
-▸ **switchEnabled**(): `void`
+> **switchEnabled**(): `void`
 
 Help function which switches enabled state (enabled/disabled).
 
@@ -625,34 +578,32 @@ Do not override this function. Use setEnabled instead.
 
 #### Implementation of
 
-[IThemesTool](../interfaces/IThemesTool.md).[switchEnabled](../interfaces/IThemesTool.md#switchenabled)
+[`IThemesTool`](../interfaces/IThemesTool.md).[`switchEnabled`](../interfaces/IThemesTool.md#switchenabled)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[switchEnabled](MapTool.md#switchenabled)
+[`MapTool`](MapTool.md).[`switchEnabled`](MapTool.md#switchenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:158](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L158)
+[model/internal/tool/MapTool.ts:158](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L158)
 
-___
+***
 
-### updateGlobalStyles
+### updateGlobalStyles()
 
-▸ **updateGlobalStyles**(`theme`): `void`
+> `protected` **updateGlobalStyles**(`theme`): `void`
 
 This function updates the global styles.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `theme` | [`IMapTheme`](../interfaces/IMapTheme.md) |
+• **theme**: [`IMapTheme`](../interfaces/IMapTheme.md)
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/themes/model/internal/tool/ThemesTool.ts:169](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/themes/model/internal/tool/ThemesTool.ts#L169)
+[tools/themes/model/internal/tool/ThemesTool.ts:169](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/themes/model/internal/tool/ThemesTool.ts#L169)

@@ -1,68 +1,44 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / DataChangeEvent
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / DataChangeEvent
 
 # Class: DataChangeEvent\<TSource\>
 
 This class provides the data change event object.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
+## Extends
+
+- [`MapChangeEvent`](MapChangeEvent.md)\<[`IMapData`](../type-aliases/IMapData.md), `TSource`\>
+
 ## Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `TSource` | extends [`IMapObject`](../interfaces/IMapObject.md) = [`IMapObject`](../interfaces/IMapObject.md) |
-
-## Hierarchy
-
-- [`MapChangeEvent`](MapChangeEvent.md)\<[`IMapData`](../modules.md#imapdata), `TSource`\>
-
-  ↳ **`DataChangeEvent`**
+• **TSource** *extends* [`IMapObject`](../interfaces/IMapObject.md) = [`IMapObject`](../interfaces/IMapObject.md)
 
 ## Implements
 
 - [`IMapDataChangeEvent`](../interfaces/IMapDataChangeEvent.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](DataChangeEvent.md#constructor)
-
-### Properties
-
-- [animateOptions](DataChangeEvent.md#animateoptions)
-
-### Methods
-
-- [getAnimateOptions](DataChangeEvent.md#getanimateoptions)
-- [getChangedObject](DataChangeEvent.md#getchangedobject)
-- [getSource](DataChangeEvent.md#getsource)
-- [getType](DataChangeEvent.md#gettype)
-- [TYPE](DataChangeEvent.md#type)
-
 ## Constructors
 
-### constructor
+### new DataChangeEvent()
 
-• **new DataChangeEvent**\<`TSource`\>(`source`, `data`, `animateOptions?`): [`DataChangeEvent`](DataChangeEvent.md)\<`TSource`\>
+> **new DataChangeEvent**\<`TSource`\>(`source`, `data`, `animateOptions`?): [`DataChangeEvent`](DataChangeEvent.md)\<`TSource`\>
 
 It initializes event.
 
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `TSource` | extends [`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\> = [`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\> |
-
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `source` | `TSource` |
-| `data` | [`IMapData`](../modules.md#imapdata) |
-| `animateOptions?` | [`IDataChangeAnimateOptions`](../modules.md#idatachangeanimateoptions) |
+• **source**: `TSource`
+
+• **data**: [`IMapData`](../type-aliases/IMapData.md)
+
+• **animateOptions?**: [`IDataChangeAnimateOptions`](../type-aliases/IDataChangeAnimateOptions.md)
 
 #### Returns
 
@@ -70,71 +46,71 @@ It initializes event.
 
 #### Overrides
 
-[MapChangeEvent](MapChangeEvent.md).[constructor](MapChangeEvent.md#constructor)
+[`MapChangeEvent`](MapChangeEvent.md).[`constructor`](MapChangeEvent.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/model/internal/event/data/DataChangeEvent.ts:19](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/event/data/DataChangeEvent.ts#L19)
+[model/internal/event/data/DataChangeEvent.ts:19](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/event/data/DataChangeEvent.ts#L19)
 
 ## Properties
 
-### animateOptions
+### animateOptions?
 
-• `Private` `Optional` **animateOptions**: [`IDataChangeAnimateOptions`](../modules.md#idatachangeanimateoptions)
+> `private` `optional` **animateOptions**: [`IDataChangeAnimateOptions`](../type-aliases/IDataChangeAnimateOptions.md)
 
-#### Defined in
+#### Source
 
-[src/model/internal/event/data/DataChangeEvent.ts:14](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/event/data/DataChangeEvent.ts#L14)
+[model/internal/event/data/DataChangeEvent.ts:14](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/event/data/DataChangeEvent.ts#L14)
 
 ## Methods
 
-### getAnimateOptions
+### getAnimateOptions()
 
-▸ **getAnimateOptions**(): `undefined` \| [`IDataChangeAnimateOptions`](../modules.md#idatachangeanimateoptions)
+> **getAnimateOptions**(): `undefined` \| [`IDataChangeAnimateOptions`](../type-aliases/IDataChangeAnimateOptions.md)
 
 It returns the animate options
 
 #### Returns
 
-`undefined` \| [`IDataChangeAnimateOptions`](../modules.md#idatachangeanimateoptions)
+`undefined` \| [`IDataChangeAnimateOptions`](../type-aliases/IDataChangeAnimateOptions.md)
 
 #### Implementation of
 
-[IMapDataChangeEvent](../interfaces/IMapDataChangeEvent.md).[getAnimateOptions](../interfaces/IMapDataChangeEvent.md#getanimateoptions)
+[`IMapDataChangeEvent`](../interfaces/IMapDataChangeEvent.md).[`getAnimateOptions`](../interfaces/IMapDataChangeEvent.md#getanimateoptions)
 
-#### Defined in
+#### Source
 
-[src/model/internal/event/data/DataChangeEvent.ts:34](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/event/data/DataChangeEvent.ts#L34)
+[model/internal/event/data/DataChangeEvent.ts:34](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/event/data/DataChangeEvent.ts#L34)
 
-___
+***
 
-### getChangedObject
+### getChangedObject()
 
-▸ **getChangedObject**(): [`IMapData`](../modules.md#imapdata)
+> **getChangedObject**(): [`IMapData`](../type-aliases/IMapData.md)
 
 Return the changed object.
 
 #### Returns
 
-[`IMapData`](../modules.md#imapdata)
+[`IMapData`](../type-aliases/IMapData.md)
 
 #### Implementation of
 
-[IMapDataChangeEvent](../interfaces/IMapDataChangeEvent.md).[getChangedObject](../interfaces/IMapDataChangeEvent.md#getchangedobject)
+[`IMapDataChangeEvent`](../interfaces/IMapDataChangeEvent.md).[`getChangedObject`](../interfaces/IMapDataChangeEvent.md#getchangedobject)
 
 #### Inherited from
 
-[MapChangeEvent](MapChangeEvent.md).[getChangedObject](MapChangeEvent.md#getchangedobject)
+[`MapChangeEvent`](MapChangeEvent.md).[`getChangedObject`](MapChangeEvent.md#getchangedobject)
 
-#### Defined in
+#### Source
 
-[src/model/internal/event/generic/MapChangeEvent.ts:26](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/event/generic/MapChangeEvent.ts#L26)
+[model/internal/event/generic/MapChangeEvent.ts:26](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/event/generic/MapChangeEvent.ts#L26)
 
-___
+***
 
-### getSource
+### getSource()
 
-▸ **getSource**(): `TSource`
+> **getSource**(): `TSource`
 
 It return source map object of the event.
 
@@ -144,21 +120,21 @@ It return source map object of the event.
 
 #### Implementation of
 
-[IMapDataChangeEvent](../interfaces/IMapDataChangeEvent.md).[getSource](../interfaces/IMapDataChangeEvent.md#getsource)
+[`IMapDataChangeEvent`](../interfaces/IMapDataChangeEvent.md).[`getSource`](../interfaces/IMapDataChangeEvent.md#getsource)
 
 #### Inherited from
 
-[MapChangeEvent](MapChangeEvent.md).[getSource](MapChangeEvent.md#getsource)
+[`MapChangeEvent`](MapChangeEvent.md).[`getSource`](MapChangeEvent.md#getsource)
 
-#### Defined in
+#### Source
 
-[src/model/internal/event/generic/MapEvent.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/event/generic/MapEvent.ts#L32)
+[model/internal/event/generic/MapEvent.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/event/generic/MapEvent.ts#L32)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 It returns string which identifies the event.
 
@@ -168,21 +144,21 @@ It returns string which identifies the event.
 
 #### Implementation of
 
-[IMapDataChangeEvent](../interfaces/IMapDataChangeEvent.md).[getType](../interfaces/IMapDataChangeEvent.md#gettype)
+[`IMapDataChangeEvent`](../interfaces/IMapDataChangeEvent.md).[`getType`](../interfaces/IMapDataChangeEvent.md#gettype)
 
 #### Inherited from
 
-[MapChangeEvent](MapChangeEvent.md).[getType](MapChangeEvent.md#gettype)
+[`MapChangeEvent`](MapChangeEvent.md).[`getType`](MapChangeEvent.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/internal/event/generic/MapEvent.ts:25](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/event/generic/MapEvent.ts#L25)
+[model/internal/event/generic/MapEvent.ts:25](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/event/generic/MapEvent.ts#L25)
 
-___
+***
 
-### TYPE
+### TYPE()
 
-▸ **TYPE**(): `string`
+> `static` **TYPE**(): `string`
 
 Type of the event.
 
@@ -190,6 +166,6 @@ Type of the event.
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/model/internal/event/data/DataChangeEvent.ts:27](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/event/data/DataChangeEvent.ts#L27)
+[model/internal/event/data/DataChangeEvent.ts:27](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/event/data/DataChangeEvent.ts#L27)

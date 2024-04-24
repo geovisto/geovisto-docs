@@ -1,62 +1,42 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / LayerToolRenderedEvent
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / LayerToolRenderedEvent
 
 # Class: LayerToolRenderedEvent\<TSource\>
 
 This class provides the layer tool rendered event.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `TSource` | extends [`ILayerTool`](../interfaces/ILayerTool.md) = [`ILayerTool`](../interfaces/ILayerTool.md) |
-
-## Hierarchy
+## Extends
 
 - [`MapChangeEvent`](MapChangeEvent.md)\<`number`, `TSource`\>
 
-  ↳ **`LayerToolRenderedEvent`**
+## Type parameters
+
+• **TSource** *extends* [`ILayerTool`](../interfaces/ILayerTool.md) = [`ILayerTool`](../interfaces/ILayerTool.md)
 
 ## Implements
 
-- [`ILayerToolRenderedEvent`](../modules.md#ilayertoolrenderedevent)
-
-## Table of contents
-
-### Constructors
-
-- [constructor](LayerToolRenderedEvent.md#constructor)
-
-### Methods
-
-- [getChangedObject](LayerToolRenderedEvent.md#getchangedobject)
-- [getSource](LayerToolRenderedEvent.md#getsource)
-- [getType](LayerToolRenderedEvent.md#gettype)
-- [TYPE](LayerToolRenderedEvent.md#type)
+- [`ILayerToolRenderedEvent`](../type-aliases/ILayerToolRenderedEvent.md)
 
 ## Constructors
 
-### constructor
+### new LayerToolRenderedEvent()
 
-• **new LayerToolRenderedEvent**\<`TSource`\>(`source`, `renderType`): [`LayerToolRenderedEvent`](LayerToolRenderedEvent.md)\<`TSource`\>
+> **new LayerToolRenderedEvent**\<`TSource`\>(`source`, `renderType`): [`LayerToolRenderedEvent`](LayerToolRenderedEvent.md)\<`TSource`\>
 
 It initializes event.
 
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `TSource` | extends [`ILayerTool`](../interfaces/ILayerTool.md)\<[`ILayerToolProps`](../modules.md#ilayertoolprops), [`ILayerToolDefaults`](../interfaces/ILayerToolDefaults.md), [`ILayerToolState`](../interfaces/ILayerToolState.md)\<[`ILayerToolProps`](../modules.md#ilayertoolprops), [`ILayerToolDefaults`](../interfaces/ILayerToolDefaults.md), [`ILayerToolConfig`](../modules.md#ilayertoolconfig), [`ILayerToolDimensionsConfig`](../modules.md#ilayertooldimensionsconfig), [`ILayerToolDimensions`](../modules.md#ilayertooldimensions)\>, [`ILayerToolConfig`](../modules.md#ilayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`ILayerToolConfig`](../modules.md#ilayertoolconfig)\>\> = [`ILayerTool`](../interfaces/ILayerTool.md)\<[`ILayerToolProps`](../modules.md#ilayertoolprops), [`ILayerToolDefaults`](../interfaces/ILayerToolDefaults.md), [`ILayerToolState`](../interfaces/ILayerToolState.md)\<[`ILayerToolProps`](../modules.md#ilayertoolprops), [`ILayerToolDefaults`](../interfaces/ILayerToolDefaults.md), [`ILayerToolConfig`](../modules.md#ilayertoolconfig), [`ILayerToolDimensionsConfig`](../modules.md#ilayertooldimensionsconfig), [`ILayerToolDimensions`](../modules.md#ilayertooldimensions)\>, [`ILayerToolConfig`](../modules.md#ilayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`ILayerToolConfig`](../modules.md#ilayertoolconfig)\>\> |
-
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `source` | `TSource` |
-| `renderType` | `number` |
+• **source**: `TSource`
+
+• **renderType**: `number`
 
 #### Returns
 
@@ -64,17 +44,17 @@ It initializes event.
 
 #### Overrides
 
-[MapChangeEvent](MapChangeEvent.md).[constructor](MapChangeEvent.md#constructor)
+[`MapChangeEvent`](MapChangeEvent.md).[`constructor`](MapChangeEvent.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/model/internal/event/tool/LayerToolRenderedEvent.ts:15](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/event/tool/LayerToolRenderedEvent.ts#L15)
+[model/internal/event/tool/LayerToolRenderedEvent.ts:15](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/event/tool/LayerToolRenderedEvent.ts#L15)
 
 ## Methods
 
-### getChangedObject
+### getChangedObject()
 
-▸ **getChangedObject**(): `number`
+> **getChangedObject**(): `number`
 
 Return the changed object.
 
@@ -84,21 +64,21 @@ Return the changed object.
 
 #### Implementation of
 
-ILayerToolRenderedEvent.getChangedObject
+`ILayerToolRenderedEvent.getChangedObject`
 
 #### Inherited from
 
-[MapChangeEvent](MapChangeEvent.md).[getChangedObject](MapChangeEvent.md#getchangedobject)
+[`MapChangeEvent`](MapChangeEvent.md).[`getChangedObject`](MapChangeEvent.md#getchangedobject)
 
-#### Defined in
+#### Source
 
-[src/model/internal/event/generic/MapChangeEvent.ts:26](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/event/generic/MapChangeEvent.ts#L26)
+[model/internal/event/generic/MapChangeEvent.ts:26](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/event/generic/MapChangeEvent.ts#L26)
 
-___
+***
 
-### getSource
+### getSource()
 
-▸ **getSource**(): `TSource`
+> **getSource**(): `TSource`
 
 It return source map object of the event.
 
@@ -108,21 +88,21 @@ It return source map object of the event.
 
 #### Implementation of
 
-ILayerToolRenderedEvent.getSource
+`ILayerToolRenderedEvent.getSource`
 
 #### Inherited from
 
-[MapChangeEvent](MapChangeEvent.md).[getSource](MapChangeEvent.md#getsource)
+[`MapChangeEvent`](MapChangeEvent.md).[`getSource`](MapChangeEvent.md#getsource)
 
-#### Defined in
+#### Source
 
-[src/model/internal/event/generic/MapEvent.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/event/generic/MapEvent.ts#L32)
+[model/internal/event/generic/MapEvent.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/event/generic/MapEvent.ts#L32)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 It returns string which identifies the event.
 
@@ -132,21 +112,21 @@ It returns string which identifies the event.
 
 #### Implementation of
 
-ILayerToolRenderedEvent.getType
+`ILayerToolRenderedEvent.getType`
 
 #### Inherited from
 
-[MapChangeEvent](MapChangeEvent.md).[getType](MapChangeEvent.md#gettype)
+[`MapChangeEvent`](MapChangeEvent.md).[`getType`](MapChangeEvent.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/internal/event/generic/MapEvent.ts:25](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/event/generic/MapEvent.ts#L25)
+[model/internal/event/generic/MapEvent.ts:25](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/event/generic/MapEvent.ts#L25)
 
-___
+***
 
-### TYPE
+### TYPE()
 
-▸ **TYPE**(): `string`
+> `static` **TYPE**(): `string`
 
 Type of the event.
 
@@ -154,6 +134,6 @@ Type of the event.
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/model/internal/event/tool/LayerToolRenderedEvent.ts:22](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/event/tool/LayerToolRenderedEvent.ts#L22)
+[model/internal/event/tool/LayerToolRenderedEvent.ts:22](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/event/tool/LayerToolRenderedEvent.ts#L22)

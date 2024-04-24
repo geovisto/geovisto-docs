@@ -1,64 +1,30 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / DotLayerToolDefaults
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / DotLayerToolDefaults
 
 # Class: DotLayerToolDefaults
 
 This class provide functions which return the default state values.
 
-**`Author`**
+## Author
 
 Vladimir Korencik
 
-## Hierarchy
+## Extends
 
 - [`LayerToolDefaults`](LayerToolDefaults.md)
-
-  ↳ **`DotLayerToolDefaults`**
 
 ## Implements
 
 - [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](DotLayerToolDefaults.md#constructor)
-
-### Properties
-
-- [idString](DotLayerToolDefaults.md#idstring)
-- [TYPE](DotLayerToolDefaults.md#type)
-- [id](DotLayerToolDefaults.md#id)
-
-### Methods
-
-- [generateId](DotLayerToolDefaults.md#generateid)
-- [getCategoryColorDimension](DotLayerToolDefaults.md#getcategorycolordimension)
-- [getCategoryColorOperationDimension](DotLayerToolDefaults.md#getcategorycoloroperationdimension)
-- [getCategoryColorValueDimension](DotLayerToolDefaults.md#getcategorycolorvaluedimension)
-- [getCategoryDimension](DotLayerToolDefaults.md#getcategorydimension)
-- [getColorDimension](DotLayerToolDefaults.md#getcolordimension)
-- [getConfig](DotLayerToolDefaults.md#getconfig)
-- [getDataManager](DotLayerToolDefaults.md#getdatamanager)
-- [getDimensions](DotLayerToolDefaults.md#getdimensions)
-- [getFiltersManager](DotLayerToolDefaults.md#getfiltersmanager)
-- [getGeoDataManager](DotLayerToolDefaults.md#getgeodatamanager)
-- [getIcon](DotLayerToolDefaults.md#geticon)
-- [getId](DotLayerToolDefaults.md#getid)
-- [getLabel](DotLayerToolDefaults.md#getlabel)
-- [getLatitudeDimension](DotLayerToolDefaults.md#getlatitudedimension)
-- [getLayerName](DotLayerToolDefaults.md#getlayername)
-- [getLongitudeDimension](DotLayerToolDefaults.md#getlongitudedimension)
-- [getProps](DotLayerToolDefaults.md#getprops)
-- [getType](DotLayerToolDefaults.md#gettype)
-- [isEnabled](DotLayerToolDefaults.md#isenabled)
-- [isSingleton](DotLayerToolDefaults.md#issingleton)
-
 ## Constructors
 
-### constructor
+### new DotLayerToolDefaults()
 
-• **new DotLayerToolDefaults**(): [`DotLayerToolDefaults`](DotLayerToolDefaults.md)
+> **new DotLayerToolDefaults**(): [`DotLayerToolDefaults`](DotLayerToolDefaults.md)
 
 #### Returns
 
@@ -66,57 +32,57 @@ Vladimir Korencik
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[constructor](LayerToolDefaults.md#constructor)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`constructor`](LayerToolDefaults.md#constructors)
 
 ## Properties
 
-### idString
+### idString?
 
-• `Protected` `Optional` **idString**: `string`
+> `protected` `optional` **idString**: `string`
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[idString](LayerToolDefaults.md#idstring)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`idString`](LayerToolDefaults.md#idstring)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:13](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L13)
+[model/internal/object/MapObjectDefaults.ts:13](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L13)
 
-___
+***
 
 ### TYPE
 
-▪ `Static` **TYPE**: `string` = `"geovisto-tool-layer-dot"`
+> `static` **TYPE**: `string` = `"geovisto-tool-layer-dot"`
 
 A unique string of the tool type.
 
 #### Overrides
 
-[LayerToolDefaults](LayerToolDefaults.md).[TYPE](LayerToolDefaults.md#type)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`TYPE`](LayerToolDefaults.md#type)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts:33](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts#L33)
+[tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts:33](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts#L33)
 
-___
+***
 
 ### id
 
-▪ `Static` `Protected` **id**: `number`
+> `static` `protected` **id**: `number`
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[id](LayerToolDefaults.md#id)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`id`](LayerToolDefaults.md#id)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:12](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L12)
+[model/internal/object/MapObjectDefaults.ts:12](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L12)
 
 ## Methods
 
-### generateId
+### generateId()
 
-▸ **generateId**(): `string`
+> `protected` **generateId**(): `string`
 
 It returns identifier which is used when no identifier is specified.
 
@@ -126,17 +92,17 @@ It returns identifier which is used when no identifier is specified.
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[generateId](LayerToolDefaults.md#generateid)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`generateId`](LayerToolDefaults.md#generateid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:54](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L54)
+[model/internal/object/MapObjectDefaults.ts:54](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L54)
 
-___
+***
 
-### getCategoryColorDimension
+### getCategoryColorDimension()
 
-▸ **getCategoryColorDimension**(): [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+> **getCategoryColorDimension**(): [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
 
 #### Returns
 
@@ -144,17 +110,17 @@ ___
 
 #### Implementation of
 
-[IDotLayerToolDefaults](../interfaces/IDotLayerToolDefaults.md).[getCategoryColorDimension](../interfaces/IDotLayerToolDefaults.md#getcategorycolordimension)
+[`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md).[`getCategoryColorDimension`](../interfaces/IDotLayerToolDefaults.md#getcategorycolordimension)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts:124](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts#L124)
+[tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts:124](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts#L124)
 
-___
+***
 
-### getCategoryColorOperationDimension
+### getCategoryColorOperationDimension()
 
-▸ **getCategoryColorOperationDimension**(): [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\>
+> **getCategoryColorOperationDimension**(): [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\>
 
 #### Returns
 
@@ -162,17 +128,17 @@ ___
 
 #### Implementation of
 
-[IDotLayerToolDefaults](../interfaces/IDotLayerToolDefaults.md).[getCategoryColorOperationDimension](../interfaces/IDotLayerToolDefaults.md#getcategorycoloroperationdimension)
+[`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md).[`getCategoryColorOperationDimension`](../interfaces/IDotLayerToolDefaults.md#getcategorycoloroperationdimension)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts:106](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts#L106)
+[tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts:106](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts#L106)
 
-___
+***
 
-### getCategoryColorValueDimension
+### getCategoryColorValueDimension()
 
-▸ **getCategoryColorValueDimension**(): [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+> **getCategoryColorValueDimension**(): [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
 
 #### Returns
 
@@ -180,23 +146,21 @@ ___
 
 #### Implementation of
 
-[IDotLayerToolDefaults](../interfaces/IDotLayerToolDefaults.md).[getCategoryColorValueDimension](../interfaces/IDotLayerToolDefaults.md#getcategorycolorvaluedimension)
+[`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md).[`getCategoryColorValueDimension`](../interfaces/IDotLayerToolDefaults.md#getcategorycolorvaluedimension)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts:120](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts#L120)
+[tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts:120](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts#L120)
 
-___
+***
 
-### getCategoryDimension
+### getCategoryDimension()
 
-▸ **getCategoryDimension**(`map?`): [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+> **getCategoryDimension**(`map`?): [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `map?` | [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\> |
+• **map?**: [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Returns
 
@@ -204,55 +168,55 @@ ___
 
 #### Implementation of
 
-[IDotLayerToolDefaults](../interfaces/IDotLayerToolDefaults.md).[getCategoryDimension](../interfaces/IDotLayerToolDefaults.md#getcategorydimension)
+[`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md).[`getCategoryDimension`](../interfaces/IDotLayerToolDefaults.md#getcategorydimension)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts:90](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts#L90)
+[tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts:90](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts#L90)
 
-___
+***
 
-### getColorDimension
+### getColorDimension()
 
-▸ **getColorDimension**(): [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+> **getColorDimension**(): [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
 
 #### Returns
 
 [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts:98](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts#L98)
+[tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts:98](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts#L98)
 
-___
+***
 
-### getConfig
+### getConfig()
 
-▸ **getConfig**(): [`IMapToolConfig`](../modules.md#imaptoolconfig)
+> **getConfig**(): [`IMapToolConfig`](../type-aliases/IMapToolConfig.md)
 
 By defaults it returns the config with undefined props.
 
 #### Returns
 
-[`IMapToolConfig`](../modules.md#imaptoolconfig)
+[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)
 
 #### Implementation of
 
-[IDotLayerToolDefaults](../interfaces/IDotLayerToolDefaults.md).[getConfig](../interfaces/IDotLayerToolDefaults.md#getconfig)
+[`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md).[`getConfig`](../interfaces/IDotLayerToolDefaults.md#getconfig)
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[getConfig](LayerToolDefaults.md#getconfig)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`getConfig`](LayerToolDefaults.md#getconfig)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolDefaults.ts:34](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolDefaults.ts#L34)
+[model/internal/tool/MapToolDefaults.ts:34](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolDefaults.ts#L34)
 
-___
+***
 
-### getDataManager
+### getDataManager()
 
-▸ **getDataManager**(): [`IMapDataManager`](../interfaces/IMapDataManager.md)
+> **getDataManager**(): [`IMapDataManager`](../interfaces/IMapDataManager.md)
 
 It returns default map data manager.
 
@@ -262,57 +226,73 @@ It returns default map data manager.
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[getDataManager](LayerToolDefaults.md#getdatamanager)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`getDataManager`](LayerToolDefaults.md#getdatamanager)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolDefaults.ts:20](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolDefaults.ts#L20)
+[model/internal/tool/MapToolDefaults.ts:20](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolDefaults.ts#L20)
 
-___
+***
 
-### getDimensions
+### getDimensions()
 
-▸ **getDimensions**(`map?`): `Object`
+> **getDimensions**(`map`?): `object`
 
 It returns list of map dimensions.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `map?` | [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\> |
+• **map?**: [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Returns
 
-`Object`
+`object`
 
-| Name | Type |
-| :------ | :------ |
-| `category` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `categoryColor` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `categoryColorOp` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> |
-| `categoryColorValue` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `color` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `latitude` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `longitude` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
+##### category
+
+> **category**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+##### categoryColor
+
+> **categoryColor**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+##### categoryColorOp
+
+> **categoryColorOp**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\>
+
+##### categoryColorValue
+
+> **categoryColorValue**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+##### color
+
+> **color**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+##### latitude
+
+> **latitude**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+##### longitude
+
+> **longitude**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Implementation of
 
-[IDotLayerToolDefaults](../interfaces/IDotLayerToolDefaults.md).[getDimensions](../interfaces/IDotLayerToolDefaults.md#getdimensions)
+[`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md).[`getDimensions`](../interfaces/IDotLayerToolDefaults.md#getdimensions)
 
 #### Overrides
 
-[LayerToolDefaults](LayerToolDefaults.md).[getDimensions](LayerToolDefaults.md#getdimensions)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`getDimensions`](LayerToolDefaults.md#getdimensions)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts:60](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts#L60)
+[tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts:60](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts#L60)
 
-___
+***
 
-### getFiltersManager
+### getFiltersManager()
 
-▸ **getFiltersManager**(): [`IMapFilterManager`](../interfaces/IMapFilterManager.md)
+> **getFiltersManager**(): [`IMapFilterManager`](../interfaces/IMapFilterManager.md)
 
 #### Returns
 
@@ -320,43 +300,41 @@ ___
 
 #### Implementation of
 
-[IDotLayerToolDefaults](../interfaces/IDotLayerToolDefaults.md).[getFiltersManager](../interfaces/IDotLayerToolDefaults.md#getfiltersmanager)
+[`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md).[`getFiltersManager`](../interfaces/IDotLayerToolDefaults.md#getfiltersmanager)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts:51](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts#L51)
+[tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts:51](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts#L51)
 
-___
+***
 
-### getGeoDataManager
+### getGeoDataManager()
 
-▸ **getGeoDataManager**(`geoDataArray`): [`IGeoDataManager`](../modules.md#igeodatamanager)
+> **getGeoDataManager**(`geoDataArray`): [`IGeoDataManager`](../type-aliases/IGeoDataManager.md)
 
 It returns default geo data manager.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `geoDataArray` | `undefined` \| [`IGeoData`](../interfaces/IGeoData.md)[] |
+• **geoDataArray**: `undefined` \| [`IGeoData`](../interfaces/IGeoData.md)[]
 
 #### Returns
 
-[`IGeoDataManager`](../modules.md#igeodatamanager)
+[`IGeoDataManager`](../type-aliases/IGeoDataManager.md)
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[getGeoDataManager](LayerToolDefaults.md#getgeodatamanager)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`getGeoDataManager`](LayerToolDefaults.md#getgeodatamanager)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolDefaults.ts:27](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolDefaults.ts#L27)
+[model/internal/tool/MapToolDefaults.ts:27](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolDefaults.ts#L27)
 
-___
+***
 
-### getIcon
+### getIcon()
 
-▸ **getIcon**(): `string`
+> **getIcon**(): `string`
 
 It returns the icon of the tool.
 
@@ -366,21 +344,21 @@ It returns the icon of the tool.
 
 #### Implementation of
 
-[IDotLayerToolDefaults](../interfaces/IDotLayerToolDefaults.md).[getIcon](../interfaces/IDotLayerToolDefaults.md#geticon)
+[`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md).[`getIcon`](../interfaces/IDotLayerToolDefaults.md#geticon)
 
 #### Overrides
 
-[LayerToolDefaults](LayerToolDefaults.md).[getIcon](LayerToolDefaults.md#geticon)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`getIcon`](LayerToolDefaults.md#geticon)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts:47](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts#L47)
+[tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts:47](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts#L47)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 It returns identifier which is used when no identifier is specified.
 
@@ -390,21 +368,21 @@ It returns identifier which is used when no identifier is specified.
 
 #### Implementation of
 
-[IDotLayerToolDefaults](../interfaces/IDotLayerToolDefaults.md).[getId](../interfaces/IDotLayerToolDefaults.md#getid)
+[`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md).[`getId`](../interfaces/IDotLayerToolDefaults.md#getid)
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[getId](LayerToolDefaults.md#getid)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`getId`](LayerToolDefaults.md#getid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:44](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L44)
+[model/internal/object/MapObjectDefaults.ts:44](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L44)
 
-___
+***
 
-### getLabel
+### getLabel()
 
-▸ **getLabel**(): `string`
+> **getLabel**(): `string`
 
 It returns the label of the tool.
 
@@ -414,27 +392,25 @@ It returns the label of the tool.
 
 #### Implementation of
 
-[IDotLayerToolDefaults](../interfaces/IDotLayerToolDefaults.md).[getLabel](../interfaces/IDotLayerToolDefaults.md#getlabel)
+[`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md).[`getLabel`](../interfaces/IDotLayerToolDefaults.md#getlabel)
 
 #### Overrides
 
-[LayerToolDefaults](LayerToolDefaults.md).[getLabel](LayerToolDefaults.md#getlabel)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`getLabel`](LayerToolDefaults.md#getlabel)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts:43](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts#L43)
+[tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts:43](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts#L43)
 
-___
+***
 
-### getLatitudeDimension
+### getLatitudeDimension()
 
-▸ **getLatitudeDimension**(`map?`): [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+> **getLatitudeDimension**(`map`?): [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `map?` | [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\> |
+• **map?**: [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Returns
 
@@ -442,17 +418,17 @@ ___
 
 #### Implementation of
 
-[IDotLayerToolDefaults](../interfaces/IDotLayerToolDefaults.md).[getLatitudeDimension](../interfaces/IDotLayerToolDefaults.md#getlatitudedimension)
+[`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md).[`getLatitudeDimension`](../interfaces/IDotLayerToolDefaults.md#getlatitudedimension)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts:72](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts#L72)
+[tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts:72](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts#L72)
 
-___
+***
 
-### getLayerName
+### getLayerName()
 
-▸ **getLayerName**(): `string`
+> **getLayerName**(): `string`
 
 It returns the layer name.
 
@@ -462,27 +438,25 @@ It returns the layer name.
 
 #### Implementation of
 
-[IDotLayerToolDefaults](../interfaces/IDotLayerToolDefaults.md).[getLayerName](../interfaces/IDotLayerToolDefaults.md#getlayername)
+[`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md).[`getLayerName`](../interfaces/IDotLayerToolDefaults.md#getlayername)
 
 #### Overrides
 
-[LayerToolDefaults](LayerToolDefaults.md).[getLayerName](LayerToolDefaults.md#getlayername)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`getLayerName`](LayerToolDefaults.md#getlayername)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts:39](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts#L39)
+[tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts:39](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts#L39)
 
-___
+***
 
-### getLongitudeDimension
+### getLongitudeDimension()
 
-▸ **getLongitudeDimension**(`map?`): [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+> **getLongitudeDimension**(`map`?): [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `map?` | [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\> |
+• **map?**: [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Returns
 
@@ -490,41 +464,41 @@ ___
 
 #### Implementation of
 
-[IDotLayerToolDefaults](../interfaces/IDotLayerToolDefaults.md).[getLongitudeDimension](../interfaces/IDotLayerToolDefaults.md#getlongitudedimension)
+[`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md).[`getLongitudeDimension`](../interfaces/IDotLayerToolDefaults.md#getlongitudedimension)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts:80](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts#L80)
+[tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts:80](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts#L80)
 
-___
+***
 
-### getProps
+### getProps()
 
-▸ **getProps**(): [`IMapObjectProps`](../modules.md#imapobjectprops)
+> **getProps**(): [`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
 It returns default props if no props are given.
 
 #### Returns
 
-[`IMapObjectProps`](../modules.md#imapobjectprops)
+[`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
 #### Implementation of
 
-[IDotLayerToolDefaults](../interfaces/IDotLayerToolDefaults.md).[getProps](../interfaces/IDotLayerToolDefaults.md#getprops)
+[`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md).[`getProps`](../interfaces/IDotLayerToolDefaults.md#getprops)
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[getProps](LayerToolDefaults.md#getprops)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`getProps`](LayerToolDefaults.md#getprops)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L18)
+[model/internal/object/MapObjectDefaults.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L18)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 It returns a unique type string of the map object.
 
@@ -534,21 +508,21 @@ It returns a unique type string of the map object.
 
 #### Implementation of
 
-[IDotLayerToolDefaults](../interfaces/IDotLayerToolDefaults.md).[getType](../interfaces/IDotLayerToolDefaults.md#gettype)
+[`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md).[`getType`](../interfaces/IDotLayerToolDefaults.md#gettype)
 
 #### Overrides
 
-[LayerToolDefaults](LayerToolDefaults.md).[getType](LayerToolDefaults.md#gettype)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`getType`](LayerToolDefaults.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts:35](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts#L35)
+[tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts:35](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/tool/DotLayerToolDefaults.ts#L35)
 
-___
+***
 
-### isEnabled
+### isEnabled()
 
-▸ **isEnabled**(): `boolean`
+> **isEnabled**(): `boolean`
 
 By default, the tool is enabled.
 
@@ -558,21 +532,21 @@ By default, the tool is enabled.
 
 #### Implementation of
 
-[IDotLayerToolDefaults](../interfaces/IDotLayerToolDefaults.md).[isEnabled](../interfaces/IDotLayerToolDefaults.md#isenabled)
+[`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md).[`isEnabled`](../interfaces/IDotLayerToolDefaults.md#isenabled)
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[isEnabled](LayerToolDefaults.md#isenabled)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`isEnabled`](LayerToolDefaults.md#isenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolDefaults.ts:50](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolDefaults.ts#L50)
+[model/internal/tool/MapToolDefaults.ts:50](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolDefaults.ts#L50)
 
-___
+***
 
-### isSingleton
+### isSingleton()
 
-▸ **isSingleton**(): `boolean`
+> **isSingleton**(): `boolean`
 
 By default, the tool is singleton
 
@@ -582,12 +556,12 @@ By default, the tool is singleton
 
 #### Implementation of
 
-[IDotLayerToolDefaults](../interfaces/IDotLayerToolDefaults.md).[isSingleton](../interfaces/IDotLayerToolDefaults.md#issingleton)
+[`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md).[`isSingleton`](../interfaces/IDotLayerToolDefaults.md#issingleton)
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[isSingleton](LayerToolDefaults.md#issingleton)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`isSingleton`](LayerToolDefaults.md#issingleton)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolDefaults.ts:43](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolDefaults.ts#L43)
+[model/internal/tool/MapToolDefaults.ts:43](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolDefaults.ts#L43)

@@ -1,68 +1,35 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / GeoDataManager
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / GeoDataManager
 
 # Class: GeoDataManager
 
 The class provides a basic implemention geographical data manager.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`MapDomainArrayManager`](MapDomainArrayManager.md)\<[`IGeoData`](../interfaces/IGeoData.md)\>
 
-  ↳ **`GeoDataManager`**
-
 ## Implements
 
-- [`IGeoDataManager`](../modules.md#igeodatamanager)
+- [`IGeoDataManager`](../type-aliases/IGeoDataManager.md)
 - `IHierarchyManagerInterface`
-
-## Table of contents
-
-### Constructors
-
-- [constructor](GeoDataManager.md#constructor)
-
-### Properties
-
-- [hierarchyEnabledStatus](GeoDataManager.md#hierarchyenabledstatus)
-- [treesMap](GeoDataManager.md#treesmap)
-
-### Methods
-
-- [add](GeoDataManager.md#add)
-- [enableHierarchy](GeoDataManager.md#enablehierarchy)
-- [getActiveByTree](GeoDataManager.md#getactivebytree)
-- [getChildsFromTree](GeoDataManager.md#getchildsfromtree)
-- [getDefault](GeoDataManager.md#getdefault)
-- [getDomain](GeoDataManager.md#getdomain)
-- [getDomainNames](GeoDataManager.md#getdomainnames)
-- [getDomains](GeoDataManager.md#getdomains)
-- [getFeatures](GeoDataManager.md#getfeatures)
-- [isEmpty](GeoDataManager.md#isempty)
-- [isHierarchyEnabled](GeoDataManager.md#ishierarchyenabled)
-- [isHierarchyEnabledForDomain](GeoDataManager.md#ishierarchyenabledfordomain)
-- [remove](GeoDataManager.md#remove)
-- [removeByName](GeoDataManager.md#removebyname)
-- [setTree](GeoDataManager.md#settree)
-- [size](GeoDataManager.md#size)
-- [startTree](GeoDataManager.md#starttree)
-- [treeAggregationFlag](GeoDataManager.md#treeaggregationflag)
-- [updateTrees](GeoDataManager.md#updatetrees)
 
 ## Constructors
 
-### constructor
+### new GeoDataManager()
 
-• **new GeoDataManager**(`geoDataArray`): [`GeoDataManager`](GeoDataManager.md)
+> **new GeoDataManager**(`geoDataArray`): [`GeoDataManager`](GeoDataManager.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `geoDataArray` | [`IGeoData`](../interfaces/IGeoData.md)[] |
+• **geoDataArray**: [`IGeoData`](../interfaces/IGeoData.md)[]
 
 #### Returns
 
@@ -70,37 +37,37 @@ Jiri Hynek
 
 #### Overrides
 
-[MapDomainArrayManager](MapDomainArrayManager.md).[constructor](MapDomainArrayManager.md#constructor)
+[`MapDomainArrayManager`](MapDomainArrayManager.md).[`constructor`](MapDomainArrayManager.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/model/internal/geodata/GeoDataManager.ts:16](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/geodata/GeoDataManager.ts#L16)
+[model/internal/geodata/GeoDataManager.ts:16](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/geodata/GeoDataManager.ts#L16)
 
 ## Properties
 
 ### hierarchyEnabledStatus
 
-• `Private` **hierarchyEnabledStatus**: `boolean` = `false`
+> `private` **hierarchyEnabledStatus**: `boolean` = `false`
 
-#### Defined in
+#### Source
 
-[src/model/internal/geodata/GeoDataManager.ts:22](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/geodata/GeoDataManager.ts#L22)
+[model/internal/geodata/GeoDataManager.ts:22](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/geodata/GeoDataManager.ts#L22)
 
-___
+***
 
 ### treesMap
 
-• `Private` **treesMap**: `Map`\<`string`, `HierarchyTree`\>
+> `private` **treesMap**: `Map`\<`string`, `HierarchyTree`\>
 
-#### Defined in
+#### Source
 
-[src/model/internal/geodata/GeoDataManager.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/geodata/GeoDataManager.ts#L23)
+[model/internal/geodata/GeoDataManager.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/geodata/GeoDataManager.ts#L23)
 
 ## Methods
 
-### add
+### add()
 
-▸ **add**(`domains`): `void`
+> **add**(`domains`): `void`
 
 It adds a domain to the list of domains.
 
@@ -108,9 +75,7 @@ Override this function.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `domains` | [`IGeoData`](../interfaces/IGeoData.md) |
+• **domains**: [`IGeoData`](../interfaces/IGeoData.md)
 
 #### Returns
 
@@ -118,27 +83,25 @@ Override this function.
 
 #### Implementation of
 
-IGeoDataManager.add
+`IGeoDataManager.add`
 
 #### Inherited from
 
-[MapDomainArrayManager](MapDomainArrayManager.md).[add](MapDomainArrayManager.md#add)
+[`MapDomainArrayManager`](MapDomainArrayManager.md).[`add`](MapDomainArrayManager.md#add)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomainArrayManager.ts:56](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomainArrayManager.ts#L56)
+[model/internal/domain/generic/MapDomainArrayManager.ts:56](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomainArrayManager.ts#L56)
 
-___
+***
 
-### enableHierarchy
+### enableHierarchy()
 
-▸ **enableHierarchy**(`enabled`): `void`
+> **enableHierarchy**(`enabled`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `enabled` | `boolean` |
+• **enabled**: `boolean`
 
 #### Returns
 
@@ -146,23 +109,21 @@ ___
 
 #### Implementation of
 
-IHierarchyManagerInterface.enableHierarchy
+`IHierarchyManagerInterface.enableHierarchy`
 
-#### Defined in
+#### Source
 
-[src/model/internal/geodata/GeoDataManager.ts:25](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/geodata/GeoDataManager.ts#L25)
+[model/internal/geodata/GeoDataManager.ts:25](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/geodata/GeoDataManager.ts#L25)
 
-___
+***
 
-### getActiveByTree
+### getActiveByTree()
 
-▸ **getActiveByTree**(`domainName`): `string`[]
+> **getActiveByTree**(`domainName`): `string`[]
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `domainName` | `string` |
+• **domainName**: `string`
 
 #### Returns
 
@@ -170,24 +131,23 @@ ___
 
 #### Implementation of
 
-IHierarchyManagerInterface.getActiveByTree
+`IHierarchyManagerInterface.getActiveByTree`
 
-#### Defined in
+#### Source
 
-[src/model/internal/geodata/GeoDataManager.ts:99](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/geodata/GeoDataManager.ts#L99)
+[model/internal/geodata/GeoDataManager.ts:99](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/geodata/GeoDataManager.ts#L99)
 
-___
+***
 
-### getChildsFromTree
+### getChildsFromTree()
 
-▸ **getChildsFromTree**(`domainName`, `objectID`): `string`[]
+> **getChildsFromTree**(`domainName`, `objectID`): `string`[]
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `domainName` | `string` |
-| `objectID` | `string` |
+• **domainName**: `string`
+
+• **objectID**: `string`
 
 #### Returns
 
@@ -195,17 +155,17 @@ ___
 
 #### Implementation of
 
-IHierarchyManagerInterface.getChildsFromTree
+`IHierarchyManagerInterface.getChildsFromTree`
 
-#### Defined in
+#### Source
 
-[src/model/internal/geodata/GeoDataManager.ts:107](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/geodata/GeoDataManager.ts#L107)
+[model/internal/geodata/GeoDataManager.ts:107](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/geodata/GeoDataManager.ts#L107)
 
-___
+***
 
-### getDefault
+### getDefault()
 
-▸ **getDefault**(): `undefined` \| [`IGeoData`](../interfaces/IGeoData.md)
+> **getDefault**(): `undefined` \| [`IGeoData`](../interfaces/IGeoData.md)
 
 The function returns the first domain of the array.
 
@@ -215,29 +175,27 @@ The function returns the first domain of the array.
 
 #### Implementation of
 
-IGeoDataManager.getDefault
+`IGeoDataManager.getDefault`
 
 #### Inherited from
 
-[MapDomainArrayManager](MapDomainArrayManager.md).[getDefault](MapDomainArrayManager.md#getdefault)
+[`MapDomainArrayManager`](MapDomainArrayManager.md).[`getDefault`](MapDomainArrayManager.md#getdefault)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomainArrayManager.ts:30](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomainArrayManager.ts#L30)
+[model/internal/domain/generic/MapDomainArrayManager.ts:30](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomainArrayManager.ts#L30)
 
-___
+***
 
-### getDomain
+### getDomain()
 
-▸ **getDomain**(`name`): `undefined` \| [`IGeoData`](../interfaces/IGeoData.md)
+> **getDomain**(`name`): `undefined` \| [`IGeoData`](../interfaces/IGeoData.md)
 
 The function returns map domains of given type.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
+• **name**: `string`
 
 #### Returns
 
@@ -245,21 +203,21 @@ The function returns map domains of given type.
 
 #### Implementation of
 
-IGeoDataManager.getDomain
+`IGeoDataManager.getDomain`
 
 #### Inherited from
 
-[MapDomainArrayManager](MapDomainArrayManager.md).[getDomain](MapDomainArrayManager.md#getdomain)
+[`MapDomainArrayManager`](MapDomainArrayManager.md).[`getDomain`](MapDomainArrayManager.md#getdomain)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomainArrayManager.ts:99](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomainArrayManager.ts#L99)
+[model/internal/domain/generic/MapDomainArrayManager.ts:99](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomainArrayManager.ts#L99)
 
-___
+***
 
-### getDomainNames
+### getDomainNames()
 
-▸ **getDomainNames**(): `string`[]
+> **getDomainNames**(): `string`[]
 
 Help function which returns the list of domain string labels (map domain types).
 
@@ -269,21 +227,21 @@ Help function which returns the list of domain string labels (map domain types).
 
 #### Implementation of
 
-IGeoDataManager.getDomainNames
+`IGeoDataManager.getDomainNames`
 
 #### Inherited from
 
-[MapDomainArrayManager](MapDomainArrayManager.md).[getDomainNames](MapDomainArrayManager.md#getdomainnames)
+[`MapDomainArrayManager`](MapDomainArrayManager.md).[`getDomainNames`](MapDomainArrayManager.md#getdomainnames)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomainArrayManager.ts:83](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomainArrayManager.ts#L83)
+[model/internal/domain/generic/MapDomainArrayManager.ts:83](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomainArrayManager.ts#L83)
 
-___
+***
 
-### getDomains
+### getDomains()
 
-▸ **getDomains**(): [`IGeoData`](../interfaces/IGeoData.md)[]
+> **getDomains**(): [`IGeoData`](../interfaces/IGeoData.md)[]
 
 The function returns available map domains.
 
@@ -293,46 +251,45 @@ The function returns available map domains.
 
 #### Implementation of
 
-IGeoDataManager.getDomains
+`IGeoDataManager.getDomains`
 
 #### Inherited from
 
-[MapDomainArrayManager](MapDomainArrayManager.md).[getDomains](MapDomainArrayManager.md#getdomains)
+[`MapDomainArrayManager`](MapDomainArrayManager.md).[`getDomains`](MapDomainArrayManager.md#getdomains)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomainArrayManager.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomainArrayManager.ts#L23)
+[model/internal/domain/generic/MapDomainArrayManager.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomainArrayManager.ts#L23)
 
-___
+***
 
-### getFeatures
+### getFeatures()
 
-▸ **getFeatures**(`name`, `types`): `undefined` \| `FeatureCollection`\<`Geometry`, `GeoJsonProperties`\>
+> **getFeatures**(`name`, `types`): `any`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
-| `types` | `string`[] |
+• **name**: `string`
+
+• **types**: `string`[]
 
 #### Returns
 
-`undefined` \| `FeatureCollection`\<`Geometry`, `GeoJsonProperties`\>
+`any`
 
 #### Implementation of
 
-IHierarchyManagerInterface.getFeatures
+`IHierarchyManagerInterface.getFeatures`
 
-#### Defined in
+#### Source
 
-[src/model/internal/geodata/GeoDataManager.ts:37](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/geodata/GeoDataManager.ts#L37)
+[model/internal/geodata/GeoDataManager.ts:37](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/geodata/GeoDataManager.ts#L37)
 
-___
+***
 
-### isEmpty
+### isEmpty()
 
-▸ **isEmpty**(): `boolean`
+> **isEmpty**(): `boolean`
 
 The function returns true if size() is 0.
 
@@ -342,21 +299,21 @@ The function returns true if size() is 0.
 
 #### Implementation of
 
-IGeoDataManager.isEmpty
+`IGeoDataManager.isEmpty`
 
 #### Inherited from
 
-[MapDomainArrayManager](MapDomainArrayManager.md).[isEmpty](MapDomainArrayManager.md#isempty)
+[`MapDomainArrayManager`](MapDomainArrayManager.md).[`isEmpty`](MapDomainArrayManager.md#isempty)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomainArrayManager.ts:45](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomainArrayManager.ts#L45)
+[model/internal/domain/generic/MapDomainArrayManager.ts:45](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomainArrayManager.ts#L45)
 
-___
+***
 
-### isHierarchyEnabled
+### isHierarchyEnabled()
 
-▸ **isHierarchyEnabled**(): `boolean`
+> **isHierarchyEnabled**(): `boolean`
 
 #### Returns
 
@@ -364,23 +321,21 @@ ___
 
 #### Implementation of
 
-IHierarchyManagerInterface.isHierarchyEnabled
+`IHierarchyManagerInterface.isHierarchyEnabled`
 
-#### Defined in
+#### Source
 
-[src/model/internal/geodata/GeoDataManager.ts:29](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/geodata/GeoDataManager.ts#L29)
+[model/internal/geodata/GeoDataManager.ts:29](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/geodata/GeoDataManager.ts#L29)
 
-___
+***
 
-### isHierarchyEnabledForDomain
+### isHierarchyEnabledForDomain()
 
-▸ **isHierarchyEnabledForDomain**(`domainName`): `boolean`
+> **isHierarchyEnabledForDomain**(`domainName`): `boolean`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `domainName` | `string` |
+• **domainName**: `string`
 
 #### Returns
 
@@ -388,25 +343,23 @@ ___
 
 #### Implementation of
 
-IHierarchyManagerInterface.isHierarchyEnabledForDomain
+`IHierarchyManagerInterface.isHierarchyEnabledForDomain`
 
-#### Defined in
+#### Source
 
-[src/model/internal/geodata/GeoDataManager.ts:33](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/geodata/GeoDataManager.ts#L33)
+[model/internal/geodata/GeoDataManager.ts:33](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/geodata/GeoDataManager.ts#L33)
 
-___
+***
 
-### remove
+### remove()
 
-▸ **remove**(`domains`): `void`
+> **remove**(`domains`): `void`
 
 It removes a domain from the list of domains.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `domains` | [`IGeoData`](../interfaces/IGeoData.md) |
+• **domains**: [`IGeoData`](../interfaces/IGeoData.md)
 
 #### Returns
 
@@ -414,21 +367,21 @@ It removes a domain from the list of domains.
 
 #### Implementation of
 
-IGeoDataManager.remove
+`IGeoDataManager.remove`
 
 #### Inherited from
 
-[MapDomainArrayManager](MapDomainArrayManager.md).[remove](MapDomainArrayManager.md#remove)
+[`MapDomainArrayManager`](MapDomainArrayManager.md).[`remove`](MapDomainArrayManager.md#remove)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomainArrayManager.ts:65](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomainArrayManager.ts#L65)
+[model/internal/domain/generic/MapDomainArrayManager.ts:65](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomainArrayManager.ts#L65)
 
-___
+***
 
-### removeByName
+### removeByName()
 
-▸ **removeByName**(`id`): `void`
+> **removeByName**(`id`): `void`
 
 It removes a domain from the list of domains.
 
@@ -436,9 +389,7 @@ Override this function.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `id` | `string` |
+• **id**: `string`
 
 #### Returns
 
@@ -446,29 +397,29 @@ Override this function.
 
 #### Implementation of
 
-IGeoDataManager.removeByName
+`IGeoDataManager.removeByName`
 
 #### Inherited from
 
-[MapDomainArrayManager](MapDomainArrayManager.md).[removeByName](MapDomainArrayManager.md#removebyname)
+[`MapDomainArrayManager`](MapDomainArrayManager.md).[`removeByName`](MapDomainArrayManager.md#removebyname)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomainArrayManager.ts:76](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomainArrayManager.ts#L76)
+[model/internal/domain/generic/MapDomainArrayManager.ts:76](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomainArrayManager.ts#L76)
 
-___
+***
 
-### setTree
+### setTree()
 
-▸ **setTree**(`domainName`, `nodes`, `aggregationEnabled`): `void`
+> **setTree**(`domainName`, `nodes`, `aggregationEnabled`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `domainName` | `string` |
-| `nodes` | [`string`, `string` \| `boolean`, `number`][] |
-| `aggregationEnabled` | `boolean` |
+• **domainName**: `string`
+
+• **nodes**: [`string`, `string` \| `boolean`, `number`][]
+
+• **aggregationEnabled**: `boolean`
 
 #### Returns
 
@@ -476,17 +427,17 @@ ___
 
 #### Implementation of
 
-IHierarchyManagerInterface.setTree
+`IHierarchyManagerInterface.setTree`
 
-#### Defined in
+#### Source
 
-[src/model/internal/geodata/GeoDataManager.ts:72](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/geodata/GeoDataManager.ts#L72)
+[model/internal/geodata/GeoDataManager.ts:72](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/geodata/GeoDataManager.ts#L72)
 
-___
+***
 
-### size
+### size()
 
-▸ **size**(): `number`
+> **size**(): `number`
 
 The function returns number of domains.
 
@@ -496,28 +447,27 @@ The function returns number of domains.
 
 #### Implementation of
 
-IGeoDataManager.size
+`IGeoDataManager.size`
 
 #### Inherited from
 
-[MapDomainArrayManager](MapDomainArrayManager.md).[size](MapDomainArrayManager.md#size)
+[`MapDomainArrayManager`](MapDomainArrayManager.md).[`size`](MapDomainArrayManager.md#size)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomainArrayManager.ts:38](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomainArrayManager.ts#L38)
+[model/internal/domain/generic/MapDomainArrayManager.ts:38](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomainArrayManager.ts#L38)
 
-___
+***
 
-### startTree
+### startTree()
 
-▸ **startTree**(`domainName`, `zoom`): `void`
+> **startTree**(`domainName`, `zoom`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `domainName` | `string` |
-| `zoom` | `number` |
+• **domainName**: `string`
+
+• **zoom**: `number`
 
 #### Returns
 
@@ -525,23 +475,21 @@ ___
 
 #### Implementation of
 
-IHierarchyManagerInterface.startTree
+`IHierarchyManagerInterface.startTree`
 
-#### Defined in
+#### Source
 
-[src/model/internal/geodata/GeoDataManager.ts:80](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/geodata/GeoDataManager.ts#L80)
+[model/internal/geodata/GeoDataManager.ts:80](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/geodata/GeoDataManager.ts#L80)
 
-___
+***
 
-### treeAggregationFlag
+### treeAggregationFlag()
 
-▸ **treeAggregationFlag**(`domainName`): `boolean`
+> **treeAggregationFlag**(`domainName`): `boolean`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `domainName` | `string` |
+• **domainName**: `string`
 
 #### Returns
 
@@ -549,23 +497,21 @@ ___
 
 #### Implementation of
 
-IHierarchyManagerInterface.treeAggregationFlag
+`IHierarchyManagerInterface.treeAggregationFlag`
 
-#### Defined in
+#### Source
 
-[src/model/internal/geodata/GeoDataManager.ts:92](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/geodata/GeoDataManager.ts#L92)
+[model/internal/geodata/GeoDataManager.ts:92](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/geodata/GeoDataManager.ts#L92)
 
-___
+***
 
-### updateTrees
+### updateTrees()
 
-▸ **updateTrees**(`zoom`): `void`
+> **updateTrees**(`zoom`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `zoom` | `number` |
+• **zoom**: `number`
 
 #### Returns
 
@@ -573,8 +519,8 @@ ___
 
 #### Implementation of
 
-IHierarchyManagerInterface.updateTrees
+`IHierarchyManagerInterface.updateTrees`
 
-#### Defined in
+#### Source
 
-[src/model/internal/geodata/GeoDataManager.ts:86](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/geodata/GeoDataManager.ts#L86)
+[model/internal/geodata/GeoDataManager.ts:86](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/geodata/GeoDataManager.ts#L86)

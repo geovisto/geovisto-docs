@@ -1,53 +1,33 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / MapObjectDefaults
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / MapObjectDefaults
 
 # Class: MapObjectDefaults
 
 This class provide functions which return the default state values.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extended by
 
-- **`MapObjectDefaults`**
-
-  ↳ [`GeovistoMapDefaults`](GeovistoMapDefaults.md)
-
-  ↳ [`MapToolDefaults`](MapToolDefaults.md)
-
-  ↳ [`SidebarFragmentDefaults`](SidebarFragmentDefaults.md)
-
-  ↳ [`SidebarTabDefaults`](SidebarTabDefaults.md)
+- [`GeovistoMapDefaults`](GeovistoMapDefaults.md)
+- [`MapToolDefaults`](MapToolDefaults.md)
+- [`SidebarFragmentDefaults`](SidebarFragmentDefaults.md)
+- [`SidebarTabDefaults`](SidebarTabDefaults.md)
 
 ## Implements
 
 - [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](MapObjectDefaults.md#constructor)
-
-### Properties
-
-- [idString](MapObjectDefaults.md#idstring)
-- [id](MapObjectDefaults.md#id)
-
-### Methods
-
-- [generateId](MapObjectDefaults.md#generateid)
-- [getConfig](MapObjectDefaults.md#getconfig)
-- [getId](MapObjectDefaults.md#getid)
-- [getProps](MapObjectDefaults.md#getprops)
-- [getType](MapObjectDefaults.md#gettype)
-
 ## Constructors
 
-### constructor
+### new MapObjectDefaults()
 
-• **new MapObjectDefaults**(): [`MapObjectDefaults`](MapObjectDefaults.md)
+> **new MapObjectDefaults**(): [`MapObjectDefaults`](MapObjectDefaults.md)
 
 #### Returns
 
@@ -55,29 +35,29 @@ Jiri Hynek
 
 ## Properties
 
-### idString
+### idString?
 
-• `Protected` `Optional` **idString**: `string`
+> `protected` `optional` **idString**: `string`
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:13](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L13)
+[model/internal/object/MapObjectDefaults.ts:13](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L13)
 
-___
+***
 
 ### id
 
-▪ `Static` `Protected` **id**: `number`
+> `static` `protected` **id**: `number`
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:12](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L12)
+[model/internal/object/MapObjectDefaults.ts:12](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L12)
 
 ## Methods
 
-### generateId
+### generateId()
 
-▸ **generateId**(): `string`
+> `protected` **generateId**(): `string`
 
 It returns identifier which is used when no identifier is specified.
 
@@ -85,35 +65,35 @@ It returns identifier which is used when no identifier is specified.
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:54](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L54)
+[model/internal/object/MapObjectDefaults.ts:54](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L54)
 
-___
+***
 
-### getConfig
+### getConfig()
 
-▸ **getConfig**(): [`IMapObjectConfig`](../modules.md#imapobjectconfig)
+> **getConfig**(): [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)
 
 It returns a default config if no config is given.
 
 #### Returns
 
-[`IMapObjectConfig`](../modules.md#imapobjectconfig)
+[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)
 
 #### Implementation of
 
-[IMapObjectDefaults](../interfaces/IMapObjectDefaults.md).[getConfig](../interfaces/IMapObjectDefaults.md#getconfig)
+[`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md).[`getConfig`](../interfaces/IMapObjectDefaults.md#getconfig)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:27](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L27)
+[model/internal/object/MapObjectDefaults.ts:27](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L27)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 It returns identifier which is used when no identifier is specified.
 
@@ -123,37 +103,37 @@ It returns identifier which is used when no identifier is specified.
 
 #### Implementation of
 
-[IMapObjectDefaults](../interfaces/IMapObjectDefaults.md).[getId](../interfaces/IMapObjectDefaults.md#getid)
+[`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md).[`getId`](../interfaces/IMapObjectDefaults.md#getid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:44](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L44)
+[model/internal/object/MapObjectDefaults.ts:44](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L44)
 
-___
+***
 
-### getProps
+### getProps()
 
-▸ **getProps**(): [`IMapObjectProps`](../modules.md#imapobjectprops)
+> **getProps**(): [`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
 It returns default props if no props are given.
 
 #### Returns
 
-[`IMapObjectProps`](../modules.md#imapobjectprops)
+[`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
 #### Implementation of
 
-[IMapObjectDefaults](../interfaces/IMapObjectDefaults.md).[getProps](../interfaces/IMapObjectDefaults.md#getprops)
+[`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md).[`getProps`](../interfaces/IMapObjectDefaults.md#getprops)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L18)
+[model/internal/object/MapObjectDefaults.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L18)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 It returns a unique type string of the tool.
 
@@ -163,8 +143,8 @@ It returns a unique type string of the tool.
 
 #### Implementation of
 
-[IMapObjectDefaults](../interfaces/IMapObjectDefaults.md).[getType](../interfaces/IMapObjectDefaults.md#gettype)
+[`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md).[`getType`](../interfaces/IMapObjectDefaults.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:37](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L37)
+[model/internal/object/MapObjectDefaults.ts:37](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L37)

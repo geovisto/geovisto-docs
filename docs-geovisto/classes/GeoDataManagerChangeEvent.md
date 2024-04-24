@@ -1,62 +1,42 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / GeoDataManagerChangeEvent
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / GeoDataManagerChangeEvent
 
 # Class: GeoDataManagerChangeEvent\<TSource\>
 
 This class provides the data change event object.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
+## Extends
+
+- [`MapChangeEvent`](MapChangeEvent.md)\<[`IGeoDataManager`](../type-aliases/IGeoDataManager.md), `TSource`\>
+
 ## Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `TSource` | extends [`IMapObject`](../interfaces/IMapObject.md) = [`IMapObject`](../interfaces/IMapObject.md) |
-
-## Hierarchy
-
-- [`MapChangeEvent`](MapChangeEvent.md)\<[`IGeoDataManager`](../modules.md#igeodatamanager), `TSource`\>
-
-  ↳ **`GeoDataManagerChangeEvent`**
+• **TSource** *extends* [`IMapObject`](../interfaces/IMapObject.md) = [`IMapObject`](../interfaces/IMapObject.md)
 
 ## Implements
 
-- [`IGeoDataManagerChangeEvent`](../modules.md#igeodatamanagerchangeevent)
-
-## Table of contents
-
-### Constructors
-
-- [constructor](GeoDataManagerChangeEvent.md#constructor)
-
-### Methods
-
-- [getChangedObject](GeoDataManagerChangeEvent.md#getchangedobject)
-- [getSource](GeoDataManagerChangeEvent.md#getsource)
-- [getType](GeoDataManagerChangeEvent.md#gettype)
-- [TYPE](GeoDataManagerChangeEvent.md#type)
+- [`IGeoDataManagerChangeEvent`](../type-aliases/IGeoDataManagerChangeEvent.md)
 
 ## Constructors
 
-### constructor
+### new GeoDataManagerChangeEvent()
 
-• **new GeoDataManagerChangeEvent**\<`TSource`\>(`source`, `data`): [`GeoDataManagerChangeEvent`](GeoDataManagerChangeEvent.md)\<`TSource`\>
+> **new GeoDataManagerChangeEvent**\<`TSource`\>(`source`, `data`): [`GeoDataManagerChangeEvent`](GeoDataManagerChangeEvent.md)\<`TSource`\>
 
 It initializes event.
 
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `TSource` | extends [`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\> = [`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\> |
-
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `source` | `TSource` |
-| `data` | [`IGeoDataManager`](../modules.md#igeodatamanager) |
+• **source**: `TSource`
+
+• **data**: [`IGeoDataManager`](../type-aliases/IGeoDataManager.md)
 
 #### Returns
 
@@ -64,41 +44,41 @@ It initializes event.
 
 #### Overrides
 
-[MapChangeEvent](MapChangeEvent.md).[constructor](MapChangeEvent.md#constructor)
+[`MapChangeEvent`](MapChangeEvent.md).[`constructor`](MapChangeEvent.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/model/internal/event/geodata/GeoDataManagerChangeEvent.ts:16](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/event/geodata/GeoDataManagerChangeEvent.ts#L16)
+[model/internal/event/geodata/GeoDataManagerChangeEvent.ts:16](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/event/geodata/GeoDataManagerChangeEvent.ts#L16)
 
 ## Methods
 
-### getChangedObject
+### getChangedObject()
 
-▸ **getChangedObject**(): [`IGeoDataManager`](../modules.md#igeodatamanager)
+> **getChangedObject**(): [`IGeoDataManager`](../type-aliases/IGeoDataManager.md)
 
 Return the changed object.
 
 #### Returns
 
-[`IGeoDataManager`](../modules.md#igeodatamanager)
+[`IGeoDataManager`](../type-aliases/IGeoDataManager.md)
 
 #### Implementation of
 
-IGeoDataManagerChangeEvent.getChangedObject
+`IGeoDataManagerChangeEvent.getChangedObject`
 
 #### Inherited from
 
-[MapChangeEvent](MapChangeEvent.md).[getChangedObject](MapChangeEvent.md#getchangedobject)
+[`MapChangeEvent`](MapChangeEvent.md).[`getChangedObject`](MapChangeEvent.md#getchangedobject)
 
-#### Defined in
+#### Source
 
-[src/model/internal/event/generic/MapChangeEvent.ts:26](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/event/generic/MapChangeEvent.ts#L26)
+[model/internal/event/generic/MapChangeEvent.ts:26](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/event/generic/MapChangeEvent.ts#L26)
 
-___
+***
 
-### getSource
+### getSource()
 
-▸ **getSource**(): `TSource`
+> **getSource**(): `TSource`
 
 It return source map object of the event.
 
@@ -108,21 +88,21 @@ It return source map object of the event.
 
 #### Implementation of
 
-IGeoDataManagerChangeEvent.getSource
+`IGeoDataManagerChangeEvent.getSource`
 
 #### Inherited from
 
-[MapChangeEvent](MapChangeEvent.md).[getSource](MapChangeEvent.md#getsource)
+[`MapChangeEvent`](MapChangeEvent.md).[`getSource`](MapChangeEvent.md#getsource)
 
-#### Defined in
+#### Source
 
-[src/model/internal/event/generic/MapEvent.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/event/generic/MapEvent.ts#L32)
+[model/internal/event/generic/MapEvent.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/event/generic/MapEvent.ts#L32)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 It returns string which identifies the event.
 
@@ -132,21 +112,21 @@ It returns string which identifies the event.
 
 #### Implementation of
 
-IGeoDataManagerChangeEvent.getType
+`IGeoDataManagerChangeEvent.getType`
 
 #### Inherited from
 
-[MapChangeEvent](MapChangeEvent.md).[getType](MapChangeEvent.md#gettype)
+[`MapChangeEvent`](MapChangeEvent.md).[`getType`](MapChangeEvent.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/internal/event/generic/MapEvent.ts:25](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/event/generic/MapEvent.ts#L25)
+[model/internal/event/generic/MapEvent.ts:25](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/event/generic/MapEvent.ts#L25)
 
-___
+***
 
-### TYPE
+### TYPE()
 
-▸ **TYPE**(): `string`
+> `static` **TYPE**(): `string`
 
 Type of the event.
 
@@ -154,6 +134,6 @@ Type of the event.
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/model/internal/event/geodata/GeoDataManagerChangeEvent.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/event/geodata/GeoDataManagerChangeEvent.ts#L23)
+[model/internal/event/geodata/GeoDataManagerChangeEvent.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/event/geodata/GeoDataManagerChangeEvent.ts#L23)

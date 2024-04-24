@@ -1,79 +1,34 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / HeatLayerToolMapForm
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / HeatLayerToolMapForm
 
 # Class: HeatLayerToolMapForm
 
 This class provides controls for management of the layer sidebar tab.
 
-**`Author`**
+## Author
 
 Vladimir Korencik
 
-## Hierarchy
+## Extends
 
 - [`MapLayerToolForm`](MapLayerToolForm.md)\<[`IHeatLayerTool`](../interfaces/IHeatLayerTool.md)\>
-
-  ↳ **`HeatLayerToolMapForm`**
 
 ## Implements
 
 - [`IMapForm`](../interfaces/IMapForm.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](HeatLayerToolMapForm.md#constructor)
-
-### Properties
-
-- [btnGroup](HeatLayerToolMapForm.md#btngroup)
-- [htmlContent](HeatLayerToolMapForm.md#htmlcontent)
-- [inputs](HeatLayerToolMapForm.md#inputs)
-- [reactiveRadius](HeatLayerToolMapForm.md#reactiveradius)
-- [reactiveRadiusForm](HeatLayerToolMapForm.md#reactiveradiusform)
-- [reactiveRadiusInputs](HeatLayerToolMapForm.md#reactiveradiusinputs)
-- [tool](HeatLayerToolMapForm.md#tool)
-
-### Methods
-
-- [addSelectItem](HeatLayerToolMapForm.md#addselectitem)
-- [applyFilters](HeatLayerToolMapForm.md#applyfilters)
-- [getAutocompleteInput](HeatLayerToolMapForm.md#getautocompleteinput)
-- [getCheckboxInput](HeatLayerToolMapForm.md#getcheckboxinput)
-- [getColorInput](HeatLayerToolMapForm.md#getcolorinput)
-- [getContent](HeatLayerToolMapForm.md#getcontent)
-- [getCurrentZoom](HeatLayerToolMapForm.md#getcurrentzoom)
-- [getInputBlur](HeatLayerToolMapForm.md#getinputblur)
-- [getInputGradient](HeatLayerToolMapForm.md#getinputgradient)
-- [getInputIntensity](HeatLayerToolMapForm.md#getinputintensity)
-- [getInputLatitude](HeatLayerToolMapForm.md#getinputlatitude)
-- [getInputLongtitude](HeatLayerToolMapForm.md#getinputlongtitude)
-- [getInputRadius](HeatLayerToolMapForm.md#getinputradius)
-- [getInputReactiveRadius](HeatLayerToolMapForm.md#getinputreactiveradius)
-- [getInputReactiveRadiusOperation](HeatLayerToolMapForm.md#getinputreactiveradiusoperation)
-- [getInputReactiveRadiusZoom](HeatLayerToolMapForm.md#getinputreactiveradiuszoom)
-- [getInputZoom](HeatLayerToolMapForm.md#getinputzoom)
-- [getMapObject](HeatLayerToolMapForm.md#getmapobject)
-- [getNumberInput](HeatLayerToolMapForm.md#getnumberinput)
-- [getReactiveRadiusContent](HeatLayerToolMapForm.md#getreactiveradiuscontent)
-- [getSliderInput](HeatLayerToolMapForm.md#getsliderinput)
-- [getTextInput](HeatLayerToolMapForm.md#gettextinput)
-- [getTool](HeatLayerToolMapForm.md#gettool)
-- [removeSelectItem](HeatLayerToolMapForm.md#removeselectitem)
-- [setCurrentZoom](HeatLayerToolMapForm.md#setcurrentzoom)
-- [setInputValues](HeatLayerToolMapForm.md#setinputvalues)
-
 ## Constructors
 
-### constructor
+### new HeatLayerToolMapForm()
 
-• **new HeatLayerToolMapForm**(`tool`): [`HeatLayerToolMapForm`](HeatLayerToolMapForm.md)
+> **new HeatLayerToolMapForm**(`tool`): [`HeatLayerToolMapForm`](HeatLayerToolMapForm.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `tool` | [`IHeatLayerTool`](../interfaces/IHeatLayerTool.md)\<[`IHeatLayerToolProps`](../modules.md#iheatlayertoolprops), [`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md), [`IHeatLayerToolState`](../interfaces/IHeatLayerToolState.md)\<[`IHeatLayerToolProps`](../modules.md#iheatlayertoolprops), [`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md), [`IHeatLayerToolConfig`](../modules.md#iheatlayertoolconfig), \{ `blur?`: `number` ; `gradient?`: `string` ; `intensity?`: `string` ; `latitude?`: `string` ; `longitude?`: `string` ; `radius?`: `number` ; `reactiveOp?`: `string` ; `reactiveRadius?`: `number` ; `reactiveZoom?`: `number` ; `zoom?`: `string`  }, \{ `blur`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `currentZoom`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `gradient`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`IGradient`\> ; `intensity`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `latitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `longitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `radius`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `reactiveOp`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> ; `reactiveRadius`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `reactiveZoom`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `zoom`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`IZoomLevel`\>  }\>, [`IHeatLayerToolConfig`](../modules.md#iheatlayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IHeatLayerToolConfig`](../modules.md#iheatlayertoolconfig)\>\> |
+• **tool**: [`IHeatLayerTool`](../interfaces/IHeatLayerTool.md)\<[`IHeatLayerToolProps`](../type-aliases/IHeatLayerToolProps.md), [`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md), [`IHeatLayerToolState`](../interfaces/IHeatLayerToolState.md)\<[`IHeatLayerToolProps`](../type-aliases/IHeatLayerToolProps.md), [`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md), [`IHeatLayerToolConfig`](../type-aliases/IHeatLayerToolConfig.md), `object`, `object`\>, [`IHeatLayerToolConfig`](../type-aliases/IHeatLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IHeatLayerToolConfig`](../type-aliases/IHeatLayerToolConfig.md)\>\>
 
 #### Returns
 
@@ -81,137 +36,155 @@ Vladimir Korencik
 
 #### Overrides
 
-[MapLayerToolForm](MapLayerToolForm.md).[constructor](MapLayerToolForm.md#constructor)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`constructor`](MapLayerToolForm.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:56](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L56)
+[tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:56](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L56)
 
 ## Properties
 
 ### btnGroup
 
-• `Private` **btnGroup**: ``null`` \| `HTMLDivElement`
+> `private` **btnGroup**: `null` \| `HTMLDivElement`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:39](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L39)
+[tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:39](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L39)
 
-___
+***
 
 ### htmlContent
 
-• `Private` **htmlContent**: `HTMLDivElement`
+> `private` **htmlContent**: `HTMLDivElement`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:36](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L36)
+[tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:36](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L36)
 
-___
+***
 
-### inputs
+### inputs?
 
-• `Private` `Optional` **inputs**: `Object`
+> `private` `optional` **inputs**: `object`
 
-#### Type declaration
+#### blur
 
-| Name | Type |
-| :------ | :------ |
-| `blur` | [`IMapFormInput`](../interfaces/IMapFormInput.md) |
-| `currentZoom` | [`IMapFormInput`](../interfaces/IMapFormInput.md) |
-| `gradient` | [`IMapFormInput`](../interfaces/IMapFormInput.md) |
-| `intensity` | [`IMapFormInput`](../interfaces/IMapFormInput.md) |
-| `latitude` | [`IMapFormInput`](../interfaces/IMapFormInput.md) |
-| `longitude` | [`IMapFormInput`](../interfaces/IMapFormInput.md) |
-| `radius` | [`IMapFormInput`](../interfaces/IMapFormInput.md) |
-| `zoom` | [`IMapFormInput`](../interfaces/IMapFormInput.md) |
+> **blur**: [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### currentZoom
 
-[src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:41](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L41)
+> **currentZoom**: [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-___
+#### gradient
+
+> **gradient**: [`IMapFormInput`](../interfaces/IMapFormInput.md)
+
+#### intensity
+
+> **intensity**: [`IMapFormInput`](../interfaces/IMapFormInput.md)
+
+#### latitude
+
+> **latitude**: [`IMapFormInput`](../interfaces/IMapFormInput.md)
+
+#### longitude
+
+> **longitude**: [`IMapFormInput`](../interfaces/IMapFormInput.md)
+
+#### radius
+
+> **radius**: [`IMapFormInput`](../interfaces/IMapFormInput.md)
+
+#### zoom
+
+> **zoom**: [`IMapFormInput`](../interfaces/IMapFormInput.md)
+
+#### Source
+
+[tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:41](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L41)
+
+***
 
 ### reactiveRadius
 
-• `Private` **reactiveRadius**: `HTMLDivElement`
+> `private` **reactiveRadius**: `HTMLDivElement`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:37](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L37)
+[tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:37](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L37)
 
-___
+***
 
-### reactiveRadiusForm
+### reactiveRadiusForm?
 
-• `Private` `Optional` **reactiveRadiusForm**: `IReactiveRadiusForm`[]
+> `private` `optional` **reactiveRadiusForm**: `IReactiveRadiusForm`[]
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:54](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L54)
+[tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:54](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L54)
 
-___
+***
 
-### reactiveRadiusInputs
+### reactiveRadiusInputs?
 
-• `Private` `Optional` **reactiveRadiusInputs**: `IReactiveRadiusInputs`
+> `private` `optional` **reactiveRadiusInputs**: `IReactiveRadiusInputs`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:52](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L52)
+[tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:52](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L52)
 
-___
+***
 
 ### tool
 
-• `Private` **tool**: [`IHeatLayerTool`](../interfaces/IHeatLayerTool.md)\<[`IHeatLayerToolProps`](../modules.md#iheatlayertoolprops), [`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md), [`IHeatLayerToolState`](../interfaces/IHeatLayerToolState.md)\<[`IHeatLayerToolProps`](../modules.md#iheatlayertoolprops), [`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md), [`IHeatLayerToolConfig`](../modules.md#iheatlayertoolconfig), \{ `blur?`: `number` ; `gradient?`: `string` ; `intensity?`: `string` ; `latitude?`: `string` ; `longitude?`: `string` ; `radius?`: `number` ; `reactiveOp?`: `string` ; `reactiveRadius?`: `number` ; `reactiveZoom?`: `number` ; `zoom?`: `string`  }, \{ `blur`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `currentZoom`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `gradient`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`IGradient`\> ; `intensity`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `latitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `longitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `radius`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `reactiveOp`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> ; `reactiveRadius`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `reactiveZoom`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `zoom`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`IZoomLevel`\>  }\>, [`IHeatLayerToolConfig`](../modules.md#iheatlayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IHeatLayerToolConfig`](../modules.md#iheatlayertoolconfig)\>\>
+> `private` **tool**: [`IHeatLayerTool`](../interfaces/IHeatLayerTool.md)\<[`IHeatLayerToolProps`](../type-aliases/IHeatLayerToolProps.md), [`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md), [`IHeatLayerToolState`](../interfaces/IHeatLayerToolState.md)\<[`IHeatLayerToolProps`](../type-aliases/IHeatLayerToolProps.md), [`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md), [`IHeatLayerToolConfig`](../type-aliases/IHeatLayerToolConfig.md), `object`, `object`\>, [`IHeatLayerToolConfig`](../type-aliases/IHeatLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IHeatLayerToolConfig`](../type-aliases/IHeatLayerToolConfig.md)\>\>
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:38](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L38)
+[tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:38](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L38)
 
 ## Methods
 
-### addSelectItem
+### addSelectItem()
 
-▸ **addSelectItem**(): `void`
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-[src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:165](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L165)
-
-___
-
-### applyFilters
-
-▸ **applyFilters**(): `void`
+> `private` **addSelectItem**(): `void`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:221](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L221)
+[tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:165](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L165)
 
-___
+***
 
-### getAutocompleteInput
+### applyFilters()
 
-▸ **getAutocompleteInput**(`dimension`, `formAction?`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> `private` **applyFilters**(): `void`
+
+#### Returns
+
+`void`
+
+#### Source
+
+[tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:221](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L221)
+
+***
+
+### getAutocompleteInput()
+
+> `protected` **getAutocompleteInput**(`dimension`, `formAction`?): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 Help method which returns a new universal autocomplete input for the any map domain dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDomain`](../interfaces/IMapDomain.md)\> |
-| `formAction?` | (`ev`: `Event`) => `void` |
+• **dimension**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDomain`](../interfaces/IMapDomain.md)\>
+
+• **formAction?**
 
 #### Returns
 
@@ -219,26 +192,25 @@ Help method which returns a new universal autocomplete input for the any map dom
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getAutocompleteInput](MapLayerToolForm.md#getautocompleteinput)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getAutocompleteInput`](MapLayerToolForm.md#getautocompleteinput)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapLayerToolForm.ts:43](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapLayerToolForm.ts#L43)
+[model/internal/form/MapLayerToolForm.ts:43](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapLayerToolForm.ts#L43)
 
-___
+***
 
-### getCheckboxInput
+### getCheckboxInput()
 
-▸ **getCheckboxInput**(`dimension`, `formAction?`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> `protected` **getCheckboxInput**(`dimension`, `formAction`?): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 Help method which returns a new universal checkbox input for the any map boolean dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\> |
-| `formAction?` | (`ev`: `Event`) => `void` |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\>
+
+• **formAction?**
 
 #### Returns
 
@@ -246,26 +218,25 @@ Help method which returns a new universal checkbox input for the any map boolean
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getCheckboxInput](MapLayerToolForm.md#getcheckboxinput)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getCheckboxInput`](MapLayerToolForm.md#getcheckboxinput)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapLayerToolForm.ts:78](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapLayerToolForm.ts#L78)
+[model/internal/form/MapLayerToolForm.ts:78](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapLayerToolForm.ts#L78)
 
-___
+***
 
-### getColorInput
+### getColorInput()
 
-▸ **getColorInput**(`dimension`, `formAction?`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> `protected` **getColorInput**(`dimension`, `formAction`?): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 Help method which returns a new universal color input for the any map string dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `formAction?` | (`ev`: `Event`) => `void` |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+• **formAction?**
 
 #### Returns
 
@@ -273,17 +244,17 @@ Help method which returns a new universal color input for the any map string dim
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getColorInput](MapLayerToolForm.md#getcolorinput)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getColorInput`](MapLayerToolForm.md#getcolorinput)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapLayerToolForm.ts:96](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapLayerToolForm.ts#L96)
+[model/internal/form/MapLayerToolForm.ts:96](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapLayerToolForm.ts#L96)
 
-___
+***
 
-### getContent
+### getContent()
 
-▸ **getContent**(): `HTMLDivElement`
+> **getContent**(): `HTMLDivElement`
 
 It returns a HTML div element conatining the form.
 
@@ -293,268 +264,245 @@ It returns a HTML div element conatining the form.
 
 #### Implementation of
 
-[IMapForm](../interfaces/IMapForm.md).[getContent](../interfaces/IMapForm.md#getcontent)
+[`IMapForm`](../interfaces/IMapForm.md).[`getContent`](../interfaces/IMapForm.md#getcontent)
 
 #### Overrides
 
-[MapLayerToolForm](MapLayerToolForm.md).[getContent](MapLayerToolForm.md#getcontent)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getContent`](MapLayerToolForm.md#getcontent)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:99](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L99)
+[tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:99](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L99)
 
-___
+***
 
-### getCurrentZoom
+### getCurrentZoom()
 
-▸ **getCurrentZoom**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getCurrentZoom**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:311](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L311)
+[tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:311](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L311)
 
-___
+***
 
-### getInputBlur
+### getInputBlur()
 
-▸ **getInputBlur**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputBlur**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:302](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L302)
+[tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:302](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L302)
 
-___
+***
 
-### getInputGradient
+### getInputGradient()
 
-▸ **getInputGradient**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputGradient**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`IGradient`\> |
+• **dimension**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`IGradient`\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:297](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L297)
+[tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:297](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L297)
 
-___
+***
 
-### getInputIntensity
+### getInputIntensity()
 
-▸ **getInputIntensity**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputIntensity**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
+• **dimension**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:288](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L288)
+[tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:288](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L288)
 
-___
+***
 
-### getInputLatitude
+### getInputLatitude()
 
-▸ **getInputLatitude**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputLatitude**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
+• **dimension**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:276](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L276)
+[tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:276](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L276)
 
-___
+***
 
-### getInputLongtitude
+### getInputLongtitude()
 
-▸ **getInputLongtitude**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputLongtitude**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
+• **dimension**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:282](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L282)
+[tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:282](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L282)
 
-___
+***
 
-### getInputRadius
+### getInputRadius()
 
-▸ **getInputRadius**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputRadius**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:294](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L294)
+[tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:294](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L294)
 
-___
+***
 
-### getInputReactiveRadius
+### getInputReactiveRadius()
 
-▸ **getInputReactiveRadius**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputReactiveRadius**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:325](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L325)
+[tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:325](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L325)
 
-___
+***
 
-### getInputReactiveRadiusOperation
+### getInputReactiveRadiusOperation()
 
-▸ **getInputReactiveRadiusOperation**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputReactiveRadiusOperation**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> |
+• **dimension**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:315](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L315)
+[tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:315](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L315)
 
-___
+***
 
-### getInputReactiveRadiusZoom
+### getInputReactiveRadiusZoom()
 
-▸ **getInputReactiveRadiusZoom**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputReactiveRadiusZoom**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:320](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L320)
+[tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:320](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L320)
 
-___
+***
 
-### getInputZoom
+### getInputZoom()
 
-▸ **getInputZoom**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputZoom**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`IZoomLevel`\> |
+• **dimension**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`IZoomLevel`\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:305](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L305)
+[tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:305](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L305)
 
-___
+***
 
-### getMapObject
+### getMapObject()
 
-▸ **getMapObject**(): [`IHeatLayerTool`](../interfaces/IHeatLayerTool.md)\<[`IHeatLayerToolProps`](../modules.md#iheatlayertoolprops), [`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md), [`IHeatLayerToolState`](../interfaces/IHeatLayerToolState.md)\<[`IHeatLayerToolProps`](../modules.md#iheatlayertoolprops), [`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md), [`IHeatLayerToolConfig`](../modules.md#iheatlayertoolconfig), \{ `blur?`: `number` ; `gradient?`: `string` ; `intensity?`: `string` ; `latitude?`: `string` ; `longitude?`: `string` ; `radius?`: `number` ; `reactiveOp?`: `string` ; `reactiveRadius?`: `number` ; `reactiveZoom?`: `number` ; `zoom?`: `string`  }, \{ `blur`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `currentZoom`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `gradient`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`IGradient`\> ; `intensity`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `latitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `longitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `radius`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `reactiveOp`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> ; `reactiveRadius`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `reactiveZoom`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `zoom`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`IZoomLevel`\>  }\>, [`IHeatLayerToolConfig`](../modules.md#iheatlayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IHeatLayerToolConfig`](../modules.md#iheatlayertoolconfig)\>\>
+> `protected` **getMapObject**(): [`IHeatLayerTool`](../interfaces/IHeatLayerTool.md)\<[`IHeatLayerToolProps`](../type-aliases/IHeatLayerToolProps.md), [`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md), [`IHeatLayerToolState`](../interfaces/IHeatLayerToolState.md)\<[`IHeatLayerToolProps`](../type-aliases/IHeatLayerToolProps.md), [`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md), [`IHeatLayerToolConfig`](../type-aliases/IHeatLayerToolConfig.md), `object`, `object`\>, [`IHeatLayerToolConfig`](../type-aliases/IHeatLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IHeatLayerToolConfig`](../type-aliases/IHeatLayerToolConfig.md)\>\>
 
 #### Returns
 
-[`IHeatLayerTool`](../interfaces/IHeatLayerTool.md)\<[`IHeatLayerToolProps`](../modules.md#iheatlayertoolprops), [`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md), [`IHeatLayerToolState`](../interfaces/IHeatLayerToolState.md)\<[`IHeatLayerToolProps`](../modules.md#iheatlayertoolprops), [`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md), [`IHeatLayerToolConfig`](../modules.md#iheatlayertoolconfig), \{ `blur?`: `number` ; `gradient?`: `string` ; `intensity?`: `string` ; `latitude?`: `string` ; `longitude?`: `string` ; `radius?`: `number` ; `reactiveOp?`: `string` ; `reactiveRadius?`: `number` ; `reactiveZoom?`: `number` ; `zoom?`: `string`  }, \{ `blur`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `currentZoom`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `gradient`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`IGradient`\> ; `intensity`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `latitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `longitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `radius`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `reactiveOp`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> ; `reactiveRadius`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `reactiveZoom`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `zoom`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`IZoomLevel`\>  }\>, [`IHeatLayerToolConfig`](../modules.md#iheatlayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IHeatLayerToolConfig`](../modules.md#iheatlayertoolconfig)\>\>
+[`IHeatLayerTool`](../interfaces/IHeatLayerTool.md)\<[`IHeatLayerToolProps`](../type-aliases/IHeatLayerToolProps.md), [`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md), [`IHeatLayerToolState`](../interfaces/IHeatLayerToolState.md)\<[`IHeatLayerToolProps`](../type-aliases/IHeatLayerToolProps.md), [`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md), [`IHeatLayerToolConfig`](../type-aliases/IHeatLayerToolConfig.md), `object`, `object`\>, [`IHeatLayerToolConfig`](../type-aliases/IHeatLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IHeatLayerToolConfig`](../type-aliases/IHeatLayerToolConfig.md)\>\>
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getMapObject](MapLayerToolForm.md#getmapobject)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getMapObject`](MapLayerToolForm.md#getmapobject)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapObjectForm.ts:16](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapObjectForm.ts#L16)
+[model/internal/form/MapObjectForm.ts:16](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapObjectForm.ts#L16)
 
-___
+***
 
-### getNumberInput
+### getNumberInput()
 
-▸ **getNumberInput**(`dimension`, `formAction?`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> `protected` **getNumberInput**(`dimension`, `formAction`?): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 Help method which returns a new universal number input for the any map number dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> |
-| `formAction?` | (`ev`: `Event`) => `void` |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
+
+• **formAction?**
 
 #### Returns
 
@@ -562,40 +510,39 @@ Help method which returns a new universal number input for the any map number di
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getNumberInput](MapLayerToolForm.md#getnumberinput)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getNumberInput`](MapLayerToolForm.md#getnumberinput)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapLayerToolForm.ts:133](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapLayerToolForm.ts#L133)
+[model/internal/form/MapLayerToolForm.ts:133](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapLayerToolForm.ts#L133)
 
-___
+***
 
-### getReactiveRadiusContent
+### getReactiveRadiusContent()
 
-▸ **getReactiveRadiusContent**(): `HTMLDivElement`
+> `private` **getReactiveRadiusContent**(): `HTMLDivElement`
 
 #### Returns
 
 `HTMLDivElement`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:250](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L250)
+[tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:250](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L250)
 
-___
+***
 
-### getSliderInput
+### getSliderInput()
 
-▸ **getSliderInput**(`dimension`, `formAction?`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> `protected` **getSliderInput**(`dimension`, `formAction`?): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 Help method which returns a new universal slider input for the any map range integer dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md)\> |
-| `formAction?` | (`ev`: `Event`) => `void` |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md)\>
+
+• **formAction?**
 
 #### Returns
 
@@ -603,26 +550,25 @@ Help method which returns a new universal slider input for the any map range int
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getSliderInput](MapLayerToolForm.md#getsliderinput)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getSliderInput`](MapLayerToolForm.md#getsliderinput)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapLayerToolForm.ts:113](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapLayerToolForm.ts#L113)
+[model/internal/form/MapLayerToolForm.ts:113](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapLayerToolForm.ts#L113)
 
-___
+***
 
-### getTextInput
+### getTextInput()
 
-▸ **getTextInput**(`dimension`, `formAction?`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> `protected` **getTextInput**(`dimension`, `formAction`?): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 Help method which returns a new universal text input for the any map domain dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `formAction?` | (`ev`: `Event`) => `void` |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+• **formAction?**
 
 #### Returns
 
@@ -630,90 +576,95 @@ Help method which returns a new universal text input for the any map domain dime
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getTextInput](MapLayerToolForm.md#gettextinput)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getTextInput`](MapLayerToolForm.md#gettextinput)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapLayerToolForm.ts:61](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapLayerToolForm.ts#L61)
+[model/internal/form/MapLayerToolForm.ts:61](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapLayerToolForm.ts#L61)
 
-___
+***
 
-### getTool
+### getTool()
 
-▸ **getTool**(): [`IHeatLayerTool`](../interfaces/IHeatLayerTool.md)\<[`IHeatLayerToolProps`](../modules.md#iheatlayertoolprops), [`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md), [`IHeatLayerToolState`](../interfaces/IHeatLayerToolState.md)\<[`IHeatLayerToolProps`](../modules.md#iheatlayertoolprops), [`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md), [`IHeatLayerToolConfig`](../modules.md#iheatlayertoolconfig), \{ `blur?`: `number` ; `gradient?`: `string` ; `intensity?`: `string` ; `latitude?`: `string` ; `longitude?`: `string` ; `radius?`: `number` ; `reactiveOp?`: `string` ; `reactiveRadius?`: `number` ; `reactiveZoom?`: `number` ; `zoom?`: `string`  }, \{ `blur`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `currentZoom`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `gradient`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`IGradient`\> ; `intensity`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `latitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `longitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `radius`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `reactiveOp`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> ; `reactiveRadius`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `reactiveZoom`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `zoom`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`IZoomLevel`\>  }\>, [`IHeatLayerToolConfig`](../modules.md#iheatlayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IHeatLayerToolConfig`](../modules.md#iheatlayertoolconfig)\>\>
+> **getTool**(): [`IHeatLayerTool`](../interfaces/IHeatLayerTool.md)\<[`IHeatLayerToolProps`](../type-aliases/IHeatLayerToolProps.md), [`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md), [`IHeatLayerToolState`](../interfaces/IHeatLayerToolState.md)\<[`IHeatLayerToolProps`](../type-aliases/IHeatLayerToolProps.md), [`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md), [`IHeatLayerToolConfig`](../type-aliases/IHeatLayerToolConfig.md), `object`, `object`\>, [`IHeatLayerToolConfig`](../type-aliases/IHeatLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IHeatLayerToolConfig`](../type-aliases/IHeatLayerToolConfig.md)\>\>
 
 #### Returns
 
-[`IHeatLayerTool`](../interfaces/IHeatLayerTool.md)\<[`IHeatLayerToolProps`](../modules.md#iheatlayertoolprops), [`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md), [`IHeatLayerToolState`](../interfaces/IHeatLayerToolState.md)\<[`IHeatLayerToolProps`](../modules.md#iheatlayertoolprops), [`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md), [`IHeatLayerToolConfig`](../modules.md#iheatlayertoolconfig), \{ `blur?`: `number` ; `gradient?`: `string` ; `intensity?`: `string` ; `latitude?`: `string` ; `longitude?`: `string` ; `radius?`: `number` ; `reactiveOp?`: `string` ; `reactiveRadius?`: `number` ; `reactiveZoom?`: `number` ; `zoom?`: `string`  }, \{ `blur`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `currentZoom`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `gradient`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`IGradient`\> ; `intensity`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `latitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `longitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `radius`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `reactiveOp`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> ; `reactiveRadius`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `reactiveZoom`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> ; `zoom`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`IZoomLevel`\>  }\>, [`IHeatLayerToolConfig`](../modules.md#iheatlayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IHeatLayerToolConfig`](../modules.md#iheatlayertoolconfig)\>\>
+[`IHeatLayerTool`](../interfaces/IHeatLayerTool.md)\<[`IHeatLayerToolProps`](../type-aliases/IHeatLayerToolProps.md), [`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md), [`IHeatLayerToolState`](../interfaces/IHeatLayerToolState.md)\<[`IHeatLayerToolProps`](../type-aliases/IHeatLayerToolProps.md), [`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md), [`IHeatLayerToolConfig`](../type-aliases/IHeatLayerToolConfig.md), `object`, `object`\>, [`IHeatLayerToolConfig`](../type-aliases/IHeatLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IHeatLayerToolConfig`](../type-aliases/IHeatLayerToolConfig.md)\>\>
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:63](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L63)
+[tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:63](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L63)
 
-___
+***
 
-### removeSelectItem
+### removeSelectItem()
 
-▸ **removeSelectItem**(`e`): `void`
+> `private` **removeSelectItem**(`e`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `e` | `MouseEvent` |
+• **e**: `MouseEvent`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:207](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L207)
+[tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:207](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L207)
 
-___
+***
 
-### setCurrentZoom
+### setCurrentZoom()
 
-▸ **setCurrentZoom**(`e?`): `void`
+> `private` **setCurrentZoom**(`e`?): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `e?` | `LeafletEvent` |
+• **e?**: `any`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:272](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L272)
+[tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:272](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L272)
 
-___
+***
 
-### setInputValues
+### setInputValues()
 
-▸ **setInputValues**(`dimensions`): `void`
+> **setInputValues**(`dimensions`): `void`
 
 It updates selected input values according to the given dimensions.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimensions` | `Object` |
-| `dimensions.blur` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> |
-| `dimensions.currentZoom` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> |
-| `dimensions.gradient` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`IGradient`\> |
-| `dimensions.intensity` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `dimensions.latitude` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `dimensions.longitude` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `dimensions.radius` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> |
-| `dimensions.reactiveOp` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> |
-| `dimensions.reactiveRadius` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> |
-| `dimensions.reactiveZoom` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> |
-| `dimensions.zoom` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`IZoomLevel`\> |
+• **dimensions**
+
+• **dimensions.blur**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
+
+• **dimensions.currentZoom**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
+
+• **dimensions.gradient**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`IGradient`\>
+
+• **dimensions.intensity**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+• **dimensions.latitude**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+• **dimensions.longitude**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+• **dimensions.radius**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
+
+• **dimensions.reactiveOp**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\>
+
+• **dimensions.reactiveRadius**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
+
+• **dimensions.reactiveZoom**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
+
+• **dimensions.zoom**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`IZoomLevel`\>
 
 #### Returns
 
@@ -721,8 +672,8 @@ It updates selected input values according to the given dimensions.
 
 #### Overrides
 
-[MapLayerToolForm](MapLayerToolForm.md).[setInputValues](MapLayerToolForm.md#setinputvalues)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`setInputValues`](MapLayerToolForm.md#setinputvalues)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:67](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L67)
+[tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts:67](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/form/HeatLayerToolMapForm.ts#L67)

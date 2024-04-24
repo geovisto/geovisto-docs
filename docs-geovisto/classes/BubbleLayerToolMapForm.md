@@ -1,77 +1,34 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / BubbleLayerToolMapForm
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / BubbleLayerToolMapForm
 
 # Class: BubbleLayerToolMapForm
 
 This class provides controls for management of the layer sidebar tab.
 
-**`Author`**
+## Author
 
 Vladimir Korencik
 
-## Hierarchy
+## Extends
 
 - [`MapLayerToolForm`](MapLayerToolForm.md)\<[`IBubbleLayerTool`](../interfaces/IBubbleLayerTool.md)\>
-
-  ↳ **`BubbleLayerToolMapForm`**
 
 ## Implements
 
 - [`IMapForm`](../interfaces/IMapForm.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](BubbleLayerToolMapForm.md#constructor)
-
-### Properties
-
-- [btnGroup](BubbleLayerToolMapForm.md#btngroup)
-- [categoryColor](BubbleLayerToolMapForm.md#categorycolor)
-- [categoryColorForm](BubbleLayerToolMapForm.md#categorycolorform)
-- [categoryColorInputs](BubbleLayerToolMapForm.md#categorycolorinputs)
-- [htmlContent](BubbleLayerToolMapForm.md#htmlcontent)
-- [inputs](BubbleLayerToolMapForm.md#inputs)
-- [tool](BubbleLayerToolMapForm.md#tool)
-
-### Methods
-
-- [addSelectItem](BubbleLayerToolMapForm.md#addselectitem)
-- [applyFilters](BubbleLayerToolMapForm.md#applyfilters)
-- [getAutocompleteInput](BubbleLayerToolMapForm.md#getautocompleteinput)
-- [getCategoryColorContent](BubbleLayerToolMapForm.md#getcategorycolorcontent)
-- [getCheckboxInput](BubbleLayerToolMapForm.md#getcheckboxinput)
-- [getColorInput](BubbleLayerToolMapForm.md#getcolorinput)
-- [getContent](BubbleLayerToolMapForm.md#getcontent)
-- [getInputAggregation](BubbleLayerToolMapForm.md#getinputaggregation)
-- [getInputBubbleSize](BubbleLayerToolMapForm.md#getinputbubblesize)
-- [getInputCategory](BubbleLayerToolMapForm.md#getinputcategory)
-- [getInputCategoryColor](BubbleLayerToolMapForm.md#getinputcategorycolor)
-- [getInputCategoryColorOperation](BubbleLayerToolMapForm.md#getinputcategorycoloroperation)
-- [getInputCategoryColorValue](BubbleLayerToolMapForm.md#getinputcategorycolorvalue)
-- [getInputColor](BubbleLayerToolMapForm.md#getinputcolor)
-- [getInputLatitude](BubbleLayerToolMapForm.md#getinputlatitude)
-- [getInputLongtitude](BubbleLayerToolMapForm.md#getinputlongtitude)
-- [getInputValue](BubbleLayerToolMapForm.md#getinputvalue)
-- [getMapObject](BubbleLayerToolMapForm.md#getmapobject)
-- [getNumberInput](BubbleLayerToolMapForm.md#getnumberinput)
-- [getSliderInput](BubbleLayerToolMapForm.md#getsliderinput)
-- [getTextInput](BubbleLayerToolMapForm.md#gettextinput)
-- [getTool](BubbleLayerToolMapForm.md#gettool)
-- [removeSelectItem](BubbleLayerToolMapForm.md#removeselectitem)
-- [setInputValues](BubbleLayerToolMapForm.md#setinputvalues)
-
 ## Constructors
 
-### constructor
+### new BubbleLayerToolMapForm()
 
-• **new BubbleLayerToolMapForm**(`tool`): [`BubbleLayerToolMapForm`](BubbleLayerToolMapForm.md)
+> **new BubbleLayerToolMapForm**(`tool`): [`BubbleLayerToolMapForm`](BubbleLayerToolMapForm.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `tool` | [`IBubbleLayerTool`](../interfaces/IBubbleLayerTool.md)\<[`IBubbleLayerToolProps`](../modules.md#ibubblelayertoolprops), [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md), [`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md)\<[`IBubbleLayerToolProps`](../modules.md#ibubblelayertoolprops), [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md), [`IBubbleLayerToolConfig`](../modules.md#ibubblelayertoolconfig), \{ `aggregation?`: `string` ; `bubbleSize?`: `number` ; `category?`: `string` ; `categoryColor?`: `string` ; `categoryColorOp?`: `string` ; `categoryColorValue?`: `string` ; `color?`: `string` ; `latitude?`: `string` ; `longitude?`: `string` ; `value?`: `string`  }, \{ `aggregation`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> ; `bubbleSize`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md)\> ; `category`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `categoryColor`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `categoryColorOp`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> ; `categoryColorValue`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `color`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `latitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `longitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `value`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>, [`IBubbleLayerToolConfig`](../modules.md#ibubblelayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IBubbleLayerToolConfig`](../modules.md#ibubblelayertoolconfig)\>\> |
+• **tool**: [`IBubbleLayerTool`](../interfaces/IBubbleLayerTool.md)\<[`IBubbleLayerToolProps`](../type-aliases/IBubbleLayerToolProps.md), [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md), [`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md)\<[`IBubbleLayerToolProps`](../type-aliases/IBubbleLayerToolProps.md), [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md), [`IBubbleLayerToolConfig`](../type-aliases/IBubbleLayerToolConfig.md), `object`, `object`\>, [`IBubbleLayerToolConfig`](../type-aliases/IBubbleLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IBubbleLayerToolConfig`](../type-aliases/IBubbleLayerToolConfig.md)\>\>
 
 #### Returns
 
@@ -79,136 +36,151 @@ Vladimir Korencik
 
 #### Overrides
 
-[MapLayerToolForm](MapLayerToolForm.md).[constructor](MapLayerToolForm.md#constructor)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`constructor`](MapLayerToolForm.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:51](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L51)
+[tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:51](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L51)
 
 ## Properties
 
 ### btnGroup
 
-• `Private` **btnGroup**: ``null`` \| `HTMLDivElement`
+> `private` **btnGroup**: `null` \| `HTMLDivElement`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:35](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L35)
+[tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:35](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L35)
 
-___
+***
 
 ### categoryColor
 
-• `Private` **categoryColor**: `HTMLDivElement`
+> `private` **categoryColor**: `HTMLDivElement`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:36](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L36)
+[tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:36](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L36)
 
-___
+***
 
-### categoryColorForm
+### categoryColorForm?
 
-• `Private` `Optional` **categoryColorForm**: `ICategoryColorForm`[]
+> `private` `optional` **categoryColorForm**: `ICategoryColorForm`[]
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:49](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L49)
+[tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:49](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L49)
 
-___
+***
 
-### categoryColorInputs
+### categoryColorInputs?
 
-• `Private` `Optional` **categoryColorInputs**: `ICategoryColorInputs`
+> `private` `optional` **categoryColorInputs**: `ICategoryColorInputs`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:48](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L48)
+[tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:48](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L48)
 
-___
+***
 
 ### htmlContent
 
-• `Private` **htmlContent**: `HTMLDivElement`
+> `private` **htmlContent**: `HTMLDivElement`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:33](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L33)
+[tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:33](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L33)
 
-___
+***
 
-### inputs
+### inputs?
 
-• `Private` `Optional` **inputs**: `Object`
+> `private` `optional` **inputs**: `object`
 
-#### Type declaration
+#### aggregation
 
-| Name | Type |
-| :------ | :------ |
-| `aggregation` | [`IMapFormInput`](../interfaces/IMapFormInput.md) |
-| `bubbleSize` | [`IMapFormInput`](../interfaces/IMapFormInput.md) |
-| `category` | [`IMapFormInput`](../interfaces/IMapFormInput.md) |
-| `color` | [`IMapFormInput`](../interfaces/IMapFormInput.md) |
-| `latitude` | [`IMapFormInput`](../interfaces/IMapFormInput.md) |
-| `longitude` | [`IMapFormInput`](../interfaces/IMapFormInput.md) |
-| `value` | [`IMapFormInput`](../interfaces/IMapFormInput.md) |
+> **aggregation**: [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### bubbleSize
 
-[src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:38](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L38)
+> **bubbleSize**: [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-___
+#### category
+
+> **category**: [`IMapFormInput`](../interfaces/IMapFormInput.md)
+
+#### color
+
+> **color**: [`IMapFormInput`](../interfaces/IMapFormInput.md)
+
+#### latitude
+
+> **latitude**: [`IMapFormInput`](../interfaces/IMapFormInput.md)
+
+#### longitude
+
+> **longitude**: [`IMapFormInput`](../interfaces/IMapFormInput.md)
+
+#### value
+
+> **value**: [`IMapFormInput`](../interfaces/IMapFormInput.md)
+
+#### Source
+
+[tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:38](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L38)
+
+***
 
 ### tool
 
-• `Private` **tool**: [`IBubbleLayerTool`](../interfaces/IBubbleLayerTool.md)\<[`IBubbleLayerToolProps`](../modules.md#ibubblelayertoolprops), [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md), [`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md)\<[`IBubbleLayerToolProps`](../modules.md#ibubblelayertoolprops), [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md), [`IBubbleLayerToolConfig`](../modules.md#ibubblelayertoolconfig), \{ `aggregation?`: `string` ; `bubbleSize?`: `number` ; `category?`: `string` ; `categoryColor?`: `string` ; `categoryColorOp?`: `string` ; `categoryColorValue?`: `string` ; `color?`: `string` ; `latitude?`: `string` ; `longitude?`: `string` ; `value?`: `string`  }, \{ `aggregation`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> ; `bubbleSize`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md)\> ; `category`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `categoryColor`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `categoryColorOp`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> ; `categoryColorValue`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `color`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `latitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `longitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `value`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>, [`IBubbleLayerToolConfig`](../modules.md#ibubblelayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IBubbleLayerToolConfig`](../modules.md#ibubblelayertoolconfig)\>\>
+> `private` **tool**: [`IBubbleLayerTool`](../interfaces/IBubbleLayerTool.md)\<[`IBubbleLayerToolProps`](../type-aliases/IBubbleLayerToolProps.md), [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md), [`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md)\<[`IBubbleLayerToolProps`](../type-aliases/IBubbleLayerToolProps.md), [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md), [`IBubbleLayerToolConfig`](../type-aliases/IBubbleLayerToolConfig.md), `object`, `object`\>, [`IBubbleLayerToolConfig`](../type-aliases/IBubbleLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IBubbleLayerToolConfig`](../type-aliases/IBubbleLayerToolConfig.md)\>\>
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:34](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L34)
+[tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:34](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L34)
 
 ## Methods
 
-### addSelectItem
+### addSelectItem()
 
-▸ **addSelectItem**(): `void`
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-[src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:125](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L125)
-
-___
-
-### applyFilters
-
-▸ **applyFilters**(): `void`
+> `private` **addSelectItem**(): `void`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:180](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L180)
+[tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:125](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L125)
 
-___
+***
 
-### getAutocompleteInput
+### applyFilters()
 
-▸ **getAutocompleteInput**(`dimension`, `formAction?`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> `private` **applyFilters**(): `void`
+
+#### Returns
+
+`void`
+
+#### Source
+
+[tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:180](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L180)
+
+***
+
+### getAutocompleteInput()
+
+> `protected` **getAutocompleteInput**(`dimension`, `formAction`?): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 Help method which returns a new universal autocomplete input for the any map domain dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDomain`](../interfaces/IMapDomain.md)\> |
-| `formAction?` | (`ev`: `Event`) => `void` |
+• **dimension**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDomain`](../interfaces/IMapDomain.md)\>
+
+• **formAction?**
 
 #### Returns
 
@@ -216,40 +188,39 @@ Help method which returns a new universal autocomplete input for the any map dom
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getAutocompleteInput](MapLayerToolForm.md#getautocompleteinput)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getAutocompleteInput`](MapLayerToolForm.md#getautocompleteinput)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapLayerToolForm.ts:43](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapLayerToolForm.ts#L43)
+[model/internal/form/MapLayerToolForm.ts:43](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapLayerToolForm.ts#L43)
 
-___
+***
 
-### getCategoryColorContent
+### getCategoryColorContent()
 
-▸ **getCategoryColorContent**(): `HTMLDivElement`
+> `private` **getCategoryColorContent**(): `HTMLDivElement`
 
 #### Returns
 
 `HTMLDivElement`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:207](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L207)
+[tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:207](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L207)
 
-___
+***
 
-### getCheckboxInput
+### getCheckboxInput()
 
-▸ **getCheckboxInput**(`dimension`, `formAction?`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> `protected` **getCheckboxInput**(`dimension`, `formAction`?): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 Help method which returns a new universal checkbox input for the any map boolean dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\> |
-| `formAction?` | (`ev`: `Event`) => `void` |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\>
+
+• **formAction?**
 
 #### Returns
 
@@ -257,26 +228,25 @@ Help method which returns a new universal checkbox input for the any map boolean
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getCheckboxInput](MapLayerToolForm.md#getcheckboxinput)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getCheckboxInput`](MapLayerToolForm.md#getcheckboxinput)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapLayerToolForm.ts:78](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapLayerToolForm.ts#L78)
+[model/internal/form/MapLayerToolForm.ts:78](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapLayerToolForm.ts#L78)
 
-___
+***
 
-### getColorInput
+### getColorInput()
 
-▸ **getColorInput**(`dimension`, `formAction?`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> `protected` **getColorInput**(`dimension`, `formAction`?): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 Help method which returns a new universal color input for the any map string dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `formAction?` | (`ev`: `Event`) => `void` |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+• **formAction?**
 
 #### Returns
 
@@ -284,17 +254,17 @@ Help method which returns a new universal color input for the any map string dim
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getColorInput](MapLayerToolForm.md#getcolorinput)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getColorInput`](MapLayerToolForm.md#getcolorinput)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapLayerToolForm.ts:96](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapLayerToolForm.ts#L96)
+[model/internal/form/MapLayerToolForm.ts:96](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapLayerToolForm.ts#L96)
 
-___
+***
 
-### getContent
+### getContent()
 
-▸ **getContent**(): `HTMLDivElement`
+> **getContent**(): `HTMLDivElement`
 
 It returns a HTML div element conatining the form.
 
@@ -304,248 +274,227 @@ It returns a HTML div element conatining the form.
 
 #### Implementation of
 
-[IMapForm](../interfaces/IMapForm.md).[getContent](../interfaces/IMapForm.md#getcontent)
+[`IMapForm`](../interfaces/IMapForm.md).[`getContent`](../interfaces/IMapForm.md#getcontent)
 
 #### Overrides
 
-[MapLayerToolForm](MapLayerToolForm.md).[getContent](MapLayerToolForm.md#getcontent)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getContent`](MapLayerToolForm.md#getcontent)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:90](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L90)
+[tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:90](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L90)
 
-___
+***
 
-### getInputAggregation
+### getInputAggregation()
 
-▸ **getInputAggregation**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputAggregation**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> |
+• **dimension**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:269](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L269)
+[tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:269](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L269)
 
-___
+***
 
-### getInputBubbleSize
+### getInputBubbleSize()
 
-▸ **getInputBubbleSize**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputBubbleSize**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md)\> |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md)\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:279](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L279)
+[tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:279](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L279)
 
-___
+***
 
-### getInputCategory
+### getInputCategory()
 
-▸ **getInputCategory**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputCategory**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
+• **dimension**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:257](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L257)
+[tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:257](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L257)
 
-___
+***
 
-### getInputCategoryColor
+### getInputCategoryColor()
 
-▸ **getInputCategoryColor**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputCategoryColor**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:295](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L295)
+[tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:295](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L295)
 
-___
+***
 
-### getInputCategoryColorOperation
+### getInputCategoryColorOperation()
 
-▸ **getInputCategoryColorOperation**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputCategoryColorOperation**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> |
+• **dimension**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:285](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L285)
+[tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:285](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L285)
 
-___
+***
 
-### getInputCategoryColorValue
+### getInputCategoryColorValue()
 
-▸ **getInputCategoryColorValue**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputCategoryColorValue**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:290](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L290)
+[tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:290](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L290)
 
-___
+***
 
-### getInputColor
+### getInputColor()
 
-▸ **getInputColor**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputColor**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:275](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L275)
+[tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:275](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L275)
 
-___
+***
 
-### getInputLatitude
+### getInputLatitude()
 
-▸ **getInputLatitude**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputLatitude**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
+• **dimension**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:245](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L245)
+[tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:245](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L245)
 
-___
+***
 
-### getInputLongtitude
+### getInputLongtitude()
 
-▸ **getInputLongtitude**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputLongtitude**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
+• **dimension**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:251](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L251)
+[tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:251](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L251)
 
-___
+***
 
-### getInputValue
+### getInputValue()
 
-▸ **getInputValue**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputValue**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
+• **dimension**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:263](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L263)
+[tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:263](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L263)
 
-___
+***
 
-### getMapObject
+### getMapObject()
 
-▸ **getMapObject**(): [`IBubbleLayerTool`](../interfaces/IBubbleLayerTool.md)\<[`IBubbleLayerToolProps`](../modules.md#ibubblelayertoolprops), [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md), [`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md)\<[`IBubbleLayerToolProps`](../modules.md#ibubblelayertoolprops), [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md), [`IBubbleLayerToolConfig`](../modules.md#ibubblelayertoolconfig), \{ `aggregation?`: `string` ; `bubbleSize?`: `number` ; `category?`: `string` ; `categoryColor?`: `string` ; `categoryColorOp?`: `string` ; `categoryColorValue?`: `string` ; `color?`: `string` ; `latitude?`: `string` ; `longitude?`: `string` ; `value?`: `string`  }, \{ `aggregation`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> ; `bubbleSize`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md)\> ; `category`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `categoryColor`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `categoryColorOp`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> ; `categoryColorValue`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `color`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `latitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `longitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `value`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>, [`IBubbleLayerToolConfig`](../modules.md#ibubblelayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IBubbleLayerToolConfig`](../modules.md#ibubblelayertoolconfig)\>\>
+> `protected` **getMapObject**(): [`IBubbleLayerTool`](../interfaces/IBubbleLayerTool.md)\<[`IBubbleLayerToolProps`](../type-aliases/IBubbleLayerToolProps.md), [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md), [`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md)\<[`IBubbleLayerToolProps`](../type-aliases/IBubbleLayerToolProps.md), [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md), [`IBubbleLayerToolConfig`](../type-aliases/IBubbleLayerToolConfig.md), `object`, `object`\>, [`IBubbleLayerToolConfig`](../type-aliases/IBubbleLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IBubbleLayerToolConfig`](../type-aliases/IBubbleLayerToolConfig.md)\>\>
 
 #### Returns
 
-[`IBubbleLayerTool`](../interfaces/IBubbleLayerTool.md)\<[`IBubbleLayerToolProps`](../modules.md#ibubblelayertoolprops), [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md), [`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md)\<[`IBubbleLayerToolProps`](../modules.md#ibubblelayertoolprops), [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md), [`IBubbleLayerToolConfig`](../modules.md#ibubblelayertoolconfig), \{ `aggregation?`: `string` ; `bubbleSize?`: `number` ; `category?`: `string` ; `categoryColor?`: `string` ; `categoryColorOp?`: `string` ; `categoryColorValue?`: `string` ; `color?`: `string` ; `latitude?`: `string` ; `longitude?`: `string` ; `value?`: `string`  }, \{ `aggregation`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> ; `bubbleSize`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md)\> ; `category`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `categoryColor`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `categoryColorOp`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> ; `categoryColorValue`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `color`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `latitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `longitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `value`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>, [`IBubbleLayerToolConfig`](../modules.md#ibubblelayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IBubbleLayerToolConfig`](../modules.md#ibubblelayertoolconfig)\>\>
+[`IBubbleLayerTool`](../interfaces/IBubbleLayerTool.md)\<[`IBubbleLayerToolProps`](../type-aliases/IBubbleLayerToolProps.md), [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md), [`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md)\<[`IBubbleLayerToolProps`](../type-aliases/IBubbleLayerToolProps.md), [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md), [`IBubbleLayerToolConfig`](../type-aliases/IBubbleLayerToolConfig.md), `object`, `object`\>, [`IBubbleLayerToolConfig`](../type-aliases/IBubbleLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IBubbleLayerToolConfig`](../type-aliases/IBubbleLayerToolConfig.md)\>\>
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getMapObject](MapLayerToolForm.md#getmapobject)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getMapObject`](MapLayerToolForm.md#getmapobject)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapObjectForm.ts:16](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapObjectForm.ts#L16)
+[model/internal/form/MapObjectForm.ts:16](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapObjectForm.ts#L16)
 
-___
+***
 
-### getNumberInput
+### getNumberInput()
 
-▸ **getNumberInput**(`dimension`, `formAction?`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> `protected` **getNumberInput**(`dimension`, `formAction`?): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 Help method which returns a new universal number input for the any map number dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> |
-| `formAction?` | (`ev`: `Event`) => `void` |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
+
+• **formAction?**
 
 #### Returns
 
@@ -553,26 +502,25 @@ Help method which returns a new universal number input for the any map number di
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getNumberInput](MapLayerToolForm.md#getnumberinput)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getNumberInput`](MapLayerToolForm.md#getnumberinput)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapLayerToolForm.ts:133](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapLayerToolForm.ts#L133)
+[model/internal/form/MapLayerToolForm.ts:133](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapLayerToolForm.ts#L133)
 
-___
+***
 
-### getSliderInput
+### getSliderInput()
 
-▸ **getSliderInput**(`dimension`, `formAction?`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> `protected` **getSliderInput**(`dimension`, `formAction`?): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 Help method which returns a new universal slider input for the any map range integer dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md)\> |
-| `formAction?` | (`ev`: `Event`) => `void` |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md)\>
+
+• **formAction?**
 
 #### Returns
 
@@ -580,26 +528,25 @@ Help method which returns a new universal slider input for the any map range int
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getSliderInput](MapLayerToolForm.md#getsliderinput)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getSliderInput`](MapLayerToolForm.md#getsliderinput)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapLayerToolForm.ts:113](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapLayerToolForm.ts#L113)
+[model/internal/form/MapLayerToolForm.ts:113](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapLayerToolForm.ts#L113)
 
-___
+***
 
-### getTextInput
+### getTextInput()
 
-▸ **getTextInput**(`dimension`, `formAction?`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> `protected` **getTextInput**(`dimension`, `formAction`?): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 Help method which returns a new universal text input for the any map domain dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `formAction?` | (`ev`: `Event`) => `void` |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+• **formAction?**
 
 #### Returns
 
@@ -607,69 +554,75 @@ Help method which returns a new universal text input for the any map domain dime
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getTextInput](MapLayerToolForm.md#gettextinput)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getTextInput`](MapLayerToolForm.md#gettextinput)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapLayerToolForm.ts:61](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapLayerToolForm.ts#L61)
+[model/internal/form/MapLayerToolForm.ts:61](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapLayerToolForm.ts#L61)
 
-___
+***
 
-### getTool
+### getTool()
 
-▸ **getTool**(): [`IBubbleLayerTool`](../interfaces/IBubbleLayerTool.md)\<[`IBubbleLayerToolProps`](../modules.md#ibubblelayertoolprops), [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md), [`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md)\<[`IBubbleLayerToolProps`](../modules.md#ibubblelayertoolprops), [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md), [`IBubbleLayerToolConfig`](../modules.md#ibubblelayertoolconfig), \{ `aggregation?`: `string` ; `bubbleSize?`: `number` ; `category?`: `string` ; `categoryColor?`: `string` ; `categoryColorOp?`: `string` ; `categoryColorValue?`: `string` ; `color?`: `string` ; `latitude?`: `string` ; `longitude?`: `string` ; `value?`: `string`  }, \{ `aggregation`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> ; `bubbleSize`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md)\> ; `category`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `categoryColor`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `categoryColorOp`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> ; `categoryColorValue`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `color`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `latitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `longitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `value`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>, [`IBubbleLayerToolConfig`](../modules.md#ibubblelayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IBubbleLayerToolConfig`](../modules.md#ibubblelayertoolconfig)\>\>
+> **getTool**(): [`IBubbleLayerTool`](../interfaces/IBubbleLayerTool.md)\<[`IBubbleLayerToolProps`](../type-aliases/IBubbleLayerToolProps.md), [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md), [`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md)\<[`IBubbleLayerToolProps`](../type-aliases/IBubbleLayerToolProps.md), [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md), [`IBubbleLayerToolConfig`](../type-aliases/IBubbleLayerToolConfig.md), `object`, `object`\>, [`IBubbleLayerToolConfig`](../type-aliases/IBubbleLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IBubbleLayerToolConfig`](../type-aliases/IBubbleLayerToolConfig.md)\>\>
 
 #### Returns
 
-[`IBubbleLayerTool`](../interfaces/IBubbleLayerTool.md)\<[`IBubbleLayerToolProps`](../modules.md#ibubblelayertoolprops), [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md), [`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md)\<[`IBubbleLayerToolProps`](../modules.md#ibubblelayertoolprops), [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md), [`IBubbleLayerToolConfig`](../modules.md#ibubblelayertoolconfig), \{ `aggregation?`: `string` ; `bubbleSize?`: `number` ; `category?`: `string` ; `categoryColor?`: `string` ; `categoryColorOp?`: `string` ; `categoryColorValue?`: `string` ; `color?`: `string` ; `latitude?`: `string` ; `longitude?`: `string` ; `value?`: `string`  }, \{ `aggregation`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> ; `bubbleSize`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md)\> ; `category`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `categoryColor`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `categoryColorOp`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> ; `categoryColorValue`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `color`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `latitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `longitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `value`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>, [`IBubbleLayerToolConfig`](../modules.md#ibubblelayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IBubbleLayerToolConfig`](../modules.md#ibubblelayertoolconfig)\>\>
+[`IBubbleLayerTool`](../interfaces/IBubbleLayerTool.md)\<[`IBubbleLayerToolProps`](../type-aliases/IBubbleLayerToolProps.md), [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md), [`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md)\<[`IBubbleLayerToolProps`](../type-aliases/IBubbleLayerToolProps.md), [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md), [`IBubbleLayerToolConfig`](../type-aliases/IBubbleLayerToolConfig.md), `object`, `object`\>, [`IBubbleLayerToolConfig`](../type-aliases/IBubbleLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IBubbleLayerToolConfig`](../type-aliases/IBubbleLayerToolConfig.md)\>\>
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:59](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L59)
+[tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:59](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L59)
 
-___
+***
 
-### removeSelectItem
+### removeSelectItem()
 
-▸ **removeSelectItem**(`e`): `void`
+> `private` **removeSelectItem**(`e`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `e` | `MouseEvent` |
+• **e**: `MouseEvent`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:166](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L166)
+[tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:166](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L166)
 
-___
+***
 
-### setInputValues
+### setInputValues()
 
-▸ **setInputValues**(`dimensions`): `void`
+> **setInputValues**(`dimensions`): `void`
 
 It updates selected input values according to the given dimensions.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimensions` | `Object` |
-| `dimensions.aggregation` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> |
-| `dimensions.bubbleSize` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md)\> |
-| `dimensions.category` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `dimensions.categoryColor` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `dimensions.categoryColorOp` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> |
-| `dimensions.categoryColorValue` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `dimensions.color` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `dimensions.latitude` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `dimensions.longitude` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `dimensions.value` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
+• **dimensions**
+
+• **dimensions.aggregation**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\>
+
+• **dimensions.bubbleSize**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md)\>
+
+• **dimensions.category**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+• **dimensions.categoryColor**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+• **dimensions.categoryColorOp**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\>
+
+• **dimensions.categoryColorValue**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+• **dimensions.color**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+• **dimensions.latitude**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+• **dimensions.longitude**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+• **dimensions.value**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Returns
 
@@ -677,8 +630,8 @@ It updates selected input values according to the given dimensions.
 
 #### Overrides
 
-[MapLayerToolForm](MapLayerToolForm.md).[setInputValues](MapLayerToolForm.md#setinputvalues)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`setInputValues`](MapLayerToolForm.md#setinputvalues)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:63](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L63)
+[tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts:63](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/form/BubbleLayerToolMapForm.ts#L63)

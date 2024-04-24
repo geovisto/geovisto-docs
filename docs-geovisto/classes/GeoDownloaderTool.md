@@ -1,4 +1,8 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / GeoDownloaderTool
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / GeoDownloaderTool
 
 # Class: GeoDownloaderTool
 
@@ -7,66 +11,28 @@ Tool providing basic user interface for downloading GeoJSON objects from Overpas
 Objects can be downloaded for more than one administrative level of country. 
 Can be also used for generating hierarchy definition in case of downloading polygons.
 
-**`Author`**
+## Author
 
 Vojtěch Malý
 
-## Hierarchy
+## Extends
 
 - [`MapTool`](MapTool.md)
-
-  ↳ **`GeoDownloaderTool`**
 
 ## Implements
 
 - [`IMapFormControl`](../interfaces/IMapFormControl.md)
 - [`IGeoDownloaderTool`](../interfaces/IGeoDownloaderTool.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](GeoDownloaderTool.md#constructor)
-
-### Properties
-
-- [mapForm](GeoDownloaderTool.md#mapform)
-
-### Methods
-
-- [changeForm](GeoDownloaderTool.md#changeform)
-- [copy](GeoDownloaderTool.md#copy)
-- [create](GeoDownloaderTool.md#create)
-- [createDefaults](GeoDownloaderTool.md#createdefaults)
-- [createMapForm](GeoDownloaderTool.md#createmapform)
-- [createState](GeoDownloaderTool.md#createstate)
-- [getAPIGetter](GeoDownloaderTool.md#getapigetter)
-- [getDefaults](GeoDownloaderTool.md#getdefaults)
-- [getId](GeoDownloaderTool.md#getid)
-- [getMap](GeoDownloaderTool.md#getmap)
-- [getMapForm](GeoDownloaderTool.md#getmapform)
-- [getProps](GeoDownloaderTool.md#getprops)
-- [getState](GeoDownloaderTool.md#getstate)
-- [getType](GeoDownloaderTool.md#gettype)
-- [handleEvent](GeoDownloaderTool.md#handleevent)
-- [initialize](GeoDownloaderTool.md#initialize)
-- [isEnabled](GeoDownloaderTool.md#isenabled)
-- [isSingleton](GeoDownloaderTool.md#issingleton)
-- [setEnabled](GeoDownloaderTool.md#setenabled)
-- [setProps](GeoDownloaderTool.md#setprops)
-- [switchEnabled](GeoDownloaderTool.md#switchenabled)
-
 ## Constructors
 
-### constructor
+### new GeoDownloaderTool()
 
-• **new GeoDownloaderTool**(`props?`): [`GeoDownloaderTool`](GeoDownloaderTool.md)
+> **new GeoDownloaderTool**(`props`?): [`GeoDownloaderTool`](GeoDownloaderTool.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `props?` | [`IMapToolProps`](../modules.md#imaptoolprops) |
+• **props?**: [`IMapToolProps`](../type-aliases/IMapToolProps.md)
 
 #### Returns
 
@@ -74,27 +40,27 @@ Vojtěch Malý
 
 #### Overrides
 
-[MapTool](MapTool.md).[constructor](MapTool.md#constructor)
+[`MapTool`](MapTool.md).[`constructor`](MapTool.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts:28](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts#L28)
+[tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts:28](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts#L28)
 
 ## Properties
 
 ### mapForm
 
-• `Private` **mapForm**: [`GeoDownloaderToolMapForm`](GeoDownloaderToolMapForm.md)
+> `private` **mapForm**: [`GeoDownloaderToolMapForm`](GeoDownloaderToolMapForm.md)
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts:26](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts#L26)
+[tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts:26](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts#L26)
 
 ## Methods
 
-### changeForm
+### changeForm()
 
-▸ **changeForm**(): `void`
+> `private` **changeForm**(): `void`
 
 Update displayed zoom level in form.
 
@@ -102,15 +68,15 @@ Update displayed zoom level in form.
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts:78](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts#L78)
+[tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts:78](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts#L78)
 
-___
+***
 
-### copy
+### copy()
 
-▸ **copy**(): [`IGeoDownloaderTool`](../interfaces/IGeoDownloaderTool.md)
+> **copy**(): [`IGeoDownloaderTool`](../interfaces/IGeoDownloaderTool.md)
 
 It creates copy of the uninitialized tool.
 
@@ -120,21 +86,21 @@ It creates copy of the uninitialized tool.
 
 #### Implementation of
 
-[IGeoDownloaderTool](../interfaces/IGeoDownloaderTool.md).[copy](../interfaces/IGeoDownloaderTool.md#copy)
+[`IGeoDownloaderTool`](../interfaces/IGeoDownloaderTool.md).[`copy`](../interfaces/IGeoDownloaderTool.md#copy)
 
 #### Overrides
 
-[MapTool](MapTool.md).[copy](MapTool.md#copy)
+[`MapTool`](MapTool.md).[`copy`](MapTool.md#copy)
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts:63](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts#L63)
+[tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts:63](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts#L63)
 
-___
+***
 
-### create
+### create()
 
-▸ **create**(): `this`
+> **create**(): `this`
 
 It creates a tool.
 
@@ -144,21 +110,21 @@ It creates a tool.
 
 #### Implementation of
 
-[IGeoDownloaderTool](../interfaces/IGeoDownloaderTool.md).[create](../interfaces/IGeoDownloaderTool.md#create)
+[`IGeoDownloaderTool`](../interfaces/IGeoDownloaderTool.md).[`create`](../interfaces/IGeoDownloaderTool.md#create)
 
 #### Overrides
 
-[MapTool](MapTool.md).[create](MapTool.md#create)
+[`MapTool`](MapTool.md).[`create`](MapTool.md#create)
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts:67](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts#L67)
+[tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts:67](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts#L67)
 
-___
+***
 
-### createDefaults
+### createDefaults()
 
-▸ **createDefaults**(): [`IGeoDownloaderToolDefaults`](../interfaces/IGeoDownloaderToolDefaults.md)
+> **createDefaults**(): [`IGeoDownloaderToolDefaults`](../interfaces/IGeoDownloaderToolDefaults.md)
 
 It creates new defaults of the tool.
 
@@ -168,75 +134,75 @@ It creates new defaults of the tool.
 
 #### Overrides
 
-[MapTool](MapTool.md).[createDefaults](MapTool.md#createdefaults)
+[`MapTool`](MapTool.md).[`createDefaults`](MapTool.md#createdefaults)
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts:43](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts#L43)
+[tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts:43](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts#L43)
 
-___
+***
 
-### createMapForm
+### createMapForm()
 
-▸ **createMapForm**(): [`IMapForm`](../interfaces/IMapForm.md)
+> `protected` **createMapForm**(): [`IMapForm`](../interfaces/IMapForm.md)
 
 #### Returns
 
 [`IMapForm`](../interfaces/IMapForm.md)
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts:47](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts#L47)
+[tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts:47](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts#L47)
 
-___
+***
 
-### createState
+### createState()
 
-▸ **createState**(): [`IGeoDownloaderToolState`](../modules.md#igeodownloadertoolstate)
+> **createState**(): [`IGeoDownloaderToolState`](../type-aliases/IGeoDownloaderToolState.md)
 
 It creates new defaults of the tool.
 
 #### Returns
 
-[`IGeoDownloaderToolState`](../modules.md#igeodownloadertoolstate)
+[`IGeoDownloaderToolState`](../type-aliases/IGeoDownloaderToolState.md)
 
 #### Overrides
 
-[MapTool](MapTool.md).[createState](MapTool.md#createstate)
+[`MapTool`](MapTool.md).[`createState`](MapTool.md#createstate)
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts:59](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts#L59)
+[tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts:59](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts#L59)
 
-___
+***
 
-### getAPIGetter
+### getAPIGetter()
 
-▸ **getAPIGetter**(): `undefined` \| [`IMapToolAPIGetter`](../modules.md#imaptoolapigetter)
+> **getAPIGetter**(): `undefined` \| [`IMapToolAPIGetter`](../type-aliases/IMapToolAPIGetter.md)
 
 It returns the tool API
 
 #### Returns
 
-`undefined` \| [`IMapToolAPIGetter`](../modules.md#imaptoolapigetter)
+`undefined` \| [`IMapToolAPIGetter`](../type-aliases/IMapToolAPIGetter.md)
 
 #### Implementation of
 
-[IGeoDownloaderTool](../interfaces/IGeoDownloaderTool.md).[getAPIGetter](../interfaces/IGeoDownloaderTool.md#getapigetter)
+[`IGeoDownloaderTool`](../interfaces/IGeoDownloaderTool.md).[`getAPIGetter`](../interfaces/IGeoDownloaderTool.md#getapigetter)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[getAPIGetter](MapTool.md#getapigetter)
+[`MapTool`](MapTool.md).[`getAPIGetter`](MapTool.md#getapigetter)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:74](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L74)
+[model/internal/tool/MapTool.ts:74](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L74)
 
-___
+***
 
-### getDefaults
+### getDefaults()
 
-▸ **getDefaults**(): [`IGeoDownloaderToolDefaults`](../interfaces/IGeoDownloaderToolDefaults.md)
+> **getDefaults**(): [`IGeoDownloaderToolDefaults`](../interfaces/IGeoDownloaderToolDefaults.md)
 
 It returns default values of the state properties.
 
@@ -246,21 +212,21 @@ It returns default values of the state properties.
 
 #### Implementation of
 
-[IGeoDownloaderTool](../interfaces/IGeoDownloaderTool.md).[getDefaults](../interfaces/IGeoDownloaderTool.md#getdefaults)
+[`IGeoDownloaderTool`](../interfaces/IGeoDownloaderTool.md).[`getDefaults`](../interfaces/IGeoDownloaderTool.md#getdefaults)
 
 #### Overrides
 
-[MapTool](MapTool.md).[getDefaults](MapTool.md#getdefaults)
+[`MapTool`](MapTool.md).[`getDefaults`](MapTool.md#getdefaults)
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts:39](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts#L39)
+[tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts:39](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts#L39)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 Help function which returns the id of the object.
 
@@ -270,21 +236,21 @@ Help function which returns the id of the object.
 
 #### Implementation of
 
-[IGeoDownloaderTool](../interfaces/IGeoDownloaderTool.md).[getId](../interfaces/IGeoDownloaderTool.md#getid)
+[`IGeoDownloaderTool`](../interfaces/IGeoDownloaderTool.md).[`getId`](../interfaces/IGeoDownloaderTool.md#getid)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[getId](MapTool.md#getid)
+[`MapTool`](MapTool.md).[`getId`](MapTool.md#getid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObject.ts:93](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObject.ts#L93)
+[model/internal/object/MapObject.ts:93](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObject.ts#L93)
 
-___
+***
 
-### getMap
+### getMap()
 
-▸ **getMap**(): `undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+> **getMap**(): `undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 Help function returns map which uses this tool.
 
@@ -292,25 +258,25 @@ Do not override this function. Use the state class instead.
 
 #### Returns
 
-`undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+`undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Implementation of
 
-[IGeoDownloaderTool](../interfaces/IGeoDownloaderTool.md).[getMap](../interfaces/IGeoDownloaderTool.md#getmap)
+[`IGeoDownloaderTool`](../interfaces/IGeoDownloaderTool.md).[`getMap`](../interfaces/IGeoDownloaderTool.md#getmap)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[getMap](MapTool.md#getmap)
+[`MapTool`](MapTool.md).[`getMap`](MapTool.md#getmap)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:112](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L112)
+[model/internal/tool/MapTool.ts:112](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L112)
 
-___
+***
 
-### getMapForm
+### getMapForm()
 
-▸ **getMapForm**(): [`IMapForm`](../interfaces/IMapForm.md)
+> **getMapForm**(): [`IMapForm`](../interfaces/IMapForm.md)
 
 It returns a map control.
 
@@ -320,65 +286,65 @@ It returns a map control.
 
 #### Implementation of
 
-[IMapFormControl](../interfaces/IMapFormControl.md).[getMapForm](../interfaces/IMapFormControl.md#getmapform)
+[`IMapFormControl`](../interfaces/IMapFormControl.md).[`getMapForm`](../interfaces/IMapFormControl.md#getmapform)
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts#L32)
+[tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts#L32)
 
-___
+***
 
-### getProps
+### getProps()
 
-▸ **getProps**(): [`IMapToolProps`](../modules.md#imaptoolprops)
+> **getProps**(): [`IMapToolProps`](../type-aliases/IMapToolProps.md)
 
 Help function which returns the props given by the programmer.
 
 #### Returns
 
-[`IMapToolProps`](../modules.md#imaptoolprops)
+[`IMapToolProps`](../type-aliases/IMapToolProps.md)
 
 #### Implementation of
 
-[IGeoDownloaderTool](../interfaces/IGeoDownloaderTool.md).[getProps](../interfaces/IGeoDownloaderTool.md#getprops)
+[`IGeoDownloaderTool`](../interfaces/IGeoDownloaderTool.md).[`getProps`](../interfaces/IGeoDownloaderTool.md#getprops)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[getProps](MapTool.md#getprops)
+[`MapTool`](MapTool.md).[`getProps`](MapTool.md#getprops)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:39](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L39)
+[model/internal/tool/MapTool.ts:39](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L39)
 
-___
+***
 
-### getState
+### getState()
 
-▸ **getState**(): [`IGeoDownloaderToolState`](../modules.md#igeodownloadertoolstate)
+> **getState**(): [`IGeoDownloaderToolState`](../type-aliases/IGeoDownloaderToolState.md)
 
 It returns the map object state.
 
 #### Returns
 
-[`IGeoDownloaderToolState`](../modules.md#igeodownloadertoolstate)
+[`IGeoDownloaderToolState`](../type-aliases/IGeoDownloaderToolState.md)
 
 #### Implementation of
 
-[IGeoDownloaderTool](../interfaces/IGeoDownloaderTool.md).[getState](../interfaces/IGeoDownloaderTool.md#getstate)
+[`IGeoDownloaderTool`](../interfaces/IGeoDownloaderTool.md).[`getState`](../interfaces/IGeoDownloaderTool.md#getstate)
 
 #### Overrides
 
-[MapTool](MapTool.md).[getState](MapTool.md#getstate)
+[`MapTool`](MapTool.md).[`getState`](MapTool.md#getstate)
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts:55](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts#L55)
+[tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts:55](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts#L55)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 Help function which returns the type of the object.
 
@@ -388,21 +354,21 @@ Help function which returns the type of the object.
 
 #### Implementation of
 
-[IGeoDownloaderTool](../interfaces/IGeoDownloaderTool.md).[getType](../interfaces/IGeoDownloaderTool.md#gettype)
+[`IGeoDownloaderTool`](../interfaces/IGeoDownloaderTool.md).[`getType`](../interfaces/IGeoDownloaderTool.md#gettype)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[getType](MapTool.md#gettype)
+[`MapTool`](MapTool.md).[`getType`](MapTool.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObject.ts:86](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObject.ts#L86)
+[model/internal/object/MapObject.ts:86](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObject.ts#L86)
 
-___
+***
 
-### handleEvent
+### handleEvent()
 
-▸ **handleEvent**(`event`): `void`
+> **handleEvent**(`event`): `void`
 
 This function is called when a custom event is invoked.
 
@@ -410,9 +376,7 @@ Override this function, if needed.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `event` | [`IMapEvent`](../interfaces/IMapEvent.md)\<[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>\> |
+• **event**: [`IMapEvent`](../interfaces/IMapEvent.md)\<[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>\>
 
 #### Returns
 
@@ -420,17 +384,17 @@ Override this function, if needed.
 
 #### Inherited from
 
-[MapTool](MapTool.md).[handleEvent](MapTool.md#handleevent)
+[`MapTool`](MapTool.md).[`handleEvent`](MapTool.md#handleevent)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:171](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L171)
+[model/internal/tool/MapTool.ts:171](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L171)
 
-___
+***
 
-### initialize
+### initialize()
 
-▸ **initialize**(`initProps`): `this`
+> **initialize**(`initProps`): `this`
 
 It initializes the state of the object.
 It processes the serialized config and sets further objects.
@@ -440,9 +404,7 @@ since the object can be created before the Geovisto map is created.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `initProps` | [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\> |
+• **initProps**: [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>
 
 #### Returns
 
@@ -450,21 +412,21 @@ since the object can be created before the Geovisto map is created.
 
 #### Implementation of
 
-[IGeoDownloaderTool](../interfaces/IGeoDownloaderTool.md).[initialize](../interfaces/IGeoDownloaderTool.md#initialize)
+[`IGeoDownloaderTool`](../interfaces/IGeoDownloaderTool.md).[`initialize`](../interfaces/IGeoDownloaderTool.md#initialize)
 
 #### Overrides
 
-[MapTool](MapTool.md).[initialize](MapTool.md#initialize)
+[`MapTool`](MapTool.md).[`initialize`](MapTool.md#initialize)
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts:51](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts#L51)
+[tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts:51](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts#L51)
 
-___
+***
 
-### isEnabled
+### isEnabled()
 
-▸ **isEnabled**(): `boolean`
+> **isEnabled**(): `boolean`
 
 Help getter which returns enabled property of state.
 
@@ -476,21 +438,21 @@ Do not override this function. Use the state class instead.
 
 #### Implementation of
 
-[IGeoDownloaderTool](../interfaces/IGeoDownloaderTool.md).[isEnabled](../interfaces/IGeoDownloaderTool.md#isenabled)
+[`IGeoDownloaderTool`](../interfaces/IGeoDownloaderTool.md).[`isEnabled`](../interfaces/IGeoDownloaderTool.md#isenabled)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[isEnabled](MapTool.md#isenabled)
+[`MapTool`](MapTool.md).[`isEnabled`](MapTool.md#isenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:130](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L130)
+[model/internal/tool/MapTool.ts:130](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L130)
 
-___
+***
 
-### isSingleton
+### isSingleton()
 
-▸ **isSingleton**(): `boolean`
+> **isSingleton**(): `boolean`
 
 Help getter which returns a logtical value whether the tool type is singleton.
 
@@ -500,30 +462,28 @@ Help getter which returns a logtical value whether the tool type is singleton.
 
 #### Implementation of
 
-[IGeoDownloaderTool](../interfaces/IGeoDownloaderTool.md).[isSingleton](../interfaces/IGeoDownloaderTool.md#issingleton)
+[`IGeoDownloaderTool`](../interfaces/IGeoDownloaderTool.md).[`isSingleton`](../interfaces/IGeoDownloaderTool.md#issingleton)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[isSingleton](MapTool.md#issingleton)
+[`MapTool`](MapTool.md).[`isSingleton`](MapTool.md#issingleton)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:81](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L81)
+[model/internal/tool/MapTool.ts:81](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L81)
 
-___
+***
 
-### setEnabled
+### setEnabled()
 
-▸ **setEnabled**(`enabled`): `void`
+> **setEnabled**(`enabled`): `void`
 
 Some tools might be dynamicaly enabled/disabled.
 This function is called externally when the tool is enabled/disabled.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `enabled` | `boolean` |
+• **enabled**: `boolean`
 
 #### Returns
 
@@ -531,29 +491,27 @@ This function is called externally when the tool is enabled/disabled.
 
 #### Implementation of
 
-[IGeoDownloaderTool](../interfaces/IGeoDownloaderTool.md).[setEnabled](../interfaces/IGeoDownloaderTool.md#setenabled)
+[`IGeoDownloaderTool`](../interfaces/IGeoDownloaderTool.md).[`setEnabled`](../interfaces/IGeoDownloaderTool.md#setenabled)
 
 #### Overrides
 
-[MapTool](MapTool.md).[setEnabled](MapTool.md#setenabled)
+[`MapTool`](MapTool.md).[`setEnabled`](MapTool.md#setenabled)
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts:87](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts#L87)
+[tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts:87](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/tool/GeoDownloaderTool.ts#L87)
 
-___
+***
 
-### setProps
+### setProps()
 
-▸ **setProps**(`props`): `void`
+> `protected` **setProps**(`props`): `void`
 
 It updates the props.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `props` | [`IMapObjectProps`](../modules.md#imapobjectprops) |
+• **props**: [`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
 #### Returns
 
@@ -561,17 +519,17 @@ It updates the props.
 
 #### Inherited from
 
-[MapTool](MapTool.md).[setProps](MapTool.md#setprops)
+[`MapTool`](MapTool.md).[`setProps`](MapTool.md#setprops)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObject.ts:38](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObject.ts#L38)
+[model/internal/object/MapObject.ts:38](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObject.ts#L38)
 
-___
+***
 
-### switchEnabled
+### switchEnabled()
 
-▸ **switchEnabled**(): `void`
+> **switchEnabled**(): `void`
 
 Help function which switches enabled state (enabled/disabled).
 
@@ -583,12 +541,12 @@ Do not override this function. Use setEnabled instead.
 
 #### Implementation of
 
-[IGeoDownloaderTool](../interfaces/IGeoDownloaderTool.md).[switchEnabled](../interfaces/IGeoDownloaderTool.md#switchenabled)
+[`IGeoDownloaderTool`](../interfaces/IGeoDownloaderTool.md).[`switchEnabled`](../interfaces/IGeoDownloaderTool.md#switchenabled)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[switchEnabled](MapTool.md#switchenabled)
+[`MapTool`](MapTool.md).[`switchEnabled`](MapTool.md#switchenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:158](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L158)
+[model/internal/tool/MapTool.ts:158](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L158)

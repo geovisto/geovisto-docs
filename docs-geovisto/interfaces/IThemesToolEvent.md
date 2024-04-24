@@ -1,36 +1,26 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IThemesToolEvent
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IThemesToolEvent
 
 # Interface: IThemesToolEvent
 
 This interface declares the theme change event.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`IMapChangeEvent`](IMapChangeEvent.md)
 
-  ↳ **`IThemesToolEvent`**
-
-## Implemented by
-
-- [`ThemesToolEvent`](../classes/ThemesToolEvent.md)
-
-## Table of contents
-
-### Methods
-
-- [getChangedObject](IThemesToolEvent.md#getchangedobject)
-- [getSource](IThemesToolEvent.md#getsource)
-- [getType](IThemesToolEvent.md#gettype)
-
 ## Methods
 
-### getChangedObject
+### getChangedObject()
 
-▸ **getChangedObject**(): [`IMapTheme`](IMapTheme.md)
+> **getChangedObject**(): [`IMapTheme`](IMapTheme.md)
 
 It returns a new theme descritpion of the theme change event.
 
@@ -40,37 +30,37 @@ It returns a new theme descritpion of the theme change event.
 
 #### Overrides
 
-[IMapChangeEvent](IMapChangeEvent.md).[getChangedObject](IMapChangeEvent.md#getchangedobject)
+[`IMapChangeEvent`](IMapChangeEvent.md).[`getChangedObject`](IMapChangeEvent.md#getchangedobject)
 
-#### Defined in
+#### Source
 
-[src/tools/themes/model/types/event/IThemesToolEvent.ts:24](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/themes/model/types/event/IThemesToolEvent.ts#L24)
+[tools/themes/model/types/event/IThemesToolEvent.ts:24](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/themes/model/types/event/IThemesToolEvent.ts#L24)
 
-___
+***
 
-### getSource
+### getSource()
 
-▸ **getSource**(): [`IThemesTool`](IThemesTool.md)\<[`IThemesToolProps`](../modules.md#ithemestoolprops), [`IThemesToolDefaults`](IThemesToolDefaults.md), [`IThemesToolState`](IThemesToolState.md)\<[`IThemesToolProps`](../modules.md#ithemestoolprops), [`IThemesToolDefaults`](IThemesToolDefaults.md), [`IThemesToolConfig`](../modules.md#ithemestoolconfig)\>, [`IThemesToolConfig`](../modules.md#ithemestoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IThemesToolConfig`](../modules.md#ithemestoolconfig)\>\>
+> **getSource**(): [`IThemesTool`](IThemesTool.md)\<[`IThemesToolProps`](../type-aliases/IThemesToolProps.md), [`IThemesToolDefaults`](IThemesToolDefaults.md), [`IThemesToolState`](IThemesToolState.md)\<[`IThemesToolProps`](../type-aliases/IThemesToolProps.md), [`IThemesToolDefaults`](IThemesToolDefaults.md), [`IThemesToolConfig`](../type-aliases/IThemesToolConfig.md)\>, [`IThemesToolConfig`](../type-aliases/IThemesToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IThemesToolConfig`](../type-aliases/IThemesToolConfig.md)\>\>
 
 Return the themes tool which invoked this event.
 
 #### Returns
 
-[`IThemesTool`](IThemesTool.md)\<[`IThemesToolProps`](../modules.md#ithemestoolprops), [`IThemesToolDefaults`](IThemesToolDefaults.md), [`IThemesToolState`](IThemesToolState.md)\<[`IThemesToolProps`](../modules.md#ithemestoolprops), [`IThemesToolDefaults`](IThemesToolDefaults.md), [`IThemesToolConfig`](../modules.md#ithemestoolconfig)\>, [`IThemesToolConfig`](../modules.md#ithemestoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IThemesToolConfig`](../modules.md#ithemestoolconfig)\>\>
+[`IThemesTool`](IThemesTool.md)\<[`IThemesToolProps`](../type-aliases/IThemesToolProps.md), [`IThemesToolDefaults`](IThemesToolDefaults.md), [`IThemesToolState`](IThemesToolState.md)\<[`IThemesToolProps`](../type-aliases/IThemesToolProps.md), [`IThemesToolDefaults`](IThemesToolDefaults.md), [`IThemesToolConfig`](../type-aliases/IThemesToolConfig.md)\>, [`IThemesToolConfig`](../type-aliases/IThemesToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IThemesToolConfig`](../type-aliases/IThemesToolConfig.md)\>\>
 
 #### Overrides
 
-[IMapChangeEvent](IMapChangeEvent.md).[getSource](IMapChangeEvent.md#getsource)
+[`IMapChangeEvent`](IMapChangeEvent.md).[`getSource`](IMapChangeEvent.md#getsource)
 
-#### Defined in
+#### Source
 
-[src/tools/themes/model/types/event/IThemesToolEvent.ts:19](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/themes/model/types/event/IThemesToolEvent.ts#L19)
+[tools/themes/model/types/event/IThemesToolEvent.ts:19](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/themes/model/types/event/IThemesToolEvent.ts#L19)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 Returns string which identifies the event.
 
@@ -80,8 +70,8 @@ Returns string which identifies the event.
 
 #### Inherited from
 
-[IMapChangeEvent](IMapChangeEvent.md).[getType](IMapChangeEvent.md#gettype)
+[`IMapChangeEvent`](IMapChangeEvent.md).[`getType`](IMapChangeEvent.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/types/event/IMapEvent.ts:13](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/event/IMapEvent.ts#L13)
+[model/types/event/IMapEvent.ts:13](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/event/IMapEvent.ts#L13)

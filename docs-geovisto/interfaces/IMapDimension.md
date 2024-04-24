@@ -1,72 +1,50 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IMapDimension
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IMapDimension
 
 # Interface: IMapDimension\<T\>
 
 This interface declares functions for using a map dimension which allows to set a data domain.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Type parameters
-
-| Name |
-| :------ |
-| `T` |
-
-## Hierarchy
+## Extends
 
 - [`IMapDomain`](IMapDomain.md)
 
-  ↳ **`IMapDimension`**
+## Type parameters
 
-  ↳↳ [`IMapDomainDimension`](IMapDomainDimension.md)
-
-  ↳↳ [`IMapTypeDimension`](IMapTypeDimension.md)
-
-## Implemented by
-
-- [`AbstractMapDimension`](../classes/AbstractMapDimension.md)
-- [`MapDynamicDomainDimension`](../classes/MapDynamicDomainDimension.md)
-
-## Table of contents
-
-### Methods
-
-- [findValue](IMapDimension.md#findvalue)
-- [getName](IMapDimension.md#getname)
-- [getValue](IMapDimension.md#getvalue)
-- [setName](IMapDimension.md#setname)
-- [setStringValue](IMapDimension.md#setstringvalue)
-- [setValue](IMapDimension.md#setvalue)
+• **T**
 
 ## Methods
 
-### findValue
+### findValue()
 
-▸ **findValue**(`value`): `undefined` \| `T`
+> **findValue**(`value`): `undefined` \| `T`
 
 It finds the value of given string.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | `string` |
+• **value**: `string`
 
 #### Returns
 
 `undefined` \| `T`
 
-#### Defined in
+#### Source
 
-[src/model/types/dimension/IMapDimension.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/dimension/IMapDimension.ts#L32)
+[model/types/dimension/IMapDimension.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/dimension/IMapDimension.ts#L32)
 
-___
+***
 
-### getName
+### getName()
 
-▸ **getName**(): `string`
+> **getName**(): `string`
 
 It returns the name of the map domain.
 
@@ -76,17 +54,17 @@ It returns the name of the map domain.
 
 #### Inherited from
 
-[IMapDomain](IMapDomain.md).[getName](IMapDomain.md#getname)
+[`IMapDomain`](IMapDomain.md).[`getName`](IMapDomain.md#getname)
 
-#### Defined in
+#### Source
 
-[src/model/types/domain/IMapDomain.ts:11](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/domain/IMapDomain.ts#L11)
+[model/types/domain/IMapDomain.ts:11](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/domain/IMapDomain.ts#L11)
 
-___
+***
 
-### getValue
+### getValue()
 
-▸ **getValue**(): `undefined` \| `T`
+> **getValue**(): `undefined` \| `T`
 
 It returns the map domain which is set to the map dimension.
 
@@ -94,72 +72,66 @@ It returns the map domain which is set to the map dimension.
 
 `undefined` \| `T`
 
-#### Defined in
+#### Source
 
-[src/model/types/dimension/IMapDimension.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/dimension/IMapDimension.ts#L18)
+[model/types/dimension/IMapDimension.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/dimension/IMapDimension.ts#L18)
 
-___
+***
 
-### setName
+### setName()
 
-▸ **setName**(`name`): `void`
+> **setName**(`name`): `void`
 
 It sets the name of the dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
+• **name**: `string`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/model/types/dimension/IMapDimension.ts:13](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/dimension/IMapDimension.ts#L13)
+[model/types/dimension/IMapDimension.ts:13](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/dimension/IMapDimension.ts#L13)
 
-___
+***
 
-### setStringValue
+### setStringValue()
 
-▸ **setStringValue**(`value`): `void`
+> **setStringValue**(`value`): `void`
 
 It deserializes the string representation of a given value.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | `string` |
+• **value**: `string`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/model/types/dimension/IMapDimension.ts:39](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/dimension/IMapDimension.ts#L39)
+[model/types/dimension/IMapDimension.ts:39](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/dimension/IMapDimension.ts#L39)
 
-___
+***
 
-### setValue
+### setValue()
 
-▸ **setValue**(`domain`): `void`
+> **setValue**(`domain`): `void`
 
 It sets a new map domain to the map dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `domain` | `undefined` \| `T` |
+• **domain**: `undefined` \| `T`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/model/types/dimension/IMapDimension.ts:25](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/dimension/IMapDimension.ts#L25)
+[model/types/dimension/IMapDimension.ts:25](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/dimension/IMapDimension.ts#L25)

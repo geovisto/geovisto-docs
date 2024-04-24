@@ -1,51 +1,30 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / SelectFormInput
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / SelectFormInput
 
 # Class: SelectFormInput
 
 This class represents a basic select form input composed of options.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`AbstractMapFormInput`](AbstractMapFormInput.md)
 
-  ↳ **`SelectFormInput`**
-
-  ↳↳ [`LabeledSelectFormInput`](LabeledSelectFormInput.md)
-
-## Table of contents
-
-### Constructors
-
-- [constructor](SelectFormInput.md#constructor)
-
-### Properties
-
-- [element](SelectFormInput.md#element)
-
-### Methods
-
-- [create](SelectFormInput.md#create)
-- [getProps](SelectFormInput.md#getprops)
-- [getValue](SelectFormInput.md#getvalue)
-- [setDisabled](SelectFormInput.md#setdisabled)
-- [setValue](SelectFormInput.md#setvalue)
-- [ID](SelectFormInput.md#id)
-
 ## Constructors
 
-### constructor
+### new SelectFormInput()
 
-• **new SelectFormInput**(`props`): [`SelectFormInput`](SelectFormInput.md)
+> **new SelectFormInput**(`props`): [`SelectFormInput`](SelectFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `props` | [`ISelectFormInputProps`](../interfaces/ISelectFormInputProps.md) |
+• **props**: [`ISelectFormInputProps`](../interfaces/ISelectFormInputProps.md)
 
 #### Returns
 
@@ -53,29 +32,29 @@ Jiri Hynek
 
 #### Overrides
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[constructor](AbstractMapFormInput.md#constructor)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`constructor`](AbstractMapFormInput.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/basic/select/SelectFormInput.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/basic/select/SelectFormInput.ts#L18)
+[model/internal/inputs/basic/select/SelectFormInput.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/basic/select/SelectFormInput.ts#L18)
 
 ## Properties
 
-### element
+### element?
 
-• `Private` `Optional` **element**: `HTMLSelectElement`
+> `private` `optional` **element**: `HTMLSelectElement`
 
 the input element is initialized when required
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/basic/select/SelectFormInput.ts:16](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/basic/select/SelectFormInput.ts#L16)
+[model/internal/inputs/basic/select/SelectFormInput.ts:16](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/basic/select/SelectFormInput.ts#L16)
 
 ## Methods
 
-### create
+### create()
 
-▸ **create**(): `HTMLElement`
+> **create**(): `HTMLElement`
 
 It returns select element.
 
@@ -85,17 +64,17 @@ It returns select element.
 
 #### Overrides
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[create](AbstractMapFormInput.md#create)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`create`](AbstractMapFormInput.md#create)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/basic/select/SelectFormInput.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/basic/select/SelectFormInput.ts#L32)
+[model/internal/inputs/basic/select/SelectFormInput.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/basic/select/SelectFormInput.ts#L32)
 
-___
+***
 
-### getProps
+### getProps()
 
-▸ **getProps**(): [`IMapFormInputProps`](../interfaces/IMapFormInputProps.md)
+> `protected` **getProps**(): [`IMapFormInputProps`](../interfaces/IMapFormInputProps.md)
 
 It provides the props to the exteded classes.
 
@@ -105,17 +84,17 @@ It provides the props to the exteded classes.
 
 #### Inherited from
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[getProps](AbstractMapFormInput.md#getprops)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`getProps`](AbstractMapFormInput.md#getprops)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/abstract/AbstractMapFormInput.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/abstract/AbstractMapFormInput.ts#L23)
+[model/internal/inputs/abstract/AbstractMapFormInput.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/abstract/AbstractMapFormInput.ts#L23)
 
-___
+***
 
-### getValue
+### getValue()
 
-▸ **getValue**(): `string`
+> **getValue**(): `string`
 
 It returns value of the select element.
 
@@ -125,25 +104,23 @@ It returns value of the select element.
 
 #### Overrides
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[getValue](AbstractMapFormInput.md#getvalue)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`getValue`](AbstractMapFormInput.md#getvalue)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/basic/select/SelectFormInput.ts:53](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/basic/select/SelectFormInput.ts#L53)
+[model/internal/inputs/basic/select/SelectFormInput.ts:53](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/basic/select/SelectFormInput.ts#L53)
 
-___
+***
 
-### setDisabled
+### setDisabled()
 
-▸ **setDisabled**(`disabled`): `void`
+> **setDisabled**(`disabled`): `void`
 
 It sets the input disabled.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `disabled` | `boolean` |
+• **disabled**: `boolean`
 
 #### Returns
 
@@ -151,25 +128,23 @@ It sets the input disabled.
 
 #### Overrides
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[setDisabled](AbstractMapFormInput.md#setdisabled)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`setDisabled`](AbstractMapFormInput.md#setdisabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/basic/select/SelectFormInput.ts:71](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/basic/select/SelectFormInput.ts#L71)
+[model/internal/inputs/basic/select/SelectFormInput.ts:71](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/basic/select/SelectFormInput.ts#L71)
 
-___
+***
 
-### setValue
+### setValue()
 
-▸ **setValue**(`value`): `void`
+> **setValue**(`value`): `void`
 
 It sets value of the select element.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | `string` |
+• **value**: `string`
 
 #### Returns
 
@@ -177,17 +152,17 @@ It sets value of the select element.
 
 #### Overrides
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[setValue](AbstractMapFormInput.md#setvalue)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`setValue`](AbstractMapFormInput.md#setvalue)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/basic/select/SelectFormInput.ts:62](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/basic/select/SelectFormInput.ts#L62)
+[model/internal/inputs/basic/select/SelectFormInput.ts:62](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/basic/select/SelectFormInput.ts#L62)
 
-___
+***
 
-### ID
+### ID()
 
-▸ **ID**(): `string`
+> `static` **ID**(): `string`
 
 Static function returns identifier of the input type
 
@@ -195,6 +170,6 @@ Static function returns identifier of the input type
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/basic/select/SelectFormInput.ts:25](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/basic/select/SelectFormInput.ts#L25)
+[model/internal/inputs/basic/select/SelectFormInput.ts:25](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/basic/select/SelectFormInput.ts#L25)

@@ -1,60 +1,26 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IChoroplethLayerToolDefaults
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IChoroplethLayerToolDefaults
 
 # Interface: IChoroplethLayerToolDefaults
 
 This interface declares functions which return the default state values.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`ILayerToolDefaults`](ILayerToolDefaults.md)
 
-  ↳ **`IChoroplethLayerToolDefaults`**
-
-## Implemented by
-
-- [`ChoroplethLayerToolDefaults`](../classes/ChoroplethLayerToolDefaults.md)
-
-## Table of contents
-
-### Methods
-
-- [getAggregationDimension](IChoroplethLayerToolDefaults.md#getaggregationdimension)
-- [getColorDimension](IChoroplethLayerToolDefaults.md#getcolordimension)
-- [getConfig](IChoroplethLayerToolDefaults.md#getconfig)
-- [getCustomColorDimension](IChoroplethLayerToolDefaults.md#getcustomcolordimension)
-- [getCustomMinMaxDimension](IChoroplethLayerToolDefaults.md#getcustomminmaxdimension)
-- [getDimensions](IChoroplethLayerToolDefaults.md#getdimensions)
-- [getGeoData](IChoroplethLayerToolDefaults.md#getgeodata)
-- [getGeoDataDimension](IChoroplethLayerToolDefaults.md#getgeodatadimension)
-- [getGeoIdDimension](IChoroplethLayerToolDefaults.md#getgeoiddimension)
-- [getIcon](IChoroplethLayerToolDefaults.md#geticon)
-- [getId](IChoroplethLayerToolDefaults.md#getid)
-- [getLabel](IChoroplethLayerToolDefaults.md#getlabel)
-- [getLayerName](IChoroplethLayerToolDefaults.md#getlayername)
-- [getMaxValueDimension](IChoroplethLayerToolDefaults.md#getmaxvaluedimension)
-- [getMinValueDimension](IChoroplethLayerToolDefaults.md#getminvaluedimension)
-- [getProps](IChoroplethLayerToolDefaults.md#getprops)
-- [getRangeDimension](IChoroplethLayerToolDefaults.md#getrangedimension)
-- [getRoundDimension](IChoroplethLayerToolDefaults.md#getrounddimension)
-- [getScalingDimension](IChoroplethLayerToolDefaults.md#getscalingdimension)
-- [getType](IChoroplethLayerToolDefaults.md#gettype)
-- [getUnitsDescDimension](IChoroplethLayerToolDefaults.md#getunitsdescdimension)
-- [getUnitsDimension](IChoroplethLayerToolDefaults.md#getunitsdimension)
-- [getUnitsEnabledDimension](IChoroplethLayerToolDefaults.md#getunitsenableddimension)
-- [getValueDimension](IChoroplethLayerToolDefaults.md#getvaluedimension)
-- [getZIndex](IChoroplethLayerToolDefaults.md#getzindex)
-- [isEnabled](IChoroplethLayerToolDefaults.md#isenabled)
-- [isSingleton](IChoroplethLayerToolDefaults.md#issingleton)
-
 ## Methods
 
-### getAggregationDimension
+### getAggregationDimension()
 
-▸ **getAggregationDimension**(): [`IMapDomainDimension`](IMapDomainDimension.md)\<[`IMapAggregationFunction`](IMapAggregationFunction.md)\>
+> **getAggregationDimension**(): [`IMapDomainDimension`](IMapDomainDimension.md)\<[`IMapAggregationFunction`](IMapAggregationFunction.md)\>
 
 It returns the default aggregation function dimension.
 
@@ -62,15 +28,15 @@ It returns the default aggregation function dimension.
 
 [`IMapDomainDimension`](IMapDomainDimension.md)\<[`IMapAggregationFunction`](IMapAggregationFunction.md)\>
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:46](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L46)
+[tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:46](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L46)
 
-___
+***
 
-### getColorDimension
+### getColorDimension()
 
-▸ **getColorDimension**(): [`IMapTypeDimension`](IMapTypeDimension.md)\<`string`, [`ITypeManager`](ITypeManager.md)\<`string`\>\>
+> **getColorDimension**(): [`IMapTypeDimension`](IMapTypeDimension.md)\<`string`, [`ITypeManager`](ITypeManager.md)\<`string`\>\>
 
 It returns the color dimension.
 
@@ -78,35 +44,35 @@ It returns the color dimension.
 
 [`IMapTypeDimension`](IMapTypeDimension.md)\<`string`, [`ITypeManager`](ITypeManager.md)\<`string`\>\>
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:56](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L56)
+[tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:56](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L56)
 
-___
+***
 
-### getConfig
+### getConfig()
 
-▸ **getConfig**(): [`IMapToolConfig`](../modules.md#imaptoolconfig)
+> **getConfig**(): [`IMapToolConfig`](../type-aliases/IMapToolConfig.md)
 
 It returns default config if no config is given.
 
 #### Returns
 
-[`IMapToolConfig`](../modules.md#imaptoolconfig)
+[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)
 
 #### Inherited from
 
-[ILayerToolDefaults](ILayerToolDefaults.md).[getConfig](ILayerToolDefaults.md#getconfig)
+[`ILayerToolDefaults`](ILayerToolDefaults.md).[`getConfig`](ILayerToolDefaults.md#getconfig)
 
-#### Defined in
+#### Source
 
-[src/model/types/tool/IMapToolDefaults.ts:14](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/tool/IMapToolDefaults.ts#L14)
+[model/types/tool/IMapToolDefaults.ts:14](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/tool/IMapToolDefaults.ts#L14)
 
-___
+***
 
-### getCustomColorDimension
+### getCustomColorDimension()
 
-▸ **getCustomColorDimension**(): [`IMapTypeDimension`](IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](ITypeManager.md)\<`boolean`\>\>
+> **getCustomColorDimension**(): [`IMapTypeDimension`](IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](ITypeManager.md)\<`boolean`\>\>
 
 It returns the animate direction dimension.
 
@@ -114,15 +80,15 @@ It returns the animate direction dimension.
 
 [`IMapTypeDimension`](IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](ITypeManager.md)\<`boolean`\>\>
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:51](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L51)
+[tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:51](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L51)
 
-___
+***
 
-### getCustomMinMaxDimension
+### getCustomMinMaxDimension()
 
-▸ **getCustomMinMaxDimension**(): [`IMapTypeDimension`](IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](ITypeManager.md)\<`boolean`\>\>
+> **getCustomMinMaxDimension**(): [`IMapTypeDimension`](IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](ITypeManager.md)\<`boolean`\>\>
 
 It returns the custom min-max dimension.
 
@@ -130,59 +96,99 @@ It returns the custom min-max dimension.
 
 [`IMapTypeDimension`](IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](ITypeManager.md)\<`boolean`\>\>
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:71](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L71)
+[tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:71](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L71)
 
-___
+***
 
-### getDimensions
+### getDimensions()
 
-▸ **getDimensions**(`map?`): `Object`
+> **getDimensions**(`map`?): `object`
 
 It returns the map of layer dimensions.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `map?` | [`IMap`](IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](IMapDefaults.md), [`IMapState`](IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\> |
+• **map?**: [`IMap`](IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](IMapDefaults.md), [`IMapState`](IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Returns
 
-`Object`
+`object`
 
-| Name | Type |
-| :------ | :------ |
-| `aggregation` | [`IMapDomainDimension`](IMapDomainDimension.md)\<[`IMapAggregationFunction`](IMapAggregationFunction.md)\> |
-| `color` | [`IMapTypeDimension`](IMapTypeDimension.md)\<`string`, [`ITypeManager`](ITypeManager.md)\<`string`\>\> |
-| `customColor` | [`IMapTypeDimension`](IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](ITypeManager.md)\<`boolean`\>\> |
-| `customMinMax` | [`IMapTypeDimension`](IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](ITypeManager.md)\<`boolean`\>\> |
-| `geoData` | [`IMapDomainDimension`](IMapDomainDimension.md)\<[`IGeoData`](IGeoData.md)\> |
-| `geoId` | [`IMapDomainDimension`](IMapDomainDimension.md)\<[`IMapDataDomain`](IMapDataDomain.md)\> |
-| `maxValue` | [`IMapTypeDimension`](IMapTypeDimension.md)\<`number`, [`ITypeManager`](ITypeManager.md)\<`number`\>\> |
-| `minValue` | [`IMapTypeDimension`](IMapTypeDimension.md)\<`number`, [`ITypeManager`](ITypeManager.md)\<`number`\>\> |
-| `range` | [`IMapTypeDimension`](IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](IIntegerRangeManager.md)\> |
-| `round` | [`IMapTypeDimension`](IMapTypeDimension.md)\<`number`, [`ITypeManager`](ITypeManager.md)\<`number`\>\> |
-| `scaling` | [`IMapDomainDimension`](IMapDomainDimension.md)\<[`IScale`](IScale.md)\> |
-| `units` | [`IMapTypeDimension`](IMapTypeDimension.md)\<`string`, [`ITypeManager`](ITypeManager.md)\<`string`\>\> |
-| `unitsDesc` | [`IMapTypeDimension`](IMapTypeDimension.md)\<`string`, [`ITypeManager`](ITypeManager.md)\<`string`\>\> |
-| `unitsEnabled` | [`IMapTypeDimension`](IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](ITypeManager.md)\<`boolean`\>\> |
-| `value` | [`IMapDomainDimension`](IMapDomainDimension.md)\<[`IMapDataDomain`](IMapDataDomain.md)\> |
+##### aggregation
+
+> **aggregation**: [`IMapDomainDimension`](IMapDomainDimension.md)\<[`IMapAggregationFunction`](IMapAggregationFunction.md)\>
+
+##### color
+
+> **color**: [`IMapTypeDimension`](IMapTypeDimension.md)\<`string`, [`ITypeManager`](ITypeManager.md)\<`string`\>\>
+
+##### customColor
+
+> **customColor**: [`IMapTypeDimension`](IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](ITypeManager.md)\<`boolean`\>\>
+
+##### customMinMax
+
+> **customMinMax**: [`IMapTypeDimension`](IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](ITypeManager.md)\<`boolean`\>\>
+
+##### geoData
+
+> **geoData**: [`IMapDomainDimension`](IMapDomainDimension.md)\<[`IGeoData`](IGeoData.md)\>
+
+##### geoId
+
+> **geoId**: [`IMapDomainDimension`](IMapDomainDimension.md)\<[`IMapDataDomain`](IMapDataDomain.md)\>
+
+##### maxValue
+
+> **maxValue**: [`IMapTypeDimension`](IMapTypeDimension.md)\<`number`, [`ITypeManager`](ITypeManager.md)\<`number`\>\>
+
+##### minValue
+
+> **minValue**: [`IMapTypeDimension`](IMapTypeDimension.md)\<`number`, [`ITypeManager`](ITypeManager.md)\<`number`\>\>
+
+##### range
+
+> **range**: [`IMapTypeDimension`](IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](IIntegerRangeManager.md)\>
+
+##### round
+
+> **round**: [`IMapTypeDimension`](IMapTypeDimension.md)\<`number`, [`ITypeManager`](ITypeManager.md)\<`number`\>\>
+
+##### scaling
+
+> **scaling**: [`IMapDomainDimension`](IMapDomainDimension.md)\<[`IScale`](IScale.md)\>
+
+##### units
+
+> **units**: [`IMapTypeDimension`](IMapTypeDimension.md)\<`string`, [`ITypeManager`](ITypeManager.md)\<`string`\>\>
+
+##### unitsDesc
+
+> **unitsDesc**: [`IMapTypeDimension`](IMapTypeDimension.md)\<`string`, [`ITypeManager`](ITypeManager.md)\<`string`\>\>
+
+##### unitsEnabled
+
+> **unitsEnabled**: [`IMapTypeDimension`](IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](ITypeManager.md)\<`boolean`\>\>
+
+##### value
+
+> **value**: [`IMapDomainDimension`](IMapDomainDimension.md)\<[`IMapDataDomain`](IMapDataDomain.md)\>
 
 #### Overrides
 
-[ILayerToolDefaults](ILayerToolDefaults.md).[getDimensions](ILayerToolDefaults.md#getdimensions)
+[`ILayerToolDefaults`](ILayerToolDefaults.md).[`getDimensions`](ILayerToolDefaults.md#getdimensions)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:26](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L26)
+[tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:26](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L26)
 
-___
+***
 
-### getGeoData
+### getGeoData()
 
-▸ **getGeoData**(): [`IGeoData`](IGeoData.md)[]
+> **getGeoData**(): [`IGeoData`](IGeoData.md)[]
 
 It returns the default geo data.
 
@@ -190,59 +196,55 @@ It returns the default geo data.
 
 [`IGeoData`](IGeoData.md)[]
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:106](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L106)
+[tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:106](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L106)
 
-___
+***
 
-### getGeoDataDimension
+### getGeoDataDimension()
 
-▸ **getGeoDataDimension**(`map?`): [`IMapDomainDimension`](IMapDomainDimension.md)\<[`IGeoData`](IGeoData.md)\>
+> **getGeoDataDimension**(`map`?): [`IMapDomainDimension`](IMapDomainDimension.md)\<[`IGeoData`](IGeoData.md)\>
 
 It returns the default geo data dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `map?` | [`IMap`](IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](IMapDefaults.md), [`IMapState`](IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\> |
+• **map?**: [`IMap`](IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](IMapDefaults.md), [`IMapState`](IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Returns
 
 [`IMapDomainDimension`](IMapDomainDimension.md)\<[`IGeoData`](IGeoData.md)\>
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:31](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L31)
+[tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:31](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L31)
 
-___
+***
 
-### getGeoIdDimension
+### getGeoIdDimension()
 
-▸ **getGeoIdDimension**(`map?`): [`IMapDomainDimension`](IMapDomainDimension.md)\<[`IMapDataDomain`](IMapDataDomain.md)\>
+> **getGeoIdDimension**(`map`?): [`IMapDomainDimension`](IMapDomainDimension.md)\<[`IMapDataDomain`](IMapDataDomain.md)\>
 
 It returns the default geo ID dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `map?` | [`IMap`](IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](IMapDefaults.md), [`IMapState`](IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\> |
+• **map?**: [`IMap`](IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](IMapDefaults.md), [`IMapState`](IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Returns
 
 [`IMapDomainDimension`](IMapDomainDimension.md)\<[`IMapDataDomain`](IMapDataDomain.md)\>
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:36](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L36)
+[tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:36](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L36)
 
-___
+***
 
-### getIcon
+### getIcon()
 
-▸ **getIcon**(): `string`
+> **getIcon**(): `string`
 
 It returns the icon of the tool.
 
@@ -252,17 +254,17 @@ It returns the icon of the tool.
 
 #### Inherited from
 
-[ILayerToolDefaults](ILayerToolDefaults.md).[getIcon](ILayerToolDefaults.md#geticon)
+[`ILayerToolDefaults`](ILayerToolDefaults.md).[`getIcon`](ILayerToolDefaults.md#geticon)
 
-#### Defined in
+#### Source
 
-[src/model/types/tool/IMapToolDefaults.ts:36](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/tool/IMapToolDefaults.ts#L36)
+[model/types/tool/IMapToolDefaults.ts:36](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/tool/IMapToolDefaults.ts#L36)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 It returns identifier which is used when no identifier is specified.
 
@@ -272,17 +274,17 @@ It returns identifier which is used when no identifier is specified.
 
 #### Inherited from
 
-[ILayerToolDefaults](ILayerToolDefaults.md).[getId](ILayerToolDefaults.md#getid)
+[`ILayerToolDefaults`](ILayerToolDefaults.md).[`getId`](ILayerToolDefaults.md#getid)
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectDefaults.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectDefaults.ts#L32)
+[model/types/object/IMapObjectDefaults.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectDefaults.ts#L32)
 
-___
+***
 
-### getLabel
+### getLabel()
 
-▸ **getLabel**(): `string`
+> **getLabel**(): `string`
 
 It returns the label of the tool.
 
@@ -292,17 +294,17 @@ It returns the label of the tool.
 
 #### Inherited from
 
-[ILayerToolDefaults](ILayerToolDefaults.md).[getLabel](ILayerToolDefaults.md#getlabel)
+[`ILayerToolDefaults`](ILayerToolDefaults.md).[`getLabel`](ILayerToolDefaults.md#getlabel)
 
-#### Defined in
+#### Source
 
-[src/model/types/tool/IMapToolDefaults.ts:31](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/tool/IMapToolDefaults.ts#L31)
+[model/types/tool/IMapToolDefaults.ts:31](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/tool/IMapToolDefaults.ts#L31)
 
-___
+***
 
-### getLayerName
+### getLayerName()
 
-▸ **getLayerName**(): `string`
+> **getLayerName**(): `string`
 
 It returns the layer name.
 
@@ -312,17 +314,17 @@ It returns the layer name.
 
 #### Inherited from
 
-[ILayerToolDefaults](ILayerToolDefaults.md).[getLayerName](ILayerToolDefaults.md#getlayername)
+[`ILayerToolDefaults`](ILayerToolDefaults.md).[`getLayerName`](ILayerToolDefaults.md#getlayername)
 
-#### Defined in
+#### Source
 
-[src/model/types/layer/ILayerToolDefaults.ts:15](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/layer/ILayerToolDefaults.ts#L15)
+[model/types/layer/ILayerToolDefaults.ts:15](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/layer/ILayerToolDefaults.ts#L15)
 
-___
+***
 
-### getMaxValueDimension
+### getMaxValueDimension()
 
-▸ **getMaxValueDimension**(): [`IMapTypeDimension`](IMapTypeDimension.md)\<`number`, [`ITypeManager`](ITypeManager.md)\<`number`\>\>
+> **getMaxValueDimension**(): [`IMapTypeDimension`](IMapTypeDimension.md)\<`number`, [`ITypeManager`](ITypeManager.md)\<`number`\>\>
 
 It returns the max value dimension.
 
@@ -330,15 +332,15 @@ It returns the max value dimension.
 
 [`IMapTypeDimension`](IMapTypeDimension.md)\<`number`, [`ITypeManager`](ITypeManager.md)\<`number`\>\>
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:81](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L81)
+[tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:81](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L81)
 
-___
+***
 
-### getMinValueDimension
+### getMinValueDimension()
 
-▸ **getMinValueDimension**(): [`IMapTypeDimension`](IMapTypeDimension.md)\<`number`, [`ITypeManager`](ITypeManager.md)\<`number`\>\>
+> **getMinValueDimension**(): [`IMapTypeDimension`](IMapTypeDimension.md)\<`number`, [`ITypeManager`](ITypeManager.md)\<`number`\>\>
 
 It returns the min value dimension.
 
@@ -346,35 +348,35 @@ It returns the min value dimension.
 
 [`IMapTypeDimension`](IMapTypeDimension.md)\<`number`, [`ITypeManager`](ITypeManager.md)\<`number`\>\>
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:76](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L76)
+[tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:76](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L76)
 
-___
+***
 
-### getProps
+### getProps()
 
-▸ **getProps**(): [`IMapObjectProps`](../modules.md#imapobjectprops)
+> **getProps**(): [`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
 It returns default props if no props are given.
 
 #### Returns
 
-[`IMapObjectProps`](../modules.md#imapobjectprops)
+[`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
 #### Inherited from
 
-[ILayerToolDefaults](ILayerToolDefaults.md).[getProps](ILayerToolDefaults.md#getprops)
+[`ILayerToolDefaults`](ILayerToolDefaults.md).[`getProps`](ILayerToolDefaults.md#getprops)
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectDefaults.ts:17](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectDefaults.ts#L17)
+[model/types/object/IMapObjectDefaults.ts:17](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectDefaults.ts#L17)
 
-___
+***
 
-### getRangeDimension
+### getRangeDimension()
 
-▸ **getRangeDimension**(): [`IMapTypeDimension`](IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](IIntegerRangeManager.md)\>
+> **getRangeDimension**(): [`IMapTypeDimension`](IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](IIntegerRangeManager.md)\>
 
 It returns the range dimension.
 
@@ -382,15 +384,15 @@ It returns the range dimension.
 
 [`IMapTypeDimension`](IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](IIntegerRangeManager.md)\>
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:61](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L61)
+[tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:61](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L61)
 
-___
+***
 
-### getRoundDimension
+### getRoundDimension()
 
-▸ **getRoundDimension**(): [`IMapTypeDimension`](IMapTypeDimension.md)\<`number`, [`ITypeManager`](ITypeManager.md)\<`number`\>\>
+> **getRoundDimension**(): [`IMapTypeDimension`](IMapTypeDimension.md)\<`number`, [`ITypeManager`](ITypeManager.md)\<`number`\>\>
 
 It returns the round dimension.
 
@@ -398,15 +400,15 @@ It returns the round dimension.
 
 [`IMapTypeDimension`](IMapTypeDimension.md)\<`number`, [`ITypeManager`](ITypeManager.md)\<`number`\>\>
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:101](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L101)
+[tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:101](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L101)
 
-___
+***
 
-### getScalingDimension
+### getScalingDimension()
 
-▸ **getScalingDimension**(): [`IMapDomainDimension`](IMapDomainDimension.md)\<[`IScale`](IScale.md)\>
+> **getScalingDimension**(): [`IMapDomainDimension`](IMapDomainDimension.md)\<[`IScale`](IScale.md)\>
 
 It returns the scaling dimension.
 
@@ -414,15 +416,15 @@ It returns the scaling dimension.
 
 [`IMapDomainDimension`](IMapDomainDimension.md)\<[`IScale`](IScale.md)\>
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:66](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L66)
+[tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:66](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L66)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 It returns a unique type string of the map object.
 
@@ -432,17 +434,17 @@ It returns a unique type string of the map object.
 
 #### Inherited from
 
-[ILayerToolDefaults](ILayerToolDefaults.md).[getType](ILayerToolDefaults.md#gettype)
+[`ILayerToolDefaults`](ILayerToolDefaults.md).[`getType`](ILayerToolDefaults.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectDefaults.ts:27](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectDefaults.ts#L27)
+[model/types/object/IMapObjectDefaults.ts:27](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectDefaults.ts#L27)
 
-___
+***
 
-### getUnitsDescDimension
+### getUnitsDescDimension()
 
-▸ **getUnitsDescDimension**(): [`IMapTypeDimension`](IMapTypeDimension.md)\<`string`, [`ITypeManager`](ITypeManager.md)\<`string`\>\>
+> **getUnitsDescDimension**(): [`IMapTypeDimension`](IMapTypeDimension.md)\<`string`, [`ITypeManager`](ITypeManager.md)\<`string`\>\>
 
 It returns the units description value dimension.
 
@@ -450,15 +452,15 @@ It returns the units description value dimension.
 
 [`IMapTypeDimension`](IMapTypeDimension.md)\<`string`, [`ITypeManager`](ITypeManager.md)\<`string`\>\>
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:91](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L91)
+[tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:91](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L91)
 
-___
+***
 
-### getUnitsDimension
+### getUnitsDimension()
 
-▸ **getUnitsDimension**(): [`IMapTypeDimension`](IMapTypeDimension.md)\<`string`, [`ITypeManager`](ITypeManager.md)\<`string`\>\>
+> **getUnitsDimension**(): [`IMapTypeDimension`](IMapTypeDimension.md)\<`string`, [`ITypeManager`](ITypeManager.md)\<`string`\>\>
 
 It returns the units dimension.
 
@@ -466,15 +468,15 @@ It returns the units dimension.
 
 [`IMapTypeDimension`](IMapTypeDimension.md)\<`string`, [`ITypeManager`](ITypeManager.md)\<`string`\>\>
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:86](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L86)
+[tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:86](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L86)
 
-___
+***
 
-### getUnitsEnabledDimension
+### getUnitsEnabledDimension()
 
-▸ **getUnitsEnabledDimension**(): [`IMapTypeDimension`](IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](ITypeManager.md)\<`boolean`\>\>
+> **getUnitsEnabledDimension**(): [`IMapTypeDimension`](IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](ITypeManager.md)\<`boolean`\>\>
 
 It returns the units state value dimension.
 
@@ -482,37 +484,35 @@ It returns the units state value dimension.
 
 [`IMapTypeDimension`](IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](ITypeManager.md)\<`boolean`\>\>
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:96](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L96)
+[tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:96](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L96)
 
-___
+***
 
-### getValueDimension
+### getValueDimension()
 
-▸ **getValueDimension**(`map?`): [`IMapDomainDimension`](IMapDomainDimension.md)\<[`IMapDataDomain`](IMapDataDomain.md)\>
+> **getValueDimension**(`map`?): [`IMapDomainDimension`](IMapDomainDimension.md)\<[`IMapDataDomain`](IMapDataDomain.md)\>
 
 It returns the default value dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `map?` | [`IMap`](IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](IMapDefaults.md), [`IMapState`](IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\> |
+• **map?**: [`IMap`](IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](IMapDefaults.md), [`IMapState`](IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Returns
 
 [`IMapDomainDimension`](IMapDomainDimension.md)\<[`IMapDataDomain`](IMapDataDomain.md)\>
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:41](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L41)
+[tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:41](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L41)
 
-___
+***
 
-### getZIndex
+### getZIndex()
 
-▸ **getZIndex**(): `number`
+> **getZIndex**(): `number`
 
 It returns preferred z index for the choropoleth layer
 
@@ -520,15 +520,15 @@ It returns preferred z index for the choropoleth layer
 
 `number`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:111](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L111)
+[tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts:111](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/types/tool/IChoroplethLayerToolDefaults.ts#L111)
 
-___
+***
 
-### isEnabled
+### isEnabled()
 
-▸ **isEnabled**(): `boolean`
+> **isEnabled**(): `boolean`
 
 By default, the tool is enabled.
 
@@ -538,17 +538,17 @@ By default, the tool is enabled.
 
 #### Inherited from
 
-[ILayerToolDefaults](ILayerToolDefaults.md).[isEnabled](ILayerToolDefaults.md#isenabled)
+[`ILayerToolDefaults`](ILayerToolDefaults.md).[`isEnabled`](ILayerToolDefaults.md#isenabled)
 
-#### Defined in
+#### Source
 
-[src/model/types/tool/IMapToolDefaults.ts:26](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/tool/IMapToolDefaults.ts#L26)
+[model/types/tool/IMapToolDefaults.ts:26](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/tool/IMapToolDefaults.ts#L26)
 
-___
+***
 
-### isSingleton
+### isSingleton()
 
-▸ **isSingleton**(): `boolean`
+> **isSingleton**(): `boolean`
 
 It returns a logical value whether the tool type is singleton.
 
@@ -558,8 +558,8 @@ It returns a logical value whether the tool type is singleton.
 
 #### Inherited from
 
-[ILayerToolDefaults](ILayerToolDefaults.md).[isSingleton](ILayerToolDefaults.md#issingleton)
+[`ILayerToolDefaults`](ILayerToolDefaults.md).[`isSingleton`](ILayerToolDefaults.md#issingleton)
 
-#### Defined in
+#### Source
 
-[src/model/types/tool/IMapToolDefaults.ts:19](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/tool/IMapToolDefaults.ts#L19)
+[model/types/tool/IMapToolDefaults.ts:19](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/tool/IMapToolDefaults.ts#L19)

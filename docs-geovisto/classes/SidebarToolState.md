@@ -1,72 +1,36 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / SidebarToolState
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / SidebarToolState
 
 # Class: SidebarToolState
 
 This class provide sidebar tool model.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`MapToolState`](MapToolState.md)
-
-  ↳ **`SidebarToolState`**
 
 ## Implements
 
 - [`ISidebarToolState`](../interfaces/ISidebarToolState.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](SidebarToolState.md#constructor)
-
-### Properties
-
-- [sidebar](SidebarToolState.md#sidebar)
-- [tabs](SidebarToolState.md#tabs)
-- [tabsConfigs](SidebarToolState.md#tabsconfigs)
-
-### Methods
-
-- [addTab](SidebarToolState.md#addtab)
-- [deserialize](SidebarToolState.md#deserialize)
-- [getIcon](SidebarToolState.md#geticon)
-- [getId](SidebarToolState.md#getid)
-- [getLabel](SidebarToolState.md#getlabel)
-- [getMap](SidebarToolState.md#getmap)
-- [getMapObject](SidebarToolState.md#getmapobject)
-- [getSidebar](SidebarToolState.md#getsidebar)
-- [getTabs](SidebarToolState.md#gettabs)
-- [getTabsConfigs](SidebarToolState.md#gettabsconfigs)
-- [getType](SidebarToolState.md#gettype)
-- [initialize](SidebarToolState.md#initialize)
-- [isEnabled](SidebarToolState.md#isenabled)
-- [removeTab](SidebarToolState.md#removetab)
-- [serialize](SidebarToolState.md#serialize)
-- [setEnabled](SidebarToolState.md#setenabled)
-- [setIcon](SidebarToolState.md#seticon)
-- [setId](SidebarToolState.md#setid)
-- [setLabel](SidebarToolState.md#setlabel)
-- [setMap](SidebarToolState.md#setmap)
-- [setSidebar](SidebarToolState.md#setsidebar)
-
 ## Constructors
 
-### constructor
+### new SidebarToolState()
 
-• **new SidebarToolState**(`tool`): [`SidebarToolState`](SidebarToolState.md)
+> **new SidebarToolState**(`tool`): [`SidebarToolState`](SidebarToolState.md)
 
 It creates a tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `tool` | [`ISidebarTool`](../interfaces/ISidebarTool.md)\<[`ISidebarToolProps`](../modules.md#isidebartoolprops), [`ISidebarToolDefaults`](../interfaces/ISidebarToolDefaults.md), [`ISidebarToolState`](../interfaces/ISidebarToolState.md)\<[`ISidebarToolProps`](../modules.md#isidebartoolprops), [`ISidebarToolDefaults`](../interfaces/ISidebarToolDefaults.md), [`ISidebarToolConfig`](../modules.md#isidebartoolconfig)\>, [`ISidebarToolConfig`](../modules.md#isidebartoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`ISidebarToolConfig`](../modules.md#isidebartoolconfig)\>\> |
+• **tool**: [`ISidebarTool`](../interfaces/ISidebarTool.md)\<[`ISidebarToolProps`](../type-aliases/ISidebarToolProps.md), [`ISidebarToolDefaults`](../interfaces/ISidebarToolDefaults.md), [`ISidebarToolState`](../interfaces/ISidebarToolState.md)\<[`ISidebarToolProps`](../type-aliases/ISidebarToolProps.md), [`ISidebarToolDefaults`](../interfaces/ISidebarToolDefaults.md), [`ISidebarToolConfig`](../type-aliases/ISidebarToolConfig.md)\>, [`ISidebarToolConfig`](../type-aliases/ISidebarToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`ISidebarToolConfig`](../type-aliases/ISidebarToolConfig.md)\>\>
 
 #### Returns
 
@@ -74,55 +38,53 @@ It creates a tool state.
 
 #### Overrides
 
-[MapToolState](MapToolState.md).[constructor](MapToolState.md#constructor)
+[`MapToolState`](MapToolState.md).[`constructor`](MapToolState.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/tool/SidebarToolState.ts:37](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/tool/SidebarToolState.ts#L37)
+[tools/sidebar/model/internal/tool/SidebarToolState.ts:37](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/tool/SidebarToolState.ts#L37)
 
 ## Properties
 
 ### sidebar
 
-• `Private` **sidebar**: ``null`` \| `Sidebar`
+> `private` **sidebar**: `any`
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/tool/SidebarToolState.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/tool/SidebarToolState.ts#L32)
+[tools/sidebar/model/internal/tool/SidebarToolState.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/tool/SidebarToolState.ts#L32)
 
-___
+***
 
 ### tabs
 
-• `Private` **tabs**: [`ISidebarTab`](../interfaces/ISidebarTab.md)\<[`ISidebarTabProps`](../modules.md#isidebartabprops), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabState`](../interfaces/ISidebarTabState.md)\<[`ISidebarTabProps`](../modules.md#isidebartabprops), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabConfig`](../modules.md#isidebartabconfig)\>, [`ISidebarTabConfig`](../modules.md#isidebartabconfig), [`ISidebarTabInitProps`](../modules.md#isidebartabinitprops)\<[`ISidebarTabConfig`](../modules.md#isidebartabconfig)\>\>[]
+> `private` **tabs**: [`ISidebarTab`](../interfaces/ISidebarTab.md)\<[`ISidebarTabProps`](../type-aliases/ISidebarTabProps.md), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabState`](../interfaces/ISidebarTabState.md)\<[`ISidebarTabProps`](../type-aliases/ISidebarTabProps.md), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md)\>, [`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md), [`ISidebarTabInitProps`](../type-aliases/ISidebarTabInitProps.md)\<[`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md)\>\>[]
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/tool/SidebarToolState.ts:30](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/tool/SidebarToolState.ts#L30)
+[tools/sidebar/model/internal/tool/SidebarToolState.ts:30](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/tool/SidebarToolState.ts#L30)
 
-___
+***
 
-### tabsConfigs
+### tabsConfigs?
 
-• `Private` `Optional` **tabsConfigs**: [`ISidebarTabConfig`](../modules.md#isidebartabconfig)[]
+> `private` `optional` **tabsConfigs**: [`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md)[]
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/tool/SidebarToolState.ts:28](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/tool/SidebarToolState.ts#L28)
+[tools/sidebar/model/internal/tool/SidebarToolState.ts:28](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/tool/SidebarToolState.ts#L28)
 
 ## Methods
 
-### addTab
+### addTab()
 
-▸ **addTab**(`tab`): `void`
+> **addTab**(`tab`): `void`
 
 It sets the tabs property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `tab` | [`ISidebarTab`](../interfaces/ISidebarTab.md)\<[`ISidebarTabProps`](../modules.md#isidebartabprops), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabState`](../interfaces/ISidebarTabState.md)\<[`ISidebarTabProps`](../modules.md#isidebartabprops), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabConfig`](../modules.md#isidebartabconfig)\>, [`ISidebarTabConfig`](../modules.md#isidebartabconfig), [`ISidebarTabInitProps`](../modules.md#isidebartabinitprops)\<[`ISidebarTabConfig`](../modules.md#isidebartabconfig)\>\> |
+• **tab**: [`ISidebarTab`](../interfaces/ISidebarTab.md)\<[`ISidebarTabProps`](../type-aliases/ISidebarTabProps.md), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabState`](../interfaces/ISidebarTabState.md)\<[`ISidebarTabProps`](../type-aliases/ISidebarTabProps.md), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md)\>, [`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md), [`ISidebarTabInitProps`](../type-aliases/ISidebarTabInitProps.md)\<[`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md)\>\>
 
 #### Returns
 
@@ -130,25 +92,23 @@ It sets the tabs property of the tool state.
 
 #### Implementation of
 
-[ISidebarToolState](../interfaces/ISidebarToolState.md).[addTab](../interfaces/ISidebarToolState.md#addtab)
+[`ISidebarToolState`](../interfaces/ISidebarToolState.md).[`addTab`](../interfaces/ISidebarToolState.md#addtab)
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/tool/SidebarToolState.ts:125](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/tool/SidebarToolState.ts#L125)
+[tools/sidebar/model/internal/tool/SidebarToolState.ts:125](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/tool/SidebarToolState.ts#L125)
 
-___
+***
 
-### deserialize
+### deserialize()
 
-▸ **deserialize**(`config`): `void`
+> **deserialize**(`config`): `void`
 
 The metod takes config and deserializes the values.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `config` | [`ISidebarToolConfig`](../modules.md#isidebartoolconfig) |
+• **config**: [`ISidebarToolConfig`](../type-aliases/ISidebarToolConfig.md)
 
 #### Returns
 
@@ -156,21 +116,21 @@ The metod takes config and deserializes the values.
 
 #### Implementation of
 
-[ISidebarToolState](../interfaces/ISidebarToolState.md).[deserialize](../interfaces/ISidebarToolState.md#deserialize)
+[`ISidebarToolState`](../interfaces/ISidebarToolState.md).[`deserialize`](../interfaces/ISidebarToolState.md#deserialize)
 
 #### Overrides
 
-[MapToolState](MapToolState.md).[deserialize](MapToolState.md#deserialize)
+[`MapToolState`](MapToolState.md).[`deserialize`](MapToolState.md#deserialize)
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/tool/SidebarToolState.ts:65](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/tool/SidebarToolState.ts#L65)
+[tools/sidebar/model/internal/tool/SidebarToolState.ts:65](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/tool/SidebarToolState.ts#L65)
 
-___
+***
 
-### getIcon
+### getIcon()
 
-▸ **getIcon**(): `string`
+> **getIcon**(): `string`
 
 It returns the icon property of the tool state.
 
@@ -180,21 +140,21 @@ It returns the icon property of the tool state.
 
 #### Implementation of
 
-[ISidebarToolState](../interfaces/ISidebarToolState.md).[getIcon](../interfaces/ISidebarToolState.md#geticon)
+[`ISidebarToolState`](../interfaces/ISidebarToolState.md).[`getIcon`](../interfaces/ISidebarToolState.md#geticon)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[getIcon](MapToolState.md#geticon)
+[`MapToolState`](MapToolState.md).[`getIcon`](MapToolState.md#geticon)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:120](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L120)
+[model/internal/tool/MapToolState.ts:120](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L120)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 It returns the id property of the tool state.
 
@@ -204,21 +164,21 @@ It returns the id property of the tool state.
 
 #### Implementation of
 
-[ISidebarToolState](../interfaces/ISidebarToolState.md).[getId](../interfaces/ISidebarToolState.md#getid)
+[`ISidebarToolState`](../interfaces/ISidebarToolState.md).[`getId`](../interfaces/ISidebarToolState.md#getid)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[getId](MapToolState.md#getid)
+[`MapToolState`](MapToolState.md).[`getId`](MapToolState.md#getid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:87](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L87)
+[model/internal/object/MapObjectState.ts:87](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L87)
 
-___
+***
 
-### getLabel
+### getLabel()
 
-▸ **getLabel**(): `string`
+> **getLabel**(): `string`
 
 It returns the label property of the tool state.
 
@@ -228,125 +188,125 @@ It returns the label property of the tool state.
 
 #### Implementation of
 
-[ISidebarToolState](../interfaces/ISidebarToolState.md).[getLabel](../interfaces/ISidebarToolState.md#getlabel)
+[`ISidebarToolState`](../interfaces/ISidebarToolState.md).[`getLabel`](../interfaces/ISidebarToolState.md#getlabel)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[getLabel](MapToolState.md#getlabel)
+[`MapToolState`](MapToolState.md).[`getLabel`](MapToolState.md#getlabel)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:104](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L104)
+[model/internal/tool/MapToolState.ts:104](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L104)
 
-___
+***
 
-### getMap
+### getMap()
 
-▸ **getMap**(): [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+> **getMap**(): [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 It returns the map property of the tool state.
 
 #### Returns
 
-[`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+[`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Implementation of
 
-[ISidebarToolState](../interfaces/ISidebarToolState.md).[getMap](../interfaces/ISidebarToolState.md#getmap)
+[`ISidebarToolState`](../interfaces/ISidebarToolState.md).[`getMap`](../interfaces/ISidebarToolState.md#getmap)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[getMap](MapToolState.md#getmap)
+[`MapToolState`](MapToolState.md).[`getMap`](MapToolState.md#getmap)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:136](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L136)
+[model/internal/tool/MapToolState.ts:136](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L136)
 
-___
+***
 
-### getMapObject
+### getMapObject()
 
-▸ **getMapObject**(): [`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>
+> `protected` **getMapObject**(): [`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>
 
 It makes the map object visible to extended classes.
 
 #### Returns
 
-[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>
+[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[getMapObject](MapToolState.md#getmapobject)
+[`MapToolState`](MapToolState.md).[`getMapObject`](MapToolState.md#getmapobject)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:39](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L39)
+[model/internal/object/MapObjectState.ts:39](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L39)
 
-___
+***
 
-### getSidebar
+### getSidebar()
 
-▸ **getSidebar**(): ``null`` \| `Sidebar`
+> **getSidebar**(): `any`
 
 It returns the sidebar.
 
 #### Returns
 
-``null`` \| `Sidebar`
+`any`
 
 #### Implementation of
 
-[ISidebarToolState](../interfaces/ISidebarToolState.md).[getSidebar](../interfaces/ISidebarToolState.md#getsidebar)
+[`ISidebarToolState`](../interfaces/ISidebarToolState.md).[`getSidebar`](../interfaces/ISidebarToolState.md#getsidebar)
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/tool/SidebarToolState.ts:100](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/tool/SidebarToolState.ts#L100)
+[tools/sidebar/model/internal/tool/SidebarToolState.ts:100](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/tool/SidebarToolState.ts#L100)
 
-___
+***
 
-### getTabs
+### getTabs()
 
-▸ **getTabs**(): [`ISidebarTab`](../interfaces/ISidebarTab.md)\<[`ISidebarTabProps`](../modules.md#isidebartabprops), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabState`](../interfaces/ISidebarTabState.md)\<[`ISidebarTabProps`](../modules.md#isidebartabprops), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabConfig`](../modules.md#isidebartabconfig)\>, [`ISidebarTabConfig`](../modules.md#isidebartabconfig), [`ISidebarTabInitProps`](../modules.md#isidebartabinitprops)\<[`ISidebarTabConfig`](../modules.md#isidebartabconfig)\>\>[]
+> **getTabs**(): [`ISidebarTab`](../interfaces/ISidebarTab.md)\<[`ISidebarTabProps`](../type-aliases/ISidebarTabProps.md), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabState`](../interfaces/ISidebarTabState.md)\<[`ISidebarTabProps`](../type-aliases/ISidebarTabProps.md), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md)\>, [`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md), [`ISidebarTabInitProps`](../type-aliases/ISidebarTabInitProps.md)\<[`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md)\>\>[]
 
 It returns the tabs controls.
 
 #### Returns
 
-[`ISidebarTab`](../interfaces/ISidebarTab.md)\<[`ISidebarTabProps`](../modules.md#isidebartabprops), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabState`](../interfaces/ISidebarTabState.md)\<[`ISidebarTabProps`](../modules.md#isidebartabprops), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabConfig`](../modules.md#isidebartabconfig)\>, [`ISidebarTabConfig`](../modules.md#isidebartabconfig), [`ISidebarTabInitProps`](../modules.md#isidebartabinitprops)\<[`ISidebarTabConfig`](../modules.md#isidebartabconfig)\>\>[]
+[`ISidebarTab`](../interfaces/ISidebarTab.md)\<[`ISidebarTabProps`](../type-aliases/ISidebarTabProps.md), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabState`](../interfaces/ISidebarTabState.md)\<[`ISidebarTabProps`](../type-aliases/ISidebarTabProps.md), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md)\>, [`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md), [`ISidebarTabInitProps`](../type-aliases/ISidebarTabInitProps.md)\<[`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md)\>\>[]
 
 #### Implementation of
 
-[ISidebarToolState](../interfaces/ISidebarToolState.md).[getTabs](../interfaces/ISidebarToolState.md#gettabs)
+[`ISidebarToolState`](../interfaces/ISidebarToolState.md).[`getTabs`](../interfaces/ISidebarToolState.md#gettabs)
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/tool/SidebarToolState.ts:116](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/tool/SidebarToolState.ts#L116)
+[tools/sidebar/model/internal/tool/SidebarToolState.ts:116](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/tool/SidebarToolState.ts#L116)
 
-___
+***
 
-### getTabsConfigs
+### getTabsConfigs()
 
-▸ **getTabsConfigs**(): `undefined` \| [`ISidebarTabConfig`](../modules.md#isidebartabconfig)[]
+> **getTabsConfigs**(): `undefined` \| [`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md)[]
 
 It returns the tabs configs.
 
 #### Returns
 
-`undefined` \| [`ISidebarTabConfig`](../modules.md#isidebartabconfig)[]
+`undefined` \| [`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md)[]
 
 #### Implementation of
 
-[ISidebarToolState](../interfaces/ISidebarToolState.md).[getTabsConfigs](../interfaces/ISidebarToolState.md#gettabsconfigs)
+[`ISidebarToolState`](../interfaces/ISidebarToolState.md).[`getTabsConfigs`](../interfaces/ISidebarToolState.md#gettabsconfigs)
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/tool/SidebarToolState.ts:93](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/tool/SidebarToolState.ts#L93)
+[tools/sidebar/model/internal/tool/SidebarToolState.ts:93](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/tool/SidebarToolState.ts#L93)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 It returns the type property of the tool state.
 
@@ -356,31 +316,31 @@ It returns the type property of the tool state.
 
 #### Implementation of
 
-[ISidebarToolState](../interfaces/ISidebarToolState.md).[getType](../interfaces/ISidebarToolState.md#gettype)
+[`ISidebarToolState`](../interfaces/ISidebarToolState.md).[`getType`](../interfaces/ISidebarToolState.md#gettype)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[getType](MapToolState.md#gettype)
+[`MapToolState`](MapToolState.md).[`getType`](MapToolState.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:80](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L80)
+[model/internal/object/MapObjectState.ts:80](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L80)
 
-___
+***
 
-### initialize
+### initialize()
 
-▸ **initialize**(`defaults`, `props`, `initProps`): `void`
+> **initialize**(`defaults`, `props`, `initProps`): `void`
 
 It resets state with respect to initial props.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `defaults` | [`ISidebarToolDefaults`](../interfaces/ISidebarToolDefaults.md) |
-| `props` | [`ISidebarToolProps`](../modules.md#isidebartoolprops) |
-| `initProps` | [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`ISidebarToolConfig`](../modules.md#isidebartoolconfig)\> |
+• **defaults**: [`ISidebarToolDefaults`](../interfaces/ISidebarToolDefaults.md)
+
+• **props**: [`ISidebarToolProps`](../type-aliases/ISidebarToolProps.md)
+
+• **initProps**: [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`ISidebarToolConfig`](../type-aliases/ISidebarToolConfig.md)\>
 
 #### Returns
 
@@ -388,21 +348,21 @@ It resets state with respect to initial props.
 
 #### Implementation of
 
-[ISidebarToolState](../interfaces/ISidebarToolState.md).[initialize](../interfaces/ISidebarToolState.md#initialize)
+[`ISidebarToolState`](../interfaces/ISidebarToolState.md).[`initialize`](../interfaces/ISidebarToolState.md#initialize)
 
 #### Overrides
 
-[MapToolState](MapToolState.md).[initialize](MapToolState.md#initialize)
+[`MapToolState`](MapToolState.md).[`initialize`](MapToolState.md#initialize)
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/tool/SidebarToolState.ts:53](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/tool/SidebarToolState.ts#L53)
+[tools/sidebar/model/internal/tool/SidebarToolState.ts:53](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/tool/SidebarToolState.ts#L53)
 
-___
+***
 
-### isEnabled
+### isEnabled()
 
-▸ **isEnabled**(): `boolean`
+> **isEnabled**(): `boolean`
 
 It returns the enabled property of the tool state.
 
@@ -412,29 +372,27 @@ It returns the enabled property of the tool state.
 
 #### Implementation of
 
-[ISidebarToolState](../interfaces/ISidebarToolState.md).[isEnabled](../interfaces/ISidebarToolState.md#isenabled)
+[`ISidebarToolState`](../interfaces/ISidebarToolState.md).[`isEnabled`](../interfaces/ISidebarToolState.md#isenabled)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[isEnabled](MapToolState.md#isenabled)
+[`MapToolState`](MapToolState.md).[`isEnabled`](MapToolState.md#isenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:88](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L88)
+[model/internal/tool/MapToolState.ts:88](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L88)
 
-___
+***
 
-### removeTab
+### removeTab()
 
-▸ **removeTab**(`tab`): `void`
+> **removeTab**(`tab`): `void`
 
 It removes tab from the list of tabs.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `tab` | [`ISidebarTab`](../interfaces/ISidebarTab.md)\<[`ISidebarTabProps`](../modules.md#isidebartabprops), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabState`](../interfaces/ISidebarTabState.md)\<[`ISidebarTabProps`](../modules.md#isidebartabprops), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabConfig`](../modules.md#isidebartabconfig)\>, [`ISidebarTabConfig`](../modules.md#isidebartabconfig), [`ISidebarTabInitProps`](../modules.md#isidebartabinitprops)\<[`ISidebarTabConfig`](../modules.md#isidebartabconfig)\>\> |
+• **tab**: [`ISidebarTab`](../interfaces/ISidebarTab.md)\<[`ISidebarTabProps`](../type-aliases/ISidebarTabProps.md), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabState`](../interfaces/ISidebarTabState.md)\<[`ISidebarTabProps`](../type-aliases/ISidebarTabProps.md), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md)\>, [`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md), [`ISidebarTabInitProps`](../type-aliases/ISidebarTabInitProps.md)\<[`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md)\>\>
 
 #### Returns
 
@@ -442,55 +400,51 @@ It removes tab from the list of tabs.
 
 #### Implementation of
 
-[ISidebarToolState](../interfaces/ISidebarToolState.md).[removeTab](../interfaces/ISidebarToolState.md#removetab)
+[`ISidebarToolState`](../interfaces/ISidebarToolState.md).[`removeTab`](../interfaces/ISidebarToolState.md#removetab)
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/tool/SidebarToolState.ts:134](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/tool/SidebarToolState.ts#L134)
+[tools/sidebar/model/internal/tool/SidebarToolState.ts:134](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/tool/SidebarToolState.ts#L134)
 
-___
+***
 
-### serialize
+### serialize()
 
-▸ **serialize**(`defaults`): [`ISidebarToolConfig`](../modules.md#isidebartoolconfig)
+> **serialize**(`defaults`): [`ISidebarToolConfig`](../type-aliases/ISidebarToolConfig.md)
 
 The method serializes the tool configuration. Optionally, defaults can be set if property is undefined.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `defaults` | `undefined` \| [`SidebarToolDefaults`](SidebarToolDefaults.md) |
+• **defaults**: `undefined` \| [`SidebarToolDefaults`](SidebarToolDefaults.md)
 
 #### Returns
 
-[`ISidebarToolConfig`](../modules.md#isidebartoolconfig)
+[`ISidebarToolConfig`](../type-aliases/ISidebarToolConfig.md)
 
 #### Implementation of
 
-[ISidebarToolState](../interfaces/ISidebarToolState.md).[serialize](../interfaces/ISidebarToolState.md#serialize)
+[`ISidebarToolState`](../interfaces/ISidebarToolState.md).[`serialize`](../interfaces/ISidebarToolState.md#serialize)
 
 #### Overrides
 
-[MapToolState](MapToolState.md).[serialize](MapToolState.md#serialize)
+[`MapToolState`](MapToolState.md).[`serialize`](MapToolState.md#serialize)
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/tool/SidebarToolState.ts:77](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/tool/SidebarToolState.ts#L77)
+[tools/sidebar/model/internal/tool/SidebarToolState.ts:77](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/tool/SidebarToolState.ts#L77)
 
-___
+***
 
-### setEnabled
+### setEnabled()
 
-▸ **setEnabled**(`enabled`): `void`
+> **setEnabled**(`enabled`): `void`
 
 It sets the enabled property of tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `enabled` | `boolean` |
+• **enabled**: `boolean`
 
 #### Returns
 
@@ -498,29 +452,27 @@ It sets the enabled property of tool state.
 
 #### Implementation of
 
-[ISidebarToolState](../interfaces/ISidebarToolState.md).[setEnabled](../interfaces/ISidebarToolState.md#setenabled)
+[`ISidebarToolState`](../interfaces/ISidebarToolState.md).[`setEnabled`](../interfaces/ISidebarToolState.md#setenabled)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[setEnabled](MapToolState.md#setenabled)
+[`MapToolState`](MapToolState.md).[`setEnabled`](MapToolState.md#setenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:97](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L97)
+[model/internal/tool/MapToolState.ts:97](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L97)
 
-___
+***
 
-### setIcon
+### setIcon()
 
-▸ **setIcon**(`icon`): `void`
+> **setIcon**(`icon`): `void`
 
 It sets the icon property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `icon` | `string` |
+• **icon**: `string`
 
 #### Returns
 
@@ -528,29 +480,27 @@ It sets the icon property of the tool state.
 
 #### Implementation of
 
-[ISidebarToolState](../interfaces/ISidebarToolState.md).[setIcon](../interfaces/ISidebarToolState.md#seticon)
+[`ISidebarToolState`](../interfaces/ISidebarToolState.md).[`setIcon`](../interfaces/ISidebarToolState.md#seticon)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[setIcon](MapToolState.md#seticon)
+[`MapToolState`](MapToolState.md).[`setIcon`](MapToolState.md#seticon)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:129](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L129)
+[model/internal/tool/MapToolState.ts:129](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L129)
 
-___
+***
 
-### setId
+### setId()
 
-▸ **setId**(`id`): `void`
+> **setId**(`id`): `void`
 
 It sets the id property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `id` | `string` |
+• **id**: `string`
 
 #### Returns
 
@@ -558,29 +508,27 @@ It sets the id property of the tool state.
 
 #### Implementation of
 
-[ISidebarToolState](../interfaces/ISidebarToolState.md).[setId](../interfaces/ISidebarToolState.md#setid)
+[`ISidebarToolState`](../interfaces/ISidebarToolState.md).[`setId`](../interfaces/ISidebarToolState.md#setid)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[setId](MapToolState.md#setid)
+[`MapToolState`](MapToolState.md).[`setId`](MapToolState.md#setid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:96](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L96)
+[model/internal/object/MapObjectState.ts:96](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L96)
 
-___
+***
 
-### setLabel
+### setLabel()
 
-▸ **setLabel**(`label`): `void`
+> **setLabel**(`label`): `void`
 
 It sets the label property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `label` | `string` |
+• **label**: `string`
 
 #### Returns
 
@@ -588,29 +536,27 @@ It sets the label property of the tool state.
 
 #### Implementation of
 
-[ISidebarToolState](../interfaces/ISidebarToolState.md).[setLabel](../interfaces/ISidebarToolState.md#setlabel)
+[`ISidebarToolState`](../interfaces/ISidebarToolState.md).[`setLabel`](../interfaces/ISidebarToolState.md#setlabel)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[setLabel](MapToolState.md#setlabel)
+[`MapToolState`](MapToolState.md).[`setLabel`](MapToolState.md#setlabel)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:113](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L113)
+[model/internal/tool/MapToolState.ts:113](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L113)
 
-___
+***
 
-### setMap
+### setMap()
 
-▸ **setMap**(`map`): `void`
+> `protected` **setMap**(`map`): `void`
 
 It sets the map property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `map` | [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\> |
+• **map**: [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Returns
 
@@ -618,25 +564,23 @@ It sets the map property of the tool state.
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[setMap](MapToolState.md#setmap)
+[`MapToolState`](MapToolState.md).[`setMap`](MapToolState.md#setmap)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:145](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L145)
+[model/internal/tool/MapToolState.ts:145](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L145)
 
-___
+***
 
-### setSidebar
+### setSidebar()
 
-▸ **setSidebar**(`sidebar`): `void`
+> **setSidebar**(`sidebar`): `void`
 
 It sets sidebar.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `sidebar` | `Sidebar` |
+• **sidebar**: `Sidebar`
 
 #### Returns
 
@@ -644,8 +588,8 @@ It sets sidebar.
 
 #### Implementation of
 
-[ISidebarToolState](../interfaces/ISidebarToolState.md).[setSidebar](../interfaces/ISidebarToolState.md#setsidebar)
+[`ISidebarToolState`](../interfaces/ISidebarToolState.md).[`setSidebar`](../interfaces/ISidebarToolState.md#setsidebar)
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/tool/SidebarToolState.ts:109](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/tool/SidebarToolState.ts#L109)
+[tools/sidebar/model/internal/tool/SidebarToolState.ts:109](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/tool/SidebarToolState.ts#L109)

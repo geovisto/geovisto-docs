@@ -1,44 +1,37 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / ITextFormInputProps
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / ITextFormInputProps
 
 # Interface: ITextFormInputProps
 
 This interface declares specification of a form input props model.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`IMapFormInputProps`](IMapFormInputProps.md)
-
-  ↳ **`ITextFormInputProps`**
-
-  ↳↳ [`ILabeledTextFormInputProps`](ILabeledTextFormInputProps.md)
-
-## Table of contents
-
-### Properties
-
-- [onChangeAction](ITextFormInputProps.md#onchangeaction)
-- [type](ITextFormInputProps.md#type)
 
 ## Properties
 
 ### onChangeAction
 
-• **onChangeAction**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `unknown`
+> **onChangeAction**: `null` \| (`this`, `ev`) => `unknown`
 
-#### Defined in
+#### Source
 
-[src/model/types/inputs/basic/text/ITextFormInputProps.ts:9](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/inputs/basic/text/ITextFormInputProps.ts#L9)
+[model/types/inputs/basic/text/ITextFormInputProps.ts:9](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/inputs/basic/text/ITextFormInputProps.ts#L9)
 
-___
+***
 
-### type
+### type?
 
-• `Optional` **type**: `string`
+> `optional` **type**: `string`
 
-#### Defined in
+#### Source
 
-[src/model/types/inputs/basic/text/ITextFormInputProps.ts:10](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/inputs/basic/text/ITextFormInputProps.ts#L10)
+[model/types/inputs/basic/text/ITextFormInputProps.ts:10](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/inputs/basic/text/ITextFormInputProps.ts#L10)

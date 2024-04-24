@@ -1,75 +1,60 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / AbstractMapDataDomain
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
 
-# Class: AbstractMapDataDomain
+***
+
+[geovisto-map](../README.md) / AbstractMapDataDomain
+
+# Class: `abstract` AbstractMapDataDomain
 
 The class wraps meta data path used to find data.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extended by
 
-- **`AbstractMapDataDomain`**
-
-  ↳ [`JsonMapDataDomain`](JsonMapDataDomain.md)
+- [`JsonMapDataDomain`](JsonMapDataDomain.md)
 
 ## Implements
 
 - [`IMapDataDomain`](../interfaces/IMapDataDomain.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](AbstractMapDataDomain.md#constructor)
-
-### Properties
-
-- [originalDataDomain](AbstractMapDataDomain.md#originaldatadomain)
-
-### Methods
-
-- [getName](AbstractMapDataDomain.md#getname)
-- [getOriginal](AbstractMapDataDomain.md#getoriginal)
-
 ## Constructors
 
-### constructor
+### new AbstractMapDataDomain()
 
-• **new AbstractMapDataDomain**(`originalDataDomain`): [`AbstractMapDataDomain`](AbstractMapDataDomain.md)
+> **new AbstractMapDataDomain**(`originalDataDomain`): [`AbstractMapDataDomain`](AbstractMapDataDomain.md)
 
 It initializes the data domain wrapper providing a basic API.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `originalDataDomain` | `unknown` |
+• **originalDataDomain**: `unknown`
 
 #### Returns
 
 [`AbstractMapDataDomain`](AbstractMapDataDomain.md)
 
-#### Defined in
+#### Source
 
-[src/model/internal/data/abstract/AbstractMapDataDomain.ts:17](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/data/abstract/AbstractMapDataDomain.ts#L17)
+[model/internal/data/abstract/AbstractMapDataDomain.ts:17](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/data/abstract/AbstractMapDataDomain.ts#L17)
 
 ## Properties
 
 ### originalDataDomain
 
-• `Private` **originalDataDomain**: `unknown`
+> `private` **originalDataDomain**: `unknown`
 
-#### Defined in
+#### Source
 
-[src/model/internal/data/abstract/AbstractMapDataDomain.ts:10](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/data/abstract/AbstractMapDataDomain.ts#L10)
+[model/internal/data/abstract/AbstractMapDataDomain.ts:10](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/data/abstract/AbstractMapDataDomain.ts#L10)
 
 ## Methods
 
-### getName
+### getName()
 
-▸ **getName**(): `string`
+> `abstract` **getName**(): `string`
 
 The function returns the string representation of the map data domain
 which is *unique* among the labels of other data domains.
@@ -80,17 +65,17 @@ which is *unique* among the labels of other data domains.
 
 #### Implementation of
 
-[IMapDataDomain](../interfaces/IMapDataDomain.md).[getName](../interfaces/IMapDataDomain.md#getname)
+[`IMapDataDomain`](../interfaces/IMapDataDomain.md).[`getName`](../interfaces/IMapDataDomain.md#getname)
 
-#### Defined in
+#### Source
 
-[src/model/internal/data/abstract/AbstractMapDataDomain.ts:33](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/data/abstract/AbstractMapDataDomain.ts#L33)
+[model/internal/data/abstract/AbstractMapDataDomain.ts:33](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/data/abstract/AbstractMapDataDomain.ts#L33)
 
-___
+***
 
-### getOriginal
+### getOriginal()
 
-▸ **getOriginal**(): `unknown`
+> **getOriginal**(): `unknown`
 
 The function returns the string representation of the map data domain
 which is *unique* among the labels of other data domains.
@@ -101,8 +86,8 @@ which is *unique* among the labels of other data domains.
 
 #### Implementation of
 
-[IMapDataDomain](../interfaces/IMapDataDomain.md).[getOriginal](../interfaces/IMapDataDomain.md#getoriginal)
+[`IMapDataDomain`](../interfaces/IMapDataDomain.md).[`getOriginal`](../interfaces/IMapDataDomain.md#getoriginal)
 
-#### Defined in
+#### Source
 
-[src/model/internal/data/abstract/AbstractMapDataDomain.ts:25](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/data/abstract/AbstractMapDataDomain.ts#L25)
+[model/internal/data/abstract/AbstractMapDataDomain.ts:25](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/data/abstract/AbstractMapDataDomain.ts#L25)

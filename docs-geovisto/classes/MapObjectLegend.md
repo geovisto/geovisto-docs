@@ -1,108 +1,83 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / MapObjectLegend
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
 
-# Class: MapObjectLegend\<T\>
+***
+
+[geovisto-map](../README.md) / MapObjectLegend
+
+# Class: `abstract` MapObjectLegend\<T\>
 
 The interface declares functions for management of legends.
 
-**`Author`**
+## Author
 
 Tomas Koscielniak
 
+## Extended by
+
+- [`MapLayerToolLegend`](MapLayerToolLegend.md)
+
 ## Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends [`IMapObject`](../interfaces/IMapObject.md) |
-
-## Hierarchy
-
-- **`MapObjectLegend`**
-
-  ↳ [`MapLayerToolLegend`](MapLayerToolLegend.md)
-
-## Table of contents
-
-### Constructors
-
-- [constructor](MapObjectLegend.md#constructor)
-
-### Properties
-
-- [mapObject](MapObjectLegend.md#mapobject)
-
-### Methods
-
-- [getContent](MapObjectLegend.md#getcontent)
-- [getMapObject](MapObjectLegend.md#getmapobject)
+• **T** *extends* [`IMapObject`](../interfaces/IMapObject.md)
 
 ## Constructors
 
-### constructor
+### new MapObjectLegend()
 
-• **new MapObjectLegend**\<`T`\>(`mapObject`): [`MapObjectLegend`](MapObjectLegend.md)\<`T`\>
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | extends [`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\> |
+> **new MapObjectLegend**\<`T`\>(`mapObject`): [`MapObjectLegend`](MapObjectLegend.md)\<`T`\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `mapObject` | `T` |
+• **mapObject**: `T`
 
 #### Returns
 
 [`MapObjectLegend`](MapObjectLegend.md)\<`T`\>
 
-#### Defined in
+#### Source
 
-[src/model/internal/legend/MapObjectLegend.ts:13](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/legend/MapObjectLegend.ts#L13)
+[model/internal/legend/MapObjectLegend.ts:13](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/legend/MapObjectLegend.ts#L13)
 
 ## Properties
 
 ### mapObject
 
-• `Private` **mapObject**: `T`
+> `private` **mapObject**: `T`
 
-#### Defined in
+#### Source
 
-[src/model/internal/legend/MapObjectLegend.ts:11](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/legend/MapObjectLegend.ts#L11)
+[model/internal/legend/MapObjectLegend.ts:11](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/legend/MapObjectLegend.ts#L11)
 
 ## Methods
 
-### getContent
+### getContent()
 
-▸ **getContent**(`tool`): `undefined` \| `HTMLElement`
+> `abstract` **getContent**(`tool`): `undefined` \| `HTMLElement`
 
 It returns a HTML div element conatining the legend.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `tool` | [`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>\>, [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>, [`IMapToolAPI`](../modules.md#imaptoolapi)\> |
+• **tool**: [`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>\>, [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>, [`IMapToolAPI`](../type-aliases/IMapToolAPI.md)\>
 
 #### Returns
 
 `undefined` \| `HTMLElement`
 
-#### Defined in
+#### Source
 
-[src/model/internal/legend/MapObjectLegend.ts:24](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/legend/MapObjectLegend.ts#L24)
+[model/internal/legend/MapObjectLegend.ts:24](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/legend/MapObjectLegend.ts#L24)
 
-___
+***
 
-### getMapObject
+### getMapObject()
 
-▸ **getMapObject**(): `T`
+> `protected` **getMapObject**(): `T`
 
 #### Returns
 
 `T`
 
-#### Defined in
+#### Source
 
-[src/model/internal/legend/MapObjectLegend.ts:17](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/legend/MapObjectLegend.ts#L17)
+[model/internal/legend/MapObjectLegend.ts:17](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/legend/MapObjectLegend.ts#L17)

@@ -1,76 +1,42 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / AbstractMapDimension
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
 
-# Class: AbstractMapDimension\<T\>
+***
+
+[geovisto-map](../README.md) / AbstractMapDimension
+
+# Class: `abstract` AbstractMapDimension\<T\>
 
 The class wraps a map type dimension and its properties.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Type parameters
-
-| Name |
-| :------ |
-| `T` |
-
-## Hierarchy
+## Extends
 
 - [`AbstractMapDomain`](AbstractMapDomain.md)
 
-  ↳ **`AbstractMapDimension`**
+## Type parameters
 
-  ↳↳ [`MapDomainDimension`](MapDomainDimension.md)
-
-  ↳↳ [`MapDynamicDomainDimension`](MapDynamicDomainDimension.md)
-
-  ↳↳ [`MapTypeDimension`](MapTypeDimension.md)
+• **T**
 
 ## Implements
 
 - [`IMapDimension`](../interfaces/IMapDimension.md)\<`T`\>
 
-## Table of contents
-
-### Constructors
-
-- [constructor](AbstractMapDimension.md#constructor)
-
-### Properties
-
-- [name](AbstractMapDimension.md#name)
-- [value](AbstractMapDimension.md#value)
-
-### Methods
-
-- [findValue](AbstractMapDimension.md#findvalue)
-- [getName](AbstractMapDimension.md#getname)
-- [getValue](AbstractMapDimension.md#getvalue)
-- [setName](AbstractMapDimension.md#setname)
-- [setStringValue](AbstractMapDimension.md#setstringvalue)
-- [setValue](AbstractMapDimension.md#setvalue)
-- [toString](AbstractMapDimension.md#tostring)
-
 ## Constructors
 
-### constructor
+### new AbstractMapDimension()
 
-• **new AbstractMapDimension**\<`T`\>(`name`, `value?`): [`AbstractMapDimension`](AbstractMapDimension.md)\<`T`\>
+> **new AbstractMapDimension**\<`T`\>(`name`, `value`?): [`AbstractMapDimension`](AbstractMapDimension.md)\<`T`\>
 
 It creates a new map dimension.
 
-#### Type parameters
-
-| Name |
-| :------ |
-| `T` |
-
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
-| `value?` | `T` |
+• **name**: `string`
+
+• **value?**: `T`
 
 #### Returns
 
@@ -78,45 +44,43 @@ It creates a new map dimension.
 
 #### Overrides
 
-[AbstractMapDomain](AbstractMapDomain.md).[constructor](AbstractMapDomain.md#constructor)
+[`AbstractMapDomain`](AbstractMapDomain.md).[`constructor`](AbstractMapDomain.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/model/internal/dimension/AbstractMapDimension.ts:21](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/dimension/AbstractMapDimension.ts#L21)
+[model/internal/dimension/AbstractMapDimension.ts:21](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/dimension/AbstractMapDimension.ts#L21)
 
 ## Properties
 
 ### name
 
-• `Private` **name**: `string`
+> `private` **name**: `string`
 
-#### Defined in
+#### Source
 
-[src/model/internal/dimension/AbstractMapDimension.ts:11](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/dimension/AbstractMapDimension.ts#L11)
+[model/internal/dimension/AbstractMapDimension.ts:11](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/dimension/AbstractMapDimension.ts#L11)
 
-___
+***
 
-### value
+### value?
 
-• `Private` `Optional` **value**: `T`
+> `private` `optional` **value**: `T`
 
-#### Defined in
+#### Source
 
-[src/model/internal/dimension/AbstractMapDimension.ts:12](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/dimension/AbstractMapDimension.ts#L12)
+[model/internal/dimension/AbstractMapDimension.ts:12](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/dimension/AbstractMapDimension.ts#L12)
 
 ## Methods
 
-### findValue
+### findValue()
 
-▸ **findValue**(`value`): `undefined` \| `T`
+> `abstract` **findValue**(`value`): `undefined` \| `T`
 
 It finds the value of given string.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | `string` |
+• **value**: `string`
 
 #### Returns
 
@@ -124,17 +88,17 @@ It finds the value of given string.
 
 #### Implementation of
 
-[IMapDimension](../interfaces/IMapDimension.md).[findValue](../interfaces/IMapDimension.md#findvalue)
+[`IMapDimension`](../interfaces/IMapDimension.md).[`findValue`](../interfaces/IMapDimension.md#findvalue)
 
-#### Defined in
+#### Source
 
-[src/model/internal/dimension/AbstractMapDimension.ts:62](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/dimension/AbstractMapDimension.ts#L62)
+[model/internal/dimension/AbstractMapDimension.ts:62](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/dimension/AbstractMapDimension.ts#L62)
 
-___
+***
 
-### getName
+### getName()
 
-▸ **getName**(): `string`
+> **getName**(): `string`
 
 It returns the name of the dimension
 
@@ -144,21 +108,21 @@ It returns the name of the dimension
 
 #### Implementation of
 
-[IMapDimension](../interfaces/IMapDimension.md).[getName](../interfaces/IMapDimension.md#getname)
+[`IMapDimension`](../interfaces/IMapDimension.md).[`getName`](../interfaces/IMapDimension.md#getname)
 
 #### Overrides
 
-[AbstractMapDomain](AbstractMapDomain.md).[getName](AbstractMapDomain.md#getname)
+[`AbstractMapDomain`](AbstractMapDomain.md).[`getName`](AbstractMapDomain.md#getname)
 
-#### Defined in
+#### Source
 
-[src/model/internal/dimension/AbstractMapDimension.ts:30](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/dimension/AbstractMapDimension.ts#L30)
+[model/internal/dimension/AbstractMapDimension.ts:30](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/dimension/AbstractMapDimension.ts#L30)
 
-___
+***
 
-### getValue
+### getValue()
 
-▸ **getValue**(): `undefined` \| `T`
+> **getValue**(): `undefined` \| `T`
 
 It returns the value which is set to the map dimension.
 
@@ -168,25 +132,23 @@ It returns the value which is set to the map dimension.
 
 #### Implementation of
 
-[IMapDimension](../interfaces/IMapDimension.md).[getValue](../interfaces/IMapDimension.md#getvalue)
+[`IMapDimension`](../interfaces/IMapDimension.md).[`getValue`](../interfaces/IMapDimension.md#getvalue)
 
-#### Defined in
+#### Source
 
-[src/model/internal/dimension/AbstractMapDimension.ts:44](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/dimension/AbstractMapDimension.ts#L44)
+[model/internal/dimension/AbstractMapDimension.ts:44](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/dimension/AbstractMapDimension.ts#L44)
 
-___
+***
 
-### setName
+### setName()
 
-▸ **setName**(`name`): `void`
+> **setName**(`name`): `void`
 
 It sets the name of the dimension
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
+• **name**: `string`
 
 #### Returns
 
@@ -194,25 +156,23 @@ It sets the name of the dimension
 
 #### Implementation of
 
-[IMapDimension](../interfaces/IMapDimension.md).[setName](../interfaces/IMapDimension.md#setname)
+[`IMapDimension`](../interfaces/IMapDimension.md).[`setName`](../interfaces/IMapDimension.md#setname)
 
-#### Defined in
+#### Source
 
-[src/model/internal/dimension/AbstractMapDimension.ts:37](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/dimension/AbstractMapDimension.ts#L37)
+[model/internal/dimension/AbstractMapDimension.ts:37](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/dimension/AbstractMapDimension.ts#L37)
 
-___
+***
 
-### setStringValue
+### setStringValue()
 
-▸ **setStringValue**(`value`): `void`
+> **setStringValue**(`value`): `void`
 
 It deserializes the string representation of a given value.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | `string` |
+• **value**: `string`
 
 #### Returns
 
@@ -220,25 +180,23 @@ It deserializes the string representation of a given value.
 
 #### Implementation of
 
-[IMapDimension](../interfaces/IMapDimension.md).[setStringValue](../interfaces/IMapDimension.md#setstringvalue)
+[`IMapDimension`](../interfaces/IMapDimension.md).[`setStringValue`](../interfaces/IMapDimension.md#setstringvalue)
 
-#### Defined in
+#### Source
 
-[src/model/internal/dimension/AbstractMapDimension.ts:69](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/dimension/AbstractMapDimension.ts#L69)
+[model/internal/dimension/AbstractMapDimension.ts:69](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/dimension/AbstractMapDimension.ts#L69)
 
-___
+***
 
-### setValue
+### setValue()
 
-▸ **setValue**(`value`): `void`
+> **setValue**(`value`): `void`
 
 It sets a new value to the map dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | `undefined` \| `T` |
+• **value**: `undefined` \| `T`
 
 #### Returns
 
@@ -246,17 +204,17 @@ It sets a new value to the map dimension.
 
 #### Implementation of
 
-[IMapDimension](../interfaces/IMapDimension.md).[setValue](../interfaces/IMapDimension.md#setvalue)
+[`IMapDimension`](../interfaces/IMapDimension.md).[`setValue`](../interfaces/IMapDimension.md#setvalue)
 
-#### Defined in
+#### Source
 
-[src/model/internal/dimension/AbstractMapDimension.ts:53](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/dimension/AbstractMapDimension.ts#L53)
+[model/internal/dimension/AbstractMapDimension.ts:53](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/dimension/AbstractMapDimension.ts#L53)
 
-___
+***
 
-### toString
+### toString()
 
-▸ **toString**(): `string`
+> **toString**(): `string`
 
 The string representation is equal to the name of the map domain.
 
@@ -266,8 +224,8 @@ The string representation is equal to the name of the map domain.
 
 #### Inherited from
 
-[AbstractMapDomain](AbstractMapDomain.md).[toString](AbstractMapDomain.md#tostring)
+[`AbstractMapDomain`](AbstractMapDomain.md).[`toString`](AbstractMapDomain.md#tostring)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/abstract/AbstractMapDomain.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/abstract/AbstractMapDomain.ts#L18)
+[model/internal/domain/abstract/AbstractMapDomain.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/abstract/AbstractMapDomain.ts#L18)

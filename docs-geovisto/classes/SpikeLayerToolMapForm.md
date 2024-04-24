@@ -1,76 +1,34 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / SpikeLayerToolMapForm
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / SpikeLayerToolMapForm
 
 # Class: SpikeLayerToolMapForm
 
 This class provides controls for management of the layer sidebar tab.
 
-**`Author`**
+## Author
 
 Vladimir Korencik
 
-## Hierarchy
+## Extends
 
 - [`MapLayerToolForm`](MapLayerToolForm.md)\<[`ISpikeLayerTool`](../interfaces/ISpikeLayerTool.md)\>
-
-  ↳ **`SpikeLayerToolMapForm`**
 
 ## Implements
 
 - [`IMapForm`](../interfaces/IMapForm.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](SpikeLayerToolMapForm.md#constructor)
-
-### Properties
-
-- [btnGroup](SpikeLayerToolMapForm.md#btngroup)
-- [categoryColor](SpikeLayerToolMapForm.md#categorycolor)
-- [categoryColorForm](SpikeLayerToolMapForm.md#categorycolorform)
-- [categoryColorInputs](SpikeLayerToolMapForm.md#categorycolorinputs)
-- [htmlContent](SpikeLayerToolMapForm.md#htmlcontent)
-- [inputs](SpikeLayerToolMapForm.md#inputs)
-- [tool](SpikeLayerToolMapForm.md#tool)
-
-### Methods
-
-- [addSelectItem](SpikeLayerToolMapForm.md#addselectitem)
-- [applyFilters](SpikeLayerToolMapForm.md#applyfilters)
-- [getAutocompleteInput](SpikeLayerToolMapForm.md#getautocompleteinput)
-- [getCategoryColorContent](SpikeLayerToolMapForm.md#getcategorycolorcontent)
-- [getCheckboxInput](SpikeLayerToolMapForm.md#getcheckboxinput)
-- [getColorInput](SpikeLayerToolMapForm.md#getcolorinput)
-- [getContent](SpikeLayerToolMapForm.md#getcontent)
-- [getInputAggregation](SpikeLayerToolMapForm.md#getinputaggregation)
-- [getInputCategory](SpikeLayerToolMapForm.md#getinputcategory)
-- [getInputCategoryColor](SpikeLayerToolMapForm.md#getinputcategorycolor)
-- [getInputCategoryColorOperation](SpikeLayerToolMapForm.md#getinputcategorycoloroperation)
-- [getInputCategoryColorValue](SpikeLayerToolMapForm.md#getinputcategorycolorvalue)
-- [getInputColor](SpikeLayerToolMapForm.md#getinputcolor)
-- [getInputLatitude](SpikeLayerToolMapForm.md#getinputlatitude)
-- [getInputLongtitude](SpikeLayerToolMapForm.md#getinputlongtitude)
-- [getInputValue](SpikeLayerToolMapForm.md#getinputvalue)
-- [getMapObject](SpikeLayerToolMapForm.md#getmapobject)
-- [getNumberInput](SpikeLayerToolMapForm.md#getnumberinput)
-- [getSliderInput](SpikeLayerToolMapForm.md#getsliderinput)
-- [getTextInput](SpikeLayerToolMapForm.md#gettextinput)
-- [getTool](SpikeLayerToolMapForm.md#gettool)
-- [removeSelectItem](SpikeLayerToolMapForm.md#removeselectitem)
-- [setInputValues](SpikeLayerToolMapForm.md#setinputvalues)
-
 ## Constructors
 
-### constructor
+### new SpikeLayerToolMapForm()
 
-• **new SpikeLayerToolMapForm**(`tool`): [`SpikeLayerToolMapForm`](SpikeLayerToolMapForm.md)
+> **new SpikeLayerToolMapForm**(`tool`): [`SpikeLayerToolMapForm`](SpikeLayerToolMapForm.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `tool` | [`ISpikeLayerTool`](../interfaces/ISpikeLayerTool.md)\<[`ISpikeLayerToolProps`](../modules.md#ispikelayertoolprops), [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md), [`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md)\<[`ISpikeLayerToolProps`](../modules.md#ispikelayertoolprops), [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md), [`ISpikeLayerToolConfig`](../modules.md#ispikelayertoolconfig), \{ `aggregation?`: `string` ; `category?`: `string` ; `categoryColor?`: `string` ; `categoryColorOp?`: `string` ; `categoryColorValue?`: `string` ; `color?`: `string` ; `latitude?`: `string` ; `longitude?`: `string` ; `value?`: `string`  }, \{ `aggregation`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> ; `category`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `categoryColor`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `categoryColorOp`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> ; `categoryColorValue`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `color`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `latitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `longitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `value`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>, [`ISpikeLayerToolConfig`](../modules.md#ispikelayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`ISpikeLayerToolConfig`](../modules.md#ispikelayertoolconfig)\>\> |
+• **tool**: [`ISpikeLayerTool`](../interfaces/ISpikeLayerTool.md)\<[`ISpikeLayerToolProps`](../type-aliases/ISpikeLayerToolProps.md), [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md), [`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md)\<[`ISpikeLayerToolProps`](../type-aliases/ISpikeLayerToolProps.md), [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md), [`ISpikeLayerToolConfig`](../type-aliases/ISpikeLayerToolConfig.md), `object`, `object`\>, [`ISpikeLayerToolConfig`](../type-aliases/ISpikeLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`ISpikeLayerToolConfig`](../type-aliases/ISpikeLayerToolConfig.md)\>\>
 
 #### Returns
 
@@ -78,135 +36,147 @@ Vladimir Korencik
 
 #### Overrides
 
-[MapLayerToolForm](MapLayerToolForm.md).[constructor](MapLayerToolForm.md#constructor)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`constructor`](MapLayerToolForm.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:49](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L49)
+[tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:49](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L49)
 
 ## Properties
 
 ### btnGroup
 
-• `Private` **btnGroup**: ``null`` \| `HTMLDivElement`
+> `private` **btnGroup**: `null` \| `HTMLDivElement`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:34](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L34)
+[tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:34](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L34)
 
-___
+***
 
 ### categoryColor
 
-• `Private` **categoryColor**: `HTMLDivElement`
+> `private` **categoryColor**: `HTMLDivElement`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:35](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L35)
+[tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:35](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L35)
 
-___
+***
 
-### categoryColorForm
+### categoryColorForm?
 
-• `Private` `Optional` **categoryColorForm**: `ICategoryColorForm`[]
+> `private` `optional` **categoryColorForm**: `ICategoryColorForm`[]
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:47](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L47)
+[tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:47](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L47)
 
-___
+***
 
-### categoryColorInputs
+### categoryColorInputs?
 
-• `Private` `Optional` **categoryColorInputs**: `ICategoryColorInputs`
+> `private` `optional` **categoryColorInputs**: `ICategoryColorInputs`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:46](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L46)
+[tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:46](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L46)
 
-___
+***
 
 ### htmlContent
 
-• `Private` **htmlContent**: `HTMLDivElement`
+> `private` **htmlContent**: `HTMLDivElement`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L32)
+[tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L32)
 
-___
+***
 
-### inputs
+### inputs?
 
-• `Private` `Optional` **inputs**: `Object`
+> `private` `optional` **inputs**: `object`
 
-#### Type declaration
+#### aggregation
 
-| Name | Type |
-| :------ | :------ |
-| `aggregation` | [`IMapFormInput`](../interfaces/IMapFormInput.md) |
-| `category` | [`IMapFormInput`](../interfaces/IMapFormInput.md) |
-| `color` | [`IMapFormInput`](../interfaces/IMapFormInput.md) |
-| `latitude` | [`IMapFormInput`](../interfaces/IMapFormInput.md) |
-| `longitude` | [`IMapFormInput`](../interfaces/IMapFormInput.md) |
-| `value` | [`IMapFormInput`](../interfaces/IMapFormInput.md) |
+> **aggregation**: [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### category
 
-[src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:37](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L37)
+> **category**: [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-___
+#### color
+
+> **color**: [`IMapFormInput`](../interfaces/IMapFormInput.md)
+
+#### latitude
+
+> **latitude**: [`IMapFormInput`](../interfaces/IMapFormInput.md)
+
+#### longitude
+
+> **longitude**: [`IMapFormInput`](../interfaces/IMapFormInput.md)
+
+#### value
+
+> **value**: [`IMapFormInput`](../interfaces/IMapFormInput.md)
+
+#### Source
+
+[tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:37](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L37)
+
+***
 
 ### tool
 
-• `Private` **tool**: [`ISpikeLayerTool`](../interfaces/ISpikeLayerTool.md)\<[`ISpikeLayerToolProps`](../modules.md#ispikelayertoolprops), [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md), [`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md)\<[`ISpikeLayerToolProps`](../modules.md#ispikelayertoolprops), [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md), [`ISpikeLayerToolConfig`](../modules.md#ispikelayertoolconfig), \{ `aggregation?`: `string` ; `category?`: `string` ; `categoryColor?`: `string` ; `categoryColorOp?`: `string` ; `categoryColorValue?`: `string` ; `color?`: `string` ; `latitude?`: `string` ; `longitude?`: `string` ; `value?`: `string`  }, \{ `aggregation`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> ; `category`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `categoryColor`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `categoryColorOp`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> ; `categoryColorValue`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `color`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `latitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `longitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `value`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>, [`ISpikeLayerToolConfig`](../modules.md#ispikelayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`ISpikeLayerToolConfig`](../modules.md#ispikelayertoolconfig)\>\>
+> `private` **tool**: [`ISpikeLayerTool`](../interfaces/ISpikeLayerTool.md)\<[`ISpikeLayerToolProps`](../type-aliases/ISpikeLayerToolProps.md), [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md), [`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md)\<[`ISpikeLayerToolProps`](../type-aliases/ISpikeLayerToolProps.md), [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md), [`ISpikeLayerToolConfig`](../type-aliases/ISpikeLayerToolConfig.md), `object`, `object`\>, [`ISpikeLayerToolConfig`](../type-aliases/ISpikeLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`ISpikeLayerToolConfig`](../type-aliases/ISpikeLayerToolConfig.md)\>\>
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:33](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L33)
+[tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:33](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L33)
 
 ## Methods
 
-### addSelectItem
+### addSelectItem()
 
-▸ **addSelectItem**(): `void`
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-[src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:120](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L120)
-
-___
-
-### applyFilters
-
-▸ **applyFilters**(): `void`
+> `private` **addSelectItem**(): `void`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:175](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L175)
+[tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:120](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L120)
 
-___
+***
 
-### getAutocompleteInput
+### applyFilters()
 
-▸ **getAutocompleteInput**(`dimension`, `formAction?`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> `private` **applyFilters**(): `void`
+
+#### Returns
+
+`void`
+
+#### Source
+
+[tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:175](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L175)
+
+***
+
+### getAutocompleteInput()
+
+> `protected` **getAutocompleteInput**(`dimension`, `formAction`?): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 Help method which returns a new universal autocomplete input for the any map domain dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDomain`](../interfaces/IMapDomain.md)\> |
-| `formAction?` | (`ev`: `Event`) => `void` |
+• **dimension**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDomain`](../interfaces/IMapDomain.md)\>
+
+• **formAction?**
 
 #### Returns
 
@@ -214,40 +184,39 @@ Help method which returns a new universal autocomplete input for the any map dom
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getAutocompleteInput](MapLayerToolForm.md#getautocompleteinput)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getAutocompleteInput`](MapLayerToolForm.md#getautocompleteinput)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapLayerToolForm.ts:43](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapLayerToolForm.ts#L43)
+[model/internal/form/MapLayerToolForm.ts:43](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapLayerToolForm.ts#L43)
 
-___
+***
 
-### getCategoryColorContent
+### getCategoryColorContent()
 
-▸ **getCategoryColorContent**(): `HTMLDivElement`
+> `private` **getCategoryColorContent**(): `HTMLDivElement`
 
 #### Returns
 
 `HTMLDivElement`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:202](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L202)
+[tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:202](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L202)
 
-___
+***
 
-### getCheckboxInput
+### getCheckboxInput()
 
-▸ **getCheckboxInput**(`dimension`, `formAction?`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> `protected` **getCheckboxInput**(`dimension`, `formAction`?): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 Help method which returns a new universal checkbox input for the any map boolean dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\> |
-| `formAction?` | (`ev`: `Event`) => `void` |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\>
+
+• **formAction?**
 
 #### Returns
 
@@ -255,26 +224,25 @@ Help method which returns a new universal checkbox input for the any map boolean
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getCheckboxInput](MapLayerToolForm.md#getcheckboxinput)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getCheckboxInput`](MapLayerToolForm.md#getcheckboxinput)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapLayerToolForm.ts:78](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapLayerToolForm.ts#L78)
+[model/internal/form/MapLayerToolForm.ts:78](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapLayerToolForm.ts#L78)
 
-___
+***
 
-### getColorInput
+### getColorInput()
 
-▸ **getColorInput**(`dimension`, `formAction?`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> `protected` **getColorInput**(`dimension`, `formAction`?): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 Help method which returns a new universal color input for the any map string dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `formAction?` | (`ev`: `Event`) => `void` |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+• **formAction?**
 
 #### Returns
 
@@ -282,17 +250,17 @@ Help method which returns a new universal color input for the any map string dim
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getColorInput](MapLayerToolForm.md#getcolorinput)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getColorInput`](MapLayerToolForm.md#getcolorinput)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapLayerToolForm.ts:96](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapLayerToolForm.ts#L96)
+[model/internal/form/MapLayerToolForm.ts:96](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapLayerToolForm.ts#L96)
 
-___
+***
 
-### getContent
+### getContent()
 
-▸ **getContent**(): `HTMLDivElement`
+> **getContent**(): `HTMLDivElement`
 
 It returns a HTML div element conatining the form.
 
@@ -302,228 +270,209 @@ It returns a HTML div element conatining the form.
 
 #### Implementation of
 
-[IMapForm](../interfaces/IMapForm.md).[getContent](../interfaces/IMapForm.md#getcontent)
+[`IMapForm`](../interfaces/IMapForm.md).[`getContent`](../interfaces/IMapForm.md#getcontent)
 
 #### Overrides
 
-[MapLayerToolForm](MapLayerToolForm.md).[getContent](MapLayerToolForm.md#getcontent)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getContent`](MapLayerToolForm.md#getcontent)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:87](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L87)
+[tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:87](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L87)
 
-___
+***
 
-### getInputAggregation
+### getInputAggregation()
 
-▸ **getInputAggregation**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputAggregation**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> |
+• **dimension**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:264](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L264)
+[tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:264](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L264)
 
-___
+***
 
-### getInputCategory
+### getInputCategory()
 
-▸ **getInputCategory**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputCategory**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
+• **dimension**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:252](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L252)
+[tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:252](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L252)
 
-___
+***
 
-### getInputCategoryColor
+### getInputCategoryColor()
 
-▸ **getInputCategoryColor**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputCategoryColor**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:284](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L284)
+[tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:284](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L284)
 
-___
+***
 
-### getInputCategoryColorOperation
+### getInputCategoryColorOperation()
 
-▸ **getInputCategoryColorOperation**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputCategoryColorOperation**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> |
+• **dimension**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:274](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L274)
+[tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:274](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L274)
 
-___
+***
 
-### getInputCategoryColorValue
+### getInputCategoryColorValue()
 
-▸ **getInputCategoryColorValue**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputCategoryColorValue**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:279](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L279)
+[tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:279](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L279)
 
-___
+***
 
-### getInputColor
+### getInputColor()
 
-▸ **getInputColor**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputColor**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:270](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L270)
+[tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:270](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L270)
 
-___
+***
 
-### getInputLatitude
+### getInputLatitude()
 
-▸ **getInputLatitude**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputLatitude**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
+• **dimension**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:240](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L240)
+[tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:240](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L240)
 
-___
+***
 
-### getInputLongtitude
+### getInputLongtitude()
 
-▸ **getInputLongtitude**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputLongtitude**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
+• **dimension**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:246](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L246)
+[tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:246](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L246)
 
-___
+***
 
-### getInputValue
+### getInputValue()
 
-▸ **getInputValue**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputValue**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
+• **dimension**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:258](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L258)
+[tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:258](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L258)
 
-___
+***
 
-### getMapObject
+### getMapObject()
 
-▸ **getMapObject**(): [`ISpikeLayerTool`](../interfaces/ISpikeLayerTool.md)\<[`ISpikeLayerToolProps`](../modules.md#ispikelayertoolprops), [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md), [`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md)\<[`ISpikeLayerToolProps`](../modules.md#ispikelayertoolprops), [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md), [`ISpikeLayerToolConfig`](../modules.md#ispikelayertoolconfig), \{ `aggregation?`: `string` ; `category?`: `string` ; `categoryColor?`: `string` ; `categoryColorOp?`: `string` ; `categoryColorValue?`: `string` ; `color?`: `string` ; `latitude?`: `string` ; `longitude?`: `string` ; `value?`: `string`  }, \{ `aggregation`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> ; `category`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `categoryColor`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `categoryColorOp`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> ; `categoryColorValue`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `color`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `latitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `longitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `value`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>, [`ISpikeLayerToolConfig`](../modules.md#ispikelayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`ISpikeLayerToolConfig`](../modules.md#ispikelayertoolconfig)\>\>
+> `protected` **getMapObject**(): [`ISpikeLayerTool`](../interfaces/ISpikeLayerTool.md)\<[`ISpikeLayerToolProps`](../type-aliases/ISpikeLayerToolProps.md), [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md), [`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md)\<[`ISpikeLayerToolProps`](../type-aliases/ISpikeLayerToolProps.md), [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md), [`ISpikeLayerToolConfig`](../type-aliases/ISpikeLayerToolConfig.md), `object`, `object`\>, [`ISpikeLayerToolConfig`](../type-aliases/ISpikeLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`ISpikeLayerToolConfig`](../type-aliases/ISpikeLayerToolConfig.md)\>\>
 
 #### Returns
 
-[`ISpikeLayerTool`](../interfaces/ISpikeLayerTool.md)\<[`ISpikeLayerToolProps`](../modules.md#ispikelayertoolprops), [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md), [`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md)\<[`ISpikeLayerToolProps`](../modules.md#ispikelayertoolprops), [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md), [`ISpikeLayerToolConfig`](../modules.md#ispikelayertoolconfig), \{ `aggregation?`: `string` ; `category?`: `string` ; `categoryColor?`: `string` ; `categoryColorOp?`: `string` ; `categoryColorValue?`: `string` ; `color?`: `string` ; `latitude?`: `string` ; `longitude?`: `string` ; `value?`: `string`  }, \{ `aggregation`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> ; `category`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `categoryColor`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `categoryColorOp`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> ; `categoryColorValue`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `color`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `latitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `longitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `value`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>, [`ISpikeLayerToolConfig`](../modules.md#ispikelayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`ISpikeLayerToolConfig`](../modules.md#ispikelayertoolconfig)\>\>
+[`ISpikeLayerTool`](../interfaces/ISpikeLayerTool.md)\<[`ISpikeLayerToolProps`](../type-aliases/ISpikeLayerToolProps.md), [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md), [`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md)\<[`ISpikeLayerToolProps`](../type-aliases/ISpikeLayerToolProps.md), [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md), [`ISpikeLayerToolConfig`](../type-aliases/ISpikeLayerToolConfig.md), `object`, `object`\>, [`ISpikeLayerToolConfig`](../type-aliases/ISpikeLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`ISpikeLayerToolConfig`](../type-aliases/ISpikeLayerToolConfig.md)\>\>
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getMapObject](MapLayerToolForm.md#getmapobject)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getMapObject`](MapLayerToolForm.md#getmapobject)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapObjectForm.ts:16](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapObjectForm.ts#L16)
+[model/internal/form/MapObjectForm.ts:16](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapObjectForm.ts#L16)
 
-___
+***
 
-### getNumberInput
+### getNumberInput()
 
-▸ **getNumberInput**(`dimension`, `formAction?`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> `protected` **getNumberInput**(`dimension`, `formAction`?): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 Help method which returns a new universal number input for the any map number dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> |
-| `formAction?` | (`ev`: `Event`) => `void` |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
+
+• **formAction?**
 
 #### Returns
 
@@ -531,26 +480,25 @@ Help method which returns a new universal number input for the any map number di
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getNumberInput](MapLayerToolForm.md#getnumberinput)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getNumberInput`](MapLayerToolForm.md#getnumberinput)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapLayerToolForm.ts:133](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapLayerToolForm.ts#L133)
+[model/internal/form/MapLayerToolForm.ts:133](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapLayerToolForm.ts#L133)
 
-___
+***
 
-### getSliderInput
+### getSliderInput()
 
-▸ **getSliderInput**(`dimension`, `formAction?`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> `protected` **getSliderInput**(`dimension`, `formAction`?): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 Help method which returns a new universal slider input for the any map range integer dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md)\> |
-| `formAction?` | (`ev`: `Event`) => `void` |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md)\>
+
+• **formAction?**
 
 #### Returns
 
@@ -558,26 +506,25 @@ Help method which returns a new universal slider input for the any map range int
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getSliderInput](MapLayerToolForm.md#getsliderinput)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getSliderInput`](MapLayerToolForm.md#getsliderinput)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapLayerToolForm.ts:113](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapLayerToolForm.ts#L113)
+[model/internal/form/MapLayerToolForm.ts:113](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapLayerToolForm.ts#L113)
 
-___
+***
 
-### getTextInput
+### getTextInput()
 
-▸ **getTextInput**(`dimension`, `formAction?`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> `protected` **getTextInput**(`dimension`, `formAction`?): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 Help method which returns a new universal text input for the any map domain dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `formAction?` | (`ev`: `Event`) => `void` |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+• **formAction?**
 
 #### Returns
 
@@ -585,68 +532,73 @@ Help method which returns a new universal text input for the any map domain dime
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getTextInput](MapLayerToolForm.md#gettextinput)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getTextInput`](MapLayerToolForm.md#gettextinput)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapLayerToolForm.ts:61](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapLayerToolForm.ts#L61)
+[model/internal/form/MapLayerToolForm.ts:61](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapLayerToolForm.ts#L61)
 
-___
+***
 
-### getTool
+### getTool()
 
-▸ **getTool**(): [`ISpikeLayerTool`](../interfaces/ISpikeLayerTool.md)\<[`ISpikeLayerToolProps`](../modules.md#ispikelayertoolprops), [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md), [`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md)\<[`ISpikeLayerToolProps`](../modules.md#ispikelayertoolprops), [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md), [`ISpikeLayerToolConfig`](../modules.md#ispikelayertoolconfig), \{ `aggregation?`: `string` ; `category?`: `string` ; `categoryColor?`: `string` ; `categoryColorOp?`: `string` ; `categoryColorValue?`: `string` ; `color?`: `string` ; `latitude?`: `string` ; `longitude?`: `string` ; `value?`: `string`  }, \{ `aggregation`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> ; `category`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `categoryColor`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `categoryColorOp`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> ; `categoryColorValue`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `color`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `latitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `longitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `value`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>, [`ISpikeLayerToolConfig`](../modules.md#ispikelayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`ISpikeLayerToolConfig`](../modules.md#ispikelayertoolconfig)\>\>
+> **getTool**(): [`ISpikeLayerTool`](../interfaces/ISpikeLayerTool.md)\<[`ISpikeLayerToolProps`](../type-aliases/ISpikeLayerToolProps.md), [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md), [`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md)\<[`ISpikeLayerToolProps`](../type-aliases/ISpikeLayerToolProps.md), [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md), [`ISpikeLayerToolConfig`](../type-aliases/ISpikeLayerToolConfig.md), `object`, `object`\>, [`ISpikeLayerToolConfig`](../type-aliases/ISpikeLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`ISpikeLayerToolConfig`](../type-aliases/ISpikeLayerToolConfig.md)\>\>
 
 #### Returns
 
-[`ISpikeLayerTool`](../interfaces/ISpikeLayerTool.md)\<[`ISpikeLayerToolProps`](../modules.md#ispikelayertoolprops), [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md), [`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md)\<[`ISpikeLayerToolProps`](../modules.md#ispikelayertoolprops), [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md), [`ISpikeLayerToolConfig`](../modules.md#ispikelayertoolconfig), \{ `aggregation?`: `string` ; `category?`: `string` ; `categoryColor?`: `string` ; `categoryColorOp?`: `string` ; `categoryColorValue?`: `string` ; `color?`: `string` ; `latitude?`: `string` ; `longitude?`: `string` ; `value?`: `string`  }, \{ `aggregation`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> ; `category`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `categoryColor`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `categoryColorOp`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> ; `categoryColorValue`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `color`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `latitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `longitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `value`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>, [`ISpikeLayerToolConfig`](../modules.md#ispikelayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`ISpikeLayerToolConfig`](../modules.md#ispikelayertoolconfig)\>\>
+[`ISpikeLayerTool`](../interfaces/ISpikeLayerTool.md)\<[`ISpikeLayerToolProps`](../type-aliases/ISpikeLayerToolProps.md), [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md), [`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md)\<[`ISpikeLayerToolProps`](../type-aliases/ISpikeLayerToolProps.md), [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md), [`ISpikeLayerToolConfig`](../type-aliases/ISpikeLayerToolConfig.md), `object`, `object`\>, [`ISpikeLayerToolConfig`](../type-aliases/ISpikeLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`ISpikeLayerToolConfig`](../type-aliases/ISpikeLayerToolConfig.md)\>\>
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:57](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L57)
+[tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:57](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L57)
 
-___
+***
 
-### removeSelectItem
+### removeSelectItem()
 
-▸ **removeSelectItem**(`e`): `void`
+> `private` **removeSelectItem**(`e`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `e` | `MouseEvent` |
+• **e**: `MouseEvent`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:161](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L161)
+[tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:161](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L161)
 
-___
+***
 
-### setInputValues
+### setInputValues()
 
-▸ **setInputValues**(`dimensions`): `void`
+> **setInputValues**(`dimensions`): `void`
 
 It updates selected input values according to the given dimensions.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimensions` | `Object` |
-| `dimensions.aggregation` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> |
-| `dimensions.category` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `dimensions.categoryColor` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `dimensions.categoryColorOp` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> |
-| `dimensions.categoryColorValue` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `dimensions.color` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `dimensions.latitude` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `dimensions.longitude` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `dimensions.value` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
+• **dimensions**
+
+• **dimensions.aggregation**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\>
+
+• **dimensions.category**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+• **dimensions.categoryColor**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+• **dimensions.categoryColorOp**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\>
+
+• **dimensions.categoryColorValue**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+• **dimensions.color**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+• **dimensions.latitude**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+• **dimensions.longitude**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+• **dimensions.value**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Returns
 
@@ -654,8 +606,8 @@ It updates selected input values according to the given dimensions.
 
 #### Overrides
 
-[MapLayerToolForm](MapLayerToolForm.md).[setInputValues](MapLayerToolForm.md#setinputvalues)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`setInputValues`](MapLayerToolForm.md#setinputvalues)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:61](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L61)
+[tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts:61](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/form/SpikeLayerToolMapForm.ts#L61)

@@ -1,74 +1,34 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / DotLayerToolMapForm
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / DotLayerToolMapForm
 
 # Class: DotLayerToolMapForm
 
 This class provides controls for management of the layer sidebar tab.
 
-**`Author`**
+## Author
 
 Vladimir Korencik
 
-## Hierarchy
+## Extends
 
 - [`MapLayerToolForm`](MapLayerToolForm.md)\<[`IDotLayerTool`](../interfaces/IDotLayerTool.md)\>
-
-  ↳ **`DotLayerToolMapForm`**
 
 ## Implements
 
 - [`IMapForm`](../interfaces/IMapForm.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](DotLayerToolMapForm.md#constructor)
-
-### Properties
-
-- [btnGroup](DotLayerToolMapForm.md#btngroup)
-- [categoryColor](DotLayerToolMapForm.md#categorycolor)
-- [categoryColorForm](DotLayerToolMapForm.md#categorycolorform)
-- [categoryColorInputs](DotLayerToolMapForm.md#categorycolorinputs)
-- [htmlContent](DotLayerToolMapForm.md#htmlcontent)
-- [inputs](DotLayerToolMapForm.md#inputs)
-- [tool](DotLayerToolMapForm.md#tool)
-
-### Methods
-
-- [addSelectItem](DotLayerToolMapForm.md#addselectitem)
-- [applyFilters](DotLayerToolMapForm.md#applyfilters)
-- [getAutocompleteInput](DotLayerToolMapForm.md#getautocompleteinput)
-- [getCategoryColorContent](DotLayerToolMapForm.md#getcategorycolorcontent)
-- [getCheckboxInput](DotLayerToolMapForm.md#getcheckboxinput)
-- [getColorInput](DotLayerToolMapForm.md#getcolorinput)
-- [getContent](DotLayerToolMapForm.md#getcontent)
-- [getInputCategory](DotLayerToolMapForm.md#getinputcategory)
-- [getInputCategoryColor](DotLayerToolMapForm.md#getinputcategorycolor)
-- [getInputCategoryColorOperation](DotLayerToolMapForm.md#getinputcategorycoloroperation)
-- [getInputCategoryColorValue](DotLayerToolMapForm.md#getinputcategorycolorvalue)
-- [getInputColor](DotLayerToolMapForm.md#getinputcolor)
-- [getInputLatitude](DotLayerToolMapForm.md#getinputlatitude)
-- [getInputLongtitude](DotLayerToolMapForm.md#getinputlongtitude)
-- [getMapObject](DotLayerToolMapForm.md#getmapobject)
-- [getNumberInput](DotLayerToolMapForm.md#getnumberinput)
-- [getSliderInput](DotLayerToolMapForm.md#getsliderinput)
-- [getTextInput](DotLayerToolMapForm.md#gettextinput)
-- [getTool](DotLayerToolMapForm.md#gettool)
-- [removeSelectItem](DotLayerToolMapForm.md#removeselectitem)
-- [setInputValues](DotLayerToolMapForm.md#setinputvalues)
-
 ## Constructors
 
-### constructor
+### new DotLayerToolMapForm()
 
-• **new DotLayerToolMapForm**(`tool`): [`DotLayerToolMapForm`](DotLayerToolMapForm.md)
+> **new DotLayerToolMapForm**(`tool`): [`DotLayerToolMapForm`](DotLayerToolMapForm.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `tool` | [`IDotLayerTool`](../interfaces/IDotLayerTool.md)\<[`IDotLayerToolProps`](../modules.md#idotlayertoolprops), [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md), [`IDotLayerToolState`](../interfaces/IDotLayerToolState.md)\<[`IDotLayerToolProps`](../modules.md#idotlayertoolprops), [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md), [`IDotLayerToolConfig`](../modules.md#idotlayertoolconfig), \{ `category?`: `string` ; `categoryColor?`: `string` ; `categoryColorOp?`: `string` ; `categoryColorValue?`: `string` ; `color?`: `string` ; `latitude?`: `string` ; `longitude?`: `string`  }, \{ `category`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `categoryColor`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `categoryColorOp`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> ; `categoryColorValue`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `color`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `latitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `longitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>, [`IDotLayerToolConfig`](../modules.md#idotlayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IDotLayerToolConfig`](../modules.md#idotlayertoolconfig)\>\> |
+• **tool**: [`IDotLayerTool`](../interfaces/IDotLayerTool.md)\<[`IDotLayerToolProps`](../type-aliases/IDotLayerToolProps.md), [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md), [`IDotLayerToolState`](../interfaces/IDotLayerToolState.md)\<[`IDotLayerToolProps`](../type-aliases/IDotLayerToolProps.md), [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md), [`IDotLayerToolConfig`](../type-aliases/IDotLayerToolConfig.md), `object`, `object`\>, [`IDotLayerToolConfig`](../type-aliases/IDotLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IDotLayerToolConfig`](../type-aliases/IDotLayerToolConfig.md)\>\>
 
 #### Returns
 
@@ -76,133 +36,139 @@ Vladimir Korencik
 
 #### Overrides
 
-[MapLayerToolForm](MapLayerToolForm.md).[constructor](MapLayerToolForm.md#constructor)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`constructor`](MapLayerToolForm.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:45](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L45)
+[tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:45](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L45)
 
 ## Properties
 
 ### btnGroup
 
-• `Private` **btnGroup**: ``null`` \| `HTMLDivElement`
+> `private` **btnGroup**: `null` \| `HTMLDivElement`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:33](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L33)
+[tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:33](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L33)
 
-___
+***
 
 ### categoryColor
 
-• `Private` **categoryColor**: `HTMLDivElement`
+> `private` **categoryColor**: `HTMLDivElement`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:31](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L31)
+[tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:31](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L31)
 
-___
+***
 
-### categoryColorForm
+### categoryColorForm?
 
-• `Private` `Optional` **categoryColorForm**: `ICategoryColorForm`[]
+> `private` `optional` **categoryColorForm**: `ICategoryColorForm`[]
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:43](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L43)
+[tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:43](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L43)
 
-___
+***
 
-### categoryColorInputs
+### categoryColorInputs?
 
-• `Private` `Optional` **categoryColorInputs**: `ICategoryColorInputs`
+> `private` `optional` **categoryColorInputs**: `ICategoryColorInputs`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:42](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L42)
+[tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:42](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L42)
 
-___
+***
 
 ### htmlContent
 
-• `Private` **htmlContent**: `HTMLDivElement`
+> `private` **htmlContent**: `HTMLDivElement`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:30](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L30)
+[tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:30](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L30)
 
-___
+***
 
-### inputs
+### inputs?
 
-• `Private` `Optional` **inputs**: `Object`
+> `private` `optional` **inputs**: `object`
 
-#### Type declaration
+#### category
 
-| Name | Type |
-| :------ | :------ |
-| `category` | [`IMapFormInput`](../interfaces/IMapFormInput.md) |
-| `color` | [`IMapFormInput`](../interfaces/IMapFormInput.md) |
-| `latitude` | [`IMapFormInput`](../interfaces/IMapFormInput.md) |
-| `longitude` | [`IMapFormInput`](../interfaces/IMapFormInput.md) |
+> **category**: [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### color
 
-[src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:35](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L35)
+> **color**: [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-___
+#### latitude
+
+> **latitude**: [`IMapFormInput`](../interfaces/IMapFormInput.md)
+
+#### longitude
+
+> **longitude**: [`IMapFormInput`](../interfaces/IMapFormInput.md)
+
+#### Source
+
+[tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:35](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L35)
+
+***
 
 ### tool
 
-• `Private` **tool**: [`IDotLayerTool`](../interfaces/IDotLayerTool.md)\<[`IDotLayerToolProps`](../modules.md#idotlayertoolprops), [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md), [`IDotLayerToolState`](../interfaces/IDotLayerToolState.md)\<[`IDotLayerToolProps`](../modules.md#idotlayertoolprops), [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md), [`IDotLayerToolConfig`](../modules.md#idotlayertoolconfig), \{ `category?`: `string` ; `categoryColor?`: `string` ; `categoryColorOp?`: `string` ; `categoryColorValue?`: `string` ; `color?`: `string` ; `latitude?`: `string` ; `longitude?`: `string`  }, \{ `category`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `categoryColor`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `categoryColorOp`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> ; `categoryColorValue`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `color`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `latitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `longitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>, [`IDotLayerToolConfig`](../modules.md#idotlayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IDotLayerToolConfig`](../modules.md#idotlayertoolconfig)\>\>
+> `private` **tool**: [`IDotLayerTool`](../interfaces/IDotLayerTool.md)\<[`IDotLayerToolProps`](../type-aliases/IDotLayerToolProps.md), [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md), [`IDotLayerToolState`](../interfaces/IDotLayerToolState.md)\<[`IDotLayerToolProps`](../type-aliases/IDotLayerToolProps.md), [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md), [`IDotLayerToolConfig`](../type-aliases/IDotLayerToolConfig.md), `object`, `object`\>, [`IDotLayerToolConfig`](../type-aliases/IDotLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IDotLayerToolConfig`](../type-aliases/IDotLayerToolConfig.md)\>\>
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L32)
+[tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L32)
 
 ## Methods
 
-### addSelectItem
+### addSelectItem()
 
-▸ **addSelectItem**(): `void`
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-[src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:108](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L108)
-
-___
-
-### applyFilters
-
-▸ **applyFilters**(): `void`
+> `private` **addSelectItem**(): `void`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:163](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L163)
+[tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:108](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L108)
 
-___
+***
 
-### getAutocompleteInput
+### applyFilters()
 
-▸ **getAutocompleteInput**(`dimension`, `formAction?`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> `private` **applyFilters**(): `void`
+
+#### Returns
+
+`void`
+
+#### Source
+
+[tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:163](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L163)
+
+***
+
+### getAutocompleteInput()
+
+> `protected` **getAutocompleteInput**(`dimension`, `formAction`?): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 Help method which returns a new universal autocomplete input for the any map domain dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDomain`](../interfaces/IMapDomain.md)\> |
-| `formAction?` | (`ev`: `Event`) => `void` |
+• **dimension**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDomain`](../interfaces/IMapDomain.md)\>
+
+• **formAction?**
 
 #### Returns
 
@@ -210,40 +176,39 @@ Help method which returns a new universal autocomplete input for the any map dom
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getAutocompleteInput](MapLayerToolForm.md#getautocompleteinput)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getAutocompleteInput`](MapLayerToolForm.md#getautocompleteinput)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapLayerToolForm.ts:43](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapLayerToolForm.ts#L43)
+[model/internal/form/MapLayerToolForm.ts:43](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapLayerToolForm.ts#L43)
 
-___
+***
 
-### getCategoryColorContent
+### getCategoryColorContent()
 
-▸ **getCategoryColorContent**(): `HTMLDivElement`
+> `private` **getCategoryColorContent**(): `HTMLDivElement`
 
 #### Returns
 
 `HTMLDivElement`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:190](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L190)
+[tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:190](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L190)
 
-___
+***
 
-### getCheckboxInput
+### getCheckboxInput()
 
-▸ **getCheckboxInput**(`dimension`, `formAction?`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> `protected` **getCheckboxInput**(`dimension`, `formAction`?): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 Help method which returns a new universal checkbox input for the any map boolean dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\> |
-| `formAction?` | (`ev`: `Event`) => `void` |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\>
+
+• **formAction?**
 
 #### Returns
 
@@ -251,26 +216,25 @@ Help method which returns a new universal checkbox input for the any map boolean
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getCheckboxInput](MapLayerToolForm.md#getcheckboxinput)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getCheckboxInput`](MapLayerToolForm.md#getcheckboxinput)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapLayerToolForm.ts:78](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapLayerToolForm.ts#L78)
+[model/internal/form/MapLayerToolForm.ts:78](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapLayerToolForm.ts#L78)
 
-___
+***
 
-### getColorInput
+### getColorInput()
 
-▸ **getColorInput**(`dimension`, `formAction?`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> `protected` **getColorInput**(`dimension`, `formAction`?): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 Help method which returns a new universal color input for the any map string dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `formAction?` | (`ev`: `Event`) => `void` |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+• **formAction?**
 
 #### Returns
 
@@ -278,17 +242,17 @@ Help method which returns a new universal color input for the any map string dim
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getColorInput](MapLayerToolForm.md#getcolorinput)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getColorInput`](MapLayerToolForm.md#getcolorinput)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapLayerToolForm.ts:96](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapLayerToolForm.ts#L96)
+[model/internal/form/MapLayerToolForm.ts:96](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapLayerToolForm.ts#L96)
 
-___
+***
 
-### getContent
+### getContent()
 
-▸ **getContent**(): `HTMLDivElement`
+> **getContent**(): `HTMLDivElement`
 
 It returns a HTML div element conatining the form.
 
@@ -298,188 +262,173 @@ It returns a HTML div element conatining the form.
 
 #### Implementation of
 
-[IMapForm](../interfaces/IMapForm.md).[getContent](../interfaces/IMapForm.md#getcontent)
+[`IMapForm`](../interfaces/IMapForm.md).[`getContent`](../interfaces/IMapForm.md#getcontent)
 
 #### Overrides
 
-[MapLayerToolForm](MapLayerToolForm.md).[getContent](MapLayerToolForm.md#getcontent)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getContent`](MapLayerToolForm.md#getcontent)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:79](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L79)
+[tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:79](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L79)
 
-___
+***
 
-### getInputCategory
+### getInputCategory()
 
-▸ **getInputCategory**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputCategory**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
+• **dimension**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:240](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L240)
+[tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:240](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L240)
 
-___
+***
 
-### getInputCategoryColor
+### getInputCategoryColor()
 
-▸ **getInputCategoryColor**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputCategoryColor**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:260](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L260)
+[tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:260](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L260)
 
-___
+***
 
-### getInputCategoryColorOperation
+### getInputCategoryColorOperation()
 
-▸ **getInputCategoryColorOperation**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputCategoryColorOperation**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> |
+• **dimension**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:250](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L250)
+[tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:250](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L250)
 
-___
+***
 
-### getInputCategoryColorValue
+### getInputCategoryColorValue()
 
-▸ **getInputCategoryColorValue**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputCategoryColorValue**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:255](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L255)
+[tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:255](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L255)
 
-___
+***
 
-### getInputColor
+### getInputColor()
 
-▸ **getInputColor**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputColor**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:246](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L246)
+[tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:246](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L246)
 
-___
+***
 
-### getInputLatitude
+### getInputLatitude()
 
-▸ **getInputLatitude**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputLatitude**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
+• **dimension**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:228](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L228)
+[tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:228](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L228)
 
-___
+***
 
-### getInputLongtitude
+### getInputLongtitude()
 
-▸ **getInputLongtitude**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> **getInputLongtitude**(`dimension`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
+• **dimension**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Returns
 
 [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:234](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L234)
+[tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:234](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L234)
 
-___
+***
 
-### getMapObject
+### getMapObject()
 
-▸ **getMapObject**(): [`IDotLayerTool`](../interfaces/IDotLayerTool.md)\<[`IDotLayerToolProps`](../modules.md#idotlayertoolprops), [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md), [`IDotLayerToolState`](../interfaces/IDotLayerToolState.md)\<[`IDotLayerToolProps`](../modules.md#idotlayertoolprops), [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md), [`IDotLayerToolConfig`](../modules.md#idotlayertoolconfig), \{ `category?`: `string` ; `categoryColor?`: `string` ; `categoryColorOp?`: `string` ; `categoryColorValue?`: `string` ; `color?`: `string` ; `latitude?`: `string` ; `longitude?`: `string`  }, \{ `category`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `categoryColor`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `categoryColorOp`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> ; `categoryColorValue`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `color`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `latitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `longitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>, [`IDotLayerToolConfig`](../modules.md#idotlayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IDotLayerToolConfig`](../modules.md#idotlayertoolconfig)\>\>
+> `protected` **getMapObject**(): [`IDotLayerTool`](../interfaces/IDotLayerTool.md)\<[`IDotLayerToolProps`](../type-aliases/IDotLayerToolProps.md), [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md), [`IDotLayerToolState`](../interfaces/IDotLayerToolState.md)\<[`IDotLayerToolProps`](../type-aliases/IDotLayerToolProps.md), [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md), [`IDotLayerToolConfig`](../type-aliases/IDotLayerToolConfig.md), `object`, `object`\>, [`IDotLayerToolConfig`](../type-aliases/IDotLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IDotLayerToolConfig`](../type-aliases/IDotLayerToolConfig.md)\>\>
 
 #### Returns
 
-[`IDotLayerTool`](../interfaces/IDotLayerTool.md)\<[`IDotLayerToolProps`](../modules.md#idotlayertoolprops), [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md), [`IDotLayerToolState`](../interfaces/IDotLayerToolState.md)\<[`IDotLayerToolProps`](../modules.md#idotlayertoolprops), [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md), [`IDotLayerToolConfig`](../modules.md#idotlayertoolconfig), \{ `category?`: `string` ; `categoryColor?`: `string` ; `categoryColorOp?`: `string` ; `categoryColorValue?`: `string` ; `color?`: `string` ; `latitude?`: `string` ; `longitude?`: `string`  }, \{ `category`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `categoryColor`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `categoryColorOp`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> ; `categoryColorValue`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `color`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `latitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `longitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>, [`IDotLayerToolConfig`](../modules.md#idotlayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IDotLayerToolConfig`](../modules.md#idotlayertoolconfig)\>\>
+[`IDotLayerTool`](../interfaces/IDotLayerTool.md)\<[`IDotLayerToolProps`](../type-aliases/IDotLayerToolProps.md), [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md), [`IDotLayerToolState`](../interfaces/IDotLayerToolState.md)\<[`IDotLayerToolProps`](../type-aliases/IDotLayerToolProps.md), [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md), [`IDotLayerToolConfig`](../type-aliases/IDotLayerToolConfig.md), `object`, `object`\>, [`IDotLayerToolConfig`](../type-aliases/IDotLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IDotLayerToolConfig`](../type-aliases/IDotLayerToolConfig.md)\>\>
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getMapObject](MapLayerToolForm.md#getmapobject)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getMapObject`](MapLayerToolForm.md#getmapobject)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapObjectForm.ts:16](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapObjectForm.ts#L16)
+[model/internal/form/MapObjectForm.ts:16](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapObjectForm.ts#L16)
 
-___
+***
 
-### getNumberInput
+### getNumberInput()
 
-▸ **getNumberInput**(`dimension`, `formAction?`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> `protected` **getNumberInput**(`dimension`, `formAction`?): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 Help method which returns a new universal number input for the any map number dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> |
-| `formAction?` | (`ev`: `Event`) => `void` |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
+
+• **formAction?**
 
 #### Returns
 
@@ -487,26 +436,25 @@ Help method which returns a new universal number input for the any map number di
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getNumberInput](MapLayerToolForm.md#getnumberinput)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getNumberInput`](MapLayerToolForm.md#getnumberinput)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapLayerToolForm.ts:133](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapLayerToolForm.ts#L133)
+[model/internal/form/MapLayerToolForm.ts:133](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapLayerToolForm.ts#L133)
 
-___
+***
 
-### getSliderInput
+### getSliderInput()
 
-▸ **getSliderInput**(`dimension`, `formAction?`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> `protected` **getSliderInput**(`dimension`, `formAction`?): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 Help method which returns a new universal slider input for the any map range integer dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md)\> |
-| `formAction?` | (`ev`: `Event`) => `void` |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md)\>
+
+• **formAction?**
 
 #### Returns
 
@@ -514,26 +462,25 @@ Help method which returns a new universal slider input for the any map range int
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getSliderInput](MapLayerToolForm.md#getsliderinput)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getSliderInput`](MapLayerToolForm.md#getsliderinput)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapLayerToolForm.ts:113](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapLayerToolForm.ts#L113)
+[model/internal/form/MapLayerToolForm.ts:113](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapLayerToolForm.ts#L113)
 
-___
+***
 
-### getTextInput
+### getTextInput()
 
-▸ **getTextInput**(`dimension`, `formAction?`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> `protected` **getTextInput**(`dimension`, `formAction`?): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 Help method which returns a new universal text input for the any map domain dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `formAction?` | (`ev`: `Event`) => `void` |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+• **formAction?**
 
 #### Returns
 
@@ -541,66 +488,69 @@ Help method which returns a new universal text input for the any map domain dime
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getTextInput](MapLayerToolForm.md#gettextinput)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getTextInput`](MapLayerToolForm.md#gettextinput)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapLayerToolForm.ts:61](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapLayerToolForm.ts#L61)
+[model/internal/form/MapLayerToolForm.ts:61](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapLayerToolForm.ts#L61)
 
-___
+***
 
-### getTool
+### getTool()
 
-▸ **getTool**(): [`IDotLayerTool`](../interfaces/IDotLayerTool.md)\<[`IDotLayerToolProps`](../modules.md#idotlayertoolprops), [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md), [`IDotLayerToolState`](../interfaces/IDotLayerToolState.md)\<[`IDotLayerToolProps`](../modules.md#idotlayertoolprops), [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md), [`IDotLayerToolConfig`](../modules.md#idotlayertoolconfig), \{ `category?`: `string` ; `categoryColor?`: `string` ; `categoryColorOp?`: `string` ; `categoryColorValue?`: `string` ; `color?`: `string` ; `latitude?`: `string` ; `longitude?`: `string`  }, \{ `category`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `categoryColor`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `categoryColorOp`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> ; `categoryColorValue`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `color`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `latitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `longitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>, [`IDotLayerToolConfig`](../modules.md#idotlayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IDotLayerToolConfig`](../modules.md#idotlayertoolconfig)\>\>
+> **getTool**(): [`IDotLayerTool`](../interfaces/IDotLayerTool.md)\<[`IDotLayerToolProps`](../type-aliases/IDotLayerToolProps.md), [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md), [`IDotLayerToolState`](../interfaces/IDotLayerToolState.md)\<[`IDotLayerToolProps`](../type-aliases/IDotLayerToolProps.md), [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md), [`IDotLayerToolConfig`](../type-aliases/IDotLayerToolConfig.md), `object`, `object`\>, [`IDotLayerToolConfig`](../type-aliases/IDotLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IDotLayerToolConfig`](../type-aliases/IDotLayerToolConfig.md)\>\>
 
 #### Returns
 
-[`IDotLayerTool`](../interfaces/IDotLayerTool.md)\<[`IDotLayerToolProps`](../modules.md#idotlayertoolprops), [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md), [`IDotLayerToolState`](../interfaces/IDotLayerToolState.md)\<[`IDotLayerToolProps`](../modules.md#idotlayertoolprops), [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md), [`IDotLayerToolConfig`](../modules.md#idotlayertoolconfig), \{ `category?`: `string` ; `categoryColor?`: `string` ; `categoryColorOp?`: `string` ; `categoryColorValue?`: `string` ; `color?`: `string` ; `latitude?`: `string` ; `longitude?`: `string`  }, \{ `category`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `categoryColor`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `categoryColorOp`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> ; `categoryColorValue`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `color`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `latitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `longitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>, [`IDotLayerToolConfig`](../modules.md#idotlayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IDotLayerToolConfig`](../modules.md#idotlayertoolconfig)\>\>
+[`IDotLayerTool`](../interfaces/IDotLayerTool.md)\<[`IDotLayerToolProps`](../type-aliases/IDotLayerToolProps.md), [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md), [`IDotLayerToolState`](../interfaces/IDotLayerToolState.md)\<[`IDotLayerToolProps`](../type-aliases/IDotLayerToolProps.md), [`IDotLayerToolDefaults`](../interfaces/IDotLayerToolDefaults.md), [`IDotLayerToolConfig`](../type-aliases/IDotLayerToolConfig.md), `object`, `object`\>, [`IDotLayerToolConfig`](../type-aliases/IDotLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IDotLayerToolConfig`](../type-aliases/IDotLayerToolConfig.md)\>\>
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:53](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L53)
+[tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:53](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L53)
 
-___
+***
 
-### removeSelectItem
+### removeSelectItem()
 
-▸ **removeSelectItem**(`e`): `void`
+> `private` **removeSelectItem**(`e`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `e` | `MouseEvent` |
+• **e**: `MouseEvent`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:149](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L149)
+[tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:149](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L149)
 
-___
+***
 
-### setInputValues
+### setInputValues()
 
-▸ **setInputValues**(`dimensions`): `void`
+> **setInputValues**(`dimensions`): `void`
 
 It updates selected input values according to the given dimensions.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimensions` | `Object` |
-| `dimensions.category` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `dimensions.categoryColor` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `dimensions.categoryColorOp` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> |
-| `dimensions.categoryColorValue` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `dimensions.color` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `dimensions.latitude` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `dimensions.longitude` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
+• **dimensions**
+
+• **dimensions.category**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+• **dimensions.categoryColor**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+• **dimensions.categoryColorOp**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\>
+
+• **dimensions.categoryColorValue**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+• **dimensions.color**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+• **dimensions.latitude**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+• **dimensions.longitude**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Returns
 
@@ -608,8 +558,8 @@ It updates selected input values according to the given dimensions.
 
 #### Overrides
 
-[MapLayerToolForm](MapLayerToolForm.md).[setInputValues](MapLayerToolForm.md#setinputvalues)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`setInputValues`](MapLayerToolForm.md#setinputvalues)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:57](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L57)
+[tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts:57](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/dot/model/internal/form/DotLayerToolMapForm.ts#L57)

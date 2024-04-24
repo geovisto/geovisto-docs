@@ -1,64 +1,40 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / ISelectionToolState
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / ISelectionToolState
 
 # Interface: ISelectionToolState\<TProps, TDefaults, TConfig\>
 
 This interface declares functions for using selections.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `TProps` | extends [`ISelectionToolProps`](../modules.md#iselectiontoolprops) = [`ISelectionToolProps`](../modules.md#iselectiontoolprops) |
-| `TDefaults` | extends [`ISelectionToolDefaults`](ISelectionToolDefaults.md) = [`ISelectionToolDefaults`](ISelectionToolDefaults.md) |
-| `TConfig` | extends [`ISelectionToolConfig`](../modules.md#iselectiontoolconfig) = [`ISelectionToolConfig`](../modules.md#iselectiontoolconfig) |
-
-## Hierarchy
+## Extends
 
 - [`IMapToolState`](IMapToolState.md)\<`TProps`, `TDefaults`, `TConfig`\>
 
-  ↳ **`ISelectionToolState`**
+## Type parameters
 
-## Implemented by
+• **TProps** *extends* [`ISelectionToolProps`](../type-aliases/ISelectionToolProps.md) = [`ISelectionToolProps`](../type-aliases/ISelectionToolProps.md)
 
-- [`SelectionToolState`](../classes/SelectionToolState.md)
+• **TDefaults** *extends* [`ISelectionToolDefaults`](ISelectionToolDefaults.md) = [`ISelectionToolDefaults`](ISelectionToolDefaults.md)
 
-## Table of contents
-
-### Methods
-
-- [deserialize](ISelectionToolState.md#deserialize)
-- [getIcon](ISelectionToolState.md#geticon)
-- [getId](ISelectionToolState.md#getid)
-- [getLabel](ISelectionToolState.md#getlabel)
-- [getMap](ISelectionToolState.md#getmap)
-- [getSelection](ISelectionToolState.md#getselection)
-- [getType](ISelectionToolState.md#gettype)
-- [initialize](ISelectionToolState.md#initialize)
-- [isEnabled](ISelectionToolState.md#isenabled)
-- [serialize](ISelectionToolState.md#serialize)
-- [setEnabled](ISelectionToolState.md#setenabled)
-- [setIcon](ISelectionToolState.md#seticon)
-- [setId](ISelectionToolState.md#setid)
-- [setLabel](ISelectionToolState.md#setlabel)
-- [setSelection](ISelectionToolState.md#setselection)
+• **TConfig** *extends* [`ISelectionToolConfig`](../type-aliases/ISelectionToolConfig.md) = [`ISelectionToolConfig`](../type-aliases/ISelectionToolConfig.md)
 
 ## Methods
 
-### deserialize
+### deserialize()
 
-▸ **deserialize**(`config`): `void`
+> **deserialize**(`config`): `void`
 
 The metod takes config and deserializes the values.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `config` | `TConfig` |
+• **config**: `TConfig`
 
 #### Returns
 
@@ -66,17 +42,17 @@ The metod takes config and deserializes the values.
 
 #### Inherited from
 
-[IMapToolState](IMapToolState.md).[deserialize](IMapToolState.md#deserialize)
+[`IMapToolState`](IMapToolState.md).[`deserialize`](IMapToolState.md#deserialize)
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectState.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectState.ts#L32)
+[model/types/object/IMapObjectState.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectState.ts#L32)
 
-___
+***
 
-### getIcon
+### getIcon()
 
-▸ **getIcon**(): `string`
+> **getIcon**(): `string`
 
 It returns the icon property of the tool state.
 
@@ -86,17 +62,17 @@ It returns the icon property of the tool state.
 
 #### Inherited from
 
-[IMapToolState](IMapToolState.md).[getIcon](IMapToolState.md#geticon)
+[`IMapToolState`](IMapToolState.md).[`getIcon`](IMapToolState.md#geticon)
 
-#### Defined in
+#### Source
 
-[src/model/types/tool/IMapToolState.ts:61](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/tool/IMapToolState.ts#L61)
+[model/types/tool/IMapToolState.ts:61](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/tool/IMapToolState.ts#L61)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 It returns the id property of the map object state.
 
@@ -106,17 +82,17 @@ It returns the id property of the map object state.
 
 #### Inherited from
 
-[IMapToolState](IMapToolState.md).[getId](IMapToolState.md#getid)
+[`IMapToolState`](IMapToolState.md).[`getId`](IMapToolState.md#getid)
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectState.ts:49](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectState.ts#L49)
+[model/types/object/IMapObjectState.ts:49](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectState.ts#L49)
 
-___
+***
 
-### getLabel
+### getLabel()
 
-▸ **getLabel**(): `string`
+> **getLabel**(): `string`
 
 It returns the label property of the tool state.
 
@@ -126,53 +102,53 @@ It returns the label property of the tool state.
 
 #### Inherited from
 
-[IMapToolState](IMapToolState.md).[getLabel](IMapToolState.md#getlabel)
+[`IMapToolState`](IMapToolState.md).[`getLabel`](IMapToolState.md#getlabel)
 
-#### Defined in
+#### Source
 
-[src/model/types/tool/IMapToolState.ts:49](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/tool/IMapToolState.ts#L49)
+[model/types/tool/IMapToolState.ts:49](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/tool/IMapToolState.ts#L49)
 
-___
+***
 
-### getMap
+### getMap()
 
-▸ **getMap**(): `undefined` \| [`IMap`](IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](IMapDefaults.md), [`IMapState`](IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+> **getMap**(): `undefined` \| [`IMap`](IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](IMapDefaults.md), [`IMapState`](IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 It returns the map property of the tool state.
 
 #### Returns
 
-`undefined` \| [`IMap`](IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](IMapDefaults.md), [`IMapState`](IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+`undefined` \| [`IMap`](IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](IMapDefaults.md), [`IMapState`](IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Inherited from
 
-[IMapToolState](IMapToolState.md).[getMap](IMapToolState.md#getmap)
+[`IMapToolState`](IMapToolState.md).[`getMap`](IMapToolState.md#getmap)
 
-#### Defined in
+#### Source
 
-[src/model/types/tool/IMapToolState.ts:44](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/tool/IMapToolState.ts#L44)
+[model/types/tool/IMapToolState.ts:44](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/tool/IMapToolState.ts#L44)
 
-___
+***
 
-### getSelection
+### getSelection()
 
-▸ **getSelection**(): ``null`` \| [`IMapSelection`](IMapSelection.md)
+> **getSelection**(): `null` \| [`IMapSelection`](IMapSelection.md)
 
 It returns the selection property of the tool state.
 
 #### Returns
 
-``null`` \| [`IMapSelection`](IMapSelection.md)
+`null` \| [`IMapSelection`](IMapSelection.md)
 
-#### Defined in
+#### Source
 
-[src/tools/selection/model/types/tool/ISelectionToolState.ts:25](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/selection/model/types/tool/ISelectionToolState.ts#L25)
+[tools/selection/model/types/tool/ISelectionToolState.ts:25](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/selection/model/types/tool/ISelectionToolState.ts#L25)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 It returns the type property of the map object state.
 
@@ -182,27 +158,27 @@ It returns the type property of the map object state.
 
 #### Inherited from
 
-[IMapToolState](IMapToolState.md).[getType](IMapToolState.md#gettype)
+[`IMapToolState`](IMapToolState.md).[`getType`](IMapToolState.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectState.ts:44](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectState.ts#L44)
+[model/types/object/IMapObjectState.ts:44](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectState.ts#L44)
 
-___
+***
 
-### initialize
+### initialize()
 
-▸ **initialize**(`defaults`, `props`, `initProps`): `void`
+> **initialize**(`defaults`, `props`, `initProps`): `void`
 
 It resets the state with respect to the initial props.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `defaults` | `TDefaults` |
-| `props` | `TProps` |
-| `initProps` | [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<`TConfig`\> |
+• **defaults**: `TDefaults`
+
+• **props**: `TProps`
+
+• **initProps**: [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<`TConfig`\>
 
 #### Returns
 
@@ -210,17 +186,17 @@ It resets the state with respect to the initial props.
 
 #### Inherited from
 
-[IMapToolState](IMapToolState.md).[initialize](IMapToolState.md#initialize)
+[`IMapToolState`](IMapToolState.md).[`initialize`](IMapToolState.md#initialize)
 
-#### Defined in
+#### Source
 
-[src/model/types/tool/IMapToolState.ts:27](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/tool/IMapToolState.ts#L27)
+[model/types/tool/IMapToolState.ts:27](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/tool/IMapToolState.ts#L27)
 
-___
+***
 
-### isEnabled
+### isEnabled()
 
-▸ **isEnabled**(): `boolean`
+> **isEnabled**(): `boolean`
 
 It returns the enabled property of the tool state.
 
@@ -230,25 +206,23 @@ It returns the enabled property of the tool state.
 
 #### Inherited from
 
-[IMapToolState](IMapToolState.md).[isEnabled](IMapToolState.md#isenabled)
+[`IMapToolState`](IMapToolState.md).[`isEnabled`](IMapToolState.md#isenabled)
 
-#### Defined in
+#### Source
 
-[src/model/types/tool/IMapToolState.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/tool/IMapToolState.ts#L32)
+[model/types/tool/IMapToolState.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/tool/IMapToolState.ts#L32)
 
-___
+***
 
-### serialize
+### serialize()
 
-▸ **serialize**(`defaults`): `TConfig`
+> **serialize**(`defaults`): `TConfig`
 
 The method serializes the map object state. Optionally, a serialized value can be let undefined if it equals the default value.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `defaults` | `undefined` \| `TDefaults` |
+• **defaults**: `undefined` \| `TDefaults`
 
 #### Returns
 
@@ -256,25 +230,23 @@ The method serializes the map object state. Optionally, a serialized value can b
 
 #### Inherited from
 
-[IMapToolState](IMapToolState.md).[serialize](IMapToolState.md#serialize)
+[`IMapToolState`](IMapToolState.md).[`serialize`](IMapToolState.md#serialize)
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectState.ts:39](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectState.ts#L39)
+[model/types/object/IMapObjectState.ts:39](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectState.ts#L39)
 
-___
+***
 
-### setEnabled
+### setEnabled()
 
-▸ **setEnabled**(`enabled`): `void`
+> **setEnabled**(`enabled`): `void`
 
 It sets the enabled property of tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `enabled` | `boolean` |
+• **enabled**: `boolean`
 
 #### Returns
 
@@ -282,25 +254,23 @@ It sets the enabled property of tool state.
 
 #### Inherited from
 
-[IMapToolState](IMapToolState.md).[setEnabled](IMapToolState.md#setenabled)
+[`IMapToolState`](IMapToolState.md).[`setEnabled`](IMapToolState.md#setenabled)
 
-#### Defined in
+#### Source
 
-[src/model/types/tool/IMapToolState.ts:39](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/tool/IMapToolState.ts#L39)
+[model/types/tool/IMapToolState.ts:39](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/tool/IMapToolState.ts#L39)
 
-___
+***
 
-### setIcon
+### setIcon()
 
-▸ **setIcon**(`icon`): `void`
+> **setIcon**(`icon`): `void`
 
 It sets the icon property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `icon` | `string` |
+• **icon**: `string`
 
 #### Returns
 
@@ -308,26 +278,24 @@ It sets the icon property of the tool state.
 
 #### Inherited from
 
-[IMapToolState](IMapToolState.md).[setIcon](IMapToolState.md#seticon)
+[`IMapToolState`](IMapToolState.md).[`setIcon`](IMapToolState.md#seticon)
 
-#### Defined in
+#### Source
 
-[src/model/types/tool/IMapToolState.ts:68](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/tool/IMapToolState.ts#L68)
+[model/types/tool/IMapToolState.ts:68](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/tool/IMapToolState.ts#L68)
 
-___
+***
 
-### setId
+### setId()
 
-▸ **setId**(`id`): `void`
+> **setId**(`id`): `void`
 
 It sets the id property of the map object state.
 It can be set only once.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `id` | `string` |
+• **id**: `string`
 
 #### Returns
 
@@ -335,25 +303,23 @@ It can be set only once.
 
 #### Inherited from
 
-[IMapToolState](IMapToolState.md).[setId](IMapToolState.md#setid)
+[`IMapToolState`](IMapToolState.md).[`setId`](IMapToolState.md#setid)
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectState.ts:57](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectState.ts#L57)
+[model/types/object/IMapObjectState.ts:57](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectState.ts#L57)
 
-___
+***
 
-### setLabel
+### setLabel()
 
-▸ **setLabel**(`label`): `void`
+> **setLabel**(`label`): `void`
 
 It sets the label property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `label` | `string` |
+• **label**: `string`
 
 #### Returns
 
@@ -361,30 +327,28 @@ It sets the label property of the tool state.
 
 #### Inherited from
 
-[IMapToolState](IMapToolState.md).[setLabel](IMapToolState.md#setlabel)
+[`IMapToolState`](IMapToolState.md).[`setLabel`](IMapToolState.md#setlabel)
 
-#### Defined in
+#### Source
 
-[src/model/types/tool/IMapToolState.ts:56](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/tool/IMapToolState.ts#L56)
+[model/types/tool/IMapToolState.ts:56](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/tool/IMapToolState.ts#L56)
 
-___
+***
 
-### setSelection
+### setSelection()
 
-▸ **setSelection**(`selection`): `void`
+> **setSelection**(`selection`): `void`
 
 It sets the selection property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `selection` | ``null`` \| [`IMapSelection`](IMapSelection.md) |
+• **selection**: `null` \| [`IMapSelection`](IMapSelection.md)
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/selection/model/types/tool/ISelectionToolState.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/selection/model/types/tool/ISelectionToolState.ts#L32)
+[tools/selection/model/types/tool/ISelectionToolState.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/selection/model/types/tool/ISelectionToolState.ts#L32)

@@ -1,53 +1,38 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / MapAggregationFunction
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / MapAggregationFunction
 
 # Class: MapAggregationFunction
 
 This class provides a generic aggregation function.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`MapDomain`](MapDomain.md)
-
-  ↳ **`MapAggregationFunction`**
 
 ## Implements
 
 - [`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](MapAggregationFunction.md#constructor)
-
-### Properties
-
-- [aggregationBucket](MapAggregationFunction.md#aggregationbucket)
-
-### Methods
-
-- [getAggregationBucket](MapAggregationFunction.md#getaggregationbucket)
-- [getName](MapAggregationFunction.md#getname)
-- [toString](MapAggregationFunction.md#tostring)
-
 ## Constructors
 
-### constructor
+### new MapAggregationFunction()
 
-• **new MapAggregationFunction**(`type`, `aggregationBucket`): [`MapAggregationFunction`](MapAggregationFunction.md)
+> **new MapAggregationFunction**(`type`, `aggregationBucket`): [`MapAggregationFunction`](MapAggregationFunction.md)
 
 It initializes the function.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `type` | `string` |
-| `aggregationBucket` | () => [`IMapAggregationBucket`](../interfaces/IMapAggregationBucket.md) |
+• **type**: `string`
+
+• **aggregationBucket**
 
 #### Returns
 
@@ -55,35 +40,31 @@ It initializes the function.
 
 #### Overrides
 
-[MapDomain](MapDomain.md).[constructor](MapDomain.md#constructor)
+[`MapDomain`](MapDomain.md).[`constructor`](MapDomain.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/model/internal/aggregation/generic/MapAggregationFunction.ts:17](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/aggregation/generic/MapAggregationFunction.ts#L17)
+[model/internal/aggregation/generic/MapAggregationFunction.ts:17](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/aggregation/generic/MapAggregationFunction.ts#L17)
 
 ## Properties
 
-### aggregationBucket
+### aggregationBucket()
 
-• `Private` **aggregationBucket**: () => [`IMapAggregationBucket`](../interfaces/IMapAggregationBucket.md)
+> `private` **aggregationBucket**: () => [`IMapAggregationBucket`](../interfaces/IMapAggregationBucket.md)
 
-#### Type declaration
-
-▸ (): [`IMapAggregationBucket`](../interfaces/IMapAggregationBucket.md)
-
-##### Returns
+#### Returns
 
 [`IMapAggregationBucket`](../interfaces/IMapAggregationBucket.md)
 
-#### Defined in
+#### Source
 
-[src/model/internal/aggregation/generic/MapAggregationFunction.ts:12](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/aggregation/generic/MapAggregationFunction.ts#L12)
+[model/internal/aggregation/generic/MapAggregationFunction.ts:12](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/aggregation/generic/MapAggregationFunction.ts#L12)
 
 ## Methods
 
-### getAggregationBucket
+### getAggregationBucket()
 
-▸ **getAggregationBucket**(): [`IMapAggregationBucket`](../interfaces/IMapAggregationBucket.md)
+> **getAggregationBucket**(): [`IMapAggregationBucket`](../interfaces/IMapAggregationBucket.md)
 
 It returns a aggregation bucket for aggregation of multiple values.
 
@@ -93,17 +74,17 @@ It returns a aggregation bucket for aggregation of multiple values.
 
 #### Implementation of
 
-[IMapAggregationFunction](../interfaces/IMapAggregationFunction.md).[getAggregationBucket](../interfaces/IMapAggregationFunction.md#getaggregationbucket)
+[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md).[`getAggregationBucket`](../interfaces/IMapAggregationFunction.md#getaggregationbucket)
 
-#### Defined in
+#### Source
 
-[src/model/internal/aggregation/generic/MapAggregationFunction.ts:26](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/aggregation/generic/MapAggregationFunction.ts#L26)
+[model/internal/aggregation/generic/MapAggregationFunction.ts:26](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/aggregation/generic/MapAggregationFunction.ts#L26)
 
-___
+***
 
-### getName
+### getName()
 
-▸ **getName**(): `string`
+> **getName**(): `string`
 
 It returns the name of the map domain.
 
@@ -113,21 +94,21 @@ It returns the name of the map domain.
 
 #### Implementation of
 
-[IMapAggregationFunction](../interfaces/IMapAggregationFunction.md).[getName](../interfaces/IMapAggregationFunction.md#getname)
+[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md).[`getName`](../interfaces/IMapAggregationFunction.md#getname)
 
 #### Inherited from
 
-[MapDomain](MapDomain.md).[getName](MapDomain.md#getname)
+[`MapDomain`](MapDomain.md).[`getName`](MapDomain.md#getname)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomain.ts:21](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomain.ts#L21)
+[model/internal/domain/generic/MapDomain.ts:21](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomain.ts#L21)
 
-___
+***
 
-### toString
+### toString()
 
-▸ **toString**(): `string`
+> **toString**(): `string`
 
 The string representation is equal to the name of the map domain.
 
@@ -137,8 +118,8 @@ The string representation is equal to the name of the map domain.
 
 #### Inherited from
 
-[MapDomain](MapDomain.md).[toString](MapDomain.md#tostring)
+[`MapDomain`](MapDomain.md).[`toString`](MapDomain.md#tostring)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/abstract/AbstractMapDomain.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/abstract/AbstractMapDomain.ts#L18)
+[model/internal/domain/abstract/AbstractMapDomain.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/abstract/AbstractMapDomain.ts#L18)

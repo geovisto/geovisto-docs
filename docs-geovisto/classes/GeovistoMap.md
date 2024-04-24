@@ -1,68 +1,36 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / GeovistoMap
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / GeovistoMap
 
 # Class: GeovistoMap
 
 Representation of map wrapper which handles map layers, sidebar and other tools
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`MapObject`](MapObject.md)
-
-  ↳ **`GeovistoMap`**
 
 ## Implements
 
 - [`IMap`](../interfaces/IMap.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](GeovistoMap.md#constructor)
-
-### Methods
-
-- [create](GeovistoMap.md#create)
-- [createDefaults](GeovistoMap.md#createdefaults)
-- [createMap](GeovistoMap.md#createmap)
-- [createMapContainer](GeovistoMap.md#createmapcontainer)
-- [createState](GeovistoMap.md#createstate)
-- [createTools](GeovistoMap.md#createtools)
-- [draw](GeovistoMap.md#draw)
-- [export](GeovistoMap.md#export)
-- [getContainerClass](GeovistoMap.md#getcontainerclass)
-- [getContainerId](GeovistoMap.md#getcontainerid)
-- [getDefaults](GeovistoMap.md#getdefaults)
-- [getId](GeovistoMap.md#getid)
-- [getMapAttribution](GeovistoMap.md#getmapattribution)
-- [getProps](GeovistoMap.md#getprops)
-- [getState](GeovistoMap.md#getstate)
-- [getType](GeovistoMap.md#gettype)
-- [initialize](GeovistoMap.md#initialize)
-- [redraw](GeovistoMap.md#redraw)
-- [registerToolAPI](GeovistoMap.md#registertoolapi)
-- [setProps](GeovistoMap.md#setprops)
-- [updateCurrentData](GeovistoMap.md#updatecurrentdata)
-- [updateData](GeovistoMap.md#updatedata)
-- [updateGeoData](GeovistoMap.md#updategeodata)
-
 ## Constructors
 
-### constructor
+### new GeovistoMap()
 
-• **new GeovistoMap**(`props`): [`GeovistoMap`](GeovistoMap.md)
+> **new GeovistoMap**(`props`): [`GeovistoMap`](GeovistoMap.md)
 
 Initializes object.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `props` | [`IMapProps`](../modules.md#imapprops) |
+• **props**: [`IMapProps`](../type-aliases/IMapProps.md)
 
 #### Returns
 
@@ -70,33 +38,33 @@ Initializes object.
 
 #### Overrides
 
-[MapObject](MapObject.md).[constructor](MapObject.md#constructor)
+[`MapObject`](MapObject.md).[`constructor`](MapObject.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/model/internal/map/GeovistoMap.ts:41](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/map/GeovistoMap.ts#L41)
+[model/internal/map/GeovistoMap.ts:41](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/map/GeovistoMap.ts#L41)
 
 ## Methods
 
-### create
+### create()
 
-▸ **create**(): ``null`` \| `HTMLElement`
+> `protected` **create**(): `null` \| `HTMLElement`
 
 This function creates Geovisto map - it creates map container, leaflet map and tools.
 
 #### Returns
 
-``null`` \| `HTMLElement`
+`null` \| `HTMLElement`
 
-#### Defined in
+#### Source
 
-[src/model/internal/map/GeovistoMap.ts:207](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/map/GeovistoMap.ts#L207)
+[model/internal/map/GeovistoMap.ts:207](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/map/GeovistoMap.ts#L207)
 
-___
+***
 
-### createDefaults
+### createDefaults()
 
-▸ **createDefaults**(): [`IMapDefaults`](../interfaces/IMapDefaults.md)
+> **createDefaults**(): [`IMapDefaults`](../interfaces/IMapDefaults.md)
 
 It creates new defaults of the object.
 
@@ -106,17 +74,17 @@ It creates new defaults of the object.
 
 #### Overrides
 
-[MapObject](MapObject.md).[createDefaults](MapObject.md#createdefaults)
+[`MapObject`](MapObject.md).[`createDefaults`](MapObject.md#createdefaults)
 
-#### Defined in
+#### Source
 
-[src/model/internal/map/GeovistoMap.ts:62](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/map/GeovistoMap.ts#L62)
+[model/internal/map/GeovistoMap.ts:62](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/map/GeovistoMap.ts#L62)
 
-___
+***
 
-### createMap
+### createMap()
 
-▸ **createMap**(): `Map`
+> `protected` **createMap**(): `Map`
 
 Creates the leaflet-based map with respect to the configuration.
 
@@ -124,93 +92,91 @@ Creates the leaflet-based map with respect to the configuration.
 
 `Map`
 
-#### Defined in
+#### Source
 
-[src/model/internal/map/GeovistoMap.ts:253](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/map/GeovistoMap.ts#L253)
+[model/internal/map/GeovistoMap.ts:253](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/map/GeovistoMap.ts#L253)
 
-___
+***
 
-### createMapContainer
+### createMapContainer()
 
-▸ **createMapContainer**(): ``null`` \| `HTMLElement`
+> `protected` **createMapContainer**(): `null` \| `HTMLElement`
 
 This function creates the map container.
 
 #### Returns
 
-``null`` \| `HTMLElement`
+`null` \| `HTMLElement`
 
-#### Defined in
+#### Source
 
-[src/model/internal/map/GeovistoMap.ts:225](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/map/GeovistoMap.ts#L225)
+[model/internal/map/GeovistoMap.ts:225](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/map/GeovistoMap.ts#L225)
 
-___
+***
 
-### createState
+### createState()
 
-▸ **createState**(): [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>
+> **createState**(): [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>
 
 It creates new state if the object.
 
 #### Returns
 
-[`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>
+[`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>
 
 #### Overrides
 
-[MapObject](MapObject.md).[createState](MapObject.md#createstate)
+[`MapObject`](MapObject.md).[`createState`](MapObject.md#createstate)
 
-#### Defined in
+#### Source
 
-[src/model/internal/map/GeovistoMap.ts:76](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/map/GeovistoMap.ts#L76)
+[model/internal/map/GeovistoMap.ts:76](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/map/GeovistoMap.ts#L76)
 
-___
+***
 
-### createTools
+### createTools()
 
-▸ **createTools**(): [`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>\>, [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>, [`IMapToolAPI`](../modules.md#imaptoolapi)\>[]
+> `protected` **createTools**(): [`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>\>, [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>, [`IMapToolAPI`](../type-aliases/IMapToolAPI.md)\>[]
 
 This function creates map tools.
 
 #### Returns
 
-[`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>\>, [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>, [`IMapToolAPI`](../modules.md#imaptoolapi)\>[]
+[`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>\>, [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>, [`IMapToolAPI`](../type-aliases/IMapToolAPI.md)\>[]
 
-#### Defined in
+#### Source
 
-[src/model/internal/map/GeovistoMap.ts:282](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/map/GeovistoMap.ts#L282)
+[model/internal/map/GeovistoMap.ts:282](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/map/GeovistoMap.ts#L282)
 
-___
+***
 
-### draw
+### draw()
 
-▸ **draw**(`configManager`): ``null`` \| `HTMLElement`
+> **draw**(`configManager`): `null` \| `HTMLElement`
 
 The function draws a new map.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configManager` | [`IMapConfigManager`](../interfaces/IMapConfigManager.md) |
+• **configManager**: [`IMapConfigManager`](../interfaces/IMapConfigManager.md)
 
 #### Returns
 
-``null`` \| `HTMLElement`
+`null` \| `HTMLElement`
 
 #### Implementation of
 
-[IMap](../interfaces/IMap.md).[draw](../interfaces/IMap.md#draw)
+[`IMap`](../interfaces/IMap.md).[`draw`](../interfaces/IMap.md#draw)
 
-#### Defined in
+#### Source
 
-[src/model/internal/map/GeovistoMap.ts:83](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/map/GeovistoMap.ts#L83)
+[model/internal/map/GeovistoMap.ts:83](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/map/GeovistoMap.ts#L83)
 
-___
+***
 
-### export
+### export()
 
-▸ **export**(): `Record`\<`string`, `unknown`\>
+> **export**(): `Record`\<`string`, `unknown`\>
 
 It exports the serialized representation of the current state of the map.
 
@@ -220,17 +186,17 @@ It exports the serialized representation of the current state of the map.
 
 #### Implementation of
 
-[IMap](../interfaces/IMap.md).[export](../interfaces/IMap.md#export)
+[`IMap`](../interfaces/IMap.md).[`export`](../interfaces/IMap.md#export)
 
-#### Defined in
+#### Source
 
-[src/model/internal/map/GeovistoMap.ts:200](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/map/GeovistoMap.ts#L200)
+[model/internal/map/GeovistoMap.ts:200](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/map/GeovistoMap.ts#L200)
 
-___
+***
 
-### getContainerClass
+### getContainerClass()
 
-▸ **getContainerClass**(): `string`
+> `protected` **getContainerClass**(): `string`
 
 It returns class of the map container.
 
@@ -238,15 +204,15 @@ It returns class of the map container.
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/model/internal/map/GeovistoMap.ts:246](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/map/GeovistoMap.ts#L246)
+[model/internal/map/GeovistoMap.ts:246](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/map/GeovistoMap.ts#L246)
 
-___
+***
 
-### getContainerId
+### getContainerId()
 
-▸ **getContainerId**(): `string`
+> `protected` **getContainerId**(): `string`
 
 It returns ID of the map container.
 
@@ -254,15 +220,15 @@ It returns ID of the map container.
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/model/internal/map/GeovistoMap.ts:239](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/map/GeovistoMap.ts#L239)
+[model/internal/map/GeovistoMap.ts:239](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/map/GeovistoMap.ts#L239)
 
-___
+***
 
-### getDefaults
+### getDefaults()
 
-▸ **getDefaults**(): [`IMapDefaults`](../interfaces/IMapDefaults.md)
+> **getDefaults**(): [`IMapDefaults`](../interfaces/IMapDefaults.md)
 
 It returns object defaults as the map defaults.
 
@@ -272,21 +238,21 @@ It returns object defaults as the map defaults.
 
 #### Implementation of
 
-[IMap](../interfaces/IMap.md).[getDefaults](../interfaces/IMap.md#getdefaults)
+[`IMap`](../interfaces/IMap.md).[`getDefaults`](../interfaces/IMap.md#getdefaults)
 
 #### Overrides
 
-[MapObject](MapObject.md).[getDefaults](MapObject.md#getdefaults)
+[`MapObject`](MapObject.md).[`getDefaults`](MapObject.md#getdefaults)
 
-#### Defined in
+#### Source
 
-[src/model/internal/map/GeovistoMap.ts:55](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/map/GeovistoMap.ts#L55)
+[model/internal/map/GeovistoMap.ts:55](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/map/GeovistoMap.ts#L55)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 Help function which returns the id of the object.
 
@@ -296,21 +262,21 @@ Help function which returns the id of the object.
 
 #### Implementation of
 
-[IMap](../interfaces/IMap.md).[getId](../interfaces/IMap.md#getid)
+[`IMap`](../interfaces/IMap.md).[`getId`](../interfaces/IMap.md#getid)
 
 #### Inherited from
 
-[MapObject](MapObject.md).[getId](MapObject.md#getid)
+[`MapObject`](MapObject.md).[`getId`](MapObject.md#getid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObject.ts:93](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObject.ts#L93)
+[model/internal/object/MapObject.ts:93](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObject.ts#L93)
 
-___
+***
 
-### getMapAttribution
+### getMapAttribution()
 
-▸ **getMapAttribution**(): `string`
+> `protected` **getMapAttribution**(): `string`
 
 It returns the map attribution.
 
@@ -320,63 +286,63 @@ This function can be overriden;
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/model/internal/map/GeovistoMap.ts:275](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/map/GeovistoMap.ts#L275)
+[model/internal/map/GeovistoMap.ts:275](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/map/GeovistoMap.ts#L275)
 
-___
+***
 
-### getProps
+### getProps()
 
-▸ **getProps**(): [`IMapProps`](../modules.md#imapprops)
+> **getProps**(): [`IMapProps`](../type-aliases/IMapProps.md)
 
 Help function which returns the props given by the programmer.
 
 #### Returns
 
-[`IMapProps`](../modules.md#imapprops)
+[`IMapProps`](../type-aliases/IMapProps.md)
 
 #### Implementation of
 
-[IMap](../interfaces/IMap.md).[getProps](../interfaces/IMap.md#getprops)
+[`IMap`](../interfaces/IMap.md).[`getProps`](../interfaces/IMap.md#getprops)
 
 #### Overrides
 
-[MapObject](MapObject.md).[getProps](MapObject.md#getprops)
+[`MapObject`](MapObject.md).[`getProps`](MapObject.md#getprops)
 
-#### Defined in
+#### Source
 
-[src/model/internal/map/GeovistoMap.ts:48](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/map/GeovistoMap.ts#L48)
+[model/internal/map/GeovistoMap.ts:48](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/map/GeovistoMap.ts#L48)
 
-___
+***
 
-### getState
+### getState()
 
-▸ **getState**(): [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>
+> **getState**(): [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>
 
 It returns object state as the map state.
 
 #### Returns
 
-[`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>
+[`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>
 
 #### Implementation of
 
-[IMap](../interfaces/IMap.md).[getState](../interfaces/IMap.md#getstate)
+[`IMap`](../interfaces/IMap.md).[`getState`](../interfaces/IMap.md#getstate)
 
 #### Overrides
 
-[MapObject](MapObject.md).[getState](MapObject.md#getstate)
+[`MapObject`](MapObject.md).[`getState`](MapObject.md#getstate)
 
-#### Defined in
+#### Source
 
-[src/model/internal/map/GeovistoMap.ts:69](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/map/GeovistoMap.ts#L69)
+[model/internal/map/GeovistoMap.ts:69](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/map/GeovistoMap.ts#L69)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 Help function which returns the type of the object.
 
@@ -386,29 +352,27 @@ Help function which returns the type of the object.
 
 #### Implementation of
 
-[IMap](../interfaces/IMap.md).[getType](../interfaces/IMap.md#gettype)
+[`IMap`](../interfaces/IMap.md).[`getType`](../interfaces/IMap.md#gettype)
 
 #### Inherited from
 
-[MapObject](MapObject.md).[getType](MapObject.md#gettype)
+[`MapObject`](MapObject.md).[`getType`](MapObject.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObject.ts:86](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObject.ts#L86)
+[model/internal/object/MapObject.ts:86](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObject.ts#L86)
 
-___
+***
 
-### initialize
+### initialize()
 
-▸ **initialize**(`initProps`): `this`
+> **initialize**(`initProps`): `this`
 
 It resets the state to the initial state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `initProps` | [`IMapInitProps`](../modules.md#imapinitprops) |
+• **initProps**: [`IMapInitProps`](../type-aliases/IMapInitProps.md)
 
 #### Returns
 
@@ -416,78 +380,73 @@ It resets the state to the initial state.
 
 #### Implementation of
 
-[IMap](../interfaces/IMap.md).[initialize](../interfaces/IMap.md#initialize)
+[`IMap`](../interfaces/IMap.md).[`initialize`](../interfaces/IMap.md#initialize)
 
 #### Overrides
 
-[MapObject](MapObject.md).[initialize](MapObject.md#initialize)
+[`MapObject`](MapObject.md).[`initialize`](MapObject.md#initialize)
 
-#### Defined in
+#### Source
 
-[src/model/internal/map/GeovistoMap.ts:119](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/map/GeovistoMap.ts#L119)
+[model/internal/map/GeovistoMap.ts:119](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/map/GeovistoMap.ts#L119)
 
-___
+***
 
-### redraw
+### redraw()
 
-▸ **redraw**(`configManager`, `props?`): ``null`` \| `HTMLElement`
+> **redraw**(`configManager`, `props`?): `null` \| `HTMLElement`
 
 This function redraws the current map.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configManager` | [`IMapConfigManager`](../interfaces/IMapConfigManager.md) |
-| `props?` | [`IMapProps`](../modules.md#imapprops) |
+• **configManager**: [`IMapConfigManager`](../interfaces/IMapConfigManager.md)
+
+• **props?**: [`IMapProps`](../type-aliases/IMapProps.md)
 
 #### Returns
 
-``null`` \| `HTMLElement`
+`null` \| `HTMLElement`
 
 #### Implementation of
 
-[IMap](../interfaces/IMap.md).[redraw](../interfaces/IMap.md#redraw)
+[`IMap`](../interfaces/IMap.md).[`redraw`](../interfaces/IMap.md#redraw)
 
-#### Defined in
+#### Source
 
-[src/model/internal/map/GeovistoMap.ts:94](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/map/GeovistoMap.ts#L94)
+[model/internal/map/GeovistoMap.ts:94](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/map/GeovistoMap.ts#L94)
 
-___
+***
 
-### registerToolAPI
+### registerToolAPI()
 
-▸ **registerToolAPI**(`tool`): ``null`` \| [`IMapToolAPI`](../modules.md#imaptoolapi)
+> `protected` **registerToolAPI**(`tool`): `null` \| [`IMapToolAPI`](../type-aliases/IMapToolAPI.md)
 
 Help function which register a generic tool API.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `tool` | [`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>\>, [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>, [`IMapToolAPI`](../modules.md#imaptoolapi)\> |
+• **tool**: [`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>\>, [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>, [`IMapToolAPI`](../type-aliases/IMapToolAPI.md)\>
 
 #### Returns
 
-``null`` \| [`IMapToolAPI`](../modules.md#imaptoolapi)
+`null` \| [`IMapToolAPI`](../type-aliases/IMapToolAPI.md)
 
-#### Defined in
+#### Source
 
-[src/model/internal/map/GeovistoMap.ts:184](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/map/GeovistoMap.ts#L184)
+[model/internal/map/GeovistoMap.ts:184](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/map/GeovistoMap.ts#L184)
 
-___
+***
 
-### setProps
+### setProps()
 
-▸ **setProps**(`props`): `void`
+> `protected` **setProps**(`props`): `void`
 
 It updates the props.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `props` | [`IMapObjectProps`](../modules.md#imapobjectprops) |
+• **props**: [`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
 #### Returns
 
@@ -495,27 +454,29 @@ It updates the props.
 
 #### Inherited from
 
-[MapObject](MapObject.md).[setProps](MapObject.md#setprops)
+[`MapObject`](MapObject.md).[`setProps`](MapObject.md#setprops)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObject.ts:38](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObject.ts#L38)
+[model/internal/object/MapObject.ts:38](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObject.ts#L38)
 
-___
+***
 
-### updateCurrentData
+### updateCurrentData()
 
-▸ **updateCurrentData**(`data`, `source`, `animateOptions?`): `void`
+> **updateCurrentData**(`data`, `source`, `animateOptions`?): `void`
 
 It updates current data and invokes notifies listeners.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `data` | [`IMapData`](../modules.md#imapdata) |  |
-| `source` | [`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\> | of the change |
-| `animateOptions?` | [`IDataChangeAnimateOptions`](../modules.md#idatachangeanimateoptions) |  |
+• **data**: [`IMapData`](../type-aliases/IMapData.md)
+
+• **source**: [`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>
+
+of the change
+
+• **animateOptions?**: [`IDataChangeAnimateOptions`](../type-aliases/IDataChangeAnimateOptions.md)
 
 #### Returns
 
@@ -523,25 +484,23 @@ It updates current data and invokes notifies listeners.
 
 #### Implementation of
 
-[IMap](../interfaces/IMap.md).[updateCurrentData](../interfaces/IMap.md#updatecurrentdata)
+[`IMap`](../interfaces/IMap.md).[`updateCurrentData`](../interfaces/IMap.md#updatecurrentdata)
 
-#### Defined in
+#### Source
 
-[src/model/internal/map/GeovistoMap.ts:331](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/map/GeovistoMap.ts#L331)
+[model/internal/map/GeovistoMap.ts:331](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/map/GeovistoMap.ts#L331)
 
-___
+***
 
-### updateData
+### updateData()
 
-▸ **updateData**(`dataManager`): `void`
+> **updateData**(`dataManager`): `void`
 
 It updates data and notifies listeners.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dataManager` | [`IMapDataManager`](../interfaces/IMapDataManager.md) |
+• **dataManager**: [`IMapDataManager`](../interfaces/IMapDataManager.md)
 
 #### Returns
 
@@ -549,25 +508,23 @@ It updates data and notifies listeners.
 
 #### Implementation of
 
-[IMap](../interfaces/IMap.md).[updateData](../interfaces/IMap.md#updatedata)
+[`IMap`](../interfaces/IMap.md).[`updateData`](../interfaces/IMap.md#updatedata)
 
-#### Defined in
+#### Source
 
-[src/model/internal/map/GeovistoMap.ts:297](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/map/GeovistoMap.ts#L297)
+[model/internal/map/GeovistoMap.ts:297](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/map/GeovistoMap.ts#L297)
 
-___
+***
 
-### updateGeoData
+### updateGeoData()
 
-▸ **updateGeoData**(`geoDataManager`): `void`
+> **updateGeoData**(`geoDataManager`): `void`
 
 It updates geo data and notifies listeners.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `geoDataManager` | [`IGeoDataManager`](../modules.md#igeodatamanager) |
+• **geoDataManager**: [`IGeoDataManager`](../type-aliases/IGeoDataManager.md)
 
 #### Returns
 
@@ -575,8 +532,8 @@ It updates geo data and notifies listeners.
 
 #### Implementation of
 
-[IMap](../interfaces/IMap.md).[updateGeoData](../interfaces/IMap.md#updategeodata)
+[`IMap`](../interfaces/IMap.md).[`updateGeoData`](../interfaces/IMap.md#updategeodata)
 
-#### Defined in
+#### Source
 
-[src/model/internal/map/GeovistoMap.ts:313](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/map/GeovistoMap.ts#L313)
+[model/internal/map/GeovistoMap.ts:313](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/map/GeovistoMap.ts#L313)

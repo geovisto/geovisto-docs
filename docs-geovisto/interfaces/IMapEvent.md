@@ -1,41 +1,30 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IMapEvent
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IMapEvent
 
 # Interface: IMapEvent\<TSource\>
 
 This interface declares abstract map event object.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
+## Extended by
+
+- [`IMapChangeEvent`](IMapChangeEvent.md)
+
 ## Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `TSource` | extends [`IMapObject`](IMapObject.md) = [`IMapObject`](IMapObject.md) |
-
-## Hierarchy
-
-- **`IMapEvent`**
-
-  ↳ [`IMapChangeEvent`](IMapChangeEvent.md)
-
-## Implemented by
-
-- [`MapEvent`](../classes/MapEvent.md)
-
-## Table of contents
-
-### Methods
-
-- [getSource](IMapEvent.md#getsource)
-- [getType](IMapEvent.md#gettype)
+• **TSource** *extends* [`IMapObject`](IMapObject.md) = [`IMapObject`](IMapObject.md)
 
 ## Methods
 
-### getSource
+### getSource()
 
-▸ **getSource**(): `TSource`
+> **getSource**(): `TSource`
 
 Return source object of the event.
 
@@ -43,15 +32,15 @@ Return source object of the event.
 
 `TSource`
 
-#### Defined in
+#### Source
 
-[src/model/types/event/IMapEvent.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/event/IMapEvent.ts#L18)
+[model/types/event/IMapEvent.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/event/IMapEvent.ts#L18)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 Returns string which identifies the event.
 
@@ -59,6 +48,6 @@ Returns string which identifies the event.
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/model/types/event/IMapEvent.ts:13](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/event/IMapEvent.ts#L13)
+[model/types/event/IMapEvent.ts:13](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/event/IMapEvent.ts#L13)

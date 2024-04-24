@@ -1,85 +1,77 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IMapEventManager
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IMapEventManager
 
 # Interface: IMapEventManager
 
 This interface declares functions for management and handling events and event listeners.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Table of contents
-
-### Methods
-
-- [addEventListener](IMapEventManager.md#addeventlistener)
-- [removeEventListener](IMapEventManager.md#removeeventlistener)
-- [scheduleEvent](IMapEventManager.md#scheduleevent)
-
 ## Methods
 
-### addEventListener
+### addEventListener()
 
-▸ **addEventListener**(`listener`): `void`
+> **addEventListener**(`listener`): `void`
 
 It adds an event listener.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `listener` | [`IMapEventListener`](IMapEventListener.md) |
+• **listener**: [`IMapEventListener`](IMapEventListener.md)
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/model/types/event/IMapEventManager.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/event/IMapEventManager.ts#L23)
+[model/types/event/IMapEventManager.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/event/IMapEventManager.ts#L23)
 
-___
+***
 
-### removeEventListener
+### removeEventListener()
 
-▸ **removeEventListener**(`listener`): `void`
+> **removeEventListener**(`listener`): `void`
 
 It removes an event listener.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `listener` | [`IMapEventListener`](IMapEventListener.md) |
+• **listener**: [`IMapEventListener`](IMapEventListener.md)
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/model/types/event/IMapEventManager.ts:30](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/event/IMapEventManager.ts#L30)
+[model/types/event/IMapEventManager.ts:30](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/event/IMapEventManager.ts#L30)
 
-___
+***
 
-### scheduleEvent
+### scheduleEvent()
 
-▸ **scheduleEvent**(`event`, `beforeCallBack`, `afterCallBack`): `void`
+> **scheduleEvent**(`event`, `beforeCallBack`, `afterCallBack`): `void`
 
 It schdules an event in the end of the event queue and dispatch the event.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `event` | [`IMapEvent`](IMapEvent.md)\<[`IMapObject`](IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>\> |
-| `beforeCallBack` | `undefined` \| () => `void` |
-| `afterCallBack` | `undefined` \| () => `void` |
+• **event**: [`IMapEvent`](IMapEvent.md)\<[`IMapObject`](IMapObject.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectState`](IMapObjectState.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>\>
+
+• **beforeCallBack**: `undefined` \| () => `void`
+
+• **afterCallBack**: `undefined` \| () => `void`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/model/types/event/IMapEventManager.ts:16](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/event/IMapEventManager.ts#L16)
+[model/types/event/IMapEventManager.ts:16](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/event/IMapEventManager.ts#L16)

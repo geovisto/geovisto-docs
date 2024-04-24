@@ -1,68 +1,37 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / SidebarFragmentState
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / SidebarFragmentState
 
 # Class: SidebarFragmentState
 
 This class manages the state of the sidebar fragment.
 It wraps the state since the sidebar fragment can work with state objects which needs to be explicitly serialized.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`MapObjectState`](MapObjectState.md)
-
-  ↳ **`SidebarFragmentState`**
 
 ## Implements
 
 - [`ISidebarFragmentState`](../interfaces/ISidebarFragmentState.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](SidebarFragmentState.md#constructor)
-
-### Properties
-
-- [content](SidebarFragmentState.md#content)
-- [enabled](SidebarFragmentState.md#enabled)
-- [sidebarTab](SidebarFragmentState.md#sidebartab)
-- [tool](SidebarFragmentState.md#tool)
-
-### Methods
-
-- [deserialize](SidebarFragmentState.md#deserialize)
-- [getContent](SidebarFragmentState.md#getcontent)
-- [getId](SidebarFragmentState.md#getid)
-- [getMapObject](SidebarFragmentState.md#getmapobject)
-- [getSidebarTab](SidebarFragmentState.md#getsidebartab)
-- [getTool](SidebarFragmentState.md#gettool)
-- [getType](SidebarFragmentState.md#gettype)
-- [initialize](SidebarFragmentState.md#initialize)
-- [isEnabled](SidebarFragmentState.md#isenabled)
-- [serialize](SidebarFragmentState.md#serialize)
-- [setContent](SidebarFragmentState.md#setcontent)
-- [setEnabled](SidebarFragmentState.md#setenabled)
-- [setId](SidebarFragmentState.md#setid)
-- [setSidebarTab](SidebarFragmentState.md#setsidebartab)
-- [setTool](SidebarFragmentState.md#settool)
-
 ## Constructors
 
-### constructor
+### new SidebarFragmentState()
 
-• **new SidebarFragmentState**(`sidebarFragment`): [`SidebarFragmentState`](SidebarFragmentState.md)
+> **new SidebarFragmentState**(`sidebarFragment`): [`SidebarFragmentState`](SidebarFragmentState.md)
 
 It creates a sidebar fragment state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `sidebarFragment` | [`ISidebarFragment`](../interfaces/ISidebarFragment.md)\<[`ISidebarFragmentProps`](../modules.md#isidebarfragmentprops), [`ISidebarFragmentDefaults`](../interfaces/ISidebarFragmentDefaults.md), [`ISidebarFragmentState`](../interfaces/ISidebarFragmentState.md)\<[`ISidebarFragmentProps`](../modules.md#isidebarfragmentprops), [`ISidebarFragmentDefaults`](../interfaces/ISidebarFragmentDefaults.md), [`ISidebarFragmentConfig`](../modules.md#isidebarfragmentconfig)\>, [`ISidebarFragmentConfig`](../modules.md#isidebarfragmentconfig), [`ISidebarFragmentInitProps`](../modules.md#isidebarfragmentinitprops)\<[`ISidebarFragmentConfig`](../modules.md#isidebarfragmentconfig)\>\> |
+• **sidebarFragment**: [`ISidebarFragment`](../interfaces/ISidebarFragment.md)\<[`ISidebarFragmentProps`](../type-aliases/ISidebarFragmentProps.md), [`ISidebarFragmentDefaults`](../interfaces/ISidebarFragmentDefaults.md), [`ISidebarFragmentState`](../interfaces/ISidebarFragmentState.md)\<[`ISidebarFragmentProps`](../type-aliases/ISidebarFragmentProps.md), [`ISidebarFragmentDefaults`](../interfaces/ISidebarFragmentDefaults.md), [`ISidebarFragmentConfig`](../type-aliases/ISidebarFragmentConfig.md)\>, [`ISidebarFragmentConfig`](../type-aliases/ISidebarFragmentConfig.md), [`ISidebarFragmentInitProps`](../type-aliases/ISidebarFragmentInitProps.md)\<[`ISidebarFragmentConfig`](../type-aliases/ISidebarFragmentConfig.md)\>\>
 
 #### Returns
 
@@ -70,65 +39,63 @@ It creates a sidebar fragment state.
 
 #### Overrides
 
-[MapObjectState](MapObjectState.md).[constructor](MapObjectState.md#constructor)
+[`MapObjectState`](MapObjectState.md).[`constructor`](MapObjectState.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:34](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L34)
+[tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:34](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L34)
 
 ## Properties
 
 ### content
 
-• `Private` **content**: ``null`` \| `HTMLElement`
+> `private` **content**: `null` \| `HTMLElement`
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:27](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L27)
+[tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:27](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L27)
 
-___
+***
 
 ### enabled
 
-• `Private` **enabled**: `boolean`
+> `private` **enabled**: `boolean`
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:21](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L21)
+[tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:21](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L21)
 
-___
+***
 
 ### sidebarTab
 
-• `Private` **sidebarTab**: [`ISidebarTab`](../interfaces/ISidebarTab.md)\<[`ISidebarTabProps`](../modules.md#isidebartabprops), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabState`](../interfaces/ISidebarTabState.md)\<[`ISidebarTabProps`](../modules.md#isidebartabprops), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabConfig`](../modules.md#isidebartabconfig)\>, [`ISidebarTabConfig`](../modules.md#isidebartabconfig), [`ISidebarTabInitProps`](../modules.md#isidebartabinitprops)\<[`ISidebarTabConfig`](../modules.md#isidebartabconfig)\>\>
+> `private` **sidebarTab**: [`ISidebarTab`](../interfaces/ISidebarTab.md)\<[`ISidebarTabProps`](../type-aliases/ISidebarTabProps.md), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabState`](../interfaces/ISidebarTabState.md)\<[`ISidebarTabProps`](../type-aliases/ISidebarTabProps.md), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md)\>, [`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md), [`ISidebarTabInitProps`](../type-aliases/ISidebarTabInitProps.md)\<[`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md)\>\>
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:25](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L25)
+[tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:25](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L25)
 
-___
+***
 
 ### tool
 
-• `Private` **tool**: [`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>\>, [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>, [`IMapToolAPI`](../modules.md#imaptoolapi)\>
+> `private` **tool**: [`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>\>, [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>, [`IMapToolAPI`](../type-aliases/IMapToolAPI.md)\>
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L23)
+[tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L23)
 
 ## Methods
 
-### deserialize
+### deserialize()
 
-▸ **deserialize**(`config`): `void`
+> **deserialize**(`config`): `void`
 
 The metod takes config and deserializes the values.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `config` | [`ISidebarFragmentConfig`](../modules.md#isidebarfragmentconfig) |
+• **config**: [`ISidebarFragmentConfig`](../type-aliases/ISidebarFragmentConfig.md)
 
 #### Returns
 
@@ -136,41 +103,41 @@ The metod takes config and deserializes the values.
 
 #### Implementation of
 
-[ISidebarFragmentState](../interfaces/ISidebarFragmentState.md).[deserialize](../interfaces/ISidebarFragmentState.md#deserialize)
+[`ISidebarFragmentState`](../interfaces/ISidebarFragmentState.md).[`deserialize`](../interfaces/ISidebarFragmentState.md#deserialize)
 
 #### Overrides
 
-[MapObjectState](MapObjectState.md).[deserialize](MapObjectState.md#deserialize)
+[`MapObjectState`](MapObjectState.md).[`deserialize`](MapObjectState.md#deserialize)
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:61](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L61)
+[tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:61](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L61)
 
-___
+***
 
-### getContent
+### getContent()
 
-▸ **getContent**(): ``null`` \| `HTMLElement`
+> **getContent**(): `null` \| `HTMLElement`
 
 It returns the content property of the sidebar fragment state.
 
 #### Returns
 
-``null`` \| `HTMLElement`
+`null` \| `HTMLElement`
 
 #### Implementation of
 
-[ISidebarFragmentState](../interfaces/ISidebarFragmentState.md).[getContent](../interfaces/ISidebarFragmentState.md#getcontent)
+[`ISidebarFragmentState`](../interfaces/ISidebarFragmentState.md).[`getContent`](../interfaces/ISidebarFragmentState.md#getcontent)
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:131](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L131)
+[tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:131](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L131)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 It returns the id property of the tool state.
 
@@ -180,81 +147,81 @@ It returns the id property of the tool state.
 
 #### Implementation of
 
-[ISidebarFragmentState](../interfaces/ISidebarFragmentState.md).[getId](../interfaces/ISidebarFragmentState.md#getid)
+[`ISidebarFragmentState`](../interfaces/ISidebarFragmentState.md).[`getId`](../interfaces/ISidebarFragmentState.md#getid)
 
 #### Inherited from
 
-[MapObjectState](MapObjectState.md).[getId](MapObjectState.md#getid)
+[`MapObjectState`](MapObjectState.md).[`getId`](MapObjectState.md#getid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:87](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L87)
+[model/internal/object/MapObjectState.ts:87](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L87)
 
-___
+***
 
-### getMapObject
+### getMapObject()
 
-▸ **getMapObject**(): [`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>
+> `protected` **getMapObject**(): [`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>
 
 It makes the map object visible to extended classes.
 
 #### Returns
 
-[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>
+[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>
 
 #### Inherited from
 
-[MapObjectState](MapObjectState.md).[getMapObject](MapObjectState.md#getmapobject)
+[`MapObjectState`](MapObjectState.md).[`getMapObject`](MapObjectState.md#getmapobject)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:39](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L39)
+[model/internal/object/MapObjectState.ts:39](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L39)
 
-___
+***
 
-### getSidebarTab
+### getSidebarTab()
 
-▸ **getSidebarTab**(): [`ISidebarTab`](../interfaces/ISidebarTab.md)\<[`ISidebarTabProps`](../modules.md#isidebartabprops), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabState`](../interfaces/ISidebarTabState.md)\<[`ISidebarTabProps`](../modules.md#isidebartabprops), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabConfig`](../modules.md#isidebartabconfig)\>, [`ISidebarTabConfig`](../modules.md#isidebartabconfig), [`ISidebarTabInitProps`](../modules.md#isidebartabinitprops)\<[`ISidebarTabConfig`](../modules.md#isidebartabconfig)\>\>
+> **getSidebarTab**(): [`ISidebarTab`](../interfaces/ISidebarTab.md)\<[`ISidebarTabProps`](../type-aliases/ISidebarTabProps.md), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabState`](../interfaces/ISidebarTabState.md)\<[`ISidebarTabProps`](../type-aliases/ISidebarTabProps.md), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md)\>, [`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md), [`ISidebarTabInitProps`](../type-aliases/ISidebarTabInitProps.md)\<[`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md)\>\>
 
 It returns the sidebar tab property of the sidebar fragment control state.
 
 #### Returns
 
-[`ISidebarTab`](../interfaces/ISidebarTab.md)\<[`ISidebarTabProps`](../modules.md#isidebartabprops), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabState`](../interfaces/ISidebarTabState.md)\<[`ISidebarTabProps`](../modules.md#isidebartabprops), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabConfig`](../modules.md#isidebartabconfig)\>, [`ISidebarTabConfig`](../modules.md#isidebartabconfig), [`ISidebarTabInitProps`](../modules.md#isidebartabinitprops)\<[`ISidebarTabConfig`](../modules.md#isidebartabconfig)\>\>
+[`ISidebarTab`](../interfaces/ISidebarTab.md)\<[`ISidebarTabProps`](../type-aliases/ISidebarTabProps.md), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabState`](../interfaces/ISidebarTabState.md)\<[`ISidebarTabProps`](../type-aliases/ISidebarTabProps.md), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md)\>, [`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md), [`ISidebarTabInitProps`](../type-aliases/ISidebarTabInitProps.md)\<[`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md)\>\>
 
 #### Implementation of
 
-[ISidebarFragmentState](../interfaces/ISidebarFragmentState.md).[getSidebarTab](../interfaces/ISidebarFragmentState.md#getsidebartab)
+[`ISidebarFragmentState`](../interfaces/ISidebarFragmentState.md).[`getSidebarTab`](../interfaces/ISidebarFragmentState.md#getsidebartab)
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:115](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L115)
+[tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:115](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L115)
 
-___
+***
 
-### getTool
+### getTool()
 
-▸ **getTool**(): [`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>\>, [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>, [`IMapToolAPI`](../modules.md#imaptoolapi)\>
+> **getTool**(): [`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>\>, [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>, [`IMapToolAPI`](../type-aliases/IMapToolAPI.md)\>
 
 It returns the tool property of the sidebar tab fragment state.
 
 #### Returns
 
-[`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>\>, [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>, [`IMapToolAPI`](../modules.md#imaptoolapi)\>
+[`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>\>, [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>, [`IMapToolAPI`](../type-aliases/IMapToolAPI.md)\>
 
 #### Implementation of
 
-[ISidebarFragmentState](../interfaces/ISidebarFragmentState.md).[getTool](../interfaces/ISidebarFragmentState.md#gettool)
+[`ISidebarFragmentState`](../interfaces/ISidebarFragmentState.md).[`getTool`](../interfaces/ISidebarFragmentState.md#gettool)
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:83](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L83)
+[tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:83](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L83)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 It returns the type property of the tool state.
 
@@ -264,31 +231,31 @@ It returns the type property of the tool state.
 
 #### Implementation of
 
-[ISidebarFragmentState](../interfaces/ISidebarFragmentState.md).[getType](../interfaces/ISidebarFragmentState.md#gettype)
+[`ISidebarFragmentState`](../interfaces/ISidebarFragmentState.md).[`getType`](../interfaces/ISidebarFragmentState.md#gettype)
 
 #### Inherited from
 
-[MapObjectState](MapObjectState.md).[getType](MapObjectState.md#gettype)
+[`MapObjectState`](MapObjectState.md).[`getType`](MapObjectState.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:80](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L80)
+[model/internal/object/MapObjectState.ts:80](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L80)
 
-___
+***
 
-### initialize
+### initialize()
 
-▸ **initialize**(`defaults`, `props`, `initProps`): `void`
+> **initialize**(`defaults`, `props`, `initProps`): `void`
 
 It resets state with respect to initial props.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `defaults` | [`ISidebarFragmentDefaults`](../interfaces/ISidebarFragmentDefaults.md) |
-| `props` | [`ISidebarFragmentProps`](../modules.md#isidebarfragmentprops) |
-| `initProps` | [`ISidebarFragmentInitProps`](../modules.md#isidebarfragmentinitprops)\<[`ISidebarFragmentConfig`](../modules.md#isidebarfragmentconfig)\> |
+• **defaults**: [`ISidebarFragmentDefaults`](../interfaces/ISidebarFragmentDefaults.md)
+
+• **props**: [`ISidebarFragmentProps`](../type-aliases/ISidebarFragmentProps.md)
+
+• **initProps**: [`ISidebarFragmentInitProps`](../type-aliases/ISidebarFragmentInitProps.md)\<[`ISidebarFragmentConfig`](../type-aliases/ISidebarFragmentConfig.md)\>
 
 #### Returns
 
@@ -296,21 +263,21 @@ It resets state with respect to initial props.
 
 #### Implementation of
 
-[ISidebarFragmentState](../interfaces/ISidebarFragmentState.md).[initialize](../interfaces/ISidebarFragmentState.md#initialize)
+[`ISidebarFragmentState`](../interfaces/ISidebarFragmentState.md).[`initialize`](../interfaces/ISidebarFragmentState.md#initialize)
 
 #### Overrides
 
-[MapObjectState](MapObjectState.md).[initialize](MapObjectState.md#initialize)
+[`MapObjectState`](MapObjectState.md).[`initialize`](MapObjectState.md#initialize)
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:43](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L43)
+[tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:43](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L43)
 
-___
+***
 
-### isEnabled
+### isEnabled()
 
-▸ **isEnabled**(): `boolean`
+> **isEnabled**(): `boolean`
 
 It returns the enabled property of the sidebar fragment state.
 
@@ -320,56 +287,52 @@ It returns the enabled property of the sidebar fragment state.
 
 #### Implementation of
 
-[ISidebarFragmentState](../interfaces/ISidebarFragmentState.md).[isEnabled](../interfaces/ISidebarFragmentState.md#isenabled)
+[`ISidebarFragmentState`](../interfaces/ISidebarFragmentState.md).[`isEnabled`](../interfaces/ISidebarFragmentState.md#isenabled)
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:99](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L99)
+[tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:99](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L99)
 
-___
+***
 
-### serialize
+### serialize()
 
-▸ **serialize**(`defaults`): [`ISidebarFragmentConfig`](../modules.md#isidebarfragmentconfig)
+> **serialize**(`defaults`): [`ISidebarFragmentConfig`](../type-aliases/ISidebarFragmentConfig.md)
 
 The method serializes the sidebar tab fragment configuration.
 Optionally, a serialized value can be let undefined if it equals the default value.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `defaults` | `undefined` \| [`ISidebarFragmentDefaults`](../interfaces/ISidebarFragmentDefaults.md) |
+• **defaults**: `undefined` \| [`ISidebarFragmentDefaults`](../interfaces/ISidebarFragmentDefaults.md)
 
 #### Returns
 
-[`ISidebarFragmentConfig`](../modules.md#isidebarfragmentconfig)
+[`ISidebarFragmentConfig`](../type-aliases/ISidebarFragmentConfig.md)
 
 #### Implementation of
 
-[ISidebarFragmentState](../interfaces/ISidebarFragmentState.md).[serialize](../interfaces/ISidebarFragmentState.md#serialize)
+[`ISidebarFragmentState`](../interfaces/ISidebarFragmentState.md).[`serialize`](../interfaces/ISidebarFragmentState.md#serialize)
 
 #### Overrides
 
-[MapObjectState](MapObjectState.md).[serialize](MapObjectState.md#serialize)
+[`MapObjectState`](MapObjectState.md).[`serialize`](MapObjectState.md#serialize)
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:71](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L71)
+[tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:71](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L71)
 
-___
+***
 
-### setContent
+### setContent()
 
-▸ **setContent**(`content`): `void`
+> **setContent**(`content`): `void`
 
 It sets the content property of the sidebar tab control state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `content` | `HTMLElement` |
+• **content**: `HTMLElement`
 
 #### Returns
 
@@ -377,25 +340,23 @@ It sets the content property of the sidebar tab control state.
 
 #### Implementation of
 
-[ISidebarFragmentState](../interfaces/ISidebarFragmentState.md).[setContent](../interfaces/ISidebarFragmentState.md#setcontent)
+[`ISidebarFragmentState`](../interfaces/ISidebarFragmentState.md).[`setContent`](../interfaces/ISidebarFragmentState.md#setcontent)
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:140](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L140)
+[tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:140](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L140)
 
-___
+***
 
-### setEnabled
+### setEnabled()
 
-▸ **setEnabled**(`enabled`): `void`
+> **setEnabled**(`enabled`): `void`
 
 It sets the enabled property of the sidebar fragment state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `enabled` | `boolean` |
+• **enabled**: `boolean`
 
 #### Returns
 
@@ -403,25 +364,23 @@ It sets the enabled property of the sidebar fragment state.
 
 #### Implementation of
 
-[ISidebarFragmentState](../interfaces/ISidebarFragmentState.md).[setEnabled](../interfaces/ISidebarFragmentState.md#setenabled)
+[`ISidebarFragmentState`](../interfaces/ISidebarFragmentState.md).[`setEnabled`](../interfaces/ISidebarFragmentState.md#setenabled)
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:108](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L108)
+[tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:108](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L108)
 
-___
+***
 
-### setId
+### setId()
 
-▸ **setId**(`id`): `void`
+> **setId**(`id`): `void`
 
 It sets the id property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `id` | `string` |
+• **id**: `string`
 
 #### Returns
 
@@ -429,29 +388,27 @@ It sets the id property of the tool state.
 
 #### Implementation of
 
-[ISidebarFragmentState](../interfaces/ISidebarFragmentState.md).[setId](../interfaces/ISidebarFragmentState.md#setid)
+[`ISidebarFragmentState`](../interfaces/ISidebarFragmentState.md).[`setId`](../interfaces/ISidebarFragmentState.md#setid)
 
 #### Inherited from
 
-[MapObjectState](MapObjectState.md).[setId](MapObjectState.md#setid)
+[`MapObjectState`](MapObjectState.md).[`setId`](MapObjectState.md#setid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:96](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L96)
+[model/internal/object/MapObjectState.ts:96](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L96)
 
-___
+***
 
-### setSidebarTab
+### setSidebarTab()
 
-▸ **setSidebarTab**(`sidebarTab`): `void`
+> **setSidebarTab**(`sidebarTab`): `void`
 
 It sets the sidebar tab property of the sidebar fragment state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `sidebarTab` | [`ISidebarTab`](../interfaces/ISidebarTab.md)\<[`ISidebarTabProps`](../modules.md#isidebartabprops), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabState`](../interfaces/ISidebarTabState.md)\<[`ISidebarTabProps`](../modules.md#isidebartabprops), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabConfig`](../modules.md#isidebartabconfig)\>, [`ISidebarTabConfig`](../modules.md#isidebartabconfig), [`ISidebarTabInitProps`](../modules.md#isidebartabinitprops)\<[`ISidebarTabConfig`](../modules.md#isidebartabconfig)\>\> |
+• **sidebarTab**: [`ISidebarTab`](../interfaces/ISidebarTab.md)\<[`ISidebarTabProps`](../type-aliases/ISidebarTabProps.md), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabState`](../interfaces/ISidebarTabState.md)\<[`ISidebarTabProps`](../type-aliases/ISidebarTabProps.md), [`ISidebarTabDefaults`](../interfaces/ISidebarTabDefaults.md), [`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md)\>, [`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md), [`ISidebarTabInitProps`](../type-aliases/ISidebarTabInitProps.md)\<[`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md)\>\>
 
 #### Returns
 
@@ -459,30 +416,28 @@ It sets the sidebar tab property of the sidebar fragment state.
 
 #### Implementation of
 
-[ISidebarFragmentState](../interfaces/ISidebarFragmentState.md).[setSidebarTab](../interfaces/ISidebarFragmentState.md#setsidebartab)
+[`ISidebarFragmentState`](../interfaces/ISidebarFragmentState.md).[`setSidebarTab`](../interfaces/ISidebarFragmentState.md#setsidebartab)
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:124](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L124)
+[tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:124](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L124)
 
-___
+***
 
-### setTool
+### setTool()
 
-▸ **setTool**(`tool`): `void`
+> `protected` **setTool**(`tool`): `void`
 
 It sets the tool property of the sidebar tab fragment state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `tool` | [`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>\>, [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>, [`IMapToolAPI`](../modules.md#imaptoolapi)\> |
+• **tool**: [`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>\>, [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>, [`IMapToolAPI`](../type-aliases/IMapToolAPI.md)\>
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:92](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L92)
+[tools/sidebar/model/internal/fragment/SidebarFragmentState.ts:92](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/fragment/SidebarFragmentState.ts#L92)

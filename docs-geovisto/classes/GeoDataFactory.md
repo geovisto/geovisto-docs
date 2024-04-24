@@ -1,10 +1,14 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / GeoDataFactory
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / GeoDataFactory
 
 # Class: GeoDataFactory
 
 This interface declares a factory for geographical data objects.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
@@ -12,21 +16,11 @@ Jiri Hynek
 
 - [`IGeoDataFactory`](../interfaces/IGeoDataFactory.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](GeoDataFactory.md#constructor)
-
-### Methods
-
-- [geojson](GeoDataFactory.md#geojson)
-
 ## Constructors
 
-### constructor
+### new GeoDataFactory()
 
-• **new GeoDataFactory**(): [`GeoDataFactory`](GeoDataFactory.md)
+> **new GeoDataFactory**(): [`GeoDataFactory`](GeoDataFactory.md)
 
 #### Returns
 
@@ -34,18 +28,17 @@ Jiri Hynek
 
 ## Methods
 
-### geojson
+### geojson()
 
-▸ **geojson**(`name`, `data`): [`IGeoData`](../interfaces/IGeoData.md)
+> **geojson**(`name`, `data`): [`IGeoData`](../interfaces/IGeoData.md)
 
 It creates the GeoJSON geographical data object.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
-| `data` | `unknown` |
+• **name**: `string`
+
+• **data**: `unknown`
 
 #### Returns
 
@@ -53,8 +46,8 @@ It creates the GeoJSON geographical data object.
 
 #### Implementation of
 
-[IGeoDataFactory](../interfaces/IGeoDataFactory.md).[geojson](../interfaces/IGeoDataFactory.md#geojson)
+[`IGeoDataFactory`](../interfaces/IGeoDataFactory.md).[`geojson`](../interfaces/IGeoDataFactory.md#geojson)
 
-#### Defined in
+#### Source
 
-[src/model/internal/geodata/GeoDataFactory.ts:15](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/geodata/GeoDataFactory.ts#L15)
+[model/internal/geodata/GeoDataFactory.ts:15](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/geodata/GeoDataFactory.ts#L15)

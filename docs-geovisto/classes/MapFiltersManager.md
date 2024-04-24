@@ -1,54 +1,34 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / MapFiltersManager
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / MapFiltersManager
 
 # Class: MapFiltersManager
 
 This class provide functions for using filters.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`MapDomainArrayManager`](MapDomainArrayManager.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\>
-
-  ↳ **`MapFiltersManager`**
 
 ## Implements
 
 - [`IMapFilterManager`](../interfaces/IMapFilterManager.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](MapFiltersManager.md#constructor)
-
-### Methods
-
-- [add](MapFiltersManager.md#add)
-- [createRule](MapFiltersManager.md#createrule)
-- [filterData](MapFiltersManager.md#filterdata)
-- [getDefault](MapFiltersManager.md#getdefault)
-- [getDomain](MapFiltersManager.md#getdomain)
-- [getDomainNames](MapFiltersManager.md#getdomainnames)
-- [getDomains](MapFiltersManager.md#getdomains)
-- [isEmpty](MapFiltersManager.md#isempty)
-- [remove](MapFiltersManager.md#remove)
-- [removeByName](MapFiltersManager.md#removebyname)
-- [size](MapFiltersManager.md#size)
-
 ## Constructors
 
-### constructor
+### new MapFiltersManager()
 
-• **new MapFiltersManager**(`filterOperations`): [`MapFiltersManager`](MapFiltersManager.md)
+> **new MapFiltersManager**(`filterOperations`): [`MapFiltersManager`](MapFiltersManager.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `filterOperations` | [`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)[] |
+• **filterOperations**: [`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)[]
 
 #### Returns
 
@@ -56,17 +36,17 @@ Jiri Hynek
 
 #### Overrides
 
-[MapDomainArrayManager](MapDomainArrayManager.md).[constructor](MapDomainArrayManager.md#constructor)
+[`MapDomainArrayManager`](MapDomainArrayManager.md).[`constructor`](MapDomainArrayManager.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/model/internal/filter/basic/MapFiltersManager.ts:17](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/filter/basic/MapFiltersManager.ts#L17)
+[model/internal/filter/basic/MapFiltersManager.ts:17](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/filter/basic/MapFiltersManager.ts#L17)
 
 ## Methods
 
-### add
+### add()
 
-▸ **add**(`domains`): `void`
+> **add**(`domains`): `void`
 
 It adds a domain to the list of domains.
 
@@ -74,9 +54,7 @@ Override this function.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `domains` | [`IMapFilterOperation`](../interfaces/IMapFilterOperation.md) |
+• **domains**: [`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)
 
 #### Returns
 
@@ -84,50 +62,50 @@ Override this function.
 
 #### Implementation of
 
-[IMapFilterManager](../interfaces/IMapFilterManager.md).[add](../interfaces/IMapFilterManager.md#add)
+[`IMapFilterManager`](../interfaces/IMapFilterManager.md).[`add`](../interfaces/IMapFilterManager.md#add)
 
 #### Inherited from
 
-[MapDomainArrayManager](MapDomainArrayManager.md).[add](MapDomainArrayManager.md#add)
+[`MapDomainArrayManager`](MapDomainArrayManager.md).[`add`](MapDomainArrayManager.md#add)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomainArrayManager.ts:56](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomainArrayManager.ts#L56)
+[model/internal/domain/generic/MapDomainArrayManager.ts:56](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomainArrayManager.ts#L56)
 
-___
+***
 
-### createRule
+### createRule()
 
-▸ **createRule**(`dataDomain`, `opName`, `pattern`): ``null`` \| [`IMapFilterRule`](../interfaces/IMapFilterRule.md)
+> **createRule**(`dataDomain`, `opName`, `pattern`): `null` \| [`IMapFilterRule`](../interfaces/IMapFilterRule.md)
 
 The function creates a new filter rule using given operation label.
 If operation does not exists it returns null.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dataDomain` | [`IMapDataDomain`](../interfaces/IMapDataDomain.md) |
-| `opName` | `string` |
-| `pattern` | `string` |
+• **dataDomain**: [`IMapDataDomain`](../interfaces/IMapDataDomain.md)
+
+• **opName**: `string`
+
+• **pattern**: `string`
 
 #### Returns
 
-``null`` \| [`IMapFilterRule`](../interfaces/IMapFilterRule.md)
+`null` \| [`IMapFilterRule`](../interfaces/IMapFilterRule.md)
 
 #### Implementation of
 
-[IMapFilterManager](../interfaces/IMapFilterManager.md).[createRule](../interfaces/IMapFilterManager.md#createrule)
+[`IMapFilterManager`](../interfaces/IMapFilterManager.md).[`createRule`](../interfaces/IMapFilterManager.md#createrule)
 
-#### Defined in
+#### Source
 
-[src/model/internal/filter/basic/MapFiltersManager.ts:29](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/filter/basic/MapFiltersManager.ts#L29)
+[model/internal/filter/basic/MapFiltersManager.ts:29](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/filter/basic/MapFiltersManager.ts#L29)
 
-___
+***
 
-### filterData
+### filterData()
 
-▸ **filterData**(`dataManager`, `dataRecords`, `filterRules`): [`IMapData`](../modules.md#imapdata)
+> **filterData**(`dataManager`, `dataRecords`, `filterRules`): [`IMapData`](../type-aliases/IMapData.md)
 
 Takes a list of data and applies the given filter rules.
 Returns a new list of the references to filtered data items.
@@ -136,29 +114,29 @@ TODO: define data records type
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dataManager` | [`IMapDataManager`](../interfaces/IMapDataManager.md) |
-| `dataRecords` | [`IMapData`](../modules.md#imapdata) |
-| `filterRules` | [`IMapFilterRule`](../interfaces/IMapFilterRule.md)[] |
+• **dataManager**: [`IMapDataManager`](../interfaces/IMapDataManager.md)
+
+• **dataRecords**: [`IMapData`](../type-aliases/IMapData.md)
+
+• **filterRules**: [`IMapFilterRule`](../interfaces/IMapFilterRule.md)[]
 
 #### Returns
 
-[`IMapData`](../modules.md#imapdata)
+[`IMapData`](../type-aliases/IMapData.md)
 
 #### Implementation of
 
-[IMapFilterManager](../interfaces/IMapFilterManager.md).[filterData](../interfaces/IMapFilterManager.md#filterdata)
+[`IMapFilterManager`](../interfaces/IMapFilterManager.md).[`filterData`](../interfaces/IMapFilterManager.md#filterdata)
 
-#### Defined in
+#### Source
 
-[src/model/internal/filter/basic/MapFiltersManager.ts:47](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/filter/basic/MapFiltersManager.ts#L47)
+[model/internal/filter/basic/MapFiltersManager.ts:47](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/filter/basic/MapFiltersManager.ts#L47)
 
-___
+***
 
-### getDefault
+### getDefault()
 
-▸ **getDefault**(): `undefined` \| [`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)
+> **getDefault**(): `undefined` \| [`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)
 
 The function returns the first domain of the array.
 
@@ -168,29 +146,27 @@ The function returns the first domain of the array.
 
 #### Implementation of
 
-[IMapFilterManager](../interfaces/IMapFilterManager.md).[getDefault](../interfaces/IMapFilterManager.md#getdefault)
+[`IMapFilterManager`](../interfaces/IMapFilterManager.md).[`getDefault`](../interfaces/IMapFilterManager.md#getdefault)
 
 #### Inherited from
 
-[MapDomainArrayManager](MapDomainArrayManager.md).[getDefault](MapDomainArrayManager.md#getdefault)
+[`MapDomainArrayManager`](MapDomainArrayManager.md).[`getDefault`](MapDomainArrayManager.md#getdefault)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomainArrayManager.ts:30](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomainArrayManager.ts#L30)
+[model/internal/domain/generic/MapDomainArrayManager.ts:30](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomainArrayManager.ts#L30)
 
-___
+***
 
-### getDomain
+### getDomain()
 
-▸ **getDomain**(`name`): `undefined` \| [`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)
+> **getDomain**(`name`): `undefined` \| [`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)
 
 The function returns map domains of given type.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
+• **name**: `string`
 
 #### Returns
 
@@ -198,21 +174,21 @@ The function returns map domains of given type.
 
 #### Implementation of
 
-[IMapFilterManager](../interfaces/IMapFilterManager.md).[getDomain](../interfaces/IMapFilterManager.md#getdomain)
+[`IMapFilterManager`](../interfaces/IMapFilterManager.md).[`getDomain`](../interfaces/IMapFilterManager.md#getdomain)
 
 #### Inherited from
 
-[MapDomainArrayManager](MapDomainArrayManager.md).[getDomain](MapDomainArrayManager.md#getdomain)
+[`MapDomainArrayManager`](MapDomainArrayManager.md).[`getDomain`](MapDomainArrayManager.md#getdomain)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomainArrayManager.ts:99](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomainArrayManager.ts#L99)
+[model/internal/domain/generic/MapDomainArrayManager.ts:99](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomainArrayManager.ts#L99)
 
-___
+***
 
-### getDomainNames
+### getDomainNames()
 
-▸ **getDomainNames**(): `string`[]
+> **getDomainNames**(): `string`[]
 
 Help function which returns the list of domain string labels (map domain types).
 
@@ -222,21 +198,21 @@ Help function which returns the list of domain string labels (map domain types).
 
 #### Implementation of
 
-[IMapFilterManager](../interfaces/IMapFilterManager.md).[getDomainNames](../interfaces/IMapFilterManager.md#getdomainnames)
+[`IMapFilterManager`](../interfaces/IMapFilterManager.md).[`getDomainNames`](../interfaces/IMapFilterManager.md#getdomainnames)
 
 #### Inherited from
 
-[MapDomainArrayManager](MapDomainArrayManager.md).[getDomainNames](MapDomainArrayManager.md#getdomainnames)
+[`MapDomainArrayManager`](MapDomainArrayManager.md).[`getDomainNames`](MapDomainArrayManager.md#getdomainnames)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomainArrayManager.ts:83](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomainArrayManager.ts#L83)
+[model/internal/domain/generic/MapDomainArrayManager.ts:83](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomainArrayManager.ts#L83)
 
-___
+***
 
-### getDomains
+### getDomains()
 
-▸ **getDomains**(): [`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)[]
+> **getDomains**(): [`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)[]
 
 The function returns available map domains.
 
@@ -246,21 +222,21 @@ The function returns available map domains.
 
 #### Implementation of
 
-[IMapFilterManager](../interfaces/IMapFilterManager.md).[getDomains](../interfaces/IMapFilterManager.md#getdomains)
+[`IMapFilterManager`](../interfaces/IMapFilterManager.md).[`getDomains`](../interfaces/IMapFilterManager.md#getdomains)
 
 #### Inherited from
 
-[MapDomainArrayManager](MapDomainArrayManager.md).[getDomains](MapDomainArrayManager.md#getdomains)
+[`MapDomainArrayManager`](MapDomainArrayManager.md).[`getDomains`](MapDomainArrayManager.md#getdomains)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomainArrayManager.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomainArrayManager.ts#L23)
+[model/internal/domain/generic/MapDomainArrayManager.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomainArrayManager.ts#L23)
 
-___
+***
 
-### isEmpty
+### isEmpty()
 
-▸ **isEmpty**(): `boolean`
+> **isEmpty**(): `boolean`
 
 The function returns true if size() is 0.
 
@@ -270,29 +246,27 @@ The function returns true if size() is 0.
 
 #### Implementation of
 
-[IMapFilterManager](../interfaces/IMapFilterManager.md).[isEmpty](../interfaces/IMapFilterManager.md#isempty)
+[`IMapFilterManager`](../interfaces/IMapFilterManager.md).[`isEmpty`](../interfaces/IMapFilterManager.md#isempty)
 
 #### Inherited from
 
-[MapDomainArrayManager](MapDomainArrayManager.md).[isEmpty](MapDomainArrayManager.md#isempty)
+[`MapDomainArrayManager`](MapDomainArrayManager.md).[`isEmpty`](MapDomainArrayManager.md#isempty)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomainArrayManager.ts:45](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomainArrayManager.ts#L45)
+[model/internal/domain/generic/MapDomainArrayManager.ts:45](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomainArrayManager.ts#L45)
 
-___
+***
 
-### remove
+### remove()
 
-▸ **remove**(`domains`): `void`
+> **remove**(`domains`): `void`
 
 It removes a domain from the list of domains.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `domains` | [`IMapFilterOperation`](../interfaces/IMapFilterOperation.md) |
+• **domains**: [`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)
 
 #### Returns
 
@@ -300,21 +274,21 @@ It removes a domain from the list of domains.
 
 #### Implementation of
 
-[IMapFilterManager](../interfaces/IMapFilterManager.md).[remove](../interfaces/IMapFilterManager.md#remove)
+[`IMapFilterManager`](../interfaces/IMapFilterManager.md).[`remove`](../interfaces/IMapFilterManager.md#remove)
 
 #### Inherited from
 
-[MapDomainArrayManager](MapDomainArrayManager.md).[remove](MapDomainArrayManager.md#remove)
+[`MapDomainArrayManager`](MapDomainArrayManager.md).[`remove`](MapDomainArrayManager.md#remove)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomainArrayManager.ts:65](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomainArrayManager.ts#L65)
+[model/internal/domain/generic/MapDomainArrayManager.ts:65](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomainArrayManager.ts#L65)
 
-___
+***
 
-### removeByName
+### removeByName()
 
-▸ **removeByName**(`id`): `void`
+> **removeByName**(`id`): `void`
 
 It removes a domain from the list of domains.
 
@@ -322,9 +296,7 @@ Override this function.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `id` | `string` |
+• **id**: `string`
 
 #### Returns
 
@@ -332,21 +304,21 @@ Override this function.
 
 #### Implementation of
 
-[IMapFilterManager](../interfaces/IMapFilterManager.md).[removeByName](../interfaces/IMapFilterManager.md#removebyname)
+[`IMapFilterManager`](../interfaces/IMapFilterManager.md).[`removeByName`](../interfaces/IMapFilterManager.md#removebyname)
 
 #### Inherited from
 
-[MapDomainArrayManager](MapDomainArrayManager.md).[removeByName](MapDomainArrayManager.md#removebyname)
+[`MapDomainArrayManager`](MapDomainArrayManager.md).[`removeByName`](MapDomainArrayManager.md#removebyname)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomainArrayManager.ts:76](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomainArrayManager.ts#L76)
+[model/internal/domain/generic/MapDomainArrayManager.ts:76](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomainArrayManager.ts#L76)
 
-___
+***
 
-### size
+### size()
 
-▸ **size**(): `number`
+> **size**(): `number`
 
 The function returns number of domains.
 
@@ -356,12 +328,12 @@ The function returns number of domains.
 
 #### Implementation of
 
-[IMapFilterManager](../interfaces/IMapFilterManager.md).[size](../interfaces/IMapFilterManager.md#size)
+[`IMapFilterManager`](../interfaces/IMapFilterManager.md).[`size`](../interfaces/IMapFilterManager.md#size)
 
 #### Inherited from
 
-[MapDomainArrayManager](MapDomainArrayManager.md).[size](MapDomainArrayManager.md#size)
+[`MapDomainArrayManager`](MapDomainArrayManager.md).[`size`](MapDomainArrayManager.md#size)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomainArrayManager.ts:38](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomainArrayManager.ts#L38)
+[model/internal/domain/generic/MapDomainArrayManager.ts:38](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomainArrayManager.ts#L38)

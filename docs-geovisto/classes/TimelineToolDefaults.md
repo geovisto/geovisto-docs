@@ -1,66 +1,30 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / TimelineToolDefaults
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / TimelineToolDefaults
 
 # Class: TimelineToolDefaults
 
 This class provide functions which return the default state values.
 
-**`Author`**
+## Author
 
 Krystof Rykala
 
-## Hierarchy
+## Extends
 
 - [`LayerToolDefaults`](LayerToolDefaults.md)
-
-  ↳ **`TimelineToolDefaults`**
 
 ## Implements
 
 - [`ITimelineToolDefaults`](../interfaces/ITimelineToolDefaults.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](TimelineToolDefaults.md#constructor)
-
-### Properties
-
-- [idString](TimelineToolDefaults.md#idstring)
-- [TYPE](TimelineToolDefaults.md#type)
-- [id](TimelineToolDefaults.md#id)
-
-### Methods
-
-- [generateId](TimelineToolDefaults.md#generateid)
-- [getChartAggregationFn](TimelineToolDefaults.md#getchartaggregationfn)
-- [getChartEnabled](TimelineToolDefaults.md#getchartenabled)
-- [getChartValuePath](TimelineToolDefaults.md#getchartvaluepath)
-- [getConfig](TimelineToolDefaults.md#getconfig)
-- [getDataManager](TimelineToolDefaults.md#getdatamanager)
-- [getDimensions](TimelineToolDefaults.md#getdimensions)
-- [getGeoDataManager](TimelineToolDefaults.md#getgeodatamanager)
-- [getGranularity](TimelineToolDefaults.md#getgranularity)
-- [getIcon](TimelineToolDefaults.md#geticon)
-- [getId](TimelineToolDefaults.md#getid)
-- [getLabel](TimelineToolDefaults.md#getlabel)
-- [getLayerName](TimelineToolDefaults.md#getlayername)
-- [getProps](TimelineToolDefaults.md#getprops)
-- [getRealTimeEnabled](TimelineToolDefaults.md#getrealtimeenabled)
-- [getStepTimeLength](TimelineToolDefaults.md#getsteptimelength)
-- [getStory](TimelineToolDefaults.md#getstory)
-- [getStoryEnabled](TimelineToolDefaults.md#getstoryenabled)
-- [getTimePathDimension](TimelineToolDefaults.md#gettimepathdimension)
-- [getTransitionDuration](TimelineToolDefaults.md#gettransitionduration)
-- [getType](TimelineToolDefaults.md#gettype)
-- [isEnabled](TimelineToolDefaults.md#isenabled)
-- [isSingleton](TimelineToolDefaults.md#issingleton)
-
 ## Constructors
 
-### constructor
+### new TimelineToolDefaults()
 
-• **new TimelineToolDefaults**(): [`TimelineToolDefaults`](TimelineToolDefaults.md)
+> **new TimelineToolDefaults**(): [`TimelineToolDefaults`](TimelineToolDefaults.md)
 
 #### Returns
 
@@ -68,57 +32,57 @@ Krystof Rykala
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[constructor](LayerToolDefaults.md#constructor)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`constructor`](LayerToolDefaults.md#constructors)
 
 ## Properties
 
-### idString
+### idString?
 
-• `Protected` `Optional` **idString**: `string`
+> `protected` `optional` **idString**: `string`
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[idString](LayerToolDefaults.md#idstring)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`idString`](LayerToolDefaults.md#idstring)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:13](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L13)
+[model/internal/object/MapObjectDefaults.ts:13](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L13)
 
-___
+***
 
 ### TYPE
 
-▪ `Static` **TYPE**: `string` = `"geovisto-tool-layer-timeline"`
+> `static` **TYPE**: `string` = `"geovisto-tool-layer-timeline"`
 
 Static tool type constant.
 
 #### Overrides
 
-[LayerToolDefaults](LayerToolDefaults.md).[TYPE](LayerToolDefaults.md#type)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`TYPE`](LayerToolDefaults.md#type)
 
-#### Defined in
+#### Source
 
-[src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts:34](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L34)
+[tools/timeline/model/internal/tool/TimelineToolDefaults.ts:34](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L34)
 
-___
+***
 
 ### id
 
-▪ `Static` `Protected` **id**: `number`
+> `static` `protected` **id**: `number`
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[id](LayerToolDefaults.md#id)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`id`](LayerToolDefaults.md#id)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:12](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L12)
+[model/internal/object/MapObjectDefaults.ts:12](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L12)
 
 ## Methods
 
-### generateId
+### generateId()
 
-▸ **generateId**(): `string`
+> `protected` **generateId**(): `string`
 
 It returns identifier which is used when no identifier is specified.
 
@@ -128,17 +92,17 @@ It returns identifier which is used when no identifier is specified.
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[generateId](LayerToolDefaults.md#generateid)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`generateId`](LayerToolDefaults.md#generateid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:54](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L54)
+[model/internal/object/MapObjectDefaults.ts:54](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L54)
 
-___
+***
 
-### getChartAggregationFn
+### getChartAggregationFn()
 
-▸ **getChartAggregationFn**(): [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\>
+> **getChartAggregationFn**(): [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\>
 
 #### Returns
 
@@ -146,17 +110,17 @@ ___
 
 #### Implementation of
 
-[ITimelineToolDefaults](../interfaces/ITimelineToolDefaults.md).[getChartAggregationFn](../interfaces/ITimelineToolDefaults.md#getchartaggregationfn)
+[`ITimelineToolDefaults`](../interfaces/ITimelineToolDefaults.md).[`getChartAggregationFn`](../interfaces/ITimelineToolDefaults.md#getchartaggregationfn)
 
-#### Defined in
+#### Source
 
-[src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts:163](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L163)
+[tools/timeline/model/internal/tool/TimelineToolDefaults.ts:163](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L163)
 
-___
+***
 
-### getChartEnabled
+### getChartEnabled()
 
-▸ **getChartEnabled**(): [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\>
+> **getChartEnabled**(): [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\>
 
 #### Returns
 
@@ -164,23 +128,21 @@ ___
 
 #### Implementation of
 
-[ITimelineToolDefaults](../interfaces/ITimelineToolDefaults.md).[getChartEnabled](../interfaces/ITimelineToolDefaults.md#getchartenabled)
+[`ITimelineToolDefaults`](../interfaces/ITimelineToolDefaults.md).[`getChartEnabled`](../interfaces/ITimelineToolDefaults.md#getchartenabled)
 
-#### Defined in
+#### Source
 
-[src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts:147](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L147)
+[tools/timeline/model/internal/tool/TimelineToolDefaults.ts:147](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L147)
 
-___
+***
 
-### getChartValuePath
+### getChartValuePath()
 
-▸ **getChartValuePath**(`map?`): [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+> **getChartValuePath**(`map`?): [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `map?` | [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\> |
+• **map?**: [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Returns
 
@@ -188,41 +150,41 @@ ___
 
 #### Implementation of
 
-[ITimelineToolDefaults](../interfaces/ITimelineToolDefaults.md).[getChartValuePath](../interfaces/ITimelineToolDefaults.md#getchartvaluepath)
+[`ITimelineToolDefaults`](../interfaces/ITimelineToolDefaults.md).[`getChartValuePath`](../interfaces/ITimelineToolDefaults.md#getchartvaluepath)
 
-#### Defined in
+#### Source
 
-[src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts:155](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L155)
+[tools/timeline/model/internal/tool/TimelineToolDefaults.ts:155](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L155)
 
-___
+***
 
-### getConfig
+### getConfig()
 
-▸ **getConfig**(): [`IMapToolConfig`](../modules.md#imaptoolconfig)
+> **getConfig**(): [`IMapToolConfig`](../type-aliases/IMapToolConfig.md)
 
 By defaults it returns the config with undefined props.
 
 #### Returns
 
-[`IMapToolConfig`](../modules.md#imaptoolconfig)
+[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)
 
 #### Implementation of
 
-[ITimelineToolDefaults](../interfaces/ITimelineToolDefaults.md).[getConfig](../interfaces/ITimelineToolDefaults.md#getconfig)
+[`ITimelineToolDefaults`](../interfaces/ITimelineToolDefaults.md).[`getConfig`](../interfaces/ITimelineToolDefaults.md#getconfig)
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[getConfig](LayerToolDefaults.md#getconfig)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`getConfig`](LayerToolDefaults.md#getconfig)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolDefaults.ts:34](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolDefaults.ts#L34)
+[model/internal/tool/MapToolDefaults.ts:34](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolDefaults.ts#L34)
 
-___
+***
 
-### getDataManager
+### getDataManager()
 
-▸ **getDataManager**(): [`IMapDataManager`](../interfaces/IMapDataManager.md)
+> **getDataManager**(): [`IMapDataManager`](../interfaces/IMapDataManager.md)
 
 It returns default map data manager.
 
@@ -232,86 +194,109 @@ It returns default map data manager.
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[getDataManager](LayerToolDefaults.md#getdatamanager)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`getDataManager`](LayerToolDefaults.md#getdatamanager)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolDefaults.ts:20](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolDefaults.ts#L20)
+[model/internal/tool/MapToolDefaults.ts:20](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolDefaults.ts#L20)
 
-___
+***
 
-### getDimensions
+### getDimensions()
 
-▸ **getDimensions**(`map?`): `Object`
+> **getDimensions**(`map`?): `object`
 
 It returns the map of layer dimensions.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `map?` | [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\> |
+• **map?**: [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Returns
 
-`Object`
+`object`
 
-| Name | Type |
-| :------ | :------ |
-| `chartAggregationFn` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> |
-| `chartEnabled` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\> |
-| `chartValuePath` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `granularity` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`ITimeGranularity`\> |
-| `realTimeEnabled` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\> |
-| `stepTimeLength` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> |
-| `story` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `storyEnabled` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\> |
-| `timePath` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `transitionDuration` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> |
+##### chartAggregationFn
+
+> **chartAggregationFn**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\>
+
+##### chartEnabled
+
+> **chartEnabled**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\>
+
+##### chartValuePath
+
+> **chartValuePath**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+##### granularity
+
+> **granularity**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`ITimeGranularity`\>
+
+##### realTimeEnabled
+
+> **realTimeEnabled**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\>
+
+##### stepTimeLength
+
+> **stepTimeLength**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
+
+##### story
+
+> **story**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+##### storyEnabled
+
+> **storyEnabled**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\>
+
+##### timePath
+
+> **timePath**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+##### transitionDuration
+
+> **transitionDuration**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
 
 #### Implementation of
 
-[ITimelineToolDefaults](../interfaces/ITimelineToolDefaults.md).[getDimensions](../interfaces/ITimelineToolDefaults.md#getdimensions)
+[`ITimelineToolDefaults`](../interfaces/ITimelineToolDefaults.md).[`getDimensions`](../interfaces/ITimelineToolDefaults.md#getdimensions)
 
 #### Overrides
 
-[LayerToolDefaults](LayerToolDefaults.md).[getDimensions](LayerToolDefaults.md#getdimensions)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`getDimensions`](LayerToolDefaults.md#getdimensions)
 
-#### Defined in
+#### Source
 
-[src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts:67](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L67)
+[tools/timeline/model/internal/tool/TimelineToolDefaults.ts:67](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L67)
 
-___
+***
 
-### getGeoDataManager
+### getGeoDataManager()
 
-▸ **getGeoDataManager**(`geoDataArray`): [`IGeoDataManager`](../modules.md#igeodatamanager)
+> **getGeoDataManager**(`geoDataArray`): [`IGeoDataManager`](../type-aliases/IGeoDataManager.md)
 
 It returns default geo data manager.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `geoDataArray` | `undefined` \| [`IGeoData`](../interfaces/IGeoData.md)[] |
+• **geoDataArray**: `undefined` \| [`IGeoData`](../interfaces/IGeoData.md)[]
 
 #### Returns
 
-[`IGeoDataManager`](../modules.md#igeodatamanager)
+[`IGeoDataManager`](../type-aliases/IGeoDataManager.md)
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[getGeoDataManager](LayerToolDefaults.md#getgeodatamanager)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`getGeoDataManager`](LayerToolDefaults.md#getgeodatamanager)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolDefaults.ts:27](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolDefaults.ts#L27)
+[model/internal/tool/MapToolDefaults.ts:27](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolDefaults.ts#L27)
 
-___
+***
 
-### getGranularity
+### getGranularity()
 
-▸ **getGranularity**(): [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`ITimeGranularity`\>
+> **getGranularity**(): [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`ITimeGranularity`\>
 
 #### Returns
 
@@ -319,17 +304,17 @@ ___
 
 #### Implementation of
 
-[ITimelineToolDefaults](../interfaces/ITimelineToolDefaults.md).[getGranularity](../interfaces/ITimelineToolDefaults.md#getgranularity)
+[`ITimelineToolDefaults`](../interfaces/ITimelineToolDefaults.md).[`getGranularity`](../interfaces/ITimelineToolDefaults.md#getgranularity)
 
-#### Defined in
+#### Source
 
-[src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts:130](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L130)
+[tools/timeline/model/internal/tool/TimelineToolDefaults.ts:130](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L130)
 
-___
+***
 
-### getIcon
+### getIcon()
 
-▸ **getIcon**(): `string`
+> **getIcon**(): `string`
 
 It returns the icon of the tab pane.
 
@@ -339,21 +324,21 @@ It returns the icon of the tab pane.
 
 #### Implementation of
 
-[ITimelineToolDefaults](../interfaces/ITimelineToolDefaults.md).[getIcon](../interfaces/ITimelineToolDefaults.md#geticon)
+[`ITimelineToolDefaults`](../interfaces/ITimelineToolDefaults.md).[`getIcon`](../interfaces/ITimelineToolDefaults.md#geticon)
 
 #### Overrides
 
-[LayerToolDefaults](LayerToolDefaults.md).[getIcon](LayerToolDefaults.md#geticon)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`getIcon`](LayerToolDefaults.md#geticon)
 
-#### Defined in
+#### Source
 
-[src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts:53](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L53)
+[tools/timeline/model/internal/tool/TimelineToolDefaults.ts:53](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L53)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 It returns identifier which is used when no identifier is specified.
 
@@ -363,21 +348,21 @@ It returns identifier which is used when no identifier is specified.
 
 #### Implementation of
 
-[ITimelineToolDefaults](../interfaces/ITimelineToolDefaults.md).[getId](../interfaces/ITimelineToolDefaults.md#getid)
+[`ITimelineToolDefaults`](../interfaces/ITimelineToolDefaults.md).[`getId`](../interfaces/ITimelineToolDefaults.md#getid)
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[getId](LayerToolDefaults.md#getid)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`getId`](LayerToolDefaults.md#getid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:44](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L44)
+[model/internal/object/MapObjectDefaults.ts:44](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L44)
 
-___
+***
 
-### getLabel
+### getLabel()
 
-▸ **getLabel**(): `string`
+> **getLabel**(): `string`
 
 It returns the label of the tool.
 
@@ -387,21 +372,21 @@ It returns the label of the tool.
 
 #### Implementation of
 
-[ITimelineToolDefaults](../interfaces/ITimelineToolDefaults.md).[getLabel](../interfaces/ITimelineToolDefaults.md#getlabel)
+[`ITimelineToolDefaults`](../interfaces/ITimelineToolDefaults.md).[`getLabel`](../interfaces/ITimelineToolDefaults.md#getlabel)
 
 #### Overrides
 
-[LayerToolDefaults](LayerToolDefaults.md).[getLabel](LayerToolDefaults.md#getlabel)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`getLabel`](LayerToolDefaults.md#getlabel)
 
-#### Defined in
+#### Source
 
-[src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts:60](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L60)
+[tools/timeline/model/internal/tool/TimelineToolDefaults.ts:60](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L60)
 
-___
+***
 
-### getLayerName
+### getLayerName()
 
-▸ **getLayerName**(): `string`
+> **getLayerName**(): `string`
 
 It returns the layer name.
 
@@ -411,45 +396,45 @@ It returns the layer name.
 
 #### Implementation of
 
-[ITimelineToolDefaults](../interfaces/ITimelineToolDefaults.md).[getLayerName](../interfaces/ITimelineToolDefaults.md#getlayername)
+[`ITimelineToolDefaults`](../interfaces/ITimelineToolDefaults.md).[`getLayerName`](../interfaces/ITimelineToolDefaults.md#getlayername)
 
 #### Overrides
 
-[LayerToolDefaults](LayerToolDefaults.md).[getLayerName](LayerToolDefaults.md#getlayername)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`getLayerName`](LayerToolDefaults.md#getlayername)
 
-#### Defined in
+#### Source
 
-[src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts:46](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L46)
+[tools/timeline/model/internal/tool/TimelineToolDefaults.ts:46](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L46)
 
-___
+***
 
-### getProps
+### getProps()
 
-▸ **getProps**(): [`IMapObjectProps`](../modules.md#imapobjectprops)
+> **getProps**(): [`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
 It returns default props if no props are given.
 
 #### Returns
 
-[`IMapObjectProps`](../modules.md#imapobjectprops)
+[`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
 #### Implementation of
 
-[ITimelineToolDefaults](../interfaces/ITimelineToolDefaults.md).[getProps](../interfaces/ITimelineToolDefaults.md#getprops)
+[`ITimelineToolDefaults`](../interfaces/ITimelineToolDefaults.md).[`getProps`](../interfaces/ITimelineToolDefaults.md#getprops)
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[getProps](LayerToolDefaults.md#getprops)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`getProps`](LayerToolDefaults.md#getprops)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L18)
+[model/internal/object/MapObjectDefaults.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L18)
 
-___
+***
 
-### getRealTimeEnabled
+### getRealTimeEnabled()
 
-▸ **getRealTimeEnabled**(): [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\>
+> **getRealTimeEnabled**(): [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\>
 
 #### Returns
 
@@ -457,17 +442,17 @@ ___
 
 #### Implementation of
 
-[ITimelineToolDefaults](../interfaces/ITimelineToolDefaults.md).[getRealTimeEnabled](../interfaces/ITimelineToolDefaults.md#getrealtimeenabled)
+[`ITimelineToolDefaults`](../interfaces/ITimelineToolDefaults.md).[`getRealTimeEnabled`](../interfaces/ITimelineToolDefaults.md#getrealtimeenabled)
 
-#### Defined in
+#### Source
 
-[src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts:122](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L122)
+[tools/timeline/model/internal/tool/TimelineToolDefaults.ts:122](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L122)
 
-___
+***
 
-### getStepTimeLength
+### getStepTimeLength()
 
-▸ **getStepTimeLength**(): [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
+> **getStepTimeLength**(): [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
 
 #### Returns
 
@@ -475,17 +460,17 @@ ___
 
 #### Implementation of
 
-[ITimelineToolDefaults](../interfaces/ITimelineToolDefaults.md).[getStepTimeLength](../interfaces/ITimelineToolDefaults.md#getsteptimelength)
+[`ITimelineToolDefaults`](../interfaces/ITimelineToolDefaults.md).[`getStepTimeLength`](../interfaces/ITimelineToolDefaults.md#getsteptimelength)
 
-#### Defined in
+#### Source
 
-[src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts:90](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L90)
+[tools/timeline/model/internal/tool/TimelineToolDefaults.ts:90](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L90)
 
-___
+***
 
-### getStory
+### getStory()
 
-▸ **getStory**(): [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+> **getStory**(): [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
 
 #### Returns
 
@@ -493,17 +478,17 @@ ___
 
 #### Implementation of
 
-[ITimelineToolDefaults](../interfaces/ITimelineToolDefaults.md).[getStory](../interfaces/ITimelineToolDefaults.md#getstory)
+[`ITimelineToolDefaults`](../interfaces/ITimelineToolDefaults.md).[`getStory`](../interfaces/ITimelineToolDefaults.md#getstory)
 
-#### Defined in
+#### Source
 
-[src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts:114](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L114)
+[tools/timeline/model/internal/tool/TimelineToolDefaults.ts:114](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L114)
 
-___
+***
 
-### getStoryEnabled
+### getStoryEnabled()
 
-▸ **getStoryEnabled**(): [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\>
+> **getStoryEnabled**(): [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\>
 
 #### Returns
 
@@ -511,23 +496,21 @@ ___
 
 #### Implementation of
 
-[ITimelineToolDefaults](../interfaces/ITimelineToolDefaults.md).[getStoryEnabled](../interfaces/ITimelineToolDefaults.md#getstoryenabled)
+[`ITimelineToolDefaults`](../interfaces/ITimelineToolDefaults.md).[`getStoryEnabled`](../interfaces/ITimelineToolDefaults.md#getstoryenabled)
 
-#### Defined in
+#### Source
 
-[src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts:106](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L106)
+[tools/timeline/model/internal/tool/TimelineToolDefaults.ts:106](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L106)
 
-___
+***
 
-### getTimePathDimension
+### getTimePathDimension()
 
-▸ **getTimePathDimension**(`map?`): [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+> **getTimePathDimension**(`map`?): [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `map?` | [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\> |
+• **map?**: [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Returns
 
@@ -535,17 +518,17 @@ ___
 
 #### Implementation of
 
-[ITimelineToolDefaults](../interfaces/ITimelineToolDefaults.md).[getTimePathDimension](../interfaces/ITimelineToolDefaults.md#gettimepathdimension)
+[`ITimelineToolDefaults`](../interfaces/ITimelineToolDefaults.md).[`getTimePathDimension`](../interfaces/ITimelineToolDefaults.md#gettimepathdimension)
 
-#### Defined in
+#### Source
 
-[src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts:82](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L82)
+[tools/timeline/model/internal/tool/TimelineToolDefaults.ts:82](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L82)
 
-___
+***
 
-### getTransitionDuration
+### getTransitionDuration()
 
-▸ **getTransitionDuration**(): [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
+> **getTransitionDuration**(): [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
 
 #### Returns
 
@@ -553,17 +536,17 @@ ___
 
 #### Implementation of
 
-[ITimelineToolDefaults](../interfaces/ITimelineToolDefaults.md).[getTransitionDuration](../interfaces/ITimelineToolDefaults.md#gettransitionduration)
+[`ITimelineToolDefaults`](../interfaces/ITimelineToolDefaults.md).[`getTransitionDuration`](../interfaces/ITimelineToolDefaults.md#gettransitionduration)
 
-#### Defined in
+#### Source
 
-[src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts:98](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L98)
+[tools/timeline/model/internal/tool/TimelineToolDefaults.ts:98](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L98)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 It returns a unique type string of the tool which is based on the layer it wraps.
 
@@ -573,21 +556,21 @@ It returns a unique type string of the tool which is based on the layer it wraps
 
 #### Implementation of
 
-[ITimelineToolDefaults](../interfaces/ITimelineToolDefaults.md).[getType](../interfaces/ITimelineToolDefaults.md#gettype)
+[`ITimelineToolDefaults`](../interfaces/ITimelineToolDefaults.md).[`getType`](../interfaces/ITimelineToolDefaults.md#gettype)
 
 #### Overrides
 
-[LayerToolDefaults](LayerToolDefaults.md).[getType](LayerToolDefaults.md#gettype)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`getType`](LayerToolDefaults.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts:39](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L39)
+[tools/timeline/model/internal/tool/TimelineToolDefaults.ts:39](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/timeline/model/internal/tool/TimelineToolDefaults.ts#L39)
 
-___
+***
 
-### isEnabled
+### isEnabled()
 
-▸ **isEnabled**(): `boolean`
+> **isEnabled**(): `boolean`
 
 By default, the tool is enabled.
 
@@ -597,21 +580,21 @@ By default, the tool is enabled.
 
 #### Implementation of
 
-[ITimelineToolDefaults](../interfaces/ITimelineToolDefaults.md).[isEnabled](../interfaces/ITimelineToolDefaults.md#isenabled)
+[`ITimelineToolDefaults`](../interfaces/ITimelineToolDefaults.md).[`isEnabled`](../interfaces/ITimelineToolDefaults.md#isenabled)
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[isEnabled](LayerToolDefaults.md#isenabled)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`isEnabled`](LayerToolDefaults.md#isenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolDefaults.ts:50](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolDefaults.ts#L50)
+[model/internal/tool/MapToolDefaults.ts:50](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolDefaults.ts#L50)
 
-___
+***
 
-### isSingleton
+### isSingleton()
 
-▸ **isSingleton**(): `boolean`
+> **isSingleton**(): `boolean`
 
 By default, the tool is singleton
 
@@ -621,12 +604,12 @@ By default, the tool is singleton
 
 #### Implementation of
 
-[ITimelineToolDefaults](../interfaces/ITimelineToolDefaults.md).[isSingleton](../interfaces/ITimelineToolDefaults.md#issingleton)
+[`ITimelineToolDefaults`](../interfaces/ITimelineToolDefaults.md).[`isSingleton`](../interfaces/ITimelineToolDefaults.md#issingleton)
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[isSingleton](LayerToolDefaults.md#issingleton)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`isSingleton`](LayerToolDefaults.md#issingleton)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolDefaults.ts:43](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolDefaults.ts#L43)
+[model/internal/tool/MapToolDefaults.ts:43](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolDefaults.ts#L43)

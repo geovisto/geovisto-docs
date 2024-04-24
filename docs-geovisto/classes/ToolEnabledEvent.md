@@ -1,62 +1,42 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / ToolEnabledEvent
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / ToolEnabledEvent
 
 # Class: ToolEnabledEvent\<TSource\>
 
 This class provides the tool enabled event.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `TSource` | extends [`IMapTool`](../interfaces/IMapTool.md) = [`IMapTool`](../interfaces/IMapTool.md) |
-
-## Hierarchy
+## Extends
 
 - [`MapChangeEvent`](MapChangeEvent.md)\<`boolean`, `TSource`\>
 
-  ↳ **`ToolEnabledEvent`**
+## Type parameters
+
+• **TSource** *extends* [`IMapTool`](../interfaces/IMapTool.md) = [`IMapTool`](../interfaces/IMapTool.md)
 
 ## Implements
 
-- [`IToolEnabledEvent`](../modules.md#itoolenabledevent)
-
-## Table of contents
-
-### Constructors
-
-- [constructor](ToolEnabledEvent.md#constructor)
-
-### Methods
-
-- [getChangedObject](ToolEnabledEvent.md#getchangedobject)
-- [getSource](ToolEnabledEvent.md#getsource)
-- [getType](ToolEnabledEvent.md#gettype)
-- [TYPE](ToolEnabledEvent.md#type)
+- [`IToolEnabledEvent`](../type-aliases/IToolEnabledEvent.md)
 
 ## Constructors
 
-### constructor
+### new ToolEnabledEvent()
 
-• **new ToolEnabledEvent**\<`TSource`\>(`source`, `enabled`): [`ToolEnabledEvent`](ToolEnabledEvent.md)\<`TSource`\>
+> **new ToolEnabledEvent**\<`TSource`\>(`source`, `enabled`): [`ToolEnabledEvent`](ToolEnabledEvent.md)\<`TSource`\>
 
 It initializes event.
 
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `TSource` | extends [`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>\>, [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>, [`IMapToolAPI`](../modules.md#imaptoolapi)\> = [`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>\>, [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>, [`IMapToolAPI`](../modules.md#imaptoolapi)\> |
-
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `source` | `TSource` |
-| `enabled` | `boolean` |
+• **source**: `TSource`
+
+• **enabled**: `boolean`
 
 #### Returns
 
@@ -64,17 +44,17 @@ It initializes event.
 
 #### Overrides
 
-[MapChangeEvent](MapChangeEvent.md).[constructor](MapChangeEvent.md#constructor)
+[`MapChangeEvent`](MapChangeEvent.md).[`constructor`](MapChangeEvent.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/model/internal/event/tool/ToolEnabledEvent.ts:16](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/event/tool/ToolEnabledEvent.ts#L16)
+[model/internal/event/tool/ToolEnabledEvent.ts:16](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/event/tool/ToolEnabledEvent.ts#L16)
 
 ## Methods
 
-### getChangedObject
+### getChangedObject()
 
-▸ **getChangedObject**(): `boolean`
+> **getChangedObject**(): `boolean`
 
 Return the changed object.
 
@@ -84,21 +64,21 @@ Return the changed object.
 
 #### Implementation of
 
-IToolEnabledEvent.getChangedObject
+`IToolEnabledEvent.getChangedObject`
 
 #### Inherited from
 
-[MapChangeEvent](MapChangeEvent.md).[getChangedObject](MapChangeEvent.md#getchangedobject)
+[`MapChangeEvent`](MapChangeEvent.md).[`getChangedObject`](MapChangeEvent.md#getchangedobject)
 
-#### Defined in
+#### Source
 
-[src/model/internal/event/generic/MapChangeEvent.ts:26](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/event/generic/MapChangeEvent.ts#L26)
+[model/internal/event/generic/MapChangeEvent.ts:26](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/event/generic/MapChangeEvent.ts#L26)
 
-___
+***
 
-### getSource
+### getSource()
 
-▸ **getSource**(): `TSource`
+> **getSource**(): `TSource`
 
 It return source map object of the event.
 
@@ -108,21 +88,21 @@ It return source map object of the event.
 
 #### Implementation of
 
-IToolEnabledEvent.getSource
+`IToolEnabledEvent.getSource`
 
 #### Inherited from
 
-[MapChangeEvent](MapChangeEvent.md).[getSource](MapChangeEvent.md#getsource)
+[`MapChangeEvent`](MapChangeEvent.md).[`getSource`](MapChangeEvent.md#getsource)
 
-#### Defined in
+#### Source
 
-[src/model/internal/event/generic/MapEvent.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/event/generic/MapEvent.ts#L32)
+[model/internal/event/generic/MapEvent.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/event/generic/MapEvent.ts#L32)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 It returns string which identifies the event.
 
@@ -132,21 +112,21 @@ It returns string which identifies the event.
 
 #### Implementation of
 
-IToolEnabledEvent.getType
+`IToolEnabledEvent.getType`
 
 #### Inherited from
 
-[MapChangeEvent](MapChangeEvent.md).[getType](MapChangeEvent.md#gettype)
+[`MapChangeEvent`](MapChangeEvent.md).[`getType`](MapChangeEvent.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/internal/event/generic/MapEvent.ts:25](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/event/generic/MapEvent.ts#L25)
+[model/internal/event/generic/MapEvent.ts:25](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/event/generic/MapEvent.ts#L25)
 
-___
+***
 
-### TYPE
+### TYPE()
 
-▸ **TYPE**(): `string`
+> `static` **TYPE**(): `string`
 
 Type of the event.
 
@@ -154,6 +134,6 @@ Type of the event.
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/model/internal/event/tool/ToolEnabledEvent.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/event/tool/ToolEnabledEvent.ts#L23)
+[model/internal/event/tool/ToolEnabledEvent.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/event/tool/ToolEnabledEvent.ts#L23)

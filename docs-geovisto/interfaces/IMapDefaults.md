@@ -1,68 +1,46 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IMapDefaults
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IMapDefaults
 
 # Interface: IMapDefaults
 
 This interface declares functions which return the default state values.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`IMapObjectDefaults`](IMapObjectDefaults.md)
 
-  ↳ **`IMapDefaults`**
-
-## Implemented by
-
-- [`GeovistoMapDefaults`](../classes/GeovistoMapDefaults.md)
-
-## Table of contents
-
-### Methods
-
-- [getConfig](IMapDefaults.md#getconfig)
-- [getConfigManager](IMapDefaults.md#getconfigmanager)
-- [getEventManager](IMapDefaults.md#geteventmanager)
-- [getGeoDataManager](IMapDefaults.md#getgeodatamanager)
-- [getGlobals](IMapDefaults.md#getglobals)
-- [getId](IMapDefaults.md#getid)
-- [getMapCenter](IMapDefaults.md#getmapcenter)
-- [getMapData](IMapDefaults.md#getmapdata)
-- [getMapStructure](IMapDefaults.md#getmapstructure)
-- [getProps](IMapDefaults.md#getprops)
-- [getTemplates](IMapDefaults.md#gettemplates)
-- [getToolTemplates](IMapDefaults.md#gettooltemplates)
-- [getTools](IMapDefaults.md#gettools)
-- [getType](IMapDefaults.md#gettype)
-- [getZoom](IMapDefaults.md#getzoom)
-
 ## Methods
 
-### getConfig
+### getConfig()
 
-▸ **getConfig**(): [`IMapConfig`](../modules.md#imapconfig)
+> **getConfig**(): [`IMapConfig`](../type-aliases/IMapConfig.md)
 
 It returns default map config.
 
 #### Returns
 
-[`IMapConfig`](../modules.md#imapconfig)
+[`IMapConfig`](../type-aliases/IMapConfig.md)
 
 #### Overrides
 
-[IMapObjectDefaults](IMapObjectDefaults.md).[getConfig](IMapObjectDefaults.md#getconfig)
+[`IMapObjectDefaults`](IMapObjectDefaults.md).[`getConfig`](IMapObjectDefaults.md#getconfig)
 
-#### Defined in
+#### Source
 
-[src/model/types/map/IMapDefaults.ts:26](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/map/IMapDefaults.ts#L26)
+[model/types/map/IMapDefaults.ts:26](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/map/IMapDefaults.ts#L26)
 
-___
+***
 
-### getConfigManager
+### getConfigManager()
 
-▸ **getConfigManager**(): [`IMapConfigManager`](IMapConfigManager.md)
+> **getConfigManager**(): [`IMapConfigManager`](IMapConfigManager.md)
 
 It returns default map config manager.
 
@@ -70,15 +48,15 @@ It returns default map config manager.
 
 [`IMapConfigManager`](IMapConfigManager.md)
 
-#### Defined in
+#### Source
 
-[src/model/types/map/IMapDefaults.ts:21](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/map/IMapDefaults.ts#L21)
+[model/types/map/IMapDefaults.ts:21](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/map/IMapDefaults.ts#L21)
 
-___
+***
 
-### getEventManager
+### getEventManager()
 
-▸ **getEventManager**(): [`IMapEventManager`](IMapEventManager.md)
+> **getEventManager**(): [`IMapEventManager`](IMapEventManager.md)
 
 It returns a default map event manager.
 
@@ -86,31 +64,31 @@ It returns a default map event manager.
 
 [`IMapEventManager`](IMapEventManager.md)
 
-#### Defined in
+#### Source
 
-[src/model/types/map/IMapDefaults.ts:31](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/map/IMapDefaults.ts#L31)
+[model/types/map/IMapDefaults.ts:31](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/map/IMapDefaults.ts#L31)
 
-___
+***
 
-### getGeoDataManager
+### getGeoDataManager()
 
-▸ **getGeoDataManager**(): [`IGeoDataManager`](../modules.md#igeodatamanager)
+> **getGeoDataManager**(): [`IGeoDataManager`](../type-aliases/IGeoDataManager.md)
 
 It returns a default geo data manager.
 
 #### Returns
 
-[`IGeoDataManager`](../modules.md#igeodatamanager)
+[`IGeoDataManager`](../type-aliases/IGeoDataManager.md)
 
-#### Defined in
+#### Source
 
-[src/model/types/map/IMapDefaults.ts:56](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/map/IMapDefaults.ts#L56)
+[model/types/map/IMapDefaults.ts:56](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/map/IMapDefaults.ts#L56)
 
-___
+***
 
-### getGlobals
+### getGlobals()
 
-▸ **getGlobals**(): [`IMapGlobals`](IMapGlobals.md)
+> **getGlobals**(): [`IMapGlobals`](IMapGlobals.md)
 
 It returns default global state variables.
 
@@ -118,15 +96,15 @@ It returns default global state variables.
 
 [`IMapGlobals`](IMapGlobals.md)
 
-#### Defined in
+#### Source
 
-[src/model/types/map/IMapDefaults.ts:61](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/map/IMapDefaults.ts#L61)
+[model/types/map/IMapDefaults.ts:61](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/map/IMapDefaults.ts#L61)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 It returns identifier which is used when no identifier is specified.
 
@@ -136,38 +114,41 @@ It returns identifier which is used when no identifier is specified.
 
 #### Inherited from
 
-[IMapObjectDefaults](IMapObjectDefaults.md).[getId](IMapObjectDefaults.md#getid)
+[`IMapObjectDefaults`](IMapObjectDefaults.md).[`getId`](IMapObjectDefaults.md#getid)
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectDefaults.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectDefaults.ts#L32)
+[model/types/object/IMapObjectDefaults.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectDefaults.ts#L32)
 
-___
+***
 
-### getMapCenter
+### getMapCenter()
 
-▸ **getMapCenter**(): `Object`
+> **getMapCenter**(): `object`
 
 It returns default center coordinates in Leaflet map.
 
 #### Returns
 
-`Object`
+`object`
 
-| Name | Type |
-| :------ | :------ |
-| `lat` | `number` |
-| `lng` | `number` |
+##### lat
 
-#### Defined in
+> **lat**: `number`
 
-[src/model/types/map/IMapDefaults.ts:71](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/map/IMapDefaults.ts#L71)
+##### lng
 
-___
+> **lng**: `number`
 
-### getMapData
+#### Source
 
-▸ **getMapData**(): [`IMapDataManager`](IMapDataManager.md)
+[model/types/map/IMapDefaults.ts:71](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/map/IMapDefaults.ts#L71)
+
+***
+
+### getMapData()
+
+> **getMapData**(): [`IMapDataManager`](IMapDataManager.md)
 
 It returns default map data manager.
 
@@ -175,56 +156,59 @@ It returns default map data manager.
 
 [`IMapDataManager`](IMapDataManager.md)
 
-#### Defined in
+#### Source
 
-[src/model/types/map/IMapDefaults.ts:51](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/map/IMapDefaults.ts#L51)
+[model/types/map/IMapDefaults.ts:51](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/map/IMapDefaults.ts#L51)
 
-___
+***
 
-### getMapStructure
+### getMapStructure()
 
-▸ **getMapStructure**(): `Object`
+> **getMapStructure**(): `object`
 
 It returns the map structure defined with respect to the leaflet library.
 
 #### Returns
 
-`Object`
+`object`
 
-| Name | Type |
-| :------ | :------ |
-| `maxBounds` | [[`number`, `number`], [`number`, `number`]] |
-| `maxZoom` | `number` |
+##### maxBounds
 
-#### Defined in
+> **maxBounds**: [[`number`, `number`], [`number`, `number`]]
 
-[src/model/types/map/IMapDefaults.ts:76](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/map/IMapDefaults.ts#L76)
+##### maxZoom
 
-___
+> **maxZoom**: `number`
 
-### getProps
+#### Source
 
-▸ **getProps**(): [`IMapObjectProps`](../modules.md#imapobjectprops)
+[model/types/map/IMapDefaults.ts:76](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/map/IMapDefaults.ts#L76)
+
+***
+
+### getProps()
+
+> **getProps**(): [`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
 It returns default props if no props are given.
 
 #### Returns
 
-[`IMapObjectProps`](../modules.md#imapobjectprops)
+[`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
 #### Inherited from
 
-[IMapObjectDefaults](IMapObjectDefaults.md).[getProps](IMapObjectDefaults.md#getprops)
+[`IMapObjectDefaults`](IMapObjectDefaults.md).[`getProps`](IMapObjectDefaults.md#getprops)
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectDefaults.ts:17](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectDefaults.ts#L17)
+[model/types/object/IMapObjectDefaults.ts:17](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectDefaults.ts#L17)
 
-___
+***
 
-### getTemplates
+### getTemplates()
 
-▸ **getTemplates**(): [`IMapTemplates`](IMapTemplates.md)
+> **getTemplates**(): [`IMapTemplates`](IMapTemplates.md)
 
 It returns default map templates.
 
@@ -232,15 +216,15 @@ It returns default map templates.
 
 [`IMapTemplates`](IMapTemplates.md)
 
-#### Defined in
+#### Source
 
-[src/model/types/map/IMapDefaults.ts:36](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/map/IMapDefaults.ts#L36)
+[model/types/map/IMapDefaults.ts:36](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/map/IMapDefaults.ts#L36)
 
-___
+***
 
-### getToolTemplates
+### getToolTemplates()
 
-▸ **getToolTemplates**(): [`IMapToolsManager`](IMapToolsManager.md)
+> **getToolTemplates**(): [`IMapToolsManager`](IMapToolsManager.md)
 
 It returns a default managers providing templates.
 
@@ -248,15 +232,15 @@ It returns a default managers providing templates.
 
 [`IMapToolsManager`](IMapToolsManager.md)
 
-#### Defined in
+#### Source
 
-[src/model/types/map/IMapDefaults.ts:41](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/map/IMapDefaults.ts#L41)
+[model/types/map/IMapDefaults.ts:41](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/map/IMapDefaults.ts#L41)
 
-___
+***
 
-### getTools
+### getTools()
 
-▸ **getTools**(): [`IMapToolsManager`](IMapToolsManager.md)
+> **getTools**(): [`IMapToolsManager`](IMapToolsManager.md)
 
 It returns a default tools manager containing used tools.
 
@@ -264,15 +248,15 @@ It returns a default tools manager containing used tools.
 
 [`IMapToolsManager`](IMapToolsManager.md)
 
-#### Defined in
+#### Source
 
-[src/model/types/map/IMapDefaults.ts:46](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/map/IMapDefaults.ts#L46)
+[model/types/map/IMapDefaults.ts:46](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/map/IMapDefaults.ts#L46)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 It returns a unique type string of the map object.
 
@@ -282,17 +266,17 @@ It returns a unique type string of the map object.
 
 #### Inherited from
 
-[IMapObjectDefaults](IMapObjectDefaults.md).[getType](IMapObjectDefaults.md#gettype)
+[`IMapObjectDefaults`](IMapObjectDefaults.md).[`getType`](IMapObjectDefaults.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectDefaults.ts:27](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectDefaults.ts#L27)
+[model/types/object/IMapObjectDefaults.ts:27](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectDefaults.ts#L27)
 
-___
+***
 
-### getZoom
+### getZoom()
 
-▸ **getZoom**(): `number`
+> **getZoom**(): `number`
 
 It returns default zoom level.
 
@@ -300,6 +284,6 @@ It returns default zoom level.
 
 `number`
 
-#### Defined in
+#### Source
 
-[src/model/types/map/IMapDefaults.ts:66](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/map/IMapDefaults.ts#L66)
+[model/types/map/IMapDefaults.ts:66](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/map/IMapDefaults.ts#L66)

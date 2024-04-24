@@ -1,80 +1,37 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / TilesLayerTool
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / TilesLayerTool
 
 # Class: TilesLayerTool
 
 This class represents Map layer tool. It use tile layer and OSM maps.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`AbstractLayerTool`](AbstractLayerTool.md)
-
-  ↳ **`TilesLayerTool`**
 
 ## Implements
 
 - [`ITilesLayerTool`](../interfaces/ITilesLayerTool.md)
 - [`IMapFormControl`](../interfaces/IMapFormControl.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](TilesLayerTool.md#constructor)
-
-### Properties
-
-- [mapForm](TilesLayerTool.md#mapform)
-- [themesToolAPI](TilesLayerTool.md#themestoolapi)
-
-### Methods
-
-- [copy](TilesLayerTool.md#copy)
-- [create](TilesLayerTool.md#create)
-- [createDefaults](TilesLayerTool.md#createdefaults)
-- [createLayerItems](TilesLayerTool.md#createlayeritems)
-- [createMapForm](TilesLayerTool.md#createmapform)
-- [createState](TilesLayerTool.md#createstate)
-- [createTileLayer](TilesLayerTool.md#createtilelayer)
-- [getAPIGetter](TilesLayerTool.md#getapigetter)
-- [getDefaults](TilesLayerTool.md#getdefaults)
-- [getId](TilesLayerTool.md#getid)
-- [getLayerItems](TilesLayerTool.md#getlayeritems)
-- [getMap](TilesLayerTool.md#getmap)
-- [getMapForm](TilesLayerTool.md#getmapform)
-- [getProps](TilesLayerTool.md#getprops)
-- [getState](TilesLayerTool.md#getstate)
-- [getThemesTool](TilesLayerTool.md#getthemestool)
-- [getType](TilesLayerTool.md#gettype)
-- [handleEvent](TilesLayerTool.md#handleevent)
-- [hideLayerItems](TilesLayerTool.md#hidelayeritems)
-- [initialize](TilesLayerTool.md#initialize)
-- [isEnabled](TilesLayerTool.md#isenabled)
-- [isSingleton](TilesLayerTool.md#issingleton)
-- [onThemeChange](TilesLayerTool.md#onthemechange)
-- [render](TilesLayerTool.md#render)
-- [setEnabled](TilesLayerTool.md#setenabled)
-- [setProps](TilesLayerTool.md#setprops)
-- [showLayerItems](TilesLayerTool.md#showlayeritems)
-- [switchEnabled](TilesLayerTool.md#switchenabled)
-- [updateDimension](TilesLayerTool.md#updatedimension)
-
 ## Constructors
 
-### constructor
+### new TilesLayerTool()
 
-• **new TilesLayerTool**(`props?`): [`TilesLayerTool`](TilesLayerTool.md)
+> **new TilesLayerTool**(`props`?): [`TilesLayerTool`](TilesLayerTool.md)
 
 It creates a new tool with respect to the props.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `props?` | [`ITilesLayerToolProps`](../modules.md#itileslayertoolprops) |
+• **props?**: [`ITilesLayerToolProps`](../type-aliases/ITilesLayerToolProps.md)
 
 #### Returns
 
@@ -82,61 +39,61 @@ It creates a new tool with respect to the props.
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[constructor](AbstractLayerTool.md#constructor)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`constructor`](AbstractLayerTool.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:47](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L47)
+[tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:47](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L47)
 
 ## Properties
 
 ### mapForm
 
-• `Private` **mapForm**: [`IMapForm`](../interfaces/IMapForm.md)
+> `private` **mapForm**: [`IMapForm`](../interfaces/IMapForm.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:40](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L40)
+[tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:40](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L40)
 
-___
+***
 
 ### themesToolAPI
 
-• `Private` **themesToolAPI**: `undefined` \| [`IThemesToolAPI`](../modules.md#ithemestoolapi)
+> `private` **themesToolAPI**: `undefined` \| [`IThemesToolAPI`](../type-aliases/IThemesToolAPI.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:39](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L39)
+[tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:39](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L39)
 
 ## Methods
 
-### copy
+### copy()
 
-▸ **copy**(): [`ITilesLayerTool`](../interfaces/ITilesLayerTool.md)\<[`ITilesLayerToolProps`](../modules.md#itileslayertoolprops), [`ITilesLayerToolDefaults`](../interfaces/ITilesLayerToolDefaults.md), [`ITilesLayerToolState`](../interfaces/ITilesLayerToolState.md)\<[`ITilesLayerToolProps`](../modules.md#itileslayertoolprops), [`ITilesLayerToolDefaults`](../interfaces/ITilesLayerToolDefaults.md), [`ILayerToolConfig`](../modules.md#ilayertoolconfig), [`ILayerToolDimensionsConfig`](../modules.md#ilayertooldimensionsconfig), [`ILayerToolDimensions`](../modules.md#ilayertooldimensions)\>, [`ILayerToolConfig`](../modules.md#ilayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`ILayerToolConfig`](../modules.md#ilayertoolconfig)\>\>
+> **copy**(): [`ITilesLayerTool`](../interfaces/ITilesLayerTool.md)\<[`ITilesLayerToolProps`](../type-aliases/ITilesLayerToolProps.md), [`ITilesLayerToolDefaults`](../interfaces/ITilesLayerToolDefaults.md), [`ITilesLayerToolState`](../interfaces/ITilesLayerToolState.md)\<[`ITilesLayerToolProps`](../type-aliases/ITilesLayerToolProps.md), [`ITilesLayerToolDefaults`](../interfaces/ITilesLayerToolDefaults.md), [`ILayerToolConfig`](../type-aliases/ILayerToolConfig.md), [`ILayerToolDimensionsConfig`](../type-aliases/ILayerToolDimensionsConfig.md), [`ILayerToolDimensions`](../type-aliases/ILayerToolDimensions.md)\>, [`ILayerToolConfig`](../type-aliases/ILayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`ILayerToolConfig`](../type-aliases/ILayerToolConfig.md)\>\>
 
 It creates a copy of the uninitialized tool.
 
 #### Returns
 
-[`ITilesLayerTool`](../interfaces/ITilesLayerTool.md)\<[`ITilesLayerToolProps`](../modules.md#itileslayertoolprops), [`ITilesLayerToolDefaults`](../interfaces/ITilesLayerToolDefaults.md), [`ITilesLayerToolState`](../interfaces/ITilesLayerToolState.md)\<[`ITilesLayerToolProps`](../modules.md#itileslayertoolprops), [`ITilesLayerToolDefaults`](../interfaces/ITilesLayerToolDefaults.md), [`ILayerToolConfig`](../modules.md#ilayertoolconfig), [`ILayerToolDimensionsConfig`](../modules.md#ilayertooldimensionsconfig), [`ILayerToolDimensions`](../modules.md#ilayertooldimensions)\>, [`ILayerToolConfig`](../modules.md#ilayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`ILayerToolConfig`](../modules.md#ilayertoolconfig)\>\>
+[`ITilesLayerTool`](../interfaces/ITilesLayerTool.md)\<[`ITilesLayerToolProps`](../type-aliases/ITilesLayerToolProps.md), [`ITilesLayerToolDefaults`](../interfaces/ITilesLayerToolDefaults.md), [`ITilesLayerToolState`](../interfaces/ITilesLayerToolState.md)\<[`ITilesLayerToolProps`](../type-aliases/ITilesLayerToolProps.md), [`ITilesLayerToolDefaults`](../interfaces/ITilesLayerToolDefaults.md), [`ILayerToolConfig`](../type-aliases/ILayerToolConfig.md), [`ILayerToolDimensionsConfig`](../type-aliases/ILayerToolDimensionsConfig.md), [`ILayerToolDimensions`](../type-aliases/ILayerToolDimensions.md)\>, [`ILayerToolConfig`](../type-aliases/ILayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`ILayerToolConfig`](../type-aliases/ILayerToolConfig.md)\>\>
 
 #### Implementation of
 
-[ITilesLayerTool](../interfaces/ITilesLayerTool.md).[copy](../interfaces/ITilesLayerTool.md#copy)
+[`ITilesLayerTool`](../interfaces/ITilesLayerTool.md).[`copy`](../interfaces/ITilesLayerTool.md#copy)
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[copy](AbstractLayerTool.md#copy)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`copy`](AbstractLayerTool.md#copy)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:54](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L54)
+[tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:54](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L54)
 
-___
+***
 
-### create
+### create()
 
-▸ **create**(): `this`
+> **create**(): `this`
 
 It creates new layer with respect to configuration
 
@@ -146,21 +103,21 @@ It creates new layer with respect to configuration
 
 #### Implementation of
 
-[ITilesLayerTool](../interfaces/ITilesLayerTool.md).[create](../interfaces/ITilesLayerTool.md#create)
+[`ITilesLayerTool`](../interfaces/ITilesLayerTool.md).[`create`](../interfaces/ITilesLayerTool.md#create)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[create](AbstractLayerTool.md#create)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`create`](AbstractLayerTool.md#create)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/AbstractLayerTool.ts:89](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/AbstractLayerTool.ts#L89)
+[model/internal/layer/AbstractLayerTool.ts:89](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/AbstractLayerTool.ts#L89)
 
-___
+***
 
-### createDefaults
+### createDefaults()
 
-▸ **createDefaults**(): [`ITilesLayerToolDefaults`](../interfaces/ITilesLayerToolDefaults.md)
+> `protected` **createDefaults**(): [`ITilesLayerToolDefaults`](../interfaces/ITilesLayerToolDefaults.md)
 
 It creates new defaults of the layer tool.
 
@@ -170,17 +127,17 @@ It creates new defaults of the layer tool.
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[createDefaults](AbstractLayerTool.md#createdefaults)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`createDefaults`](AbstractLayerTool.md#createdefaults)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:75](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L75)
+[tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:75](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L75)
 
-___
+***
 
-### createLayerItems
+### createLayerItems()
 
-▸ **createLayerItems**(): `Layer`[]
+> `protected` **createLayerItems**(): `Layer`[]
 
 It creates layer items.
 
@@ -190,17 +147,17 @@ It creates layer items.
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[createLayerItems](AbstractLayerTool.md#createlayeritems)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`createLayerItems`](AbstractLayerTool.md#createlayeritems)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:136](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L136)
+[tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:136](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L136)
 
-___
+***
 
-### createMapForm
+### createMapForm()
 
-▸ **createMapForm**(): [`IMapForm`](../interfaces/IMapForm.md)
+> `protected` **createMapForm**(): [`IMapForm`](../interfaces/IMapForm.md)
 
 It creates new tab control.
 
@@ -208,81 +165,79 @@ It creates new tab control.
 
 [`IMapForm`](../interfaces/IMapForm.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:106](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L106)
+[tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:106](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L106)
 
-___
+***
 
-### createState
+### createState()
 
-▸ **createState**(): [`ITilesLayerToolState`](../interfaces/ITilesLayerToolState.md)\<[`ITilesLayerToolProps`](../modules.md#itileslayertoolprops), [`ITilesLayerToolDefaults`](../interfaces/ITilesLayerToolDefaults.md), [`ILayerToolConfig`](../modules.md#ilayertoolconfig), [`ILayerToolDimensionsConfig`](../modules.md#ilayertooldimensionsconfig), [`ILayerToolDimensions`](../modules.md#ilayertooldimensions)\>
+> `protected` **createState**(): [`ITilesLayerToolState`](../interfaces/ITilesLayerToolState.md)\<[`ITilesLayerToolProps`](../type-aliases/ITilesLayerToolProps.md), [`ITilesLayerToolDefaults`](../interfaces/ITilesLayerToolDefaults.md), [`ILayerToolConfig`](../type-aliases/ILayerToolConfig.md), [`ILayerToolDimensionsConfig`](../type-aliases/ILayerToolDimensionsConfig.md), [`ILayerToolDimensions`](../type-aliases/ILayerToolDimensions.md)\>
 
 It creates new defaults of the layer tool.
 
 #### Returns
 
-[`ITilesLayerToolState`](../interfaces/ITilesLayerToolState.md)\<[`ITilesLayerToolProps`](../modules.md#itileslayertoolprops), [`ITilesLayerToolDefaults`](../interfaces/ITilesLayerToolDefaults.md), [`ILayerToolConfig`](../modules.md#ilayertoolconfig), [`ILayerToolDimensionsConfig`](../modules.md#ilayertooldimensionsconfig), [`ILayerToolDimensions`](../modules.md#ilayertooldimensions)\>
+[`ITilesLayerToolState`](../interfaces/ITilesLayerToolState.md)\<[`ITilesLayerToolProps`](../type-aliases/ITilesLayerToolProps.md), [`ITilesLayerToolDefaults`](../interfaces/ITilesLayerToolDefaults.md), [`ILayerToolConfig`](../type-aliases/ILayerToolConfig.md), [`ILayerToolDimensionsConfig`](../type-aliases/ILayerToolDimensionsConfig.md), [`ILayerToolDimensions`](../type-aliases/ILayerToolDimensions.md)\>
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[createState](AbstractLayerTool.md#createstate)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`createState`](AbstractLayerTool.md#createstate)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:89](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L89)
+[tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:89](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L89)
 
-___
+***
 
-### createTileLayer
+### createTileLayer()
 
-▸ **createTileLayer**(`tilesModel`): `TileLayer`
+> `protected` **createTileLayer**(`tilesModel`): `TileLayer`
 
 Creates new tile layer
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `tilesModel` | [`IMapTilesModel`](../modules.md#imaptilesmodel) |
+• **tilesModel**: [`IMapTilesModel`](../type-aliases/IMapTilesModel.md)
 
 #### Returns
 
 `TileLayer`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:151](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L151)
+[tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:151](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L151)
 
-___
+***
 
-### getAPIGetter
+### getAPIGetter()
 
-▸ **getAPIGetter**(): `undefined` \| [`IMapToolAPIGetter`](../modules.md#imaptoolapigetter)
+> **getAPIGetter**(): `undefined` \| [`IMapToolAPIGetter`](../type-aliases/IMapToolAPIGetter.md)
 
 It returns the tool API
 
 #### Returns
 
-`undefined` \| [`IMapToolAPIGetter`](../modules.md#imaptoolapigetter)
+`undefined` \| [`IMapToolAPIGetter`](../type-aliases/IMapToolAPIGetter.md)
 
 #### Implementation of
 
-[ITilesLayerTool](../interfaces/ITilesLayerTool.md).[getAPIGetter](../interfaces/ITilesLayerTool.md#getapigetter)
+[`ITilesLayerTool`](../interfaces/ITilesLayerTool.md).[`getAPIGetter`](../interfaces/ITilesLayerTool.md#getapigetter)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[getAPIGetter](AbstractLayerTool.md#getapigetter)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getAPIGetter`](AbstractLayerTool.md#getapigetter)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:74](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L74)
+[model/internal/tool/MapTool.ts:74](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L74)
 
-___
+***
 
-### getDefaults
+### getDefaults()
 
-▸ **getDefaults**(): [`ITilesLayerToolDefaults`](../interfaces/ITilesLayerToolDefaults.md)
+> **getDefaults**(): [`ITilesLayerToolDefaults`](../interfaces/ITilesLayerToolDefaults.md)
 
 It returns default values of the state properties.
 
@@ -292,21 +247,21 @@ It returns default values of the state properties.
 
 #### Implementation of
 
-[ITilesLayerTool](../interfaces/ITilesLayerTool.md).[getDefaults](../interfaces/ITilesLayerTool.md#getdefaults)
+[`ITilesLayerTool`](../interfaces/ITilesLayerTool.md).[`getDefaults`](../interfaces/ITilesLayerTool.md#getdefaults)
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[getDefaults](AbstractLayerTool.md#getdefaults)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getDefaults`](AbstractLayerTool.md#getdefaults)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:68](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L68)
+[tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:68](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L68)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 Help function which returns the id of the object.
 
@@ -316,21 +271,21 @@ Help function which returns the id of the object.
 
 #### Implementation of
 
-[ITilesLayerTool](../interfaces/ITilesLayerTool.md).[getId](../interfaces/ITilesLayerTool.md#getid)
+[`ITilesLayerTool`](../interfaces/ITilesLayerTool.md).[`getId`](../interfaces/ITilesLayerTool.md#getid)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[getId](AbstractLayerTool.md#getid)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getId`](AbstractLayerTool.md#getid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObject.ts:93](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObject.ts#L93)
+[model/internal/object/MapObject.ts:93](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObject.ts#L93)
 
-___
+***
 
-### getLayerItems
+### getLayerItems()
 
-▸ **getLayerItems**(): `Layer`[]
+> **getLayerItems**(): `Layer`[]
 
 It returns layer items which should be rendered.
 
@@ -340,21 +295,21 @@ It returns layer items which should be rendered.
 
 #### Implementation of
 
-[ITilesLayerTool](../interfaces/ITilesLayerTool.md).[getLayerItems](../interfaces/ITilesLayerTool.md#getlayeritems)
+[`ITilesLayerTool`](../interfaces/ITilesLayerTool.md).[`getLayerItems`](../interfaces/ITilesLayerTool.md#getlayeritems)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[getLayerItems](AbstractLayerTool.md#getlayeritems)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getLayerItems`](AbstractLayerTool.md#getlayeritems)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/AbstractLayerTool.ts:163](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/AbstractLayerTool.ts#L163)
+[model/internal/layer/AbstractLayerTool.ts:163](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/AbstractLayerTool.ts#L163)
 
-___
+***
 
-### getMap
+### getMap()
 
-▸ **getMap**(): `undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+> **getMap**(): `undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 Help function returns map which uses this tool.
 
@@ -362,25 +317,25 @@ Do not override this function. Use the state class instead.
 
 #### Returns
 
-`undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+`undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Implementation of
 
-[ITilesLayerTool](../interfaces/ITilesLayerTool.md).[getMap](../interfaces/ITilesLayerTool.md#getmap)
+[`ITilesLayerTool`](../interfaces/ITilesLayerTool.md).[`getMap`](../interfaces/ITilesLayerTool.md#getmap)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[getMap](AbstractLayerTool.md#getmap)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getMap`](AbstractLayerTool.md#getmap)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:112](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L112)
+[model/internal/tool/MapTool.ts:112](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L112)
 
-___
+***
 
-### getMapForm
+### getMapForm()
 
-▸ **getMapForm**(): [`IMapForm`](../interfaces/IMapForm.md)
+> **getMapForm**(): [`IMapForm`](../interfaces/IMapForm.md)
 
 It returns a sidebar tab with respect to the configuration.
 
@@ -390,81 +345,81 @@ It returns a sidebar tab with respect to the configuration.
 
 #### Implementation of
 
-[IMapFormControl](../interfaces/IMapFormControl.md).[getMapForm](../interfaces/IMapFormControl.md#getmapform)
+[`IMapFormControl`](../interfaces/IMapFormControl.md).[`getMapForm`](../interfaces/IMapFormControl.md#getmapform)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:96](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L96)
+[tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:96](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L96)
 
-___
+***
 
-### getProps
+### getProps()
 
-▸ **getProps**(): [`ITilesLayerToolProps`](../modules.md#itileslayertoolprops)
+> **getProps**(): [`ITilesLayerToolProps`](../type-aliases/ITilesLayerToolProps.md)
 
 Help function which returns the props given by the programmer.
 
 #### Returns
 
-[`ITilesLayerToolProps`](../modules.md#itileslayertoolprops)
+[`ITilesLayerToolProps`](../type-aliases/ITilesLayerToolProps.md)
 
 #### Implementation of
 
-[ITilesLayerTool](../interfaces/ITilesLayerTool.md).[getProps](../interfaces/ITilesLayerTool.md#getprops)
+[`ITilesLayerTool`](../interfaces/ITilesLayerTool.md).[`getProps`](../interfaces/ITilesLayerTool.md#getprops)
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[getProps](AbstractLayerTool.md#getprops)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getProps`](AbstractLayerTool.md#getprops)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:61](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L61)
+[tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:61](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L61)
 
-___
+***
 
-### getState
+### getState()
 
-▸ **getState**(): [`ITilesLayerToolState`](../interfaces/ITilesLayerToolState.md)\<[`ITilesLayerToolProps`](../modules.md#itileslayertoolprops), [`ITilesLayerToolDefaults`](../interfaces/ITilesLayerToolDefaults.md), [`ILayerToolConfig`](../modules.md#ilayertoolconfig), [`ILayerToolDimensionsConfig`](../modules.md#ilayertooldimensionsconfig), [`ILayerToolDimensions`](../modules.md#ilayertooldimensions)\>
+> **getState**(): [`ITilesLayerToolState`](../interfaces/ITilesLayerToolState.md)\<[`ITilesLayerToolProps`](../type-aliases/ITilesLayerToolProps.md), [`ITilesLayerToolDefaults`](../interfaces/ITilesLayerToolDefaults.md), [`ILayerToolConfig`](../type-aliases/ILayerToolConfig.md), [`ILayerToolDimensionsConfig`](../type-aliases/ILayerToolDimensionsConfig.md), [`ILayerToolDimensions`](../type-aliases/ILayerToolDimensions.md)\>
 
 It returns the layer tool state.
 
 #### Returns
 
-[`ITilesLayerToolState`](../interfaces/ITilesLayerToolState.md)\<[`ITilesLayerToolProps`](../modules.md#itileslayertoolprops), [`ITilesLayerToolDefaults`](../interfaces/ITilesLayerToolDefaults.md), [`ILayerToolConfig`](../modules.md#ilayertoolconfig), [`ILayerToolDimensionsConfig`](../modules.md#ilayertooldimensionsconfig), [`ILayerToolDimensions`](../modules.md#ilayertooldimensions)\>
+[`ITilesLayerToolState`](../interfaces/ITilesLayerToolState.md)\<[`ITilesLayerToolProps`](../type-aliases/ITilesLayerToolProps.md), [`ITilesLayerToolDefaults`](../interfaces/ITilesLayerToolDefaults.md), [`ILayerToolConfig`](../type-aliases/ILayerToolConfig.md), [`ILayerToolDimensionsConfig`](../type-aliases/ILayerToolDimensionsConfig.md), [`ILayerToolDimensions`](../type-aliases/ILayerToolDimensions.md)\>
 
 #### Implementation of
 
-[ITilesLayerTool](../interfaces/ITilesLayerTool.md).[getState](../interfaces/ITilesLayerTool.md#getstate)
+[`ITilesLayerTool`](../interfaces/ITilesLayerTool.md).[`getState`](../interfaces/ITilesLayerTool.md#getstate)
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[getState](AbstractLayerTool.md#getstate)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getState`](AbstractLayerTool.md#getstate)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:82](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L82)
+[tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:82](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L82)
 
-___
+***
 
-### getThemesTool
+### getThemesTool()
 
-▸ **getThemesTool**(): `undefined` \| [`IThemesToolAPI`](../modules.md#ithemestoolapi)
+> `private` **getThemesTool**(): `undefined` \| [`IThemesToolAPI`](../type-aliases/IThemesToolAPI.md)
 
 Help function which acquires and returns the themes tool if available.
 
 #### Returns
 
-`undefined` \| [`IThemesToolAPI`](../modules.md#ithemestoolapi)
+`undefined` \| [`IThemesToolAPI`](../type-aliases/IThemesToolAPI.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:114](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L114)
+[tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:114](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L114)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 Help function which returns the type of the object.
 
@@ -474,29 +429,27 @@ Help function which returns the type of the object.
 
 #### Implementation of
 
-[ITilesLayerTool](../interfaces/ITilesLayerTool.md).[getType](../interfaces/ITilesLayerTool.md#gettype)
+[`ITilesLayerTool`](../interfaces/ITilesLayerTool.md).[`getType`](../interfaces/ITilesLayerTool.md#gettype)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[getType](AbstractLayerTool.md#gettype)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getType`](AbstractLayerTool.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObject.ts:86](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObject.ts#L86)
+[model/internal/object/MapObject.ts:86](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObject.ts#L86)
 
-___
+***
 
-### handleEvent
+### handleEvent()
 
-▸ **handleEvent**(`event`): `void`
+> **handleEvent**(`event`): `void`
 
 This function is called when a custom event is invoked.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `event` | [`IMapEvent`](../interfaces/IMapEvent.md)\<[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>\> |
+• **event**: [`IMapEvent`](../interfaces/IMapEvent.md)\<[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>\>
 
 #### Returns
 
@@ -504,17 +457,17 @@ This function is called when a custom event is invoked.
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[handleEvent](AbstractLayerTool.md#handleevent)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`handleEvent`](AbstractLayerTool.md#handleevent)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:173](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L173)
+[tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:173](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L173)
 
-___
+***
 
-### hideLayerItems
+### hideLayerItems()
 
-▸ **hideLayerItems**(): `void`
+> `protected` **hideLayerItems**(): `void`
 
 Help function which hides layer items
 
@@ -526,25 +479,23 @@ This function is meant to be private.
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[hideLayerItems](AbstractLayerTool.md#hidelayeritems)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`hideLayerItems`](AbstractLayerTool.md#hidelayeritems)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/AbstractLayerTool.ts:147](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/AbstractLayerTool.ts#L147)
+[model/internal/layer/AbstractLayerTool.ts:147](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/AbstractLayerTool.ts#L147)
 
-___
+***
 
-### initialize
+### initialize()
 
-▸ **initialize**(`initProps`): `this`
+> **initialize**(`initProps`): `this`
 
 Overrides the super method.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `initProps` | [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`ILayerToolConfig`](../modules.md#ilayertoolconfig)\> |
+• **initProps**: [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`ILayerToolConfig`](../type-aliases/ILayerToolConfig.md)\>
 
 #### Returns
 
@@ -552,21 +503,21 @@ Overrides the super method.
 
 #### Implementation of
 
-[ITilesLayerTool](../interfaces/ITilesLayerTool.md).[initialize](../interfaces/ITilesLayerTool.md#initialize)
+[`ITilesLayerTool`](../interfaces/ITilesLayerTool.md).[`initialize`](../interfaces/ITilesLayerTool.md#initialize)
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[initialize](AbstractLayerTool.md#initialize)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`initialize`](AbstractLayerTool.md#initialize)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:129](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L129)
+[tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:129](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L129)
 
-___
+***
 
-### isEnabled
+### isEnabled()
 
-▸ **isEnabled**(): `boolean`
+> **isEnabled**(): `boolean`
 
 Help getter which returns enabled property of state.
 
@@ -578,21 +529,21 @@ Do not override this function. Use the state class instead.
 
 #### Implementation of
 
-[ITilesLayerTool](../interfaces/ITilesLayerTool.md).[isEnabled](../interfaces/ITilesLayerTool.md#isenabled)
+[`ITilesLayerTool`](../interfaces/ITilesLayerTool.md).[`isEnabled`](../interfaces/ITilesLayerTool.md#isenabled)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[isEnabled](AbstractLayerTool.md#isenabled)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`isEnabled`](AbstractLayerTool.md#isenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:130](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L130)
+[model/internal/tool/MapTool.ts:130](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L130)
 
-___
+***
 
-### isSingleton
+### isSingleton()
 
-▸ **isSingleton**(): `boolean`
+> **isSingleton**(): `boolean`
 
 Help getter which returns a logtical value whether the tool type is singleton.
 
@@ -602,43 +553,41 @@ Help getter which returns a logtical value whether the tool type is singleton.
 
 #### Implementation of
 
-[ITilesLayerTool](../interfaces/ITilesLayerTool.md).[isSingleton](../interfaces/ITilesLayerTool.md#issingleton)
+[`ITilesLayerTool`](../interfaces/ITilesLayerTool.md).[`isSingleton`](../interfaces/ITilesLayerTool.md#issingleton)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[isSingleton](AbstractLayerTool.md#issingleton)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`isSingleton`](AbstractLayerTool.md#issingleton)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:81](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L81)
+[model/internal/tool/MapTool.ts:81](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L81)
 
-___
+***
 
-### onThemeChange
+### onThemeChange()
 
-▸ **onThemeChange**(`theme`): `void`
+> `protected` **onThemeChange**(`theme`): `void`
 
 This function updates theme used in the tool.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `theme` | [`IMapTheme`](../interfaces/IMapTheme.md) |
+• **theme**: [`IMapTheme`](../interfaces/IMapTheme.md)
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:182](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L182)
+[tools/layers/tiles/model/internal/tool/TilesLayerTool.ts:182](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/tiles/model/internal/tool/TilesLayerTool.ts#L182)
 
-___
+***
 
-### render
+### render()
 
-▸ **render**(`type`, `animateOptions?`): `void`
+> **render**(`type`, `animateOptions`?): `void`
 
 It reloads data and redraw the layer with respect to the type.
 
@@ -646,10 +595,9 @@ By default it works with LayerRedrawType
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `type` | `number` |
-| `animateOptions?` | [`IDataChangeAnimateOptions`](../modules.md#idatachangeanimateoptions) |
+• **type**: `number`
+
+• **animateOptions?**: [`IDataChangeAnimateOptions`](../type-aliases/IDataChangeAnimateOptions.md)
 
 #### Returns
 
@@ -657,29 +605,27 @@ By default it works with LayerRedrawType
 
 #### Implementation of
 
-[ITilesLayerTool](../interfaces/ITilesLayerTool.md).[render](../interfaces/ITilesLayerTool.md#render)
+[`ITilesLayerTool`](../interfaces/ITilesLayerTool.md).[`render`](../interfaces/ITilesLayerTool.md#render)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[render](AbstractLayerTool.md#render)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`render`](AbstractLayerTool.md#render)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/AbstractLayerTool.ts:189](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/AbstractLayerTool.ts#L189)
+[model/internal/layer/AbstractLayerTool.ts:189](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/AbstractLayerTool.ts#L189)
 
-___
+***
 
-### setEnabled
+### setEnabled()
 
-▸ **setEnabled**(`enabled`): `void`
+> **setEnabled**(`enabled`): `void`
 
 It changes layer state to enabled/disabled.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `enabled` | `boolean` |
+• **enabled**: `boolean`
 
 #### Returns
 
@@ -687,29 +633,27 @@ It changes layer state to enabled/disabled.
 
 #### Implementation of
 
-[ITilesLayerTool](../interfaces/ITilesLayerTool.md).[setEnabled](../interfaces/ITilesLayerTool.md#setenabled)
+[`ITilesLayerTool`](../interfaces/ITilesLayerTool.md).[`setEnabled`](../interfaces/ITilesLayerTool.md#setenabled)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[setEnabled](AbstractLayerTool.md#setenabled)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`setEnabled`](AbstractLayerTool.md#setenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/AbstractLayerTool.ts:102](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/AbstractLayerTool.ts#L102)
+[model/internal/layer/AbstractLayerTool.ts:102](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/AbstractLayerTool.ts#L102)
 
-___
+***
 
-### setProps
+### setProps()
 
-▸ **setProps**(`props`): `void`
+> `protected` **setProps**(`props`): `void`
 
 It updates the props.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `props` | [`IMapObjectProps`](../modules.md#imapobjectprops) |
+• **props**: [`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
 #### Returns
 
@@ -717,17 +661,17 @@ It updates the props.
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[setProps](AbstractLayerTool.md#setprops)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`setProps`](AbstractLayerTool.md#setprops)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObject.ts:38](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObject.ts#L38)
+[model/internal/object/MapObject.ts:38](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObject.ts#L38)
 
-___
+***
 
-### showLayerItems
+### showLayerItems()
 
-▸ **showLayerItems**(): `void`
+> `protected` **showLayerItems**(): `void`
 
 Help function which shows layer items.
 
@@ -739,17 +683,17 @@ This function is meant to be private.
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[showLayerItems](AbstractLayerTool.md#showlayeritems)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`showLayerItems`](AbstractLayerTool.md#showlayeritems)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/AbstractLayerTool.ts:126](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/AbstractLayerTool.ts#L126)
+[model/internal/layer/AbstractLayerTool.ts:126](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/AbstractLayerTool.ts#L126)
 
-___
+***
 
-### switchEnabled
+### switchEnabled()
 
-▸ **switchEnabled**(): `void`
+> **switchEnabled**(): `void`
 
 Help function which switches enabled state (enabled/disabled).
 
@@ -761,31 +705,31 @@ Do not override this function. Use setEnabled instead.
 
 #### Implementation of
 
-[ITilesLayerTool](../interfaces/ITilesLayerTool.md).[switchEnabled](../interfaces/ITilesLayerTool.md#switchenabled)
+[`ITilesLayerTool`](../interfaces/ITilesLayerTool.md).[`switchEnabled`](../interfaces/ITilesLayerTool.md#switchenabled)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[switchEnabled](AbstractLayerTool.md#switchenabled)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`switchEnabled`](AbstractLayerTool.md#switchenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:158](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L158)
+[model/internal/tool/MapTool.ts:158](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L158)
 
-___
+***
 
-### updateDimension
+### updateDimension()
 
-▸ **updateDimension**(`dimension`, `value`, `renderType?`): `void`
+> **updateDimension**(`dimension`, `value`, `renderType`): `void`
 
 It updates the dimension.
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `dimension` | [`IMapDimension`](../interfaces/IMapDimension.md)\<`unknown`\> | `undefined` |
-| `value` | `string` | `undefined` |
-| `renderType` | `undefined` \| `number` | `undefined` |
+• **dimension**: [`IMapDimension`](../interfaces/IMapDimension.md)\<`unknown`\>
+
+• **value**: `string`
+
+• **renderType**: `undefined` \| `number`= `undefined`
 
 #### Returns
 
@@ -793,12 +737,12 @@ It updates the dimension.
 
 #### Implementation of
 
-[ITilesLayerTool](../interfaces/ITilesLayerTool.md).[updateDimension](../interfaces/ITilesLayerTool.md#updatedimension)
+[`ITilesLayerTool`](../interfaces/ITilesLayerTool.md).[`updateDimension`](../interfaces/ITilesLayerTool.md#updatedimension)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[updateDimension](AbstractLayerTool.md#updatedimension)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`updateDimension`](AbstractLayerTool.md#updatedimension)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/AbstractLayerTool.ts:205](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/AbstractLayerTool.ts#L205)
+[model/internal/layer/AbstractLayerTool.ts:205](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/AbstractLayerTool.ts#L205)

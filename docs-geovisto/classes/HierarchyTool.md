@@ -1,74 +1,36 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / HierarchyTool
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / HierarchyTool
 
 # Class: HierarchyTool
 
 Hierarchy tool provides configuration parsing for hierarchy, sets hierarchy trees for geoDataManager and
 later dispatches event in case of zoom/geo data change event.
 
-**`Author`**
+## Author
 
 Malý Vojtěch
 
-## Hierarchy
+## Extends
 
 - [`MapTool`](MapTool.md)
-
-  ↳ **`HierarchyTool`**
 
 ## Implements
 
 - [`IMapFormControl`](../interfaces/IMapFormControl.md)
 - [`IHierarchyTool`](../interfaces/IHierarchyTool.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](HierarchyTool.md#constructor)
-
-### Properties
-
-- [changeLastZoom](HierarchyTool.md#changelastzoom)
-- [changeStruct](HierarchyTool.md#changestruct)
-- [manager](HierarchyTool.md#manager)
-- [mapForm](HierarchyTool.md#mapform)
-
-### Methods
-
-- [copy](HierarchyTool.md#copy)
-- [create](HierarchyTool.md#create)
-- [createDefaults](HierarchyTool.md#createdefaults)
-- [createMapForm](HierarchyTool.md#createmapform)
-- [createState](HierarchyTool.md#createstate)
-- [getAPIGetter](HierarchyTool.md#getapigetter)
-- [getDefaults](HierarchyTool.md#getdefaults)
-- [getId](HierarchyTool.md#getid)
-- [getMap](HierarchyTool.md#getmap)
-- [getMapForm](HierarchyTool.md#getmapform)
-- [getProps](HierarchyTool.md#getprops)
-- [getState](HierarchyTool.md#getstate)
-- [getType](HierarchyTool.md#gettype)
-- [handleEvent](HierarchyTool.md#handleevent)
-- [initialize](HierarchyTool.md#initialize)
-- [isEnabled](HierarchyTool.md#isenabled)
-- [isSingleton](HierarchyTool.md#issingleton)
-- [setEnabled](HierarchyTool.md#setenabled)
-- [setProps](HierarchyTool.md#setprops)
-- [switchEnabled](HierarchyTool.md#switchenabled)
-- [updateChangeStruct](HierarchyTool.md#updatechangestruct)
-- [zoomChanged](HierarchyTool.md#zoomchanged)
-
 ## Constructors
 
-### constructor
+### new HierarchyTool()
 
-• **new HierarchyTool**(`props?`): [`HierarchyTool`](HierarchyTool.md)
+> **new HierarchyTool**(`props`?): [`HierarchyTool`](HierarchyTool.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `props?` | [`IMapToolProps`](../modules.md#imaptoolprops) |
+• **props?**: [`IMapToolProps`](../type-aliases/IMapToolProps.md)
 
 #### Returns
 
@@ -76,81 +38,81 @@ Malý Vojtěch
 
 #### Overrides
 
-[MapTool](MapTool.md).[constructor](MapTool.md#constructor)
+[`MapTool`](MapTool.md).[`constructor`](MapTool.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/tools/hierarchy/model/internal/tool/HierarchyTool.ts:35](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L35)
+[tools/hierarchy/model/internal/tool/HierarchyTool.ts:35](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L35)
 
 ## Properties
 
 ### changeLastZoom
 
-• `Private` **changeLastZoom**: `string`[] = `[]`
+> `private` **changeLastZoom**: `string`[] = `[]`
 
-#### Defined in
+#### Source
 
-[src/tools/hierarchy/model/internal/tool/HierarchyTool.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L32)
+[tools/hierarchy/model/internal/tool/HierarchyTool.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L32)
 
-___
+***
 
 ### changeStruct
 
-• `Private` **changeStruct**: `Map`\<`string`, [`boolean`, `number`]\>
+> `private` **changeStruct**: `Map`\<`string`, [`boolean`, `number`]\>
 
-#### Defined in
+#### Source
 
-[src/tools/hierarchy/model/internal/tool/HierarchyTool.ts:31](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L31)
+[tools/hierarchy/model/internal/tool/HierarchyTool.ts:31](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L31)
 
-___
+***
 
 ### manager
 
-• `Private` **manager**: [`HierarchyToolManager`](HierarchyToolManager.md)
+> `private` **manager**: [`HierarchyToolManager`](HierarchyToolManager.md)
 
-#### Defined in
+#### Source
 
-[src/tools/hierarchy/model/internal/tool/HierarchyTool.ts:28](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L28)
+[tools/hierarchy/model/internal/tool/HierarchyTool.ts:28](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L28)
 
-___
+***
 
 ### mapForm
 
-• `Private` **mapForm**: [`HieararchyToolMapForm`](HieararchyToolMapForm.md)
+> `private` **mapForm**: [`HieararchyToolMapForm`](HieararchyToolMapForm.md)
 
-#### Defined in
+#### Source
 
-[src/tools/hierarchy/model/internal/tool/HierarchyTool.ts:27](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L27)
+[tools/hierarchy/model/internal/tool/HierarchyTool.ts:27](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L27)
 
 ## Methods
 
-### copy
+### copy()
 
-▸ **copy**(): [`IHierarchyTool`](../interfaces/IHierarchyTool.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IHierarchyToolDefaults`](../interfaces/IHierarchyToolDefaults.md), [`IHierarchyToolState`](../interfaces/IHierarchyToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IHierarchyToolDefaults`](../interfaces/IHierarchyToolDefaults.md), [`IHierarchyToolConfig`](../modules.md#ihierarchytoolconfig)\>, [`IHierarchyToolConfig`](../modules.md#ihierarchytoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IHierarchyToolConfig`](../modules.md#ihierarchytoolconfig)\>\>
+> **copy**(): [`IHierarchyTool`](../interfaces/IHierarchyTool.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IHierarchyToolDefaults`](../interfaces/IHierarchyToolDefaults.md), [`IHierarchyToolState`](../interfaces/IHierarchyToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IHierarchyToolDefaults`](../interfaces/IHierarchyToolDefaults.md), [`IHierarchyToolConfig`](../type-aliases/IHierarchyToolConfig.md)\>, [`IHierarchyToolConfig`](../type-aliases/IHierarchyToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IHierarchyToolConfig`](../type-aliases/IHierarchyToolConfig.md)\>\>
 
 It creates a copy of the uninitialized tool.
 
 #### Returns
 
-[`IHierarchyTool`](../interfaces/IHierarchyTool.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IHierarchyToolDefaults`](../interfaces/IHierarchyToolDefaults.md), [`IHierarchyToolState`](../interfaces/IHierarchyToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IHierarchyToolDefaults`](../interfaces/IHierarchyToolDefaults.md), [`IHierarchyToolConfig`](../modules.md#ihierarchytoolconfig)\>, [`IHierarchyToolConfig`](../modules.md#ihierarchytoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IHierarchyToolConfig`](../modules.md#ihierarchytoolconfig)\>\>
+[`IHierarchyTool`](../interfaces/IHierarchyTool.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IHierarchyToolDefaults`](../interfaces/IHierarchyToolDefaults.md), [`IHierarchyToolState`](../interfaces/IHierarchyToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IHierarchyToolDefaults`](../interfaces/IHierarchyToolDefaults.md), [`IHierarchyToolConfig`](../type-aliases/IHierarchyToolConfig.md)\>, [`IHierarchyToolConfig`](../type-aliases/IHierarchyToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IHierarchyToolConfig`](../type-aliases/IHierarchyToolConfig.md)\>\>
 
 #### Implementation of
 
-[IHierarchyTool](../interfaces/IHierarchyTool.md).[copy](../interfaces/IHierarchyTool.md#copy)
+[`IHierarchyTool`](../interfaces/IHierarchyTool.md).[`copy`](../interfaces/IHierarchyTool.md#copy)
 
 #### Overrides
 
-[MapTool](MapTool.md).[copy](MapTool.md#copy)
+[`MapTool`](MapTool.md).[`copy`](MapTool.md#copy)
 
-#### Defined in
+#### Source
 
-[src/tools/hierarchy/model/internal/tool/HierarchyTool.ts:76](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L76)
+[tools/hierarchy/model/internal/tool/HierarchyTool.ts:76](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L76)
 
-___
+***
 
-### create
+### create()
 
-▸ **create**(): `this`
+> **create**(): `this`
 
 It creates a tool.
 
@@ -160,21 +122,21 @@ It creates a tool.
 
 #### Implementation of
 
-[IHierarchyTool](../interfaces/IHierarchyTool.md).[create](../interfaces/IHierarchyTool.md#create)
+[`IHierarchyTool`](../interfaces/IHierarchyTool.md).[`create`](../interfaces/IHierarchyTool.md#create)
 
 #### Overrides
 
-[MapTool](MapTool.md).[create](MapTool.md#create)
+[`MapTool`](MapTool.md).[`create`](MapTool.md#create)
 
-#### Defined in
+#### Source
 
-[src/tools/hierarchy/model/internal/tool/HierarchyTool.ts:81](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L81)
+[tools/hierarchy/model/internal/tool/HierarchyTool.ts:81](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L81)
 
-___
+***
 
-### createDefaults
+### createDefaults()
 
-▸ **createDefaults**(): [`IHierarchyToolDefaults`](../interfaces/IHierarchyToolDefaults.md)
+> **createDefaults**(): [`IHierarchyToolDefaults`](../interfaces/IHierarchyToolDefaults.md)
 
 It creates new defaults of the tool.
 
@@ -184,75 +146,75 @@ It creates new defaults of the tool.
 
 #### Overrides
 
-[MapTool](MapTool.md).[createDefaults](MapTool.md#createdefaults)
+[`MapTool`](MapTool.md).[`createDefaults`](MapTool.md#createdefaults)
 
-#### Defined in
+#### Source
 
-[src/tools/hierarchy/model/internal/tool/HierarchyTool.ts:50](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L50)
+[tools/hierarchy/model/internal/tool/HierarchyTool.ts:50](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L50)
 
-___
+***
 
-### createMapForm
+### createMapForm()
 
-▸ **createMapForm**(): [`IMapForm`](../interfaces/IMapForm.md)
+> `protected` **createMapForm**(): [`IMapForm`](../interfaces/IMapForm.md)
 
 #### Returns
 
 [`IMapForm`](../interfaces/IMapForm.md)
 
-#### Defined in
+#### Source
 
-[src/tools/hierarchy/model/internal/tool/HierarchyTool.ts:54](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L54)
+[tools/hierarchy/model/internal/tool/HierarchyTool.ts:54](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L54)
 
-___
+***
 
-### createState
+### createState()
 
-▸ **createState**(): [`IHierarchyToolState`](../interfaces/IHierarchyToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IHierarchyToolDefaults`](../interfaces/IHierarchyToolDefaults.md), [`IHierarchyToolConfig`](../modules.md#ihierarchytoolconfig)\>
+> **createState**(): [`IHierarchyToolState`](../interfaces/IHierarchyToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IHierarchyToolDefaults`](../interfaces/IHierarchyToolDefaults.md), [`IHierarchyToolConfig`](../type-aliases/IHierarchyToolConfig.md)\>
 
 It creates new defaults of the tool.
 
 #### Returns
 
-[`IHierarchyToolState`](../interfaces/IHierarchyToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IHierarchyToolDefaults`](../interfaces/IHierarchyToolDefaults.md), [`IHierarchyToolConfig`](../modules.md#ihierarchytoolconfig)\>
+[`IHierarchyToolState`](../interfaces/IHierarchyToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IHierarchyToolDefaults`](../interfaces/IHierarchyToolDefaults.md), [`IHierarchyToolConfig`](../type-aliases/IHierarchyToolConfig.md)\>
 
 #### Overrides
 
-[MapTool](MapTool.md).[createState](MapTool.md#createstate)
+[`MapTool`](MapTool.md).[`createState`](MapTool.md#createstate)
 
-#### Defined in
+#### Source
 
-[src/tools/hierarchy/model/internal/tool/HierarchyTool.ts:72](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L72)
+[tools/hierarchy/model/internal/tool/HierarchyTool.ts:72](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L72)
 
-___
+***
 
-### getAPIGetter
+### getAPIGetter()
 
-▸ **getAPIGetter**(): `undefined` \| [`IMapToolAPIGetter`](../modules.md#imaptoolapigetter)
+> **getAPIGetter**(): `undefined` \| [`IMapToolAPIGetter`](../type-aliases/IMapToolAPIGetter.md)
 
 It returns the tool API
 
 #### Returns
 
-`undefined` \| [`IMapToolAPIGetter`](../modules.md#imaptoolapigetter)
+`undefined` \| [`IMapToolAPIGetter`](../type-aliases/IMapToolAPIGetter.md)
 
 #### Implementation of
 
-[IHierarchyTool](../interfaces/IHierarchyTool.md).[getAPIGetter](../interfaces/IHierarchyTool.md#getapigetter)
+[`IHierarchyTool`](../interfaces/IHierarchyTool.md).[`getAPIGetter`](../interfaces/IHierarchyTool.md#getapigetter)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[getAPIGetter](MapTool.md#getapigetter)
+[`MapTool`](MapTool.md).[`getAPIGetter`](MapTool.md#getapigetter)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:74](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L74)
+[model/internal/tool/MapTool.ts:74](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L74)
 
-___
+***
 
-### getDefaults
+### getDefaults()
 
-▸ **getDefaults**(): [`IHierarchyToolDefaults`](../interfaces/IHierarchyToolDefaults.md)
+> **getDefaults**(): [`IHierarchyToolDefaults`](../interfaces/IHierarchyToolDefaults.md)
 
 It returns default values of the state properties.
 
@@ -262,21 +224,21 @@ It returns default values of the state properties.
 
 #### Implementation of
 
-[IHierarchyTool](../interfaces/IHierarchyTool.md).[getDefaults](../interfaces/IHierarchyTool.md#getdefaults)
+[`IHierarchyTool`](../interfaces/IHierarchyTool.md).[`getDefaults`](../interfaces/IHierarchyTool.md#getdefaults)
 
 #### Overrides
 
-[MapTool](MapTool.md).[getDefaults](MapTool.md#getdefaults)
+[`MapTool`](MapTool.md).[`getDefaults`](MapTool.md#getdefaults)
 
-#### Defined in
+#### Source
 
-[src/tools/hierarchy/model/internal/tool/HierarchyTool.ts:46](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L46)
+[tools/hierarchy/model/internal/tool/HierarchyTool.ts:46](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L46)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 Help function which returns the id of the object.
 
@@ -286,21 +248,21 @@ Help function which returns the id of the object.
 
 #### Implementation of
 
-[IHierarchyTool](../interfaces/IHierarchyTool.md).[getId](../interfaces/IHierarchyTool.md#getid)
+[`IHierarchyTool`](../interfaces/IHierarchyTool.md).[`getId`](../interfaces/IHierarchyTool.md#getid)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[getId](MapTool.md#getid)
+[`MapTool`](MapTool.md).[`getId`](MapTool.md#getid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObject.ts:93](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObject.ts#L93)
+[model/internal/object/MapObject.ts:93](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObject.ts#L93)
 
-___
+***
 
-### getMap
+### getMap()
 
-▸ **getMap**(): `undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+> **getMap**(): `undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 Help function returns map which uses this tool.
 
@@ -308,25 +270,25 @@ Do not override this function. Use the state class instead.
 
 #### Returns
 
-`undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+`undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Implementation of
 
-[IHierarchyTool](../interfaces/IHierarchyTool.md).[getMap](../interfaces/IHierarchyTool.md#getmap)
+[`IHierarchyTool`](../interfaces/IHierarchyTool.md).[`getMap`](../interfaces/IHierarchyTool.md#getmap)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[getMap](MapTool.md#getmap)
+[`MapTool`](MapTool.md).[`getMap`](MapTool.md#getmap)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:112](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L112)
+[model/internal/tool/MapTool.ts:112](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L112)
 
-___
+***
 
-### getMapForm
+### getMapForm()
 
-▸ **getMapForm**(): [`IMapForm`](../interfaces/IMapForm.md)
+> **getMapForm**(): [`IMapForm`](../interfaces/IMapForm.md)
 
 It returns a map control.
 
@@ -336,65 +298,65 @@ It returns a map control.
 
 #### Implementation of
 
-[IMapFormControl](../interfaces/IMapFormControl.md).[getMapForm](../interfaces/IMapFormControl.md#getmapform)
+[`IMapFormControl`](../interfaces/IMapFormControl.md).[`getMapForm`](../interfaces/IMapFormControl.md#getmapform)
 
-#### Defined in
+#### Source
 
-[src/tools/hierarchy/model/internal/tool/HierarchyTool.ts:39](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L39)
+[tools/hierarchy/model/internal/tool/HierarchyTool.ts:39](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L39)
 
-___
+***
 
-### getProps
+### getProps()
 
-▸ **getProps**(): [`IMapToolProps`](../modules.md#imaptoolprops)
+> **getProps**(): [`IMapToolProps`](../type-aliases/IMapToolProps.md)
 
 Help function which returns the props given by the programmer.
 
 #### Returns
 
-[`IMapToolProps`](../modules.md#imaptoolprops)
+[`IMapToolProps`](../type-aliases/IMapToolProps.md)
 
 #### Implementation of
 
-[IHierarchyTool](../interfaces/IHierarchyTool.md).[getProps](../interfaces/IHierarchyTool.md#getprops)
+[`IHierarchyTool`](../interfaces/IHierarchyTool.md).[`getProps`](../interfaces/IHierarchyTool.md#getprops)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[getProps](MapTool.md#getprops)
+[`MapTool`](MapTool.md).[`getProps`](MapTool.md#getprops)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:39](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L39)
+[model/internal/tool/MapTool.ts:39](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L39)
 
-___
+***
 
-### getState
+### getState()
 
-▸ **getState**(): [`IHierarchyToolState`](../interfaces/IHierarchyToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IHierarchyToolDefaults`](../interfaces/IHierarchyToolDefaults.md), [`IHierarchyToolConfig`](../modules.md#ihierarchytoolconfig)\>
+> **getState**(): [`IHierarchyToolState`](../interfaces/IHierarchyToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IHierarchyToolDefaults`](../interfaces/IHierarchyToolDefaults.md), [`IHierarchyToolConfig`](../type-aliases/IHierarchyToolConfig.md)\>
 
 It returns the map object state.
 
 #### Returns
 
-[`IHierarchyToolState`](../interfaces/IHierarchyToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IHierarchyToolDefaults`](../interfaces/IHierarchyToolDefaults.md), [`IHierarchyToolConfig`](../modules.md#ihierarchytoolconfig)\>
+[`IHierarchyToolState`](../interfaces/IHierarchyToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IHierarchyToolDefaults`](../interfaces/IHierarchyToolDefaults.md), [`IHierarchyToolConfig`](../type-aliases/IHierarchyToolConfig.md)\>
 
 #### Implementation of
 
-[IHierarchyTool](../interfaces/IHierarchyTool.md).[getState](../interfaces/IHierarchyTool.md#getstate)
+[`IHierarchyTool`](../interfaces/IHierarchyTool.md).[`getState`](../interfaces/IHierarchyTool.md#getstate)
 
 #### Overrides
 
-[MapTool](MapTool.md).[getState](MapTool.md#getstate)
+[`MapTool`](MapTool.md).[`getState`](MapTool.md#getstate)
 
-#### Defined in
+#### Source
 
-[src/tools/hierarchy/model/internal/tool/HierarchyTool.ts:68](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L68)
+[tools/hierarchy/model/internal/tool/HierarchyTool.ts:68](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L68)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 Help function which returns the type of the object.
 
@@ -404,21 +366,21 @@ Help function which returns the type of the object.
 
 #### Implementation of
 
-[IHierarchyTool](../interfaces/IHierarchyTool.md).[getType](../interfaces/IHierarchyTool.md#gettype)
+[`IHierarchyTool`](../interfaces/IHierarchyTool.md).[`getType`](../interfaces/IHierarchyTool.md#gettype)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[getType](MapTool.md#gettype)
+[`MapTool`](MapTool.md).[`getType`](MapTool.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObject.ts:86](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObject.ts#L86)
+[model/internal/object/MapObject.ts:86](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObject.ts#L86)
 
-___
+***
 
-### handleEvent
+### handleEvent()
 
-▸ **handleEvent**(`event`): `void`
+> **handleEvent**(`event`): `void`
 
 This function is called when a custom event is invoked.
 
@@ -426,9 +388,7 @@ Override this function, if needed.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `event` | [`IMapEvent`](../interfaces/IMapEvent.md)\<[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>\> |
+• **event**: [`IMapEvent`](../interfaces/IMapEvent.md)\<[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>\>
 
 #### Returns
 
@@ -436,17 +396,17 @@ Override this function, if needed.
 
 #### Inherited from
 
-[MapTool](MapTool.md).[handleEvent](MapTool.md#handleevent)
+[`MapTool`](MapTool.md).[`handleEvent`](MapTool.md#handleevent)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:171](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L171)
+[model/internal/tool/MapTool.ts:171](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L171)
 
-___
+***
 
-### initialize
+### initialize()
 
-▸ **initialize**(`initProps`): `this`
+> **initialize**(`initProps`): `this`
 
 It initializes the state of the object.
 It processes the serialized config and sets further objects.
@@ -456,9 +416,7 @@ since the object can be created before the Geovisto map is created.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `initProps` | [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\> |
+• **initProps**: [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>
 
 #### Returns
 
@@ -466,21 +424,21 @@ since the object can be created before the Geovisto map is created.
 
 #### Implementation of
 
-[IHierarchyTool](../interfaces/IHierarchyTool.md).[initialize](../interfaces/IHierarchyTool.md#initialize)
+[`IHierarchyTool`](../interfaces/IHierarchyTool.md).[`initialize`](../interfaces/IHierarchyTool.md#initialize)
 
 #### Overrides
 
-[MapTool](MapTool.md).[initialize](MapTool.md#initialize)
+[`MapTool`](MapTool.md).[`initialize`](MapTool.md#initialize)
 
-#### Defined in
+#### Source
 
-[src/tools/hierarchy/model/internal/tool/HierarchyTool.ts:58](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L58)
+[tools/hierarchy/model/internal/tool/HierarchyTool.ts:58](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L58)
 
-___
+***
 
-### isEnabled
+### isEnabled()
 
-▸ **isEnabled**(): `boolean`
+> **isEnabled**(): `boolean`
 
 Help getter which returns enabled property of state.
 
@@ -492,21 +450,21 @@ Do not override this function. Use the state class instead.
 
 #### Implementation of
 
-[IHierarchyTool](../interfaces/IHierarchyTool.md).[isEnabled](../interfaces/IHierarchyTool.md#isenabled)
+[`IHierarchyTool`](../interfaces/IHierarchyTool.md).[`isEnabled`](../interfaces/IHierarchyTool.md#isenabled)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[isEnabled](MapTool.md#isenabled)
+[`MapTool`](MapTool.md).[`isEnabled`](MapTool.md#isenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:130](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L130)
+[model/internal/tool/MapTool.ts:130](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L130)
 
-___
+***
 
-### isSingleton
+### isSingleton()
 
-▸ **isSingleton**(): `boolean`
+> **isSingleton**(): `boolean`
 
 Help getter which returns a logtical value whether the tool type is singleton.
 
@@ -516,21 +474,21 @@ Help getter which returns a logtical value whether the tool type is singleton.
 
 #### Implementation of
 
-[IHierarchyTool](../interfaces/IHierarchyTool.md).[isSingleton](../interfaces/IHierarchyTool.md#issingleton)
+[`IHierarchyTool`](../interfaces/IHierarchyTool.md).[`isSingleton`](../interfaces/IHierarchyTool.md#issingleton)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[isSingleton](MapTool.md#issingleton)
+[`MapTool`](MapTool.md).[`isSingleton`](MapTool.md#issingleton)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:81](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L81)
+[model/internal/tool/MapTool.ts:81](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L81)
 
-___
+***
 
-### setEnabled
+### setEnabled()
 
-▸ **setEnabled**(`enabled`): `void`
+> **setEnabled**(`enabled`): `void`
 
 Some tools might be dynamicaly enabled/disabled.
 This function is called externally when the tool is enabled/disabled.
@@ -539,9 +497,7 @@ Override this function, if needed.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `enabled` | `boolean` |
+• **enabled**: `boolean`
 
 #### Returns
 
@@ -549,29 +505,27 @@ Override this function, if needed.
 
 #### Implementation of
 
-[IHierarchyTool](../interfaces/IHierarchyTool.md).[setEnabled](../interfaces/IHierarchyTool.md#setenabled)
+[`IHierarchyTool`](../interfaces/IHierarchyTool.md).[`setEnabled`](../interfaces/IHierarchyTool.md#setenabled)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[setEnabled](MapTool.md#setenabled)
+[`MapTool`](MapTool.md).[`setEnabled`](MapTool.md#setenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:142](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L142)
+[model/internal/tool/MapTool.ts:142](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L142)
 
-___
+***
 
-### setProps
+### setProps()
 
-▸ **setProps**(`props`): `void`
+> `protected` **setProps**(`props`): `void`
 
 It updates the props.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `props` | [`IMapObjectProps`](../modules.md#imapobjectprops) |
+• **props**: [`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
 #### Returns
 
@@ -579,17 +533,17 @@ It updates the props.
 
 #### Inherited from
 
-[MapTool](MapTool.md).[setProps](MapTool.md#setprops)
+[`MapTool`](MapTool.md).[`setProps`](MapTool.md#setprops)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObject.ts:38](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObject.ts#L38)
+[model/internal/object/MapObject.ts:38](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObject.ts#L38)
 
-___
+***
 
-### switchEnabled
+### switchEnabled()
 
-▸ **switchEnabled**(): `void`
+> **switchEnabled**(): `void`
 
 Help function which switches enabled state (enabled/disabled).
 
@@ -601,43 +555,43 @@ Do not override this function. Use setEnabled instead.
 
 #### Implementation of
 
-[IHierarchyTool](../interfaces/IHierarchyTool.md).[switchEnabled](../interfaces/IHierarchyTool.md#switchenabled)
+[`IHierarchyTool`](../interfaces/IHierarchyTool.md).[`switchEnabled`](../interfaces/IHierarchyTool.md#switchenabled)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[switchEnabled](MapTool.md#switchenabled)
+[`MapTool`](MapTool.md).[`switchEnabled`](MapTool.md#switchenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:158](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L158)
+[model/internal/tool/MapTool.ts:158](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L158)
 
-___
+***
 
-### updateChangeStruct
+### updateChangeStruct()
 
-▸ **updateChangeStruct**(`zoom`): `void`
+> `private` **updateChangeStruct**(`zoom`): `void`
 
 Private method to update data in change structer.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `zoom` | `number` | New level of zoom. |
+• **zoom**: `number`
+
+New level of zoom.
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/hierarchy/model/internal/tool/HierarchyTool.ts:156](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L156)
+[tools/hierarchy/model/internal/tool/HierarchyTool.ts:156](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L156)
 
-___
+***
 
-### zoomChanged
+### zoomChanged()
 
-▸ **zoomChanged**(): `void`
+> `private` **zoomChanged**(): `void`
 
 Method called whenever zoom changes.
 
@@ -645,6 +599,6 @@ Method called whenever zoom changes.
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/hierarchy/model/internal/tool/HierarchyTool.ts:125](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L125)
+[tools/hierarchy/model/internal/tool/HierarchyTool.ts:125](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/hierarchy/model/internal/tool/HierarchyTool.ts#L125)

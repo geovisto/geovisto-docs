@@ -1,103 +1,87 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / SidebarToolThemeChangeAdapter
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / SidebarToolThemeChangeAdapter
 
 # Class: SidebarToolThemeChangeAdapter
 
 This class provides Theme change event adapter.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Table of contents
-
-### Constructors
-
-- [constructor](SidebarToolThemeChangeAdapter.md#constructor)
-
-### Properties
-
-- [themesToolAPI](SidebarToolThemeChangeAdapter.md#themestoolapi)
-- [tool](SidebarToolThemeChangeAdapter.md#tool)
-
-### Methods
-
-- [getThemesTool](SidebarToolThemeChangeAdapter.md#getthemestool)
-- [handleEvent](SidebarToolThemeChangeAdapter.md#handleevent)
-
 ## Constructors
 
-### constructor
+### new SidebarToolThemeChangeAdapter()
 
-• **new SidebarToolThemeChangeAdapter**(`tool`): [`SidebarToolThemeChangeAdapter`](SidebarToolThemeChangeAdapter.md)
+> **new SidebarToolThemeChangeAdapter**(`tool`): [`SidebarToolThemeChangeAdapter`](SidebarToolThemeChangeAdapter.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `tool` | [`ISidebarTool`](../interfaces/ISidebarTool.md)\<[`ISidebarToolProps`](../modules.md#isidebartoolprops), [`ISidebarToolDefaults`](../interfaces/ISidebarToolDefaults.md), [`ISidebarToolState`](../interfaces/ISidebarToolState.md)\<[`ISidebarToolProps`](../modules.md#isidebartoolprops), [`ISidebarToolDefaults`](../interfaces/ISidebarToolDefaults.md), [`ISidebarToolConfig`](../modules.md#isidebartoolconfig)\>, [`ISidebarToolConfig`](../modules.md#isidebartoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`ISidebarToolConfig`](../modules.md#isidebartoolconfig)\>\> |
+• **tool**: [`ISidebarTool`](../interfaces/ISidebarTool.md)\<[`ISidebarToolProps`](../type-aliases/ISidebarToolProps.md), [`ISidebarToolDefaults`](../interfaces/ISidebarToolDefaults.md), [`ISidebarToolState`](../interfaces/ISidebarToolState.md)\<[`ISidebarToolProps`](../type-aliases/ISidebarToolProps.md), [`ISidebarToolDefaults`](../interfaces/ISidebarToolDefaults.md), [`ISidebarToolConfig`](../type-aliases/ISidebarToolConfig.md)\>, [`ISidebarToolConfig`](../type-aliases/ISidebarToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`ISidebarToolConfig`](../type-aliases/ISidebarToolConfig.md)\>\>
 
 #### Returns
 
 [`SidebarToolThemeChangeAdapter`](SidebarToolThemeChangeAdapter.md)
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/adapters/ThemeChangeAdapter.ts:27](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/adapters/ThemeChangeAdapter.ts#L27)
+[tools/sidebar/model/internal/adapters/ThemeChangeAdapter.ts:27](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/adapters/ThemeChangeAdapter.ts#L27)
 
 ## Properties
 
-### themesToolAPI
+### themesToolAPI?
 
-• `Private` `Optional` **themesToolAPI**: [`IThemesToolAPI`](../modules.md#ithemestoolapi)
+> `private` `optional` **themesToolAPI**: [`IThemesToolAPI`](../type-aliases/IThemesToolAPI.md)
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/adapters/ThemeChangeAdapter.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/adapters/ThemeChangeAdapter.ts#L23)
+[tools/sidebar/model/internal/adapters/ThemeChangeAdapter.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/adapters/ThemeChangeAdapter.ts#L23)
 
-___
+***
 
 ### tool
 
-• `Private` **tool**: [`ISidebarTool`](../interfaces/ISidebarTool.md)\<[`ISidebarToolProps`](../modules.md#isidebartoolprops), [`ISidebarToolDefaults`](../interfaces/ISidebarToolDefaults.md), [`ISidebarToolState`](../interfaces/ISidebarToolState.md)\<[`ISidebarToolProps`](../modules.md#isidebartoolprops), [`ISidebarToolDefaults`](../interfaces/ISidebarToolDefaults.md), [`ISidebarToolConfig`](../modules.md#isidebartoolconfig)\>, [`ISidebarToolConfig`](../modules.md#isidebartoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`ISidebarToolConfig`](../modules.md#isidebartoolconfig)\>\>
+> `private` **tool**: [`ISidebarTool`](../interfaces/ISidebarTool.md)\<[`ISidebarToolProps`](../type-aliases/ISidebarToolProps.md), [`ISidebarToolDefaults`](../interfaces/ISidebarToolDefaults.md), [`ISidebarToolState`](../interfaces/ISidebarToolState.md)\<[`ISidebarToolProps`](../type-aliases/ISidebarToolProps.md), [`ISidebarToolDefaults`](../interfaces/ISidebarToolDefaults.md), [`ISidebarToolConfig`](../type-aliases/ISidebarToolConfig.md)\>, [`ISidebarToolConfig`](../type-aliases/ISidebarToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`ISidebarToolConfig`](../type-aliases/ISidebarToolConfig.md)\>\>
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/adapters/ThemeChangeAdapter.ts:25](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/adapters/ThemeChangeAdapter.ts#L25)
+[tools/sidebar/model/internal/adapters/ThemeChangeAdapter.ts:25](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/adapters/ThemeChangeAdapter.ts#L25)
 
 ## Methods
 
-### getThemesTool
+### getThemesTool()
 
-▸ **getThemesTool**(): `undefined` \| [`IThemesToolAPI`](../modules.md#ithemestoolapi)
+> `private` **getThemesTool**(): `undefined` \| [`IThemesToolAPI`](../type-aliases/IThemesToolAPI.md)
 
 Help function which acquires and returns the themes tool if available.
 
 #### Returns
 
-`undefined` \| [`IThemesToolAPI`](../modules.md#ithemestoolapi)
+`undefined` \| [`IThemesToolAPI`](../type-aliases/IThemesToolAPI.md)
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/adapters/ThemeChangeAdapter.ts:34](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/adapters/ThemeChangeAdapter.ts#L34)
+[tools/sidebar/model/internal/adapters/ThemeChangeAdapter.ts:34](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/adapters/ThemeChangeAdapter.ts#L34)
 
-___
+***
 
-### handleEvent
+### handleEvent()
 
-▸ **handleEvent**(`event`): `void`
+> **handleEvent**(`event`): `void`
 
 This function is called when a custom event is invoked.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `event` | [`IMapEvent`](../interfaces/IMapEvent.md)\<[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>\> |
+• **event**: [`IMapEvent`](../interfaces/IMapEvent.md)\<[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>\>
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/adapters/ThemeChangeAdapter.ts:49](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/adapters/ThemeChangeAdapter.ts#L49)
+[tools/sidebar/model/internal/adapters/ThemeChangeAdapter.ts:49](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/adapters/ThemeChangeAdapter.ts#L49)

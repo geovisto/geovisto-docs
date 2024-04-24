@@ -1,68 +1,30 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / HeatLayerToaolDefaults
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / HeatLayerToaolDefaults
 
 # Class: HeatLayerToaolDefaults
 
 This class provide functions which return the default state values.
 
-**`Author`**
+## Author
 
 Vladimir Korencik
 
-## Hierarchy
+## Extends
 
 - [`LayerToolDefaults`](LayerToolDefaults.md)
-
-  ↳ **`HeatLayerToaolDefaults`**
 
 ## Implements
 
 - [`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](HeatLayerToaolDefaults.md#constructor)
-
-### Properties
-
-- [idString](HeatLayerToaolDefaults.md#idstring)
-- [TYPE](HeatLayerToaolDefaults.md#type)
-- [id](HeatLayerToaolDefaults.md#id)
-
-### Methods
-
-- [generateId](HeatLayerToaolDefaults.md#generateid)
-- [getBlurDimension](HeatLayerToaolDefaults.md#getblurdimension)
-- [getConfig](HeatLayerToaolDefaults.md#getconfig)
-- [getCurrentZoomDimension](HeatLayerToaolDefaults.md#getcurrentzoomdimension)
-- [getDataManager](HeatLayerToaolDefaults.md#getdatamanager)
-- [getDimensions](HeatLayerToaolDefaults.md#getdimensions)
-- [getFiltersManager](HeatLayerToaolDefaults.md#getfiltersmanager)
-- [getGeoDataManager](HeatLayerToaolDefaults.md#getgeodatamanager)
-- [getGradientDimension](HeatLayerToaolDefaults.md#getgradientdimension)
-- [getIcon](HeatLayerToaolDefaults.md#geticon)
-- [getId](HeatLayerToaolDefaults.md#getid)
-- [getIntensityDimension](HeatLayerToaolDefaults.md#getintensitydimension)
-- [getLabel](HeatLayerToaolDefaults.md#getlabel)
-- [getLatitudeDimension](HeatLayerToaolDefaults.md#getlatitudedimension)
-- [getLayerName](HeatLayerToaolDefaults.md#getlayername)
-- [getLongitudeDimension](HeatLayerToaolDefaults.md#getlongitudedimension)
-- [getProps](HeatLayerToaolDefaults.md#getprops)
-- [getRadiusDimension](HeatLayerToaolDefaults.md#getradiusdimension)
-- [getReactiveRadiusDimension](HeatLayerToaolDefaults.md#getreactiveradiusdimension)
-- [getReactiveRadiusOperationDimension](HeatLayerToaolDefaults.md#getreactiveradiusoperationdimension)
-- [getReactiveRadiusZoomDimension](HeatLayerToaolDefaults.md#getreactiveradiuszoomdimension)
-- [getType](HeatLayerToaolDefaults.md#gettype)
-- [getZoomDimension](HeatLayerToaolDefaults.md#getzoomdimension)
-- [isEnabled](HeatLayerToaolDefaults.md#isenabled)
-- [isSingleton](HeatLayerToaolDefaults.md#issingleton)
-
 ## Constructors
 
-### constructor
+### new HeatLayerToaolDefaults()
 
-• **new HeatLayerToaolDefaults**(): [`HeatLayerToaolDefaults`](HeatLayerToaolDefaults.md)
+> **new HeatLayerToaolDefaults**(): [`HeatLayerToaolDefaults`](HeatLayerToaolDefaults.md)
 
 #### Returns
 
@@ -70,57 +32,57 @@ Vladimir Korencik
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[constructor](LayerToolDefaults.md#constructor)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`constructor`](LayerToolDefaults.md#constructors)
 
 ## Properties
 
-### idString
+### idString?
 
-• `Protected` `Optional` **idString**: `string`
+> `protected` `optional` **idString**: `string`
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[idString](LayerToolDefaults.md#idstring)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`idString`](LayerToolDefaults.md#idstring)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:13](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L13)
+[model/internal/object/MapObjectDefaults.ts:13](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L13)
 
-___
+***
 
 ### TYPE
 
-▪ `Static` **TYPE**: `string` = `"geovisto-tool-layer-heat"`
+> `static` **TYPE**: `string` = `"geovisto-tool-layer-heat"`
 
 A unique string of the tool type.
 
 #### Overrides
 
-[LayerToolDefaults](LayerToolDefaults.md).[TYPE](LayerToolDefaults.md#type)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`TYPE`](LayerToolDefaults.md#type)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:40](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L40)
+[tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:40](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L40)
 
-___
+***
 
 ### id
 
-▪ `Static` `Protected` **id**: `number`
+> `static` `protected` **id**: `number`
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[id](LayerToolDefaults.md#id)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`id`](LayerToolDefaults.md#id)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:12](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L12)
+[model/internal/object/MapObjectDefaults.ts:12](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L12)
 
 ## Methods
 
-### generateId
+### generateId()
 
-▸ **generateId**(): `string`
+> `protected` **generateId**(): `string`
 
 It returns identifier which is used when no identifier is specified.
 
@@ -130,17 +92,17 @@ It returns identifier which is used when no identifier is specified.
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[generateId](LayerToolDefaults.md#generateid)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`generateId`](LayerToolDefaults.md#generateid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:54](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L54)
+[model/internal/object/MapObjectDefaults.ts:54](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L54)
 
-___
+***
 
-### getBlurDimension
+### getBlurDimension()
 
-▸ **getBlurDimension**(): [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
+> **getBlurDimension**(): [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
 
 #### Returns
 
@@ -148,41 +110,41 @@ ___
 
 #### Implementation of
 
-[IHeatLayerToolDefaults](../interfaces/IHeatLayerToolDefaults.md).[getBlurDimension](../interfaces/IHeatLayerToolDefaults.md#getblurdimension)
+[`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md).[`getBlurDimension`](../interfaces/IHeatLayerToolDefaults.md#getblurdimension)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:138](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L138)
+[tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:138](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L138)
 
-___
+***
 
-### getConfig
+### getConfig()
 
-▸ **getConfig**(): [`IMapToolConfig`](../modules.md#imaptoolconfig)
+> **getConfig**(): [`IMapToolConfig`](../type-aliases/IMapToolConfig.md)
 
 By defaults it returns the config with undefined props.
 
 #### Returns
 
-[`IMapToolConfig`](../modules.md#imaptoolconfig)
+[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)
 
 #### Implementation of
 
-[IHeatLayerToolDefaults](../interfaces/IHeatLayerToolDefaults.md).[getConfig](../interfaces/IHeatLayerToolDefaults.md#getconfig)
+[`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md).[`getConfig`](../interfaces/IHeatLayerToolDefaults.md#getconfig)
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[getConfig](LayerToolDefaults.md#getconfig)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`getConfig`](LayerToolDefaults.md#getconfig)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolDefaults.ts:34](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolDefaults.ts#L34)
+[model/internal/tool/MapToolDefaults.ts:34](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolDefaults.ts#L34)
 
-___
+***
 
-### getCurrentZoomDimension
+### getCurrentZoomDimension()
 
-▸ **getCurrentZoomDimension**(): [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
+> **getCurrentZoomDimension**(): [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
 
 #### Returns
 
@@ -190,17 +152,17 @@ ___
 
 #### Implementation of
 
-[IHeatLayerToolDefaults](../interfaces/IHeatLayerToolDefaults.md).[getCurrentZoomDimension](../interfaces/IHeatLayerToolDefaults.md#getcurrentzoomdimension)
+[`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md).[`getCurrentZoomDimension`](../interfaces/IHeatLayerToolDefaults.md#getcurrentzoomdimension)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:158](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L158)
+[tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:158](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L158)
 
-___
+***
 
-### getDataManager
+### getDataManager()
 
-▸ **getDataManager**(): [`IMapDataManager`](../interfaces/IMapDataManager.md)
+> **getDataManager**(): [`IMapDataManager`](../interfaces/IMapDataManager.md)
 
 It returns default map data manager.
 
@@ -210,61 +172,89 @@ It returns default map data manager.
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[getDataManager](LayerToolDefaults.md#getdatamanager)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`getDataManager`](LayerToolDefaults.md#getdatamanager)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolDefaults.ts:20](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolDefaults.ts#L20)
+[model/internal/tool/MapToolDefaults.ts:20](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolDefaults.ts#L20)
 
-___
+***
 
-### getDimensions
+### getDimensions()
 
-▸ **getDimensions**(`map?`): `Object`
+> **getDimensions**(`map`?): `object`
 
 It returns list of map dimensions.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `map?` | [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\> |
+• **map?**: [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Returns
 
-`Object`
+`object`
 
-| Name | Type |
-| :------ | :------ |
-| `blur` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> |
-| `currentZoom` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> |
-| `gradient` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`IGradient`\> |
-| `intensity` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `latitude` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `longitude` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `radius` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> |
-| `reactiveOp` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> |
-| `reactiveRadius` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> |
-| `reactiveZoom` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> |
-| `zoom` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`IZoomLevel`\> |
+##### blur
+
+> **blur**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
+
+##### currentZoom
+
+> **currentZoom**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
+
+##### gradient
+
+> **gradient**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`IGradient`\>
+
+##### intensity
+
+> **intensity**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+##### latitude
+
+> **latitude**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+##### longitude
+
+> **longitude**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+##### radius
+
+> **radius**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
+
+##### reactiveOp
+
+> **reactiveOp**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\>
+
+##### reactiveRadius
+
+> **reactiveRadius**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
+
+##### reactiveZoom
+
+> **reactiveZoom**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
+
+##### zoom
+
+> **zoom**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`IZoomLevel`\>
 
 #### Implementation of
 
-[IHeatLayerToolDefaults](../interfaces/IHeatLayerToolDefaults.md).[getDimensions](../interfaces/IHeatLayerToolDefaults.md#getdimensions)
+[`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md).[`getDimensions`](../interfaces/IHeatLayerToolDefaults.md#getdimensions)
 
 #### Overrides
 
-[LayerToolDefaults](LayerToolDefaults.md).[getDimensions](LayerToolDefaults.md#getdimensions)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`getDimensions`](LayerToolDefaults.md#getdimensions)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:69](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L69)
+[tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:69](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L69)
 
-___
+***
 
-### getFiltersManager
+### getFiltersManager()
 
-▸ **getFiltersManager**(): [`IMapFilterManager`](../interfaces/IMapFilterManager.md)
+> **getFiltersManager**(): [`IMapFilterManager`](../interfaces/IMapFilterManager.md)
 
 #### Returns
 
@@ -272,43 +262,41 @@ ___
 
 #### Implementation of
 
-[IHeatLayerToolDefaults](../interfaces/IHeatLayerToolDefaults.md).[getFiltersManager](../interfaces/IHeatLayerToolDefaults.md#getfiltersmanager)
+[`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md).[`getFiltersManager`](../interfaces/IHeatLayerToolDefaults.md#getfiltersmanager)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:58](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L58)
+[tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:58](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L58)
 
-___
+***
 
-### getGeoDataManager
+### getGeoDataManager()
 
-▸ **getGeoDataManager**(`geoDataArray`): [`IGeoDataManager`](../modules.md#igeodatamanager)
+> **getGeoDataManager**(`geoDataArray`): [`IGeoDataManager`](../type-aliases/IGeoDataManager.md)
 
 It returns default geo data manager.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `geoDataArray` | `undefined` \| [`IGeoData`](../interfaces/IGeoData.md)[] |
+• **geoDataArray**: `undefined` \| [`IGeoData`](../interfaces/IGeoData.md)[]
 
 #### Returns
 
-[`IGeoDataManager`](../modules.md#igeodatamanager)
+[`IGeoDataManager`](../type-aliases/IGeoDataManager.md)
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[getGeoDataManager](LayerToolDefaults.md#getgeodatamanager)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`getGeoDataManager`](LayerToolDefaults.md#getgeodatamanager)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolDefaults.ts:27](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolDefaults.ts#L27)
+[model/internal/tool/MapToolDefaults.ts:27](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolDefaults.ts#L27)
 
-___
+***
 
-### getGradientDimension
+### getGradientDimension()
 
-▸ **getGradientDimension**(): [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`IGradient`\>
+> **getGradientDimension**(): [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`IGradient`\>
 
 #### Returns
 
@@ -316,17 +304,17 @@ ___
 
 #### Implementation of
 
-[IHeatLayerToolDefaults](../interfaces/IHeatLayerToolDefaults.md).[getGradientDimension](../interfaces/IHeatLayerToolDefaults.md#getgradientdimension)
+[`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md).[`getGradientDimension`](../interfaces/IHeatLayerToolDefaults.md#getgradientdimension)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:123](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L123)
+[tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:123](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L123)
 
-___
+***
 
-### getIcon
+### getIcon()
 
-▸ **getIcon**(): `string`
+> **getIcon**(): `string`
 
 It returns the icon of the tool.
 
@@ -336,21 +324,21 @@ It returns the icon of the tool.
 
 #### Implementation of
 
-[IHeatLayerToolDefaults](../interfaces/IHeatLayerToolDefaults.md).[getIcon](../interfaces/IHeatLayerToolDefaults.md#geticon)
+[`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md).[`getIcon`](../interfaces/IHeatLayerToolDefaults.md#geticon)
 
 #### Overrides
 
-[LayerToolDefaults](LayerToolDefaults.md).[getIcon](LayerToolDefaults.md#geticon)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`getIcon`](LayerToolDefaults.md#geticon)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:54](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L54)
+[tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:54](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L54)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 It returns identifier which is used when no identifier is specified.
 
@@ -360,27 +348,25 @@ It returns identifier which is used when no identifier is specified.
 
 #### Implementation of
 
-[IHeatLayerToolDefaults](../interfaces/IHeatLayerToolDefaults.md).[getId](../interfaces/IHeatLayerToolDefaults.md#getid)
+[`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md).[`getId`](../interfaces/IHeatLayerToolDefaults.md#getid)
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[getId](LayerToolDefaults.md#getid)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`getId`](LayerToolDefaults.md#getid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:44](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L44)
+[model/internal/object/MapObjectDefaults.ts:44](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L44)
 
-___
+***
 
-### getIntensityDimension
+### getIntensityDimension()
 
-▸ **getIntensityDimension**(`map?`): [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+> **getIntensityDimension**(`map`?): [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `map?` | [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\> |
+• **map?**: [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Returns
 
@@ -388,17 +374,17 @@ ___
 
 #### Implementation of
 
-[IHeatLayerToolDefaults](../interfaces/IHeatLayerToolDefaults.md).[getIntensityDimension](../interfaces/IHeatLayerToolDefaults.md#getintensitydimension)
+[`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md).[`getIntensityDimension`](../interfaces/IHeatLayerToolDefaults.md#getintensitydimension)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:105](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L105)
+[tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:105](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L105)
 
-___
+***
 
-### getLabel
+### getLabel()
 
-▸ **getLabel**(): `string`
+> **getLabel**(): `string`
 
 It returns the label of the tool.
 
@@ -408,27 +394,25 @@ It returns the label of the tool.
 
 #### Implementation of
 
-[IHeatLayerToolDefaults](../interfaces/IHeatLayerToolDefaults.md).[getLabel](../interfaces/IHeatLayerToolDefaults.md#getlabel)
+[`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md).[`getLabel`](../interfaces/IHeatLayerToolDefaults.md#getlabel)
 
 #### Overrides
 
-[LayerToolDefaults](LayerToolDefaults.md).[getLabel](LayerToolDefaults.md#getlabel)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`getLabel`](LayerToolDefaults.md#getlabel)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:50](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L50)
+[tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:50](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L50)
 
-___
+***
 
-### getLatitudeDimension
+### getLatitudeDimension()
 
-▸ **getLatitudeDimension**(`map?`): [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+> **getLatitudeDimension**(`map`?): [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `map?` | [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\> |
+• **map?**: [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Returns
 
@@ -436,17 +420,17 @@ ___
 
 #### Implementation of
 
-[IHeatLayerToolDefaults](../interfaces/IHeatLayerToolDefaults.md).[getLatitudeDimension](../interfaces/IHeatLayerToolDefaults.md#getlatitudedimension)
+[`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md).[`getLatitudeDimension`](../interfaces/IHeatLayerToolDefaults.md#getlatitudedimension)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:85](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L85)
+[tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:85](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L85)
 
-___
+***
 
-### getLayerName
+### getLayerName()
 
-▸ **getLayerName**(): `string`
+> **getLayerName**(): `string`
 
 It returns the layer name.
 
@@ -456,27 +440,25 @@ It returns the layer name.
 
 #### Implementation of
 
-[IHeatLayerToolDefaults](../interfaces/IHeatLayerToolDefaults.md).[getLayerName](../interfaces/IHeatLayerToolDefaults.md#getlayername)
+[`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md).[`getLayerName`](../interfaces/IHeatLayerToolDefaults.md#getlayername)
 
 #### Overrides
 
-[LayerToolDefaults](LayerToolDefaults.md).[getLayerName](LayerToolDefaults.md#getlayername)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`getLayerName`](LayerToolDefaults.md#getlayername)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:46](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L46)
+[tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:46](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L46)
 
-___
+***
 
-### getLongitudeDimension
+### getLongitudeDimension()
 
-▸ **getLongitudeDimension**(`map?`): [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+> **getLongitudeDimension**(`map`?): [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `map?` | [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\> |
+• **map?**: [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Returns
 
@@ -484,59 +466,41 @@ ___
 
 #### Implementation of
 
-[IHeatLayerToolDefaults](../interfaces/IHeatLayerToolDefaults.md).[getLongitudeDimension](../interfaces/IHeatLayerToolDefaults.md#getlongitudedimension)
+[`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md).[`getLongitudeDimension`](../interfaces/IHeatLayerToolDefaults.md#getlongitudedimension)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:95](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L95)
+[tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:95](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L95)
 
-___
+***
 
-### getProps
+### getProps()
 
-▸ **getProps**(): [`IMapObjectProps`](../modules.md#imapobjectprops)
+> **getProps**(): [`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
 It returns default props if no props are given.
 
 #### Returns
 
-[`IMapObjectProps`](../modules.md#imapobjectprops)
+[`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
 #### Implementation of
 
-[IHeatLayerToolDefaults](../interfaces/IHeatLayerToolDefaults.md).[getProps](../interfaces/IHeatLayerToolDefaults.md#getprops)
+[`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md).[`getProps`](../interfaces/IHeatLayerToolDefaults.md#getprops)
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[getProps](LayerToolDefaults.md#getprops)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`getProps`](LayerToolDefaults.md#getprops)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L18)
+[model/internal/object/MapObjectDefaults.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L18)
 
-___
+***
 
-### getRadiusDimension
+### getRadiusDimension()
 
-▸ **getRadiusDimension**(): [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
-
-#### Returns
-
-[`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
-
-#### Implementation of
-
-[IHeatLayerToolDefaults](../interfaces/IHeatLayerToolDefaults.md).[getRadiusDimension](../interfaces/IHeatLayerToolDefaults.md#getradiusdimension)
-
-#### Defined in
-
-[src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:115](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L115)
-
-___
-
-### getReactiveRadiusDimension
-
-▸ **getReactiveRadiusDimension**(): [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
+> **getRadiusDimension**(): [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
 
 #### Returns
 
@@ -544,17 +508,35 @@ ___
 
 #### Implementation of
 
-[IHeatLayerToolDefaults](../interfaces/IHeatLayerToolDefaults.md).[getReactiveRadiusDimension](../interfaces/IHeatLayerToolDefaults.md#getreactiveradiusdimension)
+[`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md).[`getRadiusDimension`](../interfaces/IHeatLayerToolDefaults.md#getradiusdimension)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:189](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L189)
+[tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:115](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L115)
 
-___
+***
 
-### getReactiveRadiusOperationDimension
+### getReactiveRadiusDimension()
 
-▸ **getReactiveRadiusOperationDimension**(): [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\>
+> **getReactiveRadiusDimension**(): [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
+
+#### Returns
+
+[`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
+
+#### Implementation of
+
+[`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md).[`getReactiveRadiusDimension`](../interfaces/IHeatLayerToolDefaults.md#getreactiveradiusdimension)
+
+#### Source
+
+[tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:189](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L189)
+
+***
+
+### getReactiveRadiusOperationDimension()
+
+> **getReactiveRadiusOperationDimension**(): [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\>
 
 #### Returns
 
@@ -562,17 +544,17 @@ ___
 
 #### Implementation of
 
-[IHeatLayerToolDefaults](../interfaces/IHeatLayerToolDefaults.md).[getReactiveRadiusOperationDimension](../interfaces/IHeatLayerToolDefaults.md#getreactiveradiusoperationdimension)
+[`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md).[`getReactiveRadiusOperationDimension`](../interfaces/IHeatLayerToolDefaults.md#getreactiveradiusoperationdimension)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:166](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L166)
+[tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:166](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L166)
 
-___
+***
 
-### getReactiveRadiusZoomDimension
+### getReactiveRadiusZoomDimension()
 
-▸ **getReactiveRadiusZoomDimension**(): [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
+> **getReactiveRadiusZoomDimension**(): [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
 
 #### Returns
 
@@ -580,17 +562,17 @@ ___
 
 #### Implementation of
 
-[IHeatLayerToolDefaults](../interfaces/IHeatLayerToolDefaults.md).[getReactiveRadiusZoomDimension](../interfaces/IHeatLayerToolDefaults.md#getreactiveradiuszoomdimension)
+[`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md).[`getReactiveRadiusZoomDimension`](../interfaces/IHeatLayerToolDefaults.md#getreactiveradiuszoomdimension)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:182](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L182)
+[tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:182](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L182)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 It returns a unique type string of the map object.
 
@@ -600,21 +582,21 @@ It returns a unique type string of the map object.
 
 #### Implementation of
 
-[IHeatLayerToolDefaults](../interfaces/IHeatLayerToolDefaults.md).[getType](../interfaces/IHeatLayerToolDefaults.md#gettype)
+[`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md).[`getType`](../interfaces/IHeatLayerToolDefaults.md#gettype)
 
 #### Overrides
 
-[LayerToolDefaults](LayerToolDefaults.md).[getType](LayerToolDefaults.md#gettype)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`getType`](LayerToolDefaults.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:42](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L42)
+[tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:42](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L42)
 
-___
+***
 
-### getZoomDimension
+### getZoomDimension()
 
-▸ **getZoomDimension**(): [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`IZoomLevel`\>
+> **getZoomDimension**(): [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<`IZoomLevel`\>
 
 #### Returns
 
@@ -622,17 +604,17 @@ ___
 
 #### Implementation of
 
-[IHeatLayerToolDefaults](../interfaces/IHeatLayerToolDefaults.md).[getZoomDimension](../interfaces/IHeatLayerToolDefaults.md#getzoomdimension)
+[`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md).[`getZoomDimension`](../interfaces/IHeatLayerToolDefaults.md#getzoomdimension)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:146](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L146)
+[tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts:146](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/heat/model/internal/tool/HeatLayerToolDefaults.ts#L146)
 
-___
+***
 
-### isEnabled
+### isEnabled()
 
-▸ **isEnabled**(): `boolean`
+> **isEnabled**(): `boolean`
 
 By default, the tool is enabled.
 
@@ -642,21 +624,21 @@ By default, the tool is enabled.
 
 #### Implementation of
 
-[IHeatLayerToolDefaults](../interfaces/IHeatLayerToolDefaults.md).[isEnabled](../interfaces/IHeatLayerToolDefaults.md#isenabled)
+[`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md).[`isEnabled`](../interfaces/IHeatLayerToolDefaults.md#isenabled)
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[isEnabled](LayerToolDefaults.md#isenabled)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`isEnabled`](LayerToolDefaults.md#isenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolDefaults.ts:50](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolDefaults.ts#L50)
+[model/internal/tool/MapToolDefaults.ts:50](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolDefaults.ts#L50)
 
-___
+***
 
-### isSingleton
+### isSingleton()
 
-▸ **isSingleton**(): `boolean`
+> **isSingleton**(): `boolean`
 
 By default, the tool is singleton
 
@@ -666,12 +648,12 @@ By default, the tool is singleton
 
 #### Implementation of
 
-[IHeatLayerToolDefaults](../interfaces/IHeatLayerToolDefaults.md).[isSingleton](../interfaces/IHeatLayerToolDefaults.md#issingleton)
+[`IHeatLayerToolDefaults`](../interfaces/IHeatLayerToolDefaults.md).[`isSingleton`](../interfaces/IHeatLayerToolDefaults.md#issingleton)
 
 #### Inherited from
 
-[LayerToolDefaults](LayerToolDefaults.md).[isSingleton](LayerToolDefaults.md#issingleton)
+[`LayerToolDefaults`](LayerToolDefaults.md).[`isSingleton`](LayerToolDefaults.md#issingleton)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolDefaults.ts:43](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolDefaults.ts#L43)
+[model/internal/tool/MapToolDefaults.ts:43](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolDefaults.ts#L43)

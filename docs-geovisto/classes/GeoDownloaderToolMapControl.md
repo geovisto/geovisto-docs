@@ -1,4 +1,8 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / GeoDownloaderToolMapControl
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / GeoDownloaderToolMapControl
 
 # Class: GeoDownloaderToolMapControl
 
@@ -6,343 +10,285 @@ Controler for Downloader tool.
 Manages almost everything around downloading geo objects from Overpass API.
 Can generate automatic hierarchy definition from downloaded objects.
 
-**`Author`**
+## Author
 
 Vojtěch Malý
 
-## Table of contents
-
-### Constructors
-
-- [constructor](GeoDownloaderToolMapControl.md#constructor)
-
-### Properties
-
-- [adminLevelDIV](GeoDownloaderToolMapControl.md#adminleveldiv)
-- [adminLevelMAP](GeoDownloaderToolMapControl.md#adminlevelmap)
-- [countriesList](GeoDownloaderToolMapControl.md#countrieslist)
-- [countryInput](GeoDownloaderToolMapControl.md#countryinput)
-- [data](GeoDownloaderToolMapControl.md#data)
-- [downloadGeojsonBTN](GeoDownloaderToolMapControl.md#downloadgeojsonbtn)
-- [downloadHierarchyBTN](GeoDownloaderToolMapControl.md#downloadhierarchybtn)
-- [hierarchy](GeoDownloaderToolMapControl.md#hierarchy)
-- [hierarchyEditToolDiv](GeoDownloaderToolMapControl.md#hierarchyedittooldiv)
-- [hierarchyPreviewButtons](GeoDownloaderToolMapControl.md#hierarchypreviewbuttons)
-- [hierarchySliders](GeoDownloaderToolMapControl.md#hierarchysliders)
-- [inProcess](GeoDownloaderToolMapControl.md#inprocess)
-- [leafletMap](GeoDownloaderToolMapControl.md#leafletmap)
-- [levelMap](GeoDownloaderToolMapControl.md#levelmap)
-- [objectTypeInput](GeoDownloaderToolMapControl.md#objecttypeinput)
-- [previewGeo](GeoDownloaderToolMapControl.md#previewgeo)
-- [progressBar](GeoDownloaderToolMapControl.md#progressbar)
-- [selectedValue](GeoDownloaderToolMapControl.md#selectedvalue)
-- [simplifyInputScale](GeoDownloaderToolMapControl.md#simplifyinputscale)
-- [simplifyInputScaleRange](GeoDownloaderToolMapControl.md#simplifyinputscalerange)
-- [tableOfLevels](GeoDownloaderToolMapControl.md#tableoflevels)
-- [valueNameMap](GeoDownloaderToolMapControl.md#valuenamemap)
-
-### Methods
-
-- [changeLevel](GeoDownloaderToolMapControl.md#changelevel)
-- [changeToNormal](GeoDownloaderToolMapControl.md#changetonormal)
-- [changeToWait](GeoDownloaderToolMapControl.md#changetowait)
-- [createAdminLevelSelection](GeoDownloaderToolMapControl.md#createadminlevelselection)
-- [createSelection](GeoDownloaderToolMapControl.md#createselection)
-- [createSimplifyNumberInput](GeoDownloaderToolMapControl.md#createsimplifynumberinput)
-- [disableLast](GeoDownloaderToolMapControl.md#disablelast)
-- [downloadGeo](GeoDownloaderToolMapControl.md#downloadgeo)
-- [downloadHierarchy](GeoDownloaderToolMapControl.md#downloadhierarchy)
-- [enableLast](GeoDownloaderToolMapControl.md#enablelast)
-- [fetchGeo](GeoDownloaderToolMapControl.md#fetchgeo)
-- [fetchHandle](GeoDownloaderToolMapControl.md#fetchhandle)
-- [filterGeo](GeoDownloaderToolMapControl.md#filtergeo)
-- [generateHierarchy](GeoDownloaderToolMapControl.md#generatehierarchy)
-- [generateHierarchyEdit](GeoDownloaderToolMapControl.md#generatehierarchyedit)
-- [getParent](GeoDownloaderToolMapControl.md#getparent)
-- [getSelectedValuesFromMutliple](GeoDownloaderToolMapControl.md#getselectedvaluesfrommutliple)
-- [getSimplifyScaled](GeoDownloaderToolMapControl.md#getsimplifyscaled)
-- [makeIDsPretty](GeoDownloaderToolMapControl.md#makeidspretty)
-- [mergeToGeo](GeoDownloaderToolMapControl.md#mergetogeo)
-- [previewCleaner](GeoDownloaderToolMapControl.md#previewcleaner)
-- [simplifyDisable](GeoDownloaderToolMapControl.md#simplifydisable)
-- [simplifyFeature](GeoDownloaderToolMapControl.md#simplifyfeature)
-- [togglePreview](GeoDownloaderToolMapControl.md#togglepreview)
-
 ## Constructors
 
-### constructor
+### new GeoDownloaderToolMapControl()
 
-• **new GeoDownloaderToolMapControl**(`map`): [`GeoDownloaderToolMapControl`](GeoDownloaderToolMapControl.md)
+> **new GeoDownloaderToolMapControl**(`map`): [`GeoDownloaderToolMapControl`](GeoDownloaderToolMapControl.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `map` | `undefined` \| `Map` |
+• **map**: `any`
 
 #### Returns
 
 [`GeoDownloaderToolMapControl`](GeoDownloaderToolMapControl.md)
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:62](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L62)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:62](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L62)
 
 ## Properties
 
 ### adminLevelDIV
 
-• `Private` **adminLevelDIV**: `HTMLElement`
+> `private` **adminLevelDIV**: `HTMLElement`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:37](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L37)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:37](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L37)
 
-___
+***
 
 ### adminLevelMAP
 
-• `Private` **adminLevelMAP**: `Map`\<[`LabeledCheckboxFormInput`](LabeledCheckboxFormInput.md), `string`\>
+> `private` **adminLevelMAP**: `Map`\<[`LabeledCheckboxFormInput`](LabeledCheckboxFormInput.md), `string`\>
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:38](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L38)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:38](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L38)
 
-___
+***
 
 ### countriesList
 
-• `Private` **countriesList**: `countriesTYPE`[]
+> `private` **countriesList**: `countriesTYPE`[]
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:45](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L45)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:45](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L45)
 
-___
+***
 
 ### countryInput
 
-• `Private` **countryInput**: [`LabeledAutocompleteFormInput`](LabeledAutocompleteFormInput.md)
+> `private` **countryInput**: [`LabeledAutocompleteFormInput`](LabeledAutocompleteFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:36](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L36)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:36](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L36)
 
-___
+***
 
 ### data
 
-• `Private` **data**: `Object`
+> `private` **data**: `object`
 
-#### Type declaration
+#### geo
 
-| Name | Type |
-| :------ | :------ |
-| `geo` | `any`[] |
-| `geoFIltered` | `FeatureCollection`\<`Geometry`, `GeoJsonProperties`\>[] |
-| `level` | `number`[] |
+> **geo**: `any`[]
 
-#### Defined in
+#### geoFIltered
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:48](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L48)
+> **geoFIltered**: `FeatureCollection`[]
 
-___
+#### level
+
+> **level**: `number`[]
+
+#### Source
+
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:48](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L48)
+
+***
 
 ### downloadGeojsonBTN
 
-• **downloadGeojsonBTN**: `HTMLButtonElement`
+> **downloadGeojsonBTN**: `HTMLButtonElement`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L32)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L32)
 
-___
+***
 
 ### downloadHierarchyBTN
 
-• **downloadHierarchyBTN**: `HTMLButtonElement`
+> **downloadHierarchyBTN**: `HTMLButtonElement`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:33](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L33)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:33](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L33)
 
-___
+***
 
 ### hierarchy
 
-• `Private` **hierarchy**: `hierarchyConfig`
+> `private` **hierarchy**: `hierarchyConfig`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:54](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L54)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:54](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L54)
 
-___
+***
 
 ### hierarchyEditToolDiv
 
-• **hierarchyEditToolDiv**: `HTMLDivElement`
+> **hierarchyEditToolDiv**: `HTMLDivElement`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:34](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L34)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:34](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L34)
 
-___
+***
 
 ### hierarchyPreviewButtons
 
-• `Private` **hierarchyPreviewButtons**: [`LabeledCheckboxFormInput`](LabeledCheckboxFormInput.md)[] = `[]`
+> `private` **hierarchyPreviewButtons**: [`LabeledCheckboxFormInput`](LabeledCheckboxFormInput.md)[] = `[]`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:41](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L41)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:41](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L41)
 
-___
+***
 
 ### hierarchySliders
 
-• `Private` **hierarchySliders**: [`LabeledSliderFormInput`](LabeledSliderFormInput.md)[] = `[]`
+> `private` **hierarchySliders**: [`LabeledSliderFormInput`](LabeledSliderFormInput.md)[] = `[]`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:42](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L42)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:42](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L42)
 
-___
+***
 
 ### inProcess
 
-• `Private` **inProcess**: `boolean` = `false`
+> `private` **inProcess**: `boolean` = `false`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:44](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L44)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:44](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L44)
 
-___
+***
 
 ### leafletMap
 
-• `Private` **leafletMap**: `undefined` \| `Map`
+> `private` **leafletMap**: `any`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:59](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L59)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:59](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L59)
 
-___
+***
 
 ### levelMap
 
-• `Private` **levelMap**: `Map`\<`string`, `administrativeLevelsTYPE`\>
+> `private` **levelMap**: `Map`\<`string`, `administrativeLevelsTYPE`\>
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:56](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L56)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:56](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L56)
 
-___
+***
 
 ### objectTypeInput
 
-• **objectTypeInput**: [`LabeledAutocompleteFormInput`](LabeledAutocompleteFormInput.md)
+> **objectTypeInput**: [`LabeledAutocompleteFormInput`](LabeledAutocompleteFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:31](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L31)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:31](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L31)
 
-___
+***
 
 ### previewGeo
 
-• `Private` **previewGeo**: `Map`\<`number`, `GeoJSON`\<`any`, `Geometry`\>\>
+> `private` **previewGeo**: `Map`\<`number`, `GeoJSON`\>
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:57](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L57)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:57](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L57)
 
-___
+***
 
 ### progressBar
 
-• **progressBar**: `HTMLProgressElement`
+> **progressBar**: `HTMLProgressElement`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:35](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L35)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:35](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L35)
 
-___
+***
 
 ### selectedValue
 
-• `Private` **selectedValue**: `string` = `""`
+> `private` **selectedValue**: `string` = `""`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:46](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L46)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:46](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L46)
 
-___
+***
 
 ### simplifyInputScale
 
-• `Private` **simplifyInputScale**: `HTMLDivElement`
+> `private` **simplifyInputScale**: `HTMLDivElement`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:39](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L39)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:39](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L39)
 
-___
+***
 
 ### simplifyInputScaleRange
 
-• `Private` **simplifyInputScaleRange**: [`LabeledSliderFormInput`](LabeledSliderFormInput.md)
+> `private` **simplifyInputScaleRange**: [`LabeledSliderFormInput`](LabeledSliderFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:40](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L40)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:40](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L40)
 
-___
+***
 
 ### tableOfLevels
 
-• `Private` **tableOfLevels**: `administrativeLevelsTYPE`[]
+> `private` **tableOfLevels**: `administrativeLevelsTYPE`[]
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:55](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L55)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:55](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L55)
 
-___
+***
 
 ### valueNameMap
 
-• `Private` **valueNameMap**: `Map`\<`string`, `string`\>
+> `private` **valueNameMap**: `Map`\<`string`, `string`\>
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:53](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L53)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:53](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L53)
 
 ## Methods
 
-### changeLevel
+### changeLevel()
 
-▸ **changeLevel**(`level`): `void`
+> `protected` **changeLevel**(`level`): `void`
 
 Change zoom level in hierarchy for certain administrative level.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `level` | `number` |
+• **level**: `number`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:370](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L370)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:370](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L370)
 
-___
+***
 
-### changeToNormal
+### changeToNormal()
 
-▸ **changeToNormal**(): `void`
+> `protected` **changeToNormal**(): `void`
 
 Change state of tool to normal -> download finished.
 
@@ -350,15 +296,15 @@ Change state of tool to normal -> download finished.
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:662](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L662)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:662](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L662)
 
-___
+***
 
-### changeToWait
+### changeToWait()
 
-▸ **changeToWait**(): `void`
+> `protected` **changeToWait**(): `void`
 
 Change state of tool to -> waiting for download to finish
 
@@ -366,15 +312,15 @@ Change state of tool to -> waiting for download to finish
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:652](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L652)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:652](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L652)
 
-___
+***
 
-### createAdminLevelSelection
+### createAdminLevelSelection()
 
-▸ **createAdminLevelSelection**(): `HTMLElement`
+> **createAdminLevelSelection**(): `HTMLElement`
 
 Create chcekboxes with custom labels based on OpenStreetMap table.
 If not defined in table, creates clasic number labels.
@@ -385,57 +331,57 @@ If not defined in table, creates clasic number labels.
 
 Div element containing buttons.
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:130](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L130)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:130](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L130)
 
-___
+***
 
-### createSelection
+### createSelection()
 
-▸ **createSelection**(): `HTMLElement`
+> **createSelection**(): `HTMLElement`
 
 #### Returns
 
 `HTMLElement`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:758](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L758)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:758](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L758)
 
-___
+***
 
-### createSimplifyNumberInput
+### createSimplifyNumberInput()
 
-▸ **createSimplifyNumberInput**(): `HTMLDivElement`
+> **createSimplifyNumberInput**(): `HTMLDivElement`
 
 #### Returns
 
 `HTMLDivElement`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:698](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L698)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:698](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L698)
 
-___
+***
 
-### disableLast
+### disableLast()
 
-▸ **disableLast**(): `void`
+> **disableLast**(): `void`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:452](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L452)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:452](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L452)
 
-___
+***
 
-### downloadGeo
+### downloadGeo()
 
-▸ **downloadGeo**(): `void`
+> **downloadGeo**(): `void`
 
 Callback function for downloading GeoJSON
 
@@ -443,15 +389,15 @@ Callback function for downloading GeoJSON
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:674](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L674)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:674](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L674)
 
-___
+***
 
-### downloadHierarchy
+### downloadHierarchy()
 
-▸ **downloadHierarchy**(): `void`
+> **downloadHierarchy**(): `void`
 
 Callback function for downloading Hierarchy definition.
 
@@ -459,15 +405,15 @@ Callback function for downloading Hierarchy definition.
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:687](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L687)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:687](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L687)
 
-___
+***
 
-### enableLast
+### enableLast()
 
-▸ **enableLast**(): `void`
+> **enableLast**(): `void`
 
 Method for making selected previews visible.
 
@@ -475,24 +421,27 @@ Method for making selected previews visible.
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:442](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L442)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:442](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L442)
 
-___
+***
 
-### fetchGeo
+### fetchGeo()
 
-▸ **fetchGeo**(`countryID`, `admin_levels`): `Promise`\<`any`\>
+> `protected` **fetchGeo**(`countryID`, `admin_levels`): `Promise`\<`any`\>
 
 Asynchronous function to download geoobjects.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `countryID` | `string` | ID of country |
-| `admin_levels` | `number`[] | Array of levels to be downloaded. |
+• **countryID**: `string`
+
+ID of country
+
+• **admin\_levels**: `number`[]
+
+Array of levels to be downloaded.
 
 #### Returns
 
@@ -500,15 +449,15 @@ Asynchronous function to download geoobjects.
 
 Promise
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:403](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L403)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:403](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L403)
 
-___
+***
 
-### fetchHandle
+### fetchHandle()
 
-▸ **fetchHandle**(): `void`
+> **fetchHandle**(): `void`
 
 Call back function for start of download.
 
@@ -516,15 +465,15 @@ Call back function for start of download.
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:209](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L209)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:209](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L209)
 
-___
+***
 
-### filterGeo
+### filterGeo()
 
-▸ **filterGeo**(): `void`
+> `protected` **filterGeo**(): `void`
 
 Filters and simplify downloaded data.
 
@@ -532,15 +481,15 @@ Filters and simplify downloaded data.
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:458](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L458)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:458](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L458)
 
-___
+***
 
-### generateHierarchy
+### generateHierarchy()
 
-▸ **generateHierarchy**(): `void`
+> `protected` **generateHierarchy**(): `void`
 
 Automatic generator of hierarchy definition.
 
@@ -548,15 +497,15 @@ Automatic generator of hierarchy definition.
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:497](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L497)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:497](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L497)
 
-___
+***
 
-### generateHierarchyEdit
+### generateHierarchyEdit()
 
-▸ **generateHierarchyEdit**(): `void`
+> `protected` **generateHierarchyEdit**(): `void`
 
 Generate hierarchy editation interface
 
@@ -564,38 +513,37 @@ Generate hierarchy editation interface
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:275](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L275)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:275](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L275)
 
-___
+***
 
-### getParent
+### getParent()
 
-▸ **getParent**(`centerCHild`, `iterator`): `string`
+> `protected` **getParent**(`centerCHild`, `iterator`): `string`
 
 Function to reslove childs parent in automatic generating of hierarchy.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `centerCHild` | `Feature`\<`Geometry` \| `GeometryCollection`, `Properties`\> |
-| `iterator` | `number` |
+• **centerCHild**: `Feature`
+
+• **iterator**: `number`
 
 #### Returns
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:545](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L545)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:545](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L545)
 
-___
+***
 
-### getSelectedValuesFromMutliple
+### getSelectedValuesFromMutliple()
 
-▸ **getSelectedValuesFromMutliple**(): `string`[]
+> `protected` **getSelectedValuesFromMutliple**(): `string`[]
 
 Returns selected administrative levels.
 
@@ -603,41 +551,39 @@ Returns selected administrative levels.
 
 `string`[]
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:386](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L386)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:386](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L386)
 
-___
+***
 
-### getSimplifyScaled
+### getSimplifyScaled()
 
-▸ **getSimplifyScaled**(`input`): `number`
+> `protected` **getSimplifyScaled**(`input`): `number`
 
 From input number (0 - 10) converts to coefficient of simplification compatible with
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `input` | `number` |
+• **input**: `number`
 
 #### Returns
 
 `number`
 
-**`Turf`**
+#### Turf
 
 funciton.
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:730](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L730)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:730](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L730)
 
-___
+***
 
-### makeIDsPretty
+### makeIDsPretty()
 
-▸ **makeIDsPretty**(): `void`
+> `protected` **makeIDsPretty**(): `void`
 
 Generate new IDs for geoobjects.
 
@@ -645,15 +591,15 @@ Generate new IDs for geoobjects.
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:581](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L581)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:581](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L581)
 
-___
+***
 
-### mergeToGeo
+### mergeToGeo()
 
-▸ **mergeToGeo**(): `string`
+> `protected` **mergeToGeo**(): `string`
 
 Merge all administrative layers in one GeoJSON
 
@@ -661,15 +607,15 @@ Merge all administrative layers in one GeoJSON
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:611](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L611)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:611](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L611)
 
-___
+***
 
-### previewCleaner
+### previewCleaner()
 
-▸ **previewCleaner**(): `void`
+> `private` **previewCleaner**(): `void`
 
 Method to hide all previewed objects.
 
@@ -677,63 +623,60 @@ Method to hide all previewed objects.
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:196](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L196)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:196](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L196)
 
-___
+***
 
-### simplifyDisable
+### simplifyDisable()
 
-▸ **simplifyDisable**(): `void`
+> **simplifyDisable**(): `void`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:717](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L717)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:717](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L717)
 
-___
+***
 
-### simplifyFeature
+### simplifyFeature()
 
-▸ **simplifyFeature**(`feature`, `simplifyIndex?`): `Feature`\<`Geometry`, `GeoJsonProperties`\>
+> `protected` **simplifyFeature**(`feature`, `simplifyIndex`?): `Feature`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `feature` | `AllGeoJSON` |
-| `simplifyIndex?` | `number` |
+• **feature**: `AllGeoJSON`
+
+• **simplifyIndex?**: `number`
 
 #### Returns
 
-`Feature`\<`Geometry`, `GeoJsonProperties`\>
+`Feature`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:643](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L643)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:643](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L643)
 
-___
+***
 
-### togglePreview
+### togglePreview()
 
-▸ **togglePreview**(`level`): `void`
+> `protected` **togglePreview**(`level`): `void`
 
 Show or clear prewiev of downloaded data.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `level` | `number` |
+• **level**: `number`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:313](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L313)
+[tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts:313](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/geo-downloader/model/internal/form/GeoDownloaderToolMapControl.ts#L313)

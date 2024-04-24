@@ -1,47 +1,43 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IFilterFormInputValue
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IFilterFormInputValue
 
 # Interface: IFilterFormInputValue
 
 This interface declares specification of the filter form input value.
 
-**`Author`**
+## Author
 
 Jiri Hynek
-
-## Table of contents
-
-### Properties
-
-- [data](IFilterFormInputValue.md#data)
-- [op](IFilterFormInputValue.md#op)
-- [val](IFilterFormInputValue.md#val)
 
 ## Properties
 
 ### data
 
-• **data**: `string`
+> **data**: `string`
 
-#### Defined in
+#### Source
 
-[src/model/types/inputs/filter/IFilterFormInputValue.ts:7](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/inputs/filter/IFilterFormInputValue.ts#L7)
+[model/types/inputs/filter/IFilterFormInputValue.ts:7](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/inputs/filter/IFilterFormInputValue.ts#L7)
 
-___
+***
 
 ### op
 
-• **op**: `string`
+> **op**: `string`
 
-#### Defined in
+#### Source
 
-[src/model/types/inputs/filter/IFilterFormInputValue.ts:8](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/inputs/filter/IFilterFormInputValue.ts#L8)
+[model/types/inputs/filter/IFilterFormInputValue.ts:8](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/inputs/filter/IFilterFormInputValue.ts#L8)
 
-___
+***
 
 ### val
 
-• **val**: `string`
+> **val**: `string`
 
-#### Defined in
+#### Source
 
-[src/model/types/inputs/filter/IFilterFormInputValue.ts:9](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/inputs/filter/IFilterFormInputValue.ts#L9)
+[model/types/inputs/filter/IFilterFormInputValue.ts:9](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/inputs/filter/IFilterFormInputValue.ts#L9)

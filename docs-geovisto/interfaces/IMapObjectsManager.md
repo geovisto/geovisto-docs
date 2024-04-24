@@ -1,71 +1,50 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IMapObjectsManager
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IMapObjectsManager
 
 # Interface: IMapObjectsManager\<T\>
 
 This interface declares functions for using map objects which can be identified by uniquie string.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
+## Extended by
+
+- [`IMapToolsManager`](IMapToolsManager.md)
+
 ## Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends [`IMapObject`](IMapObject.md) |
-
-## Hierarchy
-
-- **`IMapObjectsManager`**
-
-  ↳ [`IMapToolsManager`](IMapToolsManager.md)
-
-## Implemented by
-
-- [`MapObjectsManager`](../classes/MapObjectsManager.md)
-
-## Table of contents
-
-### Methods
-
-- [add](IMapObjectsManager.md#add)
-- [getAll](IMapObjectsManager.md#getall)
-- [getById](IMapObjectsManager.md#getbyid)
-- [getByType](IMapObjectsManager.md#getbytype)
-- [getIds](IMapObjectsManager.md#getids)
-- [getTypes](IMapObjectsManager.md#gettypes)
-- [isEmpty](IMapObjectsManager.md#isempty)
-- [remove](IMapObjectsManager.md#remove)
-- [removeById](IMapObjectsManager.md#removebyid)
-- [size](IMapObjectsManager.md#size)
+• **T** *extends* [`IMapObject`](IMapObject.md)
 
 ## Methods
 
-### add
+### add()
 
-▸ **add**(`object`): `void`
+> **add**(`object`): `void`
 
 It adds object to the list of objects.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `object` | `T` |
+• **object**: `T`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectsManager.ts:30](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectsManager.ts#L30)
+[model/types/object/IMapObjectsManager.ts:30](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectsManager.ts#L30)
 
-___
+***
 
-### getAll
+### getAll()
 
-▸ **getAll**(): `T`[]
+> **getAll**(): `T`[]
 
 The function returns available map objects.
 
@@ -73,59 +52,55 @@ The function returns available map objects.
 
 `T`[]
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectsManager.ts:13](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectsManager.ts#L13)
+[model/types/object/IMapObjectsManager.ts:13](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectsManager.ts#L13)
 
-___
+***
 
-### getById
+### getById()
 
-▸ **getById**(`id`): `undefined` \| `T`
+> **getById**(`id`): `undefined` \| `T`
 
 The function returns map object of given unique identifier.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `id` | `string` |
+• **id**: `string`
 
 #### Returns
 
 `undefined` \| `T`
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectsManager.ts:68](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectsManager.ts#L68)
+[model/types/object/IMapObjectsManager.ts:68](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectsManager.ts#L68)
 
-___
+***
 
-### getByType
+### getByType()
 
-▸ **getByType**(`type`): `T`[]
+> **getByType**(`type`): `T`[]
 
 The function returns map objects of given type.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `type` | `string` |
+• **type**: `string`
 
 #### Returns
 
 `T`[]
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectsManager.ts:61](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectsManager.ts#L61)
+[model/types/object/IMapObjectsManager.ts:61](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectsManager.ts#L61)
 
-___
+***
 
-### getIds
+### getIds()
 
-▸ **getIds**(): `string`[]
+> **getIds**(): `string`[]
 
 Help function which returns the list of object string identifiers.
 
@@ -133,15 +108,15 @@ Help function which returns the list of object string identifiers.
 
 `string`[]
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectsManager.ts:54](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectsManager.ts#L54)
+[model/types/object/IMapObjectsManager.ts:54](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectsManager.ts#L54)
 
-___
+***
 
-### getTypes
+### getTypes()
 
-▸ **getTypes**(): `string`[]
+> **getTypes**(): `string`[]
 
 Help function which returns the list of object string types.
 
@@ -149,15 +124,15 @@ Help function which returns the list of object string types.
 
 `string`[]
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectsManager.ts:49](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectsManager.ts#L49)
+[model/types/object/IMapObjectsManager.ts:49](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectsManager.ts#L49)
 
-___
+***
 
-### isEmpty
+### isEmpty()
 
-▸ **isEmpty**(): `boolean`
+> **isEmpty**(): `boolean`
 
 The function returns true if size() is 0.
 
@@ -165,59 +140,55 @@ The function returns true if size() is 0.
 
 `boolean`
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectsManager.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectsManager.ts#L23)
+[model/types/object/IMapObjectsManager.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectsManager.ts#L23)
 
-___
+***
 
-### remove
+### remove()
 
-▸ **remove**(`object`): `void`
+> **remove**(`object`): `void`
 
 It removes object from the list of objects.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `object` | `T` |
+• **object**: `T`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectsManager.ts:37](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectsManager.ts#L37)
+[model/types/object/IMapObjectsManager.ts:37](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectsManager.ts#L37)
 
-___
+***
 
-### removeById
+### removeById()
 
-▸ **removeById**(`id`): `void`
+> **removeById**(`id`): `void`
 
 It removes object of the given id from the list of objects.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `id` | `string` |
+• **id**: `string`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectsManager.ts:44](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectsManager.ts#L44)
+[model/types/object/IMapObjectsManager.ts:44](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectsManager.ts#L44)
 
-___
+***
 
-### size
+### size()
 
-▸ **size**(): `number`
+> **size**(): `number`
 
 The function returns the number of objects.
 
@@ -225,6 +196,6 @@ The function returns the number of objects.
 
 `number`
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectsManager.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectsManager.ts#L18)
+[model/types/object/IMapObjectsManager.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectsManager.ts#L18)

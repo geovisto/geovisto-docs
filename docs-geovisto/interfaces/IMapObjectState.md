@@ -1,77 +1,60 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IMapObjectState
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IMapObjectState
 
 # Interface: IMapObjectState\<TProps, TDefaults, TConfig, TInitProps\>
 
 This interface declares the state of a map object.
 It wraps the state since the map object can work with state objects which needs to be explicitly serialized.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
+## Extended by
+
+- [`IMapState`](IMapState.md)
+- [`IMapToolState`](IMapToolState.md)
+- [`ISidebarFragmentState`](ISidebarFragmentState.md)
+- [`ISidebarTabState`](ISidebarTabState.md)
+
 ## Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `TProps` | extends [`IMapObjectProps`](../modules.md#imapobjectprops) = [`IMapObjectProps`](../modules.md#imapobjectprops) |
-| `TDefaults` | extends [`IMapObjectDefaults`](IMapObjectDefaults.md) = [`IMapObjectDefaults`](IMapObjectDefaults.md) |
-| `TConfig` | extends [`IMapObjectConfig`](../modules.md#imapobjectconfig) = [`IMapObjectConfig`](../modules.md#imapobjectconfig) |
-| `TInitProps` | extends [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<`TConfig`\> = [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<`TConfig`\> |
+• **TProps** *extends* [`IMapObjectProps`](../type-aliases/IMapObjectProps.md) = [`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
-## Hierarchy
+• **TDefaults** *extends* [`IMapObjectDefaults`](IMapObjectDefaults.md) = [`IMapObjectDefaults`](IMapObjectDefaults.md)
 
-- **`IMapObjectState`**
+• **TConfig** *extends* [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md) = [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)
 
-  ↳ [`IMapState`](IMapState.md)
-
-  ↳ [`IMapToolState`](IMapToolState.md)
-
-  ↳ [`ISidebarFragmentState`](ISidebarFragmentState.md)
-
-  ↳ [`ISidebarTabState`](ISidebarTabState.md)
-
-## Implemented by
-
-- [`MapObjectState`](../classes/MapObjectState.md)
-
-## Table of contents
-
-### Methods
-
-- [deserialize](IMapObjectState.md#deserialize)
-- [getId](IMapObjectState.md#getid)
-- [getType](IMapObjectState.md#gettype)
-- [initialize](IMapObjectState.md#initialize)
-- [serialize](IMapObjectState.md#serialize)
-- [setId](IMapObjectState.md#setid)
+• **TInitProps** *extends* [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<`TConfig`\> = [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<`TConfig`\>
 
 ## Methods
 
-### deserialize
+### deserialize()
 
-▸ **deserialize**(`config`): `void`
+> **deserialize**(`config`): `void`
 
 The metod takes config and deserializes the values.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `config` | `TConfig` |
+• **config**: `TConfig`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectState.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectState.ts#L32)
+[model/types/object/IMapObjectState.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectState.ts#L32)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 It returns the id property of the map object state.
 
@@ -79,15 +62,15 @@ It returns the id property of the map object state.
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectState.ts:49](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectState.ts#L49)
+[model/types/object/IMapObjectState.ts:49](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectState.ts#L49)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 It returns the type property of the map object state.
 
@@ -95,75 +78,71 @@ It returns the type property of the map object state.
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectState.ts:44](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectState.ts#L44)
+[model/types/object/IMapObjectState.ts:44](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectState.ts#L44)
 
-___
+***
 
-### initialize
+### initialize()
 
-▸ **initialize**(`defaults`, `props`, `initProps`): `void`
+> **initialize**(`defaults`, `props`, `initProps`): `void`
 
 It resets the state to the initial state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `defaults` | `TDefaults` |
-| `props` | `TProps` |
-| `initProps` | `TInitProps` |
+• **defaults**: `TDefaults`
+
+• **props**: `TProps`
+
+• **initProps**: `TInitProps`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectState.ts:25](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectState.ts#L25)
+[model/types/object/IMapObjectState.ts:25](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectState.ts#L25)
 
-___
+***
 
-### serialize
+### serialize()
 
-▸ **serialize**(`defaults`): `TConfig`
+> **serialize**(`defaults`): `TConfig`
 
 The method serializes the map object state. Optionally, a serialized value can be let undefined if it equals the default value.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `defaults` | `undefined` \| `TDefaults` |
+• **defaults**: `undefined` \| `TDefaults`
 
 #### Returns
 
 `TConfig`
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectState.ts:39](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectState.ts#L39)
+[model/types/object/IMapObjectState.ts:39](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectState.ts#L39)
 
-___
+***
 
-### setId
+### setId()
 
-▸ **setId**(`id`): `void`
+> **setId**(`id`): `void`
 
 It sets the id property of the map object state.
 It can be set only once.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `id` | `string` |
+• **id**: `string`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectState.ts:57](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectState.ts#L57)
+[model/types/object/IMapObjectState.ts:57](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectState.ts#L57)

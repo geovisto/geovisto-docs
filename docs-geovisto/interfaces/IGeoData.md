@@ -1,75 +1,62 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IGeoData
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IGeoData
 
 # Interface: IGeoData
 
 The interface declares functions for management of geographical data.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`IMapDomain`](IMapDomain.md)
 
-  ↳ **`IGeoData`**
-
-## Implemented by
-
-- [`GeoJsonData`](../classes/GeoJsonData.md)
-
-## Table of contents
-
-### Methods
-
-- [getFeatures](IGeoData.md#getfeatures)
-- [getGeoJSON](IGeoData.md#getgeojson)
-- [getName](IGeoData.md#getname)
-- [getOriginalGeoData](IGeoData.md#getoriginalgeodata)
-
 ## Methods
 
-### getFeatures
+### getFeatures()
 
-▸ **getFeatures**(`type`): `FeatureCollection`\<`Geometry`, `GeoJsonProperties`\>
+> **getFeatures**(`type`): `FeatureCollection`
 
 It returns the array of features of specific type.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `type` | `string`[] |
+• **type**: `string`[]
 
 #### Returns
 
-`FeatureCollection`\<`Geometry`, `GeoJsonProperties`\>
+`FeatureCollection`
 
-#### Defined in
+#### Source
 
-[src/model/types/geodata/IGeoData.ts:29](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/geodata/IGeoData.ts#L29)
+[model/types/geodata/IGeoData.ts:29](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/geodata/IGeoData.ts#L29)
 
-___
+***
 
-### getGeoJSON
+### getGeoJSON()
 
-▸ **getGeoJSON**(): `FeatureCollection`\<`Geometry`, `GeoJsonProperties`\>
+> **getGeoJSON**(): `FeatureCollection`
 
 It returns the original representation of data domain.
 
 #### Returns
 
-`FeatureCollection`\<`Geometry`, `GeoJsonProperties`\>
+`FeatureCollection`
 
-#### Defined in
+#### Source
 
-[src/model/types/geodata/IGeoData.ts:22](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/geodata/IGeoData.ts#L22)
+[model/types/geodata/IGeoData.ts:22](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/geodata/IGeoData.ts#L22)
 
-___
+***
 
-### getName
+### getName()
 
-▸ **getName**(): `string`
+> **getName**(): `string`
 
 It returns the name of the map domain.
 
@@ -79,17 +66,17 @@ It returns the name of the map domain.
 
 #### Inherited from
 
-[IMapDomain](IMapDomain.md).[getName](IMapDomain.md#getname)
+[`IMapDomain`](IMapDomain.md).[`getName`](IMapDomain.md#getname)
 
-#### Defined in
+#### Source
 
-[src/model/types/domain/IMapDomain.ts:11](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/domain/IMapDomain.ts#L11)
+[model/types/domain/IMapDomain.ts:11](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/domain/IMapDomain.ts#L11)
 
-___
+***
 
-### getOriginalGeoData
+### getOriginalGeoData()
 
-▸ **getOriginalGeoData**(): `unknown`
+> **getOriginalGeoData**(): `unknown`
 
 It returns the original source of geographical data.
 
@@ -97,6 +84,6 @@ It returns the original source of geographical data.
 
 `unknown`
 
-#### Defined in
+#### Source
 
-[src/model/types/geodata/IGeoData.ts:17](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/geodata/IGeoData.ts#L17)
+[model/types/geodata/IGeoData.ts:17](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/geodata/IGeoData.ts#L17)

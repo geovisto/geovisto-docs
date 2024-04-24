@@ -1,62 +1,36 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / FiltersToolMapForm
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / FiltersToolMapForm
 
 # Class: FiltersToolMapForm
 
 This class provides controls for management of filters map form inputs.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`MapObjectForm`](MapObjectForm.md)\<[`IFiltersTool`](../interfaces/IFiltersTool.md)\>
-
-  ↳ **`FiltersToolMapForm`**
 
 ## Implements
 
 - [`IMapForm`](../interfaces/IMapForm.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](FiltersToolMapForm.md#constructor)
-
-### Properties
-
-- [btnGroup](FiltersToolMapForm.md#btngroup)
-- [htmlContent](FiltersToolMapForm.md#htmlcontent)
-- [inputs](FiltersToolMapForm.md#inputs)
-
-### Methods
-
-- [addSelectItem](FiltersToolMapForm.md#addselectitem)
-- [dimensionInputChangedAction](FiltersToolMapForm.md#dimensioninputchangedaction)
-- [getContent](FiltersToolMapForm.md#getcontent)
-- [getDataManager](FiltersToolMapForm.md#getdatamanager)
-- [getFilterManager](FiltersToolMapForm.md#getfiltermanager)
-- [getFilterRuleElementClass](FiltersToolMapForm.md#getfilterruleelementclass)
-- [getFilterRules](FiltersToolMapForm.md#getfilterrules)
-- [getMapObject](FiltersToolMapForm.md#getmapobject)
-- [inputChangedAction](FiltersToolMapForm.md#inputchangedaction)
-- [removeSelectItem](FiltersToolMapForm.md#removeselectitem)
-- [setFilterRules](FiltersToolMapForm.md#setfilterrules)
-
 ## Constructors
 
-### constructor
+### new FiltersToolMapForm()
 
-• **new FiltersToolMapForm**(`tool`): [`FiltersToolMapForm`](FiltersToolMapForm.md)
+> **new FiltersToolMapForm**(`tool`): [`FiltersToolMapForm`](FiltersToolMapForm.md)
 
 It creates new map form with respect to the given props.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `tool` | [`IFiltersTool`](../interfaces/IFiltersTool.md)\<[`IFiltersToolProps`](../modules.md#ifilterstoolprops), [`IFiltersToolDefaults`](../interfaces/IFiltersToolDefaults.md), [`IFiltersToolState`](../interfaces/IFiltersToolState.md)\<[`IFiltersToolProps`](../modules.md#ifilterstoolprops), [`IFiltersToolDefaults`](../interfaces/IFiltersToolDefaults.md), [`IFiltersToolConfig`](../modules.md#ifilterstoolconfig)\>, [`IFiltersToolConfig`](../modules.md#ifilterstoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IFiltersToolConfig`](../modules.md#ifilterstoolconfig)\>\> |
+• **tool**: [`IFiltersTool`](../interfaces/IFiltersTool.md)\<[`IFiltersToolProps`](../type-aliases/IFiltersToolProps.md), [`IFiltersToolDefaults`](../interfaces/IFiltersToolDefaults.md), [`IFiltersToolState`](../interfaces/IFiltersToolState.md)\<[`IFiltersToolProps`](../type-aliases/IFiltersToolProps.md), [`IFiltersToolDefaults`](../interfaces/IFiltersToolDefaults.md), [`IFiltersToolConfig`](../type-aliases/IFiltersToolConfig.md)\>, [`IFiltersToolConfig`](../type-aliases/IFiltersToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IFiltersToolConfig`](../type-aliases/IFiltersToolConfig.md)\>\>
 
 #### Returns
 
@@ -64,65 +38,65 @@ It creates new map form with respect to the given props.
 
 #### Overrides
 
-[MapObjectForm](MapObjectForm.md).[constructor](MapObjectForm.md#constructor)
+[`MapObjectForm`](MapObjectForm.md).[`constructor`](MapObjectForm.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/tools/filters/model/internal/form/FiltersToolMapForm.ts:45](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/filters/model/internal/form/FiltersToolMapForm.ts#L45)
+[tools/filters/model/internal/form/FiltersToolMapForm.ts:45](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/filters/model/internal/form/FiltersToolMapForm.ts#L45)
 
 ## Properties
 
 ### btnGroup
 
-• `Private` **btnGroup**: ``null`` \| `HTMLDivElement`
+> `private` **btnGroup**: `null` \| `HTMLDivElement`
 
-#### Defined in
+#### Source
 
-[src/tools/filters/model/internal/form/FiltersToolMapForm.ts:37](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/filters/model/internal/form/FiltersToolMapForm.ts#L37)
+[tools/filters/model/internal/form/FiltersToolMapForm.ts:37](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/filters/model/internal/form/FiltersToolMapForm.ts#L37)
 
-___
+***
 
 ### htmlContent
 
-• `Private` **htmlContent**: `HTMLDivElement`
+> `private` **htmlContent**: `HTMLDivElement`
 
 TODO: exclude class variables to the defaults and state.
 
-#### Defined in
+#### Source
 
-[src/tools/filters/model/internal/form/FiltersToolMapForm.ts:36](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/filters/model/internal/form/FiltersToolMapForm.ts#L36)
+[tools/filters/model/internal/form/FiltersToolMapForm.ts:36](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/filters/model/internal/form/FiltersToolMapForm.ts#L36)
 
-___
+***
 
 ### inputs
 
-• `Private` **inputs**: `InputItem`[]
+> `private` **inputs**: `InputItem`[]
 
-#### Defined in
+#### Source
 
-[src/tools/filters/model/internal/form/FiltersToolMapForm.ts:38](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/filters/model/internal/form/FiltersToolMapForm.ts#L38)
+[tools/filters/model/internal/form/FiltersToolMapForm.ts:38](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/filters/model/internal/form/FiltersToolMapForm.ts#L38)
 
 ## Methods
 
-### addSelectItem
+### addSelectItem()
 
-▸ **addSelectItem**(): ``null`` \| `InputItem`
+> `protected` **addSelectItem**(): `null` \| `InputItem`
 
 Help static function which adds new select item to the filter map form.
 
 #### Returns
 
-``null`` \| `InputItem`
+`null` \| `InputItem`
 
-#### Defined in
+#### Source
 
-[src/tools/filters/model/internal/form/FiltersToolMapForm.ts:109](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/filters/model/internal/form/FiltersToolMapForm.ts#L109)
+[tools/filters/model/internal/form/FiltersToolMapForm.ts:109](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/filters/model/internal/form/FiltersToolMapForm.ts#L109)
 
-___
+***
 
-### dimensionInputChangedAction
+### dimensionInputChangedAction()
 
-▸ **dimensionInputChangedAction**(): `void`
+> `protected` **dimensionInputChangedAction**(): `void`
 
 It updates input values according to the selection.
 
@@ -130,15 +104,15 @@ It updates input values according to the selection.
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/filters/model/internal/form/FiltersToolMapForm.ts:246](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/filters/model/internal/form/FiltersToolMapForm.ts#L246)
+[tools/filters/model/internal/form/FiltersToolMapForm.ts:246](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/filters/model/internal/form/FiltersToolMapForm.ts#L246)
 
-___
+***
 
-### getContent
+### getContent()
 
-▸ **getContent**(): `HTMLDivElement`
+> **getContent**(): `HTMLDivElement`
 
 It returns a HTML div element conatining the form.
 
@@ -148,21 +122,21 @@ It returns a HTML div element conatining the form.
 
 #### Implementation of
 
-[IMapForm](../interfaces/IMapForm.md).[getContent](../interfaces/IMapForm.md#getcontent)
+[`IMapForm`](../interfaces/IMapForm.md).[`getContent`](../interfaces/IMapForm.md#getcontent)
 
 #### Overrides
 
-[MapObjectForm](MapObjectForm.md).[getContent](MapObjectForm.md#getcontent)
+[`MapObjectForm`](MapObjectForm.md).[`getContent`](MapObjectForm.md#getcontent)
 
-#### Defined in
+#### Source
 
-[src/tools/filters/model/internal/form/FiltersToolMapForm.ts:79](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/filters/model/internal/form/FiltersToolMapForm.ts#L79)
+[tools/filters/model/internal/form/FiltersToolMapForm.ts:79](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/filters/model/internal/form/FiltersToolMapForm.ts#L79)
 
-___
+***
 
-### getDataManager
+### getDataManager()
 
-▸ **getDataManager**(): `undefined` \| [`IMapDataManager`](../interfaces/IMapDataManager.md)
+> `protected` **getDataManager**(): `undefined` \| [`IMapDataManager`](../interfaces/IMapDataManager.md)
 
 A help function which returns data manager
 
@@ -170,15 +144,15 @@ A help function which returns data manager
 
 `undefined` \| [`IMapDataManager`](../interfaces/IMapDataManager.md)
 
-#### Defined in
+#### Source
 
-[src/tools/filters/model/internal/form/FiltersToolMapForm.ts:55](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/filters/model/internal/form/FiltersToolMapForm.ts#L55)
+[tools/filters/model/internal/form/FiltersToolMapForm.ts:55](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/filters/model/internal/form/FiltersToolMapForm.ts#L55)
 
-___
+***
 
-### getFilterManager
+### getFilterManager()
 
-▸ **getFilterManager**(): [`IMapFilterManager`](../interfaces/IMapFilterManager.md)
+> `protected` **getFilterManager**(): [`IMapFilterManager`](../interfaces/IMapFilterManager.md)
 
 A help function which returns data manager
 
@@ -186,37 +160,35 @@ A help function which returns data manager
 
 [`IMapFilterManager`](../interfaces/IMapFilterManager.md)
 
-#### Defined in
+#### Source
 
-[src/tools/filters/model/internal/form/FiltersToolMapForm.ts:62](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/filters/model/internal/form/FiltersToolMapForm.ts#L62)
+[tools/filters/model/internal/form/FiltersToolMapForm.ts:62](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/filters/model/internal/form/FiltersToolMapForm.ts#L62)
 
-___
+***
 
-### getFilterRuleElementClass
+### getFilterRuleElementClass()
 
-▸ **getFilterRuleElementClass**(`objectType`): `string`
+> `protected` **getFilterRuleElementClass**(`objectType`): `string`
 
 A help function which returns the element class.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `objectType` | `undefined` \| `string` |
+• **objectType**: `undefined` \| `string`
 
 #### Returns
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/tools/filters/model/internal/form/FiltersToolMapForm.ts:69](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/filters/model/internal/form/FiltersToolMapForm.ts#L69)
+[tools/filters/model/internal/form/FiltersToolMapForm.ts:69](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/filters/model/internal/form/FiltersToolMapForm.ts#L69)
 
-___
+***
 
-### getFilterRules
+### getFilterRules()
 
-▸ **getFilterRules**(): [`IMapFilterRule`](../interfaces/IMapFilterRule.md)[]
+> `protected` **getFilterRules**(): [`IMapFilterRule`](../interfaces/IMapFilterRule.md)[]
 
 It returns selected values from input fields and constructs filter rules.
 
@@ -224,33 +196,33 @@ It returns selected values from input fields and constructs filter rules.
 
 [`IMapFilterRule`](../interfaces/IMapFilterRule.md)[]
 
-#### Defined in
+#### Source
 
-[src/tools/filters/model/internal/form/FiltersToolMapForm.ts:253](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/filters/model/internal/form/FiltersToolMapForm.ts#L253)
+[tools/filters/model/internal/form/FiltersToolMapForm.ts:253](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/filters/model/internal/form/FiltersToolMapForm.ts#L253)
 
-___
+***
 
-### getMapObject
+### getMapObject()
 
-▸ **getMapObject**(): [`IFiltersTool`](../interfaces/IFiltersTool.md)\<[`IFiltersToolProps`](../modules.md#ifilterstoolprops), [`IFiltersToolDefaults`](../interfaces/IFiltersToolDefaults.md), [`IFiltersToolState`](../interfaces/IFiltersToolState.md)\<[`IFiltersToolProps`](../modules.md#ifilterstoolprops), [`IFiltersToolDefaults`](../interfaces/IFiltersToolDefaults.md), [`IFiltersToolConfig`](../modules.md#ifilterstoolconfig)\>, [`IFiltersToolConfig`](../modules.md#ifilterstoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IFiltersToolConfig`](../modules.md#ifilterstoolconfig)\>\>
+> `protected` **getMapObject**(): [`IFiltersTool`](../interfaces/IFiltersTool.md)\<[`IFiltersToolProps`](../type-aliases/IFiltersToolProps.md), [`IFiltersToolDefaults`](../interfaces/IFiltersToolDefaults.md), [`IFiltersToolState`](../interfaces/IFiltersToolState.md)\<[`IFiltersToolProps`](../type-aliases/IFiltersToolProps.md), [`IFiltersToolDefaults`](../interfaces/IFiltersToolDefaults.md), [`IFiltersToolConfig`](../type-aliases/IFiltersToolConfig.md)\>, [`IFiltersToolConfig`](../type-aliases/IFiltersToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IFiltersToolConfig`](../type-aliases/IFiltersToolConfig.md)\>\>
 
 #### Returns
 
-[`IFiltersTool`](../interfaces/IFiltersTool.md)\<[`IFiltersToolProps`](../modules.md#ifilterstoolprops), [`IFiltersToolDefaults`](../interfaces/IFiltersToolDefaults.md), [`IFiltersToolState`](../interfaces/IFiltersToolState.md)\<[`IFiltersToolProps`](../modules.md#ifilterstoolprops), [`IFiltersToolDefaults`](../interfaces/IFiltersToolDefaults.md), [`IFiltersToolConfig`](../modules.md#ifilterstoolconfig)\>, [`IFiltersToolConfig`](../modules.md#ifilterstoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IFiltersToolConfig`](../modules.md#ifilterstoolconfig)\>\>
+[`IFiltersTool`](../interfaces/IFiltersTool.md)\<[`IFiltersToolProps`](../type-aliases/IFiltersToolProps.md), [`IFiltersToolDefaults`](../interfaces/IFiltersToolDefaults.md), [`IFiltersToolState`](../interfaces/IFiltersToolState.md)\<[`IFiltersToolProps`](../type-aliases/IFiltersToolProps.md), [`IFiltersToolDefaults`](../interfaces/IFiltersToolDefaults.md), [`IFiltersToolConfig`](../type-aliases/IFiltersToolConfig.md)\>, [`IFiltersToolConfig`](../type-aliases/IFiltersToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IFiltersToolConfig`](../type-aliases/IFiltersToolConfig.md)\>\>
 
 #### Inherited from
 
-[MapObjectForm](MapObjectForm.md).[getMapObject](MapObjectForm.md#getmapobject)
+[`MapObjectForm`](MapObjectForm.md).[`getMapObject`](MapObjectForm.md#getmapobject)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapObjectForm.ts:16](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapObjectForm.ts#L16)
+[model/internal/form/MapObjectForm.ts:16](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapObjectForm.ts#L16)
 
-___
+***
 
-### inputChangedAction
+### inputChangedAction()
 
-▸ **inputChangedAction**(): `void`
+> `protected` **inputChangedAction**(): `void`
 
 It updates rules according to the input values.
 
@@ -258,50 +230,46 @@ It updates rules according to the input values.
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/filters/model/internal/form/FiltersToolMapForm.ts:239](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/filters/model/internal/form/FiltersToolMapForm.ts#L239)
+[tools/filters/model/internal/form/FiltersToolMapForm.ts:239](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/filters/model/internal/form/FiltersToolMapForm.ts#L239)
 
-___
+***
 
-### removeSelectItem
+### removeSelectItem()
 
-▸ **removeSelectItem**(`e`): `void`
+> `protected` **removeSelectItem**(`e`): `void`
 
 Help function which removes item from the filter map form.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `e` | `MouseEvent` |
+• **e**: `MouseEvent`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/filters/model/internal/form/FiltersToolMapForm.ts:220](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/filters/model/internal/form/FiltersToolMapForm.ts#L220)
+[tools/filters/model/internal/form/FiltersToolMapForm.ts:220](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/filters/model/internal/form/FiltersToolMapForm.ts#L220)
 
-___
+***
 
-### setFilterRules
+### setFilterRules()
 
-▸ **setFilterRules**(`filterRules`): `void`
+> `protected` **setFilterRules**(`filterRules`): `void`
 
 It updates input fileds according to the given filter rules.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `filterRules` | [`IMapFilterRule`](../interfaces/IMapFilterRule.md)[] |
+• **filterRules**: [`IMapFilterRule`](../interfaces/IMapFilterRule.md)[]
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/filters/model/internal/form/FiltersToolMapForm.ts:278](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/filters/model/internal/form/FiltersToolMapForm.ts#L278)
+[tools/filters/model/internal/form/FiltersToolMapForm.ts:278](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/filters/model/internal/form/FiltersToolMapForm.ts#L278)

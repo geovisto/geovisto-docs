@@ -1,55 +1,36 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / GeoJsonData
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / GeoJsonData
 
 # Class: GeoJsonData
 
 The interface declares function for management of geographical data.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`MapDomain`](MapDomain.md)
-
-  ↳ **`GeoJsonData`**
 
 ## Implements
 
 - [`IGeoData`](../interfaces/IGeoData.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](GeoJsonData.md#constructor)
-
-### Properties
-
-- [geoJSON](GeoJsonData.md#geojson)
-- [originalData](GeoJsonData.md#originaldata)
-
-### Methods
-
-- [getFeatures](GeoJsonData.md#getfeatures)
-- [getGeoJSON](GeoJsonData.md#getgeojson)
-- [getName](GeoJsonData.md#getname)
-- [getOriginalGeoData](GeoJsonData.md#getoriginalgeodata)
-- [toString](GeoJsonData.md#tostring)
-- [validateData](GeoJsonData.md#validatedata)
-
 ## Constructors
 
-### constructor
+### new GeoJsonData()
 
-• **new GeoJsonData**(`name`, `originalData`): [`GeoJsonData`](GeoJsonData.md)
+> **new GeoJsonData**(`name`, `originalData`): [`GeoJsonData`](GeoJsonData.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
-| `originalData` | `unknown` |
+• **name**: `string`
+
+• **originalData**: `unknown`
 
 #### Returns
 
@@ -57,83 +38,81 @@ Jiri Hynek
 
 #### Overrides
 
-[MapDomain](MapDomain.md).[constructor](MapDomain.md#constructor)
+[`MapDomain`](MapDomain.md).[`constructor`](MapDomain.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/model/internal/geodata/geojson/GeoJsonData.ts:17](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/geodata/geojson/GeoJsonData.ts#L17)
+[model/internal/geodata/geojson/GeoJsonData.ts:17](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/geodata/geojson/GeoJsonData.ts#L17)
 
 ## Properties
 
-### geoJSON
+### geoJSON?
 
-• `Private` `Optional` **geoJSON**: `FeatureCollection`\<`Geometry`, `GeoJsonProperties`\>
+> `private` `optional` **geoJSON**: `any`
 
-#### Defined in
+#### Source
 
-[src/model/internal/geodata/geojson/GeoJsonData.ts:15](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/geodata/geojson/GeoJsonData.ts#L15)
+[model/internal/geodata/geojson/GeoJsonData.ts:15](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/geodata/geojson/GeoJsonData.ts#L15)
 
-___
+***
 
 ### originalData
 
-• `Private` **originalData**: `unknown`
+> `private` **originalData**: `unknown`
 
-#### Defined in
+#### Source
 
-[src/model/internal/geodata/geojson/GeoJsonData.ts:14](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/geodata/geojson/GeoJsonData.ts#L14)
+[model/internal/geodata/geojson/GeoJsonData.ts:14](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/geodata/geojson/GeoJsonData.ts#L14)
 
 ## Methods
 
-### getFeatures
+### getFeatures()
 
-▸ **getFeatures**(`types`): `FeatureCollection`\<`Geometry`, `GeoJsonProperties`\>
+> **getFeatures**(`types`): `FeatureCollection`
 
 It returns the array of features of specific type.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `types` | `string`[] |
+• **types**: `string`[]
 
 #### Returns
 
-`FeatureCollection`\<`Geometry`, `GeoJsonProperties`\>
+`FeatureCollection`
 
 #### Implementation of
 
-[IGeoData](../interfaces/IGeoData.md).[getFeatures](../interfaces/IGeoData.md#getfeatures)
+[`IGeoData`](../interfaces/IGeoData.md).[`getFeatures`](../interfaces/IGeoData.md#getfeatures)
 
-#### Defined in
+#### Source
 
-[src/model/internal/geodata/geojson/GeoJsonData.ts:44](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/geodata/geojson/GeoJsonData.ts#L44)
+[model/internal/geodata/geojson/GeoJsonData.ts:44](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/geodata/geojson/GeoJsonData.ts#L44)
 
-___
+***
 
-### getGeoJSON
+### getGeoJSON()
 
-▸ **getGeoJSON**(): `FeatureCollection`\<`Geometry`, `GeoJsonProperties`\>
+> **getGeoJSON**(): `FeatureCollection`
 
 It returns the original representation of data domain.
 
 #### Returns
 
-`FeatureCollection`\<`Geometry`, `GeoJsonProperties`\>
+`FeatureCollection`
 
 #### Implementation of
 
-[IGeoData](../interfaces/IGeoData.md).[getGeoJSON](../interfaces/IGeoData.md#getgeojson)
+[`IGeoData`](../interfaces/IGeoData.md).[`getGeoJSON`](../interfaces/IGeoData.md#getgeojson)
 
-#### Defined in
+#### Source
 
-[src/model/internal/geodata/geojson/GeoJsonData.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/geodata/geojson/GeoJsonData.ts#L32)
+[model/internal/geodata/geojson/GeoJsonData.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/geodata/geojson/GeoJsonData.ts#L32)
 
-___
+***
 
-### getName
+### getName()
 
-▸ **getName**(): `string`
+> **getName**(): `string`
 
 It returns the name of the map domain.
 
@@ -143,21 +122,21 @@ It returns the name of the map domain.
 
 #### Implementation of
 
-[IGeoData](../interfaces/IGeoData.md).[getName](../interfaces/IGeoData.md#getname)
+[`IGeoData`](../interfaces/IGeoData.md).[`getName`](../interfaces/IGeoData.md#getname)
 
 #### Inherited from
 
-[MapDomain](MapDomain.md).[getName](MapDomain.md#getname)
+[`MapDomain`](MapDomain.md).[`getName`](MapDomain.md#getname)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomain.ts:21](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomain.ts#L21)
+[model/internal/domain/generic/MapDomain.ts:21](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomain.ts#L21)
 
-___
+***
 
-### getOriginalGeoData
+### getOriginalGeoData()
 
-▸ **getOriginalGeoData**(): `unknown`
+> **getOriginalGeoData**(): `unknown`
 
 It returns the original source of geographical data.
 
@@ -167,17 +146,17 @@ It returns the original source of geographical data.
 
 #### Implementation of
 
-[IGeoData](../interfaces/IGeoData.md).[getOriginalGeoData](../interfaces/IGeoData.md#getoriginalgeodata)
+[`IGeoData`](../interfaces/IGeoData.md).[`getOriginalGeoData`](../interfaces/IGeoData.md#getoriginalgeodata)
 
-#### Defined in
+#### Source
 
-[src/model/internal/geodata/geojson/GeoJsonData.ts:25](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/geodata/geojson/GeoJsonData.ts#L25)
+[model/internal/geodata/geojson/GeoJsonData.ts:25](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/geodata/geojson/GeoJsonData.ts#L25)
 
-___
+***
 
-### toString
+### toString()
 
-▸ **toString**(): `string`
+> **toString**(): `string`
 
 The string representation is equal to the name of the map domain.
 
@@ -187,32 +166,30 @@ The string representation is equal to the name of the map domain.
 
 #### Inherited from
 
-[MapDomain](MapDomain.md).[toString](MapDomain.md#tostring)
+[`MapDomain`](MapDomain.md).[`toString`](MapDomain.md#tostring)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/abstract/AbstractMapDomain.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/abstract/AbstractMapDomain.ts#L18)
+[model/internal/domain/abstract/AbstractMapDomain.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/abstract/AbstractMapDomain.ts#L18)
 
-___
+***
 
-### validateData
+### validateData()
 
-▸ **validateData**(`originalData`): `FeatureCollection`\<`Geometry`, `GeoJsonProperties`\>
+> `protected` **validateData**(`originalData`): `FeatureCollection`
 
 It transforms original data to a feature collection in the GeoJSON format.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `originalData` | `unknown` |
+• **originalData**: `unknown`
 
 #### Returns
 
-`FeatureCollection`\<`Geometry`, `GeoJsonProperties`\>
+`FeatureCollection`
 
 GeoJSON feature collection
 
-#### Defined in
+#### Source
 
-[src/model/internal/geodata/geojson/GeoJsonData.ts:66](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/geodata/geojson/GeoJsonData.ts#L66)
+[model/internal/geodata/geojson/GeoJsonData.ts:66](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/geodata/geojson/GeoJsonData.ts#L66)

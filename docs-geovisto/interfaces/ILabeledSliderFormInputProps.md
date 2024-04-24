@@ -1,86 +1,77 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / ILabeledSliderFormInputProps
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / ILabeledSliderFormInputProps
 
 # Interface: ILabeledSliderFormInputProps
 
 This interface declares specification of a form input props model.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`IMapFormInputProps`](IMapFormInputProps.md)
-
-  ↳ **`ILabeledSliderFormInputProps`**
-
-## Table of contents
-
-### Properties
-
-- [defaultValue](ILabeledSliderFormInputProps.md#defaultvalue)
-- [label](ILabeledSliderFormInputProps.md#label)
-- [maxValue](ILabeledSliderFormInputProps.md#maxvalue)
-- [minValue](ILabeledSliderFormInputProps.md#minvalue)
-- [onChangeAction](ILabeledSliderFormInputProps.md#onchangeaction)
-- [step](ILabeledSliderFormInputProps.md#step)
 
 ## Properties
 
 ### defaultValue
 
-• **defaultValue**: `string`
+> **defaultValue**: `string`
 
-#### Defined in
+#### Source
 
-[src/model/types/inputs/labeled/slider/ILabeledSliderFormInputProps.ts:11](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/inputs/labeled/slider/ILabeledSliderFormInputProps.ts#L11)
+[model/types/inputs/labeled/slider/ILabeledSliderFormInputProps.ts:11](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/inputs/labeled/slider/ILabeledSliderFormInputProps.ts#L11)
 
-___
+***
 
 ### label
 
-• **label**: `string`
+> **label**: `string`
 
-#### Defined in
+#### Source
 
-[src/model/types/inputs/labeled/slider/ILabeledSliderFormInputProps.ts:10](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/inputs/labeled/slider/ILabeledSliderFormInputProps.ts#L10)
+[model/types/inputs/labeled/slider/ILabeledSliderFormInputProps.ts:10](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/inputs/labeled/slider/ILabeledSliderFormInputProps.ts#L10)
 
-___
+***
 
 ### maxValue
 
-• **maxValue**: `string`
+> **maxValue**: `string`
 
-#### Defined in
+#### Source
 
-[src/model/types/inputs/labeled/slider/ILabeledSliderFormInputProps.ts:12](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/inputs/labeled/slider/ILabeledSliderFormInputProps.ts#L12)
+[model/types/inputs/labeled/slider/ILabeledSliderFormInputProps.ts:12](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/inputs/labeled/slider/ILabeledSliderFormInputProps.ts#L12)
 
-___
+***
 
 ### minValue
 
-• **minValue**: `string`
+> **minValue**: `string`
 
-#### Defined in
+#### Source
 
-[src/model/types/inputs/labeled/slider/ILabeledSliderFormInputProps.ts:13](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/inputs/labeled/slider/ILabeledSliderFormInputProps.ts#L13)
+[model/types/inputs/labeled/slider/ILabeledSliderFormInputProps.ts:13](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/inputs/labeled/slider/ILabeledSliderFormInputProps.ts#L13)
 
-___
+***
 
 ### onChangeAction
 
-• **onChangeAction**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `unknown`
+> **onChangeAction**: `null` \| (`this`, `ev`) => `unknown`
 
-#### Defined in
+#### Source
 
-[src/model/types/inputs/labeled/slider/ILabeledSliderFormInputProps.ts:9](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/inputs/labeled/slider/ILabeledSliderFormInputProps.ts#L9)
+[model/types/inputs/labeled/slider/ILabeledSliderFormInputProps.ts:9](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/inputs/labeled/slider/ILabeledSliderFormInputProps.ts#L9)
 
-___
+***
 
-### step
+### step?
 
-• `Optional` **step**: `number`
+> `optional` **step**: `number`
 
-#### Defined in
+#### Source
 
-[src/model/types/inputs/labeled/slider/ILabeledSliderFormInputProps.ts:14](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/inputs/labeled/slider/ILabeledSliderFormInputProps.ts#L14)
+[model/types/inputs/labeled/slider/ILabeledSliderFormInputProps.ts:14](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/inputs/labeled/slider/ILabeledSliderFormInputProps.ts#L14)

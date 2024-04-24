@@ -1,56 +1,40 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / InfoToolMapForm
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / InfoToolMapForm
 
 # Class: InfoToolMapForm
 
 This class provides controls for management of info map form inputs.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-**`Author`**
+## Author
 
 Tomas Koscielniak
 
-## Hierarchy
+## Extends
 
 - [`MapObjectForm`](MapObjectForm.md)\<[`IInfoTool`](../interfaces/IInfoTool.md)\>
-
-  ↳ **`InfoToolMapForm`**
 
 ## Implements
 
 - [`IMapForm`](../interfaces/IMapForm.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](InfoToolMapForm.md#constructor)
-
-### Properties
-
-- [htmlContent](InfoToolMapForm.md#htmlcontent)
-
-### Methods
-
-- [getContent](InfoToolMapForm.md#getcontent)
-- [getDataManager](InfoToolMapForm.md#getdatamanager)
-- [getMapObject](InfoToolMapForm.md#getmapobject)
-
 ## Constructors
 
-### constructor
+### new InfoToolMapForm()
 
-• **new InfoToolMapForm**(`tool`): [`InfoToolMapForm`](InfoToolMapForm.md)
+> **new InfoToolMapForm**(`tool`): [`InfoToolMapForm`](InfoToolMapForm.md)
 
 It creates new map form with respect to the given props.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `tool` | [`IInfoTool`](../interfaces/IInfoTool.md)\<[`IInfoToolProps`](../modules.md#iinfotoolprops), [`IInfoToolDefaults`](../interfaces/IInfoToolDefaults.md), [`IInfoToolState`](../interfaces/IInfoToolState.md)\<[`IInfoToolProps`](../modules.md#iinfotoolprops), [`IInfoToolDefaults`](../interfaces/IInfoToolDefaults.md), [`IInfoToolConfig`](../modules.md#iinfotoolconfig)\>, [`IInfoToolConfig`](../modules.md#iinfotoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IInfoToolConfig`](../modules.md#iinfotoolconfig)\>\> |
+• **tool**: [`IInfoTool`](../interfaces/IInfoTool.md)\<[`IInfoToolProps`](../type-aliases/IInfoToolProps.md), [`IInfoToolDefaults`](../interfaces/IInfoToolDefaults.md), [`IInfoToolState`](../interfaces/IInfoToolState.md)\<[`IInfoToolProps`](../type-aliases/IInfoToolProps.md), [`IInfoToolDefaults`](../interfaces/IInfoToolDefaults.md), [`IInfoToolConfig`](../type-aliases/IInfoToolConfig.md)\>, [`IInfoToolConfig`](../type-aliases/IInfoToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IInfoToolConfig`](../type-aliases/IInfoToolConfig.md)\>\>
 
 #### Returns
 
@@ -58,29 +42,29 @@ It creates new map form with respect to the given props.
 
 #### Overrides
 
-[MapObjectForm](MapObjectForm.md).[constructor](MapObjectForm.md#constructor)
+[`MapObjectForm`](MapObjectForm.md).[`constructor`](MapObjectForm.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/tools/info/model/internal/form/InfoToolMapForm.ts:33](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/info/model/internal/form/InfoToolMapForm.ts#L33)
+[tools/info/model/internal/form/InfoToolMapForm.ts:33](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/info/model/internal/form/InfoToolMapForm.ts#L33)
 
 ## Properties
 
 ### htmlContent
 
-• `Private` **htmlContent**: `HTMLDivElement`
+> `private` **htmlContent**: `HTMLDivElement`
 
 TODO: exclude class variables to the defaults and state.
 
-#### Defined in
+#### Source
 
-[src/tools/info/model/internal/form/InfoToolMapForm.ts:26](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/info/model/internal/form/InfoToolMapForm.ts#L26)
+[tools/info/model/internal/form/InfoToolMapForm.ts:26](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/info/model/internal/form/InfoToolMapForm.ts#L26)
 
 ## Methods
 
-### getContent
+### getContent()
 
-▸ **getContent**(): `HTMLDivElement`
+> **getContent**(): `HTMLDivElement`
 
 It returns a HTML div element containing the form.
 
@@ -90,21 +74,21 @@ It returns a HTML div element containing the form.
 
 #### Implementation of
 
-[IMapForm](../interfaces/IMapForm.md).[getContent](../interfaces/IMapForm.md#getcontent)
+[`IMapForm`](../interfaces/IMapForm.md).[`getContent`](../interfaces/IMapForm.md#getcontent)
 
 #### Overrides
 
-[MapObjectForm](MapObjectForm.md).[getContent](MapObjectForm.md#getcontent)
+[`MapObjectForm`](MapObjectForm.md).[`getContent`](MapObjectForm.md#getcontent)
 
-#### Defined in
+#### Source
 
-[src/tools/info/model/internal/form/InfoToolMapForm.ts:47](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/info/model/internal/form/InfoToolMapForm.ts#L47)
+[tools/info/model/internal/form/InfoToolMapForm.ts:47](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/info/model/internal/form/InfoToolMapForm.ts#L47)
 
-___
+***
 
-### getDataManager
+### getDataManager()
 
-▸ **getDataManager**(): `undefined` \| [`IMapDataManager`](../interfaces/IMapDataManager.md)
+> `protected` **getDataManager**(): `undefined` \| [`IMapDataManager`](../interfaces/IMapDataManager.md)
 
 A help function which returns data manager
 
@@ -112,24 +96,24 @@ A help function which returns data manager
 
 `undefined` \| [`IMapDataManager`](../interfaces/IMapDataManager.md)
 
-#### Defined in
+#### Source
 
-[src/tools/info/model/internal/form/InfoToolMapForm.ts:40](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/info/model/internal/form/InfoToolMapForm.ts#L40)
+[tools/info/model/internal/form/InfoToolMapForm.ts:40](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/info/model/internal/form/InfoToolMapForm.ts#L40)
 
-___
+***
 
-### getMapObject
+### getMapObject()
 
-▸ **getMapObject**(): [`IInfoTool`](../interfaces/IInfoTool.md)\<[`IInfoToolProps`](../modules.md#iinfotoolprops), [`IInfoToolDefaults`](../interfaces/IInfoToolDefaults.md), [`IInfoToolState`](../interfaces/IInfoToolState.md)\<[`IInfoToolProps`](../modules.md#iinfotoolprops), [`IInfoToolDefaults`](../interfaces/IInfoToolDefaults.md), [`IInfoToolConfig`](../modules.md#iinfotoolconfig)\>, [`IInfoToolConfig`](../modules.md#iinfotoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IInfoToolConfig`](../modules.md#iinfotoolconfig)\>\>
+> `protected` **getMapObject**(): [`IInfoTool`](../interfaces/IInfoTool.md)\<[`IInfoToolProps`](../type-aliases/IInfoToolProps.md), [`IInfoToolDefaults`](../interfaces/IInfoToolDefaults.md), [`IInfoToolState`](../interfaces/IInfoToolState.md)\<[`IInfoToolProps`](../type-aliases/IInfoToolProps.md), [`IInfoToolDefaults`](../interfaces/IInfoToolDefaults.md), [`IInfoToolConfig`](../type-aliases/IInfoToolConfig.md)\>, [`IInfoToolConfig`](../type-aliases/IInfoToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IInfoToolConfig`](../type-aliases/IInfoToolConfig.md)\>\>
 
 #### Returns
 
-[`IInfoTool`](../interfaces/IInfoTool.md)\<[`IInfoToolProps`](../modules.md#iinfotoolprops), [`IInfoToolDefaults`](../interfaces/IInfoToolDefaults.md), [`IInfoToolState`](../interfaces/IInfoToolState.md)\<[`IInfoToolProps`](../modules.md#iinfotoolprops), [`IInfoToolDefaults`](../interfaces/IInfoToolDefaults.md), [`IInfoToolConfig`](../modules.md#iinfotoolconfig)\>, [`IInfoToolConfig`](../modules.md#iinfotoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IInfoToolConfig`](../modules.md#iinfotoolconfig)\>\>
+[`IInfoTool`](../interfaces/IInfoTool.md)\<[`IInfoToolProps`](../type-aliases/IInfoToolProps.md), [`IInfoToolDefaults`](../interfaces/IInfoToolDefaults.md), [`IInfoToolState`](../interfaces/IInfoToolState.md)\<[`IInfoToolProps`](../type-aliases/IInfoToolProps.md), [`IInfoToolDefaults`](../interfaces/IInfoToolDefaults.md), [`IInfoToolConfig`](../type-aliases/IInfoToolConfig.md)\>, [`IInfoToolConfig`](../type-aliases/IInfoToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IInfoToolConfig`](../type-aliases/IInfoToolConfig.md)\>\>
 
 #### Inherited from
 
-[MapObjectForm](MapObjectForm.md).[getMapObject](MapObjectForm.md#getmapobject)
+[`MapObjectForm`](MapObjectForm.md).[`getMapObject`](MapObjectForm.md#getmapobject)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapObjectForm.ts:16](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapObjectForm.ts#L16)
+[model/internal/form/MapObjectForm.ts:16](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapObjectForm.ts#L16)

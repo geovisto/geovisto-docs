@@ -1,66 +1,36 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / SelectionToolState
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / SelectionToolState
 
 # Class: SelectionToolState
 
 This class provide functions for using selections.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`MapToolState`](MapToolState.md)
-
-  ↳ **`SelectionToolState`**
 
 ## Implements
 
 - [`ISelectionToolState`](../interfaces/ISelectionToolState.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](SelectionToolState.md#constructor)
-
-### Properties
-
-- [selection](SelectionToolState.md#selection)
-
-### Methods
-
-- [deserialize](SelectionToolState.md#deserialize)
-- [getIcon](SelectionToolState.md#geticon)
-- [getId](SelectionToolState.md#getid)
-- [getLabel](SelectionToolState.md#getlabel)
-- [getMap](SelectionToolState.md#getmap)
-- [getMapObject](SelectionToolState.md#getmapobject)
-- [getSelection](SelectionToolState.md#getselection)
-- [getType](SelectionToolState.md#gettype)
-- [initialize](SelectionToolState.md#initialize)
-- [isEnabled](SelectionToolState.md#isenabled)
-- [serialize](SelectionToolState.md#serialize)
-- [setEnabled](SelectionToolState.md#setenabled)
-- [setIcon](SelectionToolState.md#seticon)
-- [setId](SelectionToolState.md#setid)
-- [setLabel](SelectionToolState.md#setlabel)
-- [setMap](SelectionToolState.md#setmap)
-- [setSelection](SelectionToolState.md#setselection)
-
 ## Constructors
 
-### constructor
+### new SelectionToolState()
 
-• **new SelectionToolState**(`tool`): [`SelectionToolState`](SelectionToolState.md)
+> **new SelectionToolState**(`tool`): [`SelectionToolState`](SelectionToolState.md)
 
 It creates a tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `tool` | [`ISelectionTool`](../interfaces/ISelectionTool.md)\<[`ISelectionToolProps`](../modules.md#iselectiontoolprops), [`ISelectionToolDefaults`](../interfaces/ISelectionToolDefaults.md), [`ISelectionToolState`](../interfaces/ISelectionToolState.md)\<[`ISelectionToolProps`](../modules.md#iselectiontoolprops), [`ISelectionToolDefaults`](../interfaces/ISelectionToolDefaults.md), [`ISelectionToolConfig`](../modules.md#iselectiontoolconfig)\>, [`ISelectionToolConfig`](../modules.md#iselectiontoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`ISelectionToolConfig`](../modules.md#iselectiontoolconfig)\>, [`ISelectionToolAPI`](../modules.md#iselectiontoolapi)\> |
+• **tool**: [`ISelectionTool`](../interfaces/ISelectionTool.md)\<[`ISelectionToolProps`](../type-aliases/ISelectionToolProps.md), [`ISelectionToolDefaults`](../interfaces/ISelectionToolDefaults.md), [`ISelectionToolState`](../interfaces/ISelectionToolState.md)\<[`ISelectionToolProps`](../type-aliases/ISelectionToolProps.md), [`ISelectionToolDefaults`](../interfaces/ISelectionToolDefaults.md), [`ISelectionToolConfig`](../type-aliases/ISelectionToolConfig.md)\>, [`ISelectionToolConfig`](../type-aliases/ISelectionToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`ISelectionToolConfig`](../type-aliases/ISelectionToolConfig.md)\>, [`ISelectionToolAPI`](../type-aliases/ISelectionToolAPI.md)\>
 
 #### Returns
 
@@ -68,35 +38,33 @@ It creates a tool state.
 
 #### Overrides
 
-[MapToolState](MapToolState.md).[constructor](MapToolState.md#constructor)
+[`MapToolState`](MapToolState.md).[`constructor`](MapToolState.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/tools/selection/model/internal/tool/SelectionToolState.ts:28](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/selection/model/internal/tool/SelectionToolState.ts#L28)
+[tools/selection/model/internal/tool/SelectionToolState.ts:28](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/selection/model/internal/tool/SelectionToolState.ts#L28)
 
 ## Properties
 
 ### selection
 
-• `Private` **selection**: ``null`` \| [`IMapSelection`](../interfaces/IMapSelection.md)
+> `private` **selection**: `null` \| [`IMapSelection`](../interfaces/IMapSelection.md)
 
-#### Defined in
+#### Source
 
-[src/tools/selection/model/internal/tool/SelectionToolState.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/selection/model/internal/tool/SelectionToolState.ts#L23)
+[tools/selection/model/internal/tool/SelectionToolState.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/selection/model/internal/tool/SelectionToolState.ts#L23)
 
 ## Methods
 
-### deserialize
+### deserialize()
 
-▸ **deserialize**(`config`): `void`
+> **deserialize**(`config`): `void`
 
 The metod takes config and deserializes the values.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `config` | [`ISelectionToolConfig`](../modules.md#iselectiontoolconfig) |
+• **config**: [`ISelectionToolConfig`](../type-aliases/ISelectionToolConfig.md)
 
 #### Returns
 
@@ -104,21 +72,21 @@ The metod takes config and deserializes the values.
 
 #### Implementation of
 
-[ISelectionToolState](../interfaces/ISelectionToolState.md).[deserialize](../interfaces/ISelectionToolState.md#deserialize)
+[`ISelectionToolState`](../interfaces/ISelectionToolState.md).[`deserialize`](../interfaces/ISelectionToolState.md#deserialize)
 
 #### Overrides
 
-[MapToolState](MapToolState.md).[deserialize](MapToolState.md#deserialize)
+[`MapToolState`](MapToolState.md).[`deserialize`](MapToolState.md#deserialize)
 
-#### Defined in
+#### Source
 
-[src/tools/selection/model/internal/tool/SelectionToolState.ts:48](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/selection/model/internal/tool/SelectionToolState.ts#L48)
+[tools/selection/model/internal/tool/SelectionToolState.ts:48](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/selection/model/internal/tool/SelectionToolState.ts#L48)
 
-___
+***
 
-### getIcon
+### getIcon()
 
-▸ **getIcon**(): `string`
+> **getIcon**(): `string`
 
 It returns the icon property of the tool state.
 
@@ -128,21 +96,21 @@ It returns the icon property of the tool state.
 
 #### Implementation of
 
-[ISelectionToolState](../interfaces/ISelectionToolState.md).[getIcon](../interfaces/ISelectionToolState.md#geticon)
+[`ISelectionToolState`](../interfaces/ISelectionToolState.md).[`getIcon`](../interfaces/ISelectionToolState.md#geticon)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[getIcon](MapToolState.md#geticon)
+[`MapToolState`](MapToolState.md).[`getIcon`](MapToolState.md#geticon)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:120](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L120)
+[model/internal/tool/MapToolState.ts:120](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L120)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 It returns the id property of the tool state.
 
@@ -152,21 +120,21 @@ It returns the id property of the tool state.
 
 #### Implementation of
 
-[ISelectionToolState](../interfaces/ISelectionToolState.md).[getId](../interfaces/ISelectionToolState.md#getid)
+[`ISelectionToolState`](../interfaces/ISelectionToolState.md).[`getId`](../interfaces/ISelectionToolState.md#getid)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[getId](MapToolState.md#getid)
+[`MapToolState`](MapToolState.md).[`getId`](MapToolState.md#getid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:87](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L87)
+[model/internal/object/MapObjectState.ts:87](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L87)
 
-___
+***
 
-### getLabel
+### getLabel()
 
-▸ **getLabel**(): `string`
+> **getLabel**(): `string`
 
 It returns the label property of the tool state.
 
@@ -176,85 +144,85 @@ It returns the label property of the tool state.
 
 #### Implementation of
 
-[ISelectionToolState](../interfaces/ISelectionToolState.md).[getLabel](../interfaces/ISelectionToolState.md#getlabel)
+[`ISelectionToolState`](../interfaces/ISelectionToolState.md).[`getLabel`](../interfaces/ISelectionToolState.md#getlabel)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[getLabel](MapToolState.md#getlabel)
+[`MapToolState`](MapToolState.md).[`getLabel`](MapToolState.md#getlabel)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:104](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L104)
+[model/internal/tool/MapToolState.ts:104](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L104)
 
-___
+***
 
-### getMap
+### getMap()
 
-▸ **getMap**(): [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+> **getMap**(): [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 It returns the map property of the tool state.
 
 #### Returns
 
-[`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+[`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Implementation of
 
-[ISelectionToolState](../interfaces/ISelectionToolState.md).[getMap](../interfaces/ISelectionToolState.md#getmap)
+[`ISelectionToolState`](../interfaces/ISelectionToolState.md).[`getMap`](../interfaces/ISelectionToolState.md#getmap)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[getMap](MapToolState.md#getmap)
+[`MapToolState`](MapToolState.md).[`getMap`](MapToolState.md#getmap)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:136](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L136)
+[model/internal/tool/MapToolState.ts:136](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L136)
 
-___
+***
 
-### getMapObject
+### getMapObject()
 
-▸ **getMapObject**(): [`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>
+> `protected` **getMapObject**(): [`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>
 
 It makes the map object visible to extended classes.
 
 #### Returns
 
-[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>
+[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[getMapObject](MapToolState.md#getmapobject)
+[`MapToolState`](MapToolState.md).[`getMapObject`](MapToolState.md#getmapobject)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:39](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L39)
+[model/internal/object/MapObjectState.ts:39](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L39)
 
-___
+***
 
-### getSelection
+### getSelection()
 
-▸ **getSelection**(): ``null`` \| [`IMapSelection`](../interfaces/IMapSelection.md)
+> **getSelection**(): `null` \| [`IMapSelection`](../interfaces/IMapSelection.md)
 
 It returns the selection property of the tool state.
 
 #### Returns
 
-``null`` \| [`IMapSelection`](../interfaces/IMapSelection.md)
+`null` \| [`IMapSelection`](../interfaces/IMapSelection.md)
 
 #### Implementation of
 
-[ISelectionToolState](../interfaces/ISelectionToolState.md).[getSelection](../interfaces/ISelectionToolState.md#getselection)
+[`ISelectionToolState`](../interfaces/ISelectionToolState.md).[`getSelection`](../interfaces/ISelectionToolState.md#getselection)
 
-#### Defined in
+#### Source
 
-[src/tools/selection/model/internal/tool/SelectionToolState.ts:83](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/selection/model/internal/tool/SelectionToolState.ts#L83)
+[tools/selection/model/internal/tool/SelectionToolState.ts:83](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/selection/model/internal/tool/SelectionToolState.ts#L83)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 It returns the type property of the tool state.
 
@@ -264,31 +232,31 @@ It returns the type property of the tool state.
 
 #### Implementation of
 
-[ISelectionToolState](../interfaces/ISelectionToolState.md).[getType](../interfaces/ISelectionToolState.md#gettype)
+[`ISelectionToolState`](../interfaces/ISelectionToolState.md).[`getType`](../interfaces/ISelectionToolState.md#gettype)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[getType](MapToolState.md#gettype)
+[`MapToolState`](MapToolState.md).[`getType`](MapToolState.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:80](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L80)
+[model/internal/object/MapObjectState.ts:80](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L80)
 
-___
+***
 
-### initialize
+### initialize()
 
-▸ **initialize**(`defaults`, `props`, `initProps`): `void`
+> **initialize**(`defaults`, `props`, `initProps`): `void`
 
 It resets state with respect to initial props.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `defaults` | [`ISelectionToolDefaults`](../interfaces/ISelectionToolDefaults.md) |
-| `props` | [`ISelectionToolProps`](../modules.md#iselectiontoolprops) |
-| `initProps` | [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`ISelectionToolConfig`](../modules.md#iselectiontoolconfig)\> |
+• **defaults**: [`ISelectionToolDefaults`](../interfaces/ISelectionToolDefaults.md)
+
+• **props**: [`ISelectionToolProps`](../type-aliases/ISelectionToolProps.md)
+
+• **initProps**: [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`ISelectionToolConfig`](../type-aliases/ISelectionToolConfig.md)\>
 
 #### Returns
 
@@ -296,21 +264,21 @@ It resets state with respect to initial props.
 
 #### Implementation of
 
-[ISelectionToolState](../interfaces/ISelectionToolState.md).[initialize](../interfaces/ISelectionToolState.md#initialize)
+[`ISelectionToolState`](../interfaces/ISelectionToolState.md).[`initialize`](../interfaces/ISelectionToolState.md#initialize)
 
 #### Overrides
 
-[MapToolState](MapToolState.md).[initialize](MapToolState.md#initialize)
+[`MapToolState`](MapToolState.md).[`initialize`](MapToolState.md#initialize)
 
-#### Defined in
+#### Source
 
-[src/tools/selection/model/internal/tool/SelectionToolState.ts:35](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/selection/model/internal/tool/SelectionToolState.ts#L35)
+[tools/selection/model/internal/tool/SelectionToolState.ts:35](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/selection/model/internal/tool/SelectionToolState.ts#L35)
 
-___
+***
 
-### isEnabled
+### isEnabled()
 
-▸ **isEnabled**(): `boolean`
+> **isEnabled**(): `boolean`
 
 It returns the enabled property of the tool state.
 
@@ -320,59 +288,55 @@ It returns the enabled property of the tool state.
 
 #### Implementation of
 
-[ISelectionToolState](../interfaces/ISelectionToolState.md).[isEnabled](../interfaces/ISelectionToolState.md#isenabled)
+[`ISelectionToolState`](../interfaces/ISelectionToolState.md).[`isEnabled`](../interfaces/ISelectionToolState.md#isenabled)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[isEnabled](MapToolState.md#isenabled)
+[`MapToolState`](MapToolState.md).[`isEnabled`](MapToolState.md#isenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:88](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L88)
+[model/internal/tool/MapToolState.ts:88](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L88)
 
-___
+***
 
-### serialize
+### serialize()
 
-▸ **serialize**(`defaults`): [`ISelectionToolConfig`](../modules.md#iselectiontoolconfig)
+> **serialize**(`defaults`): [`ISelectionToolConfig`](../type-aliases/ISelectionToolConfig.md)
 
 The method serializes the tool state. Optionally, defaults can be set if property is undefined.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `defaults` | `undefined` \| [`ISelectionToolDefaults`](../interfaces/ISelectionToolDefaults.md) |
+• **defaults**: `undefined` \| [`ISelectionToolDefaults`](../interfaces/ISelectionToolDefaults.md)
 
 #### Returns
 
-[`ISelectionToolConfig`](../modules.md#iselectiontoolconfig)
+[`ISelectionToolConfig`](../type-aliases/ISelectionToolConfig.md)
 
 #### Implementation of
 
-[ISelectionToolState](../interfaces/ISelectionToolState.md).[serialize](../interfaces/ISelectionToolState.md#serialize)
+[`ISelectionToolState`](../interfaces/ISelectionToolState.md).[`serialize`](../interfaces/ISelectionToolState.md#serialize)
 
 #### Overrides
 
-[MapToolState](MapToolState.md).[serialize](MapToolState.md#serialize)
+[`MapToolState`](MapToolState.md).[`serialize`](MapToolState.md#serialize)
 
-#### Defined in
+#### Source
 
-[src/tools/selection/model/internal/tool/SelectionToolState.ts:65](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/selection/model/internal/tool/SelectionToolState.ts#L65)
+[tools/selection/model/internal/tool/SelectionToolState.ts:65](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/selection/model/internal/tool/SelectionToolState.ts#L65)
 
-___
+***
 
-### setEnabled
+### setEnabled()
 
-▸ **setEnabled**(`enabled`): `void`
+> **setEnabled**(`enabled`): `void`
 
 It sets the enabled property of tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `enabled` | `boolean` |
+• **enabled**: `boolean`
 
 #### Returns
 
@@ -380,29 +344,27 @@ It sets the enabled property of tool state.
 
 #### Implementation of
 
-[ISelectionToolState](../interfaces/ISelectionToolState.md).[setEnabled](../interfaces/ISelectionToolState.md#setenabled)
+[`ISelectionToolState`](../interfaces/ISelectionToolState.md).[`setEnabled`](../interfaces/ISelectionToolState.md#setenabled)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[setEnabled](MapToolState.md#setenabled)
+[`MapToolState`](MapToolState.md).[`setEnabled`](MapToolState.md#setenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:97](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L97)
+[model/internal/tool/MapToolState.ts:97](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L97)
 
-___
+***
 
-### setIcon
+### setIcon()
 
-▸ **setIcon**(`icon`): `void`
+> **setIcon**(`icon`): `void`
 
 It sets the icon property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `icon` | `string` |
+• **icon**: `string`
 
 #### Returns
 
@@ -410,29 +372,27 @@ It sets the icon property of the tool state.
 
 #### Implementation of
 
-[ISelectionToolState](../interfaces/ISelectionToolState.md).[setIcon](../interfaces/ISelectionToolState.md#seticon)
+[`ISelectionToolState`](../interfaces/ISelectionToolState.md).[`setIcon`](../interfaces/ISelectionToolState.md#seticon)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[setIcon](MapToolState.md#seticon)
+[`MapToolState`](MapToolState.md).[`setIcon`](MapToolState.md#seticon)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:129](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L129)
+[model/internal/tool/MapToolState.ts:129](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L129)
 
-___
+***
 
-### setId
+### setId()
 
-▸ **setId**(`id`): `void`
+> **setId**(`id`): `void`
 
 It sets the id property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `id` | `string` |
+• **id**: `string`
 
 #### Returns
 
@@ -440,29 +400,27 @@ It sets the id property of the tool state.
 
 #### Implementation of
 
-[ISelectionToolState](../interfaces/ISelectionToolState.md).[setId](../interfaces/ISelectionToolState.md#setid)
+[`ISelectionToolState`](../interfaces/ISelectionToolState.md).[`setId`](../interfaces/ISelectionToolState.md#setid)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[setId](MapToolState.md#setid)
+[`MapToolState`](MapToolState.md).[`setId`](MapToolState.md#setid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:96](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L96)
+[model/internal/object/MapObjectState.ts:96](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L96)
 
-___
+***
 
-### setLabel
+### setLabel()
 
-▸ **setLabel**(`label`): `void`
+> **setLabel**(`label`): `void`
 
 It sets the label property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `label` | `string` |
+• **label**: `string`
 
 #### Returns
 
@@ -470,29 +428,27 @@ It sets the label property of the tool state.
 
 #### Implementation of
 
-[ISelectionToolState](../interfaces/ISelectionToolState.md).[setLabel](../interfaces/ISelectionToolState.md#setlabel)
+[`ISelectionToolState`](../interfaces/ISelectionToolState.md).[`setLabel`](../interfaces/ISelectionToolState.md#setlabel)
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[setLabel](MapToolState.md#setlabel)
+[`MapToolState`](MapToolState.md).[`setLabel`](MapToolState.md#setlabel)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:113](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L113)
+[model/internal/tool/MapToolState.ts:113](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L113)
 
-___
+***
 
-### setMap
+### setMap()
 
-▸ **setMap**(`map`): `void`
+> `protected` **setMap**(`map`): `void`
 
 It sets the map property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `map` | [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\> |
+• **map**: [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Returns
 
@@ -500,25 +456,23 @@ It sets the map property of the tool state.
 
 #### Inherited from
 
-[MapToolState](MapToolState.md).[setMap](MapToolState.md#setmap)
+[`MapToolState`](MapToolState.md).[`setMap`](MapToolState.md#setmap)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:145](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L145)
+[model/internal/tool/MapToolState.ts:145](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L145)
 
-___
+***
 
-### setSelection
+### setSelection()
 
-▸ **setSelection**(`selection`): `void`
+> **setSelection**(`selection`): `void`
 
 It sets the selection property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `selection` | ``null`` \| [`IMapSelection`](../interfaces/IMapSelection.md) |
+• **selection**: `null` \| [`IMapSelection`](../interfaces/IMapSelection.md)
 
 #### Returns
 
@@ -526,8 +480,8 @@ It sets the selection property of the tool state.
 
 #### Implementation of
 
-[ISelectionToolState](../interfaces/ISelectionToolState.md).[setSelection](../interfaces/ISelectionToolState.md#setselection)
+[`ISelectionToolState`](../interfaces/ISelectionToolState.md).[`setSelection`](../interfaces/ISelectionToolState.md#setselection)
 
-#### Defined in
+#### Source
 
-[src/tools/selection/model/internal/tool/SelectionToolState.ts:92](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/selection/model/internal/tool/SelectionToolState.ts#L92)
+[tools/selection/model/internal/tool/SelectionToolState.ts:92](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/selection/model/internal/tool/SelectionToolState.ts#L92)

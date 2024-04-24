@@ -1,10 +1,14 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / MapFilterRule
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / MapFilterRule
 
 # Class: MapFilterRule
 
 This class wraps dataDomain, filterOperation, pattern which represents a filter rule.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
@@ -12,83 +16,65 @@ Jiri Hynek
 
 - [`IMapFilterRule`](../interfaces/IMapFilterRule.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](MapFilterRule.md#constructor)
-
-### Properties
-
-- [dataDomain](MapFilterRule.md#datadomain)
-- [operation](MapFilterRule.md#operation)
-- [pattern](MapFilterRule.md#pattern)
-
-### Methods
-
-- [getDataDomain](MapFilterRule.md#getdatadomain)
-- [getFilterOperation](MapFilterRule.md#getfilteroperation)
-- [getPattern](MapFilterRule.md#getpattern)
-
 ## Constructors
 
-### constructor
+### new MapFilterRule()
 
-• **new MapFilterRule**(`dataDomain`, `operation`, `pattern`): [`MapFilterRule`](MapFilterRule.md)
+> **new MapFilterRule**(`dataDomain`, `operation`, `pattern`): [`MapFilterRule`](MapFilterRule.md)
 
 It creates a filter rule composed of given data domain, operation and pattern.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dataDomain` | [`IMapDataDomain`](../interfaces/IMapDataDomain.md) |
-| `operation` | [`IMapFilterOperation`](../interfaces/IMapFilterOperation.md) |
-| `pattern` | `string` |
+• **dataDomain**: [`IMapDataDomain`](../interfaces/IMapDataDomain.md)
+
+• **operation**: [`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)
+
+• **pattern**: `string`
 
 #### Returns
 
 [`MapFilterRule`](MapFilterRule.md)
 
-#### Defined in
+#### Source
 
-[src/model/internal/filter/basic/MapFilterRule.ts:24](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/filter/basic/MapFilterRule.ts#L24)
+[model/internal/filter/basic/MapFilterRule.ts:24](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/filter/basic/MapFilterRule.ts#L24)
 
 ## Properties
 
 ### dataDomain
 
-• `Private` **dataDomain**: [`IMapDataDomain`](../interfaces/IMapDataDomain.md)
+> `private` **dataDomain**: [`IMapDataDomain`](../interfaces/IMapDataDomain.md)
 
-#### Defined in
+#### Source
 
-[src/model/internal/filter/basic/MapFilterRule.ts:11](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/filter/basic/MapFilterRule.ts#L11)
+[model/internal/filter/basic/MapFilterRule.ts:11](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/filter/basic/MapFilterRule.ts#L11)
 
-___
+***
 
 ### operation
 
-• `Private` **operation**: [`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)
+> `private` **operation**: [`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)
 
-#### Defined in
+#### Source
 
-[src/model/internal/filter/basic/MapFilterRule.ts:13](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/filter/basic/MapFilterRule.ts#L13)
+[model/internal/filter/basic/MapFilterRule.ts:13](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/filter/basic/MapFilterRule.ts#L13)
 
-___
+***
 
 ### pattern
 
-• `Private` **pattern**: `string`
+> `private` **pattern**: `string`
 
-#### Defined in
+#### Source
 
-[src/model/internal/filter/basic/MapFilterRule.ts:15](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/filter/basic/MapFilterRule.ts#L15)
+[model/internal/filter/basic/MapFilterRule.ts:15](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/filter/basic/MapFilterRule.ts#L15)
 
 ## Methods
 
-### getDataDomain
+### getDataDomain()
 
-▸ **getDataDomain**(): [`IMapDataDomain`](../interfaces/IMapDataDomain.md)
+> **getDataDomain**(): [`IMapDataDomain`](../interfaces/IMapDataDomain.md)
 
 It returns the the data domain which should be analyzed.
 
@@ -98,17 +84,17 @@ It returns the the data domain which should be analyzed.
 
 #### Implementation of
 
-[IMapFilterRule](../interfaces/IMapFilterRule.md).[getDataDomain](../interfaces/IMapFilterRule.md#getdatadomain)
+[`IMapFilterRule`](../interfaces/IMapFilterRule.md).[`getDataDomain`](../interfaces/IMapFilterRule.md#getdatadomain)
 
-#### Defined in
+#### Source
 
-[src/model/internal/filter/basic/MapFilterRule.ts:33](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/filter/basic/MapFilterRule.ts#L33)
+[model/internal/filter/basic/MapFilterRule.ts:33](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/filter/basic/MapFilterRule.ts#L33)
 
-___
+***
 
-### getFilterOperation
+### getFilterOperation()
 
-▸ **getFilterOperation**(): [`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)
+> **getFilterOperation**(): [`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)
 
 It returns the filter operation used for the filtering.
 
@@ -118,17 +104,17 @@ It returns the filter operation used for the filtering.
 
 #### Implementation of
 
-[IMapFilterRule](../interfaces/IMapFilterRule.md).[getFilterOperation](../interfaces/IMapFilterRule.md#getfilteroperation)
+[`IMapFilterRule`](../interfaces/IMapFilterRule.md).[`getFilterOperation`](../interfaces/IMapFilterRule.md#getfilteroperation)
 
-#### Defined in
+#### Source
 
-[src/model/internal/filter/basic/MapFilterRule.ts:40](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/filter/basic/MapFilterRule.ts#L40)
+[model/internal/filter/basic/MapFilterRule.ts:40](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/filter/basic/MapFilterRule.ts#L40)
 
-___
+***
 
-### getPattern
+### getPattern()
 
-▸ **getPattern**(): `string`
+> **getPattern**(): `string`
 
 It returns the string label of the filter representing operator given by the parameter of constructor.
 
@@ -138,8 +124,8 @@ It returns the string label of the filter representing operator given by the par
 
 #### Implementation of
 
-[IMapFilterRule](../interfaces/IMapFilterRule.md).[getPattern](../interfaces/IMapFilterRule.md#getpattern)
+[`IMapFilterRule`](../interfaces/IMapFilterRule.md).[`getPattern`](../interfaces/IMapFilterRule.md#getpattern)
 
-#### Defined in
+#### Source
 
-[src/model/internal/filter/basic/MapFilterRule.ts:47](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/filter/basic/MapFilterRule.ts#L47)
+[model/internal/filter/basic/MapFilterRule.ts:47](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/filter/basic/MapFilterRule.ts#L47)

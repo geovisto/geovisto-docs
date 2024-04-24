@@ -1,61 +1,59 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IMapGlobals
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IMapGlobals
 
 # Interface: IMapGlobals
 
 This interface provides specification of map global constants model.
 
-**`Author`**
+## Author
 
 Jiri Hynek
-
-## Table of contents
-
-### Properties
-
-- [mapCenter](IMapGlobals.md#mapcenter)
-- [mapStructure](IMapGlobals.md#mapstructure)
-- [zoom](IMapGlobals.md#zoom)
 
 ## Properties
 
 ### mapCenter
 
-• **mapCenter**: `Object`
+> **mapCenter**: `object`
 
-#### Type declaration
+#### lat
 
-| Name | Type |
-| :------ | :------ |
-| `lat` | `number` |
-| `lng` | `number` |
+> **lat**: `number`
 
-#### Defined in
+#### lng
 
-[src/model/types/map/IMapGlobals.ts:8](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/map/IMapGlobals.ts#L8)
+> **lng**: `number`
 
-___
+#### Source
+
+[model/types/map/IMapGlobals.ts:8](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/map/IMapGlobals.ts#L8)
+
+***
 
 ### mapStructure
 
-• **mapStructure**: `Object`
+> **mapStructure**: `object`
 
-#### Type declaration
+#### maxBounds
 
-| Name | Type |
-| :------ | :------ |
-| `maxBounds` | [[`number`, `number`], [`number`, `number`]] |
-| `maxZoom` | `number` |
+> **maxBounds**: [[`number`, `number`], [`number`, `number`]]
 
-#### Defined in
+#### maxZoom
 
-[src/model/types/map/IMapGlobals.ts:9](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/map/IMapGlobals.ts#L9)
+> **maxZoom**: `number`
 
-___
+#### Source
+
+[model/types/map/IMapGlobals.ts:9](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/map/IMapGlobals.ts#L9)
+
+***
 
 ### zoom
 
-• **zoom**: `number`
+> **zoom**: `number`
 
-#### Defined in
+#### Source
 
-[src/model/types/map/IMapGlobals.ts:7](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/map/IMapGlobals.ts#L7)
+[model/types/map/IMapGlobals.ts:7](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/map/IMapGlobals.ts#L7)

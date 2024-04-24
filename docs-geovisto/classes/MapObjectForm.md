@@ -1,95 +1,65 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / MapObjectForm
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
 
-# Class: MapObjectForm\<T\>
+***
+
+[geovisto-map](../README.md) / MapObjectForm
+
+# Class: `abstract` MapObjectForm\<T\>
 
 The interface declares functions for management of form inputs.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
+## Extended by
+
+- [`MapLayerToolForm`](MapLayerToolForm.md)
+- [`FiltersToolMapForm`](FiltersToolMapForm.md)
+- [`GeoDownloaderToolMapForm`](GeoDownloaderToolMapForm.md)
+- [`HieararchyToolMapForm`](HieararchyToolMapForm.md)
+- [`InfoToolMapForm`](InfoToolMapForm.md)
+- [`SelectionToolMapForm`](SelectionToolMapForm.md)
+- [`DummyTabToolMapForm`](DummyTabToolMapForm.md)
+- [`ThemesToolMapForm`](ThemesToolMapForm.md)
+
 ## Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends [`IMapObject`](../interfaces/IMapObject.md) |
-
-## Hierarchy
-
-- **`MapObjectForm`**
-
-  ↳ [`MapLayerToolForm`](MapLayerToolForm.md)
-
-  ↳ [`FiltersToolMapForm`](FiltersToolMapForm.md)
-
-  ↳ [`GeoDownloaderToolMapForm`](GeoDownloaderToolMapForm.md)
-
-  ↳ [`HieararchyToolMapForm`](HieararchyToolMapForm.md)
-
-  ↳ [`InfoToolMapForm`](InfoToolMapForm.md)
-
-  ↳ [`SelectionToolMapForm`](SelectionToolMapForm.md)
-
-  ↳ [`DummyTabToolMapForm`](DummyTabToolMapForm.md)
-
-  ↳ [`ThemesToolMapForm`](ThemesToolMapForm.md)
-
-## Table of contents
-
-### Constructors
-
-- [constructor](MapObjectForm.md#constructor)
-
-### Properties
-
-- [mapObject](MapObjectForm.md#mapobject)
-
-### Methods
-
-- [getContent](MapObjectForm.md#getcontent)
-- [getMapObject](MapObjectForm.md#getmapobject)
+• **T** *extends* [`IMapObject`](../interfaces/IMapObject.md)
 
 ## Constructors
 
-### constructor
+### new MapObjectForm()
 
-• **new MapObjectForm**\<`T`\>(`mapObject`): [`MapObjectForm`](MapObjectForm.md)\<`T`\>
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | extends [`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\> |
+> **new MapObjectForm**\<`T`\>(`mapObject`): [`MapObjectForm`](MapObjectForm.md)\<`T`\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `mapObject` | `T` |
+• **mapObject**: `T`
 
 #### Returns
 
 [`MapObjectForm`](MapObjectForm.md)\<`T`\>
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapObjectForm.ts:12](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapObjectForm.ts#L12)
+[model/internal/form/MapObjectForm.ts:12](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapObjectForm.ts#L12)
 
 ## Properties
 
 ### mapObject
 
-• `Private` **mapObject**: `T`
+> `private` **mapObject**: `T`
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapObjectForm.ts:10](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapObjectForm.ts#L10)
+[model/internal/form/MapObjectForm.ts:10](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapObjectForm.ts#L10)
 
 ## Methods
 
-### getContent
+### getContent()
 
-▸ **getContent**(): `HTMLDivElement`
+> `abstract` **getContent**(): `HTMLDivElement`
 
 It returns a HTML div element conatining the form.
 
@@ -97,20 +67,20 @@ It returns a HTML div element conatining the form.
 
 `HTMLDivElement`
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapObjectForm.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapObjectForm.ts#L23)
+[model/internal/form/MapObjectForm.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapObjectForm.ts#L23)
 
-___
+***
 
-### getMapObject
+### getMapObject()
 
-▸ **getMapObject**(): `T`
+> `protected` **getMapObject**(): `T`
 
 #### Returns
 
 `T`
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapObjectForm.ts:16](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapObjectForm.ts#L16)
+[model/internal/form/MapObjectForm.ts:16](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapObjectForm.ts#L16)

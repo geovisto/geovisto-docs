@@ -1,11 +1,15 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / DrawingLayerToolTabState
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / DrawingLayerToolTabState
 
 # Class: DrawingLayerToolTabState
 
 This class manages the state of the sidebar tab.
 It wraps the state since the sidebar tab can work with state objects which needs to be explicitly serialized.
 
-**`Author`**
+## Author
 
 Andrej Tlcina
 
@@ -13,124 +17,93 @@ Andrej Tlcina
 
 - `TabState`
 
-## Table of contents
-
-### Constructors
-
-- [constructor](DrawingLayerToolTabState.md#constructor)
-
-### Properties
-
-- [controls](DrawingLayerToolTabState.md#controls)
-- [enabledTool](DrawingLayerToolTabState.md#enabledtool)
-- [guideLayers](DrawingLayerToolTabState.md#guidelayers)
-- [tabControl](DrawingLayerToolTabState.md#tabcontrol)
-
-### Methods
-
-- [appendToIconSrcs](DrawingLayerToolTabState.md#appendtoiconsrcs)
-- [callIdentifierChange](DrawingLayerToolTabState.md#callidentifierchange)
-- [getEnabledTool](DrawingLayerToolTabState.md#getenabledtool)
-- [getIntersectActivated](DrawingLayerToolTabState.md#getintersectactivated)
-- [getSelectedColor](DrawingLayerToolTabState.md#getselectedcolor)
-- [getSelectedIcon](DrawingLayerToolTabState.md#getselectedicon)
-- [getSelectedStroke](DrawingLayerToolTabState.md#getselectedstroke)
-- [initializeControls](DrawingLayerToolTabState.md#initializecontrols)
-- [pushGuideLayer](DrawingLayerToolTabState.md#pushguidelayer)
-- [setEnabledTool](DrawingLayerToolTabState.md#setenabledtool)
-- [setSelectedIcon](DrawingLayerToolTabState.md#setselectedicon)
-
 ## Constructors
 
-### constructor
+### new DrawingLayerToolTabState()
 
-• **new DrawingLayerToolTabState**(`tabControl`): [`DrawingLayerToolTabState`](DrawingLayerToolTabState.md)
+> **new DrawingLayerToolTabState**(`tabControl`): [`DrawingLayerToolTabState`](DrawingLayerToolTabState.md)
 
 It creates a tab control state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `tabControl` | `DrawingForm` |
+• **tabControl**: `DrawingForm`
 
 #### Returns
 
 [`DrawingLayerToolTabState`](DrawingLayerToolTabState.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:30](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L30)
+[tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:30](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L30)
 
 ## Properties
 
 ### controls
 
-• **controls**: `Controls`
+> **controls**: `Controls`
 
 #### Implementation of
 
-TabState.controls
+`TabState.controls`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:26](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L26)
+[tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:26](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L26)
 
-___
+***
 
 ### enabledTool
 
-• **enabledTool**: ``null`` \| `TAbstractTool`
+> **enabledTool**: `null` \| `TAbstractTool`
 
 #### Implementation of
 
-TabState.enabledTool
+`TabState.enabledTool`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:24](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L24)
+[tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:24](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L24)
 
-___
+***
 
 ### guideLayers
 
-• **guideLayers**: `DrawnObject`[]
+> **guideLayers**: `any`[]
 
 #### Implementation of
 
-TabState.guideLayers
+`TabState.guideLayers`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:25](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L25)
+[tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:25](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L25)
 
-___
+***
 
 ### tabControl
 
-• **tabControl**: `DrawingForm`
+> **tabControl**: `DrawingForm`
 
 #### Implementation of
 
-TabState.tabControl
+`TabState.tabControl`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L23)
+[tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L23)
 
 ## Methods
 
-### appendToIconSrcs
+### appendToIconSrcs()
 
-▸ **appendToIconSrcs**(`iconUrl`): `void`
+> **appendToIconSrcs**(`iconUrl`): `void`
 
 method if defined for easier access through tabControlState class/object
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `iconUrl` | `string` |
+• **iconUrl**: `string`
 
 #### Returns
 
@@ -138,25 +111,23 @@ method if defined for easier access through tabControlState class/object
 
 #### Implementation of
 
-TabState.appendToIconSrcs
+`TabState.appendToIconSrcs`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:96](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L96)
+[tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:96](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L96)
 
-___
+***
 
-### callIdentifierChange
+### callIdentifierChange()
 
-▸ **callIdentifierChange**(`haveToCheckFilters?`): `void`
+> **callIdentifierChange**(`haveToCheckFilters`): `void`
 
 method if defined for easier access through tabControlState class/object
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `haveToCheckFilters` | `boolean` | `false` |
+• **haveToCheckFilters**: `boolean`= `false`
 
 #### Returns
 
@@ -164,37 +135,37 @@ method if defined for easier access through tabControlState class/object
 
 #### Implementation of
 
-TabState.callIdentifierChange
+`TabState.callIdentifierChange`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:88](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L88)
+[tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:88](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L88)
 
-___
+***
 
-### getEnabledTool
+### getEnabledTool()
 
-▸ **getEnabledTool**(): ``null`` \| `TAbstractTool`
+> **getEnabledTool**(): `null` \| `TAbstractTool`
 
 getter
 
 #### Returns
 
-``null`` \| `TAbstractTool`
+`null` \| `TAbstractTool`
 
 #### Implementation of
 
-TabState.getEnabledTool
+`TabState.getEnabledTool`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:126](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L126)
+[tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:126](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L126)
 
-___
+***
 
-### getIntersectActivated
+### getIntersectActivated()
 
-▸ **getIntersectActivated**(): `boolean`
+> **getIntersectActivated**(): `boolean`
 
 method for easier access through tabControlState class/object
 
@@ -204,37 +175,17 @@ method for easier access through tabControlState class/object
 
 #### Implementation of
 
-TabState.getIntersectActivated
+`TabState.getIntersectActivated`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:104](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L104)
+[tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:104](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L104)
 
-___
+***
 
-### getSelectedColor
+### getSelectedColor()
 
-▸ **getSelectedColor**(): `string`
-
-method if defined for easier access through tabControlState class/object
-
-#### Returns
-
-`string`
-
-#### Implementation of
-
-TabState.getSelectedColor
-
-#### Defined in
-
-[src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:60](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L60)
-
-___
-
-### getSelectedIcon
-
-▸ **getSelectedIcon**(): `string`
+> **getSelectedColor**(): `string`
 
 method if defined for easier access through tabControlState class/object
 
@@ -244,17 +195,37 @@ method if defined for easier access through tabControlState class/object
 
 #### Implementation of
 
-TabState.getSelectedIcon
+`TabState.getSelectedColor`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:76](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L76)
+[tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:60](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L60)
 
-___
+***
 
-### getSelectedStroke
+### getSelectedIcon()
 
-▸ **getSelectedStroke**(): `number`
+> **getSelectedIcon**(): `string`
+
+method if defined for easier access through tabControlState class/object
+
+#### Returns
+
+`string`
+
+#### Implementation of
+
+`TabState.getSelectedIcon`
+
+#### Source
+
+[tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:76](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L76)
+
+***
+
+### getSelectedStroke()
+
+> **getSelectedStroke**(): `number`
 
 method if defined for easier access through tabControlState class/object
 
@@ -264,17 +235,17 @@ method if defined for easier access through tabControlState class/object
 
 #### Implementation of
 
-TabState.getSelectedStroke
+`TabState.getSelectedStroke`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:68](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L68)
+[tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:68](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L68)
 
-___
+***
 
-### initializeControls
+### initializeControls()
 
-▸ **initializeControls**(): `void`
+> **initializeControls**(): `void`
 
 method initializes controls for objects manipulation
 
@@ -284,25 +255,23 @@ method initializes controls for objects manipulation
 
 #### Implementation of
 
-TabState.initializeControls
+`TabState.initializeControls`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:42](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L42)
+[tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:42](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L42)
 
-___
+***
 
-### pushGuideLayer
+### pushGuideLayer()
 
-▸ **pushGuideLayer**(`layer`): `void`
+> **pushGuideLayer**(`layer`): `void`
 
 adds guide layer for snapping
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `layer` | `DrawnObject` |
+• **layer**: `any`
 
 #### Returns
 
@@ -310,25 +279,23 @@ adds guide layer for snapping
 
 #### Implementation of
 
-TabState.pushGuideLayer
+`TabState.pushGuideLayer`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:111](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L111)
+[tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:111](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L111)
 
-___
+***
 
-### setEnabledTool
+### setEnabledTool()
 
-▸ **setEnabledTool**(`val`): `void`
+> **setEnabledTool**(`val`): `void`
 
 setter for enabledTool variable
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `val` | ``null`` \| `TAbstractTool` |
+• **val**: `null` \| `TAbstractTool`
 
 #### Returns
 
@@ -336,23 +303,21 @@ setter for enabledTool variable
 
 #### Implementation of
 
-TabState.setEnabledTool
+`TabState.setEnabledTool`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:118](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L118)
+[tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:118](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L118)
 
-___
+***
 
-### setSelectedIcon
+### setSelectedIcon()
 
-▸ **setSelectedIcon**(`icon`): `void`
+> **setSelectedIcon**(`icon`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `icon` | `string` |
+• **icon**: `string`
 
 #### Returns
 
@@ -360,8 +325,8 @@ ___
 
 #### Implementation of
 
-TabState.setSelectedIcon
+`TabState.setSelectedIcon`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:81](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L81)
+[tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts:81](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/sidebar/DrawingLayerToolMapFormState.ts#L81)

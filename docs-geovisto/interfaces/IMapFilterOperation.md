@@ -1,42 +1,26 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IMapFilterOperation
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IMapFilterOperation
 
 # Interface: IMapFilterOperation
 
 This interface declares a filter operation.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`IMapDomain`](IMapDomain.md)
 
-  ↳ **`IMapFilterOperation`**
-
-## Implemented by
-
-- [`EqFilterOperation`](../classes/EqFilterOperation.md)
-- [`GtEqFilterOperation`](../classes/GtEqFilterOperation.md)
-- [`GtFilterOperation`](../classes/GtFilterOperation.md)
-- [`LtEqFilterOperation`](../classes/LtEqFilterOperation.md)
-- [`LtFilterOperation`](../classes/LtFilterOperation.md)
-- [`MapFilterOperation`](../classes/MapFilterOperation.md)
-- [`NeqFilterOperation`](../classes/NeqFilterOperation.md)
-- [`RegFilterOperation`](../classes/RegFilterOperation.md)
-
-## Table of contents
-
-### Methods
-
-- [getName](IMapFilterOperation.md#getname)
-- [match](IMapFilterOperation.md#match)
-
 ## Methods
 
-### getName
+### getName()
 
-▸ **getName**(): `string`
+> **getName**(): `string`
 
 It returns the name of the map domain.
 
@@ -46,31 +30,30 @@ It returns the name of the map domain.
 
 #### Inherited from
 
-[IMapDomain](IMapDomain.md).[getName](IMapDomain.md#getname)
+[`IMapDomain`](IMapDomain.md).[`getName`](IMapDomain.md#getname)
 
-#### Defined in
+#### Source
 
-[src/model/types/domain/IMapDomain.ts:11](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/domain/IMapDomain.ts#L11)
+[model/types/domain/IMapDomain.ts:11](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/domain/IMapDomain.ts#L11)
 
-___
+***
 
-### match
+### match()
 
-▸ **match**(`value`, `pattern`): `boolean`
+> **match**(`value`, `pattern`): `boolean`
 
 It performs the filter operation which compare a value with a pattern.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | `unknown` |
-| `pattern` | `unknown` |
+• **value**: `unknown`
+
+• **pattern**: `unknown`
 
 #### Returns
 
 `boolean`
 
-#### Defined in
+#### Source
 
-[src/model/types/filter/IMapFilterOperation.ts:16](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/filter/IMapFilterOperation.ts#L16)
+[model/types/filter/IMapFilterOperation.ts:16](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/filter/IMapFilterOperation.ts#L16)

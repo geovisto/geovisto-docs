@@ -1,29 +1,23 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IMapLegendControl
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IMapLegendControl
 
 # Interface: IMapLegendControl
 
 This interface declares functions which needs to be implemented when
 a map object (e. g., tool) wants to provide a form control.
 
-**`Author`**
+## Author
 
 Tomas Koscielniak
 
-## Implemented by
-
-- [`MarkerLayerTool`](../classes/MarkerLayerTool.md)
-
-## Table of contents
-
-### Methods
-
-- [getMapLegend](IMapLegendControl.md#getmaplegend)
-
 ## Methods
 
-### getMapLegend
+### getMapLegend()
 
-▸ **getMapLegend**(): [`IMapLegend`](IMapLegend.md)
+> **getMapLegend**(): [`IMapLegend`](IMapLegend.md)
 
 It returns a map control.
 
@@ -31,6 +25,6 @@ It returns a map control.
 
 [`IMapLegend`](IMapLegend.md)
 
-#### Defined in
+#### Source
 
-[src/model/types/legend/IMapLegendControl.ts:16](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/legend/IMapLegendControl.ts#L16)
+[model/types/legend/IMapLegendControl.ts:16](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/legend/IMapLegendControl.ts#L16)

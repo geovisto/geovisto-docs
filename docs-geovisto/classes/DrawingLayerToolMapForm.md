@@ -1,62 +1,36 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / DrawingLayerToolMapForm
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / DrawingLayerToolMapForm
 
 # Class: DrawingLayerToolMapForm
 
 This class provides controls for management of the layer sidebar tab.
 
-**`Author`**
+## Author
 
 Andrej Tlcina
 
-## Hierarchy
+## Extends
 
 - [`MapLayerToolForm`](MapLayerToolForm.md)\<`IDrawingLayerTool`\>
-
-  ↳ **`DrawingLayerToolMapForm`**
 
 ## Implements
 
 - `DrawingForm`
 
-## Table of contents
-
-### Constructors
-
-- [constructor](DrawingLayerToolMapForm.md#constructor)
-
-### Properties
-
-- [htmlContent](DrawingLayerToolMapForm.md#htmlcontent)
-- [state](DrawingLayerToolMapForm.md#state)
-- [tool](DrawingLayerToolMapForm.md#tool)
-
-### Methods
-
-- [getAutocompleteInput](DrawingLayerToolMapForm.md#getautocompleteinput)
-- [getCheckboxInput](DrawingLayerToolMapForm.md#getcheckboxinput)
-- [getColorInput](DrawingLayerToolMapForm.md#getcolorinput)
-- [getContent](DrawingLayerToolMapForm.md#getcontent)
-- [getMapObject](DrawingLayerToolMapForm.md#getmapobject)
-- [getNumberInput](DrawingLayerToolMapForm.md#getnumberinput)
-- [getSliderInput](DrawingLayerToolMapForm.md#getsliderinput)
-- [getState](DrawingLayerToolMapForm.md#getstate)
-- [getTextInput](DrawingLayerToolMapForm.md#gettextinput)
-- [getTool](DrawingLayerToolMapForm.md#gettool)
-- [redrawTabContent](DrawingLayerToolMapForm.md#redrawtabcontent)
-- [setInputValues](DrawingLayerToolMapForm.md#setinputvalues)
-
 ## Constructors
 
-### constructor
+### new DrawingLayerToolMapForm()
 
-• **new DrawingLayerToolMapForm**(`props`): [`DrawingLayerToolMapForm`](DrawingLayerToolMapForm.md)
+> **new DrawingLayerToolMapForm**(`props`): [`DrawingLayerToolMapForm`](DrawingLayerToolMapForm.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `props` | `Object` |
-| `props.tool` | `IDrawingLayerTool`\<[`ILayerToolProps`](../modules.md#ilayertoolprops), `IDrawingLayerToolDefaults`, `IDrawingLayerToolState`\<[`ILayerToolProps`](../modules.md#ilayertoolprops), `IDrawingLayerToolDefaults`, `IDrawingLayerToolConfig`, [`ILayerToolDimensionsConfig`](../modules.md#ilayertooldimensionsconfig), [`ILayerToolDimensions`](../modules.md#ilayertooldimensions)\>, `IDrawingLayerToolConfig`, [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<`IDrawingLayerToolConfig`\>\> |
+• **props**
+
+• **props.tool**: `IDrawingLayerTool`\<[`ILayerToolProps`](../type-aliases/ILayerToolProps.md), `IDrawingLayerToolDefaults`, `IDrawingLayerToolState`\<[`ILayerToolProps`](../type-aliases/ILayerToolProps.md), `IDrawingLayerToolDefaults`, `IDrawingLayerToolConfig`, [`ILayerToolDimensionsConfig`](../type-aliases/ILayerToolDimensionsConfig.md), [`ILayerToolDimensions`](../type-aliases/ILayerToolDimensions.md)\>, `IDrawingLayerToolConfig`, [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<`IDrawingLayerToolConfig`\>\>
 
 #### Returns
 
@@ -64,56 +38,55 @@ Andrej Tlcina
 
 #### Overrides
 
-[MapLayerToolForm](MapLayerToolForm.md).[constructor](MapLayerToolForm.md#constructor)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`constructor`](MapLayerToolForm.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts:34](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts#L34)
+[tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts:34](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts#L34)
 
 ## Properties
 
 ### htmlContent
 
-• `Private` **htmlContent**: `HTMLDivElement`
+> `private` **htmlContent**: `HTMLDivElement`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts:29](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts#L29)
+[tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts:29](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts#L29)
 
-___
+***
 
 ### state
 
-• `Private` **state**: `TabState`
+> `private` **state**: `TabState`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts#L32)
+[tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts#L32)
 
-___
+***
 
 ### tool
 
-• `Private` **tool**: `IDrawingLayerTool`\<[`ILayerToolProps`](../modules.md#ilayertoolprops), `IDrawingLayerToolDefaults`, `IDrawingLayerToolState`\<[`ILayerToolProps`](../modules.md#ilayertoolprops), `IDrawingLayerToolDefaults`, `IDrawingLayerToolConfig`, [`ILayerToolDimensionsConfig`](../modules.md#ilayertooldimensionsconfig), [`ILayerToolDimensions`](../modules.md#ilayertooldimensions)\>, `IDrawingLayerToolConfig`, [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<`IDrawingLayerToolConfig`\>\>
+> `private` **tool**: `IDrawingLayerTool`\<[`ILayerToolProps`](../type-aliases/ILayerToolProps.md), `IDrawingLayerToolDefaults`, `IDrawingLayerToolState`\<[`ILayerToolProps`](../type-aliases/ILayerToolProps.md), `IDrawingLayerToolDefaults`, `IDrawingLayerToolConfig`, [`ILayerToolDimensionsConfig`](../type-aliases/ILayerToolDimensionsConfig.md), [`ILayerToolDimensions`](../type-aliases/ILayerToolDimensions.md)\>, `IDrawingLayerToolConfig`, [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<`IDrawingLayerToolConfig`\>\>
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts:31](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts#L31)
+[tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts:31](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts#L31)
 
 ## Methods
 
-### getAutocompleteInput
+### getAutocompleteInput()
 
-▸ **getAutocompleteInput**(`dimension`, `formAction?`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> `protected` **getAutocompleteInput**(`dimension`, `formAction`?): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 Help method which returns a new universal autocomplete input for the any map domain dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDomain`](../interfaces/IMapDomain.md)\> |
-| `formAction?` | (`ev`: `Event`) => `void` |
+• **dimension**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDomain`](../interfaces/IMapDomain.md)\>
+
+• **formAction?**
 
 #### Returns
 
@@ -121,26 +94,25 @@ Help method which returns a new universal autocomplete input for the any map dom
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getAutocompleteInput](MapLayerToolForm.md#getautocompleteinput)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getAutocompleteInput`](MapLayerToolForm.md#getautocompleteinput)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapLayerToolForm.ts:43](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapLayerToolForm.ts#L43)
+[model/internal/form/MapLayerToolForm.ts:43](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapLayerToolForm.ts#L43)
 
-___
+***
 
-### getCheckboxInput
+### getCheckboxInput()
 
-▸ **getCheckboxInput**(`dimension`, `formAction?`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> `protected` **getCheckboxInput**(`dimension`, `formAction`?): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 Help method which returns a new universal checkbox input for the any map boolean dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\> |
-| `formAction?` | (`ev`: `Event`) => `void` |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\>
+
+• **formAction?**
 
 #### Returns
 
@@ -148,26 +120,25 @@ Help method which returns a new universal checkbox input for the any map boolean
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getCheckboxInput](MapLayerToolForm.md#getcheckboxinput)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getCheckboxInput`](MapLayerToolForm.md#getcheckboxinput)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapLayerToolForm.ts:78](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapLayerToolForm.ts#L78)
+[model/internal/form/MapLayerToolForm.ts:78](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapLayerToolForm.ts#L78)
 
-___
+***
 
-### getColorInput
+### getColorInput()
 
-▸ **getColorInput**(`dimension`, `formAction?`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> `protected` **getColorInput**(`dimension`, `formAction`?): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 Help method which returns a new universal color input for the any map string dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `formAction?` | (`ev`: `Event`) => `void` |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+• **formAction?**
 
 #### Returns
 
@@ -175,25 +146,23 @@ Help method which returns a new universal color input for the any map string dim
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getColorInput](MapLayerToolForm.md#getcolorinput)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getColorInput`](MapLayerToolForm.md#getcolorinput)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapLayerToolForm.ts:96](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapLayerToolForm.ts#L96)
+[model/internal/form/MapLayerToolForm.ts:96](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapLayerToolForm.ts#L96)
 
-___
+***
 
-### getContent
+### getContent()
 
-▸ **getContent**(`layerType?`): `HTMLDivElement`
+> **getContent**(`layerType`): `HTMLDivElement`
 
 It returns the sidebar tab pane.
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `layerType` | ``""`` \| `LayerType` | `""` |
+• **layerType**: `""` \| `LayerType`= `""`
 
 #### Returns
 
@@ -201,48 +170,47 @@ It returns the sidebar tab pane.
 
 #### Implementation of
 
-DrawingForm.getContent
+`DrawingForm.getContent`
 
 #### Overrides
 
-[MapLayerToolForm](MapLayerToolForm.md).[getContent](MapLayerToolForm.md#getcontent)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getContent`](MapLayerToolForm.md#getcontent)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts:77](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts#L77)
+[tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts:77](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts#L77)
 
-___
+***
 
-### getMapObject
+### getMapObject()
 
-▸ **getMapObject**(): `IDrawingLayerTool`\<[`ILayerToolProps`](../modules.md#ilayertoolprops), `IDrawingLayerToolDefaults`, `IDrawingLayerToolState`\<[`ILayerToolProps`](../modules.md#ilayertoolprops), `IDrawingLayerToolDefaults`, `IDrawingLayerToolConfig`, [`ILayerToolDimensionsConfig`](../modules.md#ilayertooldimensionsconfig), [`ILayerToolDimensions`](../modules.md#ilayertooldimensions)\>, `IDrawingLayerToolConfig`, [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<`IDrawingLayerToolConfig`\>\>
+> `protected` **getMapObject**(): `IDrawingLayerTool`\<[`ILayerToolProps`](../type-aliases/ILayerToolProps.md), `IDrawingLayerToolDefaults`, `IDrawingLayerToolState`\<[`ILayerToolProps`](../type-aliases/ILayerToolProps.md), `IDrawingLayerToolDefaults`, `IDrawingLayerToolConfig`, [`ILayerToolDimensionsConfig`](../type-aliases/ILayerToolDimensionsConfig.md), [`ILayerToolDimensions`](../type-aliases/ILayerToolDimensions.md)\>, `IDrawingLayerToolConfig`, [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<`IDrawingLayerToolConfig`\>\>
 
 #### Returns
 
-`IDrawingLayerTool`\<[`ILayerToolProps`](../modules.md#ilayertoolprops), `IDrawingLayerToolDefaults`, `IDrawingLayerToolState`\<[`ILayerToolProps`](../modules.md#ilayertoolprops), `IDrawingLayerToolDefaults`, `IDrawingLayerToolConfig`, [`ILayerToolDimensionsConfig`](../modules.md#ilayertooldimensionsconfig), [`ILayerToolDimensions`](../modules.md#ilayertooldimensions)\>, `IDrawingLayerToolConfig`, [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<`IDrawingLayerToolConfig`\>\>
+`IDrawingLayerTool`\<[`ILayerToolProps`](../type-aliases/ILayerToolProps.md), `IDrawingLayerToolDefaults`, `IDrawingLayerToolState`\<[`ILayerToolProps`](../type-aliases/ILayerToolProps.md), `IDrawingLayerToolDefaults`, `IDrawingLayerToolConfig`, [`ILayerToolDimensionsConfig`](../type-aliases/ILayerToolDimensionsConfig.md), [`ILayerToolDimensions`](../type-aliases/ILayerToolDimensions.md)\>, `IDrawingLayerToolConfig`, [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<`IDrawingLayerToolConfig`\>\>
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getMapObject](MapLayerToolForm.md#getmapobject)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getMapObject`](MapLayerToolForm.md#getmapobject)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapObjectForm.ts:16](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapObjectForm.ts#L16)
+[model/internal/form/MapObjectForm.ts:16](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapObjectForm.ts#L16)
 
-___
+***
 
-### getNumberInput
+### getNumberInput()
 
-▸ **getNumberInput**(`dimension`, `formAction?`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> `protected` **getNumberInput**(`dimension`, `formAction`?): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 Help method which returns a new universal number input for the any map number dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\> |
-| `formAction?` | (`ev`: `Event`) => `void` |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>\>
+
+• **formAction?**
 
 #### Returns
 
@@ -250,26 +218,25 @@ Help method which returns a new universal number input for the any map number di
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getNumberInput](MapLayerToolForm.md#getnumberinput)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getNumberInput`](MapLayerToolForm.md#getnumberinput)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapLayerToolForm.ts:133](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapLayerToolForm.ts#L133)
+[model/internal/form/MapLayerToolForm.ts:133](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapLayerToolForm.ts#L133)
 
-___
+***
 
-### getSliderInput
+### getSliderInput()
 
-▸ **getSliderInput**(`dimension`, `formAction?`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> `protected` **getSliderInput**(`dimension`, `formAction`?): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 Help method which returns a new universal slider input for the any map range integer dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md)\> |
-| `formAction?` | (`ev`: `Event`) => `void` |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md)\>
+
+• **formAction?**
 
 #### Returns
 
@@ -277,17 +244,17 @@ Help method which returns a new universal slider input for the any map range int
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getSliderInput](MapLayerToolForm.md#getsliderinput)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getSliderInput`](MapLayerToolForm.md#getsliderinput)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapLayerToolForm.ts:113](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapLayerToolForm.ts#L113)
+[model/internal/form/MapLayerToolForm.ts:113](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapLayerToolForm.ts#L113)
 
-___
+***
 
-### getState
+### getState()
 
-▸ **getState**(): `TabState`
+> **getState**(): `TabState`
 
 It creates new state of the tab control.
 
@@ -297,26 +264,25 @@ It creates new state of the tab control.
 
 #### Implementation of
 
-DrawingForm.getState
+`DrawingForm.getState`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts:52](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts#L52)
+[tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts:52](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts#L52)
 
-___
+***
 
-### getTextInput
+### getTextInput()
 
-▸ **getTextInput**(`dimension`, `formAction?`): [`IMapFormInput`](../interfaces/IMapFormInput.md)
+> `protected` **getTextInput**(`dimension`, `formAction`?): [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
 Help method which returns a new universal text input for the any map domain dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `formAction?` | (`ev`: `Event`) => `void` |
+• **dimension**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+• **formAction?**
 
 #### Returns
 
@@ -324,43 +290,41 @@ Help method which returns a new universal text input for the any map domain dime
 
 #### Inherited from
 
-[MapLayerToolForm](MapLayerToolForm.md).[getTextInput](MapLayerToolForm.md#gettextinput)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`getTextInput`](MapLayerToolForm.md#gettextinput)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapLayerToolForm.ts:61](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapLayerToolForm.ts#L61)
+[model/internal/form/MapLayerToolForm.ts:61](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapLayerToolForm.ts#L61)
 
-___
+***
 
-### getTool
+### getTool()
 
-▸ **getTool**(): `IDrawingLayerTool`\<[`ILayerToolProps`](../modules.md#ilayertoolprops), `IDrawingLayerToolDefaults`, `IDrawingLayerToolState`\<[`ILayerToolProps`](../modules.md#ilayertoolprops), `IDrawingLayerToolDefaults`, `IDrawingLayerToolConfig`, [`ILayerToolDimensionsConfig`](../modules.md#ilayertooldimensionsconfig), [`ILayerToolDimensions`](../modules.md#ilayertooldimensions)\>, `IDrawingLayerToolConfig`, [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<`IDrawingLayerToolConfig`\>\>
+> **getTool**(): `IDrawingLayerTool`\<[`ILayerToolProps`](../type-aliases/ILayerToolProps.md), `IDrawingLayerToolDefaults`, `IDrawingLayerToolState`\<[`ILayerToolProps`](../type-aliases/ILayerToolProps.md), `IDrawingLayerToolDefaults`, `IDrawingLayerToolConfig`, [`ILayerToolDimensionsConfig`](../type-aliases/ILayerToolDimensionsConfig.md), [`ILayerToolDimensions`](../type-aliases/ILayerToolDimensions.md)\>, `IDrawingLayerToolConfig`, [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<`IDrawingLayerToolConfig`\>\>
 
 #### Returns
 
-`IDrawingLayerTool`\<[`ILayerToolProps`](../modules.md#ilayertoolprops), `IDrawingLayerToolDefaults`, `IDrawingLayerToolState`\<[`ILayerToolProps`](../modules.md#ilayertoolprops), `IDrawingLayerToolDefaults`, `IDrawingLayerToolConfig`, [`ILayerToolDimensionsConfig`](../modules.md#ilayertooldimensionsconfig), [`ILayerToolDimensions`](../modules.md#ilayertooldimensions)\>, `IDrawingLayerToolConfig`, [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<`IDrawingLayerToolConfig`\>\>
+`IDrawingLayerTool`\<[`ILayerToolProps`](../type-aliases/ILayerToolProps.md), `IDrawingLayerToolDefaults`, `IDrawingLayerToolState`\<[`ILayerToolProps`](../type-aliases/ILayerToolProps.md), `IDrawingLayerToolDefaults`, `IDrawingLayerToolConfig`, [`ILayerToolDimensionsConfig`](../type-aliases/ILayerToolDimensionsConfig.md), [`ILayerToolDimensions`](../type-aliases/ILayerToolDimensions.md)\>, `IDrawingLayerToolConfig`, [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<`IDrawingLayerToolConfig`\>\>
 
 #### Implementation of
 
-DrawingForm.getTool
+`DrawingForm.getTool`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts:45](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts#L45)
+[tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts:45](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts#L45)
 
-___
+***
 
-### redrawTabContent
+### redrawTabContent()
 
-▸ **redrawTabContent**(`layerType`): `void`
+> **redrawTabContent**(`layerType`): `void`
 
 removes all elements of a sidebar and calls function to create new content of the sidebar
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `layerType` | ``""`` \| `LayerType` |
+• **layerType**: `""` \| `LayerType`
 
 #### Returns
 
@@ -368,25 +332,23 @@ removes all elements of a sidebar and calls function to create new content of th
 
 #### Implementation of
 
-DrawingForm.redrawTabContent
+`DrawingForm.redrawTabContent`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts:59](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts#L59)
+[tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts:59](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts#L59)
 
-___
+***
 
-### setInputValues
+### setInputValues()
 
-▸ **setInputValues**(`dimensions`): `void`
+> **setInputValues**(`dimensions`): `void`
 
 It updates selected input values according to the given dimensions.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimensions` | [`ILayerToolDimensions`](../modules.md#ilayertooldimensions) |
+• **dimensions**: [`ILayerToolDimensions`](../type-aliases/ILayerToolDimensions.md)
 
 #### Returns
 
@@ -394,8 +356,8 @@ It updates selected input values according to the given dimensions.
 
 #### Overrides
 
-[MapLayerToolForm](MapLayerToolForm.md).[setInputValues](MapLayerToolForm.md#setinputvalues)
+[`MapLayerToolForm`](MapLayerToolForm.md).[`setInputValues`](MapLayerToolForm.md#setinputvalues)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts:41](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts#L41)
+[tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts:41](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/sidebar/DrawingLayerToolMapForm.ts#L41)

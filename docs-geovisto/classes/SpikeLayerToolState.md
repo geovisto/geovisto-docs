@@ -1,83 +1,34 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / SpikeLayerToolState
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / SpikeLayerToolState
 
 # Class: SpikeLayerToolState
 
 This class provide functions for using the state of the layer tool.
 
-**`Author`**
+## Author
 
 Vladimir Korencik
 
-## Hierarchy
+## Extends
 
 - [`LayerToolState`](LayerToolState.md)
-
-  ↳ **`SpikeLayerToolState`**
 
 ## Implements
 
 - [`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](SpikeLayerToolState.md#constructor)
-
-### Properties
-
-- [categoryColorRules](SpikeLayerToolState.md#categorycolorrules)
-- [layer](SpikeLayerToolState.md#layer)
-- [manager](SpikeLayerToolState.md#manager)
-- [markers](SpikeLayerToolState.md#markers)
-- [workData](SpikeLayerToolState.md#workdata)
-
-### Methods
-
-- [deserialize](SpikeLayerToolState.md#deserialize)
-- [deserializeDimensions](SpikeLayerToolState.md#deserializedimensions)
-- [getCategoryColorRules](SpikeLayerToolState.md#getcategorycolorrules)
-- [getDimensions](SpikeLayerToolState.md#getdimensions)
-- [getFiltersManager](SpikeLayerToolState.md#getfiltersmanager)
-- [getIcon](SpikeLayerToolState.md#geticon)
-- [getId](SpikeLayerToolState.md#getid)
-- [getLabel](SpikeLayerToolState.md#getlabel)
-- [getLayer](SpikeLayerToolState.md#getlayer)
-- [getLayerItems](SpikeLayerToolState.md#getlayeritems)
-- [getLayerName](SpikeLayerToolState.md#getlayername)
-- [getMap](SpikeLayerToolState.md#getmap)
-- [getMapObject](SpikeLayerToolState.md#getmapobject)
-- [getMarkers](SpikeLayerToolState.md#getmarkers)
-- [getType](SpikeLayerToolState.md#gettype)
-- [getWorkData](SpikeLayerToolState.md#getworkdata)
-- [initialize](SpikeLayerToolState.md#initialize)
-- [isEnabled](SpikeLayerToolState.md#isenabled)
-- [serialize](SpikeLayerToolState.md#serialize)
-- [setCategoryColorRules](SpikeLayerToolState.md#setcategorycolorrules)
-- [setDimensions](SpikeLayerToolState.md#setdimensions)
-- [setEnabled](SpikeLayerToolState.md#setenabled)
-- [setFiltersManager](SpikeLayerToolState.md#setfiltersmanager)
-- [setIcon](SpikeLayerToolState.md#seticon)
-- [setId](SpikeLayerToolState.md#setid)
-- [setLabel](SpikeLayerToolState.md#setlabel)
-- [setLayer](SpikeLayerToolState.md#setlayer)
-- [setLayerItems](SpikeLayerToolState.md#setlayeritems)
-- [setLayerName](SpikeLayerToolState.md#setlayername)
-- [setMap](SpikeLayerToolState.md#setmap)
-- [setMarkers](SpikeLayerToolState.md#setmarkers)
-- [setWorkData](SpikeLayerToolState.md#setworkdata)
-
 ## Constructors
 
-### constructor
+### new SpikeLayerToolState()
 
-• **new SpikeLayerToolState**(`tool`): [`SpikeLayerToolState`](SpikeLayerToolState.md)
+> **new SpikeLayerToolState**(`tool`): [`SpikeLayerToolState`](SpikeLayerToolState.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `tool` | [`ISpikeLayerTool`](../interfaces/ISpikeLayerTool.md)\<[`ISpikeLayerToolProps`](../modules.md#ispikelayertoolprops), [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md), [`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md)\<[`ISpikeLayerToolProps`](../modules.md#ispikelayertoolprops), [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md), [`ISpikeLayerToolConfig`](../modules.md#ispikelayertoolconfig), \{ `aggregation?`: `string` ; `category?`: `string` ; `categoryColor?`: `string` ; `categoryColorOp?`: `string` ; `categoryColorValue?`: `string` ; `color?`: `string` ; `latitude?`: `string` ; `longitude?`: `string` ; `value?`: `string`  }, \{ `aggregation`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> ; `category`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `categoryColor`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `categoryColorOp`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> ; `categoryColorValue`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `color`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `latitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `longitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `value`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>, [`ISpikeLayerToolConfig`](../modules.md#ispikelayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`ISpikeLayerToolConfig`](../modules.md#ispikelayertoolconfig)\>\> |
+• **tool**: [`ISpikeLayerTool`](../interfaces/ISpikeLayerTool.md)\<[`ISpikeLayerToolProps`](../type-aliases/ISpikeLayerToolProps.md), [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md), [`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md)\<[`ISpikeLayerToolProps`](../type-aliases/ISpikeLayerToolProps.md), [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md), [`ISpikeLayerToolConfig`](../type-aliases/ISpikeLayerToolConfig.md), `object`, `object`\>, [`ISpikeLayerToolConfig`](../type-aliases/ISpikeLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`ISpikeLayerToolConfig`](../type-aliases/ISpikeLayerToolConfig.md)\>\>
 
 #### Returns
 
@@ -85,75 +36,73 @@ Vladimir Korencik
 
 #### Overrides
 
-[LayerToolState](LayerToolState.md).[constructor](LayerToolState.md#constructor)
+[`LayerToolState`](LayerToolState.md).[`constructor`](LayerToolState.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:35](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L35)
+[tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:35](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L35)
 
 ## Properties
 
 ### categoryColorRules
 
-• `Private` **categoryColorRules**: `ICategoryColorRules`[]
+> `private` **categoryColorRules**: `ICategoryColorRules`[]
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L32)
+[tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L32)
 
-___
+***
 
-### layer
+### layer?
 
-• `Private` `Optional` **layer**: `LayerGroup`\<`any`\>
+> `private` `optional` **layer**: `any`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:29](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L29)
+[tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:29](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L29)
 
-___
+***
 
 ### manager
 
-• `Private` **manager**: [`IMapFilterManager`](../interfaces/IMapFilterManager.md)
+> `private` **manager**: [`IMapFilterManager`](../interfaces/IMapFilterManager.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:33](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L33)
+[tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:33](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L33)
 
-___
+***
 
 ### markers
 
-• `Private` **markers**: `Marker`\<`any`\>[]
+> `private` **markers**: `Marker`[]
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:30](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L30)
+[tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:30](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L30)
 
-___
+***
 
 ### workData
 
-• `Private` **workData**: `IWorkData`[]
+> `private` **workData**: `any`[]
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:31](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L31)
+[tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:31](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L31)
 
 ## Methods
 
-### deserialize
+### deserialize()
 
-▸ **deserialize**(`config`): `void`
+> **deserialize**(`config`): `void`
 
 The metod takes config and deserializes the values.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `config` | [`ISpikeLayerToolConfig`](../modules.md#ispikelayertoolconfig) |
+• **config**: [`ISpikeLayerToolConfig`](../type-aliases/ISpikeLayerToolConfig.md)
 
 #### Returns
 
@@ -161,38 +110,45 @@ The metod takes config and deserializes the values.
 
 #### Implementation of
 
-[ISpikeLayerToolState](../interfaces/ISpikeLayerToolState.md).[deserialize](../interfaces/ISpikeLayerToolState.md#deserialize)
+[`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md).[`deserialize`](../interfaces/ISpikeLayerToolState.md#deserialize)
 
 #### Overrides
 
-[LayerToolState](LayerToolState.md).[deserialize](LayerToolState.md#deserialize)
+[`LayerToolState`](LayerToolState.md).[`deserialize`](LayerToolState.md#deserialize)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:96](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L96)
+[tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:96](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L96)
 
-___
+***
 
-### deserializeDimensions
+### deserializeDimensions()
 
-▸ **deserializeDimensions**(`dimensionsConfig`): `void`
+> **deserializeDimensions**(`dimensionsConfig`): `void`
 
 It sets the marker layer dimensions property of tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimensionsConfig` | `Object` |
-| `dimensionsConfig.aggregation?` | `string` |
-| `dimensionsConfig.category?` | `string` |
-| `dimensionsConfig.categoryColor?` | `string` |
-| `dimensionsConfig.categoryColorOp?` | `string` |
-| `dimensionsConfig.categoryColorValue?` | `string` |
-| `dimensionsConfig.color?` | `string` |
-| `dimensionsConfig.latitude?` | `string` |
-| `dimensionsConfig.longitude?` | `string` |
-| `dimensionsConfig.value?` | `string` |
+• **dimensionsConfig**
+
+• **dimensionsConfig.aggregation?**: `string`
+
+• **dimensionsConfig.category?**: `string`
+
+• **dimensionsConfig.categoryColor?**: `string`
+
+• **dimensionsConfig.categoryColorOp?**: `string`
+
+• **dimensionsConfig.categoryColorValue?**: `string`
+
+• **dimensionsConfig.color?**: `string`
+
+• **dimensionsConfig.latitude?**: `string`
+
+• **dimensionsConfig.longitude?**: `string`
+
+• **dimensionsConfig.value?**: `string`
 
 #### Returns
 
@@ -200,21 +156,21 @@ It sets the marker layer dimensions property of tool state.
 
 #### Implementation of
 
-[ISpikeLayerToolState](../interfaces/ISpikeLayerToolState.md).[deserializeDimensions](../interfaces/ISpikeLayerToolState.md#deserializedimensions)
+[`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md).[`deserializeDimensions`](../interfaces/ISpikeLayerToolState.md#deserializedimensions)
 
 #### Overrides
 
-[LayerToolState](LayerToolState.md).[deserializeDimensions](LayerToolState.md#deserializedimensions)
+[`LayerToolState`](LayerToolState.md).[`deserializeDimensions`](LayerToolState.md#deserializedimensions)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:123](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L123)
+[tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:123](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L123)
 
-___
+***
 
-### getCategoryColorRules
+### getCategoryColorRules()
 
-▸ **getCategoryColorRules**(): `ICategoryColorRules`[]
+> **getCategoryColorRules**(): `ICategoryColorRules`[]
 
 #### Returns
 
@@ -222,53 +178,77 @@ ___
 
 #### Implementation of
 
-[ISpikeLayerToolState](../interfaces/ISpikeLayerToolState.md).[getCategoryColorRules](../interfaces/ISpikeLayerToolState.md#getcategorycolorrules)
+[`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md).[`getCategoryColorRules`](../interfaces/ISpikeLayerToolState.md#getcategorycolorrules)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:244](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L244)
+[tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:244](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L244)
 
-___
+***
 
-### getDimensions
+### getDimensions()
 
-▸ **getDimensions**(): `Object`
+> **getDimensions**(): `object`
 
 It returns the layer dimensions property of the tool state.
 
 #### Returns
 
-`Object`
+`object`
 
-| Name | Type |
-| :------ | :------ |
-| `aggregation` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> |
-| `category` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `categoryColor` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `categoryColorOp` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> |
-| `categoryColorValue` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `color` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `latitude` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `longitude` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `value` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
+##### aggregation
+
+> **aggregation**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\>
+
+##### category
+
+> **category**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+##### categoryColor
+
+> **categoryColor**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+##### categoryColorOp
+
+> **categoryColorOp**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\>
+
+##### categoryColorValue
+
+> **categoryColorValue**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+##### color
+
+> **color**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+##### latitude
+
+> **latitude**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+##### longitude
+
+> **longitude**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+##### value
+
+> **value**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Implementation of
 
-[ISpikeLayerToolState](../interfaces/ISpikeLayerToolState.md).[getDimensions](../interfaces/ISpikeLayerToolState.md#getdimensions)
+[`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md).[`getDimensions`](../interfaces/ISpikeLayerToolState.md#getdimensions)
 
 #### Overrides
 
-[LayerToolState](LayerToolState.md).[getDimensions](LayerToolState.md#getdimensions)
+[`LayerToolState`](LayerToolState.md).[`getDimensions`](LayerToolState.md#getdimensions)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:216](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L216)
+[tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:216](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L216)
 
-___
+***
 
-### getFiltersManager
+### getFiltersManager()
 
-▸ **getFiltersManager**(): [`IMapFilterManager`](../interfaces/IMapFilterManager.md)
+> **getFiltersManager**(): [`IMapFilterManager`](../interfaces/IMapFilterManager.md)
 
 #### Returns
 
@@ -276,17 +256,17 @@ ___
 
 #### Implementation of
 
-[ISpikeLayerToolState](../interfaces/ISpikeLayerToolState.md).[getFiltersManager](../interfaces/ISpikeLayerToolState.md#getfiltersmanager)
+[`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md).[`getFiltersManager`](../interfaces/ISpikeLayerToolState.md#getfiltersmanager)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:207](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L207)
+[tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:207](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L207)
 
-___
+***
 
-### getIcon
+### getIcon()
 
-▸ **getIcon**(): `string`
+> **getIcon**(): `string`
 
 It returns the icon property of the tool state.
 
@@ -296,21 +276,21 @@ It returns the icon property of the tool state.
 
 #### Implementation of
 
-[ISpikeLayerToolState](../interfaces/ISpikeLayerToolState.md).[getIcon](../interfaces/ISpikeLayerToolState.md#geticon)
+[`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md).[`getIcon`](../interfaces/ISpikeLayerToolState.md#geticon)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getIcon](LayerToolState.md#geticon)
+[`LayerToolState`](LayerToolState.md).[`getIcon`](LayerToolState.md#geticon)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:120](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L120)
+[model/internal/tool/MapToolState.ts:120](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L120)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 It returns the id property of the tool state.
 
@@ -320,21 +300,21 @@ It returns the id property of the tool state.
 
 #### Implementation of
 
-[ISpikeLayerToolState](../interfaces/ISpikeLayerToolState.md).[getId](../interfaces/ISpikeLayerToolState.md#getid)
+[`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md).[`getId`](../interfaces/ISpikeLayerToolState.md#getid)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getId](LayerToolState.md#getid)
+[`LayerToolState`](LayerToolState.md).[`getId`](LayerToolState.md#getid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:87](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L87)
+[model/internal/object/MapObjectState.ts:87](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L87)
 
-___
+***
 
-### getLabel
+### getLabel()
 
-▸ **getLabel**(): `string`
+> **getLabel**(): `string`
 
 It returns the label property of the tool state.
 
@@ -344,39 +324,39 @@ It returns the label property of the tool state.
 
 #### Implementation of
 
-[ISpikeLayerToolState](../interfaces/ISpikeLayerToolState.md).[getLabel](../interfaces/ISpikeLayerToolState.md#getlabel)
+[`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md).[`getLabel`](../interfaces/ISpikeLayerToolState.md#getlabel)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getLabel](LayerToolState.md#getlabel)
+[`LayerToolState`](LayerToolState.md).[`getLabel`](LayerToolState.md#getlabel)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:104](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L104)
+[model/internal/tool/MapToolState.ts:104](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L104)
 
-___
+***
 
-### getLayer
+### getLayer()
 
-▸ **getLayer**(): `undefined` \| `LayerGroup`\<`any`\>
+> **getLayer**(): `any`
 
 #### Returns
 
-`undefined` \| `LayerGroup`\<`any`\>
+`any`
 
 #### Implementation of
 
-[ISpikeLayerToolState](../interfaces/ISpikeLayerToolState.md).[getLayer](../interfaces/ISpikeLayerToolState.md#getlayer)
+[`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md).[`getLayer`](../interfaces/ISpikeLayerToolState.md#getlayer)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:224](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L224)
+[tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:224](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L224)
 
-___
+***
 
-### getLayerItems
+### getLayerItems()
 
-▸ **getLayerItems**(): `undefined` \| `Layer`[]
+> **getLayerItems**(): `undefined` \| `Layer`[]
 
 It returns the layer items property of the tool state.
 
@@ -386,21 +366,21 @@ It returns the layer items property of the tool state.
 
 #### Implementation of
 
-[ISpikeLayerToolState](../interfaces/ISpikeLayerToolState.md).[getLayerItems](../interfaces/ISpikeLayerToolState.md#getlayeritems)
+[`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md).[`getLayerItems`](../interfaces/ISpikeLayerToolState.md#getlayeritems)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getLayerItems](LayerToolState.md#getlayeritems)
+[`LayerToolState`](LayerToolState.md).[`getLayerItems`](LayerToolState.md#getlayeritems)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/LayerToolState.ts:104](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/LayerToolState.ts#L104)
+[model/internal/layer/LayerToolState.ts:104](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/LayerToolState.ts#L104)
 
-___
+***
 
-### getLayerName
+### getLayerName()
 
-▸ **getLayerName**(): `string`
+> **getLayerName**(): `string`
 
 It returns the layer name property of the tool state.
 
@@ -410,83 +390,83 @@ It returns the layer name property of the tool state.
 
 #### Implementation of
 
-[ISpikeLayerToolState](../interfaces/ISpikeLayerToolState.md).[getLayerName](../interfaces/ISpikeLayerToolState.md#getlayername)
+[`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md).[`getLayerName`](../interfaces/ISpikeLayerToolState.md#getlayername)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getLayerName](LayerToolState.md#getlayername)
+[`LayerToolState`](LayerToolState.md).[`getLayerName`](LayerToolState.md#getlayername)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/LayerToolState.ts:88](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/LayerToolState.ts#L88)
+[model/internal/layer/LayerToolState.ts:88](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/LayerToolState.ts#L88)
 
-___
+***
 
-### getMap
+### getMap()
 
-▸ **getMap**(): [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+> **getMap**(): [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 It returns the map property of the tool state.
 
 #### Returns
 
-[`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+[`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Implementation of
 
-[ISpikeLayerToolState](../interfaces/ISpikeLayerToolState.md).[getMap](../interfaces/ISpikeLayerToolState.md#getmap)
+[`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md).[`getMap`](../interfaces/ISpikeLayerToolState.md#getmap)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getMap](LayerToolState.md#getmap)
+[`LayerToolState`](LayerToolState.md).[`getMap`](LayerToolState.md#getmap)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:136](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L136)
+[model/internal/tool/MapToolState.ts:136](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L136)
 
-___
+***
 
-### getMapObject
+### getMapObject()
 
-▸ **getMapObject**(): [`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>
+> `protected` **getMapObject**(): [`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>
 
 It makes the map object visible to extended classes.
 
 #### Returns
 
-[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>
+[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getMapObject](LayerToolState.md#getmapobject)
+[`LayerToolState`](LayerToolState.md).[`getMapObject`](LayerToolState.md#getmapobject)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:39](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L39)
+[model/internal/object/MapObjectState.ts:39](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L39)
 
-___
+***
 
-### getMarkers
+### getMarkers()
 
-▸ **getMarkers**(): `Marker`\<`any`\>[]
+> **getMarkers**(): `Marker`[]
 
 #### Returns
 
-`Marker`\<`any`\>[]
+`Marker`[]
 
 #### Implementation of
 
-[ISpikeLayerToolState](../interfaces/ISpikeLayerToolState.md).[getMarkers](../interfaces/ISpikeLayerToolState.md#getmarkers)
+[`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md).[`getMarkers`](../interfaces/ISpikeLayerToolState.md#getmarkers)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:232](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L232)
+[tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:232](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L232)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 It returns the type property of the tool state.
 
@@ -496,49 +476,49 @@ It returns the type property of the tool state.
 
 #### Implementation of
 
-[ISpikeLayerToolState](../interfaces/ISpikeLayerToolState.md).[getType](../interfaces/ISpikeLayerToolState.md#gettype)
+[`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md).[`getType`](../interfaces/ISpikeLayerToolState.md#gettype)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getType](LayerToolState.md#gettype)
+[`LayerToolState`](LayerToolState.md).[`getType`](LayerToolState.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:80](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L80)
+[model/internal/object/MapObjectState.ts:80](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L80)
 
-___
+***
 
-### getWorkData
+### getWorkData()
 
-▸ **getWorkData**(): `IWorkData`[]
+> **getWorkData**(): `any`[]
 
 #### Returns
 
-`IWorkData`[]
+`any`[]
 
 #### Implementation of
 
-[ISpikeLayerToolState](../interfaces/ISpikeLayerToolState.md).[getWorkData](../interfaces/ISpikeLayerToolState.md#getworkdata)
+[`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md).[`getWorkData`](../interfaces/ISpikeLayerToolState.md#getworkdata)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:252](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L252)
+[tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:252](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L252)
 
-___
+***
 
-### initialize
+### initialize()
 
-▸ **initialize**(`defaults`, `props`, `initProps`): `void`
+> **initialize**(`defaults`, `props`, `initProps`): `void`
 
 It resets the state with respect to the initial props.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `defaults` | [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md) |
-| `props` | [`ISpikeLayerToolProps`](../modules.md#ispikelayertoolprops) |
-| `initProps` | [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`ISpikeLayerToolConfig`](../modules.md#ispikelayertoolconfig)\> |
+• **defaults**: [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md)
+
+• **props**: [`ISpikeLayerToolProps`](../type-aliases/ISpikeLayerToolProps.md)
+
+• **initProps**: [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`ISpikeLayerToolConfig`](../type-aliases/ISpikeLayerToolConfig.md)\>
 
 #### Returns
 
@@ -546,21 +526,21 @@ It resets the state with respect to the initial props.
 
 #### Implementation of
 
-[ISpikeLayerToolState](../interfaces/ISpikeLayerToolState.md).[initialize](../interfaces/ISpikeLayerToolState.md#initialize)
+[`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md).[`initialize`](../interfaces/ISpikeLayerToolState.md#initialize)
 
 #### Overrides
 
-[LayerToolState](LayerToolState.md).[initialize](LayerToolState.md#initialize)
+[`LayerToolState`](LayerToolState.md).[`initialize`](LayerToolState.md#initialize)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:43](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L43)
+[tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:43](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L43)
 
-___
+***
 
-### isEnabled
+### isEnabled()
 
-▸ **isEnabled**(): `boolean`
+> **isEnabled**(): `boolean`
 
 It returns the enabled property of the tool state.
 
@@ -570,57 +550,53 @@ It returns the enabled property of the tool state.
 
 #### Implementation of
 
-[ISpikeLayerToolState](../interfaces/ISpikeLayerToolState.md).[isEnabled](../interfaces/ISpikeLayerToolState.md#isenabled)
+[`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md).[`isEnabled`](../interfaces/ISpikeLayerToolState.md#isenabled)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[isEnabled](LayerToolState.md#isenabled)
+[`LayerToolState`](LayerToolState.md).[`isEnabled`](LayerToolState.md#isenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:88](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L88)
+[model/internal/tool/MapToolState.ts:88](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L88)
 
-___
+***
 
-### serialize
+### serialize()
 
-▸ **serialize**(`defaults`): [`ISpikeLayerToolConfig`](../modules.md#ispikelayertoolconfig)
+> **serialize**(`defaults`): [`ISpikeLayerToolConfig`](../type-aliases/ISpikeLayerToolConfig.md)
 
 The method serializes the map object state. Optionally, a serialized value can be let undefined if it equals the default value.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `defaults` | `undefined` \| [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md) |
+• **defaults**: `undefined` \| [`ISpikeLayerToolDefaults`](../interfaces/ISpikeLayerToolDefaults.md)
 
 #### Returns
 
-[`ISpikeLayerToolConfig`](../modules.md#ispikelayertoolconfig)
+[`ISpikeLayerToolConfig`](../type-aliases/ISpikeLayerToolConfig.md)
 
 #### Implementation of
 
-[ISpikeLayerToolState](../interfaces/ISpikeLayerToolState.md).[serialize](../interfaces/ISpikeLayerToolState.md#serialize)
+[`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md).[`serialize`](../interfaces/ISpikeLayerToolState.md#serialize)
 
 #### Overrides
 
-[LayerToolState](LayerToolState.md).[serialize](LayerToolState.md#serialize)
+[`LayerToolState`](LayerToolState.md).[`serialize`](LayerToolState.md#serialize)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:174](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L174)
+[tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:174](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L174)
 
-___
+***
 
-### setCategoryColorRules
+### setCategoryColorRules()
 
-▸ **setCategoryColorRules**(`rules`): `void`
+> **setCategoryColorRules**(`rules`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `rules` | `ICategoryColorRules`[] |
+• **rules**: `ICategoryColorRules`[]
 
 #### Returns
 
@@ -628,34 +604,41 @@ ___
 
 #### Implementation of
 
-[ISpikeLayerToolState](../interfaces/ISpikeLayerToolState.md).[setCategoryColorRules](../interfaces/ISpikeLayerToolState.md#setcategorycolorrules)
+[`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md).[`setCategoryColorRules`](../interfaces/ISpikeLayerToolState.md#setcategorycolorrules)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:240](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L240)
+[tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:240](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L240)
 
-___
+***
 
-### setDimensions
+### setDimensions()
 
-▸ **setDimensions**(`dimensions`): `void`
+> **setDimensions**(`dimensions`): `void`
 
 It sets the layer dimensions property of tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimensions` | `Object` |
-| `dimensions.aggregation` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> |
-| `dimensions.category` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `dimensions.categoryColor` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `dimensions.categoryColorOp` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> |
-| `dimensions.categoryColorValue` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `dimensions.color` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `dimensions.latitude` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `dimensions.longitude` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `dimensions.value` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
+• **dimensions**
+
+• **dimensions.aggregation**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\>
+
+• **dimensions.category**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+• **dimensions.categoryColor**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+• **dimensions.categoryColorOp**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\>
+
+• **dimensions.categoryColorValue**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+• **dimensions.color**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+• **dimensions.latitude**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+• **dimensions.longitude**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+• **dimensions.value**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Returns
 
@@ -663,29 +646,27 @@ It sets the layer dimensions property of tool state.
 
 #### Implementation of
 
-[ISpikeLayerToolState](../interfaces/ISpikeLayerToolState.md).[setDimensions](../interfaces/ISpikeLayerToolState.md#setdimensions)
+[`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md).[`setDimensions`](../interfaces/ISpikeLayerToolState.md#setdimensions)
 
 #### Overrides
 
-[LayerToolState](LayerToolState.md).[setDimensions](LayerToolState.md#setdimensions)
+[`LayerToolState`](LayerToolState.md).[`setDimensions`](LayerToolState.md#setdimensions)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:220](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L220)
+[tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:220](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L220)
 
-___
+***
 
-### setEnabled
+### setEnabled()
 
-▸ **setEnabled**(`enabled`): `void`
+> **setEnabled**(`enabled`): `void`
 
 It sets the enabled property of tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `enabled` | `boolean` |
+• **enabled**: `boolean`
 
 #### Returns
 
@@ -693,27 +674,25 @@ It sets the enabled property of tool state.
 
 #### Implementation of
 
-[ISpikeLayerToolState](../interfaces/ISpikeLayerToolState.md).[setEnabled](../interfaces/ISpikeLayerToolState.md#setenabled)
+[`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md).[`setEnabled`](../interfaces/ISpikeLayerToolState.md#setenabled)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[setEnabled](LayerToolState.md#setenabled)
+[`LayerToolState`](LayerToolState.md).[`setEnabled`](LayerToolState.md#setenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:97](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L97)
+[model/internal/tool/MapToolState.ts:97](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L97)
 
-___
+***
 
-### setFiltersManager
+### setFiltersManager()
 
-▸ **setFiltersManager**(`manager`): `void`
+> **setFiltersManager**(`manager`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `manager` | [`IMapFilterManager`](../interfaces/IMapFilterManager.md) |
+• **manager**: [`IMapFilterManager`](../interfaces/IMapFilterManager.md)
 
 #### Returns
 
@@ -721,25 +700,23 @@ ___
 
 #### Implementation of
 
-[ISpikeLayerToolState](../interfaces/ISpikeLayerToolState.md).[setFiltersManager](../interfaces/ISpikeLayerToolState.md#setfiltersmanager)
+[`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md).[`setFiltersManager`](../interfaces/ISpikeLayerToolState.md#setfiltersmanager)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:211](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L211)
+[tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:211](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L211)
 
-___
+***
 
-### setIcon
+### setIcon()
 
-▸ **setIcon**(`icon`): `void`
+> **setIcon**(`icon`): `void`
 
 It sets the icon property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `icon` | `string` |
+• **icon**: `string`
 
 #### Returns
 
@@ -747,29 +724,27 @@ It sets the icon property of the tool state.
 
 #### Implementation of
 
-[ISpikeLayerToolState](../interfaces/ISpikeLayerToolState.md).[setIcon](../interfaces/ISpikeLayerToolState.md#seticon)
+[`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md).[`setIcon`](../interfaces/ISpikeLayerToolState.md#seticon)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[setIcon](LayerToolState.md#seticon)
+[`LayerToolState`](LayerToolState.md).[`setIcon`](LayerToolState.md#seticon)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:129](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L129)
+[model/internal/tool/MapToolState.ts:129](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L129)
 
-___
+***
 
-### setId
+### setId()
 
-▸ **setId**(`id`): `void`
+> **setId**(`id`): `void`
 
 It sets the id property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `id` | `string` |
+• **id**: `string`
 
 #### Returns
 
@@ -777,29 +752,27 @@ It sets the id property of the tool state.
 
 #### Implementation of
 
-[ISpikeLayerToolState](../interfaces/ISpikeLayerToolState.md).[setId](../interfaces/ISpikeLayerToolState.md#setid)
+[`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md).[`setId`](../interfaces/ISpikeLayerToolState.md#setid)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[setId](LayerToolState.md#setid)
+[`LayerToolState`](LayerToolState.md).[`setId`](LayerToolState.md#setid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:96](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L96)
+[model/internal/object/MapObjectState.ts:96](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L96)
 
-___
+***
 
-### setLabel
+### setLabel()
 
-▸ **setLabel**(`label`): `void`
+> **setLabel**(`label`): `void`
 
 It sets the label property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `label` | `string` |
+• **label**: `string`
 
 #### Returns
 
@@ -807,27 +780,25 @@ It sets the label property of the tool state.
 
 #### Implementation of
 
-[ISpikeLayerToolState](../interfaces/ISpikeLayerToolState.md).[setLabel](../interfaces/ISpikeLayerToolState.md#setlabel)
+[`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md).[`setLabel`](../interfaces/ISpikeLayerToolState.md#setlabel)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[setLabel](LayerToolState.md#setlabel)
+[`LayerToolState`](LayerToolState.md).[`setLabel`](LayerToolState.md#setlabel)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:113](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L113)
+[model/internal/tool/MapToolState.ts:113](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L113)
 
-___
+***
 
-### setLayer
+### setLayer()
 
-▸ **setLayer**(`layer`): `void`
+> **setLayer**(`layer`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `layer` | `LayerGroup`\<`any`\> |
+• **layer**: `LayerGroup`
 
 #### Returns
 
@@ -835,25 +806,23 @@ ___
 
 #### Implementation of
 
-[ISpikeLayerToolState](../interfaces/ISpikeLayerToolState.md).[setLayer](../interfaces/ISpikeLayerToolState.md#setlayer)
+[`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md).[`setLayer`](../interfaces/ISpikeLayerToolState.md#setlayer)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:228](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L228)
+[tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:228](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L228)
 
-___
+***
 
-### setLayerItems
+### setLayerItems()
 
-▸ **setLayerItems**(`layerItems`): `void`
+> **setLayerItems**(`layerItems`): `void`
 
 It sets the layer items property of tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `layerItems` | `Layer`[] |
+• **layerItems**: `Layer`[]
 
 #### Returns
 
@@ -861,29 +830,27 @@ It sets the layer items property of tool state.
 
 #### Implementation of
 
-[ISpikeLayerToolState](../interfaces/ISpikeLayerToolState.md).[setLayerItems](../interfaces/ISpikeLayerToolState.md#setlayeritems)
+[`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md).[`setLayerItems`](../interfaces/ISpikeLayerToolState.md#setlayeritems)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[setLayerItems](LayerToolState.md#setlayeritems)
+[`LayerToolState`](LayerToolState.md).[`setLayerItems`](LayerToolState.md#setlayeritems)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/LayerToolState.ts:113](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/LayerToolState.ts#L113)
+[model/internal/layer/LayerToolState.ts:113](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/LayerToolState.ts#L113)
 
-___
+***
 
-### setLayerName
+### setLayerName()
 
-▸ **setLayerName**(`layerName`): `void`
+> **setLayerName**(`layerName`): `void`
 
 It sets the layer name property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `layerName` | `string` |
+• **layerName**: `string`
 
 #### Returns
 
@@ -891,29 +858,27 @@ It sets the layer name property of the tool state.
 
 #### Implementation of
 
-[ISpikeLayerToolState](../interfaces/ISpikeLayerToolState.md).[setLayerName](../interfaces/ISpikeLayerToolState.md#setlayername)
+[`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md).[`setLayerName`](../interfaces/ISpikeLayerToolState.md#setlayername)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[setLayerName](LayerToolState.md#setlayername)
+[`LayerToolState`](LayerToolState.md).[`setLayerName`](LayerToolState.md#setlayername)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/LayerToolState.ts:97](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/LayerToolState.ts#L97)
+[model/internal/layer/LayerToolState.ts:97](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/LayerToolState.ts#L97)
 
-___
+***
 
-### setMap
+### setMap()
 
-▸ **setMap**(`map`): `void`
+> `protected` **setMap**(`map`): `void`
 
 It sets the map property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `map` | [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\> |
+• **map**: [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Returns
 
@@ -921,23 +886,21 @@ It sets the map property of the tool state.
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[setMap](LayerToolState.md#setmap)
+[`LayerToolState`](LayerToolState.md).[`setMap`](LayerToolState.md#setmap)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:145](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L145)
+[model/internal/tool/MapToolState.ts:145](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L145)
 
-___
+***
 
-### setMarkers
+### setMarkers()
 
-▸ **setMarkers**(`markers`): `void`
+> **setMarkers**(`markers`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `markers` | `Marker`\<`any`\>[] |
+• **markers**: `Marker`[]
 
 #### Returns
 
@@ -945,23 +908,21 @@ ___
 
 #### Implementation of
 
-[ISpikeLayerToolState](../interfaces/ISpikeLayerToolState.md).[setMarkers](../interfaces/ISpikeLayerToolState.md#setmarkers)
+[`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md).[`setMarkers`](../interfaces/ISpikeLayerToolState.md#setmarkers)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:236](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L236)
+[tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:236](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L236)
 
-___
+***
 
-### setWorkData
+### setWorkData()
 
-▸ **setWorkData**(`workData`): `void`
+> **setWorkData**(`workData`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `workData` | `IWorkData`[] |
+• **workData**: `any`[]
 
 #### Returns
 
@@ -969,8 +930,8 @@ ___
 
 #### Implementation of
 
-[ISpikeLayerToolState](../interfaces/ISpikeLayerToolState.md).[setWorkData](../interfaces/ISpikeLayerToolState.md#setworkdata)
+[`ISpikeLayerToolState`](../interfaces/ISpikeLayerToolState.md).[`setWorkData`](../interfaces/ISpikeLayerToolState.md#setworkdata)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:248](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L248)
+[tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts:248](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/spike/model/internal/tool/SpikeLayerToolState.ts#L248)

@@ -1,10 +1,14 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / StringTypeManager
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / StringTypeManager
 
 # Class: StringTypeManager
 
 This class specifies the empty type constraint.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
@@ -12,21 +16,11 @@ Jiri Hynek
 
 - [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>
 
-## Table of contents
-
-### Constructors
-
-- [constructor](StringTypeManager.md#constructor)
-
-### Methods
-
-- [deserialize](StringTypeManager.md#deserialize)
-
 ## Constructors
 
-### constructor
+### new StringTypeManager()
 
-• **new StringTypeManager**(): [`StringTypeManager`](StringTypeManager.md)
+> **new StringTypeManager**(): [`StringTypeManager`](StringTypeManager.md)
 
 #### Returns
 
@@ -34,17 +28,15 @@ Jiri Hynek
 
 ## Methods
 
-### deserialize
+### deserialize()
 
-▸ **deserialize**(`value`): `string`
+> **deserialize**(`value`): `string`
 
 It keeps the string representation.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | `string` |
+• **value**: `string`
 
 #### Returns
 
@@ -52,8 +44,8 @@ It keeps the string representation.
 
 #### Implementation of
 
-[ITypeManager](../interfaces/ITypeManager.md).[deserialize](../interfaces/ITypeManager.md#deserialize)
+[`ITypeManager`](../interfaces/ITypeManager.md).[`deserialize`](../interfaces/ITypeManager.md#deserialize)
 
-#### Defined in
+#### Source
 
-[src/model/internal/type/StringTypeManager.ts:13](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/type/StringTypeManager.ts#L13)
+[model/internal/type/StringTypeManager.ts:13](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/type/StringTypeManager.ts#L13)

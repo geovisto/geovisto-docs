@@ -1,38 +1,30 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IntegerTypeManager
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IntegerTypeManager
 
 # Class: IntegerTypeManager
 
 This class specifies the integer type manager.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extended by
 
-- **`IntegerTypeManager`**
-
-  ↳ [`IntegerRangeManager`](IntegerRangeManager.md)
+- [`IntegerRangeManager`](IntegerRangeManager.md)
 
 ## Implements
 
 - [`ITypeManager`](../interfaces/ITypeManager.md)\<`number`\>
 
-## Table of contents
-
-### Constructors
-
-- [constructor](IntegerTypeManager.md#constructor)
-
-### Methods
-
-- [deserialize](IntegerTypeManager.md#deserialize)
-
 ## Constructors
 
-### constructor
+### new IntegerTypeManager()
 
-• **new IntegerTypeManager**(): [`IntegerTypeManager`](IntegerTypeManager.md)
+> **new IntegerTypeManager**(): [`IntegerTypeManager`](IntegerTypeManager.md)
 
 #### Returns
 
@@ -40,17 +32,15 @@ Jiri Hynek
 
 ## Methods
 
-### deserialize
+### deserialize()
 
-▸ **deserialize**(`value`): `number`
+> **deserialize**(`value`): `number`
 
 It converts the string representation of the number value.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | `string` |
+• **value**: `string`
 
 #### Returns
 
@@ -58,8 +48,8 @@ It converts the string representation of the number value.
 
 #### Implementation of
 
-[ITypeManager](../interfaces/ITypeManager.md).[deserialize](../interfaces/ITypeManager.md#deserialize)
+[`ITypeManager`](../interfaces/ITypeManager.md).[`deserialize`](../interfaces/ITypeManager.md#deserialize)
 
-#### Defined in
+#### Source
 
-[src/model/internal/type/IntegerTypeManager.ts:13](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/type/IntegerTypeManager.ts#L13)
+[model/internal/type/IntegerTypeManager.ts:13](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/type/IntegerTypeManager.ts#L13)

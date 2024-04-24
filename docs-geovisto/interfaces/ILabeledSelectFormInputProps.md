@@ -1,61 +1,55 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / ILabeledSelectFormInputProps
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / ILabeledSelectFormInputProps
 
 # Interface: ILabeledSelectFormInputProps
 
 This interface declares specification of a form input props model.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`ISelectFormInputProps`](ISelectFormInputProps.md)
-
-  ↳ **`ILabeledSelectFormInputProps`**
-
-## Table of contents
-
-### Properties
-
-- [label](ILabeledSelectFormInputProps.md#label)
-- [onChangeAction](ILabeledSelectFormInputProps.md#onchangeaction)
-- [options](ILabeledSelectFormInputProps.md#options)
 
 ## Properties
 
 ### label
 
-• **label**: `string`
+> **label**: `string`
 
-#### Defined in
+#### Source
 
-[src/model/types/inputs/labeled/select/ILabeledSelectFormInputProps.ts:9](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/inputs/labeled/select/ILabeledSelectFormInputProps.ts#L9)
+[model/types/inputs/labeled/select/ILabeledSelectFormInputProps.ts:9](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/inputs/labeled/select/ILabeledSelectFormInputProps.ts#L9)
 
-___
+***
 
 ### onChangeAction
 
-• **onChangeAction**: ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `unknown`
+> **onChangeAction**: `null` \| (`this`, `ev`) => `unknown`
 
 #### Inherited from
 
-[ISelectFormInputProps](ISelectFormInputProps.md).[onChangeAction](ISelectFormInputProps.md#onchangeaction)
+[`ISelectFormInputProps`](ISelectFormInputProps.md).[`onChangeAction`](ISelectFormInputProps.md#onchangeaction)
 
-#### Defined in
+#### Source
 
-[src/model/types/inputs/basic/select/ISelectFormInputProps.ts:9](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/inputs/basic/select/ISelectFormInputProps.ts#L9)
+[model/types/inputs/basic/select/ISelectFormInputProps.ts:9](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/inputs/basic/select/ISelectFormInputProps.ts#L9)
 
-___
+***
 
 ### options
 
-• **options**: `string`[]
+> **options**: `string`[]
 
 #### Inherited from
 
-[ISelectFormInputProps](ISelectFormInputProps.md).[options](ISelectFormInputProps.md#options)
+[`ISelectFormInputProps`](ISelectFormInputProps.md).[`options`](ISelectFormInputProps.md#options)
 
-#### Defined in
+#### Source
 
-[src/model/types/inputs/basic/select/ISelectFormInputProps.ts:10](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/inputs/basic/select/ISelectFormInputProps.ts#L10)
+[model/types/inputs/basic/select/ISelectFormInputProps.ts:10](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/inputs/basic/select/ISelectFormInputProps.ts#L10)

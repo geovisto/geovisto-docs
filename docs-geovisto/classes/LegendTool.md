@@ -1,65 +1,36 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / LegendTool
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / LegendTool
 
 # Class: LegendTool
 
 This class provides the legend tool.
 
-**`Author`**
+## Author
 
 Tomas Koscielniak
 
-## Hierarchy
+## Extends
 
 - [`MapTool`](MapTool.md)
-
-  ↳ **`LegendTool`**
 
 ## Implements
 
 - [`ILegendTool`](../interfaces/ILegendTool.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](LegendTool.md#constructor)
-
-### Methods
-
-- [clearLegend](LegendTool.md#clearlegend)
-- [copy](LegendTool.md#copy)
-- [create](LegendTool.md#create)
-- [createDefaults](LegendTool.md#createdefaults)
-- [createLegend](LegendTool.md#createlegend)
-- [createState](LegendTool.md#createstate)
-- [getAPIGetter](LegendTool.md#getapigetter)
-- [getDefaults](LegendTool.md#getdefaults)
-- [getId](LegendTool.md#getid)
-- [getMap](LegendTool.md#getmap)
-- [getProps](LegendTool.md#getprops)
-- [getState](LegendTool.md#getstate)
-- [getType](LegendTool.md#gettype)
-- [handleEvent](LegendTool.md#handleevent)
-- [initialize](LegendTool.md#initialize)
-- [isEnabled](LegendTool.md#isenabled)
-- [isSingleton](LegendTool.md#issingleton)
-- [setEnabled](LegendTool.md#setenabled)
-- [setProps](LegendTool.md#setprops)
-- [switchEnabled](LegendTool.md#switchenabled)
-
 ## Constructors
 
-### constructor
+### new LegendTool()
 
-• **new LegendTool**(`props?`): [`LegendTool`](LegendTool.md)
+> **new LegendTool**(`props`?): [`LegendTool`](LegendTool.md)
 
 It creates a new tool with respect to the props.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `props?` | [`IMapToolProps`](../modules.md#imaptoolprops) |
+• **props?**: [`IMapToolProps`](../type-aliases/IMapToolProps.md)
 
 #### Returns
 
@@ -67,63 +38,61 @@ It creates a new tool with respect to the props.
 
 #### Overrides
 
-[MapTool](MapTool.md).[constructor](MapTool.md#constructor)
+[`MapTool`](MapTool.md).[`constructor`](MapTool.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/tools/legend/model/internal/tool/LegendTool.ts:38](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/legend/model/internal/tool/LegendTool.ts#L38)
+[tools/legend/model/internal/tool/LegendTool.ts:38](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/legend/model/internal/tool/LegendTool.ts#L38)
 
 ## Methods
 
-### clearLegend
+### clearLegend()
 
-▸ **clearLegend**(`owner`): `void`
+> **clearLegend**(`owner`): `void`
 
 This function clears legend.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `owner` | `undefined` \| `string` |
+• **owner**: `undefined` \| `string`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/legend/model/internal/tool/LegendTool.ts:156](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/legend/model/internal/tool/LegendTool.ts#L156)
+[tools/legend/model/internal/tool/LegendTool.ts:156](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/legend/model/internal/tool/LegendTool.ts#L156)
 
-___
+***
 
-### copy
+### copy()
 
-▸ **copy**(): [`ILegendTool`](../interfaces/ILegendTool.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`ILegendToolDefaults`](../interfaces/ILegendToolDefaults.md), [`ILegendToolState`](../interfaces/ILegendToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`ILegendToolDefaults`](../interfaces/ILegendToolDefaults.md), [`ILegendToolConfig`](../modules.md#ilegendtoolconfig)\>, [`ILegendToolConfig`](../modules.md#ilegendtoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`ILegendToolConfig`](../modules.md#ilegendtoolconfig)\>\>
+> **copy**(): [`ILegendTool`](../interfaces/ILegendTool.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`ILegendToolDefaults`](../interfaces/ILegendToolDefaults.md), [`ILegendToolState`](../interfaces/ILegendToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`ILegendToolDefaults`](../interfaces/ILegendToolDefaults.md), [`ILegendToolConfig`](../type-aliases/ILegendToolConfig.md)\>, [`ILegendToolConfig`](../type-aliases/ILegendToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`ILegendToolConfig`](../type-aliases/ILegendToolConfig.md)\>\>
 
 It creates a copy of the uninitialized tool.
 
 #### Returns
 
-[`ILegendTool`](../interfaces/ILegendTool.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`ILegendToolDefaults`](../interfaces/ILegendToolDefaults.md), [`ILegendToolState`](../interfaces/ILegendToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`ILegendToolDefaults`](../interfaces/ILegendToolDefaults.md), [`ILegendToolConfig`](../modules.md#ilegendtoolconfig)\>, [`ILegendToolConfig`](../modules.md#ilegendtoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`ILegendToolConfig`](../modules.md#ilegendtoolconfig)\>\>
+[`ILegendTool`](../interfaces/ILegendTool.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`ILegendToolDefaults`](../interfaces/ILegendToolDefaults.md), [`ILegendToolState`](../interfaces/ILegendToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`ILegendToolDefaults`](../interfaces/ILegendToolDefaults.md), [`ILegendToolConfig`](../type-aliases/ILegendToolConfig.md)\>, [`ILegendToolConfig`](../type-aliases/ILegendToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`ILegendToolConfig`](../type-aliases/ILegendToolConfig.md)\>\>
 
 #### Implementation of
 
-[ILegendTool](../interfaces/ILegendTool.md).[copy](../interfaces/ILegendTool.md#copy)
+[`ILegendTool`](../interfaces/ILegendTool.md).[`copy`](../interfaces/ILegendTool.md#copy)
 
 #### Overrides
 
-[MapTool](MapTool.md).[copy](MapTool.md#copy)
+[`MapTool`](MapTool.md).[`copy`](MapTool.md#copy)
 
-#### Defined in
+#### Source
 
-[src/tools/legend/model/internal/tool/LegendTool.ts:45](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/legend/model/internal/tool/LegendTool.ts#L45)
+[tools/legend/model/internal/tool/LegendTool.ts:45](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/legend/model/internal/tool/LegendTool.ts#L45)
 
-___
+***
 
-### create
+### create()
 
-▸ **create**(): `this`
+> **create**(): `this`
 
 It creates legend.
 
@@ -133,21 +102,21 @@ It creates legend.
 
 #### Implementation of
 
-[ILegendTool](../interfaces/ILegendTool.md).[create](../interfaces/ILegendTool.md#create)
+[`ILegendTool`](../interfaces/ILegendTool.md).[`create`](../interfaces/ILegendTool.md#create)
 
 #### Overrides
 
-[MapTool](MapTool.md).[create](MapTool.md#create)
+[`MapTool`](MapTool.md).[`create`](MapTool.md#create)
 
-#### Defined in
+#### Source
 
-[src/tools/legend/model/internal/tool/LegendTool.ts:96](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/legend/model/internal/tool/LegendTool.ts#L96)
+[tools/legend/model/internal/tool/LegendTool.ts:96](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/legend/model/internal/tool/LegendTool.ts#L96)
 
-___
+***
 
-### createDefaults
+### createDefaults()
 
-▸ **createDefaults**(): [`ILegendToolDefaults`](../interfaces/ILegendToolDefaults.md)
+> `protected` **createDefaults**(): [`ILegendToolDefaults`](../interfaces/ILegendToolDefaults.md)
 
 It creates new defaults of the tool.
 
@@ -157,17 +126,17 @@ It creates new defaults of the tool.
 
 #### Overrides
 
-[MapTool](MapTool.md).[createDefaults](MapTool.md#createdefaults)
+[`MapTool`](MapTool.md).[`createDefaults`](MapTool.md#createdefaults)
 
-#### Defined in
+#### Source
 
-[src/tools/legend/model/internal/tool/LegendTool.ts:66](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/legend/model/internal/tool/LegendTool.ts#L66)
+[tools/legend/model/internal/tool/LegendTool.ts:66](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/legend/model/internal/tool/LegendTool.ts#L66)
 
-___
+***
 
-### createLegend
+### createLegend()
 
-▸ **createLegend**(): `void`
+> `protected` **createLegend**(): `void`
 
 It creates a legend tool and its parts (new legend for each layer that implements it).
 
@@ -175,59 +144,59 @@ It creates a legend tool and its parts (new legend for each layer that implement
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/legend/model/internal/tool/LegendTool.ts:106](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/legend/model/internal/tool/LegendTool.ts#L106)
+[tools/legend/model/internal/tool/LegendTool.ts:106](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/legend/model/internal/tool/LegendTool.ts#L106)
 
-___
+***
 
-### createState
+### createState()
 
-▸ **createState**(): [`ILegendToolState`](../interfaces/ILegendToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`ILegendToolDefaults`](../interfaces/ILegendToolDefaults.md), [`ILegendToolConfig`](../modules.md#ilegendtoolconfig)\>
+> `protected` **createState**(): [`ILegendToolState`](../interfaces/ILegendToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`ILegendToolDefaults`](../interfaces/ILegendToolDefaults.md), [`ILegendToolConfig`](../type-aliases/ILegendToolConfig.md)\>
 
 It returns default tool state.
 
 #### Returns
 
-[`ILegendToolState`](../interfaces/ILegendToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`ILegendToolDefaults`](../interfaces/ILegendToolDefaults.md), [`ILegendToolConfig`](../modules.md#ilegendtoolconfig)\>
+[`ILegendToolState`](../interfaces/ILegendToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`ILegendToolDefaults`](../interfaces/ILegendToolDefaults.md), [`ILegendToolConfig`](../type-aliases/ILegendToolConfig.md)\>
 
 #### Overrides
 
-[MapTool](MapTool.md).[createState](MapTool.md#createstate)
+[`MapTool`](MapTool.md).[`createState`](MapTool.md#createstate)
 
-#### Defined in
+#### Source
 
-[src/tools/legend/model/internal/tool/LegendTool.ts:80](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/legend/model/internal/tool/LegendTool.ts#L80)
+[tools/legend/model/internal/tool/LegendTool.ts:80](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/legend/model/internal/tool/LegendTool.ts#L80)
 
-___
+***
 
-### getAPIGetter
+### getAPIGetter()
 
-▸ **getAPIGetter**(): `undefined` \| [`IMapToolAPIGetter`](../modules.md#imaptoolapigetter)
+> **getAPIGetter**(): `undefined` \| [`IMapToolAPIGetter`](../type-aliases/IMapToolAPIGetter.md)
 
 It returns the tool API
 
 #### Returns
 
-`undefined` \| [`IMapToolAPIGetter`](../modules.md#imaptoolapigetter)
+`undefined` \| [`IMapToolAPIGetter`](../type-aliases/IMapToolAPIGetter.md)
 
 #### Implementation of
 
-[ILegendTool](../interfaces/ILegendTool.md).[getAPIGetter](../interfaces/ILegendTool.md#getapigetter)
+[`ILegendTool`](../interfaces/ILegendTool.md).[`getAPIGetter`](../interfaces/ILegendTool.md#getapigetter)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[getAPIGetter](MapTool.md#getapigetter)
+[`MapTool`](MapTool.md).[`getAPIGetter`](MapTool.md#getapigetter)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:74](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L74)
+[model/internal/tool/MapTool.ts:74](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L74)
 
-___
+***
 
-### getDefaults
+### getDefaults()
 
-▸ **getDefaults**(): [`ILegendToolDefaults`](../interfaces/ILegendToolDefaults.md)
+> **getDefaults**(): [`ILegendToolDefaults`](../interfaces/ILegendToolDefaults.md)
 
 It returns default values of the legend tool.
 
@@ -237,21 +206,21 @@ It returns default values of the legend tool.
 
 #### Implementation of
 
-[ILegendTool](../interfaces/ILegendTool.md).[getDefaults](../interfaces/ILegendTool.md#getdefaults)
+[`ILegendTool`](../interfaces/ILegendTool.md).[`getDefaults`](../interfaces/ILegendTool.md#getdefaults)
 
 #### Overrides
 
-[MapTool](MapTool.md).[getDefaults](MapTool.md#getdefaults)
+[`MapTool`](MapTool.md).[`getDefaults`](MapTool.md#getdefaults)
 
-#### Defined in
+#### Source
 
-[src/tools/legend/model/internal/tool/LegendTool.ts:59](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/legend/model/internal/tool/LegendTool.ts#L59)
+[tools/legend/model/internal/tool/LegendTool.ts:59](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/legend/model/internal/tool/LegendTool.ts#L59)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 Help function which returns the id of the object.
 
@@ -261,21 +230,21 @@ Help function which returns the id of the object.
 
 #### Implementation of
 
-[ILegendTool](../interfaces/ILegendTool.md).[getId](../interfaces/ILegendTool.md#getid)
+[`ILegendTool`](../interfaces/ILegendTool.md).[`getId`](../interfaces/ILegendTool.md#getid)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[getId](MapTool.md#getid)
+[`MapTool`](MapTool.md).[`getId`](MapTool.md#getid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObject.ts:93](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObject.ts#L93)
+[model/internal/object/MapObject.ts:93](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObject.ts#L93)
 
-___
+***
 
-### getMap
+### getMap()
 
-▸ **getMap**(): `undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+> **getMap**(): `undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 Help function returns map which uses this tool.
 
@@ -283,73 +252,73 @@ Do not override this function. Use the state class instead.
 
 #### Returns
 
-`undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+`undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Implementation of
 
-[ILegendTool](../interfaces/ILegendTool.md).[getMap](../interfaces/ILegendTool.md#getmap)
+[`ILegendTool`](../interfaces/ILegendTool.md).[`getMap`](../interfaces/ILegendTool.md#getmap)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[getMap](MapTool.md#getmap)
+[`MapTool`](MapTool.md).[`getMap`](MapTool.md#getmap)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:112](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L112)
+[model/internal/tool/MapTool.ts:112](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L112)
 
-___
+***
 
-### getProps
+### getProps()
 
-▸ **getProps**(): [`IMapToolProps`](../modules.md#imaptoolprops)
+> **getProps**(): [`IMapToolProps`](../type-aliases/IMapToolProps.md)
 
 It returns the props given by the programmer.
 
 #### Returns
 
-[`IMapToolProps`](../modules.md#imaptoolprops)
+[`IMapToolProps`](../type-aliases/IMapToolProps.md)
 
 #### Implementation of
 
-[ILegendTool](../interfaces/ILegendTool.md).[getProps](../interfaces/ILegendTool.md#getprops)
+[`ILegendTool`](../interfaces/ILegendTool.md).[`getProps`](../interfaces/ILegendTool.md#getprops)
 
 #### Overrides
 
-[MapTool](MapTool.md).[getProps](MapTool.md#getprops)
+[`MapTool`](MapTool.md).[`getProps`](MapTool.md#getprops)
 
-#### Defined in
+#### Source
 
-[src/tools/legend/model/internal/tool/LegendTool.ts:52](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/legend/model/internal/tool/LegendTool.ts#L52)
+[tools/legend/model/internal/tool/LegendTool.ts:52](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/legend/model/internal/tool/LegendTool.ts#L52)
 
-___
+***
 
-### getState
+### getState()
 
-▸ **getState**(): [`ILegendToolState`](../interfaces/ILegendToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`ILegendToolDefaults`](../interfaces/ILegendToolDefaults.md), [`ILegendToolConfig`](../modules.md#ilegendtoolconfig)\>
+> **getState**(): [`ILegendToolState`](../interfaces/ILegendToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`ILegendToolDefaults`](../interfaces/ILegendToolDefaults.md), [`ILegendToolConfig`](../type-aliases/ILegendToolConfig.md)\>
 
 It returns the legend tool state.
 
 #### Returns
 
-[`ILegendToolState`](../interfaces/ILegendToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`ILegendToolDefaults`](../interfaces/ILegendToolDefaults.md), [`ILegendToolConfig`](../modules.md#ilegendtoolconfig)\>
+[`ILegendToolState`](../interfaces/ILegendToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`ILegendToolDefaults`](../interfaces/ILegendToolDefaults.md), [`ILegendToolConfig`](../type-aliases/ILegendToolConfig.md)\>
 
 #### Implementation of
 
-[ILegendTool](../interfaces/ILegendTool.md).[getState](../interfaces/ILegendTool.md#getstate)
+[`ILegendTool`](../interfaces/ILegendTool.md).[`getState`](../interfaces/ILegendTool.md#getstate)
 
 #### Overrides
 
-[MapTool](MapTool.md).[getState](MapTool.md#getstate)
+[`MapTool`](MapTool.md).[`getState`](MapTool.md#getstate)
 
-#### Defined in
+#### Source
 
-[src/tools/legend/model/internal/tool/LegendTool.ts:73](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/legend/model/internal/tool/LegendTool.ts#L73)
+[tools/legend/model/internal/tool/LegendTool.ts:73](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/legend/model/internal/tool/LegendTool.ts#L73)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 Help function which returns the type of the object.
 
@@ -359,29 +328,27 @@ Help function which returns the type of the object.
 
 #### Implementation of
 
-[ILegendTool](../interfaces/ILegendTool.md).[getType](../interfaces/ILegendTool.md#gettype)
+[`ILegendTool`](../interfaces/ILegendTool.md).[`getType`](../interfaces/ILegendTool.md#gettype)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[getType](MapTool.md#gettype)
+[`MapTool`](MapTool.md).[`getType`](MapTool.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObject.ts:86](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObject.ts#L86)
+[model/internal/object/MapObject.ts:86](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObject.ts#L86)
 
-___
+***
 
-### handleEvent
+### handleEvent()
 
-▸ **handleEvent**(`event`): `void`
+> **handleEvent**(`event`): `void`
 
 This function is called when a custom event is invoked.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `event` | [`IMapEvent`](../interfaces/IMapEvent.md)\<[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>\> |
+• **event**: [`IMapEvent`](../interfaces/IMapEvent.md)\<[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>\>
 
 #### Returns
 
@@ -389,25 +356,23 @@ This function is called when a custom event is invoked.
 
 #### Overrides
 
-[MapTool](MapTool.md).[handleEvent](MapTool.md#handleevent)
+[`MapTool`](MapTool.md).[`handleEvent`](MapTool.md#handleevent)
 
-#### Defined in
+#### Source
 
-[src/tools/legend/model/internal/tool/LegendTool.ts:168](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/legend/model/internal/tool/LegendTool.ts#L168)
+[tools/legend/model/internal/tool/LegendTool.ts:168](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/legend/model/internal/tool/LegendTool.ts#L168)
 
-___
+***
 
-### initialize
+### initialize()
 
-▸ **initialize**(`initProps`): `this`
+> **initialize**(`initProps`): `this`
 
 Overrides the super method.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `initProps` | [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`ILegendToolConfig`](../modules.md#ilegendtoolconfig)\> |
+• **initProps**: [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`ILegendToolConfig`](../type-aliases/ILegendToolConfig.md)\>
 
 #### Returns
 
@@ -415,21 +380,21 @@ Overrides the super method.
 
 #### Implementation of
 
-[ILegendTool](../interfaces/ILegendTool.md).[initialize](../interfaces/ILegendTool.md#initialize)
+[`ILegendTool`](../interfaces/ILegendTool.md).[`initialize`](../interfaces/ILegendTool.md#initialize)
 
 #### Overrides
 
-[MapTool](MapTool.md).[initialize](MapTool.md#initialize)
+[`MapTool`](MapTool.md).[`initialize`](MapTool.md#initialize)
 
-#### Defined in
+#### Source
 
-[src/tools/legend/model/internal/tool/LegendTool.ts:89](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/legend/model/internal/tool/LegendTool.ts#L89)
+[tools/legend/model/internal/tool/LegendTool.ts:89](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/legend/model/internal/tool/LegendTool.ts#L89)
 
-___
+***
 
-### isEnabled
+### isEnabled()
 
-▸ **isEnabled**(): `boolean`
+> **isEnabled**(): `boolean`
 
 Help getter which returns enabled property of state.
 
@@ -441,21 +406,21 @@ Do not override this function. Use the state class instead.
 
 #### Implementation of
 
-[ILegendTool](../interfaces/ILegendTool.md).[isEnabled](../interfaces/ILegendTool.md#isenabled)
+[`ILegendTool`](../interfaces/ILegendTool.md).[`isEnabled`](../interfaces/ILegendTool.md#isenabled)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[isEnabled](MapTool.md#isenabled)
+[`MapTool`](MapTool.md).[`isEnabled`](MapTool.md#isenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:130](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L130)
+[model/internal/tool/MapTool.ts:130](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L130)
 
-___
+***
 
-### isSingleton
+### isSingleton()
 
-▸ **isSingleton**(): `boolean`
+> **isSingleton**(): `boolean`
 
 Help getter which returns a logtical value whether the tool type is singleton.
 
@@ -465,21 +430,21 @@ Help getter which returns a logtical value whether the tool type is singleton.
 
 #### Implementation of
 
-[ILegendTool](../interfaces/ILegendTool.md).[isSingleton](../interfaces/ILegendTool.md#issingleton)
+[`ILegendTool`](../interfaces/ILegendTool.md).[`isSingleton`](../interfaces/ILegendTool.md#issingleton)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[isSingleton](MapTool.md#issingleton)
+[`MapTool`](MapTool.md).[`isSingleton`](MapTool.md#issingleton)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:81](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L81)
+[model/internal/tool/MapTool.ts:81](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L81)
 
-___
+***
 
-### setEnabled
+### setEnabled()
 
-▸ **setEnabled**(`enabled`): `void`
+> **setEnabled**(`enabled`): `void`
 
 Some tools might be dynamicaly enabled/disabled.
 This function is called externally when the tool is enabled/disabled.
@@ -488,9 +453,7 @@ Override this function, if needed.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `enabled` | `boolean` |
+• **enabled**: `boolean`
 
 #### Returns
 
@@ -498,29 +461,27 @@ Override this function, if needed.
 
 #### Implementation of
 
-[ILegendTool](../interfaces/ILegendTool.md).[setEnabled](../interfaces/ILegendTool.md#setenabled)
+[`ILegendTool`](../interfaces/ILegendTool.md).[`setEnabled`](../interfaces/ILegendTool.md#setenabled)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[setEnabled](MapTool.md#setenabled)
+[`MapTool`](MapTool.md).[`setEnabled`](MapTool.md#setenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:142](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L142)
+[model/internal/tool/MapTool.ts:142](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L142)
 
-___
+***
 
-### setProps
+### setProps()
 
-▸ **setProps**(`props`): `void`
+> `protected` **setProps**(`props`): `void`
 
 It updates the props.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `props` | [`IMapObjectProps`](../modules.md#imapobjectprops) |
+• **props**: [`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
 #### Returns
 
@@ -528,17 +489,17 @@ It updates the props.
 
 #### Inherited from
 
-[MapTool](MapTool.md).[setProps](MapTool.md#setprops)
+[`MapTool`](MapTool.md).[`setProps`](MapTool.md#setprops)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObject.ts:38](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObject.ts#L38)
+[model/internal/object/MapObject.ts:38](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObject.ts#L38)
 
-___
+***
 
-### switchEnabled
+### switchEnabled()
 
-▸ **switchEnabled**(): `void`
+> **switchEnabled**(): `void`
 
 Help function which switches enabled state (enabled/disabled).
 
@@ -550,12 +511,12 @@ Do not override this function. Use setEnabled instead.
 
 #### Implementation of
 
-[ILegendTool](../interfaces/ILegendTool.md).[switchEnabled](../interfaces/ILegendTool.md#switchenabled)
+[`ILegendTool`](../interfaces/ILegendTool.md).[`switchEnabled`](../interfaces/ILegendTool.md#switchenabled)
 
 #### Inherited from
 
-[MapTool](MapTool.md).[switchEnabled](MapTool.md#switchenabled)
+[`MapTool`](MapTool.md).[`switchEnabled`](MapTool.md#switchenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:158](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L158)
+[model/internal/tool/MapTool.ts:158](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L158)

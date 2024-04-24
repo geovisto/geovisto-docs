@@ -1,25 +1,23 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IMapTemplates
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IMapTemplates
 
 # Interface: IMapTemplates
 
 This interface provides specification of map templates model.
 
-**`Author`**
+## Author
 
 Jiri Hynek
-
-## Table of contents
-
-### Properties
-
-- [tools](IMapTemplates.md#tools)
 
 ## Properties
 
 ### tools
 
-• **tools**: [`IMapToolsManager`](IMapToolsManager.md)
+> **tools**: [`IMapToolsManager`](IMapToolsManager.md)
 
-#### Defined in
+#### Source
 
-[src/model/types/map/IMapTemplates.ts:9](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/map/IMapTemplates.ts#L9)
+[model/types/map/IMapTemplates.ts:9](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/map/IMapTemplates.ts#L9)

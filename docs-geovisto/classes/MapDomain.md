@@ -1,69 +1,34 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / MapDomain
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
 
-# Class: MapDomain
+***
+
+[geovisto-map](../README.md) / MapDomain
+
+# Class: `abstract` MapDomain
 
 The generic implementation of map domain which overrides toString function.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`AbstractMapDomain`](AbstractMapDomain.md)
-
-  ↳ **`MapDomain`**
-
-  ↳↳ [`CountAggregationFunction`](CountAggregationFunction.md)
-
-  ↳↳ [`SumAggregationFunction`](SumAggregationFunction.md)
-
-  ↳↳ [`MapAggregationFunction`](MapAggregationFunction.md)
-
-  ↳↳ [`GeoJsonData`](GeoJsonData.md)
-
-  ↳↳ [`MarkDownData`](MarkDownData.md)
-
-  ↳↳ [`CustomMinMaxScale`](CustomMinMaxScale.md)
-
-  ↳↳ [`DecimalScale`](DecimalScale.md)
-
-  ↳↳ [`MedianScale`](MedianScale.md)
-
-  ↳↳ [`RelativeMinMaxScale`](RelativeMinMaxScale.md)
-
-  ↳↳ [`RelativeScale`](RelativeScale.md)
 
 ## Implements
 
 - [`IMapDomain`](../interfaces/IMapDomain.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](MapDomain.md#constructor)
-
-### Properties
-
-- [name](MapDomain.md#name)
-
-### Methods
-
-- [getName](MapDomain.md#getname)
-- [toString](MapDomain.md#tostring)
-
 ## Constructors
 
-### constructor
+### new MapDomain()
 
-• **new MapDomain**(`name`): [`MapDomain`](MapDomain.md)
+> **new MapDomain**(`name`): [`MapDomain`](MapDomain.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
+• **name**: `string`
 
 #### Returns
 
@@ -71,27 +36,27 @@ Jiri Hynek
 
 #### Overrides
 
-[AbstractMapDomain](AbstractMapDomain.md).[constructor](AbstractMapDomain.md#constructor)
+[`AbstractMapDomain`](AbstractMapDomain.md).[`constructor`](AbstractMapDomain.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomain.ts:13](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomain.ts#L13)
+[model/internal/domain/generic/MapDomain.ts:13](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomain.ts#L13)
 
 ## Properties
 
 ### name
 
-• `Private` **name**: `string`
+> `private` **name**: `string`
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomain.ts:11](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomain.ts#L11)
+[model/internal/domain/generic/MapDomain.ts:11](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomain.ts#L11)
 
 ## Methods
 
-### getName
+### getName()
 
-▸ **getName**(): `string`
+> **getName**(): `string`
 
 It returns the name of the map domain.
 
@@ -101,21 +66,21 @@ It returns the name of the map domain.
 
 #### Implementation of
 
-[IMapDomain](../interfaces/IMapDomain.md).[getName](../interfaces/IMapDomain.md#getname)
+[`IMapDomain`](../interfaces/IMapDomain.md).[`getName`](../interfaces/IMapDomain.md#getname)
 
 #### Overrides
 
-[AbstractMapDomain](AbstractMapDomain.md).[getName](AbstractMapDomain.md#getname)
+[`AbstractMapDomain`](AbstractMapDomain.md).[`getName`](AbstractMapDomain.md#getname)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomain.ts:21](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomain.ts#L21)
+[model/internal/domain/generic/MapDomain.ts:21](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomain.ts#L21)
 
-___
+***
 
-### toString
+### toString()
 
-▸ **toString**(): `string`
+> **toString**(): `string`
 
 The string representation is equal to the name of the map domain.
 
@@ -125,8 +90,8 @@ The string representation is equal to the name of the map domain.
 
 #### Inherited from
 
-[AbstractMapDomain](AbstractMapDomain.md).[toString](AbstractMapDomain.md#tostring)
+[`AbstractMapDomain`](AbstractMapDomain.md).[`toString`](AbstractMapDomain.md#tostring)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/abstract/AbstractMapDomain.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/abstract/AbstractMapDomain.ts#L18)
+[model/internal/domain/abstract/AbstractMapDomain.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/abstract/AbstractMapDomain.ts#L18)

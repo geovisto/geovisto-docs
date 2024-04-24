@@ -1,51 +1,36 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / DummyTabToolMapForm
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / DummyTabToolMapForm
 
 # Class: DummyTabToolMapForm
 
 This class provides the settings sidebar tab.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
-- [`MapObjectForm`](MapObjectForm.md)\<[`IDummyTabTool`](../modules.md#idummytabtool)\>
-
-  ↳ **`DummyTabToolMapForm`**
+- [`MapObjectForm`](MapObjectForm.md)\<[`IDummyTabTool`](../type-aliases/IDummyTabTool.md)\>
 
 ## Implements
 
 - [`IMapForm`](../interfaces/IMapForm.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](DummyTabToolMapForm.md#constructor)
-
-### Properties
-
-- [htmlContent](DummyTabToolMapForm.md#htmlcontent)
-
-### Methods
-
-- [getContent](DummyTabToolMapForm.md#getcontent)
-- [getMapObject](DummyTabToolMapForm.md#getmapobject)
-
 ## Constructors
 
-### constructor
+### new DummyTabToolMapForm()
 
-• **new DummyTabToolMapForm**(`tool`): [`DummyTabToolMapForm`](DummyTabToolMapForm.md)
+> **new DummyTabToolMapForm**(`tool`): [`DummyTabToolMapForm`](DummyTabToolMapForm.md)
 
 It creates new map form with respect to the given props.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `tool` | [`IDummyTabTool`](../modules.md#idummytabtool) |
+• **tool**: [`IDummyTabTool`](../type-aliases/IDummyTabTool.md)
 
 #### Returns
 
@@ -53,27 +38,27 @@ It creates new map form with respect to the given props.
 
 #### Overrides
 
-[MapObjectForm](MapObjectForm.md).[constructor](MapObjectForm.md#constructor)
+[`MapObjectForm`](MapObjectForm.md).[`constructor`](MapObjectForm.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/dummy/DummyTabToolMapForm.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/dummy/DummyTabToolMapForm.ts#L23)
+[tools/sidebar/model/internal/dummy/DummyTabToolMapForm.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/dummy/DummyTabToolMapForm.ts#L23)
 
 ## Properties
 
 ### htmlContent
 
-• `Private` **htmlContent**: `HTMLDivElement`
+> `private` **htmlContent**: `HTMLDivElement`
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/dummy/DummyTabToolMapForm.ts:16](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/dummy/DummyTabToolMapForm.ts#L16)
+[tools/sidebar/model/internal/dummy/DummyTabToolMapForm.ts:16](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/dummy/DummyTabToolMapForm.ts#L16)
 
 ## Methods
 
-### getContent
+### getContent()
 
-▸ **getContent**(): `HTMLDivElement`
+> **getContent**(): `HTMLDivElement`
 
 It returns generic layer tab pane.
 
@@ -83,30 +68,30 @@ It returns generic layer tab pane.
 
 #### Implementation of
 
-[IMapForm](../interfaces/IMapForm.md).[getContent](../interfaces/IMapForm.md#getcontent)
+[`IMapForm`](../interfaces/IMapForm.md).[`getContent`](../interfaces/IMapForm.md#getcontent)
 
 #### Overrides
 
-[MapObjectForm](MapObjectForm.md).[getContent](MapObjectForm.md#getcontent)
+[`MapObjectForm`](MapObjectForm.md).[`getContent`](MapObjectForm.md#getcontent)
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/dummy/DummyTabToolMapForm.ts:30](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/dummy/DummyTabToolMapForm.ts#L30)
+[tools/sidebar/model/internal/dummy/DummyTabToolMapForm.ts:30](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/dummy/DummyTabToolMapForm.ts#L30)
 
-___
+***
 
-### getMapObject
+### getMapObject()
 
-▸ **getMapObject**(): [`IDummyTabTool`](../modules.md#idummytabtool)
+> `protected` **getMapObject**(): [`IDummyTabTool`](../type-aliases/IDummyTabTool.md)
 
 #### Returns
 
-[`IDummyTabTool`](../modules.md#idummytabtool)
+[`IDummyTabTool`](../type-aliases/IDummyTabTool.md)
 
 #### Inherited from
 
-[MapObjectForm](MapObjectForm.md).[getMapObject](MapObjectForm.md#getmapobject)
+[`MapObjectForm`](MapObjectForm.md).[`getMapObject`](MapObjectForm.md#getmapobject)
 
-#### Defined in
+#### Source
 
-[src/model/internal/form/MapObjectForm.ts:16](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/form/MapObjectForm.ts#L16)
+[model/internal/form/MapObjectForm.ts:16](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/form/MapObjectForm.ts#L16)

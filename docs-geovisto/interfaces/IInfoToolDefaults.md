@@ -1,67 +1,50 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IInfoToolDefaults
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IInfoToolDefaults
 
 # Interface: IInfoToolDefaults
 
 This interface declares functions which return the default state values.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-**`Author`**
+## Author
 
 Tomas Koscielniak
 
-## Hierarchy
+## Extends
 
 - [`IMapToolDefaults`](IMapToolDefaults.md)
 
-  ↳ **`IInfoToolDefaults`**
-
-## Implemented by
-
-- [`InfoToolDefaults`](../classes/InfoToolDefaults.md)
-
-## Table of contents
-
-### Methods
-
-- [getConfig](IInfoToolDefaults.md#getconfig)
-- [getIcon](IInfoToolDefaults.md#geticon)
-- [getId](IInfoToolDefaults.md#getid)
-- [getInfoDataManager](IInfoToolDefaults.md#getinfodatamanager)
-- [getLabel](IInfoToolDefaults.md#getlabel)
-- [getMarkdown](IInfoToolDefaults.md#getmarkdown)
-- [getProps](IInfoToolDefaults.md#getprops)
-- [getType](IInfoToolDefaults.md#gettype)
-- [isEnabled](IInfoToolDefaults.md#isenabled)
-- [isSingleton](IInfoToolDefaults.md#issingleton)
-
 ## Methods
 
-### getConfig
+### getConfig()
 
-▸ **getConfig**(): [`IInfoToolConfig`](../modules.md#iinfotoolconfig)
+> **getConfig**(): [`IInfoToolConfig`](../type-aliases/IInfoToolConfig.md)
 
 It returns default config if no config is given.
 
 #### Returns
 
-[`IInfoToolConfig`](../modules.md#iinfotoolconfig)
+[`IInfoToolConfig`](../type-aliases/IInfoToolConfig.md)
 
 #### Overrides
 
-[IMapToolDefaults](IMapToolDefaults.md).[getConfig](IMapToolDefaults.md#getconfig)
+[`IMapToolDefaults`](IMapToolDefaults.md).[`getConfig`](IMapToolDefaults.md#getconfig)
 
-#### Defined in
+#### Source
 
-[src/tools/info/model/types/tool/IInfoToolDefaults.ts:20](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/info/model/types/tool/IInfoToolDefaults.ts#L20)
+[tools/info/model/types/tool/IInfoToolDefaults.ts:20](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/info/model/types/tool/IInfoToolDefaults.ts#L20)
 
-___
+***
 
-### getIcon
+### getIcon()
 
-▸ **getIcon**(): `string`
+> **getIcon**(): `string`
 
 It returns the icon of the tool.
 
@@ -71,17 +54,17 @@ It returns the icon of the tool.
 
 #### Inherited from
 
-[IMapToolDefaults](IMapToolDefaults.md).[getIcon](IMapToolDefaults.md#geticon)
+[`IMapToolDefaults`](IMapToolDefaults.md).[`getIcon`](IMapToolDefaults.md#geticon)
 
-#### Defined in
+#### Source
 
-[src/model/types/tool/IMapToolDefaults.ts:36](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/tool/IMapToolDefaults.ts#L36)
+[model/types/tool/IMapToolDefaults.ts:36](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/tool/IMapToolDefaults.ts#L36)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 It returns identifier which is used when no identifier is specified.
 
@@ -91,33 +74,33 @@ It returns identifier which is used when no identifier is specified.
 
 #### Inherited from
 
-[IMapToolDefaults](IMapToolDefaults.md).[getId](IMapToolDefaults.md#getid)
+[`IMapToolDefaults`](IMapToolDefaults.md).[`getId`](IMapToolDefaults.md#getid)
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectDefaults.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectDefaults.ts#L32)
+[model/types/object/IMapObjectDefaults.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectDefaults.ts#L32)
 
-___
+***
 
-### getInfoDataManager
+### getInfoDataManager()
 
-▸ **getInfoDataManager**(): [`IInfoDataManager`](../modules.md#iinfodatamanager)
+> **getInfoDataManager**(): [`IInfoDataManager`](../type-aliases/IInfoDataManager.md)
 
 It returns default info data manager.
 
 #### Returns
 
-[`IInfoDataManager`](../modules.md#iinfodatamanager)
+[`IInfoDataManager`](../type-aliases/IInfoDataManager.md)
 
-#### Defined in
+#### Source
 
-[src/tools/info/model/types/tool/IInfoToolDefaults.ts:25](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/info/model/types/tool/IInfoToolDefaults.ts#L25)
+[tools/info/model/types/tool/IInfoToolDefaults.ts:25](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/info/model/types/tool/IInfoToolDefaults.ts#L25)
 
-___
+***
 
-### getLabel
+### getLabel()
 
-▸ **getLabel**(): `string`
+> **getLabel**(): `string`
 
 It returns the label of the tool.
 
@@ -127,51 +110,51 @@ It returns the label of the tool.
 
 #### Inherited from
 
-[IMapToolDefaults](IMapToolDefaults.md).[getLabel](IMapToolDefaults.md#getlabel)
+[`IMapToolDefaults`](IMapToolDefaults.md).[`getLabel`](IMapToolDefaults.md#getlabel)
 
-#### Defined in
+#### Source
 
-[src/model/types/tool/IMapToolDefaults.ts:31](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/tool/IMapToolDefaults.ts#L31)
+[model/types/tool/IMapToolDefaults.ts:31](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/tool/IMapToolDefaults.ts#L31)
 
-___
+***
 
-### getMarkdown
+### getMarkdown()
 
-▸ **getMarkdown**(): [`IInfoData`](IInfoData.md)
+> **getMarkdown**(): [`IInfoData`](IInfoData.md)
 
 #### Returns
 
 [`IInfoData`](IInfoData.md)
 
-#### Defined in
+#### Source
 
-[src/tools/info/model/types/tool/IInfoToolDefaults.ts:27](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/info/model/types/tool/IInfoToolDefaults.ts#L27)
+[tools/info/model/types/tool/IInfoToolDefaults.ts:27](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/info/model/types/tool/IInfoToolDefaults.ts#L27)
 
-___
+***
 
-### getProps
+### getProps()
 
-▸ **getProps**(): [`IMapObjectProps`](../modules.md#imapobjectprops)
+> **getProps**(): [`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
 It returns default props if no props are given.
 
 #### Returns
 
-[`IMapObjectProps`](../modules.md#imapobjectprops)
+[`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
 #### Inherited from
 
-[IMapToolDefaults](IMapToolDefaults.md).[getProps](IMapToolDefaults.md#getprops)
+[`IMapToolDefaults`](IMapToolDefaults.md).[`getProps`](IMapToolDefaults.md#getprops)
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectDefaults.ts:17](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectDefaults.ts#L17)
+[model/types/object/IMapObjectDefaults.ts:17](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectDefaults.ts#L17)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 It returns a unique type string of the map object.
 
@@ -181,17 +164,17 @@ It returns a unique type string of the map object.
 
 #### Inherited from
 
-[IMapToolDefaults](IMapToolDefaults.md).[getType](IMapToolDefaults.md#gettype)
+[`IMapToolDefaults`](IMapToolDefaults.md).[`getType`](IMapToolDefaults.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectDefaults.ts:27](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectDefaults.ts#L27)
+[model/types/object/IMapObjectDefaults.ts:27](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectDefaults.ts#L27)
 
-___
+***
 
-### isEnabled
+### isEnabled()
 
-▸ **isEnabled**(): `boolean`
+> **isEnabled**(): `boolean`
 
 By default, the tool is enabled.
 
@@ -201,17 +184,17 @@ By default, the tool is enabled.
 
 #### Inherited from
 
-[IMapToolDefaults](IMapToolDefaults.md).[isEnabled](IMapToolDefaults.md#isenabled)
+[`IMapToolDefaults`](IMapToolDefaults.md).[`isEnabled`](IMapToolDefaults.md#isenabled)
 
-#### Defined in
+#### Source
 
-[src/model/types/tool/IMapToolDefaults.ts:26](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/tool/IMapToolDefaults.ts#L26)
+[model/types/tool/IMapToolDefaults.ts:26](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/tool/IMapToolDefaults.ts#L26)
 
-___
+***
 
-### isSingleton
+### isSingleton()
 
-▸ **isSingleton**(): `boolean`
+> **isSingleton**(): `boolean`
 
 It returns a logical value whether the tool type is singleton.
 
@@ -221,8 +204,8 @@ It returns a logical value whether the tool type is singleton.
 
 #### Inherited from
 
-[IMapToolDefaults](IMapToolDefaults.md).[isSingleton](IMapToolDefaults.md#issingleton)
+[`IMapToolDefaults`](IMapToolDefaults.md).[`isSingleton`](IMapToolDefaults.md#issingleton)
 
-#### Defined in
+#### Source
 
-[src/model/types/tool/IMapToolDefaults.ts:19](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/tool/IMapToolDefaults.ts#L19)
+[model/types/tool/IMapToolDefaults.ts:19](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/tool/IMapToolDefaults.ts#L19)

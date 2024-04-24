@@ -1,54 +1,34 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / LabeledSliderFormInput
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / LabeledSliderFormInput
 
 # Class: LabeledSliderFormInput
 
 This class represents basic text sidebar input.
 
-**`Author`**
+## Author
 
 Jakub Kachlik
 
-**`Author`**
+## Author
 
 Jiri Hynek - conversion to TypeScript
 
-## Hierarchy
+## Extends
 
 - [`AbstractMapFormInput`](AbstractMapFormInput.md)
 
-  ↳ **`LabeledSliderFormInput`**
-
-## Table of contents
-
-### Constructors
-
-- [constructor](LabeledSliderFormInput.md#constructor)
-
-### Properties
-
-- [div](LabeledSliderFormInput.md#div)
-- [input](LabeledSliderFormInput.md#input)
-
-### Methods
-
-- [create](LabeledSliderFormInput.md#create)
-- [getProps](LabeledSliderFormInput.md#getprops)
-- [getValue](LabeledSliderFormInput.md#getvalue)
-- [setDisabled](LabeledSliderFormInput.md#setdisabled)
-- [setValue](LabeledSliderFormInput.md#setvalue)
-- [ID](LabeledSliderFormInput.md#id)
-
 ## Constructors
 
-### constructor
+### new LabeledSliderFormInput()
 
-• **new LabeledSliderFormInput**(`props`): [`LabeledSliderFormInput`](LabeledSliderFormInput.md)
+> **new LabeledSliderFormInput**(`props`): [`LabeledSliderFormInput`](LabeledSliderFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `props` | [`ILabeledSliderFormInputProps`](../interfaces/ILabeledSliderFormInputProps.md) |
+• **props**: [`ILabeledSliderFormInputProps`](../interfaces/ILabeledSliderFormInputProps.md)
 
 #### Returns
 
@@ -56,41 +36,41 @@ Jiri Hynek - conversion to TypeScript
 
 #### Overrides
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[constructor](AbstractMapFormInput.md#constructor)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`constructor`](AbstractMapFormInput.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts:33](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts#L33)
+[model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts:33](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts#L33)
 
 ## Properties
 
-### div
+### div?
 
-• `Private` `Optional` **div**: `HTMLDivElement`
+> `private` `optional` **div**: `HTMLDivElement`
 
 The input element is created when required.
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts:26](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts#L26)
+[model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts:26](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts#L26)
 
-___
+***
 
-### input
+### input?
 
-• `Private` `Optional` **input**: `HTMLInputElement`
+> `private` `optional` **input**: `HTMLInputElement`
 
 Basic input is used.
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts:31](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts#L31)
+[model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts:31](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts#L31)
 
 ## Methods
 
-### create
+### create()
 
-▸ **create**(): `HTMLDivElement`
+> **create**(): `HTMLDivElement`
 
 It returns input element.
 
@@ -100,17 +80,17 @@ It returns input element.
 
 #### Overrides
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[create](AbstractMapFormInput.md#create)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`create`](AbstractMapFormInput.md#create)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts:51](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts#L51)
+[model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts:51](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts#L51)
 
-___
+***
 
-### getProps
+### getProps()
 
-▸ **getProps**(): [`IMapFormInputProps`](../interfaces/IMapFormInputProps.md)
+> `protected` **getProps**(): [`IMapFormInputProps`](../interfaces/IMapFormInputProps.md)
 
 It provides the props to the exteded classes.
 
@@ -120,17 +100,17 @@ It provides the props to the exteded classes.
 
 #### Inherited from
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[getProps](AbstractMapFormInput.md#getprops)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`getProps`](AbstractMapFormInput.md#getprops)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/abstract/AbstractMapFormInput.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/abstract/AbstractMapFormInput.ts#L23)
+[model/internal/inputs/abstract/AbstractMapFormInput.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/abstract/AbstractMapFormInput.ts#L23)
 
-___
+***
 
-### getValue
+### getValue()
 
-▸ **getValue**(): `string`
+> **getValue**(): `string`
 
 It returns value of the input element.
 
@@ -140,25 +120,23 @@ It returns value of the input element.
 
 #### Overrides
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[getValue](AbstractMapFormInput.md#getvalue)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`getValue`](AbstractMapFormInput.md#getvalue)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts:99](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts#L99)
+[model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts:99](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts#L99)
 
-___
+***
 
-### setDisabled
+### setDisabled()
 
-▸ **setDisabled**(`disabled`): `void`
+> **setDisabled**(`disabled`): `void`
 
 It sets the input disabled.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `disabled` | `boolean` |
+• **disabled**: `boolean`
 
 #### Returns
 
@@ -166,25 +144,23 @@ It sets the input disabled.
 
 #### Overrides
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[setDisabled](AbstractMapFormInput.md#setdisabled)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`setDisabled`](AbstractMapFormInput.md#setdisabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts:117](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts#L117)
+[model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts:117](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts#L117)
 
-___
+***
 
-### setValue
+### setValue()
 
-▸ **setValue**(`value`): `void`
+> **setValue**(`value`): `void`
 
 It sets value of the input element.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | `string` |
+• **value**: `string`
 
 #### Returns
 
@@ -192,17 +168,17 @@ It sets value of the input element.
 
 #### Overrides
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[setValue](AbstractMapFormInput.md#setvalue)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`setValue`](AbstractMapFormInput.md#setvalue)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts:108](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts#L108)
+[model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts:108](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts#L108)
 
-___
+***
 
-### ID
+### ID()
 
-▸ **ID**(): `string`
+> `static` **ID**(): `string`
 
 Static function returns identifier of the input type.
 
@@ -210,6 +186,6 @@ Static function returns identifier of the input type.
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts:44](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts#L44)
+[model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts:44](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/labeled/slider/LabeledSliderFormInput.ts#L44)

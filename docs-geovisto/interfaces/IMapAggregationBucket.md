@@ -1,47 +1,42 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IMapAggregationBucket
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IMapAggregationBucket
 
 # Interface: IMapAggregationBucket
 
 This interface declares functions aggregation of values.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Table of contents
-
-### Methods
-
-- [addValue](IMapAggregationBucket.md#addvalue)
-- [getValue](IMapAggregationBucket.md#getvalue)
-
 ## Methods
 
-### addValue
+### addValue()
 
-▸ **addValue**(`value`): `void`
+> **addValue**(`value`): `void`
 
 It adds a new value to the aggregation bucket.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | `number` |
+• **value**: `number`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/model/types/aggregation/IMapAggregationBucket.ts:13](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/aggregation/IMapAggregationBucket.ts#L13)
+[model/types/aggregation/IMapAggregationBucket.ts:13](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/aggregation/IMapAggregationBucket.ts#L13)
 
-___
+***
 
-### getValue
+### getValue()
 
-▸ **getValue**(): `number`
+> **getValue**(): `number`
 
 It returns the current aggregated value.
 
@@ -49,6 +44,6 @@ It returns the current aggregated value.
 
 `number`
 
-#### Defined in
+#### Source
 
-[src/model/types/aggregation/IMapAggregationBucket.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/aggregation/IMapAggregationBucket.ts#L18)
+[model/types/aggregation/IMapAggregationBucket.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/aggregation/IMapAggregationBucket.ts#L18)

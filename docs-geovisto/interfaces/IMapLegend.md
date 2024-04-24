@@ -1,42 +1,33 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IMapLegend
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IMapLegend
 
 # Interface: IMapLegend
 
 The interface declares functions for management of legends.
 
-**`Author`**
+## Author
 
 Tomas Koscielniak
 
-## Implemented by
-
-- [`ChoroplethLayerToolMapLegend`](../classes/ChoroplethLayerToolMapLegend.md)
-- [`MarkerLayerToolMapLegend`](../classes/MarkerLayerToolMapLegend.md)
-
-## Table of contents
-
-### Methods
-
-- [getContent](IMapLegend.md#getcontent)
-
 ## Methods
 
-### getContent
+### getContent()
 
-▸ **getContent**(`tool`): `undefined` \| `HTMLElement`
+> **getContent**(`tool`): `undefined` \| `HTMLElement`
 
 It returns a HTML div element conatining the legends.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `tool` | [`IMapTool`](IMapTool.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](IMapToolDefaults.md), [`IMapToolState`](IMapToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](IMapToolDefaults.md), [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>\>, [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>, [`IMapToolAPI`](../modules.md#imaptoolapi)\> |
+• **tool**: [`IMapTool`](IMapTool.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](IMapToolDefaults.md), [`IMapToolState`](IMapToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](IMapToolDefaults.md), [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>\>, [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>, [`IMapToolAPI`](../type-aliases/IMapToolAPI.md)\>
 
 #### Returns
 
 `undefined` \| `HTMLElement`
 
-#### Defined in
+#### Source
 
-[src/model/types/legend/IMapLegend.ts:13](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/legend/IMapLegend.ts#L13)
+[model/types/legend/IMapLegend.ts:13](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/legend/IMapLegend.ts#L13)

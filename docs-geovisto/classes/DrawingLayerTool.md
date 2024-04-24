@@ -1,88 +1,37 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / DrawingLayerTool
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / DrawingLayerTool
 
 # Class: DrawingLayerTool
 
 This class represents Drawing layer tool.
 
-**`Author`**
+## Author
 
 Andrej Tlcina
 
-## Hierarchy
+## Extends
 
 - [`AbstractLayerTool`](AbstractLayerTool.md)
-
-  ↳ **`DrawingLayerTool`**
 
 ## Implements
 
 - `IDrawingLayerTool`
 - [`IMapFormControl`](../interfaces/IMapFormControl.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](DrawingLayerTool.md#constructor)
-
-### Properties
-
-- [controlDrawingToolbar](DrawingLayerTool.md#controldrawingtoolbar)
-- [drawingTools](DrawingLayerTool.md#drawingtools)
-- [mapForm](DrawingLayerTool.md#mapform)
-
-### Methods
-
-- [applyEventListeners](DrawingLayerTool.md#applyeventlisteners)
-- [copy](DrawingLayerTool.md#copy)
-- [create](DrawingLayerTool.md#create)
-- [createDefaults](DrawingLayerTool.md#createdefaults)
-- [createLayerItems](DrawingLayerTool.md#createlayeritems)
-- [createMapForm](DrawingLayerTool.md#createmapform)
-- [createState](DrawingLayerTool.md#createstate)
-- [createdListener](DrawingLayerTool.md#createdlistener)
-- [getAPIGetter](DrawingLayerTool.md#getapigetter)
-- [getDefaults](DrawingLayerTool.md#getdefaults)
-- [getId](DrawingLayerTool.md#getid)
-- [getLayerItems](DrawingLayerTool.md#getlayeritems)
-- [getMap](DrawingLayerTool.md#getmap)
-- [getMapForm](DrawingLayerTool.md#getmapform)
-- [getProps](DrawingLayerTool.md#getprops)
-- [getState](DrawingLayerTool.md#getstate)
-- [getType](DrawingLayerTool.md#gettype)
-- [handleEvent](DrawingLayerTool.md#handleevent)
-- [hideLayerItems](DrawingLayerTool.md#hidelayeritems)
-- [highlightElement](DrawingLayerTool.md#highlightelement)
-- [hightlightOnHover](DrawingLayerTool.md#hightlightonhover)
-- [initChangeStyle](DrawingLayerTool.md#initchangestyle)
-- [initialize](DrawingLayerTool.md#initialize)
-- [initializeDrawingTools](DrawingLayerTool.md#initializedrawingtools)
-- [isEnabled](DrawingLayerTool.md#isenabled)
-- [isSingleton](DrawingLayerTool.md#issingleton)
-- [normalizeElement](DrawingLayerTool.md#normalizeelement)
-- [normalizeOnHover](DrawingLayerTool.md#normalizeonhover)
-- [redrawMapForm](DrawingLayerTool.md#redrawmapform)
-- [render](DrawingLayerTool.md#render)
-- [setEnabled](DrawingLayerTool.md#setenabled)
-- [setGlobalSimplificationTolerance](DrawingLayerTool.md#setglobalsimplificationtolerance)
-- [setProps](DrawingLayerTool.md#setprops)
-- [showLayerItems](DrawingLayerTool.md#showlayeritems)
-- [switchEnabled](DrawingLayerTool.md#switchenabled)
-- [updateDimension](DrawingLayerTool.md#updatedimension)
-
 ## Constructors
 
-### constructor
+### new DrawingLayerTool()
 
-• **new DrawingLayerTool**(`props?`): [`DrawingLayerTool`](DrawingLayerTool.md)
+> **new DrawingLayerTool**(`props`?): [`DrawingLayerTool`](DrawingLayerTool.md)
 
 It creates a new tool with respect to the props.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `props?` | [`ILayerToolProps`](../modules.md#ilayertoolprops) |
+• **props?**: [`ILayerToolProps`](../type-aliases/ILayerToolProps.md)
 
 #### Returns
 
@@ -90,103 +39,101 @@ It creates a new tool with respect to the props.
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[constructor](AbstractLayerTool.md#constructor)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`constructor`](AbstractLayerTool.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/DrawingLayerTool.ts:81](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/DrawingLayerTool.ts#L81)
+[tools/layers/drawing/DrawingLayerTool.ts:81](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/DrawingLayerTool.ts#L81)
 
 ## Properties
 
 ### controlDrawingToolbar
 
-• `Private` **controlDrawingToolbar**: `TDrawingToolbar`
+> `private` **controlDrawingToolbar**: `any`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/DrawingLayerTool.ts:76](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/DrawingLayerTool.ts#L76)
+[tools/layers/drawing/DrawingLayerTool.ts:76](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/DrawingLayerTool.ts#L76)
 
-___
+***
 
 ### drawingTools
 
-• **drawingTools**: `LooseObject`
+> **drawingTools**: `LooseObject`
 
 #### Implementation of
 
-IDrawingLayerTool.drawingTools
+`IDrawingLayerTool.drawingTools`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/DrawingLayerTool.ts:74](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/DrawingLayerTool.ts#L74)
+[tools/layers/drawing/DrawingLayerTool.ts:74](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/DrawingLayerTool.ts#L74)
 
-___
+***
 
 ### mapForm
 
-• `Private` **mapForm**: `DrawingForm`
+> `private` **mapForm**: `DrawingForm`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/DrawingLayerTool.ts:75](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/DrawingLayerTool.ts#L75)
+[tools/layers/drawing/DrawingLayerTool.ts:75](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/DrawingLayerTool.ts#L75)
 
 ## Methods
 
-### applyEventListeners
+### applyEventListeners()
 
-▸ **applyEventListeners**(`layer`): `void`
+> **applyEventListeners**(`layer`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `layer` | `DrawnObject` |
+• **layer**: `any`
 
 #### Returns
 
 `void`
 
-**`Brief`**
+#### Implementation of
+
+`IDrawingLayerTool.applyEventListeners`
+
+#### Brief
 
 aplies event listeners for each geo. object
 
-#### Implementation of
+#### Source
 
-IDrawingLayerTool.applyEventListeners
+[tools/layers/drawing/DrawingLayerTool.ts:326](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/DrawingLayerTool.ts#L326)
 
-#### Defined in
+***
 
-[src/tools/layers/drawing/DrawingLayerTool.ts:326](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/DrawingLayerTool.ts#L326)
+### copy()
 
-___
-
-### copy
-
-▸ **copy**(): `IDrawingLayerTool`\<[`ILayerToolProps`](../modules.md#ilayertoolprops), `IDrawingLayerToolDefaults`, `IDrawingLayerToolState`\<[`ILayerToolProps`](../modules.md#ilayertoolprops), `IDrawingLayerToolDefaults`, `IDrawingLayerToolConfig`, [`ILayerToolDimensionsConfig`](../modules.md#ilayertooldimensionsconfig), [`ILayerToolDimensions`](../modules.md#ilayertooldimensions)\>, `IDrawingLayerToolConfig`, [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<`IDrawingLayerToolConfig`\>\>
+> **copy**(): `IDrawingLayerTool`\<[`ILayerToolProps`](../type-aliases/ILayerToolProps.md), `IDrawingLayerToolDefaults`, `IDrawingLayerToolState`\<[`ILayerToolProps`](../type-aliases/ILayerToolProps.md), `IDrawingLayerToolDefaults`, `IDrawingLayerToolConfig`, [`ILayerToolDimensionsConfig`](../type-aliases/ILayerToolDimensionsConfig.md), [`ILayerToolDimensions`](../type-aliases/ILayerToolDimensions.md)\>, `IDrawingLayerToolConfig`, [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<`IDrawingLayerToolConfig`\>\>
 
 It creates a copy of the uninitialized tool.
 
 #### Returns
 
-`IDrawingLayerTool`\<[`ILayerToolProps`](../modules.md#ilayertoolprops), `IDrawingLayerToolDefaults`, `IDrawingLayerToolState`\<[`ILayerToolProps`](../modules.md#ilayertoolprops), `IDrawingLayerToolDefaults`, `IDrawingLayerToolConfig`, [`ILayerToolDimensionsConfig`](../modules.md#ilayertooldimensionsconfig), [`ILayerToolDimensions`](../modules.md#ilayertooldimensions)\>, `IDrawingLayerToolConfig`, [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<`IDrawingLayerToolConfig`\>\>
+`IDrawingLayerTool`\<[`ILayerToolProps`](../type-aliases/ILayerToolProps.md), `IDrawingLayerToolDefaults`, `IDrawingLayerToolState`\<[`ILayerToolProps`](../type-aliases/ILayerToolProps.md), `IDrawingLayerToolDefaults`, `IDrawingLayerToolConfig`, [`ILayerToolDimensionsConfig`](../type-aliases/ILayerToolDimensionsConfig.md), [`ILayerToolDimensions`](../type-aliases/ILayerToolDimensions.md)\>, `IDrawingLayerToolConfig`, [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<`IDrawingLayerToolConfig`\>\>
 
 #### Implementation of
 
-IDrawingLayerTool.copy
+`IDrawingLayerTool.copy`
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[copy](AbstractLayerTool.md#copy)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`copy`](AbstractLayerTool.md#copy)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/DrawingLayerTool.ts:102](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/DrawingLayerTool.ts#L102)
+[tools/layers/drawing/DrawingLayerTool.ts:102](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/DrawingLayerTool.ts#L102)
 
-___
+***
 
-### create
+### create()
 
-▸ **create**(): `this`
+> **create**(): `this`
 
 It creates new layer with respect to configuration
 
@@ -196,21 +143,21 @@ It creates new layer with respect to configuration
 
 #### Implementation of
 
-IDrawingLayerTool.create
+`IDrawingLayerTool.create`
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[create](AbstractLayerTool.md#create)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`create`](AbstractLayerTool.md#create)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/AbstractLayerTool.ts:89](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/AbstractLayerTool.ts#L89)
+[model/internal/layer/AbstractLayerTool.ts:89](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/AbstractLayerTool.ts#L89)
 
-___
+***
 
-### createDefaults
+### createDefaults()
 
-▸ **createDefaults**(): `IDrawingLayerToolDefaults`
+> `protected` **createDefaults**(): `IDrawingLayerToolDefaults`
 
 It creates new defaults of the tool.
 
@@ -220,37 +167,37 @@ It creates new defaults of the tool.
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[createDefaults](AbstractLayerTool.md#createdefaults)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`createDefaults`](AbstractLayerTool.md#createdefaults)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/DrawingLayerTool.ts:129](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/DrawingLayerTool.ts#L129)
+[tools/layers/drawing/DrawingLayerTool.ts:129](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/DrawingLayerTool.ts#L129)
 
-___
+***
 
-### createLayerItems
+### createLayerItems()
 
-▸ **createLayerItems**(): `FeatureGroup`\<`any`\>[]
+> `protected` **createLayerItems**(): `FeatureGroup`[]
 
 It creates layer items.
 
 #### Returns
 
-`FeatureGroup`\<`any`\>[]
+`FeatureGroup`[]
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[createLayerItems](AbstractLayerTool.md#createlayeritems)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`createLayerItems`](AbstractLayerTool.md#createlayeritems)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/DrawingLayerTool.ts:221](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/DrawingLayerTool.ts#L221)
+[tools/layers/drawing/DrawingLayerTool.ts:221](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/DrawingLayerTool.ts#L221)
 
-___
+***
 
-### createMapForm
+### createMapForm()
 
-▸ **createMapForm**(): `DrawingForm`
+> `protected` **createMapForm**(): `DrawingForm`
 
 It creates new tab control.
 
@@ -258,83 +205,81 @@ It creates new tab control.
 
 `DrawingForm`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/DrawingLayerTool.ts:158](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/DrawingLayerTool.ts#L158)
+[tools/layers/drawing/DrawingLayerTool.ts:158](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/DrawingLayerTool.ts#L158)
 
-___
+***
 
-### createState
+### createState()
 
-▸ **createState**(): `IDrawingLayerToolState`\<[`ILayerToolProps`](../modules.md#ilayertoolprops), `IDrawingLayerToolDefaults`, `IDrawingLayerToolConfig`, [`ILayerToolDimensionsConfig`](../modules.md#ilayertooldimensionsconfig), [`ILayerToolDimensions`](../modules.md#ilayertooldimensions)\>
+> `protected` **createState**(): `IDrawingLayerToolState`\<[`ILayerToolProps`](../type-aliases/ILayerToolProps.md), `IDrawingLayerToolDefaults`, `IDrawingLayerToolConfig`, [`ILayerToolDimensionsConfig`](../type-aliases/ILayerToolDimensionsConfig.md), [`ILayerToolDimensions`](../type-aliases/ILayerToolDimensions.md)\>
 
 It returns default tool state.
 
 #### Returns
 
-`IDrawingLayerToolState`\<[`ILayerToolProps`](../modules.md#ilayertoolprops), `IDrawingLayerToolDefaults`, `IDrawingLayerToolConfig`, [`ILayerToolDimensionsConfig`](../modules.md#ilayertooldimensionsconfig), [`ILayerToolDimensions`](../modules.md#ilayertooldimensions)\>
+`IDrawingLayerToolState`\<[`ILayerToolProps`](../type-aliases/ILayerToolProps.md), `IDrawingLayerToolDefaults`, `IDrawingLayerToolConfig`, [`ILayerToolDimensionsConfig`](../type-aliases/ILayerToolDimensionsConfig.md), [`ILayerToolDimensions`](../type-aliases/ILayerToolDimensions.md)\>
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[createState](AbstractLayerTool.md#createstate)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`createState`](AbstractLayerTool.md#createstate)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/DrawingLayerTool.ts:136](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/DrawingLayerTool.ts#L136)
+[tools/layers/drawing/DrawingLayerTool.ts:136](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/DrawingLayerTool.ts#L136)
 
-___
+***
 
-### createdListener
+### createdListener()
 
-▸ **createdListener**(`e`): `void`
+> `private` **createdListener**(`e`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `e` | `CreatedEvent` |
+• **e**: `any`
 
 #### Returns
 
 `void`
 
-**`Brief`**
+#### Brief
 
 called whenever new geo. object is created
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/DrawingLayerTool.ts:280](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/DrawingLayerTool.ts#L280)
+[tools/layers/drawing/DrawingLayerTool.ts:280](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/DrawingLayerTool.ts#L280)
 
-___
+***
 
-### getAPIGetter
+### getAPIGetter()
 
-▸ **getAPIGetter**(): `undefined` \| [`IMapToolAPIGetter`](../modules.md#imaptoolapigetter)
+> **getAPIGetter**(): `undefined` \| [`IMapToolAPIGetter`](../type-aliases/IMapToolAPIGetter.md)
 
 It returns the tool API
 
 #### Returns
 
-`undefined` \| [`IMapToolAPIGetter`](../modules.md#imaptoolapigetter)
+`undefined` \| [`IMapToolAPIGetter`](../type-aliases/IMapToolAPIGetter.md)
 
 #### Implementation of
 
-IDrawingLayerTool.getAPIGetter
+`IDrawingLayerTool.getAPIGetter`
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[getAPIGetter](AbstractLayerTool.md#getapigetter)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getAPIGetter`](AbstractLayerTool.md#getapigetter)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:74](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L74)
+[model/internal/tool/MapTool.ts:74](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L74)
 
-___
+***
 
-### getDefaults
+### getDefaults()
 
-▸ **getDefaults**(): `IDrawingLayerToolDefaults`
+> **getDefaults**(): `IDrawingLayerToolDefaults`
 
 It returns default values of the state properties.
 
@@ -344,21 +289,21 @@ It returns default values of the state properties.
 
 #### Implementation of
 
-IDrawingLayerTool.getDefaults
+`IDrawingLayerTool.getDefaults`
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[getDefaults](AbstractLayerTool.md#getdefaults)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getDefaults`](AbstractLayerTool.md#getdefaults)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/DrawingLayerTool.ts:116](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/DrawingLayerTool.ts#L116)
+[tools/layers/drawing/DrawingLayerTool.ts:116](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/DrawingLayerTool.ts#L116)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 Help function which returns the id of the object.
 
@@ -368,21 +313,21 @@ Help function which returns the id of the object.
 
 #### Implementation of
 
-IDrawingLayerTool.getId
+`IDrawingLayerTool.getId`
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[getId](AbstractLayerTool.md#getid)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getId`](AbstractLayerTool.md#getid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObject.ts:93](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObject.ts#L93)
+[model/internal/object/MapObject.ts:93](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObject.ts#L93)
 
-___
+***
 
-### getLayerItems
+### getLayerItems()
 
-▸ **getLayerItems**(): `Layer`[]
+> **getLayerItems**(): `Layer`[]
 
 It returns layer items which should be rendered.
 
@@ -392,21 +337,21 @@ It returns layer items which should be rendered.
 
 #### Implementation of
 
-IDrawingLayerTool.getLayerItems
+`IDrawingLayerTool.getLayerItems`
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[getLayerItems](AbstractLayerTool.md#getlayeritems)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getLayerItems`](AbstractLayerTool.md#getlayeritems)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/AbstractLayerTool.ts:163](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/AbstractLayerTool.ts#L163)
+[model/internal/layer/AbstractLayerTool.ts:163](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/AbstractLayerTool.ts#L163)
 
-___
+***
 
-### getMap
+### getMap()
 
-▸ **getMap**(): `undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+> **getMap**(): `undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 Help function returns map which uses this tool.
 
@@ -414,25 +359,25 @@ Do not override this function. Use the state class instead.
 
 #### Returns
 
-`undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+`undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Implementation of
 
-IDrawingLayerTool.getMap
+`IDrawingLayerTool.getMap`
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[getMap](AbstractLayerTool.md#getmap)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getMap`](AbstractLayerTool.md#getmap)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:112](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L112)
+[model/internal/tool/MapTool.ts:112](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L112)
 
-___
+***
 
-### getMapForm
+### getMapForm()
 
-▸ **getMapForm**(): `DrawingForm`
+> **getMapForm**(): `DrawingForm`
 
 It returns a tab control.
 
@@ -442,65 +387,65 @@ It returns a tab control.
 
 #### Implementation of
 
-[IMapFormControl](../interfaces/IMapFormControl.md).[getMapForm](../interfaces/IMapFormControl.md#getmapform)
+[`IMapFormControl`](../interfaces/IMapFormControl.md).[`getMapForm`](../interfaces/IMapFormControl.md#getmapform)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/DrawingLayerTool.ts:143](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/DrawingLayerTool.ts#L143)
+[tools/layers/drawing/DrawingLayerTool.ts:143](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/DrawingLayerTool.ts#L143)
 
-___
+***
 
-### getProps
+### getProps()
 
-▸ **getProps**(): [`ILayerToolProps`](../modules.md#ilayertoolprops)
+> **getProps**(): [`ILayerToolProps`](../type-aliases/ILayerToolProps.md)
 
 It returns the props given by the programmer.
 
 #### Returns
 
-[`ILayerToolProps`](../modules.md#ilayertoolprops)
+[`ILayerToolProps`](../type-aliases/ILayerToolProps.md)
 
 #### Implementation of
 
-IDrawingLayerTool.getProps
+`IDrawingLayerTool.getProps`
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[getProps](AbstractLayerTool.md#getprops)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getProps`](AbstractLayerTool.md#getprops)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/DrawingLayerTool.ts:109](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/DrawingLayerTool.ts#L109)
+[tools/layers/drawing/DrawingLayerTool.ts:109](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/DrawingLayerTool.ts#L109)
 
-___
+***
 
-### getState
+### getState()
 
-▸ **getState**(): `IDrawingLayerToolState`\<[`ILayerToolProps`](../modules.md#ilayertoolprops), `IDrawingLayerToolDefaults`, `IDrawingLayerToolConfig`, [`ILayerToolDimensionsConfig`](../modules.md#ilayertooldimensionsconfig), [`ILayerToolDimensions`](../modules.md#ilayertooldimensions)\>
+> **getState**(): `IDrawingLayerToolState`\<[`ILayerToolProps`](../type-aliases/ILayerToolProps.md), `IDrawingLayerToolDefaults`, `IDrawingLayerToolConfig`, [`ILayerToolDimensionsConfig`](../type-aliases/ILayerToolDimensionsConfig.md), [`ILayerToolDimensions`](../type-aliases/ILayerToolDimensions.md)\>
 
 It returns the layer tool state.
 
 #### Returns
 
-`IDrawingLayerToolState`\<[`ILayerToolProps`](../modules.md#ilayertoolprops), `IDrawingLayerToolDefaults`, `IDrawingLayerToolConfig`, [`ILayerToolDimensionsConfig`](../modules.md#ilayertooldimensionsconfig), [`ILayerToolDimensions`](../modules.md#ilayertooldimensions)\>
+`IDrawingLayerToolState`\<[`ILayerToolProps`](../type-aliases/ILayerToolProps.md), `IDrawingLayerToolDefaults`, `IDrawingLayerToolConfig`, [`ILayerToolDimensionsConfig`](../type-aliases/ILayerToolDimensionsConfig.md), [`ILayerToolDimensions`](../type-aliases/ILayerToolDimensions.md)\>
 
 #### Implementation of
 
-IDrawingLayerTool.getState
+`IDrawingLayerTool.getState`
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[getState](AbstractLayerTool.md#getstate)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getState`](AbstractLayerTool.md#getstate)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/DrawingLayerTool.ts:122](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/DrawingLayerTool.ts#L122)
+[tools/layers/drawing/DrawingLayerTool.ts:122](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/DrawingLayerTool.ts#L122)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 Help function which returns the type of the object.
 
@@ -510,21 +455,21 @@ Help function which returns the type of the object.
 
 #### Implementation of
 
-IDrawingLayerTool.getType
+`IDrawingLayerTool.getType`
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[getType](AbstractLayerTool.md#gettype)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getType`](AbstractLayerTool.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObject.ts:86](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObject.ts#L86)
+[model/internal/object/MapObject.ts:86](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObject.ts#L86)
 
-___
+***
 
-### handleEvent
+### handleEvent()
 
-▸ **handleEvent**(`event`): `void`
+> **handleEvent**(`event`): `void`
 
 This function is called when a custom event is invoked.
 
@@ -532,9 +477,7 @@ Override this function, if needed.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `event` | [`IMapEvent`](../interfaces/IMapEvent.md)\<[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>\> |
+• **event**: [`IMapEvent`](../interfaces/IMapEvent.md)\<[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>\>
 
 #### Returns
 
@@ -542,17 +485,17 @@ Override this function, if needed.
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[handleEvent](AbstractLayerTool.md#handleevent)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`handleEvent`](AbstractLayerTool.md#handleevent)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:171](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L171)
+[model/internal/tool/MapTool.ts:171](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L171)
 
-___
+***
 
-### hideLayerItems
+### hideLayerItems()
 
-▸ **hideLayerItems**(): `void`
+> `protected` **hideLayerItems**(): `void`
 
 Help function which hides layer items
 
@@ -564,101 +507,93 @@ This function is meant to be private.
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[hideLayerItems](AbstractLayerTool.md#hidelayeritems)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`hideLayerItems`](AbstractLayerTool.md#hidelayeritems)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/AbstractLayerTool.ts:147](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/AbstractLayerTool.ts#L147)
+[model/internal/layer/AbstractLayerTool.ts:147](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/AbstractLayerTool.ts#L147)
 
-___
+***
 
-### highlightElement
+### highlightElement()
 
-▸ **highlightElement**(`el`): `void`
+> **highlightElement**(`el`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `el` | `DrawnObject` |
+• **el**: `any`
 
 #### Returns
 
 `void`
-
-**`Brief`**
-
-highlights element
 
 #### Implementation of
 
-IDrawingLayerTool.highlightElement
+`IDrawingLayerTool.highlightElement`
 
-#### Defined in
+#### Brief
 
-[src/tools/layers/drawing/DrawingLayerTool.ts:355](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/DrawingLayerTool.ts#L355)
+highlights element
 
-___
+#### Source
 
-### hightlightOnHover
+[tools/layers/drawing/DrawingLayerTool.ts:355](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/DrawingLayerTool.ts#L355)
 
-▸ **hightlightOnHover**(`e`): `void`
+***
+
+### hightlightOnHover()
+
+> `private` **hightlightOnHover**(`e`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `e` | `TileEvent` |
+• **e**: `TileEvent`
 
 #### Returns
 
 `void`
 
-**`Brief`**
+#### Brief
 
 highlights element on mouse hover
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/DrawingLayerTool.ts:366](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/DrawingLayerTool.ts#L366)
+[tools/layers/drawing/DrawingLayerTool.ts:366](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/DrawingLayerTool.ts#L366)
 
-___
+***
 
-### initChangeStyle
+### initChangeStyle()
 
-▸ **initChangeStyle**(`e`): `void`
+> `private` **initChangeStyle**(`e`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `e` | `LeafletMouseEvent` |
+• **e**: `LeafletMouseEvent`
 
 #### Returns
 
 `void`
 
-**`Brief`**
+#### Brief
 
 called on object click to change its style accordingly
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/DrawingLayerTool.ts:400](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/DrawingLayerTool.ts#L400)
+[tools/layers/drawing/DrawingLayerTool.ts:400](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/DrawingLayerTool.ts#L400)
 
-___
+***
 
-### initialize
+### initialize()
 
-▸ **initialize**(`initProps`): `this`
+> **initialize**(`initProps`): `this`
 
 Overrides the super method.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `initProps` | [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<`IDrawingLayerToolConfig`\> |
+• **initProps**: [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<`IDrawingLayerToolConfig`\>
 
 #### Returns
 
@@ -666,21 +601,21 @@ Overrides the super method.
 
 #### Implementation of
 
-IDrawingLayerTool.initialize
+`IDrawingLayerTool.initialize`
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[initialize](AbstractLayerTool.md#initialize)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`initialize`](AbstractLayerTool.md#initialize)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/DrawingLayerTool.ts:91](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/DrawingLayerTool.ts#L91)
+[tools/layers/drawing/DrawingLayerTool.ts:91](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/DrawingLayerTool.ts#L91)
 
-___
+***
 
-### initializeDrawingTools
+### initializeDrawingTools()
 
-▸ **initializeDrawingTools**(): `void`
+> **initializeDrawingTools**(): `void`
 
 #### Returns
 
@@ -688,17 +623,17 @@ ___
 
 #### Implementation of
 
-IDrawingLayerTool.initializeDrawingTools
+`IDrawingLayerTool.initializeDrawingTools`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/DrawingLayerTool.ts:185](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/DrawingLayerTool.ts#L185)
+[tools/layers/drawing/DrawingLayerTool.ts:185](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/DrawingLayerTool.ts#L185)
 
-___
+***
 
-### isEnabled
+### isEnabled()
 
-▸ **isEnabled**(): `boolean`
+> **isEnabled**(): `boolean`
 
 Help getter which returns enabled property of state.
 
@@ -710,21 +645,21 @@ Do not override this function. Use the state class instead.
 
 #### Implementation of
 
-IDrawingLayerTool.isEnabled
+`IDrawingLayerTool.isEnabled`
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[isEnabled](AbstractLayerTool.md#isenabled)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`isEnabled`](AbstractLayerTool.md#isenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:130](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L130)
+[model/internal/tool/MapTool.ts:130](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L130)
 
-___
+***
 
-### isSingleton
+### isSingleton()
 
-▸ **isSingleton**(): `boolean`
+> **isSingleton**(): `boolean`
 
 Help getter which returns a logtical value whether the tool type is singleton.
 
@@ -734,79 +669,73 @@ Help getter which returns a logtical value whether the tool type is singleton.
 
 #### Implementation of
 
-IDrawingLayerTool.isSingleton
+`IDrawingLayerTool.isSingleton`
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[isSingleton](AbstractLayerTool.md#issingleton)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`isSingleton`](AbstractLayerTool.md#issingleton)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:81](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L81)
+[model/internal/tool/MapTool.ts:81](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L81)
 
-___
+***
 
-### normalizeElement
+### normalizeElement()
 
-▸ **normalizeElement**(`el`): `void`
+> **normalizeElement**(`el`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `el` | `DrawnObject` |
+• **el**: `any`
 
 #### Returns
 
 `void`
 
-**`Brief`**
+#### Implementation of
+
+`IDrawingLayerTool.normalizeElement`
+
+#### Brief
 
 sets normal styles for element
 
-#### Implementation of
+#### Source
 
-IDrawingLayerTool.normalizeElement
+[tools/layers/drawing/DrawingLayerTool.ts:374](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/DrawingLayerTool.ts#L374)
 
-#### Defined in
+***
 
-[src/tools/layers/drawing/DrawingLayerTool.ts:374](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/DrawingLayerTool.ts#L374)
+### normalizeOnHover()
 
-___
-
-### normalizeOnHover
-
-▸ **normalizeOnHover**(`e`): `void`
+> `private` **normalizeOnHover**(`e`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `e` | `TileEvent` |
+• **e**: `TileEvent`
 
 #### Returns
 
 `void`
 
-**`Brief`**
+#### Brief
 
 sets normal styles for element on mouse hover
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/DrawingLayerTool.ts:387](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/DrawingLayerTool.ts#L387)
+[tools/layers/drawing/DrawingLayerTool.ts:387](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/DrawingLayerTool.ts#L387)
 
-___
+***
 
-### redrawMapForm
+### redrawMapForm()
 
-▸ **redrawMapForm**(`layerType`): `void`
+> **redrawMapForm**(`layerType`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `layerType` | ``""`` \| `LayerType` |
+• **layerType**: `""` \| `LayerType`
 
 #### Returns
 
@@ -814,17 +743,17 @@ ___
 
 #### Implementation of
 
-IDrawingLayerTool.redrawMapForm
+`IDrawingLayerTool.redrawMapForm`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/DrawingLayerTool.ts:150](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/DrawingLayerTool.ts#L150)
+[tools/layers/drawing/DrawingLayerTool.ts:150](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/DrawingLayerTool.ts#L150)
 
-___
+***
 
-### render
+### render()
 
-▸ **render**(`type`, `animateOptions?`): `void`
+> **render**(`type`, `animateOptions`?): `void`
 
 It reloads data and redraw the layer with respect to the type.
 
@@ -832,10 +761,9 @@ By default it works with LayerRedrawType
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `type` | `number` |
-| `animateOptions?` | [`IDataChangeAnimateOptions`](../modules.md#idatachangeanimateoptions) |
+• **type**: `number`
+
+• **animateOptions?**: [`IDataChangeAnimateOptions`](../type-aliases/IDataChangeAnimateOptions.md)
 
 #### Returns
 
@@ -843,29 +771,27 @@ By default it works with LayerRedrawType
 
 #### Implementation of
 
-IDrawingLayerTool.render
+`IDrawingLayerTool.render`
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[render](AbstractLayerTool.md#render)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`render`](AbstractLayerTool.md#render)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/AbstractLayerTool.ts:189](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/AbstractLayerTool.ts#L189)
+[model/internal/layer/AbstractLayerTool.ts:189](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/AbstractLayerTool.ts#L189)
 
-___
+***
 
-### setEnabled
+### setEnabled()
 
-▸ **setEnabled**(`enabled`): `void`
+> **setEnabled**(`enabled`): `void`
 
 It changes layer state to enabled/disabled.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `enabled` | `boolean` |
+• **enabled**: `boolean`
 
 #### Returns
 
@@ -873,57 +799,53 @@ It changes layer state to enabled/disabled.
 
 #### Implementation of
 
-IDrawingLayerTool.setEnabled
+`IDrawingLayerTool.setEnabled`
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[setEnabled](AbstractLayerTool.md#setenabled)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`setEnabled`](AbstractLayerTool.md#setenabled)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/drawing/DrawingLayerTool.ts:167](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/DrawingLayerTool.ts#L167)
+[tools/layers/drawing/DrawingLayerTool.ts:167](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/DrawingLayerTool.ts#L167)
 
-___
+***
 
-### setGlobalSimplificationTolerance
+### setGlobalSimplificationTolerance()
 
-▸ **setGlobalSimplificationTolerance**(`map`): `void`
+> **setGlobalSimplificationTolerance**(`map`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `map` | `undefined` \| `Map` |
+• **map**: `any`
 
 #### Returns
 
 `void`
 
-**`Brief`**
+#### Implementation of
+
+`IDrawingLayerTool.setGlobalSimplificationTolerance`
+
+#### Brief
 
 sets global tolerance for brush stroke
 
-#### Implementation of
+#### Source
 
-IDrawingLayerTool.setGlobalSimplificationTolerance
+[tools/layers/drawing/DrawingLayerTool.ts:340](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/drawing/DrawingLayerTool.ts#L340)
 
-#### Defined in
+***
 
-[src/tools/layers/drawing/DrawingLayerTool.ts:340](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/drawing/DrawingLayerTool.ts#L340)
+### setProps()
 
-___
-
-### setProps
-
-▸ **setProps**(`props`): `void`
+> `protected` **setProps**(`props`): `void`
 
 It updates the props.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `props` | [`IMapObjectProps`](../modules.md#imapobjectprops) |
+• **props**: [`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
 #### Returns
 
@@ -931,17 +853,17 @@ It updates the props.
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[setProps](AbstractLayerTool.md#setprops)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`setProps`](AbstractLayerTool.md#setprops)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObject.ts:38](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObject.ts#L38)
+[model/internal/object/MapObject.ts:38](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObject.ts#L38)
 
-___
+***
 
-### showLayerItems
+### showLayerItems()
 
-▸ **showLayerItems**(): `void`
+> `protected` **showLayerItems**(): `void`
 
 Help function which shows layer items.
 
@@ -953,17 +875,17 @@ This function is meant to be private.
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[showLayerItems](AbstractLayerTool.md#showlayeritems)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`showLayerItems`](AbstractLayerTool.md#showlayeritems)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/AbstractLayerTool.ts:126](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/AbstractLayerTool.ts#L126)
+[model/internal/layer/AbstractLayerTool.ts:126](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/AbstractLayerTool.ts#L126)
 
-___
+***
 
-### switchEnabled
+### switchEnabled()
 
-▸ **switchEnabled**(): `void`
+> **switchEnabled**(): `void`
 
 Help function which switches enabled state (enabled/disabled).
 
@@ -975,31 +897,31 @@ Do not override this function. Use setEnabled instead.
 
 #### Implementation of
 
-IDrawingLayerTool.switchEnabled
+`IDrawingLayerTool.switchEnabled`
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[switchEnabled](AbstractLayerTool.md#switchenabled)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`switchEnabled`](AbstractLayerTool.md#switchenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:158](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L158)
+[model/internal/tool/MapTool.ts:158](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L158)
 
-___
+***
 
-### updateDimension
+### updateDimension()
 
-▸ **updateDimension**(`dimension`, `value`, `renderType?`): `void`
+> **updateDimension**(`dimension`, `value`, `renderType`): `void`
 
 It updates the dimension.
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `dimension` | [`IMapDimension`](../interfaces/IMapDimension.md)\<`unknown`\> | `undefined` |
-| `value` | `string` | `undefined` |
-| `renderType` | `undefined` \| `number` | `undefined` |
+• **dimension**: [`IMapDimension`](../interfaces/IMapDimension.md)\<`unknown`\>
+
+• **value**: `string`
+
+• **renderType**: `undefined` \| `number`= `undefined`
 
 #### Returns
 
@@ -1007,12 +929,12 @@ It updates the dimension.
 
 #### Implementation of
 
-IDrawingLayerTool.updateDimension
+`IDrawingLayerTool.updateDimension`
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[updateDimension](AbstractLayerTool.md#updatedimension)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`updateDimension`](AbstractLayerTool.md#updatedimension)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/AbstractLayerTool.ts:205](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/AbstractLayerTool.ts#L205)
+[model/internal/layer/AbstractLayerTool.ts:205](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/AbstractLayerTool.ts#L205)

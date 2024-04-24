@@ -1,57 +1,40 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / MarkDownData
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / MarkDownData
 
 # Class: MarkDownData
 
 The interface declares function for management of info data.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-**`Author`**
+## Author
 
 Tomas Koscielniak
 
-## Hierarchy
+## Extends
 
 - [`MapDomain`](MapDomain.md)
-
-  ↳ **`MarkDownData`**
 
 ## Implements
 
 - [`IInfoData`](../interfaces/IInfoData.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](MarkDownData.md#constructor)
-
-### Properties
-
-- [MarkDown](MarkDownData.md#markdown)
-- [originalData](MarkDownData.md#originaldata)
-
-### Methods
-
-- [getInfoMD](MarkDownData.md#getinfomd)
-- [getName](MarkDownData.md#getname)
-- [getOriginalInfoData](MarkDownData.md#getoriginalinfodata)
-- [toString](MarkDownData.md#tostring)
-
 ## Constructors
 
-### constructor
+### new MarkDownData()
 
-• **new MarkDownData**(`name`, `originalData`): [`MarkDownData`](MarkDownData.md)
+> **new MarkDownData**(`name`, `originalData`): [`MarkDownData`](MarkDownData.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
-| `originalData` | `string` |
+• **name**: `string`
+
+• **originalData**: `string`
 
 #### Returns
 
@@ -59,37 +42,37 @@ Tomas Koscielniak
 
 #### Overrides
 
-[MapDomain](MapDomain.md).[constructor](MapDomain.md#constructor)
+[`MapDomain`](MapDomain.md).[`constructor`](MapDomain.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/tools/info/model/internal/infodata/markdown/MarkDownData.ts:16](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/info/model/internal/infodata/markdown/MarkDownData.ts#L16)
+[tools/info/model/internal/infodata/markdown/MarkDownData.ts:16](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/info/model/internal/infodata/markdown/MarkDownData.ts#L16)
 
 ## Properties
 
-### MarkDown
+### MarkDown?
 
-• `Private` `Optional` **MarkDown**: `string`
+> `private` `optional` **MarkDown**: `string`
 
-#### Defined in
+#### Source
 
-[src/tools/info/model/internal/infodata/markdown/MarkDownData.ts:14](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/info/model/internal/infodata/markdown/MarkDownData.ts#L14)
+[tools/info/model/internal/infodata/markdown/MarkDownData.ts:14](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/info/model/internal/infodata/markdown/MarkDownData.ts#L14)
 
-___
+***
 
 ### originalData
 
-• `Private` **originalData**: `string`
+> `private` **originalData**: `string`
 
-#### Defined in
+#### Source
 
-[src/tools/info/model/internal/infodata/markdown/MarkDownData.ts:13](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/info/model/internal/infodata/markdown/MarkDownData.ts#L13)
+[tools/info/model/internal/infodata/markdown/MarkDownData.ts:13](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/info/model/internal/infodata/markdown/MarkDownData.ts#L13)
 
 ## Methods
 
-### getInfoMD
+### getInfoMD()
 
-▸ **getInfoMD**(): `string`
+> **getInfoMD**(): `string`
 
 It returns the original representation of data domain.
 
@@ -99,17 +82,17 @@ It returns the original representation of data domain.
 
 #### Implementation of
 
-[IInfoData](../interfaces/IInfoData.md).[getInfoMD](../interfaces/IInfoData.md#getinfomd)
+[`IInfoData`](../interfaces/IInfoData.md).[`getInfoMD`](../interfaces/IInfoData.md#getinfomd)
 
-#### Defined in
+#### Source
 
-[src/tools/info/model/internal/infodata/markdown/MarkDownData.ts:31](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/info/model/internal/infodata/markdown/MarkDownData.ts#L31)
+[tools/info/model/internal/infodata/markdown/MarkDownData.ts:31](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/info/model/internal/infodata/markdown/MarkDownData.ts#L31)
 
-___
+***
 
-### getName
+### getName()
 
-▸ **getName**(): `string`
+> **getName**(): `string`
 
 It returns the name of the map domain.
 
@@ -119,21 +102,21 @@ It returns the name of the map domain.
 
 #### Implementation of
 
-[IInfoData](../interfaces/IInfoData.md).[getName](../interfaces/IInfoData.md#getname)
+[`IInfoData`](../interfaces/IInfoData.md).[`getName`](../interfaces/IInfoData.md#getname)
 
 #### Inherited from
 
-[MapDomain](MapDomain.md).[getName](MapDomain.md#getname)
+[`MapDomain`](MapDomain.md).[`getName`](MapDomain.md#getname)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomain.ts:21](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomain.ts#L21)
+[model/internal/domain/generic/MapDomain.ts:21](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomain.ts#L21)
 
-___
+***
 
-### getOriginalInfoData
+### getOriginalInfoData()
 
-▸ **getOriginalInfoData**(): `unknown`
+> **getOriginalInfoData**(): `unknown`
 
 It returns the original source of info data.
 
@@ -143,17 +126,17 @@ It returns the original source of info data.
 
 #### Implementation of
 
-[IInfoData](../interfaces/IInfoData.md).[getOriginalInfoData](../interfaces/IInfoData.md#getoriginalinfodata)
+[`IInfoData`](../interfaces/IInfoData.md).[`getOriginalInfoData`](../interfaces/IInfoData.md#getoriginalinfodata)
 
-#### Defined in
+#### Source
 
-[src/tools/info/model/internal/infodata/markdown/MarkDownData.ts:24](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/info/model/internal/infodata/markdown/MarkDownData.ts#L24)
+[tools/info/model/internal/infodata/markdown/MarkDownData.ts:24](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/info/model/internal/infodata/markdown/MarkDownData.ts#L24)
 
-___
+***
 
-### toString
+### toString()
 
-▸ **toString**(): `string`
+> **toString**(): `string`
 
 The string representation is equal to the name of the map domain.
 
@@ -163,8 +146,8 @@ The string representation is equal to the name of the map domain.
 
 #### Inherited from
 
-[MapDomain](MapDomain.md).[toString](MapDomain.md#tostring)
+[`MapDomain`](MapDomain.md).[`toString`](MapDomain.md#tostring)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/abstract/AbstractMapDomain.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/abstract/AbstractMapDomain.ts#L18)
+[model/internal/domain/abstract/AbstractMapDomain.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/abstract/AbstractMapDomain.ts#L18)

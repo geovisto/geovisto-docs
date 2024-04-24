@@ -1,31 +1,23 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IMapFilterRule
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IMapFilterRule
 
 # Interface: IMapFilterRule
 
 This interface declares functions for manipulation with a filter rule composed of
 data domain, filter operation, pattern which represents a filter rule.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Implemented by
-
-- [`MapFilterRule`](../classes/MapFilterRule.md)
-
-## Table of contents
-
-### Methods
-
-- [getDataDomain](IMapFilterRule.md#getdatadomain)
-- [getFilterOperation](IMapFilterRule.md#getfilteroperation)
-- [getPattern](IMapFilterRule.md#getpattern)
-
 ## Methods
 
-### getDataDomain
+### getDataDomain()
 
-▸ **getDataDomain**(): [`IMapDataDomain`](IMapDataDomain.md)
+> **getDataDomain**(): [`IMapDataDomain`](IMapDataDomain.md)
 
 It returns the the data domain which should be analyzed.
 
@@ -33,15 +25,15 @@ It returns the the data domain which should be analyzed.
 
 [`IMapDataDomain`](IMapDataDomain.md)
 
-#### Defined in
+#### Source
 
-[src/model/types/filter/IMapFilterRule.ts:15](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/filter/IMapFilterRule.ts#L15)
+[model/types/filter/IMapFilterRule.ts:15](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/filter/IMapFilterRule.ts#L15)
 
-___
+***
 
-### getFilterOperation
+### getFilterOperation()
 
-▸ **getFilterOperation**(): [`IMapFilterOperation`](IMapFilterOperation.md)
+> **getFilterOperation**(): [`IMapFilterOperation`](IMapFilterOperation.md)
 
 It returns the filter operation used for the filtering.
 
@@ -49,15 +41,15 @@ It returns the filter operation used for the filtering.
 
 [`IMapFilterOperation`](IMapFilterOperation.md)
 
-#### Defined in
+#### Source
 
-[src/model/types/filter/IMapFilterRule.ts:20](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/filter/IMapFilterRule.ts#L20)
+[model/types/filter/IMapFilterRule.ts:20](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/filter/IMapFilterRule.ts#L20)
 
-___
+***
 
-### getPattern
+### getPattern()
 
-▸ **getPattern**(): `string`
+> **getPattern**(): `string`
 
 It returns the string label of the filter representing operator given by the parameter of constructor.
 
@@ -65,6 +57,6 @@ It returns the string label of the filter representing operator given by the par
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/model/types/filter/IMapFilterRule.ts:25](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/filter/IMapFilterRule.ts#L25)
+[model/types/filter/IMapFilterRule.ts:25](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/filter/IMapFilterRule.ts#L25)

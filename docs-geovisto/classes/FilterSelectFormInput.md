@@ -1,52 +1,30 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / FilterSelectFormInput
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / FilterSelectFormInput
 
 # Class: FilterSelectFormInput
 
 This class represents a map input composed of three selects used for filters.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`AbstractMapFormInput`](AbstractMapFormInput.md)
 
-  ↳ **`FilterSelectFormInput`**
-
-## Table of contents
-
-### Constructors
-
-- [constructor](FilterSelectFormInput.md#constructor)
-
-### Properties
-
-- [input](FilterSelectFormInput.md#input)
-- [inputDiv](FilterSelectFormInput.md#inputdiv)
-
-### Methods
-
-- [create](FilterSelectFormInput.md#create)
-- [createInputElement](FilterSelectFormInput.md#createinputelement)
-- [createSelectElement](FilterSelectFormInput.md#createselectelement)
-- [getProps](FilterSelectFormInput.md#getprops)
-- [getValue](FilterSelectFormInput.md#getvalue)
-- [setDisabled](FilterSelectFormInput.md#setdisabled)
-- [setValue](FilterSelectFormInput.md#setvalue)
-- [ID](FilterSelectFormInput.md#id)
-
 ## Constructors
 
-### constructor
+### new FilterSelectFormInput()
 
-• **new FilterSelectFormInput**(`props`): [`FilterSelectFormInput`](FilterSelectFormInput.md)
+> **new FilterSelectFormInput**(`props`): [`FilterSelectFormInput`](FilterSelectFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `props` | [`IFilterFormInputProps`](../interfaces/IFilterFormInputProps.md) |
+• **props**: [`IFilterFormInputProps`](../interfaces/IFilterFormInputProps.md)
 
 #### Returns
 
@@ -54,49 +32,53 @@ Jiri Hynek
 
 #### Overrides
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[constructor](AbstractMapFormInput.md#constructor)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`constructor`](AbstractMapFormInput.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/filter/select/FilterSelectFormInput.ts:30](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/filter/select/FilterSelectFormInput.ts#L30)
+[model/internal/inputs/filter/select/FilterSelectFormInput.ts:30](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/filter/select/FilterSelectFormInput.ts#L30)
 
 ## Properties
 
 ### input
 
-• `Private` **input**: `Object`
+> `private` **input**: `object`
 
 Input element is composed of 3 HTML select elements
 
-#### Type declaration
+#### data?
 
-| Name | Type |
-| :------ | :------ |
-| `data?` | `HTMLSelectElement` |
-| `op?` | `HTMLSelectElement` |
-| `val?` | `HTMLInputElement` |
+> `optional` **data**: `HTMLSelectElement`
 
-#### Defined in
+#### op?
 
-[src/model/internal/inputs/filter/select/FilterSelectFormInput.ts:24](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/filter/select/FilterSelectFormInput.ts#L24)
+> `optional` **op**: `HTMLSelectElement`
 
-___
+#### val?
 
-### inputDiv
+> `optional` **val**: `HTMLInputElement`
 
-• `Private` `Optional` **inputDiv**: `HTMLDivElement`
+#### Source
+
+[model/internal/inputs/filter/select/FilterSelectFormInput.ts:24](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/filter/select/FilterSelectFormInput.ts#L24)
+
+***
+
+### inputDiv?
+
+> `private` `optional` **inputDiv**: `HTMLDivElement`
 
 The input element is created when required.
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/filter/select/FilterSelectFormInput.ts:19](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/filter/select/FilterSelectFormInput.ts#L19)
+[model/internal/inputs/filter/select/FilterSelectFormInput.ts:19](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/filter/select/FilterSelectFormInput.ts#L19)
 
 ## Methods
 
-### create
+### create()
 
-▸ **create**(): `HTMLElement`
+> **create**(): `HTMLElement`
 
 It returns filter div element composed of 2 selects and one input element.
 
@@ -106,17 +88,17 @@ It returns filter div element composed of 2 selects and one input element.
 
 #### Overrides
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[create](AbstractMapFormInput.md#create)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`create`](AbstractMapFormInput.md#create)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/filter/select/FilterSelectFormInput.ts:51](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/filter/select/FilterSelectFormInput.ts#L51)
+[model/internal/inputs/filter/select/FilterSelectFormInput.ts:51](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/filter/select/FilterSelectFormInput.ts#L51)
 
-___
+***
 
-### createInputElement
+### createInputElement()
 
-▸ **createInputElement**(): `HTMLInputElement`
+> `protected` **createInputElement**(): `HTMLInputElement`
 
 Help static function which creates select element.
 
@@ -124,38 +106,37 @@ Help static function which creates select element.
 
 `HTMLInputElement`
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/filter/select/FilterSelectFormInput.ts:96](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/filter/select/FilterSelectFormInput.ts#L96)
+[model/internal/inputs/filter/select/FilterSelectFormInput.ts:96](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/filter/select/FilterSelectFormInput.ts#L96)
 
-___
+***
 
-### createSelectElement
+### createSelectElement()
 
-▸ **createSelectElement**(`onChangeAction`, `options`): `HTMLSelectElement`
+> `protected` **createSelectElement**(`onChangeAction`, `options`): `HTMLSelectElement`
 
 Help static function which creates select element.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `onChangeAction` | ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `unknown` |
-| `options` | `string`[] |
+• **onChangeAction**: `null` \| (`this`, `ev`) => `unknown`
+
+• **options**: `string`[]
 
 #### Returns
 
 `HTMLSelectElement`
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/filter/select/FilterSelectFormInput.ts:79](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/filter/select/FilterSelectFormInput.ts#L79)
+[model/internal/inputs/filter/select/FilterSelectFormInput.ts:79](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/filter/select/FilterSelectFormInput.ts#L79)
 
-___
+***
 
-### getProps
+### getProps()
 
-▸ **getProps**(): [`IMapFormInputProps`](../interfaces/IMapFormInputProps.md)
+> `protected` **getProps**(): [`IMapFormInputProps`](../interfaces/IMapFormInputProps.md)
 
 It provides the props to the exteded classes.
 
@@ -165,17 +146,17 @@ It provides the props to the exteded classes.
 
 #### Inherited from
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[getProps](AbstractMapFormInput.md#getprops)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`getProps`](AbstractMapFormInput.md#getprops)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/abstract/AbstractMapFormInput.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/abstract/AbstractMapFormInput.ts#L23)
+[model/internal/inputs/abstract/AbstractMapFormInput.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/abstract/AbstractMapFormInput.ts#L23)
 
-___
+***
 
-### getValue
+### getValue()
 
-▸ **getValue**(): [`IFilterFormInputValue`](../interfaces/IFilterFormInputValue.md)
+> **getValue**(): [`IFilterFormInputValue`](../interfaces/IFilterFormInputValue.md)
 
 It returns values of the inputs.
 
@@ -185,25 +166,23 @@ It returns values of the inputs.
 
 #### Overrides
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[getValue](AbstractMapFormInput.md#getvalue)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`getValue`](AbstractMapFormInput.md#getvalue)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/filter/select/FilterSelectFormInput.ts:107](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/filter/select/FilterSelectFormInput.ts#L107)
+[model/internal/inputs/filter/select/FilterSelectFormInput.ts:107](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/filter/select/FilterSelectFormInput.ts#L107)
 
-___
+***
 
-### setDisabled
+### setDisabled()
 
-▸ **setDisabled**(`disabled`): `void`
+> **setDisabled**(`disabled`): `void`
 
 It sets the input disabled.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `disabled` | `boolean` |
+• **disabled**: `boolean`
 
 #### Returns
 
@@ -211,25 +190,23 @@ It sets the input disabled.
 
 #### Overrides
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[setDisabled](AbstractMapFormInput.md#setdisabled)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`setDisabled`](AbstractMapFormInput.md#setdisabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/filter/select/FilterSelectFormInput.ts:118](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/filter/select/FilterSelectFormInput.ts#L118)
+[model/internal/inputs/filter/select/FilterSelectFormInput.ts:118](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/filter/select/FilterSelectFormInput.ts#L118)
 
-___
+***
 
-### setValue
+### setValue()
 
-▸ **setValue**(`value`): `void`
+> **setValue**(`value`): `void`
 
 It sets values of the inputs.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | [`IFilterFormInputValue`](../interfaces/IFilterFormInputValue.md) |
+• **value**: [`IFilterFormInputValue`](../interfaces/IFilterFormInputValue.md)
 
 #### Returns
 
@@ -237,17 +214,17 @@ It sets values of the inputs.
 
 #### Overrides
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[setValue](AbstractMapFormInput.md#setvalue)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`setValue`](AbstractMapFormInput.md#setvalue)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/filter/select/FilterSelectFormInput.ts:138](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/filter/select/FilterSelectFormInput.ts#L138)
+[model/internal/inputs/filter/select/FilterSelectFormInput.ts:138](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/filter/select/FilterSelectFormInput.ts#L138)
 
-___
+***
 
-### ID
+### ID()
 
-▸ **ID**(): `string`
+> `static` **ID**(): `string`
 
 Static function returns identifier of the input type
 
@@ -255,6 +232,6 @@ Static function returns identifier of the input type
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/filter/select/FilterSelectFormInput.ts:44](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/filter/select/FilterSelectFormInput.ts#L44)
+[model/internal/inputs/filter/select/FilterSelectFormInput.ts:44](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/filter/select/FilterSelectFormInput.ts#L44)

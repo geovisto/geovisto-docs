@@ -1,40 +1,30 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / LtEqFilterOperation
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / LtEqFilterOperation
 
 # Class: LtEqFilterOperation
 
 This class wraps the less than equals filter operation.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`AbstractMapDomain`](AbstractMapDomain.md)
-
-  ↳ **`LtEqFilterOperation`**
 
 ## Implements
 
 - [`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](LtEqFilterOperation.md#constructor)
-
-### Methods
-
-- [getName](LtEqFilterOperation.md#getname)
-- [match](LtEqFilterOperation.md#match)
-- [toString](LtEqFilterOperation.md#tostring)
-
 ## Constructors
 
-### constructor
+### new LtEqFilterOperation()
 
-• **new LtEqFilterOperation**(): [`LtEqFilterOperation`](LtEqFilterOperation.md)
+> **new LtEqFilterOperation**(): [`LtEqFilterOperation`](LtEqFilterOperation.md)
 
 #### Returns
 
@@ -42,17 +32,17 @@ Jiri Hynek
 
 #### Overrides
 
-[AbstractMapDomain](AbstractMapDomain.md).[constructor](AbstractMapDomain.md#constructor)
+[`AbstractMapDomain`](AbstractMapDomain.md).[`constructor`](AbstractMapDomain.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/model/internal/filter/custom/LtEqFilterOperation.ts:13](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/filter/custom/LtEqFilterOperation.ts#L13)
+[model/internal/filter/custom/LtEqFilterOperation.ts:13](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/filter/custom/LtEqFilterOperation.ts#L13)
 
 ## Methods
 
-### getName
+### getName()
 
-▸ **getName**(): `string`
+> **getName**(): `string`
 
 It returns the string label of the filter representing operator.
 
@@ -62,30 +52,29 @@ It returns the string label of the filter representing operator.
 
 #### Implementation of
 
-[IMapFilterOperation](../interfaces/IMapFilterOperation.md).[getName](../interfaces/IMapFilterOperation.md#getname)
+[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md).[`getName`](../interfaces/IMapFilterOperation.md#getname)
 
 #### Overrides
 
-[AbstractMapDomain](AbstractMapDomain.md).[getName](AbstractMapDomain.md#getname)
+[`AbstractMapDomain`](AbstractMapDomain.md).[`getName`](AbstractMapDomain.md#getname)
 
-#### Defined in
+#### Source
 
-[src/model/internal/filter/custom/LtEqFilterOperation.ts:20](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/filter/custom/LtEqFilterOperation.ts#L20)
+[model/internal/filter/custom/LtEqFilterOperation.ts:20](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/filter/custom/LtEqFilterOperation.ts#L20)
 
-___
+***
 
-### match
+### match()
 
-▸ **match**(`value`, `pattern`): `boolean`
+> **match**(`value`, `pattern`): `boolean`
 
 It checks if value equals pattern.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | `unknown` |
-| `pattern` | `string` |
+• **value**: `unknown`
+
+• **pattern**: `string`
 
 #### Returns
 
@@ -93,17 +82,17 @@ It checks if value equals pattern.
 
 #### Implementation of
 
-[IMapFilterOperation](../interfaces/IMapFilterOperation.md).[match](../interfaces/IMapFilterOperation.md#match)
+[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md).[`match`](../interfaces/IMapFilterOperation.md#match)
 
-#### Defined in
+#### Source
 
-[src/model/internal/filter/custom/LtEqFilterOperation.ts:30](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/filter/custom/LtEqFilterOperation.ts#L30)
+[model/internal/filter/custom/LtEqFilterOperation.ts:30](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/filter/custom/LtEqFilterOperation.ts#L30)
 
-___
+***
 
-### toString
+### toString()
 
-▸ **toString**(): `string`
+> **toString**(): `string`
 
 The string representation is equal to the name of the map domain.
 
@@ -113,8 +102,8 @@ The string representation is equal to the name of the map domain.
 
 #### Inherited from
 
-[AbstractMapDomain](AbstractMapDomain.md).[toString](AbstractMapDomain.md#tostring)
+[`AbstractMapDomain`](AbstractMapDomain.md).[`toString`](AbstractMapDomain.md#tostring)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/abstract/AbstractMapDomain.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/abstract/AbstractMapDomain.ts#L18)
+[model/internal/domain/abstract/AbstractMapDomain.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/abstract/AbstractMapDomain.ts#L18)

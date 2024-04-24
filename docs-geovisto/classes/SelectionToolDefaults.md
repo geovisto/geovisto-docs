@@ -1,55 +1,30 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / SelectionToolDefaults
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / SelectionToolDefaults
 
 # Class: SelectionToolDefaults
 
 This class provide functions which return the default state values.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`MapToolDefaults`](MapToolDefaults.md)
-
-  ↳ **`SelectionToolDefaults`**
 
 ## Implements
 
 - [`ISelectionToolDefaults`](../interfaces/ISelectionToolDefaults.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](SelectionToolDefaults.md#constructor)
-
-### Properties
-
-- [idString](SelectionToolDefaults.md#idstring)
-- [TYPE](SelectionToolDefaults.md#type)
-- [id](SelectionToolDefaults.md#id)
-
-### Methods
-
-- [generateId](SelectionToolDefaults.md#generateid)
-- [getConfig](SelectionToolDefaults.md#getconfig)
-- [getDataManager](SelectionToolDefaults.md#getdatamanager)
-- [getGeoDataManager](SelectionToolDefaults.md#getgeodatamanager)
-- [getIcon](SelectionToolDefaults.md#geticon)
-- [getId](SelectionToolDefaults.md#getid)
-- [getLabel](SelectionToolDefaults.md#getlabel)
-- [getProps](SelectionToolDefaults.md#getprops)
-- [getSelection](SelectionToolDefaults.md#getselection)
-- [getType](SelectionToolDefaults.md#gettype)
-- [isEnabled](SelectionToolDefaults.md#isenabled)
-- [isSingleton](SelectionToolDefaults.md#issingleton)
-
 ## Constructors
 
-### constructor
+### new SelectionToolDefaults()
 
-• **new SelectionToolDefaults**(): [`SelectionToolDefaults`](SelectionToolDefaults.md)
+> **new SelectionToolDefaults**(): [`SelectionToolDefaults`](SelectionToolDefaults.md)
 
 #### Returns
 
@@ -57,53 +32,53 @@ Jiri Hynek
 
 #### Inherited from
 
-[MapToolDefaults](MapToolDefaults.md).[constructor](MapToolDefaults.md#constructor)
+[`MapToolDefaults`](MapToolDefaults.md).[`constructor`](MapToolDefaults.md#constructors)
 
 ## Properties
 
-### idString
+### idString?
 
-• `Protected` `Optional` **idString**: `string`
+> `protected` `optional` **idString**: `string`
 
 #### Inherited from
 
-[MapToolDefaults](MapToolDefaults.md).[idString](MapToolDefaults.md#idstring)
+[`MapToolDefaults`](MapToolDefaults.md).[`idString`](MapToolDefaults.md#idstring)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:13](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L13)
+[model/internal/object/MapObjectDefaults.ts:13](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L13)
 
-___
+***
 
 ### TYPE
 
-▪ `Static` **TYPE**: `string` = `"geovisto-tool-selection"`
+> `static` **TYPE**: `string` = `"geovisto-tool-selection"`
 
 Static tool type constant.
 
-#### Defined in
+#### Source
 
-[src/tools/selection/model/internal/tool/SelectionToolDefaults.ts:36](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/selection/model/internal/tool/SelectionToolDefaults.ts#L36)
+[tools/selection/model/internal/tool/SelectionToolDefaults.ts:36](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/selection/model/internal/tool/SelectionToolDefaults.ts#L36)
 
-___
+***
 
 ### id
 
-▪ `Static` `Protected` **id**: `number`
+> `static` `protected` **id**: `number`
 
 #### Inherited from
 
-[MapToolDefaults](MapToolDefaults.md).[id](MapToolDefaults.md#id)
+[`MapToolDefaults`](MapToolDefaults.md).[`id`](MapToolDefaults.md#id)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:12](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L12)
+[model/internal/object/MapObjectDefaults.ts:12](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L12)
 
 ## Methods
 
-### generateId
+### generateId()
 
-▸ **generateId**(): `string`
+> `protected` **generateId**(): `string`
 
 It returns identifier which is used when no identifier is specified.
 
@@ -113,41 +88,41 @@ It returns identifier which is used when no identifier is specified.
 
 #### Inherited from
 
-[MapToolDefaults](MapToolDefaults.md).[generateId](MapToolDefaults.md#generateid)
+[`MapToolDefaults`](MapToolDefaults.md).[`generateId`](MapToolDefaults.md#generateid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:54](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L54)
+[model/internal/object/MapObjectDefaults.ts:54](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L54)
 
-___
+***
 
-### getConfig
+### getConfig()
 
-▸ **getConfig**(): [`ISelectionToolConfig`](../modules.md#iselectiontoolconfig)
+> **getConfig**(): [`ISelectionToolConfig`](../type-aliases/ISelectionToolConfig.md)
 
 It returns the default config.
 
 #### Returns
 
-[`ISelectionToolConfig`](../modules.md#iselectiontoolconfig)
+[`ISelectionToolConfig`](../type-aliases/ISelectionToolConfig.md)
 
 #### Implementation of
 
-[ISelectionToolDefaults](../interfaces/ISelectionToolDefaults.md).[getConfig](../interfaces/ISelectionToolDefaults.md#getconfig)
+[`ISelectionToolDefaults`](../interfaces/ISelectionToolDefaults.md).[`getConfig`](../interfaces/ISelectionToolDefaults.md#getconfig)
 
 #### Overrides
 
-[MapToolDefaults](MapToolDefaults.md).[getConfig](MapToolDefaults.md#getconfig)
+[`MapToolDefaults`](MapToolDefaults.md).[`getConfig`](MapToolDefaults.md#getconfig)
 
-#### Defined in
+#### Source
 
-[src/tools/selection/model/internal/tool/SelectionToolDefaults.ts:20](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/selection/model/internal/tool/SelectionToolDefaults.ts#L20)
+[tools/selection/model/internal/tool/SelectionToolDefaults.ts:20](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/selection/model/internal/tool/SelectionToolDefaults.ts#L20)
 
-___
+***
 
-### getDataManager
+### getDataManager()
 
-▸ **getDataManager**(): [`IMapDataManager`](../interfaces/IMapDataManager.md)
+> **getDataManager**(): [`IMapDataManager`](../interfaces/IMapDataManager.md)
 
 It returns default map data manager.
 
@@ -157,43 +132,41 @@ It returns default map data manager.
 
 #### Inherited from
 
-[MapToolDefaults](MapToolDefaults.md).[getDataManager](MapToolDefaults.md#getdatamanager)
+[`MapToolDefaults`](MapToolDefaults.md).[`getDataManager`](MapToolDefaults.md#getdatamanager)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolDefaults.ts:20](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolDefaults.ts#L20)
+[model/internal/tool/MapToolDefaults.ts:20](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolDefaults.ts#L20)
 
-___
+***
 
-### getGeoDataManager
+### getGeoDataManager()
 
-▸ **getGeoDataManager**(`geoDataArray`): [`IGeoDataManager`](../modules.md#igeodatamanager)
+> **getGeoDataManager**(`geoDataArray`): [`IGeoDataManager`](../type-aliases/IGeoDataManager.md)
 
 It returns default geo data manager.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `geoDataArray` | `undefined` \| [`IGeoData`](../interfaces/IGeoData.md)[] |
+• **geoDataArray**: `undefined` \| [`IGeoData`](../interfaces/IGeoData.md)[]
 
 #### Returns
 
-[`IGeoDataManager`](../modules.md#igeodatamanager)
+[`IGeoDataManager`](../type-aliases/IGeoDataManager.md)
 
 #### Inherited from
 
-[MapToolDefaults](MapToolDefaults.md).[getGeoDataManager](MapToolDefaults.md#getgeodatamanager)
+[`MapToolDefaults`](MapToolDefaults.md).[`getGeoDataManager`](MapToolDefaults.md#getgeodatamanager)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolDefaults.ts:27](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolDefaults.ts#L27)
+[model/internal/tool/MapToolDefaults.ts:27](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolDefaults.ts#L27)
 
-___
+***
 
-### getIcon
+### getIcon()
 
-▸ **getIcon**(): `string`
+> **getIcon**(): `string`
 
 It returns the icon of the tool.
 
@@ -203,21 +176,21 @@ It returns the icon of the tool.
 
 #### Implementation of
 
-[ISelectionToolDefaults](../interfaces/ISelectionToolDefaults.md).[getIcon](../interfaces/ISelectionToolDefaults.md#geticon)
+[`ISelectionToolDefaults`](../interfaces/ISelectionToolDefaults.md).[`getIcon`](../interfaces/ISelectionToolDefaults.md#geticon)
 
 #### Overrides
 
-[MapToolDefaults](MapToolDefaults.md).[getIcon](MapToolDefaults.md#geticon)
+[`MapToolDefaults`](MapToolDefaults.md).[`getIcon`](MapToolDefaults.md#geticon)
 
-#### Defined in
+#### Source
 
-[src/tools/selection/model/internal/tool/SelectionToolDefaults.ts:55](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/selection/model/internal/tool/SelectionToolDefaults.ts#L55)
+[tools/selection/model/internal/tool/SelectionToolDefaults.ts:55](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/selection/model/internal/tool/SelectionToolDefaults.ts#L55)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 It returns identifier which is used when no identifier is specified.
 
@@ -227,21 +200,21 @@ It returns identifier which is used when no identifier is specified.
 
 #### Implementation of
 
-[ISelectionToolDefaults](../interfaces/ISelectionToolDefaults.md).[getId](../interfaces/ISelectionToolDefaults.md#getid)
+[`ISelectionToolDefaults`](../interfaces/ISelectionToolDefaults.md).[`getId`](../interfaces/ISelectionToolDefaults.md#getid)
 
 #### Inherited from
 
-[MapToolDefaults](MapToolDefaults.md).[getId](MapToolDefaults.md#getid)
+[`MapToolDefaults`](MapToolDefaults.md).[`getId`](MapToolDefaults.md#getid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:44](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L44)
+[model/internal/object/MapObjectDefaults.ts:44](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L44)
 
-___
+***
 
-### getLabel
+### getLabel()
 
-▸ **getLabel**(): `string`
+> **getLabel**(): `string`
 
 It returns the label of the tool.
 
@@ -251,65 +224,65 @@ It returns the label of the tool.
 
 #### Implementation of
 
-[ISelectionToolDefaults](../interfaces/ISelectionToolDefaults.md).[getLabel](../interfaces/ISelectionToolDefaults.md#getlabel)
+[`ISelectionToolDefaults`](../interfaces/ISelectionToolDefaults.md).[`getLabel`](../interfaces/ISelectionToolDefaults.md#getlabel)
 
 #### Overrides
 
-[MapToolDefaults](MapToolDefaults.md).[getLabel](MapToolDefaults.md#getlabel)
+[`MapToolDefaults`](MapToolDefaults.md).[`getLabel`](MapToolDefaults.md#getlabel)
 
-#### Defined in
+#### Source
 
-[src/tools/selection/model/internal/tool/SelectionToolDefaults.ts:48](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/selection/model/internal/tool/SelectionToolDefaults.ts#L48)
+[tools/selection/model/internal/tool/SelectionToolDefaults.ts:48](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/selection/model/internal/tool/SelectionToolDefaults.ts#L48)
 
-___
+***
 
-### getProps
+### getProps()
 
-▸ **getProps**(): [`IMapObjectProps`](../modules.md#imapobjectprops)
+> **getProps**(): [`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
 It returns default props if no props are given.
 
 #### Returns
 
-[`IMapObjectProps`](../modules.md#imapobjectprops)
+[`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
 #### Implementation of
 
-[ISelectionToolDefaults](../interfaces/ISelectionToolDefaults.md).[getProps](../interfaces/ISelectionToolDefaults.md#getprops)
+[`ISelectionToolDefaults`](../interfaces/ISelectionToolDefaults.md).[`getProps`](../interfaces/ISelectionToolDefaults.md#getprops)
 
 #### Inherited from
 
-[MapToolDefaults](MapToolDefaults.md).[getProps](MapToolDefaults.md#getprops)
+[`MapToolDefaults`](MapToolDefaults.md).[`getProps`](MapToolDefaults.md#getprops)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L18)
+[model/internal/object/MapObjectDefaults.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L18)
 
-___
+***
 
-### getSelection
+### getSelection()
 
-▸ **getSelection**(): ``null`` \| [`IMapSelection`](../interfaces/IMapSelection.md)
+> **getSelection**(): `null` \| [`IMapSelection`](../interfaces/IMapSelection.md)
 
 It returns default map selection.
 
 #### Returns
 
-``null`` \| [`IMapSelection`](../interfaces/IMapSelection.md)
+`null` \| [`IMapSelection`](../interfaces/IMapSelection.md)
 
 #### Implementation of
 
-[ISelectionToolDefaults](../interfaces/ISelectionToolDefaults.md).[getSelection](../interfaces/ISelectionToolDefaults.md#getselection)
+[`ISelectionToolDefaults`](../interfaces/ISelectionToolDefaults.md).[`getSelection`](../interfaces/ISelectionToolDefaults.md#getselection)
 
-#### Defined in
+#### Source
 
-[src/tools/selection/model/internal/tool/SelectionToolDefaults.ts:62](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/selection/model/internal/tool/SelectionToolDefaults.ts#L62)
+[tools/selection/model/internal/tool/SelectionToolDefaults.ts:62](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/selection/model/internal/tool/SelectionToolDefaults.ts#L62)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 It returns a unique string of the tool type.
 
@@ -319,21 +292,21 @@ It returns a unique string of the tool type.
 
 #### Implementation of
 
-[ISelectionToolDefaults](../interfaces/ISelectionToolDefaults.md).[getType](../interfaces/ISelectionToolDefaults.md#gettype)
+[`ISelectionToolDefaults`](../interfaces/ISelectionToolDefaults.md).[`getType`](../interfaces/ISelectionToolDefaults.md#gettype)
 
 #### Overrides
 
-[MapToolDefaults](MapToolDefaults.md).[getType](MapToolDefaults.md#gettype)
+[`MapToolDefaults`](MapToolDefaults.md).[`getType`](MapToolDefaults.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/tools/selection/model/internal/tool/SelectionToolDefaults.ts:41](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/selection/model/internal/tool/SelectionToolDefaults.ts#L41)
+[tools/selection/model/internal/tool/SelectionToolDefaults.ts:41](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/selection/model/internal/tool/SelectionToolDefaults.ts#L41)
 
-___
+***
 
-### isEnabled
+### isEnabled()
 
-▸ **isEnabled**(): `boolean`
+> **isEnabled**(): `boolean`
 
 By default, the tool is enabled.
 
@@ -343,21 +316,21 @@ By default, the tool is enabled.
 
 #### Implementation of
 
-[ISelectionToolDefaults](../interfaces/ISelectionToolDefaults.md).[isEnabled](../interfaces/ISelectionToolDefaults.md#isenabled)
+[`ISelectionToolDefaults`](../interfaces/ISelectionToolDefaults.md).[`isEnabled`](../interfaces/ISelectionToolDefaults.md#isenabled)
 
 #### Inherited from
 
-[MapToolDefaults](MapToolDefaults.md).[isEnabled](MapToolDefaults.md#isenabled)
+[`MapToolDefaults`](MapToolDefaults.md).[`isEnabled`](MapToolDefaults.md#isenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolDefaults.ts:50](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolDefaults.ts#L50)
+[model/internal/tool/MapToolDefaults.ts:50](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolDefaults.ts#L50)
 
-___
+***
 
-### isSingleton
+### isSingleton()
 
-▸ **isSingleton**(): `boolean`
+> **isSingleton**(): `boolean`
 
 Only one selection tool should be present in the Geovisto map.
 
@@ -367,12 +340,12 @@ Only one selection tool should be present in the Geovisto map.
 
 #### Implementation of
 
-[ISelectionToolDefaults](../interfaces/ISelectionToolDefaults.md).[isSingleton](../interfaces/ISelectionToolDefaults.md#issingleton)
+[`ISelectionToolDefaults`](../interfaces/ISelectionToolDefaults.md).[`isSingleton`](../interfaces/ISelectionToolDefaults.md#issingleton)
 
 #### Overrides
 
-[MapToolDefaults](MapToolDefaults.md).[isSingleton](MapToolDefaults.md#issingleton)
+[`MapToolDefaults`](MapToolDefaults.md).[`isSingleton`](MapToolDefaults.md#issingleton)
 
-#### Defined in
+#### Source
 
-[src/tools/selection/model/internal/tool/SelectionToolDefaults.ts:29](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/selection/model/internal/tool/SelectionToolDefaults.ts#L29)
+[tools/selection/model/internal/tool/SelectionToolDefaults.ts:29](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/selection/model/internal/tool/SelectionToolDefaults.ts#L29)

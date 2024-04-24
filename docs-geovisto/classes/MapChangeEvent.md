@@ -1,84 +1,46 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / MapChangeEvent
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / MapChangeEvent
 
 # Class: MapChangeEvent\<TChangedObject, TSource\>
 
 This class provides generic map change event object.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `TChangedObject` | `TChangedObject` |
-| `TSource` | extends [`IMapObject`](../interfaces/IMapObject.md) = [`IMapObject`](../interfaces/IMapObject.md) |
-
-## Hierarchy
+## Extends
 
 - [`MapEvent`](MapEvent.md)\<`TSource`\>
 
-  ↳ **`MapChangeEvent`**
+## Type parameters
 
-  ↳↳ [`DataChangeEvent`](DataChangeEvent.md)
+• **TChangedObject**
 
-  ↳↳ [`DataManagerChangeEvent`](DataManagerChangeEvent.md)
-
-  ↳↳ [`GeoDataChangeEvent`](GeoDataChangeEvent.md)
-
-  ↳↳ [`GeoDataManagerChangeEvent`](GeoDataManagerChangeEvent.md)
-
-  ↳↳ [`LayerToolRenderedEvent`](LayerToolRenderedEvent.md)
-
-  ↳↳ [`ToolEnabledEvent`](ToolEnabledEvent.md)
-
-  ↳↳ [`SelectionToolEvent`](SelectionToolEvent.md)
-
-  ↳↳ [`ThemesToolEvent`](ThemesToolEvent.md)
+• **TSource** *extends* [`IMapObject`](../interfaces/IMapObject.md) = [`IMapObject`](../interfaces/IMapObject.md)
 
 ## Implements
 
 - [`IMapChangeEvent`](../interfaces/IMapChangeEvent.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](MapChangeEvent.md#constructor)
-
-### Properties
-
-- [changedObject](MapChangeEvent.md#changedobject)
-
-### Methods
-
-- [getChangedObject](MapChangeEvent.md#getchangedobject)
-- [getSource](MapChangeEvent.md#getsource)
-- [getType](MapChangeEvent.md#gettype)
-
 ## Constructors
 
-### constructor
+### new MapChangeEvent()
 
-• **new MapChangeEvent**\<`TChangedObject`, `TSource`\>(`type`, `source`, `changedObject`): [`MapChangeEvent`](MapChangeEvent.md)\<`TChangedObject`, `TSource`\>
+> **new MapChangeEvent**\<`TChangedObject`, `TSource`\>(`type`, `source`, `changedObject`): [`MapChangeEvent`](MapChangeEvent.md)\<`TChangedObject`, `TSource`\>
 
 It initializes event.
 
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `TChangedObject` | `TChangedObject` |
-| `TSource` | extends [`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\> = [`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\> |
-
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `type` | `string` |
-| `source` | `TSource` |
-| `changedObject` | `TChangedObject` |
+• **type**: `string`
+
+• **source**: `TSource`
+
+• **changedObject**: `TChangedObject`
 
 #### Returns
 
@@ -86,27 +48,27 @@ It initializes event.
 
 #### Overrides
 
-[MapEvent](MapEvent.md).[constructor](MapEvent.md#constructor)
+[`MapEvent`](MapEvent.md).[`constructor`](MapEvent.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/model/internal/event/generic/MapChangeEvent.ts:17](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/event/generic/MapChangeEvent.ts#L17)
+[model/internal/event/generic/MapChangeEvent.ts:17](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/event/generic/MapChangeEvent.ts#L17)
 
 ## Properties
 
 ### changedObject
 
-• `Private` **changedObject**: `TChangedObject`
+> `private` **changedObject**: `TChangedObject`
 
-#### Defined in
+#### Source
 
-[src/model/internal/event/generic/MapChangeEvent.ts:12](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/event/generic/MapChangeEvent.ts#L12)
+[model/internal/event/generic/MapChangeEvent.ts:12](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/event/generic/MapChangeEvent.ts#L12)
 
 ## Methods
 
-### getChangedObject
+### getChangedObject()
 
-▸ **getChangedObject**(): `TChangedObject`
+> **getChangedObject**(): `TChangedObject`
 
 Return the changed object.
 
@@ -116,17 +78,17 @@ Return the changed object.
 
 #### Implementation of
 
-[IMapChangeEvent](../interfaces/IMapChangeEvent.md).[getChangedObject](../interfaces/IMapChangeEvent.md#getchangedobject)
+[`IMapChangeEvent`](../interfaces/IMapChangeEvent.md).[`getChangedObject`](../interfaces/IMapChangeEvent.md#getchangedobject)
 
-#### Defined in
+#### Source
 
-[src/model/internal/event/generic/MapChangeEvent.ts:26](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/event/generic/MapChangeEvent.ts#L26)
+[model/internal/event/generic/MapChangeEvent.ts:26](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/event/generic/MapChangeEvent.ts#L26)
 
-___
+***
 
-### getSource
+### getSource()
 
-▸ **getSource**(): `TSource`
+> **getSource**(): `TSource`
 
 It return source map object of the event.
 
@@ -136,21 +98,21 @@ It return source map object of the event.
 
 #### Implementation of
 
-[IMapChangeEvent](../interfaces/IMapChangeEvent.md).[getSource](../interfaces/IMapChangeEvent.md#getsource)
+[`IMapChangeEvent`](../interfaces/IMapChangeEvent.md).[`getSource`](../interfaces/IMapChangeEvent.md#getsource)
 
 #### Inherited from
 
-[MapEvent](MapEvent.md).[getSource](MapEvent.md#getsource)
+[`MapEvent`](MapEvent.md).[`getSource`](MapEvent.md#getsource)
 
-#### Defined in
+#### Source
 
-[src/model/internal/event/generic/MapEvent.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/event/generic/MapEvent.ts#L32)
+[model/internal/event/generic/MapEvent.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/event/generic/MapEvent.ts#L32)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 It returns string which identifies the event.
 
@@ -160,12 +122,12 @@ It returns string which identifies the event.
 
 #### Implementation of
 
-[IMapChangeEvent](../interfaces/IMapChangeEvent.md).[getType](../interfaces/IMapChangeEvent.md#gettype)
+[`IMapChangeEvent`](../interfaces/IMapChangeEvent.md).[`getType`](../interfaces/IMapChangeEvent.md#gettype)
 
 #### Inherited from
 
-[MapEvent](MapEvent.md).[getType](MapEvent.md#gettype)
+[`MapEvent`](MapEvent.md).[`getType`](MapEvent.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/internal/event/generic/MapEvent.ts:25](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/event/generic/MapEvent.ts#L25)
+[model/internal/event/generic/MapEvent.ts:25](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/event/generic/MapEvent.ts#L25)

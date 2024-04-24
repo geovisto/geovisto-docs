@@ -1,56 +1,34 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / LabeledCheckboxFormInput
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / LabeledCheckboxFormInput
 
 # Class: LabeledCheckboxFormInput
 
 This class represents basic checkbox sidebar input.
 
-**`Author`**
+## Author
 
 Krystof Rykala
 
-**`Author`**
+## Author
 
 Jiri Hynek - conversion to TypeScript
 
-## Hierarchy
+## Extends
 
 - [`AbstractMapFormInput`](AbstractMapFormInput.md)
 
-  ↳ **`LabeledCheckboxFormInput`**
-
-## Table of contents
-
-### Constructors
-
-- [constructor](LabeledCheckboxFormInput.md#constructor)
-
-### Properties
-
-- [div](LabeledCheckboxFormInput.md#div)
-- [input](LabeledCheckboxFormInput.md#input)
-
-### Methods
-
-- [create](LabeledCheckboxFormInput.md#create)
-- [createCheckbox](LabeledCheckboxFormInput.md#createcheckbox)
-- [createLabel](LabeledCheckboxFormInput.md#createlabel)
-- [getProps](LabeledCheckboxFormInput.md#getprops)
-- [getValue](LabeledCheckboxFormInput.md#getvalue)
-- [setDisabled](LabeledCheckboxFormInput.md#setdisabled)
-- [setValue](LabeledCheckboxFormInput.md#setvalue)
-- [ID](LabeledCheckboxFormInput.md#id)
-
 ## Constructors
 
-### constructor
+### new LabeledCheckboxFormInput()
 
-• **new LabeledCheckboxFormInput**(`props`): [`LabeledCheckboxFormInput`](LabeledCheckboxFormInput.md)
+> **new LabeledCheckboxFormInput**(`props`): [`LabeledCheckboxFormInput`](LabeledCheckboxFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `props` | [`ILabeledCheckboxFormInputProps`](../interfaces/ILabeledCheckboxFormInputProps.md) |
+• **props**: [`ILabeledCheckboxFormInputProps`](../interfaces/ILabeledCheckboxFormInputProps.md)
 
 #### Returns
 
@@ -58,41 +36,41 @@ Jiri Hynek - conversion to TypeScript
 
 #### Overrides
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[constructor](AbstractMapFormInput.md#constructor)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`constructor`](AbstractMapFormInput.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts:24](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts#L24)
+[model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts:24](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts#L24)
 
 ## Properties
 
-### div
+### div?
 
-• `Private` `Optional` **div**: `HTMLDivElement`
+> `private` `optional` **div**: `HTMLDivElement`
 
 The input element is created when required.
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts:17](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts#L17)
+[model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts:17](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts#L17)
 
-___
+***
 
-### input
+### input?
 
-• `Private` `Optional` **input**: `HTMLInputElement`
+> `private` `optional` **input**: `HTMLInputElement`
 
 Basic input is used.
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts:22](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts#L22)
+[model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts:22](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts#L22)
 
 ## Methods
 
-### create
+### create()
 
-▸ **create**(): `HTMLDivElement`
+> **create**(): `HTMLDivElement`
 
 It returns input element.
 
@@ -102,17 +80,17 @@ It returns input element.
 
 #### Overrides
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[create](AbstractMapFormInput.md#create)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`create`](AbstractMapFormInput.md#create)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts:42](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts#L42)
+[model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts:42](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts#L42)
 
-___
+***
 
-### createCheckbox
+### createCheckbox()
 
-▸ **createCheckbox**(): `HTMLInputElement`
+> `protected` **createCheckbox**(): `HTMLInputElement`
 
 A help method which creates the checkbox HTML element.
 
@@ -120,15 +98,15 @@ A help method which creates the checkbox HTML element.
 
 `HTMLInputElement`
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts:71](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts#L71)
+[model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts:71](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts#L71)
 
-___
+***
 
-### createLabel
+### createLabel()
 
-▸ **createLabel**(): `HTMLDivElement`
+> `protected` **createLabel**(): `HTMLDivElement`
 
 A help method which creates the label HTML element.
 
@@ -136,15 +114,15 @@ A help method which creates the label HTML element.
 
 `HTMLDivElement`
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts:60](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts#L60)
+[model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts:60](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts#L60)
 
-___
+***
 
-### getProps
+### getProps()
 
-▸ **getProps**(): [`IMapFormInputProps`](../interfaces/IMapFormInputProps.md)
+> `protected` **getProps**(): [`IMapFormInputProps`](../interfaces/IMapFormInputProps.md)
 
 It provides the props to the exteded classes.
 
@@ -154,17 +132,17 @@ It provides the props to the exteded classes.
 
 #### Inherited from
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[getProps](AbstractMapFormInput.md#getprops)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`getProps`](AbstractMapFormInput.md#getprops)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/abstract/AbstractMapFormInput.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/abstract/AbstractMapFormInput.ts#L23)
+[model/internal/inputs/abstract/AbstractMapFormInput.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/abstract/AbstractMapFormInput.ts#L23)
 
-___
+***
 
-### getValue
+### getValue()
 
-▸ **getValue**(): `boolean`
+> **getValue**(): `boolean`
 
 It returns the value of the input element.
 
@@ -174,25 +152,23 @@ It returns the value of the input element.
 
 #### Overrides
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[getValue](AbstractMapFormInput.md#getvalue)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`getValue`](AbstractMapFormInput.md#getvalue)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts:84](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts#L84)
+[model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts:84](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts#L84)
 
-___
+***
 
-### setDisabled
+### setDisabled()
 
-▸ **setDisabled**(`disabled`): `void`
+> **setDisabled**(`disabled`): `void`
 
 It sets the input disabled.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `disabled` | `boolean` |
+• **disabled**: `boolean`
 
 #### Returns
 
@@ -200,25 +176,23 @@ It sets the input disabled.
 
 #### Overrides
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[setDisabled](AbstractMapFormInput.md#setdisabled)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`setDisabled`](AbstractMapFormInput.md#setdisabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts:102](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts#L102)
+[model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts:102](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts#L102)
 
-___
+***
 
-### setValue
+### setValue()
 
-▸ **setValue**(`checked`): `void`
+> **setValue**(`checked`): `void`
 
 It sets value of the input element.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `checked` | `boolean` |
+• **checked**: `boolean`
 
 #### Returns
 
@@ -226,17 +200,17 @@ It sets value of the input element.
 
 #### Overrides
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[setValue](AbstractMapFormInput.md#setvalue)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`setValue`](AbstractMapFormInput.md#setvalue)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts:93](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts#L93)
+[model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts:93](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts#L93)
 
-___
+***
 
-### ID
+### ID()
 
-▸ **ID**(): `string`
+> `static` **ID**(): `string`
 
 Static function returns identifier of the input type.
 
@@ -244,6 +218,6 @@ Static function returns identifier of the input type.
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts:35](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts#L35)
+[model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts:35](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/labeled/checkbox/LabeledCheckboxFormInput.ts#L35)

@@ -1,60 +1,40 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / LabeledColorFormInput
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / LabeledColorFormInput
 
 # Class: LabeledColorFormInput
 
 This class represents basic text sidebar input.
 
-**`Author`**
+## Author
 
 Jakub Kachlik
 
-**`Author`**
+## Author
 
 Jiri Hynek - conversion to TypeScript
 
 TODO: replace this by LabeledTextFormInput
 
-## Hierarchy
+## Extends
 
 - [`AbstractMapFormInput`](AbstractMapFormInput.md)
-
-  ↳ **`LabeledColorFormInput`**
 
 ## Implements
 
 - [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](LabeledColorFormInput.md#constructor)
-
-### Properties
-
-- [div](LabeledColorFormInput.md#div)
-- [input](LabeledColorFormInput.md#input)
-
-### Methods
-
-- [create](LabeledColorFormInput.md#create)
-- [getProps](LabeledColorFormInput.md#getprops)
-- [getValue](LabeledColorFormInput.md#getvalue)
-- [setDisabled](LabeledColorFormInput.md#setdisabled)
-- [setValue](LabeledColorFormInput.md#setvalue)
-- [ID](LabeledColorFormInput.md#id)
-
 ## Constructors
 
-### constructor
+### new LabeledColorFormInput()
 
-• **new LabeledColorFormInput**(`props`): [`LabeledColorFormInput`](LabeledColorFormInput.md)
+> **new LabeledColorFormInput**(`props`): [`LabeledColorFormInput`](LabeledColorFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `props` | [`ILabeledColorFormInputProps`](../interfaces/ILabeledColorFormInputProps.md) |
+• **props**: [`ILabeledColorFormInputProps`](../interfaces/ILabeledColorFormInputProps.md)
 
 #### Returns
 
@@ -62,41 +42,41 @@ TODO: replace this by LabeledTextFormInput
 
 #### Overrides
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[constructor](AbstractMapFormInput.md#constructor)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`constructor`](AbstractMapFormInput.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/labeled/color/LabeledColorFormInput.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/labeled/color/LabeledColorFormInput.ts#L32)
+[model/internal/inputs/labeled/color/LabeledColorFormInput.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/labeled/color/LabeledColorFormInput.ts#L32)
 
 ## Properties
 
-### div
+### div?
 
-• `Private` `Optional` **div**: `HTMLDivElement`
+> `private` `optional` **div**: `HTMLDivElement`
 
 The input element is created when required.
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/labeled/color/LabeledColorFormInput.ts:25](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/labeled/color/LabeledColorFormInput.ts#L25)
+[model/internal/inputs/labeled/color/LabeledColorFormInput.ts:25](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/labeled/color/LabeledColorFormInput.ts#L25)
 
-___
+***
 
-### input
+### input?
 
-• `Private` `Optional` **input**: `HTMLInputElement`
+> `private` `optional` **input**: `HTMLInputElement`
 
 Basic input is used.
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/labeled/color/LabeledColorFormInput.ts:30](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/labeled/color/LabeledColorFormInput.ts#L30)
+[model/internal/inputs/labeled/color/LabeledColorFormInput.ts:30](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/labeled/color/LabeledColorFormInput.ts#L30)
 
 ## Methods
 
-### create
+### create()
 
-▸ **create**(): `HTMLDivElement`
+> **create**(): `HTMLDivElement`
 
 It returns input element.
 
@@ -106,21 +86,21 @@ It returns input element.
 
 #### Implementation of
 
-[IMapFormInput](../interfaces/IMapFormInput.md).[create](../interfaces/IMapFormInput.md#create)
+[`IMapFormInput`](../interfaces/IMapFormInput.md).[`create`](../interfaces/IMapFormInput.md#create)
 
 #### Overrides
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[create](AbstractMapFormInput.md#create)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`create`](AbstractMapFormInput.md#create)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/labeled/color/LabeledColorFormInput.ts:50](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/labeled/color/LabeledColorFormInput.ts#L50)
+[model/internal/inputs/labeled/color/LabeledColorFormInput.ts:50](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/labeled/color/LabeledColorFormInput.ts#L50)
 
-___
+***
 
-### getProps
+### getProps()
 
-▸ **getProps**(): [`IMapFormInputProps`](../interfaces/IMapFormInputProps.md)
+> `protected` **getProps**(): [`IMapFormInputProps`](../interfaces/IMapFormInputProps.md)
 
 It provides the props to the exteded classes.
 
@@ -130,17 +110,17 @@ It provides the props to the exteded classes.
 
 #### Inherited from
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[getProps](AbstractMapFormInput.md#getprops)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`getProps`](AbstractMapFormInput.md#getprops)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/abstract/AbstractMapFormInput.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/abstract/AbstractMapFormInput.ts#L23)
+[model/internal/inputs/abstract/AbstractMapFormInput.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/abstract/AbstractMapFormInput.ts#L23)
 
-___
+***
 
-### getValue
+### getValue()
 
-▸ **getValue**(): `string`
+> **getValue**(): `string`
 
 It returns value of the input element.
 
@@ -150,29 +130,27 @@ It returns value of the input element.
 
 #### Implementation of
 
-[IMapFormInput](../interfaces/IMapFormInput.md).[getValue](../interfaces/IMapFormInput.md#getvalue)
+[`IMapFormInput`](../interfaces/IMapFormInput.md).[`getValue`](../interfaces/IMapFormInput.md#getvalue)
 
 #### Overrides
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[getValue](AbstractMapFormInput.md#getvalue)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`getValue`](AbstractMapFormInput.md#getvalue)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/labeled/color/LabeledColorFormInput.ts:89](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/labeled/color/LabeledColorFormInput.ts#L89)
+[model/internal/inputs/labeled/color/LabeledColorFormInput.ts:89](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/labeled/color/LabeledColorFormInput.ts#L89)
 
-___
+***
 
-### setDisabled
+### setDisabled()
 
-▸ **setDisabled**(`disabled`): `void`
+> **setDisabled**(`disabled`): `void`
 
 It sets the input disabled.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `disabled` | `boolean` |
+• **disabled**: `boolean`
 
 #### Returns
 
@@ -180,29 +158,27 @@ It sets the input disabled.
 
 #### Implementation of
 
-[IMapFormInput](../interfaces/IMapFormInput.md).[setDisabled](../interfaces/IMapFormInput.md#setdisabled)
+[`IMapFormInput`](../interfaces/IMapFormInput.md).[`setDisabled`](../interfaces/IMapFormInput.md#setdisabled)
 
 #### Overrides
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[setDisabled](AbstractMapFormInput.md#setdisabled)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`setDisabled`](AbstractMapFormInput.md#setdisabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/labeled/color/LabeledColorFormInput.ts:107](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/labeled/color/LabeledColorFormInput.ts#L107)
+[model/internal/inputs/labeled/color/LabeledColorFormInput.ts:107](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/labeled/color/LabeledColorFormInput.ts#L107)
 
-___
+***
 
-### setValue
+### setValue()
 
-▸ **setValue**(`value`): `void`
+> **setValue**(`value`): `void`
 
 It sets value of the input element.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | `string` |
+• **value**: `string`
 
 #### Returns
 
@@ -210,21 +186,21 @@ It sets value of the input element.
 
 #### Implementation of
 
-[IMapFormInput](../interfaces/IMapFormInput.md).[setValue](../interfaces/IMapFormInput.md#setvalue)
+[`IMapFormInput`](../interfaces/IMapFormInput.md).[`setValue`](../interfaces/IMapFormInput.md#setvalue)
 
 #### Overrides
 
-[AbstractMapFormInput](AbstractMapFormInput.md).[setValue](AbstractMapFormInput.md#setvalue)
+[`AbstractMapFormInput`](AbstractMapFormInput.md).[`setValue`](AbstractMapFormInput.md#setvalue)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/labeled/color/LabeledColorFormInput.ts:98](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/labeled/color/LabeledColorFormInput.ts#L98)
+[model/internal/inputs/labeled/color/LabeledColorFormInput.ts:98](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/labeled/color/LabeledColorFormInput.ts#L98)
 
-___
+***
 
-### ID
+### ID()
 
-▸ **ID**(): `string`
+> `static` **ID**(): `string`
 
 Static function returns identifier of the input type.
 
@@ -232,6 +208,6 @@ Static function returns identifier of the input type.
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/labeled/color/LabeledColorFormInput.ts:43](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/labeled/color/LabeledColorFormInput.ts#L43)
+[model/internal/inputs/labeled/color/LabeledColorFormInput.ts:43](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/labeled/color/LabeledColorFormInput.ts#L43)

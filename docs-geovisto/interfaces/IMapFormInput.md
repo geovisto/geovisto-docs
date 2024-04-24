@@ -1,36 +1,22 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IMapFormInput
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IMapFormInput
 
 # Interface: IMapFormInput
 
 This interface represents description of form input.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Implemented by
-
-- [`AbstractMapFormInput`](../classes/AbstractMapFormInput.md)
-- [`LabeledAutocompleteFormInput`](../classes/LabeledAutocompleteFormInput.md)
-- [`LabeledColorFormInput`](../classes/LabeledColorFormInput.md)
-- [`LabeledSelectFormInput`](../classes/LabeledSelectFormInput.md)
-- [`LabeledTextFormInput`](../classes/LabeledTextFormInput.md)
-- [`TextFormInput`](../classes/TextFormInput.md)
-
-## Table of contents
-
-### Methods
-
-- [create](IMapFormInput.md#create)
-- [getValue](IMapFormInput.md#getvalue)
-- [setDisabled](IMapFormInput.md#setdisabled)
-- [setValue](IMapFormInput.md#setvalue)
-
 ## Methods
 
-### create
+### create()
 
-▸ **create**(): `HTMLElement`
+> **create**(): `HTMLElement`
 
 It creates an input element.
 
@@ -38,15 +24,15 @@ It creates an input element.
 
 `HTMLElement`
 
-#### Defined in
+#### Source
 
-[src/model/types/inputs/IMapFormInput.ts:11](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/inputs/IMapFormInput.ts#L11)
+[model/types/inputs/IMapFormInput.ts:11](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/inputs/IMapFormInput.ts#L11)
 
-___
+***
 
-### getValue
+### getValue()
 
-▸ **getValue**(): `unknown`
+> **getValue**(): `unknown`
 
 It returns value of the input element.
 
@@ -54,50 +40,46 @@ It returns value of the input element.
 
 `unknown`
 
-#### Defined in
+#### Source
 
-[src/model/types/inputs/IMapFormInput.ts:16](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/inputs/IMapFormInput.ts#L16)
+[model/types/inputs/IMapFormInput.ts:16](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/inputs/IMapFormInput.ts#L16)
 
-___
+***
 
-### setDisabled
+### setDisabled()
 
-▸ **setDisabled**(`disabled`): `void`
+> **setDisabled**(`disabled`): `void`
 
 It sets the input disabled.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `disabled` | `boolean` |
+• **disabled**: `boolean`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/model/types/inputs/IMapFormInput.ts:30](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/inputs/IMapFormInput.ts#L30)
+[model/types/inputs/IMapFormInput.ts:30](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/inputs/IMapFormInput.ts#L30)
 
-___
+***
 
-### setValue
+### setValue()
 
-▸ **setValue**(`value`): `void`
+> **setValue**(`value`): `void`
 
 It sets value of the input element.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | `unknown` |
+• **value**: `unknown`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/model/types/inputs/IMapFormInput.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/inputs/IMapFormInput.ts#L23)
+[model/types/inputs/IMapFormInput.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/inputs/IMapFormInput.ts#L23)

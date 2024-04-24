@@ -1,91 +1,74 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IMapTheme
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IMapTheme
 
 # Interface: IMapTheme
 
 This interface declares a map theme API.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-**`Author`**
+## Author
 
 Jakub Kachlik - advanced color model
 
-## Hierarchy
+## Extends
 
 - [`IMapDomain`](IMapDomain.md)
 
-  ↳ **`IMapTheme`**
-
-## Implemented by
-
-- [`BasicTheme`](../classes/BasicTheme.md)
-- [`Dark1Theme`](../classes/Dark1Theme.md)
-- [`Dark2Theme`](../classes/Dark2Theme.md)
-- [`Dark3Theme`](../classes/Dark3Theme.md)
-- [`Light1Theme`](../classes/Light1Theme.md)
-- [`Light2Theme`](../classes/Light2Theme.md)
-- [`Light3Theme`](../classes/Light3Theme.md)
-
-## Table of contents
-
-### Methods
-
-- [getBackgroundColors](IMapTheme.md#getbackgroundcolors)
-- [getBaseMap](IMapTheme.md#getbasemap)
-- [getDataColors](IMapTheme.md#getdatacolors)
-- [getFont](IMapTheme.md#getfont)
-- [getForegroundColors](IMapTheme.md#getforegroundcolors)
-- [getHighlightColor](IMapTheme.md#gethighlightcolor)
-- [getHoverColor](IMapTheme.md#gethovercolor)
-- [getName](IMapTheme.md#getname)
-- [getTextInputColor](IMapTheme.md#gettextinputcolor)
-- [isDark](IMapTheme.md#isdark)
-
 ## Methods
 
-### getBackgroundColors
+### getBackgroundColors()
 
-▸ **getBackgroundColors**(): `Object`
+> **getBackgroundColors**(): `object`
 
 It returns primary, secondary and disabled background colors
 
 #### Returns
 
-`Object`
+`object`
 
-| Name | Type |
-| :------ | :------ |
-| `disabled` | `string` |
-| `primary` | `string` |
-| `secondary` | `string` |
+##### disabled
 
-#### Defined in
+> **disabled**: `string`
 
-[src/tools/themes/model/types/theme/IMapTheme.ts:40](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/themes/model/types/theme/IMapTheme.ts#L40)
+##### primary
 
-___
+> **primary**: `string`
 
-### getBaseMap
+##### secondary
 
-▸ **getBaseMap**(): [`IMapTilesModel`](../modules.md#imaptilesmodel)
+> **secondary**: `string`
+
+#### Source
+
+[tools/themes/model/types/theme/IMapTheme.ts:40](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/themes/model/types/theme/IMapTheme.ts#L40)
+
+***
+
+### getBaseMap()
+
+> **getBaseMap**(): [`IMapTilesModel`](../type-aliases/IMapTilesModel.md)
 
 It returns the url of the preferred base map.
 
 #### Returns
 
-[`IMapTilesModel`](../modules.md#imaptilesmodel)
+[`IMapTilesModel`](../type-aliases/IMapTilesModel.md)
 
-#### Defined in
+#### Source
 
-[src/tools/themes/model/types/theme/IMapTheme.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/themes/model/types/theme/IMapTheme.ts#L18)
+[tools/themes/model/types/theme/IMapTheme.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/themes/model/types/theme/IMapTheme.ts#L18)
 
-___
+***
 
-### getDataColors
+### getDataColors()
 
-▸ **getDataColors**(): `Object`
+> **getDataColors**(): `object`
 
 It returns 4 primary colors
 lineColor – easy visible color with high contrast
@@ -93,24 +76,33 @@ triadic1,2,3 - 3 triadic colors scheme (triadic not required but colors contrast
 
 #### Returns
 
-`Object`
+`object`
 
-| Name | Type |
-| :------ | :------ |
-| `lineColor` | `string` |
-| `triadic1` | `string` |
-| `triadic2` | `string` |
-| `triadic3` | `string` |
+##### lineColor
 
-#### Defined in
+> **lineColor**: `string`
 
-[src/tools/themes/model/types/theme/IMapTheme.ts:61](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/themes/model/types/theme/IMapTheme.ts#L61)
+##### triadic1
 
-___
+> **triadic1**: `string`
 
-### getFont
+##### triadic2
 
-▸ **getFont**(): `string`
+> **triadic2**: `string`
+
+##### triadic3
+
+> **triadic3**: `string`
+
+#### Source
+
+[tools/themes/model/types/theme/IMapTheme.ts:61](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/themes/model/types/theme/IMapTheme.ts#L61)
+
+***
+
+### getFont()
+
+> **getFont**(): `string`
 
 It returns theme font
 
@@ -118,59 +110,71 @@ It returns theme font
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/tools/themes/model/types/theme/IMapTheme.ts:28](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/themes/model/types/theme/IMapTheme.ts#L28)
+[tools/themes/model/types/theme/IMapTheme.ts:28](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/themes/model/types/theme/IMapTheme.ts#L28)
 
-___
+***
 
-### getForegroundColors
+### getForegroundColors()
 
-▸ **getForegroundColors**(): `Object`
+> **getForegroundColors**(): `object`
 
 It returns primary, secondary and disabled foreground colors used for text color
 
 #### Returns
 
-`Object`
+`object`
 
-| Name | Type |
-| :------ | :------ |
-| `disabled` | `string` |
-| `primary` | `string` |
-| `secondary` | `string` |
+##### disabled
 
-#### Defined in
+> **disabled**: `string`
 
-[src/tools/themes/model/types/theme/IMapTheme.ts:34](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/themes/model/types/theme/IMapTheme.ts#L34)
+##### primary
 
-___
+> **primary**: `string`
 
-### getHighlightColor
+##### secondary
 
-▸ **getHighlightColor**(): `Object`
+> **secondary**: `string`
+
+#### Source
+
+[tools/themes/model/types/theme/IMapTheme.ts:34](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/themes/model/types/theme/IMapTheme.ts#L34)
+
+***
+
+### getHighlightColor()
+
+> **getHighlightColor**(): `object`
 
 It returns highlight colors for selected, highlighted and deepasized (not selected or highlighted) objects
 
 #### Returns
 
-`Object`
+`object`
 
-| Name | Type |
-| :------ | :------ |
-| `deempasize` | `string` |
-| `highlight` | `string` |
-| `selected` | `string` |
+##### deempasize
 
-#### Defined in
+> **deempasize**: `string`
 
-[src/tools/themes/model/types/theme/IMapTheme.ts:47](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/themes/model/types/theme/IMapTheme.ts#L47)
+##### highlight
 
-___
+> **highlight**: `string`
 
-### getHoverColor
+##### selected
 
-▸ **getHoverColor**(): `string`
+> **selected**: `string`
+
+#### Source
+
+[tools/themes/model/types/theme/IMapTheme.ts:47](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/themes/model/types/theme/IMapTheme.ts#L47)
+
+***
+
+### getHoverColor()
+
+> **getHoverColor**(): `string`
 
 It returns color used for highlight hovered item
 
@@ -178,15 +182,15 @@ It returns color used for highlight hovered item
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/tools/themes/model/types/theme/IMapTheme.ts:53](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/themes/model/types/theme/IMapTheme.ts#L53)
+[tools/themes/model/types/theme/IMapTheme.ts:53](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/themes/model/types/theme/IMapTheme.ts#L53)
 
-___
+***
 
-### getName
+### getName()
 
-▸ **getName**(): `string`
+> **getName**(): `string`
 
 It returns the name of the map domain.
 
@@ -196,17 +200,17 @@ It returns the name of the map domain.
 
 #### Inherited from
 
-[IMapDomain](IMapDomain.md).[getName](IMapDomain.md#getname)
+[`IMapDomain`](IMapDomain.md).[`getName`](IMapDomain.md#getname)
 
-#### Defined in
+#### Source
 
-[src/model/types/domain/IMapDomain.ts:11](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/domain/IMapDomain.ts#L11)
+[model/types/domain/IMapDomain.ts:11](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/domain/IMapDomain.ts#L11)
 
-___
+***
 
-### getTextInputColor
+### getTextInputColor()
 
-▸ **getTextInputColor**(): `Object`
+> **getTextInputColor**(): `object`
 
 It returns text input colors
 matchBg,matchFg- colors for match cases autocomplete
@@ -216,26 +220,41 @@ hover- color when hover object
 
 #### Returns
 
-`Object`
+`object`
 
-| Name | Type |
-| :------ | :------ |
-| `hover` | `string` |
-| `matchBg` | `string` |
-| `matchFg` | `string` |
-| `notMatchBg` | `string` |
-| `notMatchFg` | `string` |
-| `placeholder` | `string` |
+##### hover
 
-#### Defined in
+> **hover**: `string`
 
-[src/tools/themes/model/types/theme/IMapTheme.ts:71](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/themes/model/types/theme/IMapTheme.ts#L71)
+##### matchBg
 
-___
+> **matchBg**: `string`
 
-### isDark
+##### matchFg
 
-▸ **isDark**(): `boolean`
+> **matchFg**: `string`
+
+##### notMatchBg
+
+> **notMatchBg**: `string`
+
+##### notMatchFg
+
+> **notMatchFg**: `string`
+
+##### placeholder
+
+> **placeholder**: `string`
+
+#### Source
+
+[tools/themes/model/types/theme/IMapTheme.ts:71](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/themes/model/types/theme/IMapTheme.ts#L71)
+
+***
+
+### isDark()
+
+> **isDark**(): `boolean`
 
 It returns if the styles preferres inversed dark colors.
 
@@ -243,6 +262,6 @@ It returns if the styles preferres inversed dark colors.
 
 `boolean`
 
-#### Defined in
+#### Source
 
-[src/tools/themes/model/types/theme/IMapTheme.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/themes/model/types/theme/IMapTheme.ts#L23)
+[tools/themes/model/types/theme/IMapTheme.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/themes/model/types/theme/IMapTheme.ts#L23)

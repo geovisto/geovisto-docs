@@ -1,52 +1,38 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / ISidebarFragment
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / ISidebarFragment
 
 # Interface: ISidebarFragment\<TProps, TDefaults, TState, TConfig, TInitProps\>
 
 This interface declares a sidebar fragment for a sidebar tab.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `TProps` | extends [`ISidebarFragmentProps`](../modules.md#isidebarfragmentprops) = [`ISidebarFragmentProps`](../modules.md#isidebarfragmentprops) |
-| `TDefaults` | extends [`ISidebarFragmentDefaults`](ISidebarFragmentDefaults.md) = [`ISidebarFragmentDefaults`](ISidebarFragmentDefaults.md) |
-| `TState` | extends [`ISidebarFragmentState`](ISidebarFragmentState.md) = [`ISidebarFragmentState`](ISidebarFragmentState.md) |
-| `TConfig` | extends [`ISidebarFragmentConfig`](../modules.md#isidebarfragmentconfig) = [`ISidebarFragmentConfig`](../modules.md#isidebarfragmentconfig) |
-| `TInitProps` | extends [`ISidebarFragmentInitProps`](../modules.md#isidebarfragmentinitprops)\<`TConfig`\> = [`ISidebarFragmentInitProps`](../modules.md#isidebarfragmentinitprops)\<`TConfig`\> |
-
-## Hierarchy
+## Extends
 
 - [`IMapObject`](IMapObject.md)\<`TProps`, `TDefaults`, `TState`, `TConfig`, `TInitProps`\>
 
-  ↳ **`ISidebarFragment`**
+## Type parameters
 
-## Implemented by
+• **TProps** *extends* [`ISidebarFragmentProps`](../type-aliases/ISidebarFragmentProps.md) = [`ISidebarFragmentProps`](../type-aliases/ISidebarFragmentProps.md)
 
-- [`SidebarFragment`](../classes/SidebarFragment.md)
+• **TDefaults** *extends* [`ISidebarFragmentDefaults`](ISidebarFragmentDefaults.md) = [`ISidebarFragmentDefaults`](ISidebarFragmentDefaults.md)
 
-## Table of contents
+• **TState** *extends* [`ISidebarFragmentState`](ISidebarFragmentState.md) = [`ISidebarFragmentState`](ISidebarFragmentState.md)
 
-### Methods
+• **TConfig** *extends* [`ISidebarFragmentConfig`](../type-aliases/ISidebarFragmentConfig.md) = [`ISidebarFragmentConfig`](../type-aliases/ISidebarFragmentConfig.md)
 
-- [getContent](ISidebarFragment.md#getcontent)
-- [getDefaults](ISidebarFragment.md#getdefaults)
-- [getId](ISidebarFragment.md#getid)
-- [getProps](ISidebarFragment.md#getprops)
-- [getState](ISidebarFragment.md#getstate)
-- [getType](ISidebarFragment.md#gettype)
-- [initialize](ISidebarFragment.md#initialize)
-- [postCreate](ISidebarFragment.md#postcreate)
-- [setFragmentContentChecked](ISidebarFragment.md#setfragmentcontentchecked)
+• **TInitProps** *extends* [`ISidebarFragmentInitProps`](../type-aliases/ISidebarFragmentInitProps.md)\<`TConfig`\> = [`ISidebarFragmentInitProps`](../type-aliases/ISidebarFragmentInitProps.md)\<`TConfig`\>
 
 ## Methods
 
-### getContent
+### getContent()
 
-▸ **getContent**(): `HTMLDivElement`
+> **getContent**(): `HTMLDivElement`
 
 It returns the HTML content of the sidebar fragment.
 
@@ -54,15 +40,15 @@ It returns the HTML content of the sidebar fragment.
 
 `HTMLDivElement`
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/types/fragment/ISidebarFragment.ts:27](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/types/fragment/ISidebarFragment.ts#L27)
+[tools/sidebar/model/types/fragment/ISidebarFragment.ts:27](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/types/fragment/ISidebarFragment.ts#L27)
 
-___
+***
 
-### getDefaults
+### getDefaults()
 
-▸ **getDefaults**(): `TDefaults`
+> **getDefaults**(): `TDefaults`
 
 It returns default values of the state properties.
 
@@ -72,17 +58,17 @@ It returns default values of the state properties.
 
 #### Inherited from
 
-[IMapObject](IMapObject.md).[getDefaults](IMapObject.md#getdefaults)
+[`IMapObject`](IMapObject.md).[`getDefaults`](IMapObject.md#getdefaults)
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObject.ts:27](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObject.ts#L27)
+[model/types/object/IMapObject.ts:27](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObject.ts#L27)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 Help function which returns the id of the object.
 
@@ -92,17 +78,17 @@ Help function which returns the id of the object.
 
 #### Inherited from
 
-[IMapObject](IMapObject.md).[getId](IMapObject.md#getid)
+[`IMapObject`](IMapObject.md).[`getId`](IMapObject.md#getid)
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObject.ts:42](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObject.ts#L42)
+[model/types/object/IMapObject.ts:42](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObject.ts#L42)
 
-___
+***
 
-### getProps
+### getProps()
 
-▸ **getProps**(): `TProps`
+> **getProps**(): `TProps`
 
 It returns the props given by the programmer.
 
@@ -112,17 +98,17 @@ It returns the props given by the programmer.
 
 #### Inherited from
 
-[IMapObject](IMapObject.md).[getProps](IMapObject.md#getprops)
+[`IMapObject`](IMapObject.md).[`getProps`](IMapObject.md#getprops)
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObject.ts:22](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObject.ts#L22)
+[model/types/object/IMapObject.ts:22](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObject.ts#L22)
 
-___
+***
 
-### getState
+### getState()
 
-▸ **getState**(): `TState`
+> **getState**(): `TState`
 
 It returns the map object state.
 
@@ -132,17 +118,17 @@ It returns the map object state.
 
 #### Inherited from
 
-[IMapObject](IMapObject.md).[getState](IMapObject.md#getstate)
+[`IMapObject`](IMapObject.md).[`getState`](IMapObject.md#getstate)
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObject.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObject.ts#L32)
+[model/types/object/IMapObject.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObject.ts#L32)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 Help function which returns the type of the object.
 
@@ -152,17 +138,17 @@ Help function which returns the type of the object.
 
 #### Inherited from
 
-[IMapObject](IMapObject.md).[getType](IMapObject.md#gettype)
+[`IMapObject`](IMapObject.md).[`getType`](IMapObject.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObject.ts:37](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObject.ts#L37)
+[model/types/object/IMapObject.ts:37](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObject.ts#L37)
 
-___
+***
 
-### initialize
+### initialize()
 
-▸ **initialize**(`initProps`): `this`
+> **initialize**(`initProps`): `this`
 
 It initializes the state of the object.
 It processes the serialized config and sets further objects.
@@ -172,9 +158,7 @@ since the object can be created before the Geovisto map is created.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `initProps` | `TInitProps` |
+• **initProps**: `TInitProps`
 
 #### Returns
 
@@ -182,17 +166,17 @@ since the object can be created before the Geovisto map is created.
 
 #### Inherited from
 
-[IMapObject](IMapObject.md).[initialize](IMapObject.md#initialize)
+[`IMapObject`](IMapObject.md).[`initialize`](IMapObject.md#initialize)
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObject.ts:53](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObject.ts#L53)
+[model/types/object/IMapObject.ts:53](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObject.ts#L53)
 
-___
+***
 
-### postCreate
+### postCreate()
 
-▸ **postCreate**(): `this`
+> **postCreate**(): `this`
 
 This function is called after the sidebar tab is rendered in sidebar.
 
@@ -200,28 +184,26 @@ This function is called after the sidebar tab is rendered in sidebar.
 
 `this`
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/types/fragment/ISidebarFragment.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/types/fragment/ISidebarFragment.ts#L32)
+[tools/sidebar/model/types/fragment/ISidebarFragment.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/types/fragment/ISidebarFragment.ts#L32)
 
-___
+***
 
-### setFragmentContentChecked
+### setFragmentContentChecked()
 
-▸ **setFragmentContentChecked**(`checked`): `void`
+> **setFragmentContentChecked**(`checked`): `void`
 
 Changes the state of the tool which is controled by this sidebar tab.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `checked` | `boolean` |
+• **checked**: `boolean`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/types/fragment/ISidebarFragment.ts:39](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/types/fragment/ISidebarFragment.ts#L39)
+[tools/sidebar/model/types/fragment/ISidebarFragment.ts:39](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/types/fragment/ISidebarFragment.ts#L39)

@@ -1,28 +1,22 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / MapDataManagerFactory
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / MapDataManagerFactory
 
 # Class: MapDataManagerFactory
 
 This class provides a factory for map data managers.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Table of contents
-
-### Constructors
-
-- [constructor](MapDataManagerFactory.md#constructor)
-
-### Methods
-
-- [json](MapDataManagerFactory.md#json)
-
 ## Constructors
 
-### constructor
+### new MapDataManagerFactory()
 
-• **new MapDataManagerFactory**(): [`MapDataManagerFactory`](MapDataManagerFactory.md)
+> **new MapDataManagerFactory**(): [`MapDataManagerFactory`](MapDataManagerFactory.md)
 
 #### Returns
 
@@ -30,22 +24,20 @@ Jiri Hynek
 
 ## Methods
 
-### json
+### json()
 
-▸ **json**(`data`): [`IMapDataManager`](../interfaces/IMapDataManager.md)
+> **json**(`data`): [`IMapDataManager`](../interfaces/IMapDataManager.md)
 
 It creates the JSON map data mananger.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `data` | `unknown` |
+• **data**: `unknown`
 
 #### Returns
 
 [`IMapDataManager`](../interfaces/IMapDataManager.md)
 
-#### Defined in
+#### Source
 
-[src/model/internal/data/MapDataManagerFactory.ts:14](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/data/MapDataManagerFactory.ts#L14)
+[model/internal/data/MapDataManagerFactory.ts:14](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/data/MapDataManagerFactory.ts#L14)

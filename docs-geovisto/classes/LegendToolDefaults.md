@@ -1,54 +1,30 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / LegendToolDefaults
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / LegendToolDefaults
 
 # Class: LegendToolDefaults
 
 This class provide functions which return the default state values.
 
-**`Author`**
+## Author
 
 Tomas Koscielniak
 
-## Hierarchy
+## Extends
 
 - [`MapToolDefaults`](MapToolDefaults.md)
-
-  ↳ **`LegendToolDefaults`**
 
 ## Implements
 
 - [`ILegendToolDefaults`](../interfaces/ILegendToolDefaults.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](LegendToolDefaults.md#constructor)
-
-### Properties
-
-- [idString](LegendToolDefaults.md#idstring)
-- [TYPE](LegendToolDefaults.md#type)
-- [id](LegendToolDefaults.md#id)
-
-### Methods
-
-- [generateId](LegendToolDefaults.md#generateid)
-- [getConfig](LegendToolDefaults.md#getconfig)
-- [getDataManager](LegendToolDefaults.md#getdatamanager)
-- [getGeoDataManager](LegendToolDefaults.md#getgeodatamanager)
-- [getIcon](LegendToolDefaults.md#geticon)
-- [getId](LegendToolDefaults.md#getid)
-- [getLabel](LegendToolDefaults.md#getlabel)
-- [getProps](LegendToolDefaults.md#getprops)
-- [getType](LegendToolDefaults.md#gettype)
-- [isEnabled](LegendToolDefaults.md#isenabled)
-- [isSingleton](LegendToolDefaults.md#issingleton)
-
 ## Constructors
 
-### constructor
+### new LegendToolDefaults()
 
-• **new LegendToolDefaults**(): [`LegendToolDefaults`](LegendToolDefaults.md)
+> **new LegendToolDefaults**(): [`LegendToolDefaults`](LegendToolDefaults.md)
 
 #### Returns
 
@@ -56,53 +32,53 @@ Tomas Koscielniak
 
 #### Inherited from
 
-[MapToolDefaults](MapToolDefaults.md).[constructor](MapToolDefaults.md#constructor)
+[`MapToolDefaults`](MapToolDefaults.md).[`constructor`](MapToolDefaults.md#constructors)
 
 ## Properties
 
-### idString
+### idString?
 
-• `Protected` `Optional` **idString**: `string`
+> `protected` `optional` **idString**: `string`
 
 #### Inherited from
 
-[MapToolDefaults](MapToolDefaults.md).[idString](MapToolDefaults.md#idstring)
+[`MapToolDefaults`](MapToolDefaults.md).[`idString`](MapToolDefaults.md#idstring)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:13](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L13)
+[model/internal/object/MapObjectDefaults.ts:13](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L13)
 
-___
+***
 
 ### TYPE
 
-▪ `Static` **TYPE**: `string` = `"geovisto-tool-legend"`
+> `static` **TYPE**: `string` = `"geovisto-tool-legend"`
 
 Static tool type constant.
 
-#### Defined in
+#### Source
 
-[src/tools/legend/model/internal/tool/LegendToolDefaults.ts:27](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/legend/model/internal/tool/LegendToolDefaults.ts#L27)
+[tools/legend/model/internal/tool/LegendToolDefaults.ts:27](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/legend/model/internal/tool/LegendToolDefaults.ts#L27)
 
-___
+***
 
 ### id
 
-▪ `Static` `Protected` **id**: `number`
+> `static` `protected` **id**: `number`
 
 #### Inherited from
 
-[MapToolDefaults](MapToolDefaults.md).[id](MapToolDefaults.md#id)
+[`MapToolDefaults`](MapToolDefaults.md).[`id`](MapToolDefaults.md#id)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:12](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L12)
+[model/internal/object/MapObjectDefaults.ts:12](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L12)
 
 ## Methods
 
-### generateId
+### generateId()
 
-▸ **generateId**(): `string`
+> `protected` **generateId**(): `string`
 
 It returns identifier which is used when no identifier is specified.
 
@@ -112,41 +88,41 @@ It returns identifier which is used when no identifier is specified.
 
 #### Inherited from
 
-[MapToolDefaults](MapToolDefaults.md).[generateId](MapToolDefaults.md#generateid)
+[`MapToolDefaults`](MapToolDefaults.md).[`generateId`](MapToolDefaults.md#generateid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:54](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L54)
+[model/internal/object/MapObjectDefaults.ts:54](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L54)
 
-___
+***
 
-### getConfig
+### getConfig()
 
-▸ **getConfig**(): [`ILegendToolConfig`](../modules.md#ilegendtoolconfig)
+> **getConfig**(): [`ILegendToolConfig`](../type-aliases/ILegendToolConfig.md)
 
 It returns the default config.
 
 #### Returns
 
-[`ILegendToolConfig`](../modules.md#ilegendtoolconfig)
+[`ILegendToolConfig`](../type-aliases/ILegendToolConfig.md)
 
 #### Implementation of
 
-[ILegendToolDefaults](../interfaces/ILegendToolDefaults.md).[getConfig](../interfaces/ILegendToolDefaults.md#getconfig)
+[`ILegendToolDefaults`](../interfaces/ILegendToolDefaults.md).[`getConfig`](../interfaces/ILegendToolDefaults.md#getconfig)
 
 #### Overrides
 
-[MapToolDefaults](MapToolDefaults.md).[getConfig](MapToolDefaults.md#getconfig)
+[`MapToolDefaults`](MapToolDefaults.md).[`getConfig`](MapToolDefaults.md#getconfig)
 
-#### Defined in
+#### Source
 
-[src/tools/legend/model/internal/tool/LegendToolDefaults.ts:17](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/legend/model/internal/tool/LegendToolDefaults.ts#L17)
+[tools/legend/model/internal/tool/LegendToolDefaults.ts:17](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/legend/model/internal/tool/LegendToolDefaults.ts#L17)
 
-___
+***
 
-### getDataManager
+### getDataManager()
 
-▸ **getDataManager**(): [`IMapDataManager`](../interfaces/IMapDataManager.md)
+> **getDataManager**(): [`IMapDataManager`](../interfaces/IMapDataManager.md)
 
 It returns default map data manager.
 
@@ -156,43 +132,41 @@ It returns default map data manager.
 
 #### Inherited from
 
-[MapToolDefaults](MapToolDefaults.md).[getDataManager](MapToolDefaults.md#getdatamanager)
+[`MapToolDefaults`](MapToolDefaults.md).[`getDataManager`](MapToolDefaults.md#getdatamanager)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolDefaults.ts:20](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolDefaults.ts#L20)
+[model/internal/tool/MapToolDefaults.ts:20](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolDefaults.ts#L20)
 
-___
+***
 
-### getGeoDataManager
+### getGeoDataManager()
 
-▸ **getGeoDataManager**(`geoDataArray`): [`IGeoDataManager`](../modules.md#igeodatamanager)
+> **getGeoDataManager**(`geoDataArray`): [`IGeoDataManager`](../type-aliases/IGeoDataManager.md)
 
 It returns default geo data manager.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `geoDataArray` | `undefined` \| [`IGeoData`](../interfaces/IGeoData.md)[] |
+• **geoDataArray**: `undefined` \| [`IGeoData`](../interfaces/IGeoData.md)[]
 
 #### Returns
 
-[`IGeoDataManager`](../modules.md#igeodatamanager)
+[`IGeoDataManager`](../type-aliases/IGeoDataManager.md)
 
 #### Inherited from
 
-[MapToolDefaults](MapToolDefaults.md).[getGeoDataManager](MapToolDefaults.md#getgeodatamanager)
+[`MapToolDefaults`](MapToolDefaults.md).[`getGeoDataManager`](MapToolDefaults.md#getgeodatamanager)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolDefaults.ts:27](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolDefaults.ts#L27)
+[model/internal/tool/MapToolDefaults.ts:27](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolDefaults.ts#L27)
 
-___
+***
 
-### getIcon
+### getIcon()
 
-▸ **getIcon**(): `string`
+> **getIcon**(): `string`
 
 It returns the icon of the tool.
 
@@ -202,21 +176,21 @@ It returns the icon of the tool.
 
 #### Implementation of
 
-[ILegendToolDefaults](../interfaces/ILegendToolDefaults.md).[getIcon](../interfaces/ILegendToolDefaults.md#geticon)
+[`ILegendToolDefaults`](../interfaces/ILegendToolDefaults.md).[`getIcon`](../interfaces/ILegendToolDefaults.md#geticon)
 
 #### Inherited from
 
-[MapToolDefaults](MapToolDefaults.md).[getIcon](MapToolDefaults.md#geticon)
+[`MapToolDefaults`](MapToolDefaults.md).[`getIcon`](MapToolDefaults.md#geticon)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolDefaults.ts:64](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolDefaults.ts#L64)
+[model/internal/tool/MapToolDefaults.ts:64](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolDefaults.ts#L64)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 It returns identifier which is used when no identifier is specified.
 
@@ -226,21 +200,21 @@ It returns identifier which is used when no identifier is specified.
 
 #### Implementation of
 
-[ILegendToolDefaults](../interfaces/ILegendToolDefaults.md).[getId](../interfaces/ILegendToolDefaults.md#getid)
+[`ILegendToolDefaults`](../interfaces/ILegendToolDefaults.md).[`getId`](../interfaces/ILegendToolDefaults.md#getid)
 
 #### Inherited from
 
-[MapToolDefaults](MapToolDefaults.md).[getId](MapToolDefaults.md#getid)
+[`MapToolDefaults`](MapToolDefaults.md).[`getId`](MapToolDefaults.md#getid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:44](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L44)
+[model/internal/object/MapObjectDefaults.ts:44](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L44)
 
-___
+***
 
-### getLabel
+### getLabel()
 
-▸ **getLabel**(): `string`
+> **getLabel**(): `string`
 
 It returns the label of the tool.
 
@@ -250,45 +224,45 @@ It returns the label of the tool.
 
 #### Implementation of
 
-[ILegendToolDefaults](../interfaces/ILegendToolDefaults.md).[getLabel](../interfaces/ILegendToolDefaults.md#getlabel)
+[`ILegendToolDefaults`](../interfaces/ILegendToolDefaults.md).[`getLabel`](../interfaces/ILegendToolDefaults.md#getlabel)
 
 #### Inherited from
 
-[MapToolDefaults](MapToolDefaults.md).[getLabel](MapToolDefaults.md#getlabel)
+[`MapToolDefaults`](MapToolDefaults.md).[`getLabel`](MapToolDefaults.md#getlabel)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolDefaults.ts:57](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolDefaults.ts#L57)
+[model/internal/tool/MapToolDefaults.ts:57](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolDefaults.ts#L57)
 
-___
+***
 
-### getProps
+### getProps()
 
-▸ **getProps**(): [`IMapObjectProps`](../modules.md#imapobjectprops)
+> **getProps**(): [`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
 It returns default props if no props are given.
 
 #### Returns
 
-[`IMapObjectProps`](../modules.md#imapobjectprops)
+[`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
 #### Implementation of
 
-[ILegendToolDefaults](../interfaces/ILegendToolDefaults.md).[getProps](../interfaces/ILegendToolDefaults.md#getprops)
+[`ILegendToolDefaults`](../interfaces/ILegendToolDefaults.md).[`getProps`](../interfaces/ILegendToolDefaults.md#getprops)
 
 #### Inherited from
 
-[MapToolDefaults](MapToolDefaults.md).[getProps](MapToolDefaults.md#getprops)
+[`MapToolDefaults`](MapToolDefaults.md).[`getProps`](MapToolDefaults.md#getprops)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L18)
+[model/internal/object/MapObjectDefaults.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L18)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 It returns a unique string of the tool type.
 
@@ -298,21 +272,21 @@ It returns a unique string of the tool type.
 
 #### Implementation of
 
-[ILegendToolDefaults](../interfaces/ILegendToolDefaults.md).[getType](../interfaces/ILegendToolDefaults.md#gettype)
+[`ILegendToolDefaults`](../interfaces/ILegendToolDefaults.md).[`getType`](../interfaces/ILegendToolDefaults.md#gettype)
 
 #### Overrides
 
-[MapToolDefaults](MapToolDefaults.md).[getType](MapToolDefaults.md#gettype)
+[`MapToolDefaults`](MapToolDefaults.md).[`getType`](MapToolDefaults.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/tools/legend/model/internal/tool/LegendToolDefaults.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/legend/model/internal/tool/LegendToolDefaults.ts#L32)
+[tools/legend/model/internal/tool/LegendToolDefaults.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/legend/model/internal/tool/LegendToolDefaults.ts#L32)
 
-___
+***
 
-### isEnabled
+### isEnabled()
 
-▸ **isEnabled**(): `boolean`
+> **isEnabled**(): `boolean`
 
 By default, the tool is enabled.
 
@@ -322,21 +296,21 @@ By default, the tool is enabled.
 
 #### Implementation of
 
-[ILegendToolDefaults](../interfaces/ILegendToolDefaults.md).[isEnabled](../interfaces/ILegendToolDefaults.md#isenabled)
+[`ILegendToolDefaults`](../interfaces/ILegendToolDefaults.md).[`isEnabled`](../interfaces/ILegendToolDefaults.md#isenabled)
 
 #### Inherited from
 
-[MapToolDefaults](MapToolDefaults.md).[isEnabled](MapToolDefaults.md#isenabled)
+[`MapToolDefaults`](MapToolDefaults.md).[`isEnabled`](MapToolDefaults.md#isenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolDefaults.ts:50](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolDefaults.ts#L50)
+[model/internal/tool/MapToolDefaults.ts:50](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolDefaults.ts#L50)
 
-___
+***
 
-### isSingleton
+### isSingleton()
 
-▸ **isSingleton**(): `boolean`
+> **isSingleton**(): `boolean`
 
 Only one legend tool should be present in the Geovisto map.
 
@@ -346,12 +320,12 @@ Only one legend tool should be present in the Geovisto map.
 
 #### Implementation of
 
-[ILegendToolDefaults](../interfaces/ILegendToolDefaults.md).[isSingleton](../interfaces/ILegendToolDefaults.md#issingleton)
+[`ILegendToolDefaults`](../interfaces/ILegendToolDefaults.md).[`isSingleton`](../interfaces/ILegendToolDefaults.md#issingleton)
 
 #### Overrides
 
-[MapToolDefaults](MapToolDefaults.md).[isSingleton](MapToolDefaults.md#issingleton)
+[`MapToolDefaults`](MapToolDefaults.md).[`isSingleton`](MapToolDefaults.md#issingleton)
 
-#### Defined in
+#### Source
 
-[src/tools/legend/model/internal/tool/LegendToolDefaults.ts:39](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/legend/model/internal/tool/LegendToolDefaults.ts#L39)
+[tools/legend/model/internal/tool/LegendToolDefaults.ts:39](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/legend/model/internal/tool/LegendToolDefaults.ts#L39)

@@ -1,55 +1,41 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IMapObject
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IMapObject
 
 # Interface: IMapObject\<TProps, TDefaults, TState, TConfig, TInitProps\>
 
 This interface declares functions for using map object which can be identified by uniquie string.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
+## Extended by
+
+- [`IMap`](IMap.md)
+- [`IMapTool`](IMapTool.md)
+- [`ISidebarFragment`](ISidebarFragment.md)
+- [`ISidebarTab`](ISidebarTab.md)
+
 ## Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `TProps` | extends [`IMapObjectProps`](../modules.md#imapobjectprops) = [`IMapObjectProps`](../modules.md#imapobjectprops) |
-| `TDefaults` | extends [`IMapObjectDefaults`](IMapObjectDefaults.md) = [`IMapObjectDefaults`](IMapObjectDefaults.md) |
-| `TState` | extends [`IMapObjectState`](IMapObjectState.md) = [`IMapObjectState`](IMapObjectState.md) |
-| `TConfig` | extends [`IMapObjectConfig`](../modules.md#imapobjectconfig) = [`IMapObjectConfig`](../modules.md#imapobjectconfig) |
-| `TInitProps` | extends [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<`TConfig`\> = [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<`TConfig`\> |
+• **TProps** *extends* [`IMapObjectProps`](../type-aliases/IMapObjectProps.md) = [`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
-## Hierarchy
+• **TDefaults** *extends* [`IMapObjectDefaults`](IMapObjectDefaults.md) = [`IMapObjectDefaults`](IMapObjectDefaults.md)
 
-- **`IMapObject`**
+• **TState** *extends* [`IMapObjectState`](IMapObjectState.md) = [`IMapObjectState`](IMapObjectState.md)
 
-  ↳ [`IMap`](IMap.md)
+• **TConfig** *extends* [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md) = [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)
 
-  ↳ [`IMapTool`](IMapTool.md)
-
-  ↳ [`ISidebarFragment`](ISidebarFragment.md)
-
-  ↳ [`ISidebarTab`](ISidebarTab.md)
-
-## Implemented by
-
-- [`MapObject`](../classes/MapObject.md)
-
-## Table of contents
-
-### Methods
-
-- [getDefaults](IMapObject.md#getdefaults)
-- [getId](IMapObject.md#getid)
-- [getProps](IMapObject.md#getprops)
-- [getState](IMapObject.md#getstate)
-- [getType](IMapObject.md#gettype)
-- [initialize](IMapObject.md#initialize)
+• **TInitProps** *extends* [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<`TConfig`\> = [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<`TConfig`\>
 
 ## Methods
 
-### getDefaults
+### getDefaults()
 
-▸ **getDefaults**(): `TDefaults`
+> **getDefaults**(): `TDefaults`
 
 It returns default values of the state properties.
 
@@ -57,15 +43,15 @@ It returns default values of the state properties.
 
 `TDefaults`
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObject.ts:27](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObject.ts#L27)
+[model/types/object/IMapObject.ts:27](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObject.ts#L27)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 Help function which returns the id of the object.
 
@@ -73,15 +59,15 @@ Help function which returns the id of the object.
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObject.ts:42](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObject.ts#L42)
+[model/types/object/IMapObject.ts:42](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObject.ts#L42)
 
-___
+***
 
-### getProps
+### getProps()
 
-▸ **getProps**(): `TProps`
+> **getProps**(): `TProps`
 
 It returns the props given by the programmer.
 
@@ -89,15 +75,15 @@ It returns the props given by the programmer.
 
 `TProps`
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObject.ts:22](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObject.ts#L22)
+[model/types/object/IMapObject.ts:22](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObject.ts#L22)
 
-___
+***
 
-### getState
+### getState()
 
-▸ **getState**(): `TState`
+> **getState**(): `TState`
 
 It returns the map object state.
 
@@ -105,15 +91,15 @@ It returns the map object state.
 
 `TState`
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObject.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObject.ts#L32)
+[model/types/object/IMapObject.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObject.ts#L32)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 Help function which returns the type of the object.
 
@@ -121,15 +107,15 @@ Help function which returns the type of the object.
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObject.ts:37](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObject.ts#L37)
+[model/types/object/IMapObject.ts:37](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObject.ts#L37)
 
-___
+***
 
-### initialize
+### initialize()
 
-▸ **initialize**(`initProps`): `this`
+> **initialize**(`initProps`): `this`
 
 It initializes the state of the object.
 It processes the serialized config and sets further objects.
@@ -139,14 +125,12 @@ since the object can be created before the Geovisto map is created.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `initProps` | `TInitProps` |
+• **initProps**: `TInitProps`
 
 #### Returns
 
 `this`
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObject.ts:53](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObject.ts#L53)
+[model/types/object/IMapObject.ts:53](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObject.ts#L53)

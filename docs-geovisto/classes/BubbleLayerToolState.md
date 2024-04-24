@@ -1,83 +1,34 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / BubbleLayerToolState
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / BubbleLayerToolState
 
 # Class: BubbleLayerToolState
 
 This class provide functions for using the state of the layer tool.
 
-**`Author`**
+## Author
 
 Vladimir Korencik
 
-## Hierarchy
+## Extends
 
 - [`LayerToolState`](LayerToolState.md)
-
-  ↳ **`BubbleLayerToolState`**
 
 ## Implements
 
 - [`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](BubbleLayerToolState.md#constructor)
-
-### Properties
-
-- [categoryColorRules](BubbleLayerToolState.md#categorycolorrules)
-- [layer](BubbleLayerToolState.md#layer)
-- [manager](BubbleLayerToolState.md#manager)
-- [markers](BubbleLayerToolState.md#markers)
-- [workData](BubbleLayerToolState.md#workdata)
-
-### Methods
-
-- [deserialize](BubbleLayerToolState.md#deserialize)
-- [deserializeDimensions](BubbleLayerToolState.md#deserializedimensions)
-- [getCategoryColorRules](BubbleLayerToolState.md#getcategorycolorrules)
-- [getDimensions](BubbleLayerToolState.md#getdimensions)
-- [getFiltersManager](BubbleLayerToolState.md#getfiltersmanager)
-- [getIcon](BubbleLayerToolState.md#geticon)
-- [getId](BubbleLayerToolState.md#getid)
-- [getLabel](BubbleLayerToolState.md#getlabel)
-- [getLayer](BubbleLayerToolState.md#getlayer)
-- [getLayerItems](BubbleLayerToolState.md#getlayeritems)
-- [getLayerName](BubbleLayerToolState.md#getlayername)
-- [getMap](BubbleLayerToolState.md#getmap)
-- [getMapObject](BubbleLayerToolState.md#getmapobject)
-- [getMarkers](BubbleLayerToolState.md#getmarkers)
-- [getType](BubbleLayerToolState.md#gettype)
-- [getWorkData](BubbleLayerToolState.md#getworkdata)
-- [initialize](BubbleLayerToolState.md#initialize)
-- [isEnabled](BubbleLayerToolState.md#isenabled)
-- [serialize](BubbleLayerToolState.md#serialize)
-- [setCategoryColorRules](BubbleLayerToolState.md#setcategorycolorrules)
-- [setDimensions](BubbleLayerToolState.md#setdimensions)
-- [setEnabled](BubbleLayerToolState.md#setenabled)
-- [setFiltersManager](BubbleLayerToolState.md#setfiltersmanager)
-- [setIcon](BubbleLayerToolState.md#seticon)
-- [setId](BubbleLayerToolState.md#setid)
-- [setLabel](BubbleLayerToolState.md#setlabel)
-- [setLayer](BubbleLayerToolState.md#setlayer)
-- [setLayerItems](BubbleLayerToolState.md#setlayeritems)
-- [setLayerName](BubbleLayerToolState.md#setlayername)
-- [setMap](BubbleLayerToolState.md#setmap)
-- [setMarkers](BubbleLayerToolState.md#setmarkers)
-- [setWorkData](BubbleLayerToolState.md#setworkdata)
-
 ## Constructors
 
-### constructor
+### new BubbleLayerToolState()
 
-• **new BubbleLayerToolState**(`tool`): [`BubbleLayerToolState`](BubbleLayerToolState.md)
+> **new BubbleLayerToolState**(`tool`): [`BubbleLayerToolState`](BubbleLayerToolState.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `tool` | [`IBubbleLayerTool`](../interfaces/IBubbleLayerTool.md)\<[`IBubbleLayerToolProps`](../modules.md#ibubblelayertoolprops), [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md), [`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md)\<[`IBubbleLayerToolProps`](../modules.md#ibubblelayertoolprops), [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md), [`IBubbleLayerToolConfig`](../modules.md#ibubblelayertoolconfig), \{ `aggregation?`: `string` ; `bubbleSize?`: `number` ; `category?`: `string` ; `categoryColor?`: `string` ; `categoryColorOp?`: `string` ; `categoryColorValue?`: `string` ; `color?`: `string` ; `latitude?`: `string` ; `longitude?`: `string` ; `value?`: `string`  }, \{ `aggregation`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> ; `bubbleSize`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md)\> ; `category`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `categoryColor`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `categoryColorOp`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> ; `categoryColorValue`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `color`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> ; `latitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `longitude`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `value`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>, [`IBubbleLayerToolConfig`](../modules.md#ibubblelayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IBubbleLayerToolConfig`](../modules.md#ibubblelayertoolconfig)\>\> |
+• **tool**: [`IBubbleLayerTool`](../interfaces/IBubbleLayerTool.md)\<[`IBubbleLayerToolProps`](../type-aliases/IBubbleLayerToolProps.md), [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md), [`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md)\<[`IBubbleLayerToolProps`](../type-aliases/IBubbleLayerToolProps.md), [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md), [`IBubbleLayerToolConfig`](../type-aliases/IBubbleLayerToolConfig.md), `object`, `object`\>, [`IBubbleLayerToolConfig`](../type-aliases/IBubbleLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IBubbleLayerToolConfig`](../type-aliases/IBubbleLayerToolConfig.md)\>\>
 
 #### Returns
 
@@ -85,75 +36,73 @@ Vladimir Korencik
 
 #### Overrides
 
-[LayerToolState](LayerToolState.md).[constructor](LayerToolState.md#constructor)
+[`LayerToolState`](LayerToolState.md).[`constructor`](LayerToolState.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:36](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L36)
+[tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:36](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L36)
 
 ## Properties
 
 ### categoryColorRules
 
-• `Private` **categoryColorRules**: `ICategoryColorRules`[]
+> `private` **categoryColorRules**: `ICategoryColorRules`[]
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:33](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L33)
+[tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:33](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L33)
 
-___
+***
 
-### layer
+### layer?
 
-• `Private` `Optional` **layer**: `LayerGroup`\<`any`\>
+> `private` `optional` **layer**: `any`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:30](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L30)
+[tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:30](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L30)
 
-___
+***
 
 ### manager
 
-• `Private` **manager**: [`IMapFilterManager`](../interfaces/IMapFilterManager.md)
+> `private` **manager**: [`IMapFilterManager`](../interfaces/IMapFilterManager.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:34](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L34)
+[tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:34](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L34)
 
-___
+***
 
 ### markers
 
-• `Private` **markers**: `Marker`\<`any`\>[]
+> `private` **markers**: `Marker`[]
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:31](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L31)
+[tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:31](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L31)
 
-___
+***
 
 ### workData
 
-• `Private` **workData**: `IWorkData`[]
+> `private` **workData**: `any`[]
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L32)
+[tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L32)
 
 ## Methods
 
-### deserialize
+### deserialize()
 
-▸ **deserialize**(`config`): `void`
+> **deserialize**(`config`): `void`
 
 The metod takes config and deserializes the values.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `config` | [`IBubbleLayerToolConfig`](../modules.md#ibubblelayertoolconfig) |
+• **config**: [`IBubbleLayerToolConfig`](../type-aliases/IBubbleLayerToolConfig.md)
 
 #### Returns
 
@@ -161,39 +110,47 @@ The metod takes config and deserializes the values.
 
 #### Implementation of
 
-[IBubbleLayerToolState](../interfaces/IBubbleLayerToolState.md).[deserialize](../interfaces/IBubbleLayerToolState.md#deserialize)
+[`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md).[`deserialize`](../interfaces/IBubbleLayerToolState.md#deserialize)
 
 #### Overrides
 
-[LayerToolState](LayerToolState.md).[deserialize](LayerToolState.md#deserialize)
+[`LayerToolState`](LayerToolState.md).[`deserialize`](LayerToolState.md#deserialize)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:101](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L101)
+[tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:101](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L101)
 
-___
+***
 
-### deserializeDimensions
+### deserializeDimensions()
 
-▸ **deserializeDimensions**(`dimensionsConfig`): `void`
+> **deserializeDimensions**(`dimensionsConfig`): `void`
 
 It sets the marker layer dimensions property of tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimensionsConfig` | `Object` |
-| `dimensionsConfig.aggregation?` | `string` |
-| `dimensionsConfig.bubbleSize?` | `number` |
-| `dimensionsConfig.category?` | `string` |
-| `dimensionsConfig.categoryColor?` | `string` |
-| `dimensionsConfig.categoryColorOp?` | `string` |
-| `dimensionsConfig.categoryColorValue?` | `string` |
-| `dimensionsConfig.color?` | `string` |
-| `dimensionsConfig.latitude?` | `string` |
-| `dimensionsConfig.longitude?` | `string` |
-| `dimensionsConfig.value?` | `string` |
+• **dimensionsConfig**
+
+• **dimensionsConfig.aggregation?**: `string`
+
+• **dimensionsConfig.bubbleSize?**: `number`
+
+• **dimensionsConfig.category?**: `string`
+
+• **dimensionsConfig.categoryColor?**: `string`
+
+• **dimensionsConfig.categoryColorOp?**: `string`
+
+• **dimensionsConfig.categoryColorValue?**: `string`
+
+• **dimensionsConfig.color?**: `string`
+
+• **dimensionsConfig.latitude?**: `string`
+
+• **dimensionsConfig.longitude?**: `string`
+
+• **dimensionsConfig.value?**: `string`
 
 #### Returns
 
@@ -201,21 +158,21 @@ It sets the marker layer dimensions property of tool state.
 
 #### Implementation of
 
-[IBubbleLayerToolState](../interfaces/IBubbleLayerToolState.md).[deserializeDimensions](../interfaces/IBubbleLayerToolState.md#deserializedimensions)
+[`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md).[`deserializeDimensions`](../interfaces/IBubbleLayerToolState.md#deserializedimensions)
 
 #### Overrides
 
-[LayerToolState](LayerToolState.md).[deserializeDimensions](LayerToolState.md#deserializedimensions)
+[`LayerToolState`](LayerToolState.md).[`deserializeDimensions`](LayerToolState.md#deserializedimensions)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:128](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L128)
+[tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:128](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L128)
 
-___
+***
 
-### getCategoryColorRules
+### getCategoryColorRules()
 
-▸ **getCategoryColorRules**(): `ICategoryColorRules`[]
+> **getCategoryColorRules**(): `ICategoryColorRules`[]
 
 #### Returns
 
@@ -223,54 +180,81 @@ ___
 
 #### Implementation of
 
-[IBubbleLayerToolState](../interfaces/IBubbleLayerToolState.md).[getCategoryColorRules](../interfaces/IBubbleLayerToolState.md#getcategorycolorrules)
+[`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md).[`getCategoryColorRules`](../interfaces/IBubbleLayerToolState.md#getcategorycolorrules)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:253](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L253)
+[tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:253](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L253)
 
-___
+***
 
-### getDimensions
+### getDimensions()
 
-▸ **getDimensions**(): `Object`
+> **getDimensions**(): `object`
 
 It returns the layer dimensions property of the tool state.
 
 #### Returns
 
-`Object`
+`object`
 
-| Name | Type |
-| :------ | :------ |
-| `aggregation` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> |
-| `bubbleSize` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md)\> |
-| `category` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `categoryColor` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `categoryColorOp` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> |
-| `categoryColorValue` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `color` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `latitude` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `longitude` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `value` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
+##### aggregation
+
+> **aggregation**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\>
+
+##### bubbleSize
+
+> **bubbleSize**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md)\>
+
+##### category
+
+> **category**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+##### categoryColor
+
+> **categoryColor**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+##### categoryColorOp
+
+> **categoryColorOp**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\>
+
+##### categoryColorValue
+
+> **categoryColorValue**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+##### color
+
+> **color**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+##### latitude
+
+> **latitude**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+##### longitude
+
+> **longitude**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+##### value
+
+> **value**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Implementation of
 
-[IBubbleLayerToolState](../interfaces/IBubbleLayerToolState.md).[getDimensions](../interfaces/IBubbleLayerToolState.md#getdimensions)
+[`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md).[`getDimensions`](../interfaces/IBubbleLayerToolState.md#getdimensions)
 
 #### Overrides
 
-[LayerToolState](LayerToolState.md).[getDimensions](LayerToolState.md#getdimensions)
+[`LayerToolState`](LayerToolState.md).[`getDimensions`](LayerToolState.md#getdimensions)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:225](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L225)
+[tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:225](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L225)
 
-___
+***
 
-### getFiltersManager
+### getFiltersManager()
 
-▸ **getFiltersManager**(): [`IMapFilterManager`](../interfaces/IMapFilterManager.md)
+> **getFiltersManager**(): [`IMapFilterManager`](../interfaces/IMapFilterManager.md)
 
 #### Returns
 
@@ -278,17 +262,17 @@ ___
 
 #### Implementation of
 
-[IBubbleLayerToolState](../interfaces/IBubbleLayerToolState.md).[getFiltersManager](../interfaces/IBubbleLayerToolState.md#getfiltersmanager)
+[`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md).[`getFiltersManager`](../interfaces/IBubbleLayerToolState.md#getfiltersmanager)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:215](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L215)
+[tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:215](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L215)
 
-___
+***
 
-### getIcon
+### getIcon()
 
-▸ **getIcon**(): `string`
+> **getIcon**(): `string`
 
 It returns the icon property of the tool state.
 
@@ -298,21 +282,21 @@ It returns the icon property of the tool state.
 
 #### Implementation of
 
-[IBubbleLayerToolState](../interfaces/IBubbleLayerToolState.md).[getIcon](../interfaces/IBubbleLayerToolState.md#geticon)
+[`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md).[`getIcon`](../interfaces/IBubbleLayerToolState.md#geticon)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getIcon](LayerToolState.md#geticon)
+[`LayerToolState`](LayerToolState.md).[`getIcon`](LayerToolState.md#geticon)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:120](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L120)
+[model/internal/tool/MapToolState.ts:120](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L120)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 It returns the id property of the tool state.
 
@@ -322,21 +306,21 @@ It returns the id property of the tool state.
 
 #### Implementation of
 
-[IBubbleLayerToolState](../interfaces/IBubbleLayerToolState.md).[getId](../interfaces/IBubbleLayerToolState.md#getid)
+[`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md).[`getId`](../interfaces/IBubbleLayerToolState.md#getid)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getId](LayerToolState.md#getid)
+[`LayerToolState`](LayerToolState.md).[`getId`](LayerToolState.md#getid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:87](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L87)
+[model/internal/object/MapObjectState.ts:87](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L87)
 
-___
+***
 
-### getLabel
+### getLabel()
 
-▸ **getLabel**(): `string`
+> **getLabel**(): `string`
 
 It returns the label property of the tool state.
 
@@ -346,39 +330,39 @@ It returns the label property of the tool state.
 
 #### Implementation of
 
-[IBubbleLayerToolState](../interfaces/IBubbleLayerToolState.md).[getLabel](../interfaces/IBubbleLayerToolState.md#getlabel)
+[`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md).[`getLabel`](../interfaces/IBubbleLayerToolState.md#getlabel)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getLabel](LayerToolState.md#getlabel)
+[`LayerToolState`](LayerToolState.md).[`getLabel`](LayerToolState.md#getlabel)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:104](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L104)
+[model/internal/tool/MapToolState.ts:104](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L104)
 
-___
+***
 
-### getLayer
+### getLayer()
 
-▸ **getLayer**(): `undefined` \| `LayerGroup`\<`any`\>
+> **getLayer**(): `any`
 
 #### Returns
 
-`undefined` \| `LayerGroup`\<`any`\>
+`any`
 
 #### Implementation of
 
-[IBubbleLayerToolState](../interfaces/IBubbleLayerToolState.md).[getLayer](../interfaces/IBubbleLayerToolState.md#getlayer)
+[`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md).[`getLayer`](../interfaces/IBubbleLayerToolState.md#getlayer)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:233](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L233)
+[tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:233](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L233)
 
-___
+***
 
-### getLayerItems
+### getLayerItems()
 
-▸ **getLayerItems**(): `undefined` \| `Layer`[]
+> **getLayerItems**(): `undefined` \| `Layer`[]
 
 It returns the layer items property of the tool state.
 
@@ -388,21 +372,21 @@ It returns the layer items property of the tool state.
 
 #### Implementation of
 
-[IBubbleLayerToolState](../interfaces/IBubbleLayerToolState.md).[getLayerItems](../interfaces/IBubbleLayerToolState.md#getlayeritems)
+[`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md).[`getLayerItems`](../interfaces/IBubbleLayerToolState.md#getlayeritems)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getLayerItems](LayerToolState.md#getlayeritems)
+[`LayerToolState`](LayerToolState.md).[`getLayerItems`](LayerToolState.md#getlayeritems)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/LayerToolState.ts:104](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/LayerToolState.ts#L104)
+[model/internal/layer/LayerToolState.ts:104](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/LayerToolState.ts#L104)
 
-___
+***
 
-### getLayerName
+### getLayerName()
 
-▸ **getLayerName**(): `string`
+> **getLayerName**(): `string`
 
 It returns the layer name property of the tool state.
 
@@ -412,83 +396,83 @@ It returns the layer name property of the tool state.
 
 #### Implementation of
 
-[IBubbleLayerToolState](../interfaces/IBubbleLayerToolState.md).[getLayerName](../interfaces/IBubbleLayerToolState.md#getlayername)
+[`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md).[`getLayerName`](../interfaces/IBubbleLayerToolState.md#getlayername)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getLayerName](LayerToolState.md#getlayername)
+[`LayerToolState`](LayerToolState.md).[`getLayerName`](LayerToolState.md#getlayername)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/LayerToolState.ts:88](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/LayerToolState.ts#L88)
+[model/internal/layer/LayerToolState.ts:88](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/LayerToolState.ts#L88)
 
-___
+***
 
-### getMap
+### getMap()
 
-▸ **getMap**(): [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+> **getMap**(): [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 It returns the map property of the tool state.
 
 #### Returns
 
-[`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+[`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Implementation of
 
-[IBubbleLayerToolState](../interfaces/IBubbleLayerToolState.md).[getMap](../interfaces/IBubbleLayerToolState.md#getmap)
+[`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md).[`getMap`](../interfaces/IBubbleLayerToolState.md#getmap)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getMap](LayerToolState.md#getmap)
+[`LayerToolState`](LayerToolState.md).[`getMap`](LayerToolState.md#getmap)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:136](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L136)
+[model/internal/tool/MapToolState.ts:136](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L136)
 
-___
+***
 
-### getMapObject
+### getMapObject()
 
-▸ **getMapObject**(): [`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>
+> `protected` **getMapObject**(): [`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>
 
 It makes the map object visible to extended classes.
 
 #### Returns
 
-[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>
+[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getMapObject](LayerToolState.md#getmapobject)
+[`LayerToolState`](LayerToolState.md).[`getMapObject`](LayerToolState.md#getmapobject)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:39](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L39)
+[model/internal/object/MapObjectState.ts:39](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L39)
 
-___
+***
 
-### getMarkers
+### getMarkers()
 
-▸ **getMarkers**(): `Marker`\<`any`\>[]
+> **getMarkers**(): `Marker`[]
 
 #### Returns
 
-`Marker`\<`any`\>[]
+`Marker`[]
 
 #### Implementation of
 
-[IBubbleLayerToolState](../interfaces/IBubbleLayerToolState.md).[getMarkers](../interfaces/IBubbleLayerToolState.md#getmarkers)
+[`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md).[`getMarkers`](../interfaces/IBubbleLayerToolState.md#getmarkers)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:241](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L241)
+[tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:241](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L241)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 It returns the type property of the tool state.
 
@@ -498,49 +482,49 @@ It returns the type property of the tool state.
 
 #### Implementation of
 
-[IBubbleLayerToolState](../interfaces/IBubbleLayerToolState.md).[getType](../interfaces/IBubbleLayerToolState.md#gettype)
+[`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md).[`getType`](../interfaces/IBubbleLayerToolState.md#gettype)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[getType](LayerToolState.md#gettype)
+[`LayerToolState`](LayerToolState.md).[`getType`](LayerToolState.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:80](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L80)
+[model/internal/object/MapObjectState.ts:80](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L80)
 
-___
+***
 
-### getWorkData
+### getWorkData()
 
-▸ **getWorkData**(): `IWorkData`[]
+> **getWorkData**(): `any`[]
 
 #### Returns
 
-`IWorkData`[]
+`any`[]
 
 #### Implementation of
 
-[IBubbleLayerToolState](../interfaces/IBubbleLayerToolState.md).[getWorkData](../interfaces/IBubbleLayerToolState.md#getworkdata)
+[`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md).[`getWorkData`](../interfaces/IBubbleLayerToolState.md#getworkdata)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:261](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L261)
+[tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:261](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L261)
 
-___
+***
 
-### initialize
+### initialize()
 
-▸ **initialize**(`defaults`, `props`, `initProps`): `void`
+> **initialize**(`defaults`, `props`, `initProps`): `void`
 
 It resets the state with respect to the initial props.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `defaults` | [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md) |
-| `props` | [`IBubbleLayerToolProps`](../modules.md#ibubblelayertoolprops) |
-| `initProps` | [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IBubbleLayerToolConfig`](../modules.md#ibubblelayertoolconfig)\> |
+• **defaults**: [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md)
+
+• **props**: [`IBubbleLayerToolProps`](../type-aliases/IBubbleLayerToolProps.md)
+
+• **initProps**: [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IBubbleLayerToolConfig`](../type-aliases/IBubbleLayerToolConfig.md)\>
 
 #### Returns
 
@@ -548,21 +532,21 @@ It resets the state with respect to the initial props.
 
 #### Implementation of
 
-[IBubbleLayerToolState](../interfaces/IBubbleLayerToolState.md).[initialize](../interfaces/IBubbleLayerToolState.md#initialize)
+[`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md).[`initialize`](../interfaces/IBubbleLayerToolState.md#initialize)
 
 #### Overrides
 
-[LayerToolState](LayerToolState.md).[initialize](LayerToolState.md#initialize)
+[`LayerToolState`](LayerToolState.md).[`initialize`](LayerToolState.md#initialize)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:44](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L44)
+[tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:44](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L44)
 
-___
+***
 
-### isEnabled
+### isEnabled()
 
-▸ **isEnabled**(): `boolean`
+> **isEnabled**(): `boolean`
 
 It returns the enabled property of the tool state.
 
@@ -572,57 +556,53 @@ It returns the enabled property of the tool state.
 
 #### Implementation of
 
-[IBubbleLayerToolState](../interfaces/IBubbleLayerToolState.md).[isEnabled](../interfaces/IBubbleLayerToolState.md#isenabled)
+[`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md).[`isEnabled`](../interfaces/IBubbleLayerToolState.md#isenabled)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[isEnabled](LayerToolState.md#isenabled)
+[`LayerToolState`](LayerToolState.md).[`isEnabled`](LayerToolState.md#isenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:88](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L88)
+[model/internal/tool/MapToolState.ts:88](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L88)
 
-___
+***
 
-### serialize
+### serialize()
 
-▸ **serialize**(`defaults`): [`IBubbleLayerToolConfig`](../modules.md#ibubblelayertoolconfig)
+> **serialize**(`defaults`): [`IBubbleLayerToolConfig`](../type-aliases/IBubbleLayerToolConfig.md)
 
 The method serializes the map object state. Optionally, a serialized value can be let undefined if it equals the default value.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `defaults` | `undefined` \| [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md) |
+• **defaults**: `undefined` \| [`IBubbleLayerToolDefaults`](../interfaces/IBubbleLayerToolDefaults.md)
 
 #### Returns
 
-[`IBubbleLayerToolConfig`](../modules.md#ibubblelayertoolconfig)
+[`IBubbleLayerToolConfig`](../type-aliases/IBubbleLayerToolConfig.md)
 
 #### Implementation of
 
-[IBubbleLayerToolState](../interfaces/IBubbleLayerToolState.md).[serialize](../interfaces/IBubbleLayerToolState.md#serialize)
+[`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md).[`serialize`](../interfaces/IBubbleLayerToolState.md#serialize)
 
 #### Overrides
 
-[LayerToolState](LayerToolState.md).[serialize](LayerToolState.md#serialize)
+[`LayerToolState`](LayerToolState.md).[`serialize`](LayerToolState.md#serialize)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:180](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L180)
+[tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:180](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L180)
 
-___
+***
 
-### setCategoryColorRules
+### setCategoryColorRules()
 
-▸ **setCategoryColorRules**(`rules`): `void`
+> **setCategoryColorRules**(`rules`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `rules` | `ICategoryColorRules`[] |
+• **rules**: `ICategoryColorRules`[]
 
 #### Returns
 
@@ -630,35 +610,43 @@ ___
 
 #### Implementation of
 
-[IBubbleLayerToolState](../interfaces/IBubbleLayerToolState.md).[setCategoryColorRules](../interfaces/IBubbleLayerToolState.md#setcategorycolorrules)
+[`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md).[`setCategoryColorRules`](../interfaces/IBubbleLayerToolState.md#setcategorycolorrules)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:249](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L249)
+[tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:249](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L249)
 
-___
+***
 
-### setDimensions
+### setDimensions()
 
-▸ **setDimensions**(`dimensions`): `void`
+> **setDimensions**(`dimensions`): `void`
 
 It sets the layer dimensions property of tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimensions` | `Object` |
-| `dimensions.aggregation` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\> |
-| `dimensions.bubbleSize` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md)\> |
-| `dimensions.category` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `dimensions.categoryColor` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `dimensions.categoryColorOp` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\> |
-| `dimensions.categoryColorValue` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `dimensions.color` | [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\> |
-| `dimensions.latitude` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `dimensions.longitude` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
-| `dimensions.value` | [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> |
+• **dimensions**
+
+• **dimensions.aggregation**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)\>
+
+• **dimensions.bubbleSize**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`number`, [`IIntegerRangeManager`](../interfaces/IIntegerRangeManager.md)\>
+
+• **dimensions.category**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+• **dimensions.categoryColor**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+• **dimensions.categoryColorOp**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapFilterOperation`](../interfaces/IMapFilterOperation.md)\>
+
+• **dimensions.categoryColorValue**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+• **dimensions.color**: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`string`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`string`\>\>
+
+• **dimensions.latitude**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+• **dimensions.longitude**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
+
+• **dimensions.value**: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>
 
 #### Returns
 
@@ -666,29 +654,27 @@ It sets the layer dimensions property of tool state.
 
 #### Implementation of
 
-[IBubbleLayerToolState](../interfaces/IBubbleLayerToolState.md).[setDimensions](../interfaces/IBubbleLayerToolState.md#setdimensions)
+[`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md).[`setDimensions`](../interfaces/IBubbleLayerToolState.md#setdimensions)
 
 #### Overrides
 
-[LayerToolState](LayerToolState.md).[setDimensions](LayerToolState.md#setdimensions)
+[`LayerToolState`](LayerToolState.md).[`setDimensions`](LayerToolState.md#setdimensions)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:229](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L229)
+[tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:229](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L229)
 
-___
+***
 
-### setEnabled
+### setEnabled()
 
-▸ **setEnabled**(`enabled`): `void`
+> **setEnabled**(`enabled`): `void`
 
 It sets the enabled property of tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `enabled` | `boolean` |
+• **enabled**: `boolean`
 
 #### Returns
 
@@ -696,27 +682,25 @@ It sets the enabled property of tool state.
 
 #### Implementation of
 
-[IBubbleLayerToolState](../interfaces/IBubbleLayerToolState.md).[setEnabled](../interfaces/IBubbleLayerToolState.md#setenabled)
+[`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md).[`setEnabled`](../interfaces/IBubbleLayerToolState.md#setenabled)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[setEnabled](LayerToolState.md#setenabled)
+[`LayerToolState`](LayerToolState.md).[`setEnabled`](LayerToolState.md#setenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:97](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L97)
+[model/internal/tool/MapToolState.ts:97](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L97)
 
-___
+***
 
-### setFiltersManager
+### setFiltersManager()
 
-▸ **setFiltersManager**(`manager`): `void`
+> **setFiltersManager**(`manager`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `manager` | [`IMapFilterManager`](../interfaces/IMapFilterManager.md) |
+• **manager**: [`IMapFilterManager`](../interfaces/IMapFilterManager.md)
 
 #### Returns
 
@@ -724,25 +708,23 @@ ___
 
 #### Implementation of
 
-[IBubbleLayerToolState](../interfaces/IBubbleLayerToolState.md).[setFiltersManager](../interfaces/IBubbleLayerToolState.md#setfiltersmanager)
+[`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md).[`setFiltersManager`](../interfaces/IBubbleLayerToolState.md#setfiltersmanager)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:220](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L220)
+[tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:220](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L220)
 
-___
+***
 
-### setIcon
+### setIcon()
 
-▸ **setIcon**(`icon`): `void`
+> **setIcon**(`icon`): `void`
 
 It sets the icon property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `icon` | `string` |
+• **icon**: `string`
 
 #### Returns
 
@@ -750,29 +732,27 @@ It sets the icon property of the tool state.
 
 #### Implementation of
 
-[IBubbleLayerToolState](../interfaces/IBubbleLayerToolState.md).[setIcon](../interfaces/IBubbleLayerToolState.md#seticon)
+[`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md).[`setIcon`](../interfaces/IBubbleLayerToolState.md#seticon)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[setIcon](LayerToolState.md#seticon)
+[`LayerToolState`](LayerToolState.md).[`setIcon`](LayerToolState.md#seticon)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:129](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L129)
+[model/internal/tool/MapToolState.ts:129](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L129)
 
-___
+***
 
-### setId
+### setId()
 
-▸ **setId**(`id`): `void`
+> **setId**(`id`): `void`
 
 It sets the id property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `id` | `string` |
+• **id**: `string`
 
 #### Returns
 
@@ -780,29 +760,27 @@ It sets the id property of the tool state.
 
 #### Implementation of
 
-[IBubbleLayerToolState](../interfaces/IBubbleLayerToolState.md).[setId](../interfaces/IBubbleLayerToolState.md#setid)
+[`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md).[`setId`](../interfaces/IBubbleLayerToolState.md#setid)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[setId](LayerToolState.md#setid)
+[`LayerToolState`](LayerToolState.md).[`setId`](LayerToolState.md#setid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectState.ts:96](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectState.ts#L96)
+[model/internal/object/MapObjectState.ts:96](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectState.ts#L96)
 
-___
+***
 
-### setLabel
+### setLabel()
 
-▸ **setLabel**(`label`): `void`
+> **setLabel**(`label`): `void`
 
 It sets the label property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `label` | `string` |
+• **label**: `string`
 
 #### Returns
 
@@ -810,27 +788,25 @@ It sets the label property of the tool state.
 
 #### Implementation of
 
-[IBubbleLayerToolState](../interfaces/IBubbleLayerToolState.md).[setLabel](../interfaces/IBubbleLayerToolState.md#setlabel)
+[`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md).[`setLabel`](../interfaces/IBubbleLayerToolState.md#setlabel)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[setLabel](LayerToolState.md#setlabel)
+[`LayerToolState`](LayerToolState.md).[`setLabel`](LayerToolState.md#setlabel)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:113](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L113)
+[model/internal/tool/MapToolState.ts:113](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L113)
 
-___
+***
 
-### setLayer
+### setLayer()
 
-▸ **setLayer**(`layer`): `void`
+> **setLayer**(`layer`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `layer` | `LayerGroup`\<`any`\> |
+• **layer**: `LayerGroup`
 
 #### Returns
 
@@ -838,25 +814,23 @@ ___
 
 #### Implementation of
 
-[IBubbleLayerToolState](../interfaces/IBubbleLayerToolState.md).[setLayer](../interfaces/IBubbleLayerToolState.md#setlayer)
+[`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md).[`setLayer`](../interfaces/IBubbleLayerToolState.md#setlayer)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:237](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L237)
+[tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:237](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L237)
 
-___
+***
 
-### setLayerItems
+### setLayerItems()
 
-▸ **setLayerItems**(`layerItems`): `void`
+> **setLayerItems**(`layerItems`): `void`
 
 It sets the layer items property of tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `layerItems` | `Layer`[] |
+• **layerItems**: `Layer`[]
 
 #### Returns
 
@@ -864,29 +838,27 @@ It sets the layer items property of tool state.
 
 #### Implementation of
 
-[IBubbleLayerToolState](../interfaces/IBubbleLayerToolState.md).[setLayerItems](../interfaces/IBubbleLayerToolState.md#setlayeritems)
+[`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md).[`setLayerItems`](../interfaces/IBubbleLayerToolState.md#setlayeritems)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[setLayerItems](LayerToolState.md#setlayeritems)
+[`LayerToolState`](LayerToolState.md).[`setLayerItems`](LayerToolState.md#setlayeritems)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/LayerToolState.ts:113](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/LayerToolState.ts#L113)
+[model/internal/layer/LayerToolState.ts:113](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/LayerToolState.ts#L113)
 
-___
+***
 
-### setLayerName
+### setLayerName()
 
-▸ **setLayerName**(`layerName`): `void`
+> **setLayerName**(`layerName`): `void`
 
 It sets the layer name property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `layerName` | `string` |
+• **layerName**: `string`
 
 #### Returns
 
@@ -894,29 +866,27 @@ It sets the layer name property of the tool state.
 
 #### Implementation of
 
-[IBubbleLayerToolState](../interfaces/IBubbleLayerToolState.md).[setLayerName](../interfaces/IBubbleLayerToolState.md#setlayername)
+[`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md).[`setLayerName`](../interfaces/IBubbleLayerToolState.md#setlayername)
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[setLayerName](LayerToolState.md#setlayername)
+[`LayerToolState`](LayerToolState.md).[`setLayerName`](LayerToolState.md#setlayername)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/LayerToolState.ts:97](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/LayerToolState.ts#L97)
+[model/internal/layer/LayerToolState.ts:97](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/LayerToolState.ts#L97)
 
-___
+***
 
-### setMap
+### setMap()
 
-▸ **setMap**(`map`): `void`
+> `protected` **setMap**(`map`): `void`
 
 It sets the map property of the tool state.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `map` | [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\> |
+• **map**: [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Returns
 
@@ -924,23 +894,21 @@ It sets the map property of the tool state.
 
 #### Inherited from
 
-[LayerToolState](LayerToolState.md).[setMap](LayerToolState.md#setmap)
+[`LayerToolState`](LayerToolState.md).[`setMap`](LayerToolState.md#setmap)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolState.ts:145](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolState.ts#L145)
+[model/internal/tool/MapToolState.ts:145](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolState.ts#L145)
 
-___
+***
 
-### setMarkers
+### setMarkers()
 
-▸ **setMarkers**(`markers`): `void`
+> **setMarkers**(`markers`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `markers` | `Marker`\<`any`\>[] |
+• **markers**: `Marker`[]
 
 #### Returns
 
@@ -948,23 +916,21 @@ ___
 
 #### Implementation of
 
-[IBubbleLayerToolState](../interfaces/IBubbleLayerToolState.md).[setMarkers](../interfaces/IBubbleLayerToolState.md#setmarkers)
+[`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md).[`setMarkers`](../interfaces/IBubbleLayerToolState.md#setmarkers)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:245](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L245)
+[tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:245](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L245)
 
-___
+***
 
-### setWorkData
+### setWorkData()
 
-▸ **setWorkData**(`workData`): `void`
+> **setWorkData**(`workData`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `workData` | `IWorkData`[] |
+• **workData**: `any`[]
 
 #### Returns
 
@@ -972,8 +938,8 @@ ___
 
 #### Implementation of
 
-[IBubbleLayerToolState](../interfaces/IBubbleLayerToolState.md).[setWorkData](../interfaces/IBubbleLayerToolState.md#setworkdata)
+[`IBubbleLayerToolState`](../interfaces/IBubbleLayerToolState.md).[`setWorkData`](../interfaces/IBubbleLayerToolState.md#setworkdata)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:257](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L257)
+[tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts:257](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/bubble/model/internal/tool/BubbleLayerToolState.ts#L257)

@@ -1,55 +1,38 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / CustomMinMaxScale
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / CustomMinMaxScale
 
 # Class: CustomMinMaxScale
 
 This class provides the relative [min,max] scale.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`MapDomain`](MapDomain.md)
-
-  ↳ **`CustomMinMaxScale`**
 
 ## Implements
 
 - [`IScale`](../interfaces/IScale.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](CustomMinMaxScale.md#constructor)
-
-### Properties
-
-- [max](CustomMinMaxScale.md#max)
-- [min](CustomMinMaxScale.md#min)
-
-### Methods
-
-- [getName](CustomMinMaxScale.md#getname)
-- [getScale](CustomMinMaxScale.md#getscale)
-- [toString](CustomMinMaxScale.md#tostring)
-- [TYPE](CustomMinMaxScale.md#type)
-
 ## Constructors
 
-### constructor
+### new CustomMinMaxScale()
 
-• **new CustomMinMaxScale**(`min`, `max`): [`CustomMinMaxScale`](CustomMinMaxScale.md)
+> **new CustomMinMaxScale**(`min`, `max`): [`CustomMinMaxScale`](CustomMinMaxScale.md)
 
 It initializes the scale.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `min` | `number` |
-| `max` | `number` |
+• **min**: `number`
+
+• **max**: `number`
 
 #### Returns
 
@@ -57,37 +40,37 @@ It initializes the scale.
 
 #### Overrides
 
-[MapDomain](MapDomain.md).[constructor](MapDomain.md#constructor)
+[`MapDomain`](MapDomain.md).[`constructor`](MapDomain.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/internal/scale/CustomMinMaxScale.ts:21](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/internal/scale/CustomMinMaxScale.ts#L21)
+[tools/layers/choropleth/model/internal/scale/CustomMinMaxScale.ts:21](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/internal/scale/CustomMinMaxScale.ts#L21)
 
 ## Properties
 
 ### max
 
-• `Private` **max**: `number`
+> `private` **max**: `number`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/internal/scale/CustomMinMaxScale.ts:16](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/internal/scale/CustomMinMaxScale.ts#L16)
+[tools/layers/choropleth/model/internal/scale/CustomMinMaxScale.ts:16](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/internal/scale/CustomMinMaxScale.ts#L16)
 
-___
+***
 
 ### min
 
-• `Private` **min**: `number`
+> `private` **min**: `number`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/internal/scale/CustomMinMaxScale.ts:15](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/internal/scale/CustomMinMaxScale.ts#L15)
+[tools/layers/choropleth/model/internal/scale/CustomMinMaxScale.ts:15](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/internal/scale/CustomMinMaxScale.ts#L15)
 
 ## Methods
 
-### getName
+### getName()
 
-▸ **getName**(): `string`
+> **getName**(): `string`
 
 It returns the name of the map domain.
 
@@ -97,30 +80,29 @@ It returns the name of the map domain.
 
 #### Implementation of
 
-[IScale](../interfaces/IScale.md).[getName](../interfaces/IScale.md#getname)
+[`IScale`](../interfaces/IScale.md).[`getName`](../interfaces/IScale.md#getname)
 
 #### Inherited from
 
-[MapDomain](MapDomain.md).[getName](MapDomain.md#getname)
+[`MapDomain`](MapDomain.md).[`getName`](MapDomain.md#getname)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomain.ts:21](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomain.ts#L21)
+[model/internal/domain/generic/MapDomain.ts:21](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomain.ts#L21)
 
-___
+***
 
-### getScale
+### getScale()
 
-▸ **getScale**(`values`, `size`): `number`[]
+> **getScale**(`values`, `size`): `number`[]
 
 It returns a scale which can be used for choropleth color levels.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `values` | `number`[] |
-| `size` | `number` |
+• **values**: `number`[]
+
+• **size**: `number`
 
 #### Returns
 
@@ -128,17 +110,17 @@ It returns a scale which can be used for choropleth color levels.
 
 #### Implementation of
 
-[IScale](../interfaces/IScale.md).[getScale](../interfaces/IScale.md#getscale)
+[`IScale`](../interfaces/IScale.md).[`getScale`](../interfaces/IScale.md#getscale)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/internal/scale/CustomMinMaxScale.ts:40](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/internal/scale/CustomMinMaxScale.ts#L40)
+[tools/layers/choropleth/model/internal/scale/CustomMinMaxScale.ts:40](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/internal/scale/CustomMinMaxScale.ts#L40)
 
-___
+***
 
-### toString
+### toString()
 
-▸ **toString**(): `string`
+> **toString**(): `string`
 
 The string representation is equal to the name of the map domain.
 
@@ -148,17 +130,17 @@ The string representation is equal to the name of the map domain.
 
 #### Inherited from
 
-[MapDomain](MapDomain.md).[toString](MapDomain.md#tostring)
+[`MapDomain`](MapDomain.md).[`toString`](MapDomain.md#tostring)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/abstract/AbstractMapDomain.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/abstract/AbstractMapDomain.ts#L18)
+[model/internal/domain/abstract/AbstractMapDomain.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/abstract/AbstractMapDomain.ts#L18)
 
-___
+***
 
-### TYPE
+### TYPE()
 
-▸ **TYPE**(): `string`
+> `static` **TYPE**(): `string`
 
 Type of the scale.
 
@@ -166,6 +148,6 @@ Type of the scale.
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/choropleth/model/internal/scale/CustomMinMaxScale.ts:30](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/choropleth/model/internal/scale/CustomMinMaxScale.ts#L30)
+[tools/layers/choropleth/model/internal/scale/CustomMinMaxScale.ts:30](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/choropleth/model/internal/scale/CustomMinMaxScale.ts#L30)

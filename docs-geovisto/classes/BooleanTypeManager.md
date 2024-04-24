@@ -1,10 +1,14 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / BooleanTypeManager
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / BooleanTypeManager
 
 # Class: BooleanTypeManager
 
 This class specifies the empty type constraint.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
@@ -12,21 +16,11 @@ Jiri Hynek
 
 - [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>
 
-## Table of contents
-
-### Constructors
-
-- [constructor](BooleanTypeManager.md#constructor)
-
-### Methods
-
-- [deserialize](BooleanTypeManager.md#deserialize)
-
 ## Constructors
 
-### constructor
+### new BooleanTypeManager()
 
-• **new BooleanTypeManager**(): [`BooleanTypeManager`](BooleanTypeManager.md)
+> **new BooleanTypeManager**(): [`BooleanTypeManager`](BooleanTypeManager.md)
 
 #### Returns
 
@@ -34,17 +28,15 @@ Jiri Hynek
 
 ## Methods
 
-### deserialize
+### deserialize()
 
-▸ **deserialize**(`value`): `boolean`
+> **deserialize**(`value`): `boolean`
 
 It converts the string representation of the boolean value.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | `string` |
+• **value**: `string`
 
 #### Returns
 
@@ -52,8 +44,8 @@ It converts the string representation of the boolean value.
 
 #### Implementation of
 
-[ITypeManager](../interfaces/ITypeManager.md).[deserialize](../interfaces/ITypeManager.md#deserialize)
+[`ITypeManager`](../interfaces/ITypeManager.md).[`deserialize`](../interfaces/ITypeManager.md#deserialize)
 
-#### Defined in
+#### Source
 
-[src/model/internal/type/BooleanTypeManager.ts:13](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/type/BooleanTypeManager.ts#L13)
+[model/internal/type/BooleanTypeManager.ts:13](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/type/BooleanTypeManager.ts#L13)

@@ -1,54 +1,34 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / MapToolsManager
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / MapToolsManager
 
 # Class: MapToolsManager
 
 This class provide functions for using tools.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`MapObjectsManager`](MapObjectsManager.md)\<[`IMapTool`](../interfaces/IMapTool.md)\>
-
-  ↳ **`MapToolsManager`**
 
 ## Implements
 
 - [`IMapToolsManager`](../interfaces/IMapToolsManager.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](MapToolsManager.md#constructor)
-
-### Methods
-
-- [add](MapToolsManager.md#add)
-- [copy](MapToolsManager.md#copy)
-- [getAll](MapToolsManager.md#getall)
-- [getById](MapToolsManager.md#getbyid)
-- [getByType](MapToolsManager.md#getbytype)
-- [getIds](MapToolsManager.md#getids)
-- [getTypes](MapToolsManager.md#gettypes)
-- [isEmpty](MapToolsManager.md#isempty)
-- [remove](MapToolsManager.md#remove)
-- [removeById](MapToolsManager.md#removebyid)
-- [size](MapToolsManager.md#size)
-
 ## Constructors
 
-### constructor
+### new MapToolsManager()
 
-• **new MapToolsManager**(`tools`): [`MapToolsManager`](MapToolsManager.md)
+> **new MapToolsManager**(`tools`): [`MapToolsManager`](MapToolsManager.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `tools` | [`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>\>, [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>, [`IMapToolAPI`](../modules.md#imaptoolapi)\>[] |
+• **tools**: [`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>\>, [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>, [`IMapToolAPI`](../type-aliases/IMapToolAPI.md)\>[]
 
 #### Returns
 
@@ -56,17 +36,17 @@ Jiri Hynek
 
 #### Overrides
 
-[MapObjectsManager](MapObjectsManager.md).[constructor](MapObjectsManager.md#constructor)
+[`MapObjectsManager`](MapObjectsManager.md).[`constructor`](MapObjectsManager.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolsManager.ts:12](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolsManager.ts#L12)
+[model/internal/tool/MapToolsManager.ts:12](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolsManager.ts#L12)
 
 ## Methods
 
-### add
+### add()
 
-▸ **add**(`object`): `void`
+> **add**(`object`): `void`
 
 It adds object to the list of objects.
 
@@ -74,9 +54,7 @@ Override this function.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `object` | [`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>\>, [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>, [`IMapToolAPI`](../modules.md#imaptoolapi)\> |
+• **object**: [`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>\>, [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>, [`IMapToolAPI`](../type-aliases/IMapToolAPI.md)\>
 
 #### Returns
 
@@ -84,21 +62,21 @@ Override this function.
 
 #### Implementation of
 
-[IMapToolsManager](../interfaces/IMapToolsManager.md).[add](../interfaces/IMapToolsManager.md#add)
+[`IMapToolsManager`](../interfaces/IMapToolsManager.md).[`add`](../interfaces/IMapToolsManager.md#add)
 
 #### Inherited from
 
-[MapObjectsManager](MapObjectsManager.md).[add](MapObjectsManager.md#add)
+[`MapObjectsManager`](MapObjectsManager.md).[`add`](MapObjectsManager.md#add)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectsManager.ts:48](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectsManager.ts#L48)
+[model/internal/object/MapObjectsManager.ts:48](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectsManager.ts#L48)
 
-___
+***
 
-### copy
+### copy()
 
-▸ **copy**(): [`IMapToolsManager`](../interfaces/IMapToolsManager.md)
+> **copy**(): [`IMapToolsManager`](../interfaces/IMapToolsManager.md)
 
 It returns copy of the tools manager with copies of tools.
 
@@ -108,101 +86,97 @@ It returns copy of the tools manager with copies of tools.
 
 #### Implementation of
 
-[IMapToolsManager](../interfaces/IMapToolsManager.md).[copy](../interfaces/IMapToolsManager.md#copy)
+[`IMapToolsManager`](../interfaces/IMapToolsManager.md).[`copy`](../interfaces/IMapToolsManager.md#copy)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapToolsManager.ts:19](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapToolsManager.ts#L19)
+[model/internal/tool/MapToolsManager.ts:19](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapToolsManager.ts#L19)
 
-___
+***
 
-### getAll
+### getAll()
 
-▸ **getAll**(): [`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>\>, [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>, [`IMapToolAPI`](../modules.md#imaptoolapi)\>[]
+> **getAll**(): [`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>\>, [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>, [`IMapToolAPI`](../type-aliases/IMapToolAPI.md)\>[]
 
 The function returns available map objects.
 
 #### Returns
 
-[`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>\>, [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>, [`IMapToolAPI`](../modules.md#imaptoolapi)\>[]
+[`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>\>, [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>, [`IMapToolAPI`](../type-aliases/IMapToolAPI.md)\>[]
 
 #### Implementation of
 
-[IMapToolsManager](../interfaces/IMapToolsManager.md).[getAll](../interfaces/IMapToolsManager.md#getall)
+[`IMapToolsManager`](../interfaces/IMapToolsManager.md).[`getAll`](../interfaces/IMapToolsManager.md#getall)
 
 #### Inherited from
 
-[MapObjectsManager](MapObjectsManager.md).[getAll](MapObjectsManager.md#getall)
+[`MapObjectsManager`](MapObjectsManager.md).[`getAll`](MapObjectsManager.md#getall)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectsManager.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectsManager.ts#L23)
+[model/internal/object/MapObjectsManager.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectsManager.ts#L23)
 
-___
+***
 
-### getById
+### getById()
 
-▸ **getById**(`id`): `undefined` \| [`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>\>, [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>, [`IMapToolAPI`](../modules.md#imaptoolapi)\>
+> **getById**(`id`): `undefined` \| [`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>\>, [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>, [`IMapToolAPI`](../type-aliases/IMapToolAPI.md)\>
 
 The function returns map object of given unique identifier.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `id` | `string` |
+• **id**: `string`
 
 #### Returns
 
-`undefined` \| [`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>\>, [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>, [`IMapToolAPI`](../modules.md#imaptoolapi)\>
+`undefined` \| [`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>\>, [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>, [`IMapToolAPI`](../type-aliases/IMapToolAPI.md)\>
 
 #### Implementation of
 
-[IMapToolsManager](../interfaces/IMapToolsManager.md).[getById](../interfaces/IMapToolsManager.md#getbyid)
+[`IMapToolsManager`](../interfaces/IMapToolsManager.md).[`getById`](../interfaces/IMapToolsManager.md#getbyid)
 
 #### Inherited from
 
-[MapObjectsManager](MapObjectsManager.md).[getById](MapObjectsManager.md#getbyid)
+[`MapObjectsManager`](MapObjectsManager.md).[`getById`](MapObjectsManager.md#getbyid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectsManager.ts:123](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectsManager.ts#L123)
+[model/internal/object/MapObjectsManager.ts:123](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectsManager.ts#L123)
 
-___
+***
 
-### getByType
+### getByType()
 
-▸ **getByType**(`type`): [`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>\>, [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>, [`IMapToolAPI`](../modules.md#imaptoolapi)\>[]
+> **getByType**(`type`): [`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>\>, [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>, [`IMapToolAPI`](../type-aliases/IMapToolAPI.md)\>[]
 
 The function returns map objects of given type.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `type` | `string` |
+• **type**: `string`
 
 #### Returns
 
-[`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>\>, [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>, [`IMapToolAPI`](../modules.md#imaptoolapi)\>[]
+[`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>\>, [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>, [`IMapToolAPI`](../type-aliases/IMapToolAPI.md)\>[]
 
 #### Implementation of
 
-[IMapToolsManager](../interfaces/IMapToolsManager.md).[getByType](../interfaces/IMapToolsManager.md#getbytype)
+[`IMapToolsManager`](../interfaces/IMapToolsManager.md).[`getByType`](../interfaces/IMapToolsManager.md#getbytype)
 
 #### Inherited from
 
-[MapObjectsManager](MapObjectsManager.md).[getByType](MapObjectsManager.md#getbytype)
+[`MapObjectsManager`](MapObjectsManager.md).[`getByType`](MapObjectsManager.md#getbytype)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectsManager.ts:105](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectsManager.ts#L105)
+[model/internal/object/MapObjectsManager.ts:105](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectsManager.ts#L105)
 
-___
+***
 
-### getIds
+### getIds()
 
-▸ **getIds**(): `string`[]
+> **getIds**(): `string`[]
 
 Help function which returns the list of object string labels (object types).
 
@@ -212,21 +186,21 @@ Help function which returns the list of object string labels (object types).
 
 #### Implementation of
 
-[IMapToolsManager](../interfaces/IMapToolsManager.md).[getIds](../interfaces/IMapToolsManager.md#getids)
+[`IMapToolsManager`](../interfaces/IMapToolsManager.md).[`getIds`](../interfaces/IMapToolsManager.md#getids)
 
 #### Inherited from
 
-[MapObjectsManager](MapObjectsManager.md).[getIds](MapObjectsManager.md#getids)
+[`MapObjectsManager`](MapObjectsManager.md).[`getIds`](MapObjectsManager.md#getids)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectsManager.ts:89](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectsManager.ts#L89)
+[model/internal/object/MapObjectsManager.ts:89](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectsManager.ts#L89)
 
-___
+***
 
-### getTypes
+### getTypes()
 
-▸ **getTypes**(): `string`[]
+> **getTypes**(): `string`[]
 
 Help function which returns the list of object string labels (object types).
 
@@ -236,21 +210,21 @@ Help function which returns the list of object string labels (object types).
 
 #### Implementation of
 
-[IMapToolsManager](../interfaces/IMapToolsManager.md).[getTypes](../interfaces/IMapToolsManager.md#gettypes)
+[`IMapToolsManager`](../interfaces/IMapToolsManager.md).[`getTypes`](../interfaces/IMapToolsManager.md#gettypes)
 
 #### Inherited from
 
-[MapObjectsManager](MapObjectsManager.md).[getTypes](MapObjectsManager.md#gettypes)
+[`MapObjectsManager`](MapObjectsManager.md).[`getTypes`](MapObjectsManager.md#gettypes)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectsManager.ts:75](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectsManager.ts#L75)
+[model/internal/object/MapObjectsManager.ts:75](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectsManager.ts#L75)
 
-___
+***
 
-### isEmpty
+### isEmpty()
 
-▸ **isEmpty**(): `boolean`
+> **isEmpty**(): `boolean`
 
 The function returns true if size() is 0.
 
@@ -260,29 +234,27 @@ The function returns true if size() is 0.
 
 #### Implementation of
 
-[IMapToolsManager](../interfaces/IMapToolsManager.md).[isEmpty](../interfaces/IMapToolsManager.md#isempty)
+[`IMapToolsManager`](../interfaces/IMapToolsManager.md).[`isEmpty`](../interfaces/IMapToolsManager.md#isempty)
 
 #### Inherited from
 
-[MapObjectsManager](MapObjectsManager.md).[isEmpty](MapObjectsManager.md#isempty)
+[`MapObjectsManager`](MapObjectsManager.md).[`isEmpty`](MapObjectsManager.md#isempty)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectsManager.ts:37](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectsManager.ts#L37)
+[model/internal/object/MapObjectsManager.ts:37](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectsManager.ts#L37)
 
-___
+***
 
-### remove
+### remove()
 
-▸ **remove**(`object`): `void`
+> **remove**(`object`): `void`
 
 It removes object from the list of objects.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `object` | [`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../modules.md#imaptoolprops), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>\>, [`IMapToolConfig`](../modules.md#imaptoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IMapToolConfig`](../modules.md#imaptoolconfig)\>, [`IMapToolAPI`](../modules.md#imaptoolapi)\> |
+• **object**: [`IMapTool`](../interfaces/IMapTool.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolState`](../interfaces/IMapToolState.md)\<[`IMapToolProps`](../type-aliases/IMapToolProps.md), [`IMapToolDefaults`](../interfaces/IMapToolDefaults.md), [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>\>, [`IMapToolConfig`](../type-aliases/IMapToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IMapToolConfig`](../type-aliases/IMapToolConfig.md)\>, [`IMapToolAPI`](../type-aliases/IMapToolAPI.md)\>
 
 #### Returns
 
@@ -290,21 +262,21 @@ It removes object from the list of objects.
 
 #### Implementation of
 
-[IMapToolsManager](../interfaces/IMapToolsManager.md).[remove](../interfaces/IMapToolsManager.md#remove)
+[`IMapToolsManager`](../interfaces/IMapToolsManager.md).[`remove`](../interfaces/IMapToolsManager.md#remove)
 
 #### Inherited from
 
-[MapObjectsManager](MapObjectsManager.md).[remove](MapObjectsManager.md#remove)
+[`MapObjectsManager`](MapObjectsManager.md).[`remove`](MapObjectsManager.md#remove)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectsManager.ts:57](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectsManager.ts#L57)
+[model/internal/object/MapObjectsManager.ts:57](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectsManager.ts#L57)
 
-___
+***
 
-### removeById
+### removeById()
 
-▸ **removeById**(`id`): `void`
+> **removeById**(`id`): `void`
 
 It removes object from the list of objects.
 
@@ -312,9 +284,7 @@ Override this function.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `id` | `string` |
+• **id**: `string`
 
 #### Returns
 
@@ -322,21 +292,21 @@ Override this function.
 
 #### Implementation of
 
-[IMapToolsManager](../interfaces/IMapToolsManager.md).[removeById](../interfaces/IMapToolsManager.md#removebyid)
+[`IMapToolsManager`](../interfaces/IMapToolsManager.md).[`removeById`](../interfaces/IMapToolsManager.md#removebyid)
 
 #### Inherited from
 
-[MapObjectsManager](MapObjectsManager.md).[removeById](MapObjectsManager.md#removebyid)
+[`MapObjectsManager`](MapObjectsManager.md).[`removeById`](MapObjectsManager.md#removebyid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectsManager.ts:68](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectsManager.ts#L68)
+[model/internal/object/MapObjectsManager.ts:68](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectsManager.ts#L68)
 
-___
+***
 
-### size
+### size()
 
-▸ **size**(): `number`
+> **size**(): `number`
 
 The function returns number of objects.
 
@@ -346,12 +316,12 @@ The function returns number of objects.
 
 #### Implementation of
 
-[IMapToolsManager](../interfaces/IMapToolsManager.md).[size](../interfaces/IMapToolsManager.md#size)
+[`IMapToolsManager`](../interfaces/IMapToolsManager.md).[`size`](../interfaces/IMapToolsManager.md#size)
 
 #### Inherited from
 
-[MapObjectsManager](MapObjectsManager.md).[size](MapObjectsManager.md#size)
+[`MapObjectsManager`](MapObjectsManager.md).[`size`](MapObjectsManager.md#size)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectsManager.ts:30](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectsManager.ts#L30)
+[model/internal/object/MapObjectsManager.ts:30](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectsManager.ts#L30)

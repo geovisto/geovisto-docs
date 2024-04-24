@@ -1,92 +1,67 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / AbstractMapFormInput
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
 
-# Class: AbstractMapFormInput
+***
+
+[geovisto-map](../README.md) / AbstractMapFormInput
+
+# Class: `abstract` AbstractMapFormInput
 
 This class represents an abstract form input.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extended by
 
-- **`AbstractMapFormInput`**
-
-  ↳ [`SelectFormInput`](SelectFormInput.md)
-
-  ↳ [`TextFormInput`](TextFormInput.md)
-
-  ↳ [`FilterAutocompleteFormInput`](FilterAutocompleteFormInput.md)
-
-  ↳ [`FilterSelectFormInput`](FilterSelectFormInput.md)
-
-  ↳ [`LabeledAutocompleteFormInput`](LabeledAutocompleteFormInput.md)
-
-  ↳ [`LabeledCheckboxFormInput`](LabeledCheckboxFormInput.md)
-
-  ↳ [`LabeledColorFormInput`](LabeledColorFormInput.md)
-
-  ↳ [`LabeledSliderFormInput`](LabeledSliderFormInput.md)
+- [`SelectFormInput`](SelectFormInput.md)
+- [`TextFormInput`](TextFormInput.md)
+- [`FilterAutocompleteFormInput`](FilterAutocompleteFormInput.md)
+- [`FilterSelectFormInput`](FilterSelectFormInput.md)
+- [`LabeledAutocompleteFormInput`](LabeledAutocompleteFormInput.md)
+- [`LabeledCheckboxFormInput`](LabeledCheckboxFormInput.md)
+- [`LabeledColorFormInput`](LabeledColorFormInput.md)
+- [`LabeledSliderFormInput`](LabeledSliderFormInput.md)
 
 ## Implements
 
 - [`IMapFormInput`](../interfaces/IMapFormInput.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](AbstractMapFormInput.md#constructor)
-
-### Properties
-
-- [props](AbstractMapFormInput.md#props)
-
-### Methods
-
-- [create](AbstractMapFormInput.md#create)
-- [getProps](AbstractMapFormInput.md#getprops)
-- [getValue](AbstractMapFormInput.md#getvalue)
-- [setDisabled](AbstractMapFormInput.md#setdisabled)
-- [setValue](AbstractMapFormInput.md#setvalue)
-
 ## Constructors
 
-### constructor
+### new AbstractMapFormInput()
 
-• **new AbstractMapFormInput**(`props`): [`AbstractMapFormInput`](AbstractMapFormInput.md)
+> **new AbstractMapFormInput**(`props`): [`AbstractMapFormInput`](AbstractMapFormInput.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `props` | [`IMapFormInputProps`](../interfaces/IMapFormInputProps.md) |
+• **props**: [`IMapFormInputProps`](../interfaces/IMapFormInputProps.md)
 
 #### Returns
 
 [`AbstractMapFormInput`](AbstractMapFormInput.md)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/abstract/AbstractMapFormInput.ts:16](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/abstract/AbstractMapFormInput.ts#L16)
+[model/internal/inputs/abstract/AbstractMapFormInput.ts:16](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/abstract/AbstractMapFormInput.ts#L16)
 
 ## Properties
 
 ### props
 
-• `Private` **props**: [`IMapFormInputProps`](../interfaces/IMapFormInputProps.md)
+> `private` **props**: [`IMapFormInputProps`](../interfaces/IMapFormInputProps.md)
 
 Input props passed to constructor.
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/abstract/AbstractMapFormInput.ts:14](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/abstract/AbstractMapFormInput.ts#L14)
+[model/internal/inputs/abstract/AbstractMapFormInput.ts:14](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/abstract/AbstractMapFormInput.ts#L14)
 
 ## Methods
 
-### create
+### create()
 
-▸ **create**(): `HTMLElement`
+> `abstract` **create**(): `HTMLElement`
 
 It creates the input element.
 
@@ -96,17 +71,17 @@ It creates the input element.
 
 #### Implementation of
 
-[IMapFormInput](../interfaces/IMapFormInput.md).[create](../interfaces/IMapFormInput.md#create)
+[`IMapFormInput`](../interfaces/IMapFormInput.md).[`create`](../interfaces/IMapFormInput.md#create)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/abstract/AbstractMapFormInput.ts:30](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/abstract/AbstractMapFormInput.ts#L30)
+[model/internal/inputs/abstract/AbstractMapFormInput.ts:30](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/abstract/AbstractMapFormInput.ts#L30)
 
-___
+***
 
-### getProps
+### getProps()
 
-▸ **getProps**(): [`IMapFormInputProps`](../interfaces/IMapFormInputProps.md)
+> `protected` **getProps**(): [`IMapFormInputProps`](../interfaces/IMapFormInputProps.md)
 
 It provides the props to the exteded classes.
 
@@ -114,15 +89,15 @@ It provides the props to the exteded classes.
 
 [`IMapFormInputProps`](../interfaces/IMapFormInputProps.md)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/abstract/AbstractMapFormInput.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/abstract/AbstractMapFormInput.ts#L23)
+[model/internal/inputs/abstract/AbstractMapFormInput.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/abstract/AbstractMapFormInput.ts#L23)
 
-___
+***
 
-### getValue
+### getValue()
 
-▸ **getValue**(): `unknown`
+> `abstract` **getValue**(): `unknown`
 
 It returns value of the input element.
 
@@ -132,25 +107,23 @@ It returns value of the input element.
 
 #### Implementation of
 
-[IMapFormInput](../interfaces/IMapFormInput.md).[getValue](../interfaces/IMapFormInput.md#getvalue)
+[`IMapFormInput`](../interfaces/IMapFormInput.md).[`getValue`](../interfaces/IMapFormInput.md#getvalue)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/abstract/AbstractMapFormInput.ts:35](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/abstract/AbstractMapFormInput.ts#L35)
+[model/internal/inputs/abstract/AbstractMapFormInput.ts:35](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/abstract/AbstractMapFormInput.ts#L35)
 
-___
+***
 
-### setDisabled
+### setDisabled()
 
-▸ **setDisabled**(`disabled`): `void`
+> `abstract` **setDisabled**(`disabled`): `void`
 
 It sets the input disabled.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `disabled` | `boolean` |
+• **disabled**: `boolean`
 
 #### Returns
 
@@ -158,25 +131,23 @@ It sets the input disabled.
 
 #### Implementation of
 
-[IMapFormInput](../interfaces/IMapFormInput.md).[setDisabled](../interfaces/IMapFormInput.md#setdisabled)
+[`IMapFormInput`](../interfaces/IMapFormInput.md).[`setDisabled`](../interfaces/IMapFormInput.md#setdisabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/abstract/AbstractMapFormInput.ts:49](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/abstract/AbstractMapFormInput.ts#L49)
+[model/internal/inputs/abstract/AbstractMapFormInput.ts:49](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/abstract/AbstractMapFormInput.ts#L49)
 
-___
+***
 
-### setValue
+### setValue()
 
-▸ **setValue**(`value`): `void`
+> `abstract` **setValue**(`value`): `void`
 
 It sets value of the input element.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | `unknown` |
+• **value**: `unknown`
 
 #### Returns
 
@@ -184,8 +155,8 @@ It sets value of the input element.
 
 #### Implementation of
 
-[IMapFormInput](../interfaces/IMapFormInput.md).[setValue](../interfaces/IMapFormInput.md#setvalue)
+[`IMapFormInput`](../interfaces/IMapFormInput.md).[`setValue`](../interfaces/IMapFormInput.md#setvalue)
 
-#### Defined in
+#### Source
 
-[src/model/internal/inputs/abstract/AbstractMapFormInput.ts:42](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/inputs/abstract/AbstractMapFormInput.ts#L42)
+[model/internal/inputs/abstract/AbstractMapFormInput.ts:42](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/inputs/abstract/AbstractMapFormInput.ts#L42)

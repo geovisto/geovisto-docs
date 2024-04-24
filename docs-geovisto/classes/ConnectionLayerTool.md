@@ -1,89 +1,37 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / ConnectionLayerTool
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / ConnectionLayerTool
 
 # Class: ConnectionLayerTool
 
 This class represents Connection layer tool. It uses SVG layer and D3 to draw the lines.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`AbstractLayerTool`](AbstractLayerTool.md)
-
-  ↳ **`ConnectionLayerTool`**
 
 ## Implements
 
 - [`IConnectionLayerTool`](../interfaces/IConnectionLayerTool.md)
 - [`IMapFormControl`](../interfaces/IMapFormControl.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](ConnectionLayerTool.md#constructor)
-
-### Properties
-
-- [animateDirectionUtil](ConnectionLayerTool.md#animatedirectionutil)
-- [connectionsPaths](ConnectionLayerTool.md#connectionspaths)
-- [mapForm](ConnectionLayerTool.md#mapform)
-- [selectionChangeAdapter](ConnectionLayerTool.md#selectionchangeadapter)
-- [themeChangeAdapter](ConnectionLayerTool.md#themechangeadapter)
-
-### Methods
-
-- [bucketHashToGeoIds](ConnectionLayerTool.md#buckethashtogeoids)
-- [copy](ConnectionLayerTool.md#copy)
-- [create](ConnectionLayerTool.md#create)
-- [createDefaults](ConnectionLayerTool.md#createdefaults)
-- [createLayerItems](ConnectionLayerTool.md#createlayeritems)
-- [createMapForm](ConnectionLayerTool.md#createmapform)
-- [createState](ConnectionLayerTool.md#createstate)
-- [deleteLayerItems](ConnectionLayerTool.md#deletelayeritems)
-- [geoIdsToBucketHash](ConnectionLayerTool.md#geoidstobuckethash)
-- [getAPIGetter](ConnectionLayerTool.md#getapigetter)
-- [getAnimateDirectionUtil](ConnectionLayerTool.md#getanimatedirectionutil)
-- [getDefaults](ConnectionLayerTool.md#getdefaults)
-- [getId](ConnectionLayerTool.md#getid)
-- [getLayerItems](ConnectionLayerTool.md#getlayeritems)
-- [getMap](ConnectionLayerTool.md#getmap)
-- [getMapForm](ConnectionLayerTool.md#getmapform)
-- [getProps](ConnectionLayerTool.md#getprops)
-- [getSelectionChangeAdapter](ConnectionLayerTool.md#getselectionchangeadapter)
-- [getState](ConnectionLayerTool.md#getstate)
-- [getThemeChangeAdapter](ConnectionLayerTool.md#getthemechangeadapter)
-- [getType](ConnectionLayerTool.md#gettype)
-- [handleEvent](ConnectionLayerTool.md#handleevent)
-- [hideLayerItems](ConnectionLayerTool.md#hidelayeritems)
-- [initialize](ConnectionLayerTool.md#initialize)
-- [isEnabled](ConnectionLayerTool.md#isenabled)
-- [isSingleton](ConnectionLayerTool.md#issingleton)
-- [render](ConnectionLayerTool.md#render)
-- [renderConnections](ConnectionLayerTool.md#renderconnections)
-- [setEnabled](ConnectionLayerTool.md#setenabled)
-- [setProps](ConnectionLayerTool.md#setprops)
-- [showLayerItems](ConnectionLayerTool.md#showlayeritems)
-- [switchEnabled](ConnectionLayerTool.md#switchenabled)
-- [updateData](ConnectionLayerTool.md#updatedata)
-- [updateDimension](ConnectionLayerTool.md#updatedimension)
-- [updateStyle](ConnectionLayerTool.md#updatestyle)
-
 ## Constructors
 
-### constructor
+### new ConnectionLayerTool()
 
-• **new ConnectionLayerTool**(`props?`): [`ConnectionLayerTool`](ConnectionLayerTool.md)
+> **new ConnectionLayerTool**(`props`?): [`ConnectionLayerTool`](ConnectionLayerTool.md)
 
 It creates a new tool with respect to the props.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `props?` | [`IConnectionLayerToolProps`](../modules.md#iconnectionlayertoolprops) |
+• **props?**: [`IConnectionLayerToolProps`](../type-aliases/IConnectionLayerToolProps.md)
 
 #### Returns
 
@@ -91,113 +39,111 @@ It creates a new tool with respect to the props.
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[constructor](AbstractLayerTool.md#constructor)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`constructor`](AbstractLayerTool.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:77](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L77)
+[tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:77](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L77)
 
 ## Properties
 
 ### animateDirectionUtil
 
-• `Private` **animateDirectionUtil**: [`AnimateDirectionUtil`](AnimateDirectionUtil.md)
+> `private` **animateDirectionUtil**: [`AnimateDirectionUtil`](AnimateDirectionUtil.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:68](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L68)
+[tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:68](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L68)
 
-___
+***
 
 ### connectionsPaths
 
-• `Private` **connectionsPaths**: `Record`\<`string`, `Selection`\<`BaseType`, `any`, `any`, `any`\>\>
+> `private` **connectionsPaths**: `Record`\<`string`, `Selection`\<`BaseType`, `any`, `any`, `any`\>\>
 
-#### Defined in
+#### Source
 
-[src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:70](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L70)
+[tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:70](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L70)
 
-___
+***
 
 ### mapForm
 
-• `Private` **mapForm**: [`IMapForm`](../interfaces/IMapForm.md)
+> `private` **mapForm**: [`IMapForm`](../interfaces/IMapForm.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:64](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L64)
+[tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:64](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L64)
 
-___
+***
 
 ### selectionChangeAdapter
 
-• `Private` **selectionChangeAdapter**: [`ConnectionLayerToolSelectionChangeAdapter`](ConnectionLayerToolSelectionChangeAdapter.md)
+> `private` **selectionChangeAdapter**: [`ConnectionLayerToolSelectionChangeAdapter`](ConnectionLayerToolSelectionChangeAdapter.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:66](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L66)
+[tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:66](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L66)
 
-___
+***
 
 ### themeChangeAdapter
 
-• `Private` **themeChangeAdapter**: [`ConnectionLayerToolThemeChangeAdapter`](ConnectionLayerToolThemeChangeAdapter.md)
+> `private` **themeChangeAdapter**: [`ConnectionLayerToolThemeChangeAdapter`](ConnectionLayerToolThemeChangeAdapter.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:67](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L67)
+[tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:67](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L67)
 
 ## Methods
 
-### bucketHashToGeoIds
+### bucketHashToGeoIds()
 
-▸ **bucketHashToGeoIds**(`bucketHash`): `string`[]
+> `protected` **bucketHashToGeoIds**(`bucketHash`): `string`[]
 
 It returns the the geo ids (from, to) used in data bucket hash.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `bucketHash` | `string` |
+• **bucketHash**: `string`
 
 #### Returns
 
 `string`[]
 
-#### Defined in
+#### Source
 
-[src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:224](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L224)
+[tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:224](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L224)
 
-___
+***
 
-### copy
+### copy()
 
-▸ **copy**(): [`IConnectionLayerTool`](../interfaces/IConnectionLayerTool.md)\<[`IConnectionLayerToolProps`](../modules.md#iconnectionlayertoolprops), [`IConnectionLayerToolDefaults`](../interfaces/IConnectionLayerToolDefaults.md), [`IConnectionLayerToolState`](../interfaces/IConnectionLayerToolState.md)\<[`IConnectionLayerToolProps`](../modules.md#iconnectionlayertoolprops), [`IConnectionLayerToolDefaults`](../interfaces/IConnectionLayerToolDefaults.md), [`IConnectionLayerToolConfig`](../modules.md#iconnectionlayertoolconfig), \{ `direction?`: `boolean` ; `from?`: `string` ; `geoData?`: `string` ; `to?`: `string`  }, \{ `direction`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\> ; `from`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `geoData`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IGeoData`](../interfaces/IGeoData.md)\> ; `to`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>, [`IConnectionLayerToolConfig`](../modules.md#iconnectionlayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IConnectionLayerToolConfig`](../modules.md#iconnectionlayertoolconfig)\>\>
+> **copy**(): [`IConnectionLayerTool`](../interfaces/IConnectionLayerTool.md)\<[`IConnectionLayerToolProps`](../type-aliases/IConnectionLayerToolProps.md), [`IConnectionLayerToolDefaults`](../interfaces/IConnectionLayerToolDefaults.md), [`IConnectionLayerToolState`](../interfaces/IConnectionLayerToolState.md)\<[`IConnectionLayerToolProps`](../type-aliases/IConnectionLayerToolProps.md), [`IConnectionLayerToolDefaults`](../interfaces/IConnectionLayerToolDefaults.md), [`IConnectionLayerToolConfig`](../type-aliases/IConnectionLayerToolConfig.md), `object`, `object`\>, [`IConnectionLayerToolConfig`](../type-aliases/IConnectionLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IConnectionLayerToolConfig`](../type-aliases/IConnectionLayerToolConfig.md)\>\>
 
 It creates a copy of the uninitialized tool.
 
 #### Returns
 
-[`IConnectionLayerTool`](../interfaces/IConnectionLayerTool.md)\<[`IConnectionLayerToolProps`](../modules.md#iconnectionlayertoolprops), [`IConnectionLayerToolDefaults`](../interfaces/IConnectionLayerToolDefaults.md), [`IConnectionLayerToolState`](../interfaces/IConnectionLayerToolState.md)\<[`IConnectionLayerToolProps`](../modules.md#iconnectionlayertoolprops), [`IConnectionLayerToolDefaults`](../interfaces/IConnectionLayerToolDefaults.md), [`IConnectionLayerToolConfig`](../modules.md#iconnectionlayertoolconfig), \{ `direction?`: `boolean` ; `from?`: `string` ; `geoData?`: `string` ; `to?`: `string`  }, \{ `direction`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\> ; `from`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `geoData`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IGeoData`](../interfaces/IGeoData.md)\> ; `to`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>, [`IConnectionLayerToolConfig`](../modules.md#iconnectionlayertoolconfig), [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IConnectionLayerToolConfig`](../modules.md#iconnectionlayertoolconfig)\>\>
+[`IConnectionLayerTool`](../interfaces/IConnectionLayerTool.md)\<[`IConnectionLayerToolProps`](../type-aliases/IConnectionLayerToolProps.md), [`IConnectionLayerToolDefaults`](../interfaces/IConnectionLayerToolDefaults.md), [`IConnectionLayerToolState`](../interfaces/IConnectionLayerToolState.md)\<[`IConnectionLayerToolProps`](../type-aliases/IConnectionLayerToolProps.md), [`IConnectionLayerToolDefaults`](../interfaces/IConnectionLayerToolDefaults.md), [`IConnectionLayerToolConfig`](../type-aliases/IConnectionLayerToolConfig.md), `object`, `object`\>, [`IConnectionLayerToolConfig`](../type-aliases/IConnectionLayerToolConfig.md), [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IConnectionLayerToolConfig`](../type-aliases/IConnectionLayerToolConfig.md)\>\>
 
 #### Implementation of
 
-[IConnectionLayerTool](../interfaces/IConnectionLayerTool.md).[copy](../interfaces/IConnectionLayerTool.md#copy)
+[`IConnectionLayerTool`](../interfaces/IConnectionLayerTool.md).[`copy`](../interfaces/IConnectionLayerTool.md#copy)
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[copy](AbstractLayerTool.md#copy)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`copy`](AbstractLayerTool.md#copy)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:86](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L86)
+[tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:86](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L86)
 
-___
+***
 
-### create
+### create()
 
-▸ **create**(): `this`
+> **create**(): `this`
 
 It creates new layer with respect to configuration
 
@@ -207,21 +153,21 @@ It creates new layer with respect to configuration
 
 #### Implementation of
 
-[IConnectionLayerTool](../interfaces/IConnectionLayerTool.md).[create](../interfaces/IConnectionLayerTool.md#create)
+[`IConnectionLayerTool`](../interfaces/IConnectionLayerTool.md).[`create`](../interfaces/IConnectionLayerTool.md#create)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[create](AbstractLayerTool.md#create)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`create`](AbstractLayerTool.md#create)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/AbstractLayerTool.ts:89](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/AbstractLayerTool.ts#L89)
+[model/internal/layer/AbstractLayerTool.ts:89](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/AbstractLayerTool.ts#L89)
 
-___
+***
 
-### createDefaults
+### createDefaults()
 
-▸ **createDefaults**(): [`IConnectionLayerToolDefaults`](../interfaces/IConnectionLayerToolDefaults.md)
+> `protected` **createDefaults**(): [`IConnectionLayerToolDefaults`](../interfaces/IConnectionLayerToolDefaults.md)
 
 It creates new defaults of the tool.
 
@@ -231,17 +177,17 @@ It creates new defaults of the tool.
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[createDefaults](AbstractLayerTool.md#createdefaults)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`createDefaults`](AbstractLayerTool.md#createdefaults)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:107](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L107)
+[tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:107](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L107)
 
-___
+***
 
-### createLayerItems
+### createLayerItems()
 
-▸ **createLayerItems**(): `Layer`[]
+> `protected` **createLayerItems**(): `Layer`[]
 
 It creates layer items.
 
@@ -251,17 +197,17 @@ It creates layer items.
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[createLayerItems](AbstractLayerTool.md#createlayeritems)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`createLayerItems`](AbstractLayerTool.md#createlayeritems)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:184](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L184)
+[tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:184](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L184)
 
-___
+***
 
-### createMapForm
+### createMapForm()
 
-▸ **createMapForm**(): [`IMapForm`](../interfaces/IMapForm.md)
+> `protected` **createMapForm**(): [`IMapForm`](../interfaces/IMapForm.md)
 
 It creates new tab control.
 
@@ -269,35 +215,35 @@ It creates new tab control.
 
 [`IMapForm`](../interfaces/IMapForm.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:168](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L168)
+[tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:168](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L168)
 
-___
+***
 
-### createState
+### createState()
 
-▸ **createState**(): [`IConnectionLayerToolState`](../interfaces/IConnectionLayerToolState.md)\<[`IConnectionLayerToolProps`](../modules.md#iconnectionlayertoolprops), [`IConnectionLayerToolDefaults`](../interfaces/IConnectionLayerToolDefaults.md), [`IConnectionLayerToolConfig`](../modules.md#iconnectionlayertoolconfig), \{ `direction?`: `boolean` ; `from?`: `string` ; `geoData?`: `string` ; `to?`: `string`  }, \{ `direction`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\> ; `from`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `geoData`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IGeoData`](../interfaces/IGeoData.md)\> ; `to`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>
+> `protected` **createState**(): [`IConnectionLayerToolState`](../interfaces/IConnectionLayerToolState.md)\<[`IConnectionLayerToolProps`](../type-aliases/IConnectionLayerToolProps.md), [`IConnectionLayerToolDefaults`](../interfaces/IConnectionLayerToolDefaults.md), [`IConnectionLayerToolConfig`](../type-aliases/IConnectionLayerToolConfig.md), `object`, `object`\>
 
 It returns default tool state.
 
 #### Returns
 
-[`IConnectionLayerToolState`](../interfaces/IConnectionLayerToolState.md)\<[`IConnectionLayerToolProps`](../modules.md#iconnectionlayertoolprops), [`IConnectionLayerToolDefaults`](../interfaces/IConnectionLayerToolDefaults.md), [`IConnectionLayerToolConfig`](../modules.md#iconnectionlayertoolconfig), \{ `direction?`: `boolean` ; `from?`: `string` ; `geoData?`: `string` ; `to?`: `string`  }, \{ `direction`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\> ; `from`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `geoData`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IGeoData`](../interfaces/IGeoData.md)\> ; `to`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>
+[`IConnectionLayerToolState`](../interfaces/IConnectionLayerToolState.md)\<[`IConnectionLayerToolProps`](../type-aliases/IConnectionLayerToolProps.md), [`IConnectionLayerToolDefaults`](../interfaces/IConnectionLayerToolDefaults.md), [`IConnectionLayerToolConfig`](../type-aliases/IConnectionLayerToolConfig.md), `object`, `object`\>
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[createState](AbstractLayerTool.md#createstate)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`createState`](AbstractLayerTool.md#createstate)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:121](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L121)
+[tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:121](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L121)
 
-___
+***
 
-### deleteLayerItems
+### deleteLayerItems()
 
-▸ **deleteLayerItems**(): `void`
+> `protected` **deleteLayerItems**(): `void`
 
 It deletes layer items.
 
@@ -305,62 +251,61 @@ It deletes layer items.
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:200](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L200)
+[tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:200](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L200)
 
-___
+***
 
-### geoIdsToBucketHash
+### geoIdsToBucketHash()
 
-▸ **geoIdsToBucketHash**(`from`, `to`): `string`
+> `protected` **geoIdsToBucketHash**(`from`, `to`): `string`
 
 It returns the hash of (from, to) used in data buckets.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `from` | `string` |
-| `to` | `string` |
+• **from**: `string`
+
+• **to**: `string`
 
 #### Returns
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:215](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L215)
+[tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:215](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L215)
 
-___
+***
 
-### getAPIGetter
+### getAPIGetter()
 
-▸ **getAPIGetter**(): `undefined` \| [`IMapToolAPIGetter`](../modules.md#imaptoolapigetter)
+> **getAPIGetter**(): `undefined` \| [`IMapToolAPIGetter`](../type-aliases/IMapToolAPIGetter.md)
 
 It returns the tool API
 
 #### Returns
 
-`undefined` \| [`IMapToolAPIGetter`](../modules.md#imaptoolapigetter)
+`undefined` \| [`IMapToolAPIGetter`](../type-aliases/IMapToolAPIGetter.md)
 
 #### Implementation of
 
-[IConnectionLayerTool](../interfaces/IConnectionLayerTool.md).[getAPIGetter](../interfaces/IConnectionLayerTool.md#getapigetter)
+[`IConnectionLayerTool`](../interfaces/IConnectionLayerTool.md).[`getAPIGetter`](../interfaces/IConnectionLayerTool.md#getapigetter)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[getAPIGetter](AbstractLayerTool.md#getapigetter)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getAPIGetter`](AbstractLayerTool.md#getapigetter)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:74](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L74)
+[model/internal/tool/MapTool.ts:74](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L74)
 
-___
+***
 
-### getAnimateDirectionUtil
+### getAnimateDirectionUtil()
 
-▸ **getAnimateDirectionUtil**(): [`AnimateDirectionUtil`](AnimateDirectionUtil.md)
+> `protected` **getAnimateDirectionUtil**(): [`AnimateDirectionUtil`](AnimateDirectionUtil.md)
 
 It returns theme change adapter.
 
@@ -368,15 +313,15 @@ It returns theme change adapter.
 
 [`AnimateDirectionUtil`](AnimateDirectionUtil.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:148](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L148)
+[tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:148](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L148)
 
-___
+***
 
-### getDefaults
+### getDefaults()
 
-▸ **getDefaults**(): [`IConnectionLayerToolDefaults`](../interfaces/IConnectionLayerToolDefaults.md)
+> **getDefaults**(): [`IConnectionLayerToolDefaults`](../interfaces/IConnectionLayerToolDefaults.md)
 
 It returns default values of the state properties.
 
@@ -386,21 +331,21 @@ It returns default values of the state properties.
 
 #### Implementation of
 
-[IConnectionLayerTool](../interfaces/IConnectionLayerTool.md).[getDefaults](../interfaces/IConnectionLayerTool.md#getdefaults)
+[`IConnectionLayerTool`](../interfaces/IConnectionLayerTool.md).[`getDefaults`](../interfaces/IConnectionLayerTool.md#getdefaults)
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[getDefaults](AbstractLayerTool.md#getdefaults)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getDefaults`](AbstractLayerTool.md#getdefaults)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:100](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L100)
+[tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:100](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L100)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 Help function which returns the id of the object.
 
@@ -410,21 +355,21 @@ Help function which returns the id of the object.
 
 #### Implementation of
 
-[IConnectionLayerTool](../interfaces/IConnectionLayerTool.md).[getId](../interfaces/IConnectionLayerTool.md#getid)
+[`IConnectionLayerTool`](../interfaces/IConnectionLayerTool.md).[`getId`](../interfaces/IConnectionLayerTool.md#getid)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[getId](AbstractLayerTool.md#getid)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getId`](AbstractLayerTool.md#getid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObject.ts:93](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObject.ts#L93)
+[model/internal/object/MapObject.ts:93](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObject.ts#L93)
 
-___
+***
 
-### getLayerItems
+### getLayerItems()
 
-▸ **getLayerItems**(): `Layer`[]
+> **getLayerItems**(): `Layer`[]
 
 It returns layer items which should be rendered.
 
@@ -434,21 +379,21 @@ It returns layer items which should be rendered.
 
 #### Implementation of
 
-[IConnectionLayerTool](../interfaces/IConnectionLayerTool.md).[getLayerItems](../interfaces/IConnectionLayerTool.md#getlayeritems)
+[`IConnectionLayerTool`](../interfaces/IConnectionLayerTool.md).[`getLayerItems`](../interfaces/IConnectionLayerTool.md#getlayeritems)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[getLayerItems](AbstractLayerTool.md#getlayeritems)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getLayerItems`](AbstractLayerTool.md#getlayeritems)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/AbstractLayerTool.ts:163](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/AbstractLayerTool.ts#L163)
+[model/internal/layer/AbstractLayerTool.ts:163](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/AbstractLayerTool.ts#L163)
 
-___
+***
 
-### getMap
+### getMap()
 
-▸ **getMap**(): `undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+> **getMap**(): `undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 Help function returns map which uses this tool.
 
@@ -456,25 +401,25 @@ Do not override this function. Use the state class instead.
 
 #### Returns
 
-`undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../modules.md#imapprops), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../modules.md#imapconfig)\>, [`IMapConfig`](../modules.md#imapconfig), [`IMapInitProps`](../modules.md#imapinitprops)\<[`IMapConfig`](../modules.md#imapconfig)\>\>
+`undefined` \| [`IMap`](../interfaces/IMap.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapState`](../interfaces/IMapState.md)\<[`IMapProps`](../type-aliases/IMapProps.md), [`IMapDefaults`](../interfaces/IMapDefaults.md), [`IMapConfig`](../type-aliases/IMapConfig.md)\>, [`IMapConfig`](../type-aliases/IMapConfig.md), [`IMapInitProps`](../type-aliases/IMapInitProps.md)\<[`IMapConfig`](../type-aliases/IMapConfig.md)\>\>
 
 #### Implementation of
 
-[IConnectionLayerTool](../interfaces/IConnectionLayerTool.md).[getMap](../interfaces/IConnectionLayerTool.md#getmap)
+[`IConnectionLayerTool`](../interfaces/IConnectionLayerTool.md).[`getMap`](../interfaces/IConnectionLayerTool.md#getmap)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[getMap](AbstractLayerTool.md#getmap)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getMap`](AbstractLayerTool.md#getmap)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:112](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L112)
+[model/internal/tool/MapTool.ts:112](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L112)
 
-___
+***
 
-### getMapForm
+### getMapForm()
 
-▸ **getMapForm**(): [`IMapForm`](../interfaces/IMapForm.md)
+> **getMapForm**(): [`IMapForm`](../interfaces/IMapForm.md)
 
 It returns a sidebar tab with respect to the configuration.
 
@@ -484,41 +429,41 @@ It returns a sidebar tab with respect to the configuration.
 
 #### Implementation of
 
-[IMapFormControl](../interfaces/IMapFormControl.md).[getMapForm](../interfaces/IMapFormControl.md#getmapform)
+[`IMapFormControl`](../interfaces/IMapFormControl.md).[`getMapForm`](../interfaces/IMapFormControl.md#getmapform)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:158](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L158)
+[tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:158](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L158)
 
-___
+***
 
-### getProps
+### getProps()
 
-▸ **getProps**(): [`IConnectionLayerToolProps`](../modules.md#iconnectionlayertoolprops)
+> **getProps**(): [`IConnectionLayerToolProps`](../type-aliases/IConnectionLayerToolProps.md)
 
 It returns the props given by the programmer.
 
 #### Returns
 
-[`IConnectionLayerToolProps`](../modules.md#iconnectionlayertoolprops)
+[`IConnectionLayerToolProps`](../type-aliases/IConnectionLayerToolProps.md)
 
 #### Implementation of
 
-[IConnectionLayerTool](../interfaces/IConnectionLayerTool.md).[getProps](../interfaces/IConnectionLayerTool.md#getprops)
+[`IConnectionLayerTool`](../interfaces/IConnectionLayerTool.md).[`getProps`](../interfaces/IConnectionLayerTool.md#getprops)
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[getProps](AbstractLayerTool.md#getprops)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getProps`](AbstractLayerTool.md#getprops)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:93](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L93)
+[tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:93](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L93)
 
-___
+***
 
-### getSelectionChangeAdapter
+### getSelectionChangeAdapter()
 
-▸ **getSelectionChangeAdapter**(): [`ConnectionLayerToolSelectionChangeAdapter`](ConnectionLayerToolSelectionChangeAdapter.md)
+> `protected` **getSelectionChangeAdapter**(): [`ConnectionLayerToolSelectionChangeAdapter`](ConnectionLayerToolSelectionChangeAdapter.md)
 
 It returns selection change adapter.
 
@@ -526,39 +471,39 @@ It returns selection change adapter.
 
 [`ConnectionLayerToolSelectionChangeAdapter`](ConnectionLayerToolSelectionChangeAdapter.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:128](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L128)
+[tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:128](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L128)
 
-___
+***
 
-### getState
+### getState()
 
-▸ **getState**(): [`IConnectionLayerToolState`](../interfaces/IConnectionLayerToolState.md)\<[`IConnectionLayerToolProps`](../modules.md#iconnectionlayertoolprops), [`IConnectionLayerToolDefaults`](../interfaces/IConnectionLayerToolDefaults.md), [`IConnectionLayerToolConfig`](../modules.md#iconnectionlayertoolconfig), \{ `direction?`: `boolean` ; `from?`: `string` ; `geoData?`: `string` ; `to?`: `string`  }, \{ `direction`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\> ; `from`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `geoData`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IGeoData`](../interfaces/IGeoData.md)\> ; `to`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>
+> **getState**(): [`IConnectionLayerToolState`](../interfaces/IConnectionLayerToolState.md)\<[`IConnectionLayerToolProps`](../type-aliases/IConnectionLayerToolProps.md), [`IConnectionLayerToolDefaults`](../interfaces/IConnectionLayerToolDefaults.md), [`IConnectionLayerToolConfig`](../type-aliases/IConnectionLayerToolConfig.md), `object`, `object`\>
 
 It returns the layer tool state.
 
 #### Returns
 
-[`IConnectionLayerToolState`](../interfaces/IConnectionLayerToolState.md)\<[`IConnectionLayerToolProps`](../modules.md#iconnectionlayertoolprops), [`IConnectionLayerToolDefaults`](../interfaces/IConnectionLayerToolDefaults.md), [`IConnectionLayerToolConfig`](../modules.md#iconnectionlayertoolconfig), \{ `direction?`: `boolean` ; `from?`: `string` ; `geoData?`: `string` ; `to?`: `string`  }, \{ `direction`: [`IMapTypeDimension`](../interfaces/IMapTypeDimension.md)\<`boolean`, [`ITypeManager`](../interfaces/ITypeManager.md)\<`boolean`\>\> ; `from`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\> ; `geoData`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IGeoData`](../interfaces/IGeoData.md)\> ; `to`: [`IMapDomainDimension`](../interfaces/IMapDomainDimension.md)\<[`IMapDataDomain`](../interfaces/IMapDataDomain.md)\>  }\>
+[`IConnectionLayerToolState`](../interfaces/IConnectionLayerToolState.md)\<[`IConnectionLayerToolProps`](../type-aliases/IConnectionLayerToolProps.md), [`IConnectionLayerToolDefaults`](../interfaces/IConnectionLayerToolDefaults.md), [`IConnectionLayerToolConfig`](../type-aliases/IConnectionLayerToolConfig.md), `object`, `object`\>
 
 #### Implementation of
 
-[IConnectionLayerTool](../interfaces/IConnectionLayerTool.md).[getState](../interfaces/IConnectionLayerTool.md#getstate)
+[`IConnectionLayerTool`](../interfaces/IConnectionLayerTool.md).[`getState`](../interfaces/IConnectionLayerTool.md#getstate)
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[getState](AbstractLayerTool.md#getstate)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getState`](AbstractLayerTool.md#getstate)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:114](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L114)
+[tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:114](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L114)
 
-___
+***
 
-### getThemeChangeAdapter
+### getThemeChangeAdapter()
 
-▸ **getThemeChangeAdapter**(): [`ConnectionLayerToolThemeChangeAdapter`](ConnectionLayerToolThemeChangeAdapter.md)
+> `protected` **getThemeChangeAdapter**(): [`ConnectionLayerToolThemeChangeAdapter`](ConnectionLayerToolThemeChangeAdapter.md)
 
 It returns theme change adapter.
 
@@ -566,15 +511,15 @@ It returns theme change adapter.
 
 [`ConnectionLayerToolThemeChangeAdapter`](ConnectionLayerToolThemeChangeAdapter.md)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:138](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L138)
+[tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:138](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L138)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 Help function which returns the type of the object.
 
@@ -584,29 +529,27 @@ Help function which returns the type of the object.
 
 #### Implementation of
 
-[IConnectionLayerTool](../interfaces/IConnectionLayerTool.md).[getType](../interfaces/IConnectionLayerTool.md#gettype)
+[`IConnectionLayerTool`](../interfaces/IConnectionLayerTool.md).[`getType`](../interfaces/IConnectionLayerTool.md#gettype)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[getType](AbstractLayerTool.md#gettype)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`getType`](AbstractLayerTool.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObject.ts:86](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObject.ts#L86)
+[model/internal/object/MapObject.ts:86](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObject.ts#L86)
 
-___
+***
 
-### handleEvent
+### handleEvent()
 
-▸ **handleEvent**(`event`): `void`
+> **handleEvent**(`event`): `void`
 
 This function is called when a custom event is invoked.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `event` | [`IMapEvent`](../interfaces/IMapEvent.md)\<[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../modules.md#imapobjectprops), [`IMapObjectConfig`](../modules.md#imapobjectconfig)\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>, [`IMapObjectConfig`](../modules.md#imapobjectconfig), [`IMapObjectInitProps`](../modules.md#imapobjectinitprops)\<[`IMapObjectConfig`](../modules.md#imapobjectconfig)\>\>\> |
+• **event**: [`IMapEvent`](../interfaces/IMapEvent.md)\<[`IMapObject`](../interfaces/IMapObject.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectState`](../interfaces/IMapObjectState.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectDefaults`](../interfaces/IMapObjectDefaults.md)\<[`IMapObjectProps`](../type-aliases/IMapObjectProps.md), [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>, [`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md), [`IMapObjectInitProps`](../type-aliases/IMapObjectInitProps.md)\<[`IMapObjectConfig`](../type-aliases/IMapObjectConfig.md)\>\>\>
 
 #### Returns
 
@@ -614,17 +557,17 @@ This function is called when a custom event is invoked.
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[handleEvent](AbstractLayerTool.md#handleevent)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`handleEvent`](AbstractLayerTool.md#handleevent)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:632](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L632)
+[tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:632](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L632)
 
-___
+***
 
-### hideLayerItems
+### hideLayerItems()
 
-▸ **hideLayerItems**(): `void`
+> `protected` **hideLayerItems**(): `void`
 
 Help function which hides layer items
 
@@ -636,25 +579,23 @@ This function is meant to be private.
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[hideLayerItems](AbstractLayerTool.md#hidelayeritems)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`hideLayerItems`](AbstractLayerTool.md#hidelayeritems)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/AbstractLayerTool.ts:147](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/AbstractLayerTool.ts#L147)
+[model/internal/layer/AbstractLayerTool.ts:147](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/AbstractLayerTool.ts#L147)
 
-___
+***
 
-### initialize
+### initialize()
 
-▸ **initialize**(`initProps`): `this`
+> **initialize**(`initProps`): `this`
 
 Overrides the super method.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `initProps` | [`IMapToolInitProps`](../modules.md#imaptoolinitprops)\<[`IConnectionLayerToolConfig`](../modules.md#iconnectionlayertoolconfig)\> |
+• **initProps**: [`IMapToolInitProps`](../type-aliases/IMapToolInitProps.md)\<[`IConnectionLayerToolConfig`](../type-aliases/IConnectionLayerToolConfig.md)\>
 
 #### Returns
 
@@ -662,21 +603,21 @@ Overrides the super method.
 
 #### Implementation of
 
-[IConnectionLayerTool](../interfaces/IConnectionLayerTool.md).[initialize](../interfaces/IConnectionLayerTool.md#initialize)
+[`IConnectionLayerTool`](../interfaces/IConnectionLayerTool.md).[`initialize`](../interfaces/IConnectionLayerTool.md#initialize)
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[initialize](AbstractLayerTool.md#initialize)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`initialize`](AbstractLayerTool.md#initialize)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:177](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L177)
+[tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:177](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L177)
 
-___
+***
 
-### isEnabled
+### isEnabled()
 
-▸ **isEnabled**(): `boolean`
+> **isEnabled**(): `boolean`
 
 Help getter which returns enabled property of state.
 
@@ -688,21 +629,21 @@ Do not override this function. Use the state class instead.
 
 #### Implementation of
 
-[IConnectionLayerTool](../interfaces/IConnectionLayerTool.md).[isEnabled](../interfaces/IConnectionLayerTool.md#isenabled)
+[`IConnectionLayerTool`](../interfaces/IConnectionLayerTool.md).[`isEnabled`](../interfaces/IConnectionLayerTool.md#isenabled)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[isEnabled](AbstractLayerTool.md#isenabled)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`isEnabled`](AbstractLayerTool.md#isenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:130](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L130)
+[model/internal/tool/MapTool.ts:130](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L130)
 
-___
+***
 
-### isSingleton
+### isSingleton()
 
-▸ **isSingleton**(): `boolean`
+> **isSingleton**(): `boolean`
 
 Help getter which returns a logtical value whether the tool type is singleton.
 
@@ -712,30 +653,29 @@ Help getter which returns a logtical value whether the tool type is singleton.
 
 #### Implementation of
 
-[IConnectionLayerTool](../interfaces/IConnectionLayerTool.md).[isSingleton](../interfaces/IConnectionLayerTool.md#issingleton)
+[`IConnectionLayerTool`](../interfaces/IConnectionLayerTool.md).[`isSingleton`](../interfaces/IConnectionLayerTool.md#issingleton)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[isSingleton](AbstractLayerTool.md#issingleton)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`isSingleton`](AbstractLayerTool.md#issingleton)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:81](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L81)
+[model/internal/tool/MapTool.ts:81](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L81)
 
-___
+***
 
-### render
+### render()
 
-▸ **render**(`type`, `animateOptions?`): `void`
+> **render**(`type`, `animateOptions`?): `void`
 
 It reloads data and redraw the layer.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `type` | `number` |
-| `animateOptions?` | [`IDataChangeAnimateOptions`](../modules.md#idatachangeanimateoptions) |
+• **type**: `number`
+
+• **animateOptions?**: [`IDataChangeAnimateOptions`](../type-aliases/IDataChangeAnimateOptions.md)
 
 #### Returns
 
@@ -743,52 +683,48 @@ It reloads data and redraw the layer.
 
 #### Implementation of
 
-[IConnectionLayerTool](../interfaces/IConnectionLayerTool.md).[render](../interfaces/IConnectionLayerTool.md#render)
+[`IConnectionLayerTool`](../interfaces/IConnectionLayerTool.md).[`render`](../interfaces/IConnectionLayerTool.md#render)
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[render](AbstractLayerTool.md#render)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`render`](AbstractLayerTool.md#render)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:578](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L578)
+[tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:578](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L578)
 
-___
+***
 
-### renderConnections
+### renderConnections()
 
-▸ **renderConnections**(`animateOptions?`): `void`
+> `protected` **renderConnections**(`animateOptions`): `void`
 
 This function is called when layer items are rendered.
 It uses the D3 force layout simulation to arrange the connections.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `animateOptions` | [`IDataChangeAnimateOptions`](../modules.md#idatachangeanimateoptions) |
+• **animateOptions**: [`IDataChangeAnimateOptions`](../type-aliases/IDataChangeAnimateOptions.md)= `undefined`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:392](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L392)
+[tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:392](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L392)
 
-___
+***
 
-### setEnabled
+### setEnabled()
 
-▸ **setEnabled**(`enabled`): `void`
+> **setEnabled**(`enabled`): `void`
 
 It changes layer state to enabled/disabled.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `enabled` | `boolean` |
+• **enabled**: `boolean`
 
 #### Returns
 
@@ -796,29 +732,27 @@ It changes layer state to enabled/disabled.
 
 #### Implementation of
 
-[IConnectionLayerTool](../interfaces/IConnectionLayerTool.md).[setEnabled](../interfaces/IConnectionLayerTool.md#setenabled)
+[`IConnectionLayerTool`](../interfaces/IConnectionLayerTool.md).[`setEnabled`](../interfaces/IConnectionLayerTool.md#setenabled)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[setEnabled](AbstractLayerTool.md#setenabled)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`setEnabled`](AbstractLayerTool.md#setenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/AbstractLayerTool.ts:102](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/AbstractLayerTool.ts#L102)
+[model/internal/layer/AbstractLayerTool.ts:102](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/AbstractLayerTool.ts#L102)
 
-___
+***
 
-### setProps
+### setProps()
 
-▸ **setProps**(`props`): `void`
+> `protected` **setProps**(`props`): `void`
 
 It updates the props.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `props` | [`IMapObjectProps`](../modules.md#imapobjectprops) |
+• **props**: [`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
 #### Returns
 
@@ -826,17 +760,17 @@ It updates the props.
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[setProps](AbstractLayerTool.md#setprops)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`setProps`](AbstractLayerTool.md#setprops)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObject.ts:38](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObject.ts#L38)
+[model/internal/object/MapObject.ts:38](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObject.ts#L38)
 
-___
+***
 
-### showLayerItems
+### showLayerItems()
 
-▸ **showLayerItems**(): `void`
+> `protected` **showLayerItems**(): `void`
 
 Help function which shows layer items.
 
@@ -848,17 +782,17 @@ This function is meant to be private.
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[showLayerItems](AbstractLayerTool.md#showlayeritems)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`showLayerItems`](AbstractLayerTool.md#showlayeritems)
 
-#### Defined in
+#### Source
 
-[src/model/internal/layer/AbstractLayerTool.ts:126](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/layer/AbstractLayerTool.ts#L126)
+[model/internal/layer/AbstractLayerTool.ts:126](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/layer/AbstractLayerTool.ts#L126)
 
-___
+***
 
-### switchEnabled
+### switchEnabled()
 
-▸ **switchEnabled**(): `void`
+> **switchEnabled**(): `void`
 
 Help function which switches enabled state (enabled/disabled).
 
@@ -870,52 +804,55 @@ Do not override this function. Use setEnabled instead.
 
 #### Implementation of
 
-[IConnectionLayerTool](../interfaces/IConnectionLayerTool.md).[switchEnabled](../interfaces/IConnectionLayerTool.md#switchenabled)
+[`IConnectionLayerTool`](../interfaces/IConnectionLayerTool.md).[`switchEnabled`](../interfaces/IConnectionLayerTool.md#switchenabled)
 
 #### Inherited from
 
-[AbstractLayerTool](AbstractLayerTool.md).[switchEnabled](AbstractLayerTool.md#switchenabled)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`switchEnabled`](AbstractLayerTool.md#switchenabled)
 
-#### Defined in
+#### Source
 
-[src/model/internal/tool/MapTool.ts:158](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/tool/MapTool.ts#L158)
+[model/internal/tool/MapTool.ts:158](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/tool/MapTool.ts#L158)
 
-___
+***
 
-### updateData
+### updateData()
 
-▸ **updateData**(): `Object`
+> `protected` **updateData**(): `object`
 
 It prepares data for connections.
 
 #### Returns
 
-`Object`
+`object`
 
-| Name | Type |
-| :------ | :------ |
-| `connections` | `Map`\<`string`, [`IMapAggregationBucket`](../interfaces/IMapAggregationBucket.md)\> |
-| `nodes` | `Set`\<`string`\> |
+##### connections
 
-#### Defined in
+> **connections**: `Map`\<`string`, [`IMapAggregationBucket`](../interfaces/IMapAggregationBucket.md)\>
 
-[src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:231](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L231)
+##### nodes
 
-___
+> **nodes**: `Set`\<`string`\>
 
-### updateDimension
+#### Source
 
-▸ **updateDimension**(`dimension`, `value`, `renderType`): `void`
+[tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:231](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L231)
+
+***
+
+### updateDimension()
+
+> **updateDimension**(`dimension`, `value`, `renderType`): `void`
 
 It updates the dimension.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dimension` | [`IMapDimension`](../interfaces/IMapDimension.md)\<`unknown`\> |
-| `value` | `string` |
-| `renderType` | `undefined` \| `number` |
+• **dimension**: [`IMapDimension`](../interfaces/IMapDimension.md)\<`unknown`\>
+
+• **value**: `string`
+
+• **renderType**: `undefined` \| `number`
 
 #### Returns
 
@@ -923,21 +860,21 @@ It updates the dimension.
 
 #### Implementation of
 
-[IConnectionLayerTool](../interfaces/IConnectionLayerTool.md).[updateDimension](../interfaces/IConnectionLayerTool.md#updatedimension)
+[`IConnectionLayerTool`](../interfaces/IConnectionLayerTool.md).[`updateDimension`](../interfaces/IConnectionLayerTool.md#updatedimension)
 
 #### Overrides
 
-[AbstractLayerTool](AbstractLayerTool.md).[updateDimension](AbstractLayerTool.md#updatedimension)
+[`AbstractLayerTool`](AbstractLayerTool.md).[`updateDimension`](AbstractLayerTool.md#updatedimension)
 
-#### Defined in
+#### Source
 
-[src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:607](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L607)
+[tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:607](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L607)
 
-___
+***
 
-### updateStyle
+### updateStyle()
 
-▸ **updateStyle**(): `void`
+> `protected` **updateStyle**(): `void`
 
 Help method which updates styles
 
@@ -945,6 +882,6 @@ Help method which updates styles
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:566](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L566)
+[tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts:566](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/layers/connection/model/internal/tool/ConnectionLayerTool.ts#L566)

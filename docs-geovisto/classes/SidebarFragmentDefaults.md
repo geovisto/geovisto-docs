@@ -1,48 +1,30 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / SidebarFragmentDefaults
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / SidebarFragmentDefaults
 
 # Class: SidebarFragmentDefaults
 
 This class provide functions which return the default state values.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`MapObjectDefaults`](MapObjectDefaults.md)
-
-  ↳ **`SidebarFragmentDefaults`**
 
 ## Implements
 
 - [`ISidebarFragmentDefaults`](../interfaces/ISidebarFragmentDefaults.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](SidebarFragmentDefaults.md#constructor)
-
-### Properties
-
-- [idString](SidebarFragmentDefaults.md#idstring)
-- [id](SidebarFragmentDefaults.md#id)
-
-### Methods
-
-- [generateId](SidebarFragmentDefaults.md#generateid)
-- [getConfig](SidebarFragmentDefaults.md#getconfig)
-- [getId](SidebarFragmentDefaults.md#getid)
-- [getProps](SidebarFragmentDefaults.md#getprops)
-- [getType](SidebarFragmentDefaults.md#gettype)
-- [isEnabled](SidebarFragmentDefaults.md#isenabled)
-
 ## Constructors
 
-### constructor
+### new SidebarFragmentDefaults()
 
-• **new SidebarFragmentDefaults**(): [`SidebarFragmentDefaults`](SidebarFragmentDefaults.md)
+> **new SidebarFragmentDefaults**(): [`SidebarFragmentDefaults`](SidebarFragmentDefaults.md)
 
 #### Returns
 
@@ -50,41 +32,41 @@ Jiri Hynek
 
 #### Inherited from
 
-[MapObjectDefaults](MapObjectDefaults.md).[constructor](MapObjectDefaults.md#constructor)
+[`MapObjectDefaults`](MapObjectDefaults.md).[`constructor`](MapObjectDefaults.md#constructors)
 
 ## Properties
 
-### idString
+### idString?
 
-• `Protected` `Optional` **idString**: `string`
+> `protected` `optional` **idString**: `string`
 
 #### Inherited from
 
-[MapObjectDefaults](MapObjectDefaults.md).[idString](MapObjectDefaults.md#idstring)
+[`MapObjectDefaults`](MapObjectDefaults.md).[`idString`](MapObjectDefaults.md#idstring)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:13](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L13)
+[model/internal/object/MapObjectDefaults.ts:13](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L13)
 
-___
+***
 
 ### id
 
-▪ `Static` `Protected` **id**: `number`
+> `static` `protected` **id**: `number`
 
 #### Inherited from
 
-[MapObjectDefaults](MapObjectDefaults.md).[id](MapObjectDefaults.md#id)
+[`MapObjectDefaults`](MapObjectDefaults.md).[`id`](MapObjectDefaults.md#id)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:12](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L12)
+[model/internal/object/MapObjectDefaults.ts:12](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L12)
 
 ## Methods
 
-### generateId
+### generateId()
 
-▸ **generateId**(): `string`
+> `protected` **generateId**(): `string`
 
 It returns identifier which is used when no identifier is specified.
 
@@ -94,41 +76,41 @@ It returns identifier which is used when no identifier is specified.
 
 #### Inherited from
 
-[MapObjectDefaults](MapObjectDefaults.md).[generateId](MapObjectDefaults.md#generateid)
+[`MapObjectDefaults`](MapObjectDefaults.md).[`generateId`](MapObjectDefaults.md#generateid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:54](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L54)
+[model/internal/object/MapObjectDefaults.ts:54](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L54)
 
-___
+***
 
-### getConfig
+### getConfig()
 
-▸ **getConfig**(): [`ISidebarFragmentConfig`](../modules.md#isidebarfragmentconfig)
+> **getConfig**(): [`ISidebarFragmentConfig`](../type-aliases/ISidebarFragmentConfig.md)
 
 It returns the default config.
 
 #### Returns
 
-[`ISidebarFragmentConfig`](../modules.md#isidebarfragmentconfig)
+[`ISidebarFragmentConfig`](../type-aliases/ISidebarFragmentConfig.md)
 
 #### Implementation of
 
-[ISidebarFragmentDefaults](../interfaces/ISidebarFragmentDefaults.md).[getConfig](../interfaces/ISidebarFragmentDefaults.md#getconfig)
+[`ISidebarFragmentDefaults`](../interfaces/ISidebarFragmentDefaults.md).[`getConfig`](../interfaces/ISidebarFragmentDefaults.md#getconfig)
 
 #### Overrides
 
-[MapObjectDefaults](MapObjectDefaults.md).[getConfig](MapObjectDefaults.md#getconfig)
+[`MapObjectDefaults`](MapObjectDefaults.md).[`getConfig`](MapObjectDefaults.md#getconfig)
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/fragment/SidebarFragmentDefaults.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/fragment/SidebarFragmentDefaults.ts#L18)
+[tools/sidebar/model/internal/fragment/SidebarFragmentDefaults.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/fragment/SidebarFragmentDefaults.ts#L18)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 It returns identifier which is used when no identifier is specified.
 
@@ -138,45 +120,45 @@ It returns identifier which is used when no identifier is specified.
 
 #### Implementation of
 
-[ISidebarFragmentDefaults](../interfaces/ISidebarFragmentDefaults.md).[getId](../interfaces/ISidebarFragmentDefaults.md#getid)
+[`ISidebarFragmentDefaults`](../interfaces/ISidebarFragmentDefaults.md).[`getId`](../interfaces/ISidebarFragmentDefaults.md#getid)
 
 #### Inherited from
 
-[MapObjectDefaults](MapObjectDefaults.md).[getId](MapObjectDefaults.md#getid)
+[`MapObjectDefaults`](MapObjectDefaults.md).[`getId`](MapObjectDefaults.md#getid)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:44](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L44)
+[model/internal/object/MapObjectDefaults.ts:44](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L44)
 
-___
+***
 
-### getProps
+### getProps()
 
-▸ **getProps**(): [`IMapObjectProps`](../modules.md#imapobjectprops)
+> **getProps**(): [`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
 It returns default props if no props are given.
 
 #### Returns
 
-[`IMapObjectProps`](../modules.md#imapobjectprops)
+[`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
 #### Implementation of
 
-[ISidebarFragmentDefaults](../interfaces/ISidebarFragmentDefaults.md).[getProps](../interfaces/ISidebarFragmentDefaults.md#getprops)
+[`ISidebarFragmentDefaults`](../interfaces/ISidebarFragmentDefaults.md).[`getProps`](../interfaces/ISidebarFragmentDefaults.md#getprops)
 
 #### Inherited from
 
-[MapObjectDefaults](MapObjectDefaults.md).[getProps](MapObjectDefaults.md#getprops)
+[`MapObjectDefaults`](MapObjectDefaults.md).[`getProps`](MapObjectDefaults.md#getprops)
 
-#### Defined in
+#### Source
 
-[src/model/internal/object/MapObjectDefaults.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/object/MapObjectDefaults.ts#L18)
+[model/internal/object/MapObjectDefaults.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/object/MapObjectDefaults.ts#L18)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 It returns a unique type string of the sidebar fragment.
 
@@ -186,21 +168,21 @@ It returns a unique type string of the sidebar fragment.
 
 #### Implementation of
 
-[ISidebarFragmentDefaults](../interfaces/ISidebarFragmentDefaults.md).[getType](../interfaces/ISidebarFragmentDefaults.md#gettype)
+[`ISidebarFragmentDefaults`](../interfaces/ISidebarFragmentDefaults.md).[`getType`](../interfaces/ISidebarFragmentDefaults.md#gettype)
 
 #### Overrides
 
-[MapObjectDefaults](MapObjectDefaults.md).[getType](MapObjectDefaults.md#gettype)
+[`MapObjectDefaults`](MapObjectDefaults.md).[`getType`](MapObjectDefaults.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/fragment/SidebarFragmentDefaults.ts:28](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/fragment/SidebarFragmentDefaults.ts#L28)
+[tools/sidebar/model/internal/fragment/SidebarFragmentDefaults.ts:28](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/fragment/SidebarFragmentDefaults.ts#L28)
 
-___
+***
 
-### isEnabled
+### isEnabled()
 
-▸ **isEnabled**(): `boolean`
+> **isEnabled**(): `boolean`
 
 It returns a logical value whether the sidebar fragment is enabled.
 
@@ -210,8 +192,8 @@ It returns a logical value whether the sidebar fragment is enabled.
 
 #### Implementation of
 
-[ISidebarFragmentDefaults](../interfaces/ISidebarFragmentDefaults.md).[isEnabled](../interfaces/ISidebarFragmentDefaults.md#isenabled)
+[`ISidebarFragmentDefaults`](../interfaces/ISidebarFragmentDefaults.md).[`isEnabled`](../interfaces/ISidebarFragmentDefaults.md#isenabled)
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/internal/fragment/SidebarFragmentDefaults.ts:35](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/internal/fragment/SidebarFragmentDefaults.ts#L35)
+[tools/sidebar/model/internal/fragment/SidebarFragmentDefaults.ts:35](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/internal/fragment/SidebarFragmentDefaults.ts#L35)

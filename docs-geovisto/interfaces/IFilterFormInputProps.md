@@ -1,74 +1,71 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IFilterFormInputProps
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IFilterFormInputProps
 
 # Interface: IFilterFormInputProps
 
 This interface declares specification of form input props model.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`IMapFormInputProps`](IMapFormInputProps.md)
-
-  ↳ **`IFilterFormInputProps`**
-
-## Table of contents
-
-### Properties
-
-- [data](IFilterFormInputProps.md#data)
-- [ops](IFilterFormInputProps.md#ops)
-- [vals](IFilterFormInputProps.md#vals)
 
 ## Properties
 
 ### data
 
-• **data**: `Object`
+> **data**: `object`
 
-#### Type declaration
+#### onChangeAction
 
-| Name | Type |
-| :------ | :------ |
-| `onChangeAction` | ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `unknown` |
-| `options` | `string`[] |
+> **onChangeAction**: `null` \| (`this`, `ev`) => `unknown`
 
-#### Defined in
+#### options
 
-[src/model/types/inputs/filter/IFilterFormInputProps.ts:14](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/inputs/filter/IFilterFormInputProps.ts#L14)
+> **options**: `string`[]
 
-___
+#### Source
+
+[model/types/inputs/filter/IFilterFormInputProps.ts:14](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/inputs/filter/IFilterFormInputProps.ts#L14)
+
+***
 
 ### ops
 
-• **ops**: `Object`
+> **ops**: `object`
 
-#### Type declaration
+#### onChangeAction
 
-| Name | Type |
-| :------ | :------ |
-| `onChangeAction` | ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `unknown` |
-| `options` | `string`[] |
+> **onChangeAction**: `null` \| (`this`, `ev`) => `unknown`
 
-#### Defined in
+#### options
 
-[src/model/types/inputs/filter/IFilterFormInputProps.ts:9](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/inputs/filter/IFilterFormInputProps.ts#L9)
+> **options**: `string`[]
 
-___
+#### Source
+
+[model/types/inputs/filter/IFilterFormInputProps.ts:9](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/inputs/filter/IFilterFormInputProps.ts#L9)
+
+***
 
 ### vals
 
-• **vals**: `Object`
+> **vals**: `object`
 
-#### Type declaration
+#### onChangeAction
 
-| Name | Type |
-| :------ | :------ |
-| `onChangeAction` | ``null`` \| (`this`: `GlobalEventHandlers`, `ev`: `Event`) => `unknown` |
-| `options` | `string`[] |
+> **onChangeAction**: `null` \| (`this`, `ev`) => `unknown`
 
-#### Defined in
+#### options
 
-[src/model/types/inputs/filter/IFilterFormInputProps.ts:19](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/inputs/filter/IFilterFormInputProps.ts#L19)
+> **options**: `string`[]
+
+#### Source
+
+[model/types/inputs/filter/IFilterFormInputProps.ts:19](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/inputs/filter/IFilterFormInputProps.ts#L19)

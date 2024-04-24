@@ -1,40 +1,30 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IInfoData
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IInfoData
 
 # Interface: IInfoData
 
 The interface declares functions for management of info data.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-**`Author`**
+## Author
 
 Tomas Koscielniak
 
-## Hierarchy
+## Extends
 
 - [`IMapDomain`](IMapDomain.md)
 
-  ↳ **`IInfoData`**
-
-## Implemented by
-
-- [`MarkDownData`](../classes/MarkDownData.md)
-
-## Table of contents
-
-### Methods
-
-- [getInfoMD](IInfoData.md#getinfomd)
-- [getName](IInfoData.md#getname)
-- [getOriginalInfoData](IInfoData.md#getoriginalinfodata)
-
 ## Methods
 
-### getInfoMD
+### getInfoMD()
 
-▸ **getInfoMD**(): `string`
+> **getInfoMD**(): `string`
 
 It returns the original representation of data domain.
 
@@ -42,15 +32,15 @@ It returns the original representation of data domain.
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/tools/info/model/types/infodata/IInfoData.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/info/model/types/infodata/IInfoData.ts#L23)
+[tools/info/model/types/infodata/IInfoData.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/info/model/types/infodata/IInfoData.ts#L23)
 
-___
+***
 
-### getName
+### getName()
 
-▸ **getName**(): `string`
+> **getName**(): `string`
 
 It returns the name of the map domain.
 
@@ -60,17 +50,17 @@ It returns the name of the map domain.
 
 #### Inherited from
 
-[IMapDomain](IMapDomain.md).[getName](IMapDomain.md#getname)
+[`IMapDomain`](IMapDomain.md).[`getName`](IMapDomain.md#getname)
 
-#### Defined in
+#### Source
 
-[src/model/types/domain/IMapDomain.ts:11](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/domain/IMapDomain.ts#L11)
+[model/types/domain/IMapDomain.ts:11](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/domain/IMapDomain.ts#L11)
 
-___
+***
 
-### getOriginalInfoData
+### getOriginalInfoData()
 
-▸ **getOriginalInfoData**(): `unknown`
+> **getOriginalInfoData**(): `unknown`
 
 It returns the original source of info data.
 
@@ -78,6 +68,6 @@ It returns the original source of info data.
 
 `unknown`
 
-#### Defined in
+#### Source
 
-[src/tools/info/model/types/infodata/IInfoData.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/info/model/types/infodata/IInfoData.ts#L18)
+[tools/info/model/types/infodata/IInfoData.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/info/model/types/infodata/IInfoData.ts#L18)

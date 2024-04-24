@@ -1,44 +1,32 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IIntegerRangeManager
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IIntegerRangeManager
 
 # Interface: IIntegerRangeManager
 
 This interface declares functions for the integer range constraint.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`ITypeManager`](ITypeManager.md)\<`number`\>
 
-  ↳ **`IIntegerRangeManager`**
-
-## Implemented by
-
-- [`IntegerRangeManager`](../classes/IntegerRangeManager.md)
-
-## Table of contents
-
-### Methods
-
-- [deserialize](IIntegerRangeManager.md#deserialize)
-- [getMaxValue](IIntegerRangeManager.md#getmaxvalue)
-- [getMinValue](IIntegerRangeManager.md#getminvalue)
-
 ## Methods
 
-### deserialize
+### deserialize()
 
-▸ **deserialize**(`value`): `number`
+> **deserialize**(`value`): `number`
 
 It deserializes the string representation of a given value.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | `string` |
+• **value**: `string`
 
 #### Returns
 
@@ -46,17 +34,17 @@ It deserializes the string representation of a given value.
 
 #### Inherited from
 
-[ITypeManager](ITypeManager.md).[deserialize](ITypeManager.md#deserialize)
+[`ITypeManager`](ITypeManager.md).[`deserialize`](ITypeManager.md#deserialize)
 
-#### Defined in
+#### Source
 
-[src/model/types/type/ITypeManager.ts:13](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/type/ITypeManager.ts#L13)
+[model/types/type/ITypeManager.ts:13](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/type/ITypeManager.ts#L13)
 
-___
+***
 
-### getMaxValue
+### getMaxValue()
 
-▸ **getMaxValue**(): `number`
+> **getMaxValue**(): `number`
 
 It returns the max value.
 
@@ -64,15 +52,15 @@ It returns the max value.
 
 `number`
 
-#### Defined in
+#### Source
 
-[src/model/types/type/IIntegerRangeManager.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/type/IIntegerRangeManager.ts#L18)
+[model/types/type/IIntegerRangeManager.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/type/IIntegerRangeManager.ts#L18)
 
-___
+***
 
-### getMinValue
+### getMinValue()
 
-▸ **getMinValue**(): `number`
+> **getMinValue**(): `number`
 
 It returns the min value.
 
@@ -80,6 +68,6 @@ It returns the min value.
 
 `number`
 
-#### Defined in
+#### Source
 
-[src/model/types/type/IIntegerRangeManager.ts:13](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/type/IIntegerRangeManager.ts#L13)
+[model/types/type/IIntegerRangeManager.ts:13](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/type/IIntegerRangeManager.ts#L13)

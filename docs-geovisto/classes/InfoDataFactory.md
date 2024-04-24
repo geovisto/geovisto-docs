@@ -1,14 +1,18 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / InfoDataFactory
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / InfoDataFactory
 
 # Class: InfoDataFactory
 
 This class implements IInfoDataFactory
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-**`Author`**
+## Author
 
 Tomas Koscielniak
 
@@ -16,21 +20,11 @@ Tomas Koscielniak
 
 - [`IInfoDataFactory`](../interfaces/IInfoDataFactory.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](InfoDataFactory.md#constructor)
-
-### Methods
-
-- [markdown](InfoDataFactory.md#markdown)
-
 ## Constructors
 
-### constructor
+### new InfoDataFactory()
 
-• **new InfoDataFactory**(): [`InfoDataFactory`](InfoDataFactory.md)
+> **new InfoDataFactory**(): [`InfoDataFactory`](InfoDataFactory.md)
 
 #### Returns
 
@@ -38,18 +32,17 @@ Tomas Koscielniak
 
 ## Methods
 
-### markdown
+### markdown()
 
-▸ **markdown**(`name`, `data`): [`IInfoData`](../interfaces/IInfoData.md)
+> **markdown**(`name`, `data`): [`IInfoData`](../interfaces/IInfoData.md)
 
 It creates the Markdown info data object.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
-| `data` | `string` |
+• **name**: `string`
+
+• **data**: `string`
 
 #### Returns
 
@@ -57,8 +50,8 @@ It creates the Markdown info data object.
 
 #### Implementation of
 
-[IInfoDataFactory](../interfaces/IInfoDataFactory.md).[markdown](../interfaces/IInfoDataFactory.md#markdown)
+[`IInfoDataFactory`](../interfaces/IInfoDataFactory.md).[`markdown`](../interfaces/IInfoDataFactory.md#markdown)
 
-#### Defined in
+#### Source
 
-[src/tools/info/model/internal/infodata/InfoDataFactory.ts:16](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/info/model/internal/infodata/InfoDataFactory.ts#L16)
+[tools/info/model/internal/infodata/InfoDataFactory.ts:16](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/info/model/internal/infodata/InfoDataFactory.ts#L16)

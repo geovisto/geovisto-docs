@@ -1,4 +1,6 @@
-geovisto-map / [Exports](modules.md)
+**geovisto-map** • Readme \| [API](globals.md)
+
+***
 
 # Geovisto
 

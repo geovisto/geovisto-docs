@@ -1,46 +1,39 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IInfoDataFactory
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IInfoDataFactory
 
 # Interface: IInfoDataFactory
 
 This interface declares a factory for info data objects.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-**`Author`**
+## Author
 
 Tomas Koscielniak
 
-## Implemented by
-
-- [`InfoDataFactory`](../classes/InfoDataFactory.md)
-
-## Table of contents
-
-### Methods
-
-- [markdown](IInfoDataFactory.md#markdown)
-
 ## Methods
 
-### markdown
+### markdown()
 
-▸ **markdown**(`name`, `data`): [`IInfoData`](IInfoData.md)
+> **markdown**(`name`, `data`): [`IInfoData`](IInfoData.md)
 
 It creates the Markdown info data object.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
-| `data` | `string` |
+• **name**: `string`
+
+• **data**: `string`
 
 #### Returns
 
 [`IInfoData`](IInfoData.md)
 
-#### Defined in
+#### Source
 
-[src/tools/info/model/types/infodata/IInfoDataFactory.ts:14](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/info/model/types/infodata/IInfoDataFactory.ts#L14)
+[tools/info/model/types/infodata/IInfoDataFactory.ts:14](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/info/model/types/infodata/IInfoDataFactory.ts#L14)

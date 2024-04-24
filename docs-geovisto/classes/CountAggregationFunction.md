@@ -1,41 +1,30 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / CountAggregationFunction
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / CountAggregationFunction
 
 # Class: CountAggregationFunction
 
 This class provides the sum aggregation function.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`MapDomain`](MapDomain.md)
-
-  ↳ **`CountAggregationFunction`**
 
 ## Implements
 
 - [`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](CountAggregationFunction.md#constructor)
-
-### Methods
-
-- [getAggregationBucket](CountAggregationFunction.md#getaggregationbucket)
-- [getName](CountAggregationFunction.md#getname)
-- [toString](CountAggregationFunction.md#tostring)
-- [TYPE](CountAggregationFunction.md#type)
-
 ## Constructors
 
-### constructor
+### new CountAggregationFunction()
 
-• **new CountAggregationFunction**(): [`CountAggregationFunction`](CountAggregationFunction.md)
+> **new CountAggregationFunction**(): [`CountAggregationFunction`](CountAggregationFunction.md)
 
 It initializes the function.
 
@@ -45,17 +34,17 @@ It initializes the function.
 
 #### Overrides
 
-[MapDomain](MapDomain.md).[constructor](MapDomain.md#constructor)
+[`MapDomain`](MapDomain.md).[`constructor`](MapDomain.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/model/internal/aggregation/basic/CountAggregationFunction.ts:15](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/aggregation/basic/CountAggregationFunction.ts#L15)
+[model/internal/aggregation/basic/CountAggregationFunction.ts:15](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/aggregation/basic/CountAggregationFunction.ts#L15)
 
 ## Methods
 
-### getAggregationBucket
+### getAggregationBucket()
 
-▸ **getAggregationBucket**(): [`IMapAggregationBucket`](../interfaces/IMapAggregationBucket.md)
+> **getAggregationBucket**(): [`IMapAggregationBucket`](../interfaces/IMapAggregationBucket.md)
 
 It returns a aggregation bucket for aggregation of multiple values.
 
@@ -65,17 +54,17 @@ It returns a aggregation bucket for aggregation of multiple values.
 
 #### Implementation of
 
-[IMapAggregationFunction](../interfaces/IMapAggregationFunction.md).[getAggregationBucket](../interfaces/IMapAggregationFunction.md#getaggregationbucket)
+[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md).[`getAggregationBucket`](../interfaces/IMapAggregationFunction.md#getaggregationbucket)
 
-#### Defined in
+#### Source
 
-[src/model/internal/aggregation/basic/CountAggregationFunction.ts:29](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/aggregation/basic/CountAggregationFunction.ts#L29)
+[model/internal/aggregation/basic/CountAggregationFunction.ts:29](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/aggregation/basic/CountAggregationFunction.ts#L29)
 
-___
+***
 
-### getName
+### getName()
 
-▸ **getName**(): `string`
+> **getName**(): `string`
 
 It returns the name of the map domain.
 
@@ -85,21 +74,21 @@ It returns the name of the map domain.
 
 #### Implementation of
 
-[IMapAggregationFunction](../interfaces/IMapAggregationFunction.md).[getName](../interfaces/IMapAggregationFunction.md#getname)
+[`IMapAggregationFunction`](../interfaces/IMapAggregationFunction.md).[`getName`](../interfaces/IMapAggregationFunction.md#getname)
 
 #### Inherited from
 
-[MapDomain](MapDomain.md).[getName](MapDomain.md#getname)
+[`MapDomain`](MapDomain.md).[`getName`](MapDomain.md#getname)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomain.ts:21](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomain.ts#L21)
+[model/internal/domain/generic/MapDomain.ts:21](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomain.ts#L21)
 
-___
+***
 
-### toString
+### toString()
 
-▸ **toString**(): `string`
+> **toString**(): `string`
 
 The string representation is equal to the name of the map domain.
 
@@ -109,17 +98,17 @@ The string representation is equal to the name of the map domain.
 
 #### Inherited from
 
-[MapDomain](MapDomain.md).[toString](MapDomain.md#tostring)
+[`MapDomain`](MapDomain.md).[`toString`](MapDomain.md#tostring)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/abstract/AbstractMapDomain.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/abstract/AbstractMapDomain.ts#L18)
+[model/internal/domain/abstract/AbstractMapDomain.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/abstract/AbstractMapDomain.ts#L18)
 
-___
+***
 
-### TYPE
+### TYPE()
 
-▸ **TYPE**(): `string`
+> `static` **TYPE**(): `string`
 
 Type of the function.
 
@@ -127,6 +116,6 @@ Type of the function.
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/model/internal/aggregation/basic/CountAggregationFunction.ts:22](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/aggregation/basic/CountAggregationFunction.ts#L22)
+[model/internal/aggregation/basic/CountAggregationFunction.ts:22](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/aggregation/basic/CountAggregationFunction.ts#L22)

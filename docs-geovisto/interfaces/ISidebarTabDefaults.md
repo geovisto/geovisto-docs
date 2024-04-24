@@ -1,61 +1,46 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / ISidebarTabDefaults
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / ISidebarTabDefaults
 
 # Interface: ISidebarTabDefaults
 
 This interface declares functions which return the default state values.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`IMapObjectDefaults`](IMapObjectDefaults.md)
 
-  ↳ **`ISidebarTabDefaults`**
-
-## Implemented by
-
-- [`SidebarTabDefaults`](../classes/SidebarTabDefaults.md)
-
-## Table of contents
-
-### Methods
-
-- [getConfig](ISidebarTabDefaults.md#getconfig)
-- [getIcon](ISidebarTabDefaults.md#geticon)
-- [getId](ISidebarTabDefaults.md#getid)
-- [getName](ISidebarTabDefaults.md#getname)
-- [getProps](ISidebarTabDefaults.md#getprops)
-- [getType](ISidebarTabDefaults.md#gettype)
-- [hasCheckButton](ISidebarTabDefaults.md#hascheckbutton)
-- [isEnabled](ISidebarTabDefaults.md#isenabled)
-
 ## Methods
 
-### getConfig
+### getConfig()
 
-▸ **getConfig**(): [`ISidebarTabConfig`](../modules.md#isidebartabconfig)
+> **getConfig**(): [`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md)
 
 It returns the default config.
 
 #### Returns
 
-[`ISidebarTabConfig`](../modules.md#isidebartabconfig)
+[`ISidebarTabConfig`](../type-aliases/ISidebarTabConfig.md)
 
 #### Overrides
 
-[IMapObjectDefaults](IMapObjectDefaults.md).[getConfig](IMapObjectDefaults.md#getconfig)
+[`IMapObjectDefaults`](IMapObjectDefaults.md).[`getConfig`](IMapObjectDefaults.md#getconfig)
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/types/tab/ISidebarTabDefaults.ts:18](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/types/tab/ISidebarTabDefaults.ts#L18)
+[tools/sidebar/model/types/tab/ISidebarTabDefaults.ts:18](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/types/tab/ISidebarTabDefaults.ts#L18)
 
-___
+***
 
-### getIcon
+### getIcon()
 
-▸ **getIcon**(): `string`
+> **getIcon**(): `string`
 
 It returns the icon of the sidebar tab.
 
@@ -63,15 +48,15 @@ It returns the icon of the sidebar tab.
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/types/tab/ISidebarTabDefaults.ts:33](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/types/tab/ISidebarTabDefaults.ts#L33)
+[tools/sidebar/model/types/tab/ISidebarTabDefaults.ts:33](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/types/tab/ISidebarTabDefaults.ts#L33)
 
-___
+***
 
-### getId
+### getId()
 
-▸ **getId**(): `string`
+> **getId**(): `string`
 
 It returns identifier which is used when no identifier is specified.
 
@@ -81,17 +66,17 @@ It returns identifier which is used when no identifier is specified.
 
 #### Inherited from
 
-[IMapObjectDefaults](IMapObjectDefaults.md).[getId](IMapObjectDefaults.md#getid)
+[`IMapObjectDefaults`](IMapObjectDefaults.md).[`getId`](IMapObjectDefaults.md#getid)
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectDefaults.ts:32](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectDefaults.ts#L32)
+[model/types/object/IMapObjectDefaults.ts:32](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectDefaults.ts#L32)
 
-___
+***
 
-### getName
+### getName()
 
-▸ **getName**(): `string`
+> **getName**(): `string`
 
 It returns name of the sidebar tab.
 
@@ -99,35 +84,35 @@ It returns name of the sidebar tab.
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/types/tab/ISidebarTabDefaults.ts:28](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/types/tab/ISidebarTabDefaults.ts#L28)
+[tools/sidebar/model/types/tab/ISidebarTabDefaults.ts:28](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/types/tab/ISidebarTabDefaults.ts#L28)
 
-___
+***
 
-### getProps
+### getProps()
 
-▸ **getProps**(): [`IMapObjectProps`](../modules.md#imapobjectprops)
+> **getProps**(): [`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
 It returns default props if no props are given.
 
 #### Returns
 
-[`IMapObjectProps`](../modules.md#imapobjectprops)
+[`IMapObjectProps`](../type-aliases/IMapObjectProps.md)
 
 #### Inherited from
 
-[IMapObjectDefaults](IMapObjectDefaults.md).[getProps](IMapObjectDefaults.md#getprops)
+[`IMapObjectDefaults`](IMapObjectDefaults.md).[`getProps`](IMapObjectDefaults.md#getprops)
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectDefaults.ts:17](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectDefaults.ts#L17)
+[model/types/object/IMapObjectDefaults.ts:17](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectDefaults.ts#L17)
 
-___
+***
 
-### getType
+### getType()
 
-▸ **getType**(): `string`
+> **getType**(): `string`
 
 It returns a unique type string of the map object.
 
@@ -137,17 +122,17 @@ It returns a unique type string of the map object.
 
 #### Inherited from
 
-[IMapObjectDefaults](IMapObjectDefaults.md).[getType](IMapObjectDefaults.md#gettype)
+[`IMapObjectDefaults`](IMapObjectDefaults.md).[`getType`](IMapObjectDefaults.md#gettype)
 
-#### Defined in
+#### Source
 
-[src/model/types/object/IMapObjectDefaults.ts:27](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/types/object/IMapObjectDefaults.ts#L27)
+[model/types/object/IMapObjectDefaults.ts:27](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/types/object/IMapObjectDefaults.ts#L27)
 
-___
+***
 
-### hasCheckButton
+### hasCheckButton()
 
-▸ **hasCheckButton**(): `boolean`
+> **hasCheckButton**(): `boolean`
 
 It returns a logical value whether the sidebar tab contains a check button used to enable/disable the tool.
 
@@ -155,15 +140,15 @@ It returns a logical value whether the sidebar tab contains a check button used 
 
 `boolean`
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/types/tab/ISidebarTabDefaults.ts:38](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/types/tab/ISidebarTabDefaults.ts#L38)
+[tools/sidebar/model/types/tab/ISidebarTabDefaults.ts:38](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/types/tab/ISidebarTabDefaults.ts#L38)
 
-___
+***
 
-### isEnabled
+### isEnabled()
 
-▸ **isEnabled**(): `boolean`
+> **isEnabled**(): `boolean`
 
 It returns whether the default value the sidebar tab is enabled.
 
@@ -171,6 +156,6 @@ It returns whether the default value the sidebar tab is enabled.
 
 `boolean`
 
-#### Defined in
+#### Source
 
-[src/tools/sidebar/model/types/tab/ISidebarTabDefaults.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/sidebar/model/types/tab/ISidebarTabDefaults.ts#L23)
+[tools/sidebar/model/types/tab/ISidebarTabDefaults.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/sidebar/model/types/tab/ISidebarTabDefaults.ts#L23)

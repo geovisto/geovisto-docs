@@ -1,52 +1,34 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / MapThemesManager
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / MapThemesManager
 
 # Class: MapThemesManager
 
 This class provide functions for using themes.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extends
 
 - [`MapDomainArrayManager`](MapDomainArrayManager.md)\<[`IMapTheme`](../interfaces/IMapTheme.md)\>
-
-  ↳ **`MapThemesManager`**
 
 ## Implements
 
 - [`IMapThemesManager`](../interfaces/IMapThemesManager.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](MapThemesManager.md#constructor)
-
-### Methods
-
-- [add](MapThemesManager.md#add)
-- [getDefault](MapThemesManager.md#getdefault)
-- [getDomain](MapThemesManager.md#getdomain)
-- [getDomainNames](MapThemesManager.md#getdomainnames)
-- [getDomains](MapThemesManager.md#getdomains)
-- [isEmpty](MapThemesManager.md#isempty)
-- [remove](MapThemesManager.md#remove)
-- [removeByName](MapThemesManager.md#removebyname)
-- [size](MapThemesManager.md#size)
-
 ## Constructors
 
-### constructor
+### new MapThemesManager()
 
-• **new MapThemesManager**(`themes`): [`MapThemesManager`](MapThemesManager.md)
+> **new MapThemesManager**(`themes`): [`MapThemesManager`](MapThemesManager.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `themes` | [`IMapTheme`](../interfaces/IMapTheme.md)[] |
+• **themes**: [`IMapTheme`](../interfaces/IMapTheme.md)[]
 
 #### Returns
 
@@ -54,17 +36,17 @@ Jiri Hynek
 
 #### Overrides
 
-[MapDomainArrayManager](MapDomainArrayManager.md).[constructor](MapDomainArrayManager.md#constructor)
+[`MapDomainArrayManager`](MapDomainArrayManager.md).[`constructor`](MapDomainArrayManager.md#constructors)
 
-#### Defined in
+#### Source
 
-[src/tools/themes/model/internal/theme/basic/MapThemesManager.ts:16](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/themes/model/internal/theme/basic/MapThemesManager.ts#L16)
+[tools/themes/model/internal/theme/basic/MapThemesManager.ts:16](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/themes/model/internal/theme/basic/MapThemesManager.ts#L16)
 
 ## Methods
 
-### add
+### add()
 
-▸ **add**(`domains`): `void`
+> **add**(`domains`): `void`
 
 It adds a domain to the list of domains.
 
@@ -72,9 +54,7 @@ Override this function.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `domains` | [`IMapTheme`](../interfaces/IMapTheme.md) |
+• **domains**: [`IMapTheme`](../interfaces/IMapTheme.md)
 
 #### Returns
 
@@ -82,21 +62,21 @@ Override this function.
 
 #### Implementation of
 
-[IMapThemesManager](../interfaces/IMapThemesManager.md).[add](../interfaces/IMapThemesManager.md#add)
+[`IMapThemesManager`](../interfaces/IMapThemesManager.md).[`add`](../interfaces/IMapThemesManager.md#add)
 
 #### Inherited from
 
-[MapDomainArrayManager](MapDomainArrayManager.md).[add](MapDomainArrayManager.md#add)
+[`MapDomainArrayManager`](MapDomainArrayManager.md).[`add`](MapDomainArrayManager.md#add)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomainArrayManager.ts:56](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomainArrayManager.ts#L56)
+[model/internal/domain/generic/MapDomainArrayManager.ts:56](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomainArrayManager.ts#L56)
 
-___
+***
 
-### getDefault
+### getDefault()
 
-▸ **getDefault**(): `undefined` \| [`IMapTheme`](../interfaces/IMapTheme.md)
+> **getDefault**(): `undefined` \| [`IMapTheme`](../interfaces/IMapTheme.md)
 
 The function returns the default theme.
 
@@ -106,29 +86,27 @@ The function returns the default theme.
 
 #### Implementation of
 
-[IMapThemesManager](../interfaces/IMapThemesManager.md).[getDefault](../interfaces/IMapThemesManager.md#getdefault)
+[`IMapThemesManager`](../interfaces/IMapThemesManager.md).[`getDefault`](../interfaces/IMapThemesManager.md#getdefault)
 
 #### Overrides
 
-[MapDomainArrayManager](MapDomainArrayManager.md).[getDefault](MapDomainArrayManager.md#getdefault)
+[`MapDomainArrayManager`](MapDomainArrayManager.md).[`getDefault`](MapDomainArrayManager.md#getdefault)
 
-#### Defined in
+#### Source
 
-[src/tools/themes/model/internal/theme/basic/MapThemesManager.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/themes/model/internal/theme/basic/MapThemesManager.ts#L23)
+[tools/themes/model/internal/theme/basic/MapThemesManager.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/themes/model/internal/theme/basic/MapThemesManager.ts#L23)
 
-___
+***
 
-### getDomain
+### getDomain()
 
-▸ **getDomain**(`name`): `undefined` \| [`IMapTheme`](../interfaces/IMapTheme.md)
+> **getDomain**(`name`): `undefined` \| [`IMapTheme`](../interfaces/IMapTheme.md)
 
 The function returns map domains of given type.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
+• **name**: `string`
 
 #### Returns
 
@@ -136,21 +114,21 @@ The function returns map domains of given type.
 
 #### Implementation of
 
-[IMapThemesManager](../interfaces/IMapThemesManager.md).[getDomain](../interfaces/IMapThemesManager.md#getdomain)
+[`IMapThemesManager`](../interfaces/IMapThemesManager.md).[`getDomain`](../interfaces/IMapThemesManager.md#getdomain)
 
 #### Inherited from
 
-[MapDomainArrayManager](MapDomainArrayManager.md).[getDomain](MapDomainArrayManager.md#getdomain)
+[`MapDomainArrayManager`](MapDomainArrayManager.md).[`getDomain`](MapDomainArrayManager.md#getdomain)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomainArrayManager.ts:99](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomainArrayManager.ts#L99)
+[model/internal/domain/generic/MapDomainArrayManager.ts:99](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomainArrayManager.ts#L99)
 
-___
+***
 
-### getDomainNames
+### getDomainNames()
 
-▸ **getDomainNames**(): `string`[]
+> **getDomainNames**(): `string`[]
 
 Help function which returns the list of domain string labels (map domain types).
 
@@ -160,21 +138,21 @@ Help function which returns the list of domain string labels (map domain types).
 
 #### Implementation of
 
-[IMapThemesManager](../interfaces/IMapThemesManager.md).[getDomainNames](../interfaces/IMapThemesManager.md#getdomainnames)
+[`IMapThemesManager`](../interfaces/IMapThemesManager.md).[`getDomainNames`](../interfaces/IMapThemesManager.md#getdomainnames)
 
 #### Inherited from
 
-[MapDomainArrayManager](MapDomainArrayManager.md).[getDomainNames](MapDomainArrayManager.md#getdomainnames)
+[`MapDomainArrayManager`](MapDomainArrayManager.md).[`getDomainNames`](MapDomainArrayManager.md#getdomainnames)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomainArrayManager.ts:83](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomainArrayManager.ts#L83)
+[model/internal/domain/generic/MapDomainArrayManager.ts:83](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomainArrayManager.ts#L83)
 
-___
+***
 
-### getDomains
+### getDomains()
 
-▸ **getDomains**(): [`IMapTheme`](../interfaces/IMapTheme.md)[]
+> **getDomains**(): [`IMapTheme`](../interfaces/IMapTheme.md)[]
 
 The function returns available map domains.
 
@@ -184,21 +162,21 @@ The function returns available map domains.
 
 #### Implementation of
 
-[IMapThemesManager](../interfaces/IMapThemesManager.md).[getDomains](../interfaces/IMapThemesManager.md#getdomains)
+[`IMapThemesManager`](../interfaces/IMapThemesManager.md).[`getDomains`](../interfaces/IMapThemesManager.md#getdomains)
 
 #### Inherited from
 
-[MapDomainArrayManager](MapDomainArrayManager.md).[getDomains](MapDomainArrayManager.md#getdomains)
+[`MapDomainArrayManager`](MapDomainArrayManager.md).[`getDomains`](MapDomainArrayManager.md#getdomains)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomainArrayManager.ts:23](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomainArrayManager.ts#L23)
+[model/internal/domain/generic/MapDomainArrayManager.ts:23](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomainArrayManager.ts#L23)
 
-___
+***
 
-### isEmpty
+### isEmpty()
 
-▸ **isEmpty**(): `boolean`
+> **isEmpty**(): `boolean`
 
 The function returns true if size() is 0.
 
@@ -208,29 +186,27 @@ The function returns true if size() is 0.
 
 #### Implementation of
 
-[IMapThemesManager](../interfaces/IMapThemesManager.md).[isEmpty](../interfaces/IMapThemesManager.md#isempty)
+[`IMapThemesManager`](../interfaces/IMapThemesManager.md).[`isEmpty`](../interfaces/IMapThemesManager.md#isempty)
 
 #### Inherited from
 
-[MapDomainArrayManager](MapDomainArrayManager.md).[isEmpty](MapDomainArrayManager.md#isempty)
+[`MapDomainArrayManager`](MapDomainArrayManager.md).[`isEmpty`](MapDomainArrayManager.md#isempty)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomainArrayManager.ts:45](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomainArrayManager.ts#L45)
+[model/internal/domain/generic/MapDomainArrayManager.ts:45](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomainArrayManager.ts#L45)
 
-___
+***
 
-### remove
+### remove()
 
-▸ **remove**(`domains`): `void`
+> **remove**(`domains`): `void`
 
 It removes a domain from the list of domains.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `domains` | [`IMapTheme`](../interfaces/IMapTheme.md) |
+• **domains**: [`IMapTheme`](../interfaces/IMapTheme.md)
 
 #### Returns
 
@@ -238,21 +214,21 @@ It removes a domain from the list of domains.
 
 #### Implementation of
 
-[IMapThemesManager](../interfaces/IMapThemesManager.md).[remove](../interfaces/IMapThemesManager.md#remove)
+[`IMapThemesManager`](../interfaces/IMapThemesManager.md).[`remove`](../interfaces/IMapThemesManager.md#remove)
 
 #### Inherited from
 
-[MapDomainArrayManager](MapDomainArrayManager.md).[remove](MapDomainArrayManager.md#remove)
+[`MapDomainArrayManager`](MapDomainArrayManager.md).[`remove`](MapDomainArrayManager.md#remove)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomainArrayManager.ts:65](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomainArrayManager.ts#L65)
+[model/internal/domain/generic/MapDomainArrayManager.ts:65](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomainArrayManager.ts#L65)
 
-___
+***
 
-### removeByName
+### removeByName()
 
-▸ **removeByName**(`id`): `void`
+> **removeByName**(`id`): `void`
 
 It removes a domain from the list of domains.
 
@@ -260,9 +236,7 @@ Override this function.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `id` | `string` |
+• **id**: `string`
 
 #### Returns
 
@@ -270,21 +244,21 @@ Override this function.
 
 #### Implementation of
 
-[IMapThemesManager](../interfaces/IMapThemesManager.md).[removeByName](../interfaces/IMapThemesManager.md#removebyname)
+[`IMapThemesManager`](../interfaces/IMapThemesManager.md).[`removeByName`](../interfaces/IMapThemesManager.md#removebyname)
 
 #### Inherited from
 
-[MapDomainArrayManager](MapDomainArrayManager.md).[removeByName](MapDomainArrayManager.md#removebyname)
+[`MapDomainArrayManager`](MapDomainArrayManager.md).[`removeByName`](MapDomainArrayManager.md#removebyname)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomainArrayManager.ts:76](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomainArrayManager.ts#L76)
+[model/internal/domain/generic/MapDomainArrayManager.ts:76](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomainArrayManager.ts#L76)
 
-___
+***
 
-### size
+### size()
 
-▸ **size**(): `number`
+> **size**(): `number`
 
 The function returns number of domains.
 
@@ -294,12 +268,12 @@ The function returns number of domains.
 
 #### Implementation of
 
-[IMapThemesManager](../interfaces/IMapThemesManager.md).[size](../interfaces/IMapThemesManager.md#size)
+[`IMapThemesManager`](../interfaces/IMapThemesManager.md).[`size`](../interfaces/IMapThemesManager.md#size)
 
 #### Inherited from
 
-[MapDomainArrayManager](MapDomainArrayManager.md).[size](MapDomainArrayManager.md#size)
+[`MapDomainArrayManager`](MapDomainArrayManager.md).[`size`](MapDomainArrayManager.md#size)
 
-#### Defined in
+#### Source
 
-[src/model/internal/domain/generic/MapDomainArrayManager.ts:38](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/model/internal/domain/generic/MapDomainArrayManager.ts#L38)
+[model/internal/domain/generic/MapDomainArrayManager.ts:38](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/model/internal/domain/generic/MapDomainArrayManager.ts#L38)

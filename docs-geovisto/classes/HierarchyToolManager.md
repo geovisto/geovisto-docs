@@ -1,10 +1,14 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / HierarchyToolManager
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / HierarchyToolManager
 
 # Class: HierarchyToolManager
 
 Manager of hierarchy domains.
 
-**`Author`**
+## Author
 
 Vojtěch Malý
 
@@ -12,62 +16,43 @@ Vojtěch Malý
 
 - [`IHierarchyToolManager`](../interfaces/IHierarchyToolManager.md)
 
-## Table of contents
-
-### Constructors
-
-- [constructor](HierarchyToolManager.md#constructor)
-
-### Properties
-
-- [hierarchyDomains](HierarchyToolManager.md#hierarchydomains)
-
-### Methods
-
-- [getAggregationStatus](HierarchyToolManager.md#getaggregationstatus)
-- [getDefinedDomains](HierarchyToolManager.md#getdefineddomains)
-- [getDomainsWithNodes](HierarchyToolManager.md#getdomainswithnodes)
-- [getIdsForEveryDefinedDomainByZoomLevel](HierarchyToolManager.md#getidsforeverydefineddomainbyzoomlevel)
-- [getLevelByLevel](HierarchyToolManager.md#getlevelbylevel)
-- [initialize](HierarchyToolManager.md#initialize)
-
 ## Constructors
 
-### constructor
+### new HierarchyToolManager()
 
-• **new HierarchyToolManager**(): [`HierarchyToolManager`](HierarchyToolManager.md)
+> **new HierarchyToolManager**(): [`HierarchyToolManager`](HierarchyToolManager.md)
 
 #### Returns
 
 [`HierarchyToolManager`](HierarchyToolManager.md)
 
-#### Defined in
+#### Source
 
-[src/tools/hierarchy/model/internal/tool/HierarchyToolManager.ts:13](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/hierarchy/model/internal/tool/HierarchyToolManager.ts#L13)
+[tools/hierarchy/model/internal/tool/HierarchyToolManager.ts:13](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/hierarchy/model/internal/tool/HierarchyToolManager.ts#L13)
 
 ## Properties
 
 ### hierarchyDomains
 
-• `Private` **hierarchyDomains**: [`HierarchyDomain`](HierarchyDomain.md)[]
+> `private` **hierarchyDomains**: [`HierarchyDomain`](HierarchyDomain.md)[]
 
-#### Defined in
+#### Source
 
-[src/tools/hierarchy/model/internal/tool/HierarchyToolManager.ts:11](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/hierarchy/model/internal/tool/HierarchyToolManager.ts#L11)
+[tools/hierarchy/model/internal/tool/HierarchyToolManager.ts:11](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/hierarchy/model/internal/tool/HierarchyToolManager.ts#L11)
 
 ## Methods
 
-### getAggregationStatus
+### getAggregationStatus()
 
-▸ **getAggregationStatus**(`name`): `boolean`
+> **getAggregationStatus**(`name`): `boolean`
 
 Get aggregation flag of certain domain. If true, data set of domain should be agregated from lowest children.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `name` | `string` | Name of domain. |
+• **name**: `string`
+
+Name of domain.
 
 #### Returns
 
@@ -75,17 +60,17 @@ Get aggregation flag of certain domain. If true, data set of domain should be ag
 
 #### Implementation of
 
-[IHierarchyToolManager](../interfaces/IHierarchyToolManager.md).[getAggregationStatus](../interfaces/IHierarchyToolManager.md#getaggregationstatus)
+[`IHierarchyToolManager`](../interfaces/IHierarchyToolManager.md).[`getAggregationStatus`](../interfaces/IHierarchyToolManager.md#getaggregationstatus)
 
-#### Defined in
+#### Source
 
-[src/tools/hierarchy/model/internal/tool/HierarchyToolManager.ts:142](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/hierarchy/model/internal/tool/HierarchyToolManager.ts#L142)
+[tools/hierarchy/model/internal/tool/HierarchyToolManager.ts:142](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/hierarchy/model/internal/tool/HierarchyToolManager.ts#L142)
 
-___
+***
 
-### getDefinedDomains
+### getDefinedDomains()
 
-▸ **getDefinedDomains**(): `string`[]
+> **getDefinedDomains**(): `string`[]
 
 Return array of domain names defined in manager.
 
@@ -95,17 +80,17 @@ Return array of domain names defined in manager.
 
 #### Implementation of
 
-[IHierarchyToolManager](../interfaces/IHierarchyToolManager.md).[getDefinedDomains](../interfaces/IHierarchyToolManager.md#getdefineddomains)
+[`IHierarchyToolManager`](../interfaces/IHierarchyToolManager.md).[`getDefinedDomains`](../interfaces/IHierarchyToolManager.md#getdefineddomains)
 
-#### Defined in
+#### Source
 
-[src/tools/hierarchy/model/internal/tool/HierarchyToolManager.ts:123](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/hierarchy/model/internal/tool/HierarchyToolManager.ts#L123)
+[tools/hierarchy/model/internal/tool/HierarchyToolManager.ts:123](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/hierarchy/model/internal/tool/HierarchyToolManager.ts#L123)
 
-___
+***
 
-### getDomainsWithNodes
+### getDomainsWithNodes()
 
-▸ **getDomainsWithNodes**(): `Map`\<`string`, [`string`, `string` \| `boolean`, `number`][]\>
+> **getDomainsWithNodes**(): `Map`\<`string`, [`string`, `string` \| `boolean`, `number`][]\>
 
 Generate map of basic node information.
 
@@ -117,25 +102,25 @@ Map where Map<Domain_name, [] of tuples in which [Node_ID, Parent_ID, Zoom]
 
 #### Implementation of
 
-[IHierarchyToolManager](../interfaces/IHierarchyToolManager.md).[getDomainsWithNodes](../interfaces/IHierarchyToolManager.md#getdomainswithnodes)
+[`IHierarchyToolManager`](../interfaces/IHierarchyToolManager.md).[`getDomainsWithNodes`](../interfaces/IHierarchyToolManager.md#getdomainswithnodes)
 
-#### Defined in
+#### Source
 
-[src/tools/hierarchy/model/internal/tool/HierarchyToolManager.ts:17](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/hierarchy/model/internal/tool/HierarchyToolManager.ts#L17)
+[tools/hierarchy/model/internal/tool/HierarchyToolManager.ts:17](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/hierarchy/model/internal/tool/HierarchyToolManager.ts#L17)
 
-___
+***
 
-### getIdsForEveryDefinedDomainByZoomLevel
+### getIdsForEveryDefinedDomainByZoomLevel()
 
-▸ **getIdsForEveryDefinedDomainByZoomLevel**(`zoomLev`): `Map`\<`string`, `string`[]\>
+> **getIdsForEveryDefinedDomainByZoomLevel**(`zoomLev`): `Map`\<`string`, `string`[]\>
 
 Return array of acitve IDs for each defined domain in manager, by their ply zoom level.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `zoomLev` | `number` | Level of zoom |
+• **zoomLev**: `number`
+
+Level of zoom
 
 #### Returns
 
@@ -143,26 +128,29 @@ Return array of acitve IDs for each defined domain in manager, by their ply zoom
 
 #### Implementation of
 
-[IHierarchyToolManager](../interfaces/IHierarchyToolManager.md).[getIdsForEveryDefinedDomainByZoomLevel](../interfaces/IHierarchyToolManager.md#getidsforeverydefineddomainbyzoomlevel)
+[`IHierarchyToolManager`](../interfaces/IHierarchyToolManager.md).[`getIdsForEveryDefinedDomainByZoomLevel`](../interfaces/IHierarchyToolManager.md#getidsforeverydefineddomainbyzoomlevel)
 
-#### Defined in
+#### Source
 
-[src/tools/hierarchy/model/internal/tool/HierarchyToolManager.ts:131](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/hierarchy/model/internal/tool/HierarchyToolManager.ts#L131)
+[tools/hierarchy/model/internal/tool/HierarchyToolManager.ts:131](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/hierarchy/model/internal/tool/HierarchyToolManager.ts#L131)
 
-___
+***
 
-### getLevelByLevel
+### getLevelByLevel()
 
-▸ **getLevelByLevel**(`domainName`, `level`): `undefined` \| [`HierarchyZoomLevel`](HierarchyZoomLevel.md)
+> **getLevelByLevel**(`domainName`, `level`): `undefined` \| [`HierarchyZoomLevel`](HierarchyZoomLevel.md)
 
 Returns zoom level object based on domain name and level of ply.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `domainName` | `string` | Name of requested domain |
-| `level` | `number` | Zoom level |
+• **domainName**: `string`
+
+Name of requested domain
+
+• **level**: `number`
+
+Zoom level
 
 #### Returns
 
@@ -172,23 +160,21 @@ Hiererchy zoomLevel or undefined.
 
 #### Implementation of
 
-[IHierarchyToolManager](../interfaces/IHierarchyToolManager.md).[getLevelByLevel](../interfaces/IHierarchyToolManager.md#getlevelbylevel)
+[`IHierarchyToolManager`](../interfaces/IHierarchyToolManager.md).[`getLevelByLevel`](../interfaces/IHierarchyToolManager.md#getlevelbylevel)
 
-#### Defined in
+#### Source
 
-[src/tools/hierarchy/model/internal/tool/HierarchyToolManager.ts:110](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/hierarchy/model/internal/tool/HierarchyToolManager.ts#L110)
+[tools/hierarchy/model/internal/tool/HierarchyToolManager.ts:110](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/hierarchy/model/internal/tool/HierarchyToolManager.ts#L110)
 
-___
+***
 
-### initialize
+### initialize()
 
-▸ **initialize**(`hierarchies`): `void`
+> **initialize**(`hierarchies`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `hierarchies` | [`IHierarchyConfig`](../modules.md#ihierarchyconfig)[] |
+• **hierarchies**: [`IHierarchyConfig`](../type-aliases/IHierarchyConfig.md)[]
 
 #### Returns
 
@@ -196,8 +182,8 @@ ___
 
 #### Implementation of
 
-[IHierarchyToolManager](../interfaces/IHierarchyToolManager.md).[initialize](../interfaces/IHierarchyToolManager.md#initialize)
+[`IHierarchyToolManager`](../interfaces/IHierarchyToolManager.md).[`initialize`](../interfaces/IHierarchyToolManager.md#initialize)
 
-#### Defined in
+#### Source
 
-[src/tools/hierarchy/model/internal/tool/HierarchyToolManager.ts:26](https://github.com/geovisto/geovisto-map/blob/e22d774889dbc28cc1ec62933ecf6bab6690f172/src/tools/hierarchy/model/internal/tool/HierarchyToolManager.ts#L26)
+[tools/hierarchy/model/internal/tool/HierarchyToolManager.ts:26](https://github.com/geovisto/geovisto-map/blob/5ee2cb5d45c19062fc8fc6beefa2848c076518b6/src/tools/hierarchy/model/internal/tool/HierarchyToolManager.ts#L26)

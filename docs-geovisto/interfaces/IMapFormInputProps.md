@@ -1,27 +1,23 @@
-[geovisto-map](../README.md) / [Exports](../modules.md) / IMapFormInputProps
+**geovisto-map** • [Readme](../README.md) \| [API](../globals.md)
+
+***
+
+[geovisto-map](../README.md) / IMapFormInputProps
 
 # Interface: IMapFormInputProps
 
 This interface provides specification of input props model.
 
-**`Author`**
+## Author
 
 Jiri Hynek
 
-## Hierarchy
+## Extended by
 
-- **`IMapFormInputProps`**
-
-  ↳ [`ISelectFormInputProps`](ISelectFormInputProps.md)
-
-  ↳ [`ITextFormInputProps`](ITextFormInputProps.md)
-
-  ↳ [`IFilterFormInputProps`](IFilterFormInputProps.md)
-
-  ↳ [`ILabeledAutocompleteFormInputProps`](ILabeledAutocompleteFormInputProps.md)
-
-  ↳ [`ILabeledCheckboxFormInputProps`](ILabeledCheckboxFormInputProps.md)
-
-  ↳ [`ILabeledColorFormInputProps`](ILabeledColorFormInputProps.md)
-
-  ↳ [`ILabeledSliderFormInputProps`](ILabeledSliderFormInputProps.md)
+- [`ISelectFormInputProps`](ISelectFormInputProps.md)
+- [`ITextFormInputProps`](ITextFormInputProps.md)
+- [`IFilterFormInputProps`](IFilterFormInputProps.md)
+- [`ILabeledAutocompleteFormInputProps`](ILabeledAutocompleteFormInputProps.md)
+- [`ILabeledCheckboxFormInputProps`](ILabeledCheckboxFormInputProps.md)
+- [`ILabeledColorFormInputProps`](ILabeledColorFormInputProps.md)
+- [`ILabeledSliderFormInputProps`](ILabeledSliderFormInputProps.md)
