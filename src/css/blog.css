@@ -1,29 +1,6 @@
-.blog {
-    display: flex;
-    justify-content: center;
-}
 
-.row {
-    justify-content: center;
-    width: 100%;
-}
-
-.col {
-    width: 100%;
-}
-
-article[itemprop="blogPost"]{
-    background-color: var(--ifm-color-primary);
-    border-radius: 20px;
-    padding: 20px;
-    width: 100%;
-}
-
-article[itemprop="blogPost"] a {
-    color: var(--text-color);
-}
-
-article[itemprop="blogPost"] a:hover{
-    text-decoration: underline;
-    
-}
+.BlogItem {
+    box-shadow: 0 0 29px 0 rgba(147,147,147,.5);
+    padding: 30px;
+    border-radius: 25px;
+  }
