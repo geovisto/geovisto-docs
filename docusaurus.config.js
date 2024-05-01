@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  staticDirectories: ['public', 'static'],
+  staticDirectories: ['static'],
   favicon: 'img/geovisto-logo4.png',
   organizationName: 'geovisto', // Usually your GitHub org/user name.
   projectName: 'geovisto.github.io', // Usually your repo name.
