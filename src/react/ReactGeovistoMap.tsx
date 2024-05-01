@@ -62,17 +62,19 @@ const ReactGeovistoMap: React.FC<IReactGeovistoMapProps> = (props) => {
 
     useEffect(() => {
         // create new Geovisto map
-        mapRef.current = Geovisto.createMap(props);
 
+        console.log("EFFECT");
         if (!helpRef.current) {
             // draw map with the current config
             // timeout is set to fix crashing with leaflet
+            mapRef.current = Geovisto.createMap(props);
+
             setTimeout(() => {
                 mapRef.current.draw(
                     props.config ??
                         Geovisto.getMapConfigManagerFactory().default({})
                 );
-                console.log("draw");
+                console.log("DRAW");
                 console.log(props.id);
 
                 // ignoring for base 
@@ -87,15 +89,16 @@ const ReactGeovistoMap: React.FC<IReactGeovistoMapProps> = (props) => {
             helpRef.current = true;
 
         } else {
-            console.log("redraw");
-            setTimeout(() => {
+
+            if (props.id == 'my-geovisto-map') {
+
+                setTimeout(() => {
                 mapRef.current.redraw(
                     props.config ?? Geovisto.getMapConfigManagerFactory().default({}), props);
-
-                // ignoring for base 
-                console.log("redraw");
-                console.log(props.id);
-            }, 0);
+                    console.log("REDRAW");
+                    console.log(props.id);
+                }, 0);
+            }
         } 
 
         // ignoring for base 
@@ -109,8 +112,8 @@ const ReactGeovistoMap: React.FC<IReactGeovistoMapProps> = (props) => {
         console.log(mapRef.current);
 
         return () => {
-            console.log("cleaning up");
             clearTimeout(typingTimer);
+            console.log("cleaning up");
         }
     }, [props]);
 
