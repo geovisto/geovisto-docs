@@ -1,13 +1,6 @@
 import React, { useState, useRef} from "react";
 import {datasets_search, datasets_download} from "../api";
 import Select from "react-select";
-import ReactSearchBox from "react-search-box";
-import Dropdown from 'react-dropdown';
-import { Loading } from 'react-loading-dot';
-import Loader from 'react-native-three-dots';
-
-
-const C_ID_select_datasets = "leaflet-combined-map-select-datasets";
 
 
 const PlaygroundBarSearchDatasets = (props) => {
@@ -19,6 +12,10 @@ const PlaygroundBarSearchDatasets = (props) => {
     const [menuIsOpen, setMenuIsOpen] = useState(false);
     const [inputText, setInputText] = useState<string>('');
     const [choosen, setChoosen] = useState<string>('');
+
+    const clearChoosen = (e) => {
+        setChoosen('');
+    }
 
     const handleInputChange = (e) => {
         console.log(e);
@@ -35,6 +32,9 @@ const PlaygroundBarSearchDatasets = (props) => {
             props.callback(response.data, response.geo, e.label);
  
             setIsLoading(false);
+            setInputText('');
+            setSearch({options: []});
+
         }      
     }
 
@@ -66,7 +66,7 @@ const PlaygroundBarSearchDatasets = (props) => {
         <div className="demo-toolbar">
             <div className="data-container">
                 <span>Search dataset: </span>
-                <form onSubmit={handleSearchSubmit} className="search-form">
+                <form onSubmit={handleSearchSubmit} className="search-form" title="Download dataset from ArcGIS HUB">
                 <Select 
                     id={"C_ID_select_geojson"}
                     value={choosen}
@@ -79,8 +79,10 @@ const PlaygroundBarSearchDatasets = (props) => {
                     noOptionsMessage={() => 'No Datasets Found'}
                     components={{ DropdownIndicator: () => null, IndicatorSeparator: () => null }}
                     menuIsOpen={menuIsOpen}
+                    onFocus={clearChoosen}
                     onMenuClose={() => setMenuIsOpen(false)}
                     onMenuOpen={() => setMenuIsOpen(true)}
+                    className="select"
                 />
 
                 </form>

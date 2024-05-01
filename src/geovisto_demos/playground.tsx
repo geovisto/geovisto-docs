@@ -1,5 +1,5 @@
 // React
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 
 // React-Geovisto
 import ReactGeovistoMap from "../react/ReactGeovistoMap";
@@ -30,6 +30,12 @@ import { GeovistoHeatLayerTool } from "geovisto-layer-heat";
 import { GeovistoSpikeLayerTool } from "geovisto-layer-spike";
 import { GeovistoTimelineTool } from "geovisto-timeline";
 import { GeovistoInfoTool } from "geovisto-info";
+import { GeovistoGeoDownloaderTool } from "geovisto-geo-downloader";
+import { GeovistoLegendTool } from "geovisto-legend";
+import { GeovistoHierarchyTool } from "geovisto-hierarchy";
+import { chunk } from "lodash";
+
+
 
 import IReactGeovistoMapProps from "../react/IReactGeovistoMapProps";
 
@@ -48,7 +54,7 @@ const C_ID_input_geojson_export = "leaflet-combined-map-input-export-geojson";
 export default class Playground extends Component<Record<string, never>, { data: unknown, config: Record<string, unknown>, geojson: Array<any>}> {
 
     private map: React.RefObject<IMap>;
-    private infodata: unknown
+    private infodata: unknown;
 
     public constructor(props: Record<string, never>) {
         super(props);
@@ -69,12 +75,10 @@ export default class Playground extends Component<Record<string, never>, { data:
         this.infodata = require("!!raw-loader!/static/info/test.md");
     }
     
-    public  downloadGeojson = async (name) => {
+    public  downloadGeojson = async (name, geojson) => {
         
         if (!this.state.geojson.find(e => e.key === name)) 
         {
-            const response = await fetch('https://avi278.github.io/resources/geojson/' + name);
-            const geojson = await response.json();
             this.state.geojson.push({key:name, geo:geojson});
             this.setState({
                 geojson: this.state.geojson
@@ -83,32 +87,32 @@ export default class Playground extends Component<Record<string, never>, { data:
 
         }
 
-        (document.getElementById('geojson') as HTMLInputElement).value = JSON.stringify(this.state.geojson.find(e => e.key === name).geo, null, 4);
+        let geojson_string = this.json_to_sting(geojson, true);
 
+        (document.getElementById('geojson') as HTMLInputElement).value = geojson_string;
     }
 
-    public downloadData = async (name) => {
+    public downloadData = async (data) => {
 
-        const response = await fetch('https://avi278.github.io/resources/data/' + name);
-        const data = await response.json();
         this.setState({
             data: data
         });
 
-        (document.getElementById('data') as HTMLInputElement).value = JSON.stringify(data, null, 4);
+        let data_string = this.json_to_sting(data, false);
+
+        (document.getElementById('data') as HTMLInputElement).value = data_string;
 
     }
 
-    public downloadConfig = async (name) => {
-
-        const response = await fetch('https://avi278.github.io/resources/config/' + name);
-        const config = await response.json();
+    public downloadConfig = async (config) => {
 
         this.setState({
             config: config
         });
 
-        (document.getElementById('config') as HTMLInputElement).value = JSON.stringify(config, null, 4);
+        let config_string = this.json_to_sting(config, false);
+
+        (document.getElementById('config') as HTMLInputElement).value = config_string;
     }
 
 
@@ -119,9 +123,36 @@ export default class Playground extends Component<Record<string, never>, { data:
             geojson: this.state.geojson
         });
 
-        (document.getElementById('data') as HTMLInputElement).value = JSON.stringify(data, null, 4);
-        (document.getElementById('geojson') as HTMLInputElement).value = JSON.stringify(this.state.geojson.find(e => e.key === name).geo, null, 4);
+        let data_string = this.json_to_sting(data, false);
+        let geojson_string = this.json_to_sting(geo, true);
+
+        (document.getElementById('data') as HTMLInputElement).value = data_string;
+        (document.getElementById('geojson') as HTMLInputElement).value = geojson_string;
     }
+
+
+    private json_to_sting(data_json, geojson): string {
+        let type;
+
+        if (geojson) {
+            type = JSON.stringify(data_json.type, null, 2);
+            data_json = data_json.features;
+        }
+
+        let data_chunk = chunk(data_json, 1);
+
+        let data_string = '';
+        data_chunk.forEach(element => {
+            data_string += JSON.stringify(element, null, 2);
+        });
+
+        if (geojson) {
+            data_string = '{ \n\t' + type + '\n\t"features":' + data_string + '}';
+        }
+
+        return data_string;
+    }
+    
 
     public componentDidMount(): void {
 
@@ -364,12 +395,13 @@ export default class Playground extends Component<Record<string, never>, { data:
         document.getElementById('data').addEventListener('keydown', resetTimperData, false);
         document.getElementById('config').addEventListener('keydown', resetTimperConfig, false);
     }
+
     
     public render(): JSX.Element {
         console.log("rendering...");
         return (
-            <div>
-                <div>
+            <div className="playground__container lightest">
+                <div >
                     <PlaygroundBarSearchDatasets callback={this.setDataset}/>
                 </div>
                 <div>
@@ -386,7 +418,7 @@ export default class Playground extends Component<Record<string, never>, { data:
                         </div>
                         <div className="editor">
                             <label>Config</label>
-                            <PlaygroundBarConfig callback={this.downloadConfig}/>
+                            <PlaygroundBarConfig  callback={this.downloadConfig}/>
                             <textarea id="config"></textarea>
                         </div>
                     </div>
@@ -429,6 +461,15 @@ export default class Playground extends Component<Record<string, never>, { data:
                                             GeovistoThemesTool.createThemeDark3(),
                                             GeovistoThemesTool.createThemeBasic()
                                         ])
+                                    }),
+                                    GeovistoGeoDownloaderTool.createTool({
+                                        id: "geovisto-geo-downloader"
+                                    }),
+                                    GeovistoLegendTool.createTool({
+                                        id: "geovisto-tool-legend"
+                                    }),
+                                    GeovistoHierarchyTool.createTool({
+                                        id: "geovisto-tool-hierarchy"
                                     }),
                                     GeovistoSelectionTool.createTool({
                                         id: "geovisto-tool-selection"

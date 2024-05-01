@@ -1,6 +1,8 @@
-import React, {useState} from "react";
-import {files} from "../api";
+import React, {useState, useEffect} from "react";
+import {files, file} from "../api";
 import Select from "react-select";
+import Dropdown from 'react-dropdown';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 
 /* example of screen component with grid layout and card wrapper usage */
 
@@ -8,7 +10,7 @@ const C_ID_select_config = "leaflet-combined-map-select-config";
 const C_ID_input_config = "leaflet-combined-map-input-config";
 const C_ID_input_config_export = "leaflet-combined-map-input-export-config";
 
-const PlaygroundBarConfig = (props) => {
+const PlaygroundBarConfig = (props) => {  
     const [isLoading, setIsLoading] = useState(false);
 
     const [state, setState] = useState({
@@ -16,6 +18,21 @@ const PlaygroundBarConfig = (props) => {
         options: [],
         value: undefined,
     });
+
+    function toggle() {
+        var container = document.getElementById("config-container");    
+        var arrow = document.getElementById("config-arrow");
+
+        if (container.classList.contains('hidden')) {
+            container.classList.remove('hidden');
+            arrow.classList.remove('down');
+            arrow.classList.add('up');
+        } else {
+            container.classList.add('hidden');
+            arrow.classList.remove('up');
+            arrow.classList.add('down');
+        }
+    }
 
     const handleLoadOptions = async () => {
         let options = [];
@@ -47,18 +64,15 @@ const PlaygroundBarConfig = (props) => {
     const handleChange = async (e) => {
         state.value = e;
         setIsLoading(true);
-        const response = await fetch('https://avi278.github.io/resources/config/' + e.value);
-        const config = await response.json();
+        const config = (await file('resources/config/' + e.value)).data
         props.callback(config);
         setIsLoading(false);
     }
 
-    
     return (
         <div className="demo-toolbar">
-            <div className="data-container">
-                <span>Config file: </span>
-
+            <i id="config-arrow" className="arrow down" onClick={toggle} title="Set up config"></i>            
+            <div id="config-container" className="data-container hidden">
                 <Select
                     id={C_ID_select_config}
                     value={state.value}
@@ -66,20 +80,23 @@ const PlaygroundBarConfig = (props) => {
                     options={state.options}
                     onFocus={maybeLoadOptions}
                     onChange={handleChange}
+                    className="select"
                 />
-                <div className="choose-file">
-                    <span className="checkbox">
-                        Custom file:
-                    </span>
-                    <input className="file"
-                        id={C_ID_input_config}
-                        type="file"
-                        accept=".json"
-                        size={3}
-                    />
-                </div>
+                <div className="plagroundbar__buttons">
+                    <div className="choose-file">
+                        <label title="Import your config" className="custom-file-upload btn btn-default">
+                            <input type="file" 
+                                id={C_ID_input_config}
+                                accept=".json"
+                                size={3}
+                                className="btn btn-default"
+                            />
+                            Import
+                        </label>
+                    </div>
 
-                <input id={C_ID_input_config_export} type="submit" value="Export" className="btn btn-default"/>
+                    <input id={C_ID_input_config_export} title="Export current config" type="submit" value="Export" className="btn btn-default btn-export"/>
+                </div>
             </div>
         </div>
     );

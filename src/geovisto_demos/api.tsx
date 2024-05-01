@@ -33,3 +33,13 @@ export const datasets_download = async function datasets_download(id) {
     return json;
 }
 
+export const file = async function fetch_github_file(path) {
+    const response = await fetch('http://avi278.pythonanywhere.com/file/' + path, {
+    method: 'GET', 
+    headers: {
+       'Content-Type': 'application/json',
+    },
+    })
+    const json = await response.json();
+    return json;
+}
