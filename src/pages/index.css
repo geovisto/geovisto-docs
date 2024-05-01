@@ -13,8 +13,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: mymoveopacity 5s infinite;
   z-index: 0;
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 @keyframes mymoveopacity {
@@ -157,13 +158,14 @@
 .header__button__wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 3rem;
   padding-top: 2rem;
+  gap: 5%;
 }
 
 .btn-header {
+  width: 200px;
   min-width: 10rem;
   font-size: 20px;
   background-color: #819200;

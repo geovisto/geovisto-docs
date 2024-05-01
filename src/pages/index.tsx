@@ -20,9 +20,15 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 const HomepageHeader = () => {
     const { siteConfig } = useDocusaurusContext();
     var i = 0;
-    var slideInterval = 5000
+    var j = 0;
+    var slideInterval = 6000
     var images = []
-    var timeout
+    var timeoutBackground
+    var timeoutOpacity1
+    var timeoutOpacity2
+    var timeoutOpacity3
+    var opacity
+
 
     images.push('/img/slideshow/heat.png')
     images.push('/img/slideshow/connection.png')
@@ -30,23 +36,40 @@ const HomepageHeader = () => {
     images.push('/img/slideshow/tiles.png')
 
     const setBackground = () => {
-        clearTimeout(timeout);
+        clearTimeout(timeoutBackground);
         document.getElementById("background").style.backgroundImage = "url(" + images[i] + ")"; 
+        timeoutOpacity1 = setTimeout(function() {document.getElementById("background").style.opacity = '1';}, 0)
+        timeoutOpacity2 = setTimeout(function() {document.getElementById("background").style.opacity = '0';}, 5000)
+        timeoutOpacity3 = setTimeout(function() {document.getElementById("background").style.opacity = '1';}, 6000)
+        timeoutBackground = setTimeout(setBackground, slideInterval)
 
-        console.log(i)
+
+        console.log("setBackground")
+        console.log('i: '+ i)
         if (i < images.length-1) {
             i++;
         } else {
             i = 0;
         }
-        timeout = setTimeout(setBackground, slideInterval)
     }
 
+
+
+
+
     useEffect(() => {   
-        timeout = setTimeout(setBackground, slideInterval)
+        timeoutBackground = setTimeout(setBackground, slideInterval)
+        timeoutOpacity1 = setTimeout(function() {document.getElementById("background").style.opacity = '1';}, 0)
+        timeoutOpacity2 = setTimeout(function() {document.getElementById("background").style.opacity = '0';}, 5000)
+        timeoutOpacity3 = setTimeout(function() {document.getElementById("background").style.opacity = '1';}, 6000)
+
+
 
         return () => {
-            clearTimeout(timeout);
+            clearTimeout(timeoutBackground);
+            clearTimeout(timeoutOpacity1);
+            clearTimeout(timeoutOpacity2);
+            clearTimeout(timeoutOpacity3);
             console.log("cleaning up header");
         }
     },[]);
