@@ -12,19 +12,19 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/geovisto-logo1.png',
+  favicon: 'img/geovisto-logo4.png',
   organizationName: 'geovisto', // Usually your GitHub org/user name.
   projectName: 'geovisto.github.io', // Usually your repo name.
   plugins: [
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'docs-geovisto',
-        path: 'docs-geovisto',
-        routeBasePath: 'docs-geovisto',
-        sidebarPath: require.resolve('./sidebars.js'),
-      }, 
-    ],
+     'docusaurus-plugin-sass',
+      ['@docusaurus/plugin-content-docs',
+        {
+          id: 'docs-geovisto',
+          path: 'docs-geovisto',
+          routeBasePath: 'docs-geovisto',
+          sidebarPath: require.resolve('./sidebars.js'),
+        }, 
+      ],
   ],
   presets: [
     [
@@ -33,8 +33,8 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editLocalizedFiles: false,
+          editCurrentVersion: false,
         },
         blog: {
           blogTitle: 'Docusaurus blog!',
@@ -42,9 +42,8 @@ const config = {
           postsPerPage: 'ALL',
           blogSidebarCount: 0,
           showReadingTime: false,
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-
+          editLocalizedFiles: false,
+          sortPosts: 'descending'
         },
         theme: {
           customCss: [require.resolve('./src/css/custom.css'), require.resolve('./src/css/blog.css')],
@@ -58,19 +57,21 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       colorMode: {
-        defaultMode: 'light',
-        disableSwitch: true,
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
       },
       navbar: {
         title: 'Geovisto',
+        hideOnScroll: true,
         logo: {
           alt: 'Site Logo',
-          src: 'img/geovisto-logo1.png',
-          srcDark: 'img/geovisto-logo1.png',
+          src: 'img/geovisto-logo4.png',
+          srcDark: 'img/geovisto-logo4.png',
           href: '/',
           target: '_self',
           width: 35,
-          height: 35,
+          height: 35
         },
         items: [
           {
@@ -88,12 +89,17 @@ const config = {
             to: '/docs-geovisto',
             position: 'left',
             label: 'Documentation',
-            activeBaseRegex: `/docs-geovisto/`,
+            activeBaseRegex: `/docs-geovisto/README`,
           },
           {
             to: 'blog',
             position: 'left',
-            label: 'Community',
+            label: 'Research',
+          },
+          {
+            href: 'https://github.com/geovisto',
+            position: 'right',
+            className: 'toggle',
           },
           {
             href: 'https://github.com/geovisto',
@@ -117,6 +123,10 @@ const config = {
                 label: 'Tutorial',
                 to: '/docs/intro',
               },
+              {
+                label: 'Documentation',
+                to: '/docs-geovisto/',
+              }
             ],
           },
           {
@@ -125,6 +135,10 @@ const config = {
               {
                 label: 'Playground',
                 to: '/playground#playground-hook',
+              },
+              {
+                label: 'Research',
+                to: '/research',
               },
             ],
           },
@@ -146,8 +160,10 @@ const config = {
       },
       prism: {
         theme: lightCodeTheme,
+        darkTheme: darkCodeTheme
       },
     }),
 };
 
 module.exports = config;
+
