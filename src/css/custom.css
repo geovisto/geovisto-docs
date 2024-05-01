@@ -1,34 +1,146 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
 :root {
-    --ifm-color-primary: #274f91;
-    --ifm-color-primary-dark: #234783;
-    --ifm-color-primary-darker: #21437b;
-    --ifm-color-primary-darkest: #1b3766;
-    --ifm-color-primary-light: #43aa38;
-    --ifm-color-primary-lighter: #378B2E;
-    --ifm-color-primary-lightest: #378B2E;
-    --text-color: #eaeaea;
-    --ifm-navbar-background-color: #378B2E;
-    --ifm-navbar-link-color: white;
-    --ifm-navbar-link-hover-color: #a7ff0f;
+    --ifm-color-primary-grey-blue: #ABB8C3;
+    --ifm-color-primary-grey: #555555;
+    --ifm-color-primary-grey-light: #969696;
+    --ifm-color-primary-grey-lighter: rgb(212, 210, 208);
+    --ifm-color-primary-grey-lightest: #F3F1EF;
+    --ifm-color-primary-grey-brown: #977a61;
+    --ifm-color-primary-grey-button-hover: #646464cb;
+
+    --ifm-link-hover-decoration: none;
+    --geovisto-main-color: #819200;
+    --ifm-h1-font-size: 2.5rem;
+
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme="dark"] {
-    --ifm-color-primary: #25c2a0;
-    --ifm-color-primary-dark: #21af90;
-    --ifm-color-primary-darker: #1fa588;
-    --ifm-color-primary-darkest: #1a8870;
-    --ifm-color-primary-light: #29d5b0;
-    --ifm-color-primary-lighter: #32d8b4;
-    --ifm-color-primary-lightest: #4fddbf;
+/*
+[data-theme='dark'] {
+    --ifm-color-primary: #585858;
+    --ifm-color-primary-dark: #F3F1EF;
+    --ifm-color-primary-darker: #969696;
+    --ifm-color-primary-darkest: #555555;
+
+    --ifm-color-primary-light: #ABB8C3;
+    --ifm-color-primary-lighter: #ABB8C3;
+    --ifm-color-primary-lightest: #ABB8C3;
+
+    --ifm-navbar-background-color: #353535;
+    --ifm-navbar-link-color: #eaeaea;
+    --ifm-navbar-link-hover-color: #8d8c8c;
+
+    --ifm-color-button: #979797cb;
+    --ifm-color-button-hover: #bbbbbbcb;
+
+    --ifm-color-href: #979797cb;
+    --ifm-color-href-hover: #bbbbbbcb;
+
+    --text-color-primary: #eaeaea;
+    --text-color-dark: #818181;
+    --text-color-darker: #303030;
+    --text-color-darkest: #303030;
+    --text-color-light: #eaeaea;
+    --text-color-lighter: #818181;
+    --text-color-lightest: #818181;
+
+    --ifm-background-color:#1b1b1d;
+
+    --ifm-border-color: white;
+    --ifm-border-shadow: rgba(255, 255, 255, 0.1);
+
 }
+
+*/
+
+[data-theme='dark'] {
+    --ifm-color-primary: #585858;
+    --ifm-color-primary-dark: #5e5a40;
+    --ifm-color-primary-darker: #1b1b1d;
+    --ifm-color-primary-darkest: #281b12;
+
+    --ifm-color-primary-light: #292929;
+    --ifm-color-primary-lighter: #6d6d6d;
+    --ifm-color-primary-lightest: #727272;
+
+    --ifm-navbar-background-color: #353535;
+    --ifm-navbar-link-color: #eaeaea;
+    --ifm-navbar-link-hover-color: #8d8c8c;
+
+    --ifm-color-button: #979797cb;
+    --ifm-color-button-hover: #bbbbbbcb;
+
+    --ifm-link-color: #819200;
+    --ifm-link-hover-color: #979797;
+
+
+    --text-color: #ffffff;
+    --text-color-hover: #eaeaea;
+
+
+    --ifm-background-color:#1b1b1d;
+
+    --ifm-border-color: white;
+    --ifm-border-shadow: rgba(255, 255, 255, 0.1);
+
+    --editor-textarea-background-color: rgb(48, 48, 48);
+
+    --layer-map-color: rgb(190, 190, 190);
+}
+
+html[data-theme='dark'] {
+    --site-color-feedback-background: #2a2929;
+    --docusaurus-highlighted-code-line-bg: rgb(66 66 66 / 35%);
+  }
+
+[data-theme='light'] {
+    --ifm-color-primary: #bdbdbd;
+    --ifm-color-primary-dark: #d1d1d1;
+    --ifm-color-primary-darker: #eeeeee;
+    --ifm-color-primary-darkest: #585757;
+
+    --ifm-color-primary-light: #b9b9b9;
+    --ifm-color-primary-lighter: #6d6d6d;
+    --ifm-color-primary-lightest: #727272;
+
+    --ifm-navbar-background-color: #8d8d8d;
+    --ifm-navbar-link-color: #414141;
+    --ifm-navbar-link-hover-color: #000000;
+
+    --ifm-color-button: #585858cb;
+    --ifm-color-button-hover: #3b3b3bcb;
+
+    --ifm-link-color: #819200;
+    --ifm-link-hover-color: #424242;
+
+
+    --text-color: black;
+    --text-color-hover: #d8d8d8;
+
+
+    --ifm-background-color:#f8f8f8;
+    --ifm-border-color: white;
+    --ifm-border-shadow: rgba(0, 0, 0, 0.1);
+
+    --editor-textarea-background-color: rgb(238, 235, 235);
+
+    --layer-map-color: rgb(126, 126, 126);
+
+
+}
+
+
+[data-theme='dark'] .npm {
+    filter: invert(100%);
+} 
+
+[data-theme='light'] .github {
+    filter: invert(100%);
+} 
+
+
+#geojson, #data, #config {
+    color: var(--text-color);
+    background-color: var(--editor-textarea-background-color);
+} 
 
 .docusaurus-highlight-code-line {
     background-color: rgba(0, 0, 0, 0.1);
@@ -40,6 +152,10 @@
 [data-theme="dark"] .docusaurus-highlight-code-line {
     background-color: rgba(0, 0, 0, 0.3);
 }
+
+
+
+
 
 .navbar__link {
     text-decoration: none;
@@ -93,10 +209,29 @@ a.navbar__brand {
     margin-left: -5px !important;
 }
 
-/* [type="button"] {
-  background: none !important;
-} */
 
 .footer {
-    background-color: #378B2E;
+    background-color: var(--ifm-navbar-background-color);
+}
+
+.footer .row {
+    gap: 6rem;
+
+}
+
+.search-form {
+    width: 50%;
+}
+
+.navbar__logo img {
+    margin-left: 10px;
+}
+
+.toggle {
+    margin-right: 10px;
+}
+
+.lead {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
