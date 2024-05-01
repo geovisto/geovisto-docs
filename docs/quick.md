@@ -1,8 +1,22 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
-# Quick start
+# Getting Started
 
-These pages contain description of Geovisto library. Both tools and layers will be introduced here.
-Individual pages contain live examples, configuration examples and other information related to specific tool/layer.
+## Installation
+
+
+```
+npm i geovisto
+```
+
+## How it works?
+
+This presentation can help you understand the Geovisto library
+
+* [Prezentation](https://drive.google.com/file/d/1Yi4Lx7E24TCWs2JqRlMjqS0xfXTzKB-p/view)
+
+And here you can read abstract 
+
+* [Abstract](https://www.scitepress.org/Papers/2021/102604/102604.pdf)

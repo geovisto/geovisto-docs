@@ -16,6 +16,11 @@ import { GeovistoTilesLayerTool } from "geovisto-layer-tiles";
 import { GeovistoSelectionTool } from "geovisto-selection";
 import { GeovistoSidebarTool } from "geovisto-sidebar";
 import { GeovistoThemesTool } from "geovisto-themes";
+import { GeovistoTimelineTool } from "geovisto-timeline";
+import { GeovistoInfoTool } from "geovisto-info";
+import { GeovistoLegendTool } from "geovisto-legend";
+import { GeovistoHierarchyTool } from "geovisto-hierarchy";
+
 
 // common modules styles
 import "geovisto-sidebar/dist/index.css";
@@ -43,6 +48,8 @@ const GeovistoBase: FC<IGeovistoBaseProps & IMapProps> = ({
     moduleToDisplay,
     geoData,
 }) => {
+    const infodata = require("!!raw-loader!/static/info/test.md");
+
     return (
         <div className="choropleth-container general-container">
             <div className="docs-showcase-map">
@@ -84,8 +91,27 @@ const GeovistoBase: FC<IGeovistoBaseProps & IMapProps> = ({
                         GeovistoSelectionTool.createTool({
                             id: "geovisto-tool-selection",
                         }),
+                        GeovistoInfoTool.createTool({
+                            id: "geovisto-tool-info",
+                            manager: GeovistoInfoTool.createInfoManager([
+                                GeovistoInfoTool.getInfoDataFactory().markdown(
+                                "General",
+                                (infodata as any).default
+                                )
+                            ])
+
+                        }),
+                        GeovistoLegendTool.createTool({
+                            id: "geovisto-tool-legend",
+                        }),
+                        GeovistoTimelineTool.createTool({
+                            id: "geovisto-tool-timeline",
+                        }),
                         GeovistoTilesLayerTool.createTool({
                             id: "geovisto-tool-layer-map",
+                        }),
+                        GeovistoHierarchyTool.createTool({
+                            id: "geovisto-tool-hierarchy"
                         }),
                         moduleToDisplay,
                     ])}

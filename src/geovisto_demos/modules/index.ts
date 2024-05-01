@@ -1,9 +1,9 @@
-import Heat from "./heat/Heat";
-import Dot from "./dot/Dot";
-import Bubble from "./bubble/Bubble";
-import Spike from "./spike/Spike";
-import Choropleth from "./choropleth/Choropleth";
-import Marker from "./marker/Marker";
-import Connection from "./connection/Connection";
+import Heat from "./layers/heat/Heat";
+import Dot from "./layers/dot/Dot";
+import Bubble from "./layers/bubble/Bubble";
+import Spike from "./layers/spike/Spike";
+import Choropleth from "./layers/choropleth/Choropleth";
+import Marker from "./layers/marker/Marker";
+import Connection from "./layers/connection/Connection";
 
 export { Heat, Dot, Bubble, Spike, Choropleth, Marker, Connection };

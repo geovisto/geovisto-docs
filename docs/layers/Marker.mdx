@@ -1,0 +1,63 @@
+---
+sidebar_position: 7
+---
+
+import { Render_Marker } from "../../src/geovisto_demos/export";
+import "../../src/geovisto_demos/modules/layers/choropleth/Choropleth.css";
+export const Marker = () => <Render_Marker />;
+
+# Marker
+
+Marker map provides markers (e.g. country centroids), that display statistical values using donut chart.
+Example below contains data about **_Energetic Mix_** for countries that are members of United Nations[^1].
+
+# Example
+
+<Marker />
+
+### Installation
+
+```
+npm i geovisto-layer-marker
+```
+
+
+### Configuration
+
+Configuration used in example above:
+
+```json
+{
+    "type": "geovisto-tool-layer-marker",
+    "id": "geovisto-tool-layer-marker",
+    "enabled": true,
+    "layerName": "Marker layer",
+    "data": {
+        "geoData": "world centroids",
+        "geoId": "Country",
+        "value": "Value",
+        "aggregation": "sum",
+        "category": "Resource",
+        "unitsEnabled": true,
+        "units": "TJ",
+        "unitsDesc": "Terajoules"
+    }
+}
+```
+
+## Dimensions
+
+Dimensions used in Connection Layer:
+
+-   `geoData` - polygons/centroids
+-   `geoId` - geospatial data
+-   `value` - value to be displayed
+-   `aggregation` - aggregation
+-   `category` - data category that sets the donut charts
+-   `unitsEnabled` - enable/disable units
+-   `units` - short units
+-   `unitsDesc` - longer units
+
+---
+
+[^1] [UN Statistical API](https://data.un.org/SdmxBrowser/start) <br/>

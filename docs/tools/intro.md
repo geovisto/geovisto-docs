@@ -4,30 +4,27 @@ sidebar_position: 1
 
 # Introducion
 
-In this section we will introduce example of each available layer of Geovisto with working example.  
-Layers represent forms of thematic geographical maps.
+In this section we will introduce example of each available tool of Geovisto with working example.  
 
-Currently available layers with thematic maps in Geovisto are:
+Currently available tools maps in Geovisto are:
 
--   **Heat layer**[^1]
--   **Bubble layer**[^2]
--   **Spike layer**[^3]
--   **Dot layer**[^4]
--   **Choropleth layer**[^5]
--   **Marker layer**[^6]
--   **Connection layer**[^7]
-
-This document also shows the usage Geovisto's of tools:
-
--   **Timeline**[^8]
+-   **Sidebar tool**
+-   **Info tool**[^1]
+-   **Selection tool**[^2]
+-   **Legend tool**[^3]
+-   **Themes tool**[^4]
+-   **Timeline tool**[^5]
+-   **Filters tool**[^6]
+-   **Geo-Downloader tool**[^7]
+-   **Hierarchy tool**[^8]
 
 ---
 
-[^1] [Github: Heat layer](https://github.com/geovisto/geovisto-layer-heat)  
-[^2] [Github: Bubble layer](https://github.com/geovisto/geovisto-layer-bubble)  
-[^3] [Github: Spike layer](https://github.com/geovisto/geovisto-layer-spike)  
-[^4] [Github: Dot layer](https://github.com/geovisto/geovisto-layer-dot)  
-[^5] [Github: Choropleth layer](https://github.com/geovisto/geovisto-layer-choropleth)  
-[^6] [Github: Marker layer](https://github.com/geovisto/geovisto-layer-marker)  
-[^7] [Github: Connection layer](https://github.com/geovisto/geovisto-layer-connection)
-[^8] [Github: Timeline](https://github.com/geovisto/geovisto-timeline)
+[^1] [Github: geovisto-info](https://github.com/geovisto/geovisto-info)
+[^2] [Github: geovisto-selection](https://github.com/geovisto/geovisto-selection)
+[^3] [Github: geovisto-legend](https://github.com/geovisto/geovisto-legend)
+[^4] [Github: geovisto-themes](https://github.com/geovisto/geovisto-themes)
+[^5] [Github: geovisto-timeline](https://github.com/geovisto/geovisto-timeline)
+[^6] [Github: geovisto-filters](https://github.com/geovisto/geovisto-filters)
+[^7] [Github: geovisto-geo-downloader](https://github.com/geovisto/geovisto-geo-downloader)
+[^8] [Github: geovisto-hierarchy](https://github.com/geovisto/geovisto-hierarchy)
