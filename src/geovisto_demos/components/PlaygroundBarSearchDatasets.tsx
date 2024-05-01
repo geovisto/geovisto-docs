@@ -65,7 +65,6 @@ const PlaygroundBarSearchDatasets = (props) => {
     return (
         <div className="demo-toolbar">
             <div className="data-container">
-                <span>Search dataset: </span>
                 <form onSubmit={handleSearchSubmit} className="search-form" title="Download dataset from ArcGIS HUB">
                 <Select 
                     id={"C_ID_select_geojson"}
@@ -73,7 +72,7 @@ const PlaygroundBarSearchDatasets = (props) => {
                     isLoading={isLoading}
                     options={search.options}
                     onInputChange={handleInputChange}
-                    placeholder="Search..."
+                    placeholder="Search and download dataset on ArcGIS HUB..."
                     onChange={handleChoose}
                     isClearable={true}
                     noOptionsMessage={() => 'No Datasets Found'}

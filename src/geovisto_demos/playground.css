@@ -15,8 +15,8 @@
 .demo-toolbar {
     width: 100%;
     font-size: 1rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 3px;
+    padding-right: 3px;
     background-color: var(--ifm-color-primary-lightest);
     color: var(--text-color);
 }
@@ -28,13 +28,27 @@
 .data-container {
     text-align: left;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     gap: 10px;
     transition: all .5s ease;
+    height: min-content;
+
 }
 
 .data-container.hidden {
     display: none; 
+}
+
+
+.data-container .btn-export {
+    padding: 8px !important;
+    height: max-content;
+}
+
+.data-container .custom-file-upload {
+    padding: 8px !important;
 }
 
 
@@ -51,9 +65,7 @@
     padding-top: 10px;
 }
 
-.editors label {
-    font-size: 20px;
-}
+
 
 .editor {
     display: flex;
@@ -69,11 +81,6 @@
     margin-top: 2px;
 }
 
-.choose-file {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 
 .file{
     flex-shrink: 2;
@@ -97,6 +104,7 @@ select {
 input[type="file"] {
     display: none;
 }
+
 .custom-file-upload {
     cursor: pointer;
 }
@@ -111,6 +119,9 @@ input[type="file"] {
 
 .select {
     color: black;
+    flex-grow: 2;
+    height: max-content;
+
 }
 
 

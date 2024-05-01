@@ -1,8 +1,6 @@
 import React, {useState, useEffect} from "react";
 import {files, file} from "../api";
 import Select from "react-select";
-import Dropdown from 'react-dropdown';
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 
 /* example of screen component with grid layout and card wrapper usage */
 
@@ -82,21 +80,17 @@ const PlaygroundBarConfig = (props) => {
                     onChange={handleChange}
                     className="select"
                 />
-                <div className="plagroundbar__buttons">
-                    <div className="choose-file">
-                        <label title="Import your config" className="custom-file-upload btn btn-default">
-                            <input type="file" 
-                                id={C_ID_input_config}
-                                accept=".json"
-                                size={3}
-                                className="btn btn-default"
-                            />
-                            Import
-                        </label>
-                    </div>
-
-                    <input id={C_ID_input_config_export} title="Export current config" type="submit" value="Export" className="btn btn-default btn-export"/>
+                <div className="choose-file">
+                    <label title="Import your config" className="custom-file-upload btn btn-default">
+                        <input type="file" 
+                            id={C_ID_input_config}
+                            accept=".json"
+                            size={3}
+                        />
+                        Import
+                    </label>
                 </div>
+                <input id={C_ID_input_config_export} title="Export current config" type="submit" value="Export" className="btn btn-default btn-export"/>
             </div>
         </div>
     );

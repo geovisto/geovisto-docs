@@ -82,21 +82,19 @@ const PlaygroundBarGeojson = (props) => {
                     onChange={handleChange}
                     className="select"
                 />
-                <div className="plagroundbar__buttons">
-                    <div className="choose-file">
-                        <label title="Import your geojson" className="custom-file-upload btn btn-default">
-                            <input type="file" 
-                                id={C_ID_input_geojson}
-                                accept=".json"
-                                size={3}
-                                className="btn btn-default"
-                            />
-                            Import
-                        </label>
-                    </div>
-
-                    <input id={C_ID_input_geojson_export} title="Export current geojson" type="submit" value="Export" className="btn btn-default btn-export"/>
+                <div className="choose-file">
+                    <label title="Import your geojson" className="custom-file-upload btn btn-default">
+                        <input type="file" 
+                            id={C_ID_input_geojson}
+                            accept=".json"
+                            size={3}
+                            className="btn btn-default"
+                        />
+                        Import
+                    </label>
                 </div>
+
+                <input id={C_ID_input_geojson_export} title="Export current geojson" type="submit" value="Export" className="btn btn-default btn-export"/>
             </div>
         </div>
     );
