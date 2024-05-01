@@ -10,9 +10,8 @@ import { Button } from "react-bootstrap";
 import { Layers } from "../components/bootstrap/layers/layers";
 import { Research } from "../components/bootstrap/research/research";
 import { Tools } from "../components/bootstrap/tools/tools";
-import { Authors } from "../components/bootstrap/authors/authors";
-
-
+import { useEffect } from "react";
+import useBaseUrl from '@docusaurus/useBaseUrl';
 /**
  * This file contains implementation of landing page
  *
@@ -20,16 +19,49 @@ import { Authors } from "../components/bootstrap/authors/authors";
  */
 const HomepageHeader = () => {
     const { siteConfig } = useDocusaurusContext();
+    var i = 0;
+    var slideInterval = 5000
+    var images = []
+    var timeout
+
+    images.push('/img/slideshow/heat.png')
+    images.push('/img/slideshow/connection.png')
+    images.push('/img/slideshow/choro.png')
+    images.push('/img/slideshow/tiles.png')
+
+    const setBackground = () => {
+        clearTimeout(timeout);
+        document.getElementById("background").style.backgroundImage = "url(" + images[i] + ")"; 
+
+        console.log(i)
+        if (i < images.length-1) {
+            i++;
+        } else {
+            i = 0;
+        }
+        timeout = setTimeout(setBackground, slideInterval)
+    }
+
+    useEffect(() => {   
+        timeout = setTimeout(setBackground, slideInterval)
+
+        return () => {
+            clearTimeout(timeout);
+            console.log("cleaning up header");
+        }
+    },[]);
+
     return (
-        <header className={clsx("hero heroBanner")}>
-            <div className="container header-container">
+        <header >
+            <div id="background" className="background-container">
+            </div>
+            <div className="header-container">
                 <img
                     src={GeovistoLogo}
                     alt={"logo"}
                     id="front_image"
                     className="pt-lg-5"
                 />
-                <p className="hero__subtitle">{siteConfig.tagline}</p>
                 <div className="header__button__wrapper">
                     <Link to="/docs/intro">
                         <Button variant="default" className="btn-header">Get started</Button>
@@ -38,14 +70,16 @@ const HomepageHeader = () => {
                         <Button variant="default" className="btn-header">Try Playground</Button>
                     </Link>
                 </div>
-
             </div>
         </header>
     );
 };
 
-export const Home = (): JSX.Element => (
-    <Layout
+export const Home = () => {
+    const { siteConfig } = useDocusaurusContext();
+
+    return (
+        <Layout
         title={`Home`}
         description="Description will go into a meta tag in <head />"
     >
@@ -55,6 +89,7 @@ export const Home = (): JSX.Element => (
                 <h1 className="w-100 title">
                     About Geovisto
                 </h1>
+                <h4>{siteConfig.tagline}</h4>
                 <div className="container-sm w-100">
                     Geovisto is a modular library written in TypeScript that
                     provides multiple layers for geospatial data visualization.
@@ -77,6 +112,7 @@ export const Home = (): JSX.Element => (
 
         </main>
     </Layout>
-);
+    )
+};
 
 export default Home;
