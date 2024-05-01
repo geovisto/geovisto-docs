@@ -99,11 +99,15 @@ Jiri Hynek
 
 > `protected` **arc**(`size`): `Arc`\<`unknown`, `PieArcDatum`\<`number` \| `object`\>\>
 
-#### Parameters
+##### Parameters
 
 • **size**: `number`
 
-#### Returns
+• **fn**: `LayersControlEventHandlerFn`
+
+• **context?**: `any`
+
+##### Returns
 
 `Arc`\<`unknown`, `PieArcDatum`\<`number` \| `object`\>\>
 
