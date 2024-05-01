@@ -35,7 +35,7 @@ const Slide = (props) => {
           <div className={"slider__slide " + nameClass} >
             <div className="block">
                 <h3 className="slide__titles">
-                    <a href={"/blog/" + props.href} className="href">{props.title}</a>
+                    <a href={"/research/" + props.href} className="href">{props.title}</a>
                 </h3>
                 <div className="slide__name">
                     {props.name}
@@ -52,7 +52,7 @@ export const Research = () => {
 
     useEffect(() => {   
         community_files.forEach(element => {
-            const markdown = require('!!raw-loader!../../../../blog/' + element)?.default;
+            const markdown = require('!!raw-loader!../../../../research/' + element)?.default;
             
             var extractedMetadata = extractMetadata(markdown);
             extractedMetadata["id"] = (element.split('.')[0]).split('-').join('/');
@@ -64,7 +64,6 @@ export const Research = () => {
     function extractMetadata(markdown) {
         const frontMatter = markdown.split('---');
 
-        console.log(frontMatter.length);
         if (frontMatter.length == 3) {
 
             const metadataLines = frontMatter[1].split('\n').filter(line => line.trim() !== '');
@@ -152,7 +151,7 @@ export const Research = () => {
                         Stay up to date with library updates.
                     </div>
                     <div className="community-button w-100 p-3 pb-lg-5 lead">
-                        <Link to="/blog" className="ps-lg-3">
+                        <Link to="/research" className="ps-lg-3">
                             <Button variant="default">Go to Community</Button>
                         </Link>
                     </div>

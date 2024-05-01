@@ -28,7 +28,6 @@ const ReactGeovistoMap: React.FC<IReactGeovistoMapProps> = (props) => {
     var typingInterval = 5000;
 
     const startTimer = () => {
-        console.log("start")
         clearTimeout(typingTimer);
         typingTimer = setTimeout(resultAction, typingInterval);
     };
@@ -62,8 +61,6 @@ const ReactGeovistoMap: React.FC<IReactGeovistoMapProps> = (props) => {
 
     useEffect(() => {
         // create new Geovisto map
-
-        console.log("EFFECT");
         if (!helpRef.current) {
             // draw map with the current config
             // timeout is set to fix crashing with leaflet
@@ -74,8 +71,6 @@ const ReactGeovistoMap: React.FC<IReactGeovistoMapProps> = (props) => {
                     props.config ??
                         Geovisto.getMapConfigManagerFactory().default({})
                 );
-                console.log("DRAW");
-                console.log(props.id);
 
                 // ignoring for base 
                 if (props.id == 'my-geovisto-map') {
@@ -95,8 +90,6 @@ const ReactGeovistoMap: React.FC<IReactGeovistoMapProps> = (props) => {
                 setTimeout(() => {
                 mapRef.current.redraw(
                     props.config ?? Geovisto.getMapConfigManagerFactory().default({}), props);
-                    console.log("REDRAW");
-                    console.log(props.id);
                 }, 0);
             }
         } 
@@ -108,12 +101,9 @@ const ReactGeovistoMap: React.FC<IReactGeovistoMapProps> = (props) => {
             clearTimeout(typingTimer);
         }
 
-        console.log("mapRef");
-        console.log(mapRef.current);
-
         return () => {
             clearTimeout(typingTimer);
-            console.log("cleaning up");
+            console.log("cleaning up react");
         }
     }, [props]);
 
