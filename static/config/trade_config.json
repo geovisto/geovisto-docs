@@ -161,7 +161,7 @@
       "id": "geovisto-tool-legend",
       "enabled": true,
       "tools": [
-        "geovisto-tool-layer-choropleth"
+        "geovisto-tool-layer-connection"
       ]
     },
     {
