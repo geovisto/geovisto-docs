@@ -12,39 +12,47 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+  staticDirectories: ['public', 'static'],
   favicon: 'img/geovisto-logo4.png',
   organizationName: 'geovisto', // Usually your GitHub org/user name.
   projectName: 'geovisto.github.io', // Usually your repo name.
   plugins: [
      'docusaurus-plugin-sass',
-      ['@docusaurus/plugin-content-docs',
-        {
-          id: 'docs-geovisto',
-          path: 'docs-geovisto',
-          routeBasePath: 'docs-geovisto',
-          sidebarPath: require.resolve('./sidebars.js'),
-        }, 
-      ],
+     ['@docusaurus/plugin-content-docs',
+      {
+        id: 'tutorials',
+        path: './tutorials',
+        sidebarPath: './sidebars.js',
+        routeBasePath: '/tutorials',
+      }, 
+     ],
+     ['@docusaurus/plugin-content-docs',
+      {
+        id: 'docs-geovisto',
+        path: './docs-geovisto',
+        sidebarPath: './sidebars.js',
+        routeBasePath: '/docs-geovisto',
+      }, 
+     ],
+     ['@docusaurus/plugin-content-blog',
+     {
+       id: 'research',
+       path: './research',
+       routeBasePath: 'research',
+       //blogSidebarCount: 0  // disable sidebar
+     }, 
+    ],
+
+
+
+
   ],
   presets: [
     [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
+      '@docusaurus/preset-classic',
       ({
-        docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          editLocalizedFiles: false,
-          editCurrentVersion: false,
-        },
-        blog: {
-          blogTitle: 'Docusaurus blog!',
-          blogDescription: 'A Docusaurus powered blog!',
-          postsPerPage: 'ALL',
-          blogSidebarCount: 0,
-          showReadingTime: false,
-          editLocalizedFiles: false,
-          sortPosts: 'descending'
-        },
+        docs: false,
+        blog: false,
         theme: {
           customCss: [require.resolve('./src/css/custom.css'), require.resolve('./src/css/blog.css')],
         },
@@ -75,10 +83,10 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
+            to: '/tutorials/Intro',
             position: 'left',
             label: 'Tutorial',
+            activeBaseRegex: `/turorials/`,
           },
           {
             to: 'playground#playground-hook',
@@ -86,20 +94,16 @@ const config = {
             position: 'left',
           },
           {
-            to: '/docs-geovisto',
+            to: 'docs-geovisto',
             position: 'left',
             label: 'Documentation',
             activeBaseRegex: `/docs-geovisto/README`,
           },
           {
-            to: 'blog',
+            to: '/research/',
             position: 'left',
             label: 'Research',
-          },
-          {
-            href: 'https://github.com/geovisto',
-            position: 'right',
-            className: 'toggle',
+            activeBaseRegex: `/research/`,
           },
           {
             href: 'https://github.com/geovisto',
