@@ -1,10 +1,9 @@
-
-
 .tabs {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
 }
 
 .tabs .tabs__head {
@@ -27,7 +26,7 @@
 
     display: block;
     border-radius: 15px;
-    background-color: rgb(190, 190, 190);
+    background-color: var(--layer-map-color);
 }
 
 .layer_card .titles {
@@ -42,24 +41,47 @@
 
 
 
+
 .tabs{
     padding-left: 30px;
     padding-right: 30px;
 }
 
-.tabs__nav > ul > li > a{
+
+
+.tabs__nav > ul{
     font-size: 20px;
-    color: var(--text-color-light);
+    color: var(--text-color);
 }
 
-.tabs__nav > ul > li > a:hover{
+.tabs__nav a{
+    color: var(--text-color);
+}
+
+.tabs__nav a:hover{
     font-size: 25px;
-    color: var(--text-color-lighter);
+    color: var(--text-color-hover);
 }
 
-.tab__active{
+.tabs__nav li:has(a:hover) {
+    font-size: 25px;
+    color: var(--text-color-hover);
+}
+
+.tabs__nav li:has(a.tab__active) {
     font-size: 35px!important;
-    color: var(--text-color-dark)!important;
+    color: var(--text-color)!important;
+}
+
+a.tab__active {
+    font-size: 35px!important;
+    color: var(--text-color)!important;
+}
+
+
+
+.tabs__nav > ul {
+    list-style-position: outside;
 }
 
 .tabs__nav a {

@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import "../../../pages/index.css";
 import "./layers.css";
 import { Button } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
 
-import { Render_Choropleth, Render_Dot, Render_Marker, Render_Heat, Render_Connection, Render_Bubble, Render_Spike } from "../../../geovisto_demos/export";
+import { Render_Choropleth, Render_Dot, Render_Marker, Render_Heat, Render_Connection, Render_Bubble, Render_Spike, Render_Map } from "../../../geovisto_demos/export";
 
 import Link from "@docusaurus/Link";
 
@@ -42,7 +41,7 @@ export const Layers = () => {
     const [cardState, setCardState] = useState({
         title: "Choropleth",
         map: <Render_Choropleth />,
-        buttonLink: "/docs/tools/choropleth",
+        buttonLink: "/docs/layers/Choropleth",
     });
 
 
@@ -58,70 +57,85 @@ export const Layers = () => {
                 setCardState({
                     title: "Choropleth",
                     map: <Render_Choropleth />,
-                    buttonLink: "/docs/tools/choropleth",
+                    buttonLink: "/docs/layers/choropleth",
                 });
                 break;
             case "Marker":
                 setCardState({
                     title: "Marker",
                     map: <Render_Marker />,
-                    buttonLink: "/docs/tools/marker",
+                    buttonLink: "/docs/layers/Marker",
                 });
                 break;
             case "Connection":
                 setCardState({
                     title: "Connection",
                     map: <Render_Connection />,
-                    buttonLink: "/docs/tools/connection",
+                    buttonLink: "/docs/layers/Connection",
                 });
                 break;
             case "Heat":
                 setCardState({
                     title: "Heat",
                     map: <Render_Heat />,
-                    buttonLink: "/docs/tools/heat",
+                    buttonLink: "/docs/layers/Heat",
                 });
                 break;
             case "Dot":
                 setCardState({
                     title: "Dot",
                     map: <Render_Dot />,
-                    buttonLink: "/docs/tools/dot",
+                    buttonLink: "/docs/layers/Dot",
                 });
                 break;
             case "Bubble":
                 setCardState({
                     title: "Bubble",
                     map: <Render_Bubble />,
-                    buttonLink: "/docs/tools/bubble",
+                    buttonLink: "/docs/layers/Bubble",
                 });
                 break;
             case "Spike":
                 setCardState({
                     title: "Spike",
                     map: <Render_Spike />,
-                    buttonLink: "/docs/tools/spike",
+                    buttonLink: "/docs/layers/Spike",
                 });
                 break;
+            case "Tiles":
+                setCardState({
+                    title: "Tiles",
+                    map: <Render_Map />,
+                    buttonLink: "/docs/layers/Tiles",
+                });
+                break;
+    
         }
     }
 
 
     return (
-        <div className="layers container-fluid grey-blue">
-            <div className="w-100 p-3 pt-lg-5 text-center display-6 ">
-                Geovisto Layers
+        <div className="layers container-fluid light">
+            <div className="w-100 lead">
+                <h1 className="w-100 text-center title">
+                    Geovisto Layers
+                </h1>
+                <div className="w-100 text-center ">
+                    Geovisto offers several methods to visualize geodata, which are listed below and you can try all of them out!
+                </div>
             </div>
-            <div className="w-100 p-3 pb-lg-3 text-center  lead">
-                Geovisto offers several methods to visualize geodata, which are listed below and you can try all of them out!
-            </div>
-            <div className="tabs w-auto pb-lg-5 px-5">
+            <div className="tabs w-auto">
                 <div className="tabs__head">
                     <nav className="tabs__nav">
                         <ul onClick={handleChange}>
-                            <li>
+                            <li className="tabs__link tab__active">
                                 <a id="Choropleth" className="tabs__link tab__active">
                                     Choropleth Layer
+                                </a>
+                            </li>
+                            <li>
+                                <a id="Tiles" className="tabs__link">
+                                    Tiles Layer
                                 </a>
                             </li>
                             <li className="">
