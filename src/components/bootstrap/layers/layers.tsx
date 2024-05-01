@@ -41,7 +41,7 @@ export const Layers = () => {
     const [cardState, setCardState] = useState({
         title: "Choropleth",
         map: <Render_Choropleth />,
-        buttonLink: "/docs/layers/Choropleth",
+        buttonLink: "/tutorials/layers/Choropleth",
     });
 
 
@@ -57,56 +57,56 @@ export const Layers = () => {
                 setCardState({
                     title: "Choropleth",
                     map: <Render_Choropleth />,
-                    buttonLink: "/docs/layers/choropleth",
+                    buttonLink: "/tutorials/layers/choropleth",
                 });
                 break;
             case "Marker":
                 setCardState({
                     title: "Marker",
                     map: <Render_Marker />,
-                    buttonLink: "/docs/layers/Marker",
+                    buttonLink: "/tutorials/layers/Marker",
                 });
                 break;
             case "Connection":
                 setCardState({
                     title: "Connection",
                     map: <Render_Connection />,
-                    buttonLink: "/docs/layers/Connection",
+                    buttonLink: "/tutorials/layers/Connection",
                 });
                 break;
             case "Heat":
                 setCardState({
                     title: "Heat",
                     map: <Render_Heat />,
-                    buttonLink: "/docs/layers/Heat",
+                    buttonLink: "/tutorials/layers/Heat",
                 });
                 break;
             case "Dot":
                 setCardState({
                     title: "Dot",
                     map: <Render_Dot />,
-                    buttonLink: "/docs/layers/Dot",
+                    buttonLink: "/tutorials/layers/Dot",
                 });
                 break;
             case "Bubble":
                 setCardState({
                     title: "Bubble",
                     map: <Render_Bubble />,
-                    buttonLink: "/docs/layers/Bubble",
+                    buttonLink: "/tutorials/layers/Bubble",
                 });
                 break;
             case "Spike":
                 setCardState({
                     title: "Spike",
                     map: <Render_Spike />,
-                    buttonLink: "/docs/layers/Spike",
+                    buttonLink: "/tutorials/layers/Spike",
                 });
                 break;
             case "Tiles":
                 setCardState({
                     title: "Tiles",
                     map: <Render_Map />,
-                    buttonLink: "/docs/layers/Tiles",
+                    buttonLink: "/tutorials/layers/Tiles",
                 });
                 break;
     

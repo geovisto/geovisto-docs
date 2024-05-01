@@ -68,7 +68,7 @@ const Tool = (props) => {
     
     return (
         <div className="tools__block">
-            <a className="tool__block href" href={"/docs/tools/" + props.href}>
+            <a className="tool__block href" href={"/tutorials/tools/" + props.href}>
                 <h3>{props.title}</h3>
                 <div>{props.description}</div>
             </a>

@@ -86,7 +86,7 @@ const HomepageHeader = () => {
                     className="pt-lg-5"
                 />
                 <div className="header__button__wrapper">
-                    <Link to="/docs/intro">
+                    <Link to="/tutorials/intro">
                         <Button variant="default" className="btn-header">Get started</Button>
                     </Link>
                     <Link to="/playground#playground-hook">
