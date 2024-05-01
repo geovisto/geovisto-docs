@@ -10,20 +10,26 @@ export const Home = (): JSX.Element => (
         title={`Playground`}
         description="Description will go into a meta tag in <head />"
     >
-        <main>
-            <div
-                className="container-fluid w-100 p-3 pt-lg-4 text-center display-6 light"
-                id="playground-hook"
-            >
-                Playground
-            </div>
-            <div className="container-fluid w-100 p-3 pb-lg-5 text-center lead light">
-                <Render_geovisto />
+        <main >
+            <div className="light">
+                <div className="container-fluid">
+                    <h1
+                        className="w-100  text-center title"
+                        
+                    >
+                        Playground
+                    </h1>
+                    <div className="text-center w-100">
+                        Here you can try the implemented Geovisto library.
+                    </div>
+                </div>
+                <div className="w-100 text-center">
+                    <Render_geovisto />
+                </div>
             </div>
         </main>
     </Layout>
 );
-
 
 
 export function Render_geovisto(): JSX.Element {
