@@ -23,17 +23,17 @@ const config = {
         id: 'tutorials',
         path: './tutorials',
         sidebarPath: './sidebars.js',
-        routeBasePath: '/tutorials',
+        routeBasePath: 'tutorials',
       }, 
      ],
      ['@docusaurus/plugin-content-docs',
-      {
-        id: 'docs-geovisto',
-        path: './docs-geovisto',
-        sidebarPath: './sidebars.js',
-        routeBasePath: '/docs-geovisto',
-      }, 
-     ],
+     {
+       id: 'docs-geovisto',
+       path: './docs-geovisto',
+       sidebarPath: './sidebars.js',
+       routeBasePath: 'docs-geovisto',
+     }, 
+    ],
      ['@docusaurus/plugin-content-blog',
      {
        id: 'research',
@@ -42,6 +42,8 @@ const config = {
        //blogSidebarCount: 0  // disable sidebar
      }, 
     ],
+    
+
 
 
 
@@ -83,10 +85,11 @@ const config = {
         },
         items: [
           {
-            to: '/tutorials/Intro',
+            type: 'doc',
+            docsPluginId: 'tutorials',
+            docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
-            activeBaseRegex: `/turorials/`,
+            label: 'Tutorials',
           },
           {
             to: 'playground#playground-hook',
@@ -94,17 +97,19 @@ const config = {
             position: 'left',
           },
           {
-            to: 'docs-geovisto',
+            to: 'docs-geovisto/',
+            docsPluginId: 'docs-geovisto',
             position: 'left',
             label: 'Documentation',
-            activeBaseRegex: `/docs-geovisto/README`,
+            activeBaseRegex: `docs-geovisto/README`,
           },
           {
-            to: '/research/',
+            to: 'research/',
             position: 'left',
             label: 'Research',
-            activeBaseRegex: `/research/`,
+            activeBaseRegex: `research/`,
           },
+
           {
             href: 'https://github.com/geovisto',
             position: 'right',
@@ -125,12 +130,12 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: 'tutorials/',
               },
               {
                 label: 'Documentation',
-                to: '/docs-geovisto/',
-              }
+                to: 'docs-geovisto/',
+              },
             ],
           },
           {
@@ -140,10 +145,17 @@ const config = {
                 label: 'Playground',
                 to: '/playground#playground-hook',
               },
+
+            ],
+          },
+          {
+            title: 'Research',
+            items: [
               {
                 label: 'Research',
                 to: '/research',
               },
+
             ],
           },
           {

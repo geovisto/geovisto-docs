@@ -8,7 +8,6 @@ import "./index.css";
 import GeovistoLogo from "@site/static/img/geovisto-logo4.png";
 import { Button } from "react-bootstrap";
 import { Layers } from "../components/bootstrap/layers/layers";
-import { Research } from "../components/bootstrap/research/research";
 import { Tools } from "../components/bootstrap/tools/tools";
 import { useEffect } from "react";
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -86,7 +85,7 @@ const HomepageHeader = () => {
                     className="pt-lg-5"
                 />
                 <div className="header__button__wrapper">
-                    <Link to="/tutorials/intro">
+                    <Link to="/tutorials">
                         <Button variant="default" className="btn-header">Get started</Button>
                     </Link>
                     <Link to="/playground#playground-hook">
@@ -124,14 +123,11 @@ export const Home = () => {
                 </div>
             </div>
 
-            {/*Tools*/}
-            <Tools/>
-            
-            {/*Geovisto Layers*/}
-            <Layers />
 
-            {/*Research*/}
-            <Research />
+            <Tools/>
+            <Layers/>
+
+            
 
         </main>
     </Layout>
