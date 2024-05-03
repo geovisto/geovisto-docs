@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Geovisto Blog</title>
+        <link>https://geovisto.github.io/research</link>
+        <description>Geovisto Blog</description>
+        <lastBuildDate>Fri, 05 Jan 2024 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Legend and Info Tool]]></title>
+            <link>https://geovisto.github.io/research/2024/01/05/community_5</link>
+            <guid>/2024/01/05/community_5</guid>
+            <pubDate>Fri, 05 Jan 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[---]]></description>
+            <content:encoded><![CDATA[<hr><ul><li>name: Koscielniak Tomáš </li><li>title:   Usability Improvement of Geovisto Library</li><li>article: <a href="https://www.fit.vut.cz/study/thesis-file/24671/24671.pdf" target="_blank" rel="noopener noreferrer">https://www.fit.vut.cz/study/thesis-file/24671/24671.pdf</a></li><li>npm: <a href="https://www.npmjs.com/package/geovisto-legend" target="_blank" rel="noopener noreferrer">https://www.npmjs.com/package/geovisto-legend</a>, <a href="https://www.npmjs.com/package/geovisto-info" target="_blank" rel="noopener noreferrer">https://www.npmjs.com/package/geovisto-info</a></li><li>github: <a href="https://github.com/geovisto/geovisto-legend" target="_blank" rel="noopener noreferrer">https://github.com/geovisto/geovisto-legend</a>, <a href="https://github.com/geovisto/geovisto-info" target="_blank" rel="noopener noreferrer">https://github.com/geovisto/geovisto-info</a></li><li>date: 2022</li></ul><hr>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Hierarchy and Geo-Downloader Tool]]></title>
+            <link>https://geovisto.github.io/research/2024/01/04/community_4</link>
+            <guid>/2024/01/04/community_4</guid>
+            <pubDate>Thu, 04 Jan 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[---]]></description>
+            <content:encoded><![CDATA[<hr><ul><li>name: Malý Vojtěch </li><li>title:   Web Graphical Visualization of Hierachical Geographical Data</li><li>article: <a href="https://www.fit.vut.cz/study/thesis-file/24395/24395.pdf" target="_blank" rel="noopener noreferrer">https://www.fit.vut.cz/study/thesis-file/24395/24395.pdf</a></li><li>npm: <a href="https://www.npmjs.com/package/geovisto-hierarchy" target="_blank" rel="noopener noreferrer">https://www.npmjs.com/package/geovisto-hierarchy</a>, <a href="https://www.npmjs.com/package/geovisto-geo-downloader" target="_blank" rel="noopener noreferrer">https://www.npmjs.com/package/geovisto-geo-downloader</a></li><li>github: <a href="https://github.com/geovisto/geovisto-hierarchy" target="_blank" rel="noopener noreferrer">https://github.com/geovisto/geovisto-hierarchy</a>, <a href="https://github.com/geovisto/geovisto-geo-downloader" target="_blank" rel="noopener noreferrer">https://github.com/geovisto/geovisto-geo-downloader</a></li><li>date: 2022</li></ul><hr>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Heat, Dot, Spike and Bubble Layer]]></title>
+            <link>https://geovisto.github.io/research/2024/01/03/community_3</link>
+            <guid>/2024/01/03/community_3</guid>
+            <pubDate>Wed, 03 Jan 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[---]]></description>
+            <content:encoded><![CDATA[<hr><ul><li>name: Kašpar Petr</li><li>title:   Web Application for Visualization of Values in Geographical Coordinates</li><li>article: <a href="https://www.fit.vut.cz/study/thesis-file/23900/23900.pdf" target="_blank" rel="noopener noreferrer">https://www.fit.vut.cz/study/thesis-file/23900/23900.pdf</a></li><li>npm: <a href="https://www.npmjs.com/package/geovisto-layer-heat" target="_blank" rel="noopener noreferrer">https://www.npmjs.com/package/geovisto-layer-heat</a>, <a href="https://www.npmjs.com/package/geovisto-layer-dot" target="_blank" rel="noopener noreferrer">https://www.npmjs.com/package/geovisto-layer-dot</a>, <a href="https://www.npmjs.com/package/geovisto-layer-spike" target="_blank" rel="noopener noreferrer">https://www.npmjs.com/package/geovisto-layer-spike</a>, <a href="https://www.npmjs.com/package/geovisto-layer-bubble" target="_blank" rel="noopener noreferrer">https://www.npmjs.com/package/geovisto-layer-bubble</a></li><li>github: <a href="https://github.com/geovisto/geovisto-layer-heat" target="_blank" rel="noopener noreferrer">https://github.com/geovisto/geovisto-layer-heat</a>, <a href="https://github.com/geovisto/geovisto-layer-dot" target="_blank" rel="noopener noreferrer">https://github.com/geovisto/geovisto-layer-dot</a>, <a href="https://github.com/geovisto/geovisto-layer-spike" target="_blank" rel="noopener noreferrer">https://github.com/geovisto/geovisto-layer-spike</a>, <a href="https://github.com/geovisto/geovisto-layer-bubble" target="_blank" rel="noopener noreferrer">https://github.com/geovisto/geovisto-layer-bubble</a></li><li>excel: <a href="https://excel.fit.vutbr.cz/submissions/2021/054/54.pdf" target="_blank" rel="noopener noreferrer">https://excel.fit.vutbr.cz/submissions/2021/054/54.pdf</a></li><li>date: 2021</li></ul><hr><p>This article is about timeline tool, which allows the user to see how the data has changed over time.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Timeline]]></title>
+            <link>https://geovisto.github.io/research/2024/01/02/community_2</link>
+            <guid>/2024/01/02/community_2</guid>
+            <pubDate>Tue, 02 Jan 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[---]]></description>
+            <content:encoded><![CDATA[<hr><ul><li>name: Rykala Kryštof </li><li>title:   Web Application for Graphical Visualization of Geospatial Time Series</li><li>article: <a href="https://www.fit.vut.cz/study/thesis-file/23499/23499.pdf" target="_blank" rel="noopener noreferrer">https://www.fit.vut.cz/study/thesis-file/23499/23499.pdf</a></li><li>npm: <a href="https://www.npmjs.com/package/geovisto-timeline" target="_blank" rel="noopener noreferrer">https://www.npmjs.com/package/geovisto-timeline</a></li><li>github: <a href="https://github.com/geovisto/geovisto-timeline" target="_blank" rel="noopener noreferrer">https://github.com/geovisto/geovisto-timeline</a></li><li>date: 2021</li></ul><hr><p>This article is about timeline tool, which allows the user to see how the data has changed over time.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Foundation]]></title>
+            <link>https://geovisto.github.io/research/2024/01/01/community_1</link>
+            <guid>/2024/01/01/community_1</guid>
+            <pubDate>Mon, 01 Jan 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[---]]></description>
+            <content:encoded><![CDATA[<hr><ul><li>name: Jiří Hynek, Jakub Kachlík, Vít Rušňak</li><li>title: Geovisto: A Toolkit for Generic Geospatial Data Visualization</li><li>url: <a href="https://www.scitepress.org/Papers/2021/102604/102604.pdf" target="_blank" rel="noopener noreferrer">https://www.scitepress.org/Papers/2021/102604/102604.pdf</a></li><li>github: <a href="https://github.com/geovisto/geovisto" target="_blank" rel="noopener noreferrer">https://github.com/geovisto/geovisto</a></li><li>date: 2021</li></ul><hr><p>This work describes the basic core of the Geovisto library.</p><p>The motivation for creating the library, the logic of how the library works, and the basic tools and layers are described here.</p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>
