@@ -11,10 +11,10 @@
       "enabled": true,
       "tabs": [
         {
-          "enabled": false,
+          "enabled": true,
           "name": "General settings",
           "icon": "<i class=\"fa fa-gear\"></i>",
-          "checkButton": false,
+          "checkButton": true,
           "fragments": [
             {
               "tool": "geovisto-tool-themes",
@@ -35,7 +35,7 @@
         },
         {
           "tool": "geovisto-tool-filters",
-          "enabled": false,
+          "enabled": true,
           "name": "Filters",
           "icon": "<i class=\"fa fa-filter\"></i>",
           "checkButton": true
@@ -70,7 +70,7 @@
         },
         {
           "tool": "geovisto-tool-timeline",
-          "enabled": false,
+          "enabled": true,
           "name": "Timeline",
           "icon": "<i class=\"fa fa-clock-o\" />",
           "checkButton": true
@@ -93,7 +93,13 @@
       "type": "geovisto-tool-filters",
       "id": "geovisto-tool-filters",
       "enabled": true,
-      "filterRules": []
+      "filterRules": [
+        {
+          "domain": "Year",
+          "operation": "==",
+          "pattern": "2019"
+        }
+      ]
     },
     {
       "type": "geovisto-tool-themes",
@@ -104,7 +110,12 @@
     {
       "type": "geovisto-tool-selection",
       "id": "geovisto-tool-selection",
-      "enabled": true
+      "enabled": true,
+      "selection": {
+        "tool": "geovisto-tool-layer-choropleth",
+        "ids": [
+        ]
+      }    
     },
     {
       "type": "geovisto-tool-layer-map",
@@ -166,7 +177,7 @@
     {
       "type": "geovisto-tool-timeline",
       "id": "geovisto-tool-timeline",
-      "enabled": false,
+      "enabled": true,
       "layerName": "Timeline",
       "data": {
         "timePath": "",

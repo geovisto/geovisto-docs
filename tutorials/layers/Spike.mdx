@@ -1,0 +1,57 @@
+---
+sidebar_position: 5
+---
+
+import { Render_Spike } from "../../src/geovisto_demos/export";
+
+export const Spike = () => <Render_Spike />;
+
+A spike map is proportional symbol map, which is a type of thematic map that uses map symbols (spikes in this example) that vary in size to represent a quantitative variable.[^1]<br/>
+Example below contains data about **Covid cases** in Czech Republic.
+
+## Example
+
+<Spike />
+
+### Installation
+
+```
+npm i geovisto-layer-spike
+```
+
+
+### Configuration
+
+Configuration used in example above:
+
+```json
+{
+    "type": "geovisto-tool-layer-spike",
+    "id": "geovisto-tool-layer-spike",
+    "enabled": true,
+    "layerName": "Spike layer",
+    "data": {
+        "latitude": "lat",
+        "longitude": "long",
+        "category": "data.category",
+        "value": "data.value",
+        "aggregation": "sum"
+        "color": "#00FF00"
+    }
+}
+```
+
+## Dimensions
+
+Dimensions used in Spike Layer:
+
+-   `latitude` - latitude
+-   `longitude` - longitude
+-   `category` - main category to display
+-   `value` - value of category to display
+-   `aggregation` - value aggregation
+-   `color` - color of spikes
+
+---
+
+[^1] [Wikipedia: Proportional symbol map](https://en.wikipedia.org/wiki/Proportional_symbol_map)

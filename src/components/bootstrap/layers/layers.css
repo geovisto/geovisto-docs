@@ -1,0 +1,90 @@
+.tabs {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.tabs .tabs__head {
+    order: 1;
+    max-width: 25%;
+    flex: 0 0 32%;
+}
+
+.tabs .tabs__body {
+    order: 2;
+    max-width: 65%;
+    flex: 0 0 65%;
+}
+
+.layer_card {
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    display: block;
+    border-radius: 15px;
+    background-color: var(--layer-map-color);
+}
+
+.layer_card .titles {
+    color: white;
+}
+
+.layer_card .map__container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+.tabs{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+
+.tabs__nav > ul{
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.tabs__nav a{
+    color: var(--text-color);
+}
+
+.tabs__nav a:hover{
+    font-size: 25px;
+    color: var(--text-color-hover);
+}
+
+.tabs__nav li:has(a:hover) {
+    font-size: 25px;
+    color: var(--text-color-hover);
+}
+
+.tabs__nav li:has(a.tab__active) {
+    font-size: 35px!important;
+    color: var(--text-color)!important;
+}
+
+a.tab__active {
+    font-size: 35px!important;
+    color: var(--text-color)!important;
+}
+
+
+
+.tabs__nav > ul {
+    list-style-position: outside;
+}
+
+.tabs__nav a {
+    cursor: pointer;
+}
+

@@ -7,15 +7,17 @@
 }
 
 .demo-map {
-    height: 65vh;
-    width: 70vw;
+    height: 50vh;
+    width: 100%;
+    padding: 3px;
 }
 
 .demo-toolbar {
-    width: 70vw;
+    width: 100%;
     font-size: 1rem;
+    padding-left: 3px;
+    padding-right: 3px;
     background-color: var(--ifm-color-primary-lightest);
-    padding: 1rem;
     color: var(--text-color);
 }
 
@@ -25,38 +27,123 @@
 
 .data-container {
     text-align: left;
-    padding-bottom: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    transition: all .5s ease;
+    height: min-content;
+
 }
 
-.config-container {
-    text-align: left;
+.data-container.hidden {
+    display: none; 
 }
 
-input[type=file]::file-selector-button, input[type=submit] {
-    background-color: #a7ff0f;
-    border-color: var(--ifm-color-primary-lightest);
-    padding: 0.2rem 0.55rem;
-    font-weight: 600;
-    display: inline-block;
-    line-height: 1.5;
-    color: #212529;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    cursor: pointer;
-    -webkit-user-select: none;
-    user-select: none;
-    border: 1px solid transparent;
-    font-size: 1rem;
-    border-radius: 0.25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+.data-container .btn-export {
+    padding: 8px !important;
+    height: max-content;
 }
 
-input[type=submit] {
-    margin-left: 1%;
-    margin-right: 1%;
+.data-container .custom-file-upload {
+    padding: 8px !important;
 }
+
 
 .leaflet-tooltip-pane {
     z-index: 500;
+}
+
+
+.editors{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50vh;
+    padding-top: 10px;
+}
+
+
+
+.editor {
+    display: flex;
+    flex-direction: column;
+    width: 33.3vw;
+}
+
+.editor textarea{
+    width: 100%;
+    height: 50vh;
+    resize: none;
+    font-size: 15px;
+    margin-top: 2px;
+}
+
+
+.file{
+    flex-shrink: 2;
+}
+
+select {
+    width: 100%;
+}
+
+.editor__wrapper {
+    display: block;
+    overflow: hidden;
+}
+
+.playground__container {
+    padding: 20px;
+
+}
+
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    cursor: pointer;
+}
+
+.plagroundbar__buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+}
+
+
+.select {
+    color: black;
+    flex-grow: 2;
+    height: max-content;
+
+}
+
+
+
+.arrow {
+    border: solid var(--text-color);
+    border-width: 0px 3px 3px 0px;
+    display: inline-block;
+    padding: 3px;
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
+}
+
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
 }

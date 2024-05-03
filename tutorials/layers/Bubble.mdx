@@ -1,0 +1,58 @@
+---
+sidebar_position: 4
+---
+
+import { Render_Bubble } from "../../src/geovisto_demos/export";
+
+export const Bubble = () => <Render_Bubble />;
+
+A bubble map is proportional symbol map, which is a type of thematic map that uses map symbols (bubbles in this example) that vary in size to represent a quantitative variable.[^1]<br/>
+Example below contains data about **Covid cases** in Czech Republic.
+
+## Example
+
+<Bubble />
+
+### Installation
+
+```
+npm i geovisto-layer-bubble
+```
+
+### Configuration
+
+Configuration used in example above:
+
+```json
+{
+    "type": "geovisto-tool-layer-bubble",
+    "id": "geovisto-tool-layer-bubble",
+    "enabled": true,
+    "layerName": "Bubble layer",
+    "data": {
+        "latitude": "lat",
+        "longitude": "long",
+        "category": "data.category",
+        "value": "data.value",
+        "aggregation": "sum",
+        "bubbleSize": 2,
+        "color": "#FF0000"
+    }
+}
+```
+
+## Dimensions
+
+Dimensions used in Bubble Layer:
+
+-   `latitude` - latitude
+-   `longitude` - longitude
+-   `category` - main category to display
+-   `value` - value of category to display
+-   `aggregation` - value aggregation
+-   `bubbleSize` - size of bubbles
+-   `color` - color of bubbles
+
+---
+
+[^1] [Wikipedia: Proportional symbol map](https://en.wikipedia.org/wiki/Proportional_symbol_map)

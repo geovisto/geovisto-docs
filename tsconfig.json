@@ -1,8 +1,14 @@
 {
-    // This file is not used in compilation. It is here just for a nice editor experience.
-    "extends": "@tsconfig/docusaurus/tsconfig.json",
-    "compilerOptions": {
-        "baseUrl": ".",
-        "resolveJsonModule": true
-    }
+  // This file is not used in compilation. It is here just for a nice editor experience.
+  "extends": "@tsconfig/docusaurus/tsconfig.json",
+  "compilerOptions": {
+      "baseUrl": ".",
+      "resolveJsonModule": true,
+      "module": "Node16"
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build"
+]
 }
