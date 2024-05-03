@@ -219,6 +219,11 @@ a.navbar__brand {
 
 }
 
+.custom_footer_copyright {
+    display: flex;
+    flex-direction: column;
+}
+
 .search-form {
     width: 50%;
 }
