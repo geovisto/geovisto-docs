@@ -92,15 +92,14 @@ const config = {
             label: 'Tutorials',
           },
           {
-            to: 'playground#playground-hook',
+            to: 'playground',
             label: 'Playground',
             position: 'left',
           },
           {
             to: 'docs-geovisto/',
-            docsPluginId: 'docs-geovisto',
             position: 'left',
-            label: 'Documentation',
+            label: 'Docs',
             activeBaseRegex: `docs-geovisto/README`,
           },
           {
@@ -143,7 +142,7 @@ const config = {
             items: [
               {
                 label: 'Playground',
-                to: '/playground#playground-hook',
+                to: '/playground',
               },
 
             ],
@@ -172,7 +171,6 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Geovisto | VUT FIT Brno. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

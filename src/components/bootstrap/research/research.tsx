@@ -152,7 +152,7 @@ export const Research = () => {
                     </div>
                     <div className="community-button w-100 p-3 pb-lg-5 lead">
                         <Link to="/research" className="ps-lg-3">
-                            <Button variant="default">Go to Community</Button>
+                            <Button variant="default">Go to Research</Button>
                         </Link>
                     </div>
                     <div className="slider__container">
