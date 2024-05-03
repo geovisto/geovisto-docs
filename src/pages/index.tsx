@@ -9,8 +9,9 @@ import GeovistoLogo from "@site/static/img/geovisto-logo4.png";
 import { Button } from "react-bootstrap";
 import { Layers } from "../components/bootstrap/layers/layers";
 import { Tools } from "../components/bootstrap/tools/tools";
+import { Research} from "../components/bootstrap/research/research";
+
 import { useEffect } from "react";
-import useBaseUrl from '@docusaurus/useBaseUrl';
 /**
  * This file contains implementation of landing page
  *
@@ -126,6 +127,7 @@ export const Home = () => {
 
             <Tools/>
             <Layers/>
+            <Research/>
 
             
 
