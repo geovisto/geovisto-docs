@@ -44,8 +44,6 @@ const HomepageHeader = () => {
         timeoutBackground = setTimeout(setBackground, slideInterval)
 
 
-        console.log("setBackground")
-        console.log('i: '+ i)
         if (i < images.length-1) {
             i++;
         } else {
