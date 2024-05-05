@@ -24,9 +24,33 @@ Configuration used in example above:
 
 ```json
 {
-      "type": "geovisto-tool-sidebar",
-      "id": "geovisto-tool-sidebar",
+  "type": "geovisto-tool-sidebar",
+  "id": "geovisto-tool-sidebar",
+  "enabled": true,
+  "tabs": [
+    {
       "enabled": true,
-      "tabs": []
+      "name": "General settings",
+      "icon": "<i class=\"fa fa-gear\"></i>",
+      "checkButton": false,
+      "fragments": [
+        {
+          "tool": "geovisto-tool-themes",
+          "enabled": true
+        },
+        {
+          "tool": "geovisto-tool-selection",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "tool": "geovisto-tool-info",
+      "enabled": true,
+      "name": "Info",
+      "icon": "<i class=\"fa fa-info\"></i>",
+      "checkButton": true
+    },
+  ]
 }
 ```
