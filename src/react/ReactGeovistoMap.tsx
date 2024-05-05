@@ -1,5 +1,5 @@
 // React
-import React, { useEffect, useRef } from "react";
+import React, { useImperativeHandle, forwardRef, useEffect, useRef } from "react";
 import { isEqual } from "lodash"
 
 // Geovisto
@@ -19,19 +19,32 @@ import "./common.css";
  *  @author Jiri Hynek
  *  @author Vladimir Korencik
  */
-const ReactGeovistoMap: React.FC<IReactGeovistoMapProps> = (props) => {
-    const mapRef = props.ref ?? useRef<IMap>();
+const ReactGeovistoMap = forwardRef<any,IReactGeovistoMapProps>((props , ref) => {
+    const mapRef = useRef<IMap>();
     const helpRef = useRef(false);
-    const mapContainerRef = useRef<HTMLDivElement>(null);
 
     var typingTimer;
+    var drawTimer;
+    var redrawTimer;
     var typingInterval = 5000;
 
+    useImperativeHandle(ref, () => ({
+        stopTimerHook: () => {
+            stopTimer();
+        },
+        startTimerHook: () => {
+            startTimer();
+        }
+      }));
     const startTimer = () => {
         clearTimeout(typingTimer);
         typingTimer = setTimeout(resultAction, typingInterval);
     };
 
+    const stopTimer = () => {
+        clearTimeout(typingTimer);
+    }
+    
     const deleteUndefined = (obj) => {
         var t = obj;
         for (var v in t) {
@@ -50,7 +63,6 @@ const ReactGeovistoMap: React.FC<IReactGeovistoMapProps> = (props) => {
         if (text_config) {
             text_config = JSON.parse(text_config);
         }
-
         map_config = deleteUndefined(map_config); 
 
         if (!isEqual(text_config, map_config)) {
@@ -60,13 +72,18 @@ const ReactGeovistoMap: React.FC<IReactGeovistoMapProps> = (props) => {
     }
 
     useEffect(() => {
+
+    }, [props]);
+
+
+    useEffect(() => {
         // create new Geovisto map
         if (!helpRef.current) {
             // draw map with the current config
             // timeout is set to fix crashing with leaflet
             mapRef.current = Geovisto.createMap(props);
 
-            setTimeout(() => {
+            drawTimer = setTimeout(() => {
                 mapRef.current.draw(
                     props.config ??
                         Geovisto.getMapConfigManagerFactory().default({})
@@ -87,9 +104,11 @@ const ReactGeovistoMap: React.FC<IReactGeovistoMapProps> = (props) => {
 
             if (props.id == 'my-geovisto-map') {
 
-                setTimeout(() => {
+                redrawTimer = setTimeout(() => {
                 mapRef.current.redraw(
                     props.config ?? Geovisto.getMapConfigManagerFactory().default({}), props);
+                    const map_config = mapRef.current.export(); 
+                    (document.getElementById('config') as HTMLInputElement).value = JSON.stringify(map_config, null, 4);
                 }, 0);
             }
         } 
@@ -103,6 +122,9 @@ const ReactGeovistoMap: React.FC<IReactGeovistoMapProps> = (props) => {
 
         return () => {
             clearTimeout(typingTimer);
+            clearTimeout(drawTimer);
+            clearTimeout(redrawTimer);
+
             console.log("cleaning up react");
         }
     }, [props]);
@@ -112,9 +134,8 @@ const ReactGeovistoMap: React.FC<IReactGeovistoMapProps> = (props) => {
         <div
             id={props.id ?? "my-geovisto-map"}
             className="geovisto-map"
-            ref={mapContainerRef}
         />
     );
-};
+});
 
 export default ReactGeovistoMap;

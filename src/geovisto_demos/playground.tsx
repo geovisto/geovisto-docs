@@ -1,5 +1,5 @@
 // React
-import React, { Component, useState } from "react";
+import React, { Component, useState, useRef } from "react";
 
 // React-Geovisto
 import ReactGeovistoMap from "../react/ReactGeovistoMap";
@@ -12,7 +12,7 @@ import {
 
 import "./playground.css";
 import "geovisto/dist/index.css";
-import { PlaygroundBarGeojson } from "./components";
+import { PlaygroundBarGeo } from "./components";
 import { PlaygroundBarData } from "./components";
 import { PlaygroundBarConfig } from "./components";
 import { PlaygroundBarSearchDatasets } from "./components";
@@ -51,10 +51,16 @@ const C_ID_input_data_export = "leaflet-combined-map-input-export-data";
 const C_ID_input_config_export = "leaflet-combined-map-input-export-config";
 const C_ID_input_geojson_export = "leaflet-combined-map-input-export-geojson";
 
+interface specialRef {
+    stopTimer: () => void;
+    startTimer: () => void;
+}
+
 export default class Playground extends Component<Record<string, never>, { data: unknown, config: Record<string, unknown>, geojson: Array<any>}> {
 
     private map: React.RefObject<IMap>;
     private infodata: unknown;
+    private myRef: React.RefObject<any>;
 
     public constructor(props: Record<string, never>) {
         super(props);
@@ -66,17 +72,18 @@ export default class Playground extends Component<Record<string, never>, { data:
             // implicit config
             config: require('/static/config/config.json'),
             // implicit geojson
-            geojson: [],
-            // implicit info
+            geojson: []
         };
 
         // reference to the rendered map
-        this.map = React.createRef();
+        this.map = React.createRef()
         this.infodata = require("!!raw-loader!/static/info/test.md");
+        this.myRef = React.createRef()
     }
     
     public  downloadGeojson = async (name, geojson) => {
         
+        name = name.split('.')[0]
         if (!this.state.geojson.find(e => e.key === name)) 
         {
             this.state.geojson.push({key:name, geo:geojson});
@@ -110,9 +117,7 @@ export default class Playground extends Component<Record<string, never>, { data:
             config: config
         });
 
-        let config_string = this.json_to_sting(config, false);
-
-        (document.getElementById('config') as HTMLInputElement).value = config_string;
+        (document.getElementById('config') as HTMLInputElement).value = JSON.stringify(config, null, 4);;
     }
 
 
@@ -162,9 +167,9 @@ export default class Playground extends Component<Record<string, never>, { data:
         // process path
         const pathSubmitted = function(file: File, result: { json: unknown | undefined }, type: any) {
             const reader = new FileReader();
+            reader.readAsText(file);
             const onLoadAction = function(e: ProgressEvent<FileReader>) {
                 try {
-                    console.log(e);
                     //console.log(reader.result);
                     if(typeof reader.result == "string") {
                         result.json = JSON.parse(reader.result);
@@ -198,8 +203,6 @@ export default class Playground extends Component<Record<string, never>, { data:
                     document.getElementById('geojson').dispatchEvent(new Event('change'));
                 }
             };
-
-            reader.readAsText(file);
         };
 
         // process data path
@@ -207,7 +210,6 @@ export default class Playground extends Component<Record<string, never>, { data:
             json: undefined
         };
         const dataPathSubmitted = (e: Event) => {
-            console.log((e.target as HTMLInputElement).files);
             pathSubmitted((e.target as HTMLInputElement).files[0], data, "data")
 
         };
@@ -218,9 +220,7 @@ export default class Playground extends Component<Record<string, never>, { data:
             json: undefined
         };
         const configPathSubmitted = function(this: HTMLInputElement) {
-            console.log(this.files);
             pathSubmitted(this.files[0], config, "config");
-            console.log(config.json);
 
         };
         document.getElementById(C_ID_input_config).addEventListener('change', configPathSubmitted, false);
@@ -230,7 +230,6 @@ export default class Playground extends Component<Record<string, never>, { data:
             json: undefined
         };
         const geojsonPathSubmitted = function(this: HTMLInputElement) {
-            console.log(this.files);
             pathSubmitted(this.files[0], geojson, "geojson");
         };
         document.getElementById(C_ID_input_geojson).addEventListener('change', geojsonPathSubmitted, false);
@@ -240,8 +239,6 @@ export default class Playground extends Component<Record<string, never>, { data:
 
         // export action data
         const exportActionData = (e: MouseEvent) => {
-            console.log(e);
-
             // expert map data
             const data = JSON.stringify(this.state.data, null, 4);
 
@@ -254,14 +251,11 @@ export default class Playground extends Component<Record<string, never>, { data:
             element.click();
             document.body.removeChild(element);
 
-            console.log("rendered map:", );
         };
         document.getElementById(C_ID_input_data_export).addEventListener('click', exportActionData);
                 
         // export action config
         const exportActionConfig = (e: MouseEvent) => {
-            console.log(e);
-
             // expert map configuration
             const config = JSON.stringify(this.state.config, null, 4);
 
@@ -274,14 +268,11 @@ export default class Playground extends Component<Record<string, never>, { data:
             element.click();
             document.body.removeChild(element);
 
-            console.log("rendered map:", );
         };
         document.getElementById(C_ID_input_config_export).addEventListener('click', exportActionConfig);
 
         // export action geojson
         const exportActionGeojson = (e: MouseEvent) => {
-            console.log(e);
-
             // expert map configuration
             const geojson = JSON.stringify(this.state.geojson, null, 4);
 
@@ -294,7 +285,6 @@ export default class Playground extends Component<Record<string, never>, { data:
             element.click();
             document.body.removeChild(element);
 
-            console.log("rendered map:", );
         };
         document.getElementById(C_ID_input_geojson_export).addEventListener('click', exportActionGeojson);
         
@@ -317,7 +307,7 @@ export default class Playground extends Component<Record<string, never>, { data:
 
         const resultActionConfig = (e: MouseEvent) => {
 
-            console.log("result action");
+            console.log("result action config");
             try {
                 config.json = JSON.parse((document.getElementById('config') as HTMLInputElement).value);
 
@@ -325,9 +315,6 @@ export default class Playground extends Component<Record<string, never>, { data:
                 this.setState({
                     config: config.json
                 });
-
-                console.log("config");
-                console.log(this.state.config);
         
             } catch (error) {
                 alert("Config json error");
@@ -336,7 +323,6 @@ export default class Playground extends Component<Record<string, never>, { data:
 
         const resultActionGeojson = (e: MouseEvent) => {
 
-            console.log("result action");
             try {
                 geojson.json = JSON.parse((document.getElementById('geojson') as HTMLInputElement).value);
 
@@ -356,7 +342,7 @@ export default class Playground extends Component<Record<string, never>, { data:
                     geojson: this.state.geojson
                 });
             } catch (error) {
-                alert("Config json error");
+                alert("Geo json error");
             }    
         };geojsonPathSubmitted
         document.getElementById('data').addEventListener('change', resultActionData, false);
@@ -374,6 +360,7 @@ export default class Playground extends Component<Record<string, never>, { data:
         const startTimerData = () => {
             clearTimeout(typingTimerData);
             typingTimerData = setTimeout(resultActionData, typingInterval);
+
         };
 
         const startTimerConfig = () => {
@@ -381,21 +368,35 @@ export default class Playground extends Component<Record<string, never>, { data:
             typingTimerConfig = setTimeout(resultActionConfig, typingInterval);
         };
 
-        const resetTimperData = () => {
+        const resetTimerData = (e) => {
+            this.handleTab(e)
             clearTimeout(typingTimerData);
         };
 
-        const resetTimperConfig = () => {
+        const resetTimerConfig = (e) => {
+            this.handleTab(e)
             clearTimeout(typingTimerConfig);
+            this.myRef.current.stopTimerHook();
+
         };
 
         document.getElementById('data').addEventListener('keyup', startTimerData, false);
         document.getElementById('config').addEventListener('keyup', startTimerConfig, false);
 
-        document.getElementById('data').addEventListener('keydown', resetTimperData, false);
-        document.getElementById('config').addEventListener('keydown', resetTimperConfig, false);
+        document.getElementById('data').addEventListener('keydown', resetTimerData, false);
+        document.getElementById('config').addEventListener('keydown', resetTimerConfig, false);
     }
 
+    handleTab(event:any) {
+        if (event.key == 'Tab') {
+            event.preventDefault();
+            var start = event.target.selectionStart;
+            var end = event.target.selectionEnd;
+            event.target.value = event.target.value.substring(0, start) + '\t' + event.target.value.substring(end);
+            event.target.selectionStart = event.target.selectionEnd = start + 1;
+        }
+        
+    }
     
     public render(): JSX.Element {
         console.log("rendering...");
@@ -407,8 +408,8 @@ export default class Playground extends Component<Record<string, never>, { data:
                 <div>
                     <div className="input editors">
                         <div className="editor">
-                            <label>Geojson</label>
-                            <PlaygroundBarGeojson callback={this.downloadGeojson}/>
+                            <label>Geo</label>
+                            <PlaygroundBarGeo callback={this.downloadGeojson}/>
                             <textarea id="geojson" readOnly></textarea>
                         </div>
                         <div className="editor">
@@ -425,6 +426,8 @@ export default class Playground extends Component<Record<string, never>, { data:
                     <div className="demo-container">
                         <div className="demo-map">
                             <ReactGeovistoMap
+                                
+                                ref={this.myRef}
                                 id="my-geovisto-map"
                                 data={Geovisto.getMapDataManagerFactory().json(this.state.data)}
                                 geoData={Geovisto.getGeoDataManager(
@@ -463,7 +466,7 @@ export default class Playground extends Component<Record<string, never>, { data:
                                         ])
                                     }),
                                     GeovistoGeoDownloaderTool.createTool({
-                                        id: "geovisto-geo-downloader"
+                                        id: "geovisto-tool-geo-downloader"
                                     }),
                                     GeovistoLegendTool.createTool({
                                         id: "geovisto-tool-legend"
