@@ -8,7 +8,7 @@ const C_ID_select_geojson = "leaflet-combined-map-select-geojson";
 const C_ID_input_geojson = "leaflet-combined-map-input-geojson";
 const C_ID_input_geojson_export = "leaflet-combined-map-input-export-geojson";
 
-const PlaygroundBarGeojson = (props) => {
+const PlaygroundBarGeo = (props) => {
     const [isLoading, setIsLoading] = useState(false);
 
     const [state, setState] = useState({
@@ -63,7 +63,7 @@ const PlaygroundBarGeojson = (props) => {
     const handleChange = async (e) => {
         setIsLoading(true);
         state.value = e;
-        const geojson = (await file('resources/geojson/' + e.value)).data
+        const geojson = (await file('resources/geo/' + e.value)).data
         props.callback(e.value, geojson);
         setIsLoading(false);
     }
@@ -100,4 +100,4 @@ const PlaygroundBarGeojson = (props) => {
     );
 };
 
-export default PlaygroundBarGeojson;
+export default PlaygroundBarGeo;

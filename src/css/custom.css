@@ -74,6 +74,8 @@
 
     --text-color: #ffffff;
     --text-color-hover: #eaeaea;
+    --text-color-hover-layers: #8b8b8b;
+
 
 
     --ifm-background-color:#1b1b1d;
@@ -114,6 +116,8 @@ html[data-theme='dark'] {
 
     --text-color: black;
     --text-color-hover: #d8d8d8;
+    --text-color-hover-layers: #636363;
+
 
 
     --ifm-background-color:#f8f8f8;
