@@ -14,7 +14,7 @@
           "enabled": false,
           "name": "General settings",
           "icon": "<i class=\"fa fa-gear\"></i>",
-          "checkButton": false,
+          "checkButton": true,
           "fragments": [
             {
               "tool": "geovisto-tool-themes",
@@ -27,11 +27,18 @@
           ]
         },
         {
+          "tool": "geovisto-tool-info",
+          "enabled": false,
+          "name": "Info",
+          "icon": "<i class=\"fa fa-info\"></i>",
+          "checkButton": false
+        },
+        {
           "tool": "geovisto-tool-filters",
           "enabled": false,
           "name": "Filters",
           "icon": "<i class=\"fa fa-filter\"></i>",
-          "checkButton": true
+          "checkButton": false
         },
         {
           "tool": "geovisto-tool-layer-map",
@@ -39,13 +46,6 @@
           "name": "Map layer settings",
           "icon": "<i class=\"fa fa-globe\"></i>",
           "checkButton": true
-        },
-        {
-          "tool": "geovisto-tool-info",
-          "enabled": true,
-          "name": "Info",
-          "icon": "<i class=\"fa fa-info\"></i>",
-          "checkButton": false
         },
         {
           "tool": "geovisto-tool-layer-choropleth",
@@ -63,17 +63,17 @@
         },
         {
           "tool": "geovisto-tool-layer-connection",
-          "enabled": true,
+          "enabled": false,
           "name": "Connection layer settings",
           "icon": "<i class=\"fa fa-road\"></i>",
-          "checkButton": true
+          "checkButton": false
         },
         {
           "tool": "geovisto-tool-timeline",
           "enabled": false,
           "name": "Timeline",
           "icon": "<i class=\"fa fa-clock-o\" />",
-          "checkButton": true
+          "checkButton": false
         },
         {
           "tool": "geovisto-tool-layer-drawing",
@@ -92,8 +92,14 @@
     {
       "type": "geovisto-tool-filters",
       "id": "geovisto-tool-filters",
-      "enabled": true,
-      "filterRules": []
+      "enabled": false,
+      "filterRules": [
+        {
+          "domain": "Year",
+          "operation": "==",
+          "pattern": "2019"
+        }
+      ]
     },
     {
       "type": "geovisto-tool-themes",
@@ -104,7 +110,12 @@
     {
       "type": "geovisto-tool-selection",
       "id": "geovisto-tool-selection",
-      "enabled": true
+      "enabled": true,
+      "selection": {
+        "tool": "geovisto-tool-layer-choropleth",
+        "ids": [
+        ]
+      }    
     },
     {
       "type": "geovisto-tool-layer-map",
@@ -135,10 +146,10 @@
     {
       "type": "geovisto-tool-layer-marker",
       "id": "geovisto-tool-layer-marker",
-      "enabled": true,
+      "enabled": false,
       "layerName": "Marker layer",
       "data": {
-        "country": "Country",
+        "geoData": "Country",
         "value": "Value",
         "aggregation": "sum",
         "category": "Resource"
@@ -150,10 +161,9 @@
       "enabled": true,
       "layerName": "Connection layer",
       "data": {
-        "geoData": "world centroids",
-        "from": "Country",
-        "to": "Partner",
-        "animateDirection": true
+        "from": "",
+        "to": "",
+        "animateDirection": false
       }
     },
     {
@@ -161,13 +171,13 @@
       "id": "geovisto-tool-legend",
       "enabled": true,
       "tools": [
-        "geovisto-tool-layer-connection"
+        "geovisto-tool-layer-choropleth"
       ]
     },
     {
       "type": "geovisto-tool-timeline",
       "id": "geovisto-tool-timeline",
-      "enabled": false,
+      "enabled": true,
       "layerName": "Timeline",
       "data": {
         "timePath": "",

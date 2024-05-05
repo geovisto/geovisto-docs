@@ -8,8 +8,7 @@ import "geovisto-layer-heat/dist/index.css";
 import React from "react";
 
 // Static
-import config from "../../../../../static/config/config-map.json";
-import data from "../../../../../static/data/australiaMaxTemperature.json";
+import config from "../../../../../static/config/config-layer-tiles.json";
 
 // Base core of Geovisto
 import Base from "../../../GeovistoBase";
@@ -23,7 +22,7 @@ const Map = () => {
         <Base
             {...{
                 config,
-                data,
+                //data,
                 moduleToDisplay,
             }}
         />

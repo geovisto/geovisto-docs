@@ -59,13 +59,11 @@
 }
 
 .tabs__nav a:hover{
-    font-size: 25px;
-    color: var(--text-color-hover);
+    color: var(--text-color-hover-layers);
 }
 
 .tabs__nav li:has(a:hover) {
-    font-size: 25px;
-    color: var(--text-color-hover);
+    color: var(--text-color-hover-layers);
 }
 
 .tabs__nav li:has(a.tab__active) {

@@ -8,8 +8,8 @@ import "geovisto-layer-bubble/dist/index.css";
 import React from "react";
 
 // Static
-import config from "../../../../../static/config/config-bubbleLayer.json";
-import data from "../../../../../static/data/covidCases.json";
+import config from "../../../../../static/config/config-layer-bubble.json";
+import data from "../../../../../static/data/data-covidCases.json";
 
 // Base core of Geovisto
 import Base from "../../../GeovistoBase";

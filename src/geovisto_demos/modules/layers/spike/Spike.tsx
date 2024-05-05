@@ -5,8 +5,8 @@ import { GeovistoSpikeLayerTool } from "geovisto-layer-spike";
 import React from "react";
 
 // Static
-import config from "../../../../../static/config/config-spikeLayer.json";
-import data from "../../../../../static/data/covidCases.json";
+import config from "../../../../../static/config/config-layer-spike.json";
+import data from "../../../../../static/data/data-covidCases.json";
 
 // Base core of Geovisto
 import Base from "../../../GeovistoBase";

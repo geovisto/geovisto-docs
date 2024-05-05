@@ -10,9 +10,7 @@ import "geovisto-layer-choropleth/dist/index.css";
 import React from "react";
 
 // Static
-import config from "../../../../../static/config/config-info.json";
-import data from "../../../../../static/data/gdp_oecd.json";
-import polygons from "../../../../../static/geo/country_polygons.json";
+import config from "../../../../../static/config/config-tool-info.json";
 
 // Base core of Geovisto
 import Base from "../../../GeovistoBase";
@@ -23,17 +21,11 @@ const Info = () => {
         id: "geovisto-tool-layer-choropleth",
     });
 
-    const geoData = Geovisto.getGeoDataManager([
-        Geovisto.getGeoDataFactory().geojson("world polygons", polygons),
-    ]);
-
     return (
         <Base
             {...{
                 config,
-                data,
                 moduleToDisplay,
-                geoData,
             }}
         />
     );

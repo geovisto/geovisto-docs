@@ -11,8 +11,8 @@ import "./Choropleth.css";
 import React from "react";
 
 // Static
-import config from "../../../../../static/config/gdp_config.json";
-import data from "../../../../../static/data/gdp_oecd.json";
+import config from "../../../../../static/config/config-layer-choro.json";
+import data from "../../../../../static/data/data-choro.json";
 import polygons from "../../../../../static/geo/country_polygons.json";
 
 // Base core of Geovisto

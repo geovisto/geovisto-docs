@@ -11,14 +11,14 @@
         "enabled": true,
         "tabs": [
           {
-            "enabled": true,
+            "enabled": false,
             "name": "General settings",
             "icon": "<i class=\"fa fa-gear\"></i>",
-            "checkButton": true,
+            "checkButton": false,
             "fragments": [
               {
                 "tool": "geovisto-tool-themes",
-                "enabled": true
+                "enabled": false
               },
               {
                 "tool": "geovisto-tool-selection",
@@ -45,7 +45,7 @@
             "enabled": false,
             "name": "Map layer settings",
             "icon": "<i class=\"fa fa-globe\"></i>",
-            "checkButton": true
+            "checkButton": false
           },
           {
             "tool": "geovisto-tool-layer-choropleth",
@@ -110,12 +110,10 @@
       {
         "type": "geovisto-tool-selection",
         "id": "geovisto-tool-selection",
-        "enabled": true,
+        "enabled": false,
         "selection": {
           "tool": "geovisto-tool-layer-choropleth",
           "ids": [
-            "USA",
-            "UZB"
           ]
         }    
       },
@@ -171,7 +169,7 @@
       {
         "type": "geovisto-tool-legend",
         "id": "geovisto-tool-legend",
-        "enabled": false,
+        "enabled": true,
         "tools": [
           "geovisto-tool-layer-choropleth"
         ]

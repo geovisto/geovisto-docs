@@ -1,7 +1,7 @@
 import PlaygroundBarData from "./PlaygroundBarData";
 import PlaygroundBarConfig from "./PlaygroundBarConfig";
-import PlaygroundBarGeojson from "./PlaygroundBarGeojson";
+import PlaygroundBarGeo from "./PlaygroundBarGeo";
 import PlaygroundBarSearchDatasets from "./PlaygroundBarSearchDatasets";
 
 
-export { PlaygroundBarData, PlaygroundBarGeojson,  PlaygroundBarConfig, PlaygroundBarSearchDatasets};
+export { PlaygroundBarData, PlaygroundBarGeo,  PlaygroundBarConfig, PlaygroundBarSearchDatasets};

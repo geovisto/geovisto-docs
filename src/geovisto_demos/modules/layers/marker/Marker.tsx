@@ -11,8 +11,8 @@ import "./Marker.css";
 import React from "react";
 
 // Static
-import config from "../../../../../static/config/energy_config.json";
-import data from "../../../../../static/data/energy_un.json";
+import config from "../../../../../static/config/config-layer-marker.json";
+import data from "../../../../../static/data/data-marker.json";
 import centroids from "../../../../../static/geo/country_centroids.json";
 
 // Base core of Geovisto

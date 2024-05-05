@@ -11,27 +11,27 @@
         "enabled": true,
         "tabs": [
           {
-            "enabled": false,
+            "enabled": true,
             "name": "General settings",
             "icon": "<i class=\"fa fa-gear\"></i>",
             "checkButton": false,
             "fragments": [
               {
                 "tool": "geovisto-tool-themes",
-                "enabled": false
+                "enabled": true
               },
               {
                 "tool": "geovisto-tool-selection",
-                "enabled": false
+                "enabled": true
               }
             ]
           },
           {
             "tool": "geovisto-tool-info",
-            "enabled": false,
+            "enabled": true,
             "name": "Info",
             "icon": "<i class=\"fa fa-info\"></i>",
-            "checkButton": false
+            "checkButton": true
           },
           {
             "tool": "geovisto-tool-layer-bubble",
