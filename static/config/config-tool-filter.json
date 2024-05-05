@@ -11,7 +11,7 @@
         "enabled": true,
         "tabs": [
           {
-            "enabled": true,
+            "enabled": false,
             "name": "General settings",
             "icon": "<i class=\"fa fa-gear\"></i>",
             "checkButton": false,

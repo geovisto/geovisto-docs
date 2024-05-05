@@ -10,8 +10,8 @@ import "geovisto-layer-choropleth/dist/index.css";
 import React from "react";
 
 // Static
-import config from "../../../../../static/config/config-timeline.json";
-import data from "../../../../../static/data/gdp_oecd.json";
+import config from "../../../../../static/config/config-tool-timeline.json";
+import data from "../../../../../static/data/data-choro.json";
 import polygons from "../../../../../static/geo/country_polygons.json";
 
 // Base core of Geovisto

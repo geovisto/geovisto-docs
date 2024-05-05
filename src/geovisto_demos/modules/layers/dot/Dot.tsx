@@ -8,8 +8,8 @@ import "geovisto-layer-dot/dist/index.css";
 import React from "react";
 
 // Static
-import config from "../../../../../static/config/config-dotLayer.json";
-import data from "../../../../../static/data/czechCities.json";
+import config from "../../../../../static/config/config-layer-dot.json";
+import data from "../../../../../static/data/data-czechCities.json";
 
 // Base core of Geovisto
 import Base from "../../../GeovistoBase";

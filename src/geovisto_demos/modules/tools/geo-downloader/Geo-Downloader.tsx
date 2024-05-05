@@ -10,9 +10,7 @@ import "geovisto-layer-choropleth/dist/index.css";
 import React from "react";
 
 // Static
-import config from "../../../../../static/config/config-geo-downloader.json";
-import data from "../../../../../static/data/demo1.json";
-import polygons from "../../../../../static/geo/country_polygons.json";
+import config from "../../../../../static/config/config-tool-geo-downloader.json";
 
 // Base core of Geovisto
 import Base from "../../../GeovistoBase";
@@ -23,17 +21,11 @@ const Geo_Downloader = () => {
         id: "geovisto-tool-geo-downloader",
     });
 
-    const geoData = Geovisto.getGeoDataManager([
-        Geovisto.getGeoDataFactory().geojson("world polygons", polygons),
-    ]);
-
     return (
         <Base
             {...{
                 config,
-                data,
                 moduleToDisplay,
-                geoData,
             }}
         />
     );

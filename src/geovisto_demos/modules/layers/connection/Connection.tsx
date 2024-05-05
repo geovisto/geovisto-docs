@@ -11,7 +11,7 @@ import "./Connection.css";
 import React from "react";
 
 // Static
-import config from "../../../../../static/config/trade_config.json";
+import config from "../../../../../static/config/config-layer-connection.json";
 import data from "../../../../../static/data/trade_oecd.json";
 import polygons from "../../../../../static/geo/country_polygons.json";
 import centroids from "../../../../../static/geo/country_centroids.json";
