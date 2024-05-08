@@ -16,6 +16,7 @@ import { useEffect } from "react";
  * This file contains implementation of landing page
  *
  * @author Tomas Koscielniak
+ * @author Iva Utikalova
  */
 const HomepageHeader = () => {
     const { siteConfig } = useDocusaurusContext();
@@ -68,7 +69,6 @@ const HomepageHeader = () => {
             clearTimeout(timeoutOpacity1);
             clearTimeout(timeoutOpacity2);
             clearTimeout(timeoutOpacity3);
-            console.log("cleaning up header");
         }
     },[]);
 

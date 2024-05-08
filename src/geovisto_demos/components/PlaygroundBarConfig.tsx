@@ -2,11 +2,14 @@ import React, {useState, useEffect} from "react";
 import {files, file} from "../api";
 import Select from "react-select";
 
-/* example of screen component with grid layout and card wrapper usage */
 
 const C_ID_select_config = "leaflet-combined-map-select-config";
 const C_ID_input_config = "leaflet-combined-map-input-config";
 const C_ID_input_config_export = "leaflet-combined-map-input-export-config";
+
+/** Bar component for config editor control
+* @author Iva Utikalova
+**/
 
 const PlaygroundBarConfig = (props) => {  
     const [isLoading, setIsLoading] = useState(false);
@@ -81,7 +84,7 @@ const PlaygroundBarConfig = (props) => {
                     className="select"
                 />
                 <div className="choose-file">
-                    <label title="Import your config" className="custom-file-upload btn btn-default">
+                    <label title="Import your config" className="custom-file-upload btn">
                         <input type="file" 
                             id={C_ID_input_config}
                             accept=".json"
@@ -90,7 +93,7 @@ const PlaygroundBarConfig = (props) => {
                         Import
                     </label>
                 </div>
-                <input id={C_ID_input_config_export} title="Export current config" type="submit" value="Export" className="btn btn-default btn-export"/>
+                <input id={C_ID_input_config_export} title="Export current config" type="submit" value="Export" className="btn btn-export"/>
             </div>
         </div>
     );

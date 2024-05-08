@@ -1,11 +1,14 @@
 import React, {useState} from "react";
 import {files, file} from "../api";
 import Select from "react-select";
-/* example of screen component with grid layout and card wrapper usage */
 
 const C_ID_select_data = "leaflet-combined-map-select-data";
 const C_ID_input_data = "leaflet-combined-map-input-data";
 const C_ID_input_data_export = "leaflet-combined-map-input-export-data";
+
+/** Bar component for data editor control 
+* @author Iva Utikalova
+**/
 
 const PlaygroundBarData = (props) => {
     const [isLoading, setIsLoading] = useState(false);
@@ -82,18 +85,18 @@ const PlaygroundBarData = (props) => {
                 />
 
                 <div className="choose-file">
-                    <label title="Import your data" className="custom-file-upload btn btn-default">
+                    <label title="Import your data" className="custom-file-upload btn">
                         <input type="file" 
                             id={C_ID_input_data}
                             accept=".json"
                             size={3}
-                            className="btn btn-default"
+                            className="btn"
                         />
                         Import
                     </label>
                 </div>
 
-                <input id={C_ID_input_data_export} title="Export current data" type="submit" value="Export" className="btn btn-default btn-export"/>
+                <input id={C_ID_input_data_export} title="Export current data" type="submit" value="Export" className="btn btn-export"/>
             </div>
         </div>
     );

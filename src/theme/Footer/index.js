@@ -32,7 +32,7 @@ function Footer() {
 const CustomFooterCopyright = () => {
   return (
     <div className='custom_footer_copyright'>
-      <div>Copyright © ${new Date().getFullYear()} Geovisto | <a href='https://www.fit.vut.cz/.en' target="_blank">VUT FIT Brno</a> |  <a href='https://www.ics.muni.cz/en' target="_blank">MU ICS</a>
+      <div>Copyright © {new Date().getFullYear()} Geovisto | <a href='https://www.fit.vut.cz/.en' target="_blank">VUT FIT Brno</a> |  <a href='https://www.ics.muni.cz/en' target="_blank">MU ICS</a>
       </div>
       <div>Built with Docusaurus.</div>
     </div>

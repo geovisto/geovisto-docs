@@ -1,5 +1,5 @@
 // React
-import React, { Component, useState, useRef } from "react";
+import React, { Component, useState, useRef, useEffect, useCallback, createContext, StrictMode, useMemo } from "react";
 
 // React-Geovisto
 import ReactGeovistoMap from "../react/ReactGeovistoMap";
@@ -33,214 +33,101 @@ import { GeovistoInfoTool } from "geovisto-info";
 import { GeovistoGeoDownloaderTool } from "geovisto-geo-downloader";
 import { GeovistoLegendTool } from "geovisto-legend";
 import { GeovistoHierarchyTool } from "geovisto-hierarchy";
-import { chunk } from "lodash";
 
+import Split from 'react-split';
 
+import ReactJson from '@microlink/react-json-view';
 
 import IReactGeovistoMapProps from "../react/IReactGeovistoMapProps";
 
-/* example of screen component with grid layout and card wrapper usage */
+/** example of screen component with grid layout and card wrapper usage 
+* @author Iva Utikalova
+**/
 
 const C_ID_input_data = "leaflet-combined-map-input-data";
-
 const C_ID_input_config = "leaflet-combined-map-input-config";
-
 const C_ID_input_geojson = "leaflet-combined-map-input-geojson";
-
 const C_ID_input_data_export = "leaflet-combined-map-input-export-data";
 const C_ID_input_config_export = "leaflet-combined-map-input-export-config";
 const C_ID_input_geojson_export = "leaflet-combined-map-input-export-geojson";
 
-interface specialRef {
-    stopTimer: () => void;
-    startTimer: () => void;
-}
-
-export default class Playground extends Component<Record<string, never>, { data: unknown, config: Record<string, unknown>, geojson: Array<any>}> {
-
-    private map: React.RefObject<IMap>;
-    private infodata: unknown;
-    private myRef: React.RefObject<any>;
-
-    public constructor(props: Record<string, never>) {
-        super(props);
-
-        // data and config can be changed
-        this.state = {
-            // implicit data
-            data: require('/static/data/timeData.json'),
-            // implicit config
-            config: require('/static/config/config.json'),
-            // implicit geojson
-            geojson: []
-        };
-
-        // reference to the rendered map
-        this.map = React.createRef()
-        this.infodata = require("!!raw-loader!/static/info/test.md");
-        this.myRef = React.createRef()
-    }
-    
-    public  downloadGeojson = async (name, geojson) => {
-        
-        name = name.split('.')[0]
-        if (!this.state.geojson.find(e => e.key === name)) 
-        {
-            this.state.geojson.push({key:name, geo:geojson});
-            this.setState({
-                geojson: this.state.geojson
-            });
-    
-
-        }
-
-        let geojson_string = this.json_to_sting(geojson, true);
-
-        (document.getElementById('geojson') as HTMLInputElement).value = geojson_string;
-    }
-
-    public downloadData = async (data) => {
-
-        this.setState({
-            data: data
-        });
-
-        let data_string = this.json_to_sting(data, false);
-
-        (document.getElementById('data') as HTMLInputElement).value = data_string;
-
-    }
-
-    public downloadConfig = async (config) => {
-
-        this.setState({
-            config: config
-        });
-
-        (document.getElementById('config') as HTMLInputElement).value = JSON.stringify(config, null, 4);;
-    }
 
 
-    public setDataset = async (data, geo, name) => {
-        this.state.geojson.push({key:name, geo:geo});
-        this.setState({
-            data: data,
-            geojson: this.state.geojson
-        });
+const Playground = () => {
+    const infodata = require("!!raw-loader!/static/info/test.md");
 
-        let data_string = this.json_to_sting(data, false);
-        let geojson_string = this.json_to_sting(geo, true);
+    const [map_state, setMapState] = useState({
+        data: require('/static/data/data-choro.json'),
+        config: require('/static/config/config-layer-choro.json'),
+        geojson: [{key:"country_polygons", geo: require('/static/geo/country_polygons.json')}]
+    });
 
-        (document.getElementById('data') as HTMLInputElement).value = data_string;
-        (document.getElementById('geojson') as HTMLInputElement).value = geojson_string;
-    }
+    const [edit_state, setEditState] = useState({
+        data: require('/static/data/data-choro.json'),
+        config: require('/static/config/config-layer-choro.json'),
+        geojson: require('/static/geo/country_polygons.json')
+    });
 
-
-    private json_to_sting(data_json, geojson): string {
-        let type;
-
-        if (geojson) {
-            type = JSON.stringify(data_json.type, null, 2);
-            data_json = data_json.features;
-        }
-
-        let data_chunk = chunk(data_json, 1);
-
-        let data_string = '';
-        data_chunk.forEach(element => {
-            data_string += JSON.stringify(element, null, 2);
-        });
-
-        if (geojson) {
-            data_string = '{ \n\t' + type + '\n\t"features":' + data_string + '}';
-        }
-
-        return data_string;
-    }
-    
-
-    public componentDidMount(): void {
-
-
+    useEffect(() => {
         // ------ process files ------ //
 
         // process path
-        const pathSubmitted = function(file: File, result: { json: unknown | undefined }, type: any) {
+        const pathSubmitted = function(file: File, type: any) {
+
+            let result;
             const reader = new FileReader();
-            reader.readAsText(file);
+            if (file) {
+                reader.readAsText(file);
+            }
             const onLoadAction = function(e: ProgressEvent<FileReader>) {
                 try {
-                    //console.log(reader.result);
                     if(typeof reader.result == "string") {
-                        result.json = JSON.parse(reader.result);
-                        //(document.getElementById('data') as HTMLInputElement).value = JSON.stringify(result.json, null, 4);
+                        result = JSON.parse(reader.result);
                     }
                 } catch(ex) {
-                    console.log("unable to read file");
-                    console.log(ex);
-                    // TODO: notify user
                     alert("unable to read file");
                 }  
             };
 
             reader.onload = onLoadAction;
             reader.onloadend = () => {
-                console.log('onloadend');
-                console.log(reader);            
-
-                if (type == "data") {
-                    (document.getElementById('data') as HTMLInputElement).value = JSON.stringify(result.json, null, 4);
-                    document.getElementById('data').dispatchEvent(new Event('change'));
-                }
-
                 if (type == "config") {
-                    (document.getElementById('config') as HTMLInputElement).value = JSON.stringify(result.json, null, 4);
-                    document.getElementById('config').dispatchEvent(new Event('change'));
-                }
+                    setConfig(result);
+                }        
+                if (type == "data") {
+                    setData(result);
+                }        
+                if (type == "geo") {
+                    setGeo("Your geo", result);
+                }        
 
-                if (type == "geojson") {
-                    (document.getElementById('geojson') as HTMLInputElement).value = JSON.stringify(result.json, null, 4);
-                    document.getElementById('geojson').dispatchEvent(new Event('change'));
-                }
             };
         };
 
         // process data path
-        const data = {
-            json: undefined
-        };
         const dataPathSubmitted = (e: Event) => {
-            pathSubmitted((e.target as HTMLInputElement).files[0], data, "data")
-
+            pathSubmitted((e.target as HTMLInputElement).files[0], "data")
         };
         document.getElementById(C_ID_input_data).addEventListener('change', dataPathSubmitted, false);
 
         // process config path
-        const config = {
-            json: undefined
-        };
-        const configPathSubmitted = function(this: HTMLInputElement) {
-            pathSubmitted(this.files[0], config, "config");
-
+        const configPathSubmitted = (e: Event) =>{
+            pathSubmitted((e.target as HTMLInputElement).files[0], "config");
         };
         document.getElementById(C_ID_input_config).addEventListener('change', configPathSubmitted, false);
 
         // process geojson path
-        const geojson = {
-            json: undefined
-        };
-        const geojsonPathSubmitted = function(this: HTMLInputElement) {
-            pathSubmitted(this.files[0], geojson, "geojson");
+        const geojsonPathSubmitted = (e: Event) => {
+            pathSubmitted((e.target as HTMLInputElement).files[0], "geo");
         };
         document.getElementById(C_ID_input_geojson).addEventListener('change', geojsonPathSubmitted, false);
-        
 
         // ------ export ------ //
 
         // export action data
         const exportActionData = (e: MouseEvent) => {
             // expert map data
-            const data = JSON.stringify(this.state.data, null, 4);
+            const data = JSON.stringify(map_state.data, null, 4);
 
             // download file
             const element = document.createElement('a');
@@ -257,7 +144,7 @@ export default class Playground extends Component<Record<string, never>, { data:
         // export action config
         const exportActionConfig = (e: MouseEvent) => {
             // expert map configuration
-            const config = JSON.stringify(this.state.config, null, 4);
+            const config = JSON.stringify(map_state.config, null, 4);
 
             // download file
             const element = document.createElement('a');
@@ -274,7 +161,7 @@ export default class Playground extends Component<Record<string, never>, { data:
         // export action geojson
         const exportActionGeojson = (e: MouseEvent) => {
             // expert map configuration
-            const geojson = JSON.stringify(this.state.geojson, null, 4);
+            const geojson = JSON.stringify(map_state.geojson, null, 4);
 
             // download file
             const element = document.createElement('a');
@@ -289,236 +176,199 @@ export default class Playground extends Component<Record<string, never>, { data:
         document.getElementById(C_ID_input_geojson_export).addEventListener('click', exportActionGeojson);
         
 
-        // ------ result ------ //
-        const resultActionData = (e: MouseEvent) => {
-
-            console.log("result action");
-            try {
-                data.json = JSON.parse((document.getElementById('data') as HTMLInputElement).value);
-
-                // update state
-                this.setState({
-                    data: data.json
-                });
-            } catch (error) {
-                alert("Data json error");
-            }    
-        };
-
-        const resultActionConfig = (e: MouseEvent) => {
-
-            console.log("result action config");
-            try {
-                config.json = JSON.parse((document.getElementById('config') as HTMLInputElement).value);
-
-                // update state
-                this.setState({
-                    config: config.json
-                });
-        
-            } catch (error) {
-                alert("Config json error");
-            }    
-        };
-
-        const resultActionGeojson = (e: MouseEvent) => {
-
-            try {
-                geojson.json = JSON.parse((document.getElementById('geojson') as HTMLInputElement).value);
-
-                if (!this.state.geojson.find(e => e.key === "Your geojson"))
-                {
-                    console.log("new");
-                    this.state.geojson.push({key:"Your geojson", geo:geojson.json})
-                }
-                else
-                {
-                    console.log("old");
-                    console.log(geojson.json);
-                    this.state.geojson.find(e => e.key === "Your geojson").geo = geojson.json;
-                }
-                // update state
-                this.setState({
-                    geojson: this.state.geojson
-                });
-            } catch (error) {
-                alert("Geo json error");
-            }    
-        };geojsonPathSubmitted
-        document.getElementById('data').addEventListener('change', resultActionData, false);
-        document.getElementById('config').addEventListener('change', resultActionConfig, false);
-        document.getElementById('geojson').addEventListener('change', resultActionGeojson, false);
+    }, [])
 
 
-
-        // ------ automatic result ------ //
-
-        var typingTimerData;
-        var typingTimerConfig;
-        var typingInterval = 1500;
-
-        const startTimerData = () => {
-            clearTimeout(typingTimerData);
-            typingTimerData = setTimeout(resultActionData, typingInterval);
-
-        };
-
-        const startTimerConfig = () => {
-            clearTimeout(typingTimerConfig);
-            typingTimerConfig = setTimeout(resultActionConfig, typingInterval);
-        };
-
-        const resetTimerData = (e) => {
-            this.handleTab(e)
-            clearTimeout(typingTimerData);
-        };
-
-        const resetTimerConfig = (e) => {
-            this.handleTab(e)
-            clearTimeout(typingTimerConfig);
-            this.myRef.current.stopTimerHook();
-
-        };
-
-        document.getElementById('data').addEventListener('keyup', startTimerData, false);
-        document.getElementById('config').addEventListener('keyup', startTimerConfig, false);
-
-        document.getElementById('data').addEventListener('keydown', resetTimerData, false);
-        document.getElementById('config').addEventListener('keydown', resetTimerConfig, false);
+    const setDataGeo = (data, geo, name) => {
+        setData(data)
+        setGeo(name, geo)
     }
 
-    handleTab(event:any) {
-        if (event.key == 'Tab') {
-            event.preventDefault();
-            var start = event.target.selectionStart;
-            var end = event.target.selectionEnd;
-            event.target.value = event.target.value.substring(0, start) + '\t' + event.target.value.substring(end);
-            event.target.selectionStart = event.target.selectionEnd = start + 1;
+    const setConfig = (config) => {
+        setMapState({...map_state, config: config})
+        setEditState({...edit_state, config: config})
+    }    
+
+    const setData = (data) => {
+        setMapState({...map_state, data: data})
+        setEditState({...edit_state, data: data})
+    }  
+
+    const setGeo = (name, geo) => {
+        name = name.split('.')[0]
+
+        let geos = map_state.geojson;
+
+        if (!geos.find(e => e.key === name))
+        {
+            geos.push({key:name, geo:geo})
         }
-        
+        else
+        {
+            geos.find(e => e.key === name).geo = geo;
+        }
+
+        setMapState({...map_state, geojson: geos});
+        setEditState({...edit_state, geojson: geo});
     }
-    
-    public render(): JSX.Element {
-        console.log("rendering...");
-        return (
-            <div className="playground__container lightest">
-                <div >
-                    <PlaygroundBarSearchDatasets callback={this.setDataset}/>
-                </div>
-                <div>
-                    <div className="input editors">
-                        <div className="editor">
-                            <label>Geo</label>
-                            <PlaygroundBarGeo callback={this.downloadGeojson}/>
-                            <textarea id="geojson" readOnly></textarea>
-                        </div>
-                        <div className="editor">
-                            <label>Data</label>
-                            <PlaygroundBarData callback={this.downloadData}/>
-                            <textarea id="data"></textarea>
-                        </div>
-                        <div className="editor">
-                            <label>Config</label>
-                            <PlaygroundBarConfig  callback={this.downloadConfig}/>
-                            <textarea id="config"></textarea>
-                        </div>
-                    </div>
-                    <div className="demo-container">
-                        <div className="demo-map">
-                            <ReactGeovistoMap
-                                
-                                ref={this.myRef}
-                                id="my-geovisto-map"
-                                data={Geovisto.getMapDataManagerFactory().json(this.state.data)}
-                                geoData={Geovisto.getGeoDataManager(
-                                    this.state.geojson.map((element) =>
-                                        Geovisto.getGeoDataFactory().geojson(element.key, element.geo)
-                                    )
-                                )}
-                                config={Geovisto.getMapConfigManagerFactory().default(this.state.config)}
-                                globals={undefined}
-                                templates={undefined}
-                                tools={Geovisto.createMapToolsManager([
-                                    
-                                    GeovistoSidebarTool.createTool({
-                                        id: "geovisto-tool-sidebar",
-                                    }),
-                                    GeovistoFiltersTool.createTool({
-                                        id: "geovisto-tool-filters",
-                                        manager: GeovistoFiltersTool.createFiltersManager([
-                                            // filter operations
-                                            GeovistoFiltersTool.createFilterOperationEq(),
-                                            GeovistoFiltersTool.createFilterOperationNeq(),
-                                            GeovistoFiltersTool.createFilterOperationReg()
-                                        ])
-                                    }),
-                                    GeovistoThemesTool.createTool({
-                                        id: "geovisto-tool-themes",
-                                        manager: GeovistoThemesTool.createThemesManager([
-                                            // style themes
-                                            GeovistoThemesTool.createThemeLight1(),
-                                            GeovistoThemesTool.createThemeLight2(),
-                                            GeovistoThemesTool.createThemeLight3(),
-                                            GeovistoThemesTool.createThemeDark1(),
-                                            GeovistoThemesTool.createThemeDark2(),
-                                            GeovistoThemesTool.createThemeDark3(),
-                                            GeovistoThemesTool.createThemeBasic()
-                                        ])
-                                    }),
-                                    GeovistoGeoDownloaderTool.createTool({
-                                        id: "geovisto-tool-geo-downloader"
-                                    }),
-                                    GeovistoLegendTool.createTool({
-                                        id: "geovisto-tool-legend"
-                                    }),
-                                    GeovistoHierarchyTool.createTool({
-                                        id: "geovisto-tool-hierarchy"
-                                    }),
-                                    GeovistoSelectionTool.createTool({
-                                        id: "geovisto-tool-selection"
-                                    }),
-                                    GeovistoTilesLayerTool.createTool({
-                                        id: "geovisto-tool-layer-map"
-                                    }),
-                                    GeovistoChoroplethLayerTool.createTool({
-                                        id: "geovisto-tool-layer-choropleth"
-                                    }),
-                                    GeovistoMarkerLayerTool.createTool({
-                                        id: "geovisto-tool-layer-marker"
-                                    }),
-                                    GeovistoConnectionLayerTool.createTool({
-                                        id: "geovisto-tool-layer-connection"
-                                    }),
-                                    GeovistoBubbleLayerTool.createTool({
-                                        id: "geovisto-tool-layer-bubble"
-                                    }),
-                                    GeovistoDotLayerTool.createTool({
-                                        id: "geovisto-tool-layer-dot"
-                                    }),
-                                    GeovistoHeatLayerTool.createTool({
-                                        id: "geovisto-tool-layer-heat"
-                                    }),
-                                    GeovistoSpikeLayerTool.createTool({
-                                        id: "geovisto-tool-layer-spike"
-                                    }),
-                                    GeovistoTimelineTool.createTool({
-                                        id: "geovisto-tool-timeline"
-                                    }),
-                                    GeovistoInfoTool.createTool({
-                                        id: "geovisto-tool-info",
-                                        manager: GeovistoInfoTool.createInfoManager([
-                                            GeovistoInfoTool.getInfoDataFactory().markdown(
-                                            "General",
-                                            (this.infodata as any).default
-                                            )
-                                        ])
-                                    }),
-                                ])} />
-                        </div>
-                    </div>
-                </div>
+
+    const updateMapConfig = (e) => {
+        setEditState({...edit_state, config: e})
+    }
+
+    const getCurrentEdit = () => {
+        return edit_state.config
+    }
+
+    return (
+        <div className="playground__container lightest">
+            <div >
+                <PlaygroundBarSearchDatasets callback={setDataGeo}/>
             </div>
-        );
-    }
+            <Split direction="vertical" 
+                sizes={[35, 65]}
+                expandToMin={false}
+                gutterSize={10}
+                gutterAlign="center"
+                minSize={[0,10]}
+                snapOffset={30}
+                dragInterval={1}
+                cursor="row-resize"
+                className="splitter"
+            >
+                <div className="input editors">
+                    <div key="json-geojson" className="editor">
+                        <label>Geo</label>
+                        <PlaygroundBarGeo callback={setGeo}/>
+                        <ReactJson 
+                            src={edit_state.geojson} 
+                            theme="monokai" 
+                        />
+                    </div>
+                    <div key="json-data" className="editor">
+                        <label>Data</label>
+                        <PlaygroundBarData callback={setData}/>
+                        <ReactJson 
+                            src={edit_state.data} 
+                            theme="monokai" 
+                            onEdit={src=>setData(src.updated_src)}
+                            onDelete={src=>setData(src.updated_src)}
+                            onAdd={src=>setData(src.updated_src)}
+                        />
+                    </div>
+                    <div key="json-config" className="editor">
+                        <label>Config</label>
+                        <PlaygroundBarConfig callback={setConfig}/>
+                        <ReactJson 
+                            src={edit_state.config} 
+                            theme="monokai" 
+                            onEdit={src=>setConfig(src.updated_src)}
+                            onDelete={src=>setConfig(src.updated_src)}
+                            onAdd={src=>setConfig(src.updated_src)}
+                        />
+                    </div>
+                </div>
+                <div className="demo-container" id="bottom">
+                    <div className="demo-map">
+                    <StrictMode>
+                        <ReactGeovistoMap
+                        
+                            callback={updateMapConfig}
+                            currentEdit={getCurrentEdit}
+                            id="my-geovisto-map"
+                            data={useMemo(() => Geovisto.getMapDataManagerFactory().json(map_state.data), [map_state.data])}
+                            geoData={useMemo(() => Geovisto.getGeoDataManager(
+                                map_state.geojson.map((element) =>
+                                    Geovisto.getGeoDataFactory().geojson(element.key, element.geo)
+                                )
+                            ), [map_state.geojson.length])}
+                            config={useMemo(() => Geovisto.getMapConfigManagerFactory().default(map_state.config), [map_state.config])}
+                            globals={undefined}
+                            templates={undefined}
+                            tools={Geovisto.createMapToolsManager([
+                                
+                                GeovistoSidebarTool.createTool({
+                                    id: "geovisto-tool-sidebar",
+                                }),
+                                GeovistoFiltersTool.createTool({
+                                    id: "geovisto-tool-filters",
+                                    manager: GeovistoFiltersTool.createFiltersManager([
+                                        // filter operations
+                                        GeovistoFiltersTool.createFilterOperationEq(),
+                                        GeovistoFiltersTool.createFilterOperationNeq(),
+                                        GeovistoFiltersTool.createFilterOperationReg()
+                                    ])
+                                }),
+                                GeovistoThemesTool.createTool({
+                                    id: "geovisto-tool-themes",
+                                    manager: GeovistoThemesTool.createThemesManager([
+                                        // style themes
+                                        GeovistoThemesTool.createThemeLight1(),
+                                        GeovistoThemesTool.createThemeLight2(),
+                                        GeovistoThemesTool.createThemeLight3(),
+                                        GeovistoThemesTool.createThemeDark1(),
+                                        GeovistoThemesTool.createThemeDark2(),
+                                        GeovistoThemesTool.createThemeDark3(),
+                                        GeovistoThemesTool.createThemeBasic()
+                                    ])
+                                }),
+                                GeovistoGeoDownloaderTool.createTool({
+                                    id: "geovisto-tool-geo-downloader"
+                                }),
+                                GeovistoLegendTool.createTool({
+                                    id: "geovisto-tool-legend"
+                                }),
+                                GeovistoHierarchyTool.createTool({
+                                    id: "geovisto-tool-hierarchy"
+                                }),
+                                GeovistoSelectionTool.createTool({
+                                    id: "geovisto-tool-selection"
+                                }),
+                                GeovistoTilesLayerTool.createTool({
+                                    id: "geovisto-tool-layer-map"
+                                }),
+                                GeovistoChoroplethLayerTool.createTool({
+                                    id: "geovisto-tool-layer-choropleth"
+                                }),
+                                GeovistoMarkerLayerTool.createTool({
+                                    id: "geovisto-tool-layer-marker"
+                                }),
+                                GeovistoConnectionLayerTool.createTool({
+                                    id: "geovisto-tool-layer-connection"
+                                }),
+                                GeovistoBubbleLayerTool.createTool({
+                                    id: "geovisto-tool-layer-bubble"
+                                }),
+                                GeovistoDotLayerTool.createTool({
+                                    id: "geovisto-tool-layer-dot"
+                                }),
+                                GeovistoHeatLayerTool.createTool({
+                                    id: "geovisto-tool-layer-heat"
+                                }),
+                                GeovistoSpikeLayerTool.createTool({
+                                    id: "geovisto-tool-layer-spike"
+                                }),
+                                GeovistoTimelineTool.createTool({
+                                    id: "geovisto-tool-timeline"
+                                }),
+                                GeovistoInfoTool.createTool({
+                                    id: "geovisto-tool-info",
+                                    manager: GeovistoInfoTool.createInfoManager([
+                                        GeovistoInfoTool.getInfoDataFactory().markdown(
+                                        "General",
+                                        (infodata as any).default
+                                        )
+                                    ])
+                                }),
+                            ])} 
+                        />
+                        </StrictMode>
+                    </div>
+                </div>
+            </Split>
+        </div>
+    );
 }
+
+export  default Playground;
 

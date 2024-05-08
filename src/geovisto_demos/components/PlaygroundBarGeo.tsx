@@ -2,11 +2,14 @@ import React, { useState} from "react";
 import {files, file} from "../api";
 import Select from "react-select";
 
-/* example of screen component with grid layout and card wrapper usage */
-
 const C_ID_select_geojson = "leaflet-combined-map-select-geojson";
 const C_ID_input_geojson = "leaflet-combined-map-input-geojson";
 const C_ID_input_geojson_export = "leaflet-combined-map-input-export-geojson";
+
+/** Bar for geo editor control
+* @author Iva Utikalova
+**/
+
 
 const PlaygroundBarGeo = (props) => {
     const [isLoading, setIsLoading] = useState(false);
@@ -83,18 +86,18 @@ const PlaygroundBarGeo = (props) => {
                     className="select"
                 />
                 <div className="choose-file">
-                    <label title="Import your geojson" className="custom-file-upload btn btn-default">
+                    <label title="Import your geojson" className="custom-file-upload btn">
                         <input type="file" 
                             id={C_ID_input_geojson}
                             accept=".json"
                             size={3}
-                            className="btn btn-default"
+                            className="btn"
                         />
                         Import
                     </label>
                 </div>
 
-                <input id={C_ID_input_geojson_export} title="Export current geojson" type="submit" value="Export" className="btn btn-default btn-export"/>
+                <input id={C_ID_input_geojson_export} title="Export current geojson" type="submit" value="Export" className="btn  btn-export"/>
             </div>
         </div>
     );

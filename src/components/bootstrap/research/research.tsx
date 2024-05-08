@@ -6,7 +6,7 @@ import { Button } from "react-bootstrap";
 import Link from "@docusaurus/Link";
 
 /**
- * This file contains implementation of community frontend for home page
+ * This file contains implementation of research frontend for home page
  *
  * @author Iva Utikalova
  */

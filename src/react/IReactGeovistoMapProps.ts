@@ -5,6 +5,7 @@ import { IMap, IMapConfigManager, IMapProps, IMapTemplates, IMapGlobals, IMapDat
  * This type provides the specification of the map props model.
  *
  * @author Jiri Hynek
+ * @author Iva Utikalova
  */
 interface IReactGeovistoMapProps { 
     id?: string;
@@ -15,6 +16,9 @@ interface IReactGeovistoMapProps {
     tools?: IMapToolsManager;
     config?: IMapConfigManager;
     ref?: React.RefObject<any>;
+    getEdit?: any;
+    callback?: any;
+    currentEdit?: any;
 };
 
 export default IReactGeovistoMapProps;

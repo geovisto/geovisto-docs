@@ -1,5 +1,5 @@
 // React
-import React, { useImperativeHandle, forwardRef, useEffect, useRef } from "react";
+import React, { useImperativeHandle, forwardRef, useEffect, useRef, memo, createContext} from "react";
 import { isEqual } from "lodash"
 
 // Geovisto
@@ -19,7 +19,9 @@ import "./common.css";
  *  @author Jiri Hynek
  *  @author Vladimir Korencik
  */
-const ReactGeovistoMap = forwardRef<any,IReactGeovistoMapProps>((props , ref) => {
+
+
+const ReactGeovistoMap: React.FC<IReactGeovistoMapProps> = React.memo((props) => {
     const mapRef = useRef<IMap>();
     const helpRef = useRef(false);
 
@@ -28,22 +30,10 @@ const ReactGeovistoMap = forwardRef<any,IReactGeovistoMapProps>((props , ref) =>
     var redrawTimer;
     var typingInterval = 5000;
 
-    useImperativeHandle(ref, () => ({
-        stopTimerHook: () => {
-            stopTimer();
-        },
-        startTimerHook: () => {
-            startTimer();
-        }
-      }));
     const startTimer = () => {
         clearTimeout(typingTimer);
         typingTimer = setTimeout(resultAction, typingInterval);
     };
-
-    const stopTimer = () => {
-        clearTimeout(typingTimer);
-    }
     
     const deleteUndefined = (obj) => {
         var t = obj;
@@ -58,22 +48,14 @@ const ReactGeovistoMap = forwardRef<any,IReactGeovistoMapProps>((props , ref) =>
 
     const resultAction = () => {
         var map_config = mapRef.current.export();         
-        var text_config = (document.getElementById('config') as HTMLInputElement)?.value;
 
-        if (text_config) {
-            text_config = JSON.parse(text_config);
-        }
         map_config = deleteUndefined(map_config); 
 
-        if (!isEqual(text_config, map_config)) {
-            (document.getElementById('config') as HTMLInputElement).value = JSON.stringify(map_config, null, 4)
+        if (!isEqual(props.currentEdit(), map_config)) {
+            props.callback(map_config);
         }
         startTimer();
     }
-
-    useEffect(() => {
-
-    }, [props]);
 
 
     useEffect(() => {
@@ -88,14 +70,6 @@ const ReactGeovistoMap = forwardRef<any,IReactGeovistoMapProps>((props , ref) =>
                     props.config ??
                         Geovisto.getMapConfigManagerFactory().default({})
                 );
-
-                // ignoring for base 
-                if (props.id == 'my-geovisto-map') {
-                    const map_config = mapRef.current.export(); 
-                    const map_data = mapRef.current.getState().getCurrentData();
-                    (document.getElementById('data') as HTMLInputElement).value = JSON.stringify(map_data, null, 4);
-                    (document.getElementById('config') as HTMLInputElement).value = JSON.stringify(map_config, null, 4);
-                }
             }, 0);
 
             helpRef.current = true;
@@ -103,12 +77,9 @@ const ReactGeovistoMap = forwardRef<any,IReactGeovistoMapProps>((props , ref) =>
         } else {
 
             if (props.id == 'my-geovisto-map') {
-
                 redrawTimer = setTimeout(() => {
                 mapRef.current.redraw(
                     props.config ?? Geovisto.getMapConfigManagerFactory().default({}), props);
-                    const map_config = mapRef.current.export(); 
-                    (document.getElementById('config') as HTMLInputElement).value = JSON.stringify(map_config, null, 4);
                 }, 0);
             }
         } 
@@ -124,10 +95,8 @@ const ReactGeovistoMap = forwardRef<any,IReactGeovistoMapProps>((props , ref) =>
             clearTimeout(typingTimer);
             clearTimeout(drawTimer);
             clearTimeout(redrawTimer);
-
-            console.log("cleaning up react");
         }
-    }, [props]);
+    }, [props.geoData, props.config, props.data]);
 
 
     return (
