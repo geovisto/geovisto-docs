@@ -6,6 +6,7 @@ import React from "react";
  * They need to be exported this way, otherwise the production build will fail
  *
  * @author Tomas Koscielniak
+ * @author Iva Utikalova
  */
 
 export function Render_Map(): JSX.Element {

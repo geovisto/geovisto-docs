@@ -16,6 +16,7 @@ import { useEffect } from "react";
  * This file contains implementation of landing page
  *
  * @author Tomas Koscielniak
+ * @author Iva Utikalova
  */
 const HomepageHeader = () => {
     const { siteConfig } = useDocusaurusContext();

@@ -40,19 +40,18 @@ import ReactJson from '@microlink/react-json-view';
 
 import IReactGeovistoMapProps from "../react/IReactGeovistoMapProps";
 
-/* example of screen component with grid layout and card wrapper usage */
+/** example of screen component with grid layout and card wrapper usage 
+* @author Iva Utikalova
+**/
 
 const C_ID_input_data = "leaflet-combined-map-input-data";
-
 const C_ID_input_config = "leaflet-combined-map-input-config";
-
 const C_ID_input_geojson = "leaflet-combined-map-input-geojson";
-
 const C_ID_input_data_export = "leaflet-combined-map-input-export-data";
 const C_ID_input_config_export = "leaflet-combined-map-input-export-config";
 const C_ID_input_geojson_export = "leaflet-combined-map-input-export-geojson";
 
-const ParentContext = createContext(Object)
+
 
 const Playground = () => {
     const infodata = require("!!raw-loader!/static/info/test.md");

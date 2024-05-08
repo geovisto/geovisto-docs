@@ -2,9 +2,13 @@ import React, { useState, useRef} from "react";
 import {datasets_search, datasets_download} from "../api";
 
 
+
+/** Search bar component for downloading datasets from ArcGIS Hub 
+* @author Iva Utikalova
+**/
+
 const PlaygroundBarSearchDatasets = (props) => {
 
-    const [isLoading, setIsLoading] = useState(false);
     const [search, setSearch] = useState({
         options: []
     });

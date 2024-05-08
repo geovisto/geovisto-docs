@@ -1,3 +1,7 @@
+/** functions for API calls
+* @author Iva Utikalova
+**/
+
 
 export const files = async function fetch_github_files() {
     const response = await fetch('https://avi278.pythonanywhere.com/files', {

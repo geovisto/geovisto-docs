@@ -2,11 +2,14 @@ import React, { useState} from "react";
 import {files, file} from "../api";
 import Select from "react-select";
 
-/* example of screen component with grid layout and card wrapper usage */
-
 const C_ID_select_geojson = "leaflet-combined-map-select-geojson";
 const C_ID_input_geojson = "leaflet-combined-map-input-geojson";
 const C_ID_input_geojson_export = "leaflet-combined-map-input-export-geojson";
+
+/** Bar for geo editor control
+* @author Iva Utikalova
+**/
+
 
 const PlaygroundBarGeo = (props) => {
     const [isLoading, setIsLoading] = useState(false);

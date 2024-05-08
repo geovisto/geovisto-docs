@@ -1,11 +1,14 @@
 import React, {useState} from "react";
 import {files, file} from "../api";
 import Select from "react-select";
-/* example of screen component with grid layout and card wrapper usage */
 
 const C_ID_select_data = "leaflet-combined-map-select-data";
 const C_ID_input_data = "leaflet-combined-map-input-data";
 const C_ID_input_data_export = "leaflet-combined-map-input-export-data";
+
+/** Bar component for data editor control 
+* @author Iva Utikalova
+**/
 
 const PlaygroundBarData = (props) => {
     const [isLoading, setIsLoading] = useState(false);

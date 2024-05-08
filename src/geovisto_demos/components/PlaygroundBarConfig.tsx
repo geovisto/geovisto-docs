@@ -1,13 +1,15 @@
 import React, {useState, useEffect} from "react";
 import {files, file} from "../api";
 import Select from "react-select";
-import ReactJson from '@microlink/react-json-view';
 
-/* example of screen component with grid layout and card wrapper usage */
 
 const C_ID_select_config = "leaflet-combined-map-select-config";
 const C_ID_input_config = "leaflet-combined-map-input-config";
 const C_ID_input_config_export = "leaflet-combined-map-input-export-config";
+
+/** Bar component for config editor control
+* @author Iva Utikalova
+**/
 
 const PlaygroundBarConfig = (props) => {  
     const [isLoading, setIsLoading] = useState(false);
