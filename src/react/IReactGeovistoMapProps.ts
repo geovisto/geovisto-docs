@@ -15,6 +15,9 @@ interface IReactGeovistoMapProps {
     tools?: IMapToolsManager;
     config?: IMapConfigManager;
     ref?: React.RefObject<any>;
+    getEdit?: any;
+    callback?: any;
+    currentEdit?: any;
 };
 
 export default IReactGeovistoMapProps;

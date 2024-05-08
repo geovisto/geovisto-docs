@@ -1,9 +1,7 @@
 import React from "react";
 import Layout from "@theme/Layout";
-import Link from "@docusaurus/Link";
 import "./index.css";
 import BrowserOnly from "@docusaurus/BrowserOnly";
-import Playground from "../geovisto_demos/playground";
 
 export const Home = (): JSX.Element => (
     <Layout

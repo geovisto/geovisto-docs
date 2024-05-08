@@ -83,14 +83,18 @@
   color: var(--text-color);
 }
 
-.btn-default {
+
+.btn {
   color: var(--text-color);
   background-color: var(--ifm-color-button);
+}
+
+.btn-default {
   padding: 0.65rem 1.2rem!important;
   font-weight: 600!important;
 }
 
-.btn-default:hover {
+.btn:hover {
   color: var(--text-color-hover) !important;
   background-color: var(--ifm-color-button-hover);
 }
@@ -115,7 +119,7 @@
 }
 
 #front_image {
-  width: 26rem;
+  width: 25%;
 }
 
 .container-fluid {
