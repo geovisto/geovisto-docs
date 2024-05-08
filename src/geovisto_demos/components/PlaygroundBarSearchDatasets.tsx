@@ -1,51 +1,54 @@
 import React, { useState, useRef} from "react";
 import {datasets_search, datasets_download} from "../api";
-import Select from "react-select";
 
 
 const PlaygroundBarSearchDatasets = (props) => {
 
     const [isLoading, setIsLoading] = useState(false);
     const [search, setSearch] = useState({
-        options: [],
+        options: []
     });
-    const [menuIsOpen, setMenuIsOpen] = useState(false);
     const [inputText, setInputText] = useState<string>('');
-    const [choosen, setChoosen] = useState<string>('');
+    const [abortController, setAbortController] = useState(null);
 
-    const clearChoosen = (e) => {
-        setChoosen('');
-    }
+
+    window.onclick = function(event) {
+        if (!event.target.matches('.dataset')) {
+            if (document.getElementsByClassName("dropdown").length > 0) {
+                document.getElementsByClassName("dropdown")[0].classList.add("dropdown-hidden")
+            }
+        }
+      } 
 
     const handleInputChange = (e) => {
-        console.log(e);
-        setInputText(e);
+        setInputText(e.target.value);
     }
   
-    const handleChoose = async (e) => {
+    const handleChoose = async (e, label) => {
         if (e != null) {
-            console.log("choose: " + e.value)
-            setChoosen(e);
-            setIsLoading(true);
-            const response = (await datasets_download(e.value));
-            setInputText(e.label);
-            props.callback(response.data, response.geo, e.label);
- 
-            setIsLoading(false);
-            setInputText('');
+            document.getElementsByClassName("search-symbol")[0].classList.add("search-symbol-hidden")
+            document.getElementsByClassName("search-close")[0].classList.remove("close-hidden")
+            setInputText(label);
             setSearch({options: []});
+            document.getElementsByClassName("dropdown")[0].classList.add("dropdown-hidden")
 
+            const controller = new AbortController();
+            setAbortController(controller);
+            
+            const response = (await datasets_download(e.target.id, controller));
+            if (response != "ABORT") {
+                props.callback(response.data, response.geo, label);                
+            }
+            document.getElementsByClassName("search-symbol")[0].classList.remove("search-symbol-hidden")
+            document.getElementsByClassName("search-close")[0].classList.add("close-hidden")
         }      
     }
 
     const handleSearchSubmit = async (e) => {
+        
         e.preventDefault();
-        setMenuIsOpen(true);
         let options = [];
-        console.log(e);
-        console.log("submit: "+ inputText)
         if (inputText != "" ) {
-            setIsLoading(true);
             const response = (await datasets_search(inputText)).data;
             response.map((option) => {
                 const newOption = {
@@ -54,37 +57,96 @@ const PlaygroundBarSearchDatasets = (props) => {
                 };
                 options.push(newOption);
             });
-            setIsLoading(false);
-            setSearch({
-                options: options,
-            });  
+
+            if (response.length == 0) {
+                alert("Nothing found")
+            } else {
+                setSearch({options: options});  
+                document.getElementsByClassName("dropdown")[0].classList.remove("dropdown-hidden")
+            }
         }
                      
     }
 
-    return (
-        <div className="demo-toolbar">
-            <div className="data-container">
-                <form onSubmit={handleSearchSubmit} className="search-form" title="Download dataset from ArcGIS HUB">
-                <Select 
-                    id={"C_ID_select_geojson"}
-                    value={choosen}
-                    isLoading={isLoading}
-                    options={search.options}
-                    onInputChange={handleInputChange}
-                    placeholder="Search and download dataset on ArcGIS HUB..."
-                    onChange={handleChoose}
-                    isClearable={true}
-                    noOptionsMessage={() => 'No Datasets Found'}
-                    components={{ DropdownIndicator: () => null, IndicatorSeparator: () => null }}
-                    menuIsOpen={menuIsOpen}
-                    onFocus={clearChoosen}
-                    onMenuClose={() => setMenuIsOpen(false)}
-                    onMenuOpen={() => setMenuIsOpen(true)}
-                    className="select"
-                />
+    const handleAbort = () => {
+        if (abortController) {
+            abortController.abort();
+            setAbortController(null); // Reset abort controller after aborting
+          }
+    }
 
+    return (
+        <div className="search demo-toolbar">
+            <div className="data-container search-container">
+                <div className="search-row">
+                    <form onSubmit={handleSearchSubmit} className="search-form search-dataset" title="Download dataset from ArcGIS HUB">
+                        <input
+                            type="text"
+                            placeholder="Search and download dataset on ArcGIS HUB..."
+                            onChange={handleInputChange}
+                            value={inputText} 
+                            className="search-input"
+                            
+                        />
+
+                    </form>
+                    <button onClick={handleSearchSubmit} value="Search" className="btn btn-search search-symbol">
+                        <i className="fa fa-search"></i>
+                    </button>
+                    <button onClick={handleAbort} value="Search" className="btn btn-search search-close close-hidden">
+                        <i className="fa fa-times" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div className="datasets-dropdown">
+                    <div className="dropdown dropdown-hidden">
+                            {search.options?.map((option) => (
+                                <div className="dataset" 
+                                    onClick={(e) => handleChoose(e, option.label)}    
+                                    key={option.value} 
+                                    id={option.value}
+                                    
+                                >{option.label}</div> 
+                            ))}
+                    </div>
+                </div>
+
+                {/*
+                <form onSubmit={handleSearchSubmit} className="search-form search-dataset" title="Download dataset from ArcGIS HUB">
+                    <Select 
+                        id={"C_ID_select_geojson"}
+                        value={choosen}
+                        isLoading={isLoading}
+                        options={search.options}
+                        onInputChange={handleInputChange}
+                        placeholder="Search and download dataset on ArcGIS HUB..."
+                        onChange={handleChoose}
+                        isClearable={true}
+                        components={{ DropdownIndicator: () => null, IndicatorSeparator: () => null }}
+                        menuIsOpen={menuIsOpen}
+                        onFocus={clearChoosen}
+                        onMenuClose={() => setMenuIsOpen(false)}
+                        onMenuOpen={() => setMenuIsOpen(true)}
+                        className="select"
+                    />
+                    <input type="submit" value="Submit" className="btn btn-search"/>
                 </form>
+
+                <form onSubmit={handleSearchSubmit}>
+                    <input 
+                        type="text" 
+                        placeholder="type something"
+                        className="search-bar__input"
+                        onChange={e => handleInputChange(e.target.value)} 
+                        value={inputText} 
+                    />
+                    <button type="submit" className="search-bar__btn">Search</button>
+                </form>
+                <div>
+                {search.options.map(user => {
+                    return <li key={user.id}>{user.label}</li>
+                    })}
+                </div>
+                                */}
             </div>
         </div>
 

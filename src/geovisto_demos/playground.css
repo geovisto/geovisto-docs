@@ -51,6 +51,7 @@
 .data-container .btn-export {
     padding: 8px !important;
     height: max-content;
+    justify-content: center;
 }
 
 .data-container .custom-file-upload {
@@ -171,13 +172,113 @@ input[type="file"] {
 
 
 
-.search-dataset {
+.search-row {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
+.search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-form {
+    width: 100%;
+}
 
 .search-container {
     padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
 
 }
+
+.search-dataset {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-input {
+    color: hsl(0, 0%, 20%);
+    transition: all 100ms;
+    background-color: hsl(0, 0%, 100%);
+    border-color: hsl(0, 0%, 80%);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+    min-height: 38px;
+    font-size: 1rem;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    justify-self: center;
+
+}
+
+.dropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    z-index: 1;
+    background-color: var(--ifm-color-primary);
+    width: 100%;
+    max-height: 190px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: hsl(0, 0%, 100%);
+    border-color: hsl(0, 0%, 80%);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+    min-height: 38px;
+    font-size: 1rem;
+    width: 100%;
+
+
+}
+
+.datasets-dropdown {
+    position: relative;
+    width: 100%;
+}
+
+.dataset {
+    cursor: pointer;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    width: 100%;
+    color: black ;
+
+
+}
+
+.dataset:hover {
+    background-color: #deebff;
+}
+
+.loader-hidden, .search-symbol-hidden, .dropdown-hidden, .close-hidden {
+    display: none;
+}
+
+
+
+.btn-search {
+    min-height: 38px;
+}
+
+
