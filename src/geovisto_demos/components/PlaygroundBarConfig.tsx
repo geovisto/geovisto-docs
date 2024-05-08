@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import {files, file} from "../api";
 import Select from "react-select";
+import ReactJson from '@microlink/react-json-view';
 
 /* example of screen component with grid layout and card wrapper usage */
 
@@ -81,7 +82,7 @@ const PlaygroundBarConfig = (props) => {
                     className="select"
                 />
                 <div className="choose-file">
-                    <label title="Import your config" className="custom-file-upload btn btn-default">
+                    <label title="Import your config" className="custom-file-upload btn">
                         <input type="file" 
                             id={C_ID_input_config}
                             accept=".json"
@@ -90,7 +91,7 @@ const PlaygroundBarConfig = (props) => {
                         Import
                     </label>
                 </div>
-                <input id={C_ID_input_config_export} title="Export current config" type="submit" value="Export" className="btn btn-default btn-export"/>
+                <input id={C_ID_input_config_export} title="Export current config" type="submit" value="Export" className="btn btn-export"/>
             </div>
         </div>
     );

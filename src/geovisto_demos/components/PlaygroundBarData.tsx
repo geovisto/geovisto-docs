@@ -82,18 +82,18 @@ const PlaygroundBarData = (props) => {
                 />
 
                 <div className="choose-file">
-                    <label title="Import your data" className="custom-file-upload btn btn-default">
+                    <label title="Import your data" className="custom-file-upload btn">
                         <input type="file" 
                             id={C_ID_input_data}
                             accept=".json"
                             size={3}
-                            className="btn btn-default"
+                            className="btn"
                         />
                         Import
                     </label>
                 </div>
 
-                <input id={C_ID_input_data_export} title="Export current data" type="submit" value="Export" className="btn btn-default btn-export"/>
+                <input id={C_ID_input_data_export} title="Export current data" type="submit" value="Export" className="btn btn-export"/>
             </div>
         </div>
     );
