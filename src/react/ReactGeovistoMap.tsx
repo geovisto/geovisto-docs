@@ -30,8 +30,6 @@ const ReactGeovistoMap: React.FC<IReactGeovistoMapProps> = React.memo((props) =>
     var redrawTimer;
     var typingInterval = 5000;
 
-    console.log(props);
-
     const startTimer = () => {
         clearTimeout(typingTimer);
         typingTimer = setTimeout(resultAction, typingInterval);
@@ -51,18 +49,9 @@ const ReactGeovistoMap: React.FC<IReactGeovistoMapProps> = React.memo((props) =>
     const resultAction = () => {
         var map_config = mapRef.current.export();         
 
-        console.log("RESULT")
-
-        
-        console.log("map_config")
-        console.log(map_config)
-        console.log("edit_config")
-        console.log(props.currentEdit())
-
         map_config = deleteUndefined(map_config); 
 
         if (!isEqual(props.currentEdit(), map_config)) {
-            console.log("DIFF");
             props.callback(map_config);
         }
         startTimer();
@@ -88,8 +77,6 @@ const ReactGeovistoMap: React.FC<IReactGeovistoMapProps> = React.memo((props) =>
         } else {
 
             if (props.id == 'my-geovisto-map') {
-                console.log("REDRAW")
-
                 redrawTimer = setTimeout(() => {
                 mapRef.current.redraw(
                     props.config ?? Geovisto.getMapConfigManagerFactory().default({}), props);
@@ -108,8 +95,6 @@ const ReactGeovistoMap: React.FC<IReactGeovistoMapProps> = React.memo((props) =>
             clearTimeout(typingTimer);
             clearTimeout(drawTimer);
             clearTimeout(redrawTimer);
-
-            console.log("cleaning up react");
         }
     }, [props.geoData, props.config, props.data]);
 

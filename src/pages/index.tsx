@@ -68,7 +68,6 @@ const HomepageHeader = () => {
             clearTimeout(timeoutOpacity1);
             clearTimeout(timeoutOpacity2);
             clearTimeout(timeoutOpacity3);
-            console.log("cleaning up header");
         }
     },[]);
 

@@ -84,20 +84,14 @@ const Playground = () => {
                 try {
                     if(typeof reader.result == "string") {
                         result = JSON.parse(reader.result);
-                        console.log(result)
                     }
                 } catch(ex) {
-                    console.log("unable to read file");
-                    console.log(ex);
-                    // TODO: notify user
                     alert("unable to read file");
                 }  
             };
 
             reader.onload = onLoadAction;
             reader.onloadend = () => {
-                console.log('onloadend');
-                console.log(reader);    
                 if (type == "config") {
                     setConfig(result);
                 }        
@@ -197,9 +191,6 @@ const Playground = () => {
     }    
 
     const setData = (data) => {
-        console.log("data")
-
-        console.log(data)
         setMapState({...map_state, data: data})
         setEditState({...edit_state, data: data})
     }  
@@ -211,20 +202,15 @@ const Playground = () => {
 
         if (!geos.find(e => e.key === name))
         {
-            console.log("new");
             geos.push({key:name, geo:geo})
         }
         else
         {
-            console.log("old");
             geos.find(e => e.key === name).geo = geo;
         }
 
         setMapState({...map_state, geojson: geos});
         setEditState({...edit_state, geojson: geo});
-
-        console.log(map_state.geojson)
-
     }
 
     const updateMapConfig = (e) => {
