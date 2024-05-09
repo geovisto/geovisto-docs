@@ -87,7 +87,7 @@ const HomepageHeader = () => {
                     <Link to="/tutorials">
                         <Button variant="default" className="btn-header">Get started</Button>
                     </Link>
-                    <Link to="/playground#playground-hook">
+                    <Link to="/playground">
                         <Button variant="default" className="btn-header">Try Playground</Button>
                     </Link>
                 </div>
