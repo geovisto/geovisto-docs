@@ -18,6 +18,7 @@ import "./common.css";
  *
  *  @author Jiri Hynek
  *  @author Vladimir Korencik
+ *  @author Iva Utikalova
  */
 
 

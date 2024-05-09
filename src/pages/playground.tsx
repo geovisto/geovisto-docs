@@ -3,6 +3,12 @@ import Layout from "@theme/Layout";
 import "./index.css";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 
+/**
+ * Wrapper for Playground
+ *
+ * @author Iva Utikalova
+ */
+
 export const Home = (): JSX.Element => (
     <Layout
         title={`Playground`}

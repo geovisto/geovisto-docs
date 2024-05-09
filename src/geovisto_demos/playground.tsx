@@ -86,21 +86,23 @@ const Playground = () => {
                     }
                 } catch(ex) {
                     alert("unable to read file");
+                    return
                 }  
             };
 
             reader.onload = onLoadAction;
             reader.onloadend = () => {
-                if (type == "config") {
-                    setConfig(result);
-                }        
-                if (type == "data") {
-                    setData(result);
-                }        
-                if (type == "geo") {
-                    setGeo("Your geo", result);
-                }        
-
+                if (result) {
+                    if (type == "config") {
+                        setConfig(result);
+                    }        
+                    if (type == "data") {
+                        setData(result);
+                    }        
+                    if (type == "geo") {
+                        setGeo("Your geo", result);
+                    }        
+                }
             };
         };
 
