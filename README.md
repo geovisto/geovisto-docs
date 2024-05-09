@@ -1,6 +1,10 @@
-# geovisto-docs
+# Geovisto Web App
 This repository contains web presentation of Geovisto library.  
 It is built using web framework Docusaurus.
+You can visit this web app [Here](https://geovisto.com/)
+
+
+## Installation and Run
 
 Installation:  
 `npm install`
@@ -11,7 +15,4 @@ Local development server:
 Production build:  
 `npm run-script build -- --no-minify `
 
-Before deploying on GitHub pages, you must run the command above first.
 
-Deployment on GitHub Pages:  
-`GIT_USER=<username> USE_SSH=true yarn deploy`
