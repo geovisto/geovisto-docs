@@ -182,18 +182,31 @@ const Playground = () => {
 
 
     const setDataGeo = (data, geo, name) => {
-        setData(data)
-        setGeo(name, geo)
+        name = name.split('.')[0]
+
+        let geos = map_state.geojson;
+
+        if (!geos.find(e => e.key === name))
+        {
+            geos.push({key:name, geo:geo})
+        }
+        else
+        {
+            geos.find(e => e.key === name).geo = geo;
+        }
+
+        setEditState({...edit_state, geojson: geo, data: data});
+        setMapState({...map_state, geojson: geos, data: data});
     }
 
     const setConfig = (config) => {
-        setMapState({...map_state, config: config})
         setEditState({...edit_state, config: config})
+        setMapState({...map_state, config: config})
     }    
 
     const setData = (data) => {
-        setMapState({...map_state, data: data})
         setEditState({...edit_state, data: data})
+        setMapState({...map_state, data: data})
     }  
 
     const setGeo = (name, geo) => {
@@ -210,12 +223,13 @@ const Playground = () => {
             geos.find(e => e.key === name).geo = geo;
         }
 
-        setMapState({...map_state, geojson: geos});
         setEditState({...edit_state, geojson: geo});
+        setMapState({...map_state, geojson: geos});
     }
 
     const updateMapConfig = (e) => {
-        setEditState({...edit_state, config: e})
+
+        setEditState({geojson: edit_state.geojson, config: e, data: map_state.data})
     }
 
     const getCurrentEdit = () => {
